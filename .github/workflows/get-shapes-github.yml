@@ -1,14 +1,14 @@
 name: Get shapes from GitHub GraphQL API
 on:
   workflow_dispatch:
+  schedule:
+    # Everyday at 01:00 and 13:00
+    - cron:  '00 01,13 * * *'
   # push:
   #   branches: [ main ]
   #   paths:
   #   - '.github/workflows/get-github-data.yml'
   #   - 'get_github_data/query_graphql.py'
-  # schedule:
-  #   - cron:  '00 01,13 * * *'
-    # Everyday at 01:00 and 13:00
 
 jobs:
   query-graphql-for-shapes:
