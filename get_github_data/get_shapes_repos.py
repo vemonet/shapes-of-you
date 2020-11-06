@@ -28,7 +28,7 @@ def main():
   # Reset failed shapes report file
   with open(root / '../FAILED_IMPORT_REPORT.md', 'w') as f:
     f.write('## Fails loading files to `rdflib`\n' +
-      '*Please check if your RDF file is properly formatted (we recommend to use `.ttl` files)*\n\n\n')
+      '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
   fetch_shape_files(TOKEN)
 
@@ -94,7 +94,7 @@ def process_file_object(file_object, repo_url, branch):
           with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
             f.write('File: ' + github_file_url + "\n\n"
                 + 'In repository: ' + repo_url + "\n> " 
-                + str(e) + "\n\n\n")
+                + str(e) + "\n\n---\n")
             # f.write(github_file_url + "\n```python\n" 
             #     + str(traceback.format_exc()) + "\n```\n\n\n")
           print('No parser worked for the file ' + github_file_url)
