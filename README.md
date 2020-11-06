@@ -64,19 +64,15 @@ docker-compose up
 
 ## Get data from GitHub GraphQL API
 
-A workflow runs everyday via GitHub Actions at 03:00am and 13:00pm to:
-
-* Update the file [`assets/ids_github_data.json`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/assets/ids_github_data.json) on the `main` branch using a Python script. This JSON file is then used to display informations on the IDS projects website, such as the latest releases of the MaastrichtU-IDS organization on GitHub.
-* Retrieve DOAP files (`doap-project.ttl` in RDF turtle) from MaastrichtU-IDS GitHub repositories using a Python script, then load their RDF data to the SPARQL endpoint https://graphdb.dumontierlab.com/repositories/ids-projects/statements in the graph https://w3id.org/umids/graph/shapes-registry
-
-> Checkout the [`get-github-data.yml` workflow file](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/.github/workflows/get-github-data.yml) to see how to run the Python script to retrieve data from the GitHub GraphQL API.
+Checkout the GitHub workflow file to see how to run the Python script to retrieve the shapes from the GitHub GraphQL API and publish them to the .
 
 You can find the scripts and requirements in the [`get_github_data`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/get_github_data) folder.
 
-Use this command to locally define the `GITHUB_APIKEY` environment variable:
+Use this command to locally define the `GITHUB_APIKEY` and `SPARQL_PASSWORD` environment variable required to run the script:
 
 ```bash
 export GITHUB_APIKEY=MYKEY000
+export SPARQL_PASSWORD=password
 ```
 
 > You can create a new GitHub API key (aka. personal access token) at https://github.com/settings/tokens
