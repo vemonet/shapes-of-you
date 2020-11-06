@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/shapes-of-you/static/js/app.536da310.chunk.js",
-    "app.js.map": "/shapes-of-you/static/js/app.536da310.chunk.js.map",
+    "app.js": "/shapes-of-you/static/js/app.6442d630.chunk.js",
+    "app.js.map": "/shapes-of-you/static/js/app.6442d630.chunk.js.map",
     "runtime~app.js": "/shapes-of-you/static/js/runtime~app.365b7f09.js",
     "runtime~app.js.map": "/shapes-of-you/static/js/runtime~app.365b7f09.js.map",
     "static/js/2.0e93e37e.chunk.js": "/shapes-of-you/static/js/2.0e93e37e.chunk.js",
@@ -19,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime~app.365b7f09.js",
     "static/js/2.0e93e37e.chunk.js",
-    "static/js/app.536da310.chunk.js"
+    "static/js/app.6442d630.chunk.js"
   ]
 }
