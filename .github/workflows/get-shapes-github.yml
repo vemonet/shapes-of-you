@@ -2,7 +2,7 @@ name: Get shapes from GitHub GraphQL API
 on:
   workflow_dispatch:
   # push:
-  #   branches: [ master ]
+  #   branches: [ main ]
   #   paths:
   #   - '.github/workflows/get-github-data.yml'
   #   - 'get_github_data/query_graphql.py'

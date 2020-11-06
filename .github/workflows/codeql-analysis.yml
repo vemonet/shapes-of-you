@@ -2,7 +2,7 @@ name: "CodeQL analysis"
 on:
   workflow_dispatch:
   pull_request:
-    branches: [master]
+    branches: [main]
   schedule:
     - cron: '0 5 * * 4'
   # push:
