@@ -1,0 +1,26 @@
+{
+  "description": "Registry for SHACL shapes at the Institute of Data Science at Maastricht University",
+  "display": "standalone",
+  "lang": "en",
+  "name": "Shapes registry",
+  "short_name": "Shapes registry",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/shapes-of-you/pwa/chrome-icon/chrome-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/shapes-of-you/pwa/chrome-icon/chrome-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/shapes-of-you/pwa/chrome-icon/chrome-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
