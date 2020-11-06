@@ -50,6 +50,6 @@ jobs:
     #   uses: vemonet/sparql-operations-action@v1
     #   with:
     #     query: "CLEAR GRAPH <https://w3id.org/umids/graph/shapes-registry>"
-    #     endpoint: https://graphdb.dumontierlab.com/repositories/test-vincent/statements
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
     #     user: ${{ secrets.GRAPHDB_USER }}
     #     password: ${{ secrets.GRAPHDB_PASSWORD }}

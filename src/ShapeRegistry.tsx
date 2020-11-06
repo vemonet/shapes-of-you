@@ -79,7 +79,7 @@ export default function ShapeRegistry() {
 
   // componentDidMount: Query SPARQL endpoint to get the projects infos
   React.useEffect(() => {
-    const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/test-vincent';
+    const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
     console.log(endpointToQuery);
 
     // Query directly using Axios

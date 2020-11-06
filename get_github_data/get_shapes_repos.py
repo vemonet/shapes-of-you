@@ -11,8 +11,8 @@ from SPARQLWrapper import SPARQLWrapper, POST, JSON
 
 EXTRA_SHAPES_REPOSITORIES = ['w3c/data-shapes', 'SEMICeu/dcat-ap_shacl']
 
-SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/test-vincent'
-SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/test-vincent/statements'
+SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
+SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'
 GRAPH_URI='https://w3id.org/umids/shapes-registry'
 SPARQL_ENDPOINT_USERNAME='import_user'
 SPARQL_ENDPOINT_PASSWORD = os.getenv('SPARQL_PASSWORD')
@@ -312,7 +312,7 @@ def get_extra_graphql_query(repo):
   '''
 
 def fetch_extra_shape_files(oauth_token):
-  """Fetch additional Shapes files
+  """Fetch additional Shapes files from a list of GitHub repos
   """
   for extra_repo in EXTRA_SHAPES_REPOSITORIES:
     data = client.execute(
