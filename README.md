@@ -1,10 +1,16 @@
 # Registry for SHACL Shapes
 
-This app run regularly a python script to retrieve all shapes from GitHub repositories with the label `shacl-shapes`. We check for the existence of a `sh:NodeShape` in each file.
+[![Get shapes from GitHub GraphQL API](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub%20GraphQL%20API/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub+GraphQL+API%22) [![Deploy to GitHub Pages](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) [![CodeQL analysis](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
 
-The python script to get shapes and the website are automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://maastrichtu-ids.github.io/shapes-of-you
+This app regularly runs a python script to retrieve SHACL Shapes from GitHub repositories. 
 
-> You can check the shapes files which failed to be parsed in the [`FAILED_IMPORT_REPORT.md`](/FAILED_IMPORT_REPORT.md) file
+1. We retrieve shapes from all `.ttl` and `.rdf` files in GitHub repositories tagged with the topic `shacl-shapes`. 
+2. We check for the existence of a `sh:NodeShape` in each file, and register all shapes described in each files.
+3. We publish the shapes files URL and the shapes they contain in a public SPARQL endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
+4. You can now explore the existing shapes and easily retrieve their file in the web application: https://maastrichtu-ids.github.io/shapes-of-you
+5. You can check the SHACL Shapes files which are not successfully be parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](/FAILED_IMPORT_REPORT.md) file.
+
+> The python script to get shapes and the website are automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) everyday at 1:00 and 13:00. 
 
 ### Run in development :construction:
 
@@ -14,7 +20,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/MaastrichtU-IDS/shapes-of-you
-cd projects
+cd shapes-of-you
 ```
 
 Install dependencies :inbox_tray:
@@ -84,7 +90,7 @@ pip3 install -r get_github_data/requirements.txt
 Run script:
 
 ```bash
-python3 get_github_data/get_shapes_repos.py
+python3 get_github_data/get_shapes_from_github.py
 ```
 
 > Try out the GitHub GraphQL API [here](https://developer.github.com/v4/explorer/).

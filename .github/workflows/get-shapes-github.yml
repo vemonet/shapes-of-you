@@ -38,7 +38,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |-
-        python get_github_data/get_shapes_repos.py
+        python get_github_data/get_shapes_from_github.py
 
     - name: Upload failed shapes report
       uses: actions/upload-artifact@v1
