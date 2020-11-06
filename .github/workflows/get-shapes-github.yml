@@ -1,0 +1,55 @@
+name: Get shapes from GitHub GraphQL API
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [ master ]
+  #   paths:
+  #   - '.github/workflows/get-github-data.yml'
+  #   - 'get_github_data/query_graphql.py'
+  # schedule:
+  #   - cron:  '00 01,13 * * *'
+    # Everyday at 01:00 and 13:00
+
+jobs:
+  query-graphql-for-shapes:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - uses: actions/cache@v2
+      name: Configure pip caching
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    # Important part here (can be reused to run locally):
+    - name: Install Python dependencies
+      run: |
+        python -m pip install -r get_github_data/requirements.txt
+    
+    - name: Query GitHub GraphQL API with Python
+      env:
+        GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+        SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+      run: |-
+        python get_github_data/get_shapes_repos.py
+
+    - name: Upload failed shapes report
+      uses: actions/upload-artifact@v1
+      with:
+        name: failed-shapes-report
+        path: FAILED_IMPORT_REPORT.md
+
+    # - name: Clear older graph in the triplestore
+    #   uses: vemonet/sparql-operations-action@v1
+    #   with:
+    #     query: "CLEAR GRAPH <https://w3id.org/umids/graph/shapes-registry>"
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/test-vincent/statements
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}

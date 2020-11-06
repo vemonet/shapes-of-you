@@ -1,0 +1,16 @@
+{
+    "expo": {
+      "name": "Shapes registry",
+      "description": "Registry for SHACL shapes at the Institute of Data Science at Maastricht University",
+      "slug": "shapes-of-you",
+      "privacy": "public",
+      "sdkVersion": "35.0.0",
+      "platforms": ["web"],
+      "version": "0.0.1",
+      "icon": "./assets/icon.png",
+      "orientation": "portrait",
+      "packagerOpts": {
+        "assetExts": ["html"]
+      }
+    }
+  }  

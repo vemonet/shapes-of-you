@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - name: Install dependencies and build
+      run: |
+        git config --global user.email "vincent.emonet@maastrichtuniversity.nl"
+        git config --global user.name "Vincent Emonet"
+        yarn install
+        yarn build
+
+    - name: Deploy on GitHub
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: web-build
+        CLEAN: true
+
+    # - name: Deploy on GitHub
+    #   run: yarn deploy
