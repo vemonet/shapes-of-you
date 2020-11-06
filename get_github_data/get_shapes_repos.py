@@ -92,9 +92,9 @@ def process_file_object(file_object, repo_url, branch):
           # g.parse(StringIO.StringIO(rdf_string), format="xml")
         except Exception as e:
           with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
-            f.write('File: ' + github_file_url + "\n"
+            f.write('File: ' + github_file_url + "\n\n"
                 + 'In repository: ' + repo_url + "\n> " 
-                + str(e) + "\n\n")
+                + str(e) + "\n\n\n")
             # f.write(github_file_url + "\n```python\n" 
             #     + str(traceback.format_exc()) + "\n```\n\n\n")
           print('No parser worked for the file ' + github_file_url)
