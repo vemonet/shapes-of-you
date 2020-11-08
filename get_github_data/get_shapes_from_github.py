@@ -112,6 +112,7 @@ def process_file_object(file_object, repo_url, branch):
           shape_label = label
         shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
         # TODO: get more infos about the shapes?
+        # e.g. owl:Ontology metadata https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/dev%2Fxslt%2Fdcat-ap.shacl.rdf
   
   # If the object is a folder we process it recusively
   if file_object["object"] and "entries" in file_object["object"]:

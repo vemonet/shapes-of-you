@@ -77,6 +77,9 @@ export default function ShapeRegistry() {
     setState(stateRef.current);
   }, [setState]);
 
+  const pluralize = (count: number, noun: string, suffix = 's') =>
+    `${count} ${noun}${count !== 1 ? suffix : ''}`;
+
   // componentDidMount: Query SPARQL endpoint to get the projects infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
@@ -248,7 +251,7 @@ export default function ShapeRegistry() {
             <SearchIcon />
           </IconButton>
         </Paper>
-        <Typography style={{marginTop: '15px', marginLeft: '20px' }}>{filteredProjects.length} shapes</Typography>
+        <Typography style={{marginTop: '15px', marginLeft: '20px' }}>{filteredProjects.length} shapes files</Typography>
       </Box>
       
       {/* Iterate over projects */}
@@ -261,20 +264,17 @@ export default function ShapeRegistry() {
       {filteredProjects.map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}>
           <Typography variant="h5">
-            Shape file:&nbsp;
+            Shapes file:&nbsp;
             <a href={project.shapeFileUri} className={classes.link}>{project.label}</a>&nbsp;&nbsp;
-            {/* {project.category && ( 
-              <Chip label={project.category} color='secondary' style={{marginRight: '5px'}}/>
-            )} */}
           </Typography>
-          <Typography style={{marginBottom: '10px', marginTop: '5px'}}>
-            Repository:&nbsp;
+          <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
+            In repository:&nbsp;
             <a href={project.repository} className={classes.link}>
               {project.repository}
             </a>
           </Typography>
-          <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
-            Shapes:
+          <Typography style={{marginTop: '5px'}}>
+            Contains {pluralize(project.shapes.length, 'Shape')}:
           </Typography>
           {project.shapes.map((shapeLabel: string, key: number) => {
             return <Chip label={shapeLabel} color='primary' style={{margin: '5px'}} key={key.toString()}/>
@@ -316,67 +316,3 @@ select ?category (count(?project) as ?projectCount) where {
              doap:category ?category .
 } GROUP BY ?category`
 
-// const pie_data = {
-//   labels: [
-//     'Python',
-//     'PHP',
-//     'Java'
-//   ],
-//   datasets: [{
-//     data: [4, 1, 2],
-//     backgroundColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56'],
-//     hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56']
-//   }]
-// };
-
-const pie_options = {
-  scales: {
-    yAxes: [{
-      ticks: {
-        beginAtZero: true
-      }
-    }],
-    xAxes: [{
-      ticks: {
-        beginAtZero: true
-      }
-    }]
-  },
-  // legend: {
-  //   display: false
-  // },
-  // maintainAspectRatio: false,
-  plugins: {
-    labels: {
-      // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-      render: 'value',
-      // fontSize: 12,
-
-      // font color, can be color array for each data or function for dynamic color, default is defaultFontColor
-      // fontColor: '#fff',
-      // // draw text shadows under labels, default is false
-      // textShadow: true,
-      // text shadow intensity, default is 6
-      // shadowBlur: 10,
-      // // text shadow X offset, default is 3
-      // shadowOffsetX: -5,
-      // // text shadow Y offset, default is 3
-      // shadowOffsetY: 5,
-      // // text shadow color, default is 'rgba(0,0,0,0.3)'
-      // shadowColor: 'rgba(255,0,0,0.75)',
-      // position to draw label, available value is 'default', 'border' and 'outside'
-      // bar chart ignores this
-      // default is 'default'
-      // position: 'default',
-
-      // set images when `render` is 'image'
-      // images: [
-      //   {
-      //     src: 'image.png',
-      //     width: 16,
-      //     height: 16
-      //   }
-      // ]
-    }
-  }
-}
