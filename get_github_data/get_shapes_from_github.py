@@ -101,12 +101,17 @@ def process_file_object(file_object, repo_url, branch):
       
       # Check if sh:ShapeNode present
       for shape in g.subjects(RDF.type, SH.NodeShape):
+
         file_uri = URIRef(github_file_url)
         shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
         shapes_graph.add((file_uri, RDFS.label, Literal(file_object["name"])))
         shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
-        shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape)))
-        # TODO: get more infos, like labels, about the shapes?
+        shape_label = shape
+        for label in g.objects(shape, RDFS.label):
+          # Try to get the label of the shape
+          shape_label = label
+        shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+        # TODO: get more infos about the shapes?
   
   # If the object is a folder we process it recusively
   if file_object["object"] and "entries" in file_object["object"]:
@@ -187,17 +192,6 @@ query {
                       object {
                         ... on Blob {
                           text
-                        }
-                        ... on Tree {
-                        entries {
-                          name
-                          path
-                          object {
-                            ... on Blob {
-                              text
-                            }
-                          }
-                        }
                         }
                       }
                     }

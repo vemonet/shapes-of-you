@@ -273,12 +273,12 @@ export default function ShapeRegistry() {
               {project.repository}
             </a>
           </Typography>
-          <Typography style={{marginBottom: '10px', marginTop: '5px'}}>
+          <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
             Shapes:
-            {project.shapes.map((shapeUri: string, key: number) => {
-              return <Typography key={key.toString()}>{shapeUri}</Typography>
-            })}
           </Typography>
+          {project.shapes.map((shapeLabel: string, key: number) => {
+            return <Chip label={shapeLabel} color='primary' style={{margin: '5px'}} key={key.toString()}/>
+          })}
           {project.gitUrl && ( 
             <div>
               <a href={project.gitUrl} key={project.gitUrl} >
