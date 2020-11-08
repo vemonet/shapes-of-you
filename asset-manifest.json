@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/shapes-of-you/static/js/app.6442d630.chunk.js",
-    "app.js.map": "/shapes-of-you/static/js/app.6442d630.chunk.js.map",
+    "app.js": "/shapes-of-you/static/js/app.baaf8913.chunk.js",
+    "app.js.map": "/shapes-of-you/static/js/app.baaf8913.chunk.js.map",
     "runtime~app.js": "/shapes-of-you/static/js/runtime~app.365b7f09.js",
     "runtime~app.js.map": "/shapes-of-you/static/js/runtime~app.365b7f09.js.map",
-    "static/js/2.0e93e37e.chunk.js": "/shapes-of-you/static/js/2.0e93e37e.chunk.js",
-    "static/js/2.0e93e37e.chunk.js.map": "/shapes-of-you/static/js/2.0e93e37e.chunk.js.map",
+    "static/js/2.7a736d3e.chunk.js": "/shapes-of-you/static/js/2.7a736d3e.chunk.js",
+    "static/js/2.7a736d3e.chunk.js.map": "/shapes-of-you/static/js/2.7a736d3e.chunk.js.map",
     "fonts/MaterialCommunityIcons.ttf": "/shapes-of-you/./fonts/MaterialCommunityIcons.ttf",
     "favicon-16.png": "/shapes-of-you/favicon-16.png",
     "favicon-32.png": "/shapes-of-you/favicon-32.png",
@@ -13,12 +13,12 @@
     "index.html": "/shapes-of-you/index.html",
     "manifest.json": "/shapes-of-you/manifest.json",
     "serve.json": "/shapes-of-you/serve.json",
-    "static/js/2.0e93e37e.chunk.js.LICENSE.txt": "/shapes-of-you/static/js/2.0e93e37e.chunk.js.LICENSE.txt",
+    "static/js/2.7a736d3e.chunk.js.LICENSE.txt": "/shapes-of-you/static/js/2.7a736d3e.chunk.js.LICENSE.txt",
     "static/media/icon.png": "/shapes-of-you/static/media/icon.72626586.png"
   },
   "entrypoints": [
     "static/js/runtime~app.365b7f09.js",
-    "static/js/2.0e93e37e.chunk.js",
-    "static/js/app.6442d630.chunk.js"
+    "static/js/2.7a736d3e.chunk.js",
+    "static/js/app.baaf8913.chunk.js"
   ]
 }
