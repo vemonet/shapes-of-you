@@ -185,7 +185,7 @@ export default function ShapeRegistry() {
       </Typography>
 
       <Typography>
-        Add the tag <code>shacl-shape</code> to your GitHub repository, we will automatically index all <code>.ttl</code> and <code>.rdf</code> files containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
+        Add the tag <code>shacl-shapes</code> to your GitHub repository, we will automatically index all <code>.ttl</code> and <code>.rdf</code> files containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
       </Typography>
 
       <Typography variant="h5" style={{marginTop: '25px'}}>
