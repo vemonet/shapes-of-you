@@ -70,7 +70,7 @@ def generate_github_file_url(repo_url, filepath, branch):
 
 def process_file_object(file_object, repo_url, branch):
   # If the object is a RDF file, we read it with rdflib
-  if file_object["path"].endswith('.ttl') or file_object["path"].endswith('.rdf'):
+  if file_object["path"].endswith('.ttl') or file_object["path"].endswith('.rdf') or file_object["path"].endswith('.nt') or file_object["path"].endswith('.nq') or file_object["path"].endswith('.trig'):
     if file_object["object"]["text"]:
       github_file_url = generate_github_file_url(repo_url, urllib.parse.quote_plus(file_object["path"]), branch)
       print(file_object["path"])
@@ -101,7 +101,6 @@ def process_file_object(file_object, repo_url, branch):
       
       # Check if sh:ShapeNode present
       for shape in g.subjects(RDF.type, SH.NodeShape):
-
         file_uri = URIRef(github_file_url)
         shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
         shapes_graph.add((file_uri, RDFS.label, Literal(file_object["name"])))

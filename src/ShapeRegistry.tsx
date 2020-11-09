@@ -64,7 +64,7 @@ export default function ShapeRegistry() {
   const [state, setState] = React.useState({
     projects_list: [],
     search: '',
-    language_pie: {},
+    repositories_hash: {},
     category_pie: {}
   });
 
@@ -77,8 +77,8 @@ export default function ShapeRegistry() {
     setState(stateRef.current);
   }, [setState]);
 
-  const pluralize = (count: number, noun: string, suffix = 's') =>
-    `${count} ${noun}${count !== 1 ? suffix : ''}`;
+  const pluralize = (count: any, noun: string, suffix = 's') =>
+    `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
 
   // componentDidMount: Query SPARQL endpoint to get the projects infos
   React.useEffect(() => {
@@ -122,68 +122,17 @@ export default function ShapeRegistry() {
         console.log(error)
       })
 
-    // Get programming languages counts
-    let language_pie = {
-      labels: [],
-      datasets: [{
-        label: 'Number of projects using the programming languages',
-        data: [],
-        backgroundColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56', '#0277bd', '#ef6c00']
-        // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
-      }]
-    }
-    axios.get(endpointToQuery + `?query=` + encodeURIComponent(countLanguagesQuery))
+    // Get repositories and their files counts
+    let repositories_hash = {}
+    axios.get(endpointToQuery + `?query=` + encodeURIComponent(countRepositoriesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
-        console.log(sparqlResultArray);
 
-        // Typescript ridiculously requires to do a forEach to avoid its dumb warnings
-        // Default Objects should accepts any fields by default.
-        // for (let result of sparqlResultArray) {
         sparqlResultArray.map((result: any) =>  {
-          language_pie.labels.push(result.programmingLanguage.value);
-          language_pie.datasets[0].data.push(result.projectCount.value);
+          repositories_hash[result.repository.value] = result.shapeFileCount.value;
         });
 
-        console.log('TODO: State of language_pie after ComponentDidMount (got labels)');
-        console.log(language_pie);
-        // setState({...state, language_pie: language_pie})
-        updateState({language_pie: language_pie})
-      })
-      .catch(error => {
-        console.log(error)
-      })
-      // TODO: do we need to add the stupid empty state array in the axios call too ? 
-      // This shit: }, [])
-      // Seems not, the issue is that some of the state variable are reset by React
-      // to make sure the state is properly passed
-
-      // Get project Categories count
-      let category_pie = {
-        labels: [],
-        datasets: [{
-          data: [],
-          label: 'Number of projects per categories',
-          backgroundColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56', '#0277bd', '#ef6c00'],
-          // borderColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56'],
-          // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB', '#FFCE56'],
-          // hoverBorderColor: ['#4caf50','#FF6384','#36A2EB', '#FFCE56']
-        }]
-      }
-      axios.get(endpointToQuery + `?query=` + encodeURIComponent(countCategoryQuery))
-      .then(res => {
-        const sparqlResultArray = res.data.results.bindings;
-        console.log(sparqlResultArray);
-
-        // Typescript ridiculously requires to do a forEach to avoid its dumb warnings
-        // Default Objects should accepts any fields by default.
-        for (let result of sparqlResultArray) {
-          category_pie.labels.push(result.category.value);
-          category_pie.datasets[0].data.push(result.projectCount.value);
-        }
-
-        // setState({...state, category_pie: category_pie})
-        updateState({category_pie: category_pie})
+        updateState({repositories_hash: repositories_hash})
       })
       .catch(error => {
         console.log(error)
@@ -236,9 +185,28 @@ export default function ShapeRegistry() {
       </Typography>
 
       <Typography>
-        Add the tag <code>shacl-shape</code> to your GitHub repository, we will automatically index all <code>.ttl</code> and <code>.rdf</code> files containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00.
+        Add the tag <code>shacl-shape</code> to your GitHub repository, we will automatically index all <code>.ttl</code> and <code>.rdf</code> files containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
       </Typography>
+
+      <Typography variant="h5" style={{marginTop: '25px'}}>
+        {Object.keys(state.repositories_hash).length} Shapes repositories
+      </Typography>
+      <Grid container spacing={2} style={{textAlign: 'center', marginTop: '10px'}}>
+        {Object.keys(state.repositories_hash).map(function(repo: any){
+          return <Grid item xs={6}>
+              <Paper elevation={3} style={{padding: '15px'}}>
+                <a href={repo} key={repo} >
+                  <img src={'https://gh-card.dev/repos/' + repo.replace('https://github.com/', '') + '.svg?fullname'} alt={repo} key={'img' + repo}/>
+                </a>
+                <Typography>{pluralize(state.repositories_hash[repo], 'Shapes file')}</Typography>
+              </Paper>
+            </Grid>
+        })}
+      </Grid>
     
+      <Typography variant="h5" style={{marginTop: '25px'}}>
+        {filteredProjects.length} Shapes files
+      </Typography>
       {/* Search box */}
       <Box display="flex" style={{marginTop: '20px'}}>
         <Paper component="form" className={classes.paperSearch}>
@@ -251,16 +219,9 @@ export default function ShapeRegistry() {
             <SearchIcon />
           </IconButton>
         </Paper>
-        <Typography style={{marginTop: '15px', marginLeft: '20px' }}>{filteredProjects.length} shapes files</Typography>
       </Box>
       
       {/* Iterate over projects */}
-      {/* TODO: Changing key here at some pointbroke the search, 
-          but fixed the pie chart which is completly independant!
-          Fucking geniuses */}
-
-      {/* {filteredProjects.map(function(project: any, key: number){ */}
-      {/* return <Paper key={key} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}> */}
       {filteredProjects.map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}>
           <Typography variant="h5">
@@ -302,17 +263,12 @@ select distinct * where {
         dcterms:hasPart ?shapes .
 }`
 
-const countLanguagesQuery = `PREFIX doap: <http://usefulinc.com/ns/doap#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-select ?programmingLanguage (count(?project) as ?projectCount) where { 
-    ?project a doap:Project ;
-             doap:programming-language ?programmingLanguage .
-} GROUP BY ?programmingLanguage`
-
-const countCategoryQuery = `PREFIX doap: <http://usefulinc.com/ns/doap#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-select ?category (count(?project) as ?projectCount) where { 
-    ?project a doap:Project ;
-             doap:category ?category .
-} GROUP BY ?category`
-
+const countRepositoriesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+select ?repository (count(?shapeFileUri) as ?shapeFileCount) where { 
+  ?shapeFileUri a <https://schema.org/DataDownload> ;
+    rdfs:label ?label ;
+    dc:source ?repository .
+} GROUP BY ?repository
+`
