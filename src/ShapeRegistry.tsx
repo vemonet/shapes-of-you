@@ -117,6 +117,12 @@ export default function ShapeRegistry() {
         const project_final_array: any = Object.keys(projects_hash).map((key) => projects_hash[key]);
         // setState({...state, projects_list: project_final_array})
         updateState({projects_list: project_final_array})
+        
+        // Import JS script for GitHub cards
+        // const script = document.createElement("script");
+        // script.src = "https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js";
+        // script.async = true;
+        // document.body.appendChild(script);
       })
       .catch(error => {
         console.log(error)
@@ -193,11 +199,16 @@ export default function ShapeRegistry() {
       </Typography>
       <Grid container spacing={2} style={{textAlign: 'center', marginTop: '10px'}}>
         {Object.keys(state.repositories_hash).map(function(repo: any){
-          return <Grid item xs={6}>
+          return <Grid item xs={6} key={repo}>
               <Paper elevation={3} style={{padding: '15px'}}>
+                {/* Using https://github.com/nwtgck/gh-card */}
                 <a href={repo} key={repo} >
                   <img src={'https://gh-card.dev/repos/' + repo.replace('https://github.com/', '') + '.svg?fullname'} alt={repo} key={'img' + repo}/>
                 </a>
+                {/* Using https://github.com/lepture/github-cards */}
+                {/* <div className="github-card" 
+                  data-user={repo.replace('https://github.com/', '').split('/')[0]}
+                  data-repo={repo.replace('https://github.com/', '').split('/')[1]}></div> */}
                 <Typography>{pluralize(state.repositories_hash[repo], 'Shapes file')}</Typography>
               </Paper>
             </Grid>
