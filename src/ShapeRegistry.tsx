@@ -2,31 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 
-import GitHubIcon from '@material-ui/icons/GitHub';
-import HomeIcon from '@material-ui/icons/Home';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import GavelIcon from '@material-ui/icons/Gavel';
-import BugReportIcon from '@material-ui/icons/BugReport';
 import SearchIcon from '@material-ui/icons/Search';
 import axios from 'axios';
-import { Doughnut, Pie, Bar, HorizontalBar } from 'react-chartjs-2';
-import 'chartjs-plugin-labels';
 
-import {newEngine} from '@comunica/actor-init-sparql';
-import {ActorInitSparql} from '@comunica/actor-init-sparql/lib/ActorInitSparql-browser';
-import {IQueryOptions, newEngineDynamicArged} from "@comunica/actor-init-sparql/lib/QueryDynamic";
-
-// Import UM logo from assets
-// import iconImage from '../assets/icon.png';
-import idsLogo from '../assets/ids_logo.png';
-// import { ActionYoutubeSearchedFor } from 'material-ui/svg-icons';
-
-// import { normalize, schema } from 'normalizr';
-// import { ColorPropType } from 'react-native';
+// import {newEngine} from '@comunica/actor-init-sparql';
+// import {ActorInitSparql} from '@comunica/actor-init-sparql/lib/ActorInitSparql-browser';
+// import {IQueryOptions, newEngineDynamicArged} from "@comunica/actor-init-sparql/lib/QueryDynamic";
 
 const useStyles = makeStyles(theme => ({
   paperSearch: {
@@ -235,9 +217,9 @@ export default function ShapeRegistry() {
       {/* Iterate over projects */}
       {filteredProjects.map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}>
-          <Typography variant="h5">
+          <Typography variant="h6">
             Shapes file:&nbsp;
-            <a href={project.shapeFileUri} className={classes.link}>{project.label}</a>&nbsp;&nbsp;
+            <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>&nbsp;&nbsp;
           </Typography>
           <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
             In repository:&nbsp;
