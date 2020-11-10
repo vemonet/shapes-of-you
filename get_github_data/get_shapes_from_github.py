@@ -9,7 +9,7 @@ from SPARQLWrapper import SPARQLWrapper, POST, JSON
 # import json
 # from io import StringIO
 
-EXTRA_SHAPES_REPOSITORIES = ['w3c/data-shapes', 'SEMICeu/dcat-ap_shacl']
+EXTRA_SHAPES_REPOSITORIES = ['w3c/data-shapes', 'SEMICeu/dcat-ap_shacl', 'labra/solid-shapes', 'solid/chat-pane']
 
 SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
 SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'

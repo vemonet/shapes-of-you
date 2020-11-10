@@ -20,6 +20,12 @@ In repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-c
 > <unknown>:1:0: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor/master/outputSchemas%2Fpayloadtoolarge.ttl
+
+In repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor
+> <unknown>:1:0: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor/master/outputSchemas%2Ftest.ttl
 
 In repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor
@@ -77,6 +83,12 @@ In repository: https://github.com/SEMICeu/dcat-ap_shacl
 File: https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/test%2Fdcat-random.ttl
 
 In repository: https://github.com/SEMICeu/dcat-ap_shacl
+> <unknown>:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/solid/chat-pane/master/shapes%2Fchat-shapes.ttl
+
+In repository: https://github.com/solid/chat-pane
 > <unknown>:1:1: not well-formed (invalid token)
 
 ---
