@@ -49,7 +49,7 @@ jobs:
     # - name: Clear older graph in the triplestore
     #   uses: vemonet/sparql-operations-action@v1
     #   with:
-    #     query: "CLEAR GRAPH <https://w3id.org/umids/graph/shapes-registry>"
+    #     query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
     #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
     #     user: ${{ secrets.GRAPHDB_USER }}
     #     password: ${{ secrets.GRAPHDB_PASSWORD }}

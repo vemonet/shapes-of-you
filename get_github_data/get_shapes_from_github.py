@@ -13,7 +13,7 @@ EXTRA_SHAPES_REPOSITORIES = ['w3c/data-shapes', 'SEMICeu/dcat-ap_shacl', 'labra/
 
 SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
 SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'
-GRAPH_URI='https://w3id.org/umids/shapes-registry'
+GRAPH_URI='https://w3id.org/um/ids/shapes'
 SPARQL_ENDPOINT_USERNAME='import_user'
 SPARQL_ENDPOINT_PASSWORD = os.getenv('SPARQL_PASSWORD')
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
