@@ -6,6 +6,8 @@ import { IconButton, InputBase } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import axios from 'axios';
 
+import { LoggedIn, LoggedOut, Value } from '@solid/react';
+
 // import {newEngine} from '@comunica/actor-init-sparql';
 // import {ActorInitSparql} from '@comunica/actor-init-sparql/lib/ActorInitSparql-browser';
 // import {IQueryOptions, newEngineDynamicArged} from "@comunica/actor-init-sparql/lib/QueryDynamic";
@@ -66,6 +68,10 @@ export default function ShapeRegistry() {
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
     console.log(endpointToQuery);
+
+    // Check SOLID pod for a shapes preference file
+    // https://github.com/solid/react-components/blob/master/demo/app.jsx
+    // https://solid.github.io/react-components/
 
     // Query directly using Axios
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(getShapesQuery))
@@ -168,9 +174,16 @@ export default function ShapeRegistry() {
         💠 Shapes of You
         {/* <img src={idsLogo} style={{maxWidth: '200px'}} alt="IDS Logo" /> */}
       </Typography>
-      <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
-        Your SHACL Shapes registry
-      </Typography>
+      <LoggedIn>
+        <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+          Welcome to your SHACL Shapes registry <Value src="user.name"/>!
+        </Typography>
+      </LoggedIn>
+      <LoggedOut>
+        <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+          Your SHACL Shapes registry
+        </Typography>
+      </LoggedOut>
 
       <Typography>
         Add the tag <code>shacl-shapes</code> to your GitHub repository, we will automatically index all <code>.ttl</code> and <code>.rdf</code> files containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐

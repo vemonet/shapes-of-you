@@ -13,13 +13,24 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import WarningIcon from '@material-ui/icons/Warning';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
-import { LoginButton, Value } from '@solid/react';
+import { AuthButton, Value } from '@solid/react';
 
 import iconImage from '../assets/icon.png';
 
 const useStyles = makeStyles(theme => ({
   menuButton: {
     color: theme.palette.common.white
+  },
+  solidButton: {
+    backgroundColor: theme.palette.primary.main,
+    color: '#fff',
+    borderRadius: '6px',
+    // boxShadow: '0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)',
+    padding: '7px 14px',
+    '&:hover': {  
+      backgroundColor: theme.palette.primary.light,
+      cursor: 'pointer'
+    }
   },
   linkButton: {
     textTransform: 'none',
@@ -75,13 +86,16 @@ export default function NavBar() {
             <MenuBookIcon />
           </Button>
         </Tooltip> */}
-        <LoginButton />
-        <Tooltip title='Go to https://github.com/MaastrichtU-IDS/shapes-of-you'>
+        <Tooltip  title='Go to https://github.com/MaastrichtU-IDS/shapes-of-you'>
           <Button className={classes.menuButton} target="_blank"
           href="https://github.com/MaastrichtU-IDS/shapes-of-you">
             <GitHubIcon />
           </Button>
         </Tooltip>
+        <Tooltip title='Login with SOLID'>
+          <AuthButton className={classes.solidButton} popup="https://inrupt.net/common/popup.html"/>
+        </Tooltip>
+        {/* <AuthButton popup="https://solidcommunity.net/common/popup.html"/> */}
       </Toolbar>
     </AppBar>
   );
