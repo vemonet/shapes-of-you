@@ -13,6 +13,8 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import WarningIcon from '@material-ui/icons/Warning';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
+import { LoginButton, Value } from '@solid/react';
+
 import iconImage from '../assets/icon.png';
 
 const useStyles = makeStyles(theme => ({
@@ -73,6 +75,7 @@ export default function NavBar() {
             <MenuBookIcon />
           </Button>
         </Tooltip> */}
+        <LoginButton />
         <Tooltip title='Go to https://github.com/MaastrichtU-IDS/shapes-of-you'>
           <Button className={classes.menuButton} target="_blank"
           href="https://github.com/MaastrichtU-IDS/shapes-of-you">

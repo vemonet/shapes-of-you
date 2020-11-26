@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Paper, Button } from "@material-ui/core";
-import { Graph } from "perfect-graph";
+// import { Graph } from "perfect-graph";
 
 import iconImage from '../assets/icon.png';
 
@@ -70,7 +70,7 @@ export default function About() {
 
       {/* image: {iconImage} */}
       {/* Color: https://perfectgraph-5c619.web.app/?path=/story/components-components--view */}
-      <Graph
+      {/* <Graph
         style={{ width: '100%', height: 250 }}
         nodes={[
           {
@@ -105,7 +105,7 @@ export default function About() {
           style={{ backgroundColor: '#eceff1' }}
         />
       )}
-      />
+      /> */}
       
       
 

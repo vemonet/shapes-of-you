@@ -4,21 +4,19 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
+    "@solid/react": "^1.10.0",
     "axios": "^0.20.0",
     "chart.js": "^2.9.3",
     "chartjs-plugin-labels": "^1.1.0",
     "expo": "~39.0.0",
     "normalizr": "^3.6.0",
-    "perfect-graph": "^0.0.33",
     "react": "~16.13.0",
     "react-chartjs-2": "^2.10.0",
     "react-dom": "~16.13.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.2.tar.gz",
     "react-native-web": "0.13.13",
     "react-router-dom": "^5.2.0",
-    "react-router-native": "5.1.2",
-    "unitx": "^0.0.433",
-    "unitx-ui": "^0.0.301"
+    "react-router-native": "5.1.2"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
