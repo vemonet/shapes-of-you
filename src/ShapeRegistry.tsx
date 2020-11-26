@@ -178,6 +178,9 @@ export default function ShapeRegistry() {
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
           Welcome to your SHACL Shapes registry <Value src="user.name"/>!
         </Typography>
+        <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+          Soon you will be able to bookmark your favourites Shapes using your SOLID account! 🔖
+        </Typography>
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
