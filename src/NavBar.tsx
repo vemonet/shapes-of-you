@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     // boxShadow: '0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)',
     padding: '7px 14px',
     '&:hover': {  
-      backgroundColor: theme.palette.primary.light,
+      backgroundColor: theme.palette.primary.dark,
       cursor: 'pointer'
     }
   },
@@ -92,9 +92,9 @@ export default function NavBar() {
             <GitHubIcon />
           </Button>
         </Tooltip>
-        <Tooltip title='Login with SOLID'>
-          <AuthButton className={classes.solidButton} popup="https://inrupt.net/common/popup.html"/>
-        </Tooltip>
+        {/* <Tooltip title='Login with SOLID'> */}
+        <AuthButton title='Login with SOLID' className={classes.solidButton} popup="https://inrupt.net/common/popup.html"/>
+        {/* </Tooltip> */}
         {/* <AuthButton popup="https://solidcommunity.net/common/popup.html"/> */}
       </Toolbar>
     </AppBar>
