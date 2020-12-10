@@ -9,9 +9,6 @@ from SPARQLWrapper import SPARQLWrapper, POST, JSON
 # import json
 # from io import StringIO
 
-EXTRA_SHAPES_REPOSITORIES = ['w3c/data-shapes', 'SEMICeu/dcat-ap_shacl', 'labra/solid-shapes', 'solid/chat-pane', 
-  'dbpedia/archivo', 'NLeSC/fairdatapoint', 'FAIRDataTeam/FAIRDataPoint']
-
 SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
 SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'
 GRAPH_URI='https://w3id.org/um/ids/shapes'
@@ -240,7 +237,7 @@ def fetch_shape_files(oauth_token):
 
 
 def get_extra_graphql_query(repo):
-  """Generate GraphQL query for repos in the list EXTRA_SHAPES_REPOSITORIES
+  """Generate GraphQL query for repos in the list extra_shapes_repositories
   """
   owner=repo.split('/')[0]
   repo_name=repo.split('/')[1]
@@ -309,7 +306,7 @@ def get_extra_graphql_query(repo):
 def fetch_extra_shape_files(oauth_token):
   """Fetch additional Shapes files from a list of GitHub repos
   """
-  for extra_repo in EXTRA_SHAPES_REPOSITORIES:
+  for extra_repo in extra_shapes_repositories:
     data = client.execute(
         query=get_extra_graphql_query(extra_repo),
         headers={"Authorization": "Bearer {}".format(oauth_token)},
@@ -326,6 +323,14 @@ def fetch_extra_shape_files(oauth_token):
 if __name__ == "__main__":
   # Scripts starts here
   root = pathlib.Path(__file__).parent.resolve()
+  root = pathlib.Path(__file__).parent.resolve()
+
+  global extra_shapes_repositories
+  extra_shapes_repositories = []
+  with open(root / '../EXTERNAL_REPOSITORIES.txt', 'r') as f:
+    for line in f:
+      extra_shapes_repositories.append(line)
+
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
   global shapes_graph
