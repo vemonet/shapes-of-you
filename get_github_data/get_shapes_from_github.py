@@ -1,3 +1,4 @@
+from logging import exception
 from python_graphql_client import GraphqlClient
 import pathlib
 import os
@@ -306,6 +307,8 @@ def get_extra_graphql_query(repo):
 def fetch_extra_shape_files(oauth_token):
   """Fetch additional Shapes files from a list of GitHub repos
   """
+  print('extra_shapes_repositories')
+  print(extra_shapes_repositories)
   for extra_repo in extra_shapes_repositories:
     data = client.execute(
         query=get_extra_graphql_query(extra_repo),
@@ -313,11 +316,15 @@ def fetch_extra_shape_files(oauth_token):
     )
     # print(json.dumps(data, indent=4))
     repo_json = data["data"]["repository"]
-    branch = repo_json['defaultBranchRef']['name']
-    print(repo_json["url"])
-    if repo_json["object"]:
-      for entries in repo_json["object"]["entries"]:
-        process_file_object(entries, repo_json["url"], branch)
+    try:
+      branch = repo_json['defaultBranchRef']['name']
+      print(repo_json["url"])
+      if repo_json["object"]:
+        for entries in repo_json["object"]["entries"]:
+          process_file_object(entries, repo_json["url"], branch)
+    except Exception as e:
+      print('FAILLL')
+      print(e)
 
 
 if __name__ == "__main__":
@@ -329,7 +336,7 @@ if __name__ == "__main__":
   extra_shapes_repositories = []
   with open(root / '../EXTERNAL_REPOSITORIES.txt', 'r') as f:
     for line in f:
-      extra_shapes_repositories.append(line)
+      extra_shapes_repositories.append(line.rstrip('\n'))
 
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
