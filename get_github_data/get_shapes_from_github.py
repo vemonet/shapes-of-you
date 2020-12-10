@@ -9,7 +9,8 @@ from SPARQLWrapper import SPARQLWrapper, POST, JSON
 # import json
 # from io import StringIO
 
-EXTRA_SHAPES_REPOSITORIES = ['w3c/data-shapes', 'SEMICeu/dcat-ap_shacl', 'labra/solid-shapes', 'solid/chat-pane', 'dbpedia/archivo']
+EXTRA_SHAPES_REPOSITORIES = ['w3c/data-shapes', 'SEMICeu/dcat-ap_shacl', 'labra/solid-shapes', 'solid/chat-pane', 
+  'dbpedia/archivo', 'NLeSC/fairdatapoint', 'FAIRDataTeam/FAIRDataPoint']
 
 SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
 SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'
@@ -70,7 +71,7 @@ def generate_github_file_url(repo_url, filepath, branch):
 
 def process_file_object(file_object, repo_url, branch):
   # If the object is a RDF file, we read it with rdflib
-  if file_object["path"].endswith('.ttl') or file_object["path"].endswith('.rdf') or file_object["path"].endswith('.nt') or file_object["path"].endswith('.nq') or file_object["path"].endswith('.trig'):
+  if file_object["path"].endswith('.ttl') or file_object["path"].endswith('.rdf') or file_object["path"].endswith('.nt') or file_object["path"].endswith('.nq') or file_object["path"].endswith('.trig') or file_object["path"].endswith('.shacl'):
     if file_object["object"]["text"]:
       github_file_url = generate_github_file_url(repo_url, urllib.parse.quote_plus(file_object["path"]), branch)
       print(file_object["path"])
