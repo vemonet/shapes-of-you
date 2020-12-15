@@ -81,14 +81,9 @@ def process_file_object(file_object, repo_url, branch):
         g.parse(data=file_object["object"]["text"], format="ttl")
       except:
         try:
-          # TODO: RDF/XML parsing seems to fail all the time
-          # RDF tooling is so bad the only lib on Python cant even parse XML
           rdf_string = file_object["object"]["text"]
-          # rdf_string = file_object["object"]["text"].replace('<?xml version="1.0" encoding="UTF-8"?>', '')
-          print(rdf_string[:200])
           g.parse(data=rdf_string)
           # g.parse(data=rdf_string, format="xml")
-          # g.parse(StringIO.StringIO(rdf_string), format="xml")
         except Exception as e:
           with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
             f.write('File: ' + github_file_url + "\n\n"

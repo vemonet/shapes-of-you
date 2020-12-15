@@ -1,7 +1,11 @@
 w3c/data-shapes
+w3c/shacl
 SEMICeu/dcat-ap_shacl
 labra/solid-shapes
 solid/chat-pane
 dbpedia/archivo
 NLeSC/fairdatapoint
 FAIRDataTeam/FAIRDataPoint
+neo4j-labs/neosemantics
+factsmission/dcat-ap-ch-shacl
+INCF/neuroshapes

@@ -2,11 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
+// import { data } from "@solid/query-ldflex";
+import data from "@solid/query-ldflex";
 
 import SearchIcon from '@material-ui/icons/Search';
 import axios from 'axios';
 
-import { LoggedIn, LoggedOut, Value } from '@solid/react';
+import { LoggedIn, LoggedOut, Value, useWebId } from '@solid/react';
 
 // import {newEngine} from '@comunica/actor-init-sparql';
 // import {ActorInitSparql} from '@comunica/actor-init-sparql/lib/ActorInitSparql-browser';
@@ -46,6 +48,7 @@ export default function ShapeRegistry() {
   const classes = useStyles();
   
   const [state, setState] = React.useState({
+    webid: '',
     projects_list: [],
     search: '',
     repositories_hash: {},
@@ -64,14 +67,45 @@ export default function ShapeRegistry() {
   const pluralize = (count: any, noun: string, suffix = 's') =>
     `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
 
+
+  // function createEmptyDocument() {
+  //   // const location = "/public/shapes-of-you/preferences.ttl";
+  //   const webId = useWebId();
+  //   // console.log("webId!!");
+  //   // console.log(webId);
+  //   // return data[webId + location].put();
+  // }
+
+  async function WebIdStatus() {
+    updateState({webid: useWebId()})
+    // const webId = useWebId();
+    // .replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
+    // const location = webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
+    // return data[webId + location].put();
+    return <span>Preferences stored at {webId}.</span>;
+  }
+
+  async function createEmptyDocument(location) {
+    // webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
+    return data[location].put();
+  }
+  
+
   // componentDidMount: Query SPARQL endpoint to get the projects infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
     console.log(endpointToQuery);
+    // WebIdStatus()
+    // updateState({webid: useWebId()})
 
     // Check SOLID pod for a shapes preference file
     // https://github.com/solid/react-components/blob/master/demo/app.jsx
     // https://solid.github.io/react-components/
+    // WebIdStatus();
+
+    // const webId = useWebId();
+    // console.log("webId!!");
+    // console.log(webId);
 
     // Query directly using Axios
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(getShapesQuery))
@@ -117,7 +151,7 @@ export default function ShapeRegistry() {
       })
 
     // Get repositories and their files counts
-    let repositories_hash = {}
+    let repositories_hash: any = {}
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(countRepositoriesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
@@ -181,6 +215,7 @@ export default function ShapeRegistry() {
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
           Soon you will be able to bookmark your favourites Shapes using your SOLID account! 🔖
         </Typography>
+        {/* <WebIdStatus/> */}
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
