@@ -274,11 +274,11 @@ export default function ShapeRegistry() {
           <Typography variant="h6">
             Shapes file:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>&nbsp;&nbsp;
+            <LoggedIn>
+              <Like object={project.shapeFileUri}>the Shape</Like>
+            </LoggedIn>
           </Typography>
           {/* <SolidStar object={project.shapeFileUri}>Star</SolidStar> */}
-          <LoggedIn>
-            <Like object={project.shapeFileUri}>the Shape</Like>
-          </LoggedIn>
           <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
             In repository:&nbsp;
             <a href={project.repository} className={classes.link}>
