@@ -10,6 +10,9 @@ import axios from 'axios';
 
 import { LoggedIn, LoggedOut, Value, useWebId } from '@solid/react';
 
+import { Like } from '@solid/react';
+// import SolidStar from "./SolidStar";
+
 // import {newEngine} from '@comunica/actor-init-sparql';
 // import {ActorInitSparql} from '@comunica/actor-init-sparql/lib/ActorInitSparql-browser';
 // import {IQueryOptions, newEngineDynamicArged} from "@comunica/actor-init-sparql/lib/QueryDynamic";
@@ -272,6 +275,10 @@ export default function ShapeRegistry() {
             Shapes file:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>&nbsp;&nbsp;
           </Typography>
+          {/* <SolidStar object={project.shapeFileUri}>Star</SolidStar> */}
+          <LoggedIn>
+            <Like object={project.shapeFileUri}>the Shape</Like>
+          </LoggedIn>
           <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
             In repository:&nbsp;
             <a href={project.repository} className={classes.link}>
