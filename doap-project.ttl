@@ -1,0 +1,29 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix asf: <http://projects.apache.org/ns/asfext#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+
+<https://w3id.org/um/ids/projects#shapes-of-you>
+  a doap:Project ;
+  doap:name "Shapes of you" ;
+  doap:description '''A registry of SHACL Shapes indexed from GitHub repositories using its GraphQL API.''' ;
+  bibo:status "Active" ;
+
+  doap:programming-language "TypeScript", "Python" ;
+  doap:license <https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/LICENSE> ;
+  doap:bug-database <https://github.com/MaastrichtU-IDS/shapes-of-you/issues> ;
+  doap:homepage <https://maastrichtu-ids.github.io/shapes-of-you> ;
+  
+  
+  doap:service-endpoint <https://graphdb.dumontierlab.com/repositories/shapes-registry> ;
+  
+  doap:category "Development" ;
+  doap:repository [
+    a doap:GitRepository ;
+    doap:location <https://github.com/MaastrichtU-IDS/shapes-of-you> ;
+  ] ;
+  doap:maintainer [
+    a foaf:Person ;
+    foaf:name "Vincent Emonet" ;
+    foaf:mbox <mailto:vincent.emonet@maastrichtuniversity.nl>
+  ] .
