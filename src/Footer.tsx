@@ -33,7 +33,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <a className={classes.darkLink} target="_blank"
+      <a className={classes.darkLink} target="_blank" rel="noopener noreferrer"
       href="https://maastrichtuniversity.nl/ids">
         Institute of Data Science at Maastricht University
       </a>{' '}
@@ -68,7 +68,7 @@ export default function Footer() {
         <Container maxWidth="md" style={{textAlign: 'center'}}>
           <Typography variant="body2" >
             This website is licensed under the&nbsp;
-            <a className={classes.whiteLink} target="_blank"
+            <a className={classes.whiteLink} target="_blank" rel="noopener noreferrer"
             href="https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/LICENSE">
               MIT license
             </a>
