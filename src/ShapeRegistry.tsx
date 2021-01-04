@@ -233,9 +233,11 @@ export default function ShapeRegistry() {
       <Typography variant="h5" style={{marginTop: '25px'}}>
         {Object.keys(state.repositories_hash).length} Shapes repositories
       </Typography>
+
+      {/* Grid of github repo with shapes */}
       <Grid container spacing={2} style={{textAlign: 'center', marginTop: '10px'}}>
         {Object.keys(state.repositories_hash).map(function(repo: any){
-          return <Grid item xs={6} key={repo}>
+          return <Grid item xs={12} md={6} key={repo}>
               <Paper elevation={3} style={{padding: '15px'}}>
                 {/* Using https://github.com/nwtgck/gh-card */}
                 <a href={repo} key={repo} >
