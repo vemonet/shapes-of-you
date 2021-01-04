@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shapes-of-you/precache-manifest.d780df355c34bd6df7148d73506abe7f.js"
+  "/shapes-of-you/precache-manifest.59be3c125d220c5b4e83b01dbf9c2049.js"
 );
 
 workbox.skipWaiting();
