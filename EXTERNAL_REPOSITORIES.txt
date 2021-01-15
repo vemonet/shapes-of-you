@@ -22,6 +22,14 @@ Kapranov/test_shacl
 jwchoi/Shape4RDB2RDF
 JohannesLipp/ShaclPlayground
 cjc121703/ShaclValidation
-HW-SWeL/ShEx-validator
+shexSpec/schemas
+egonw/shexWorkingBio
 geneontology/go-shapes
 cmungall/obo-shapes
+biotea/validation-shapes-bioschemas
+IC-FOODS/FoodShapes
+ruby-rdf/shex
+HW-SWeL/ShEx-validator
+rgmprabodha/Internship_Testing_Projects
+ericprud/ShExDemo
+shexSpec/schemas
