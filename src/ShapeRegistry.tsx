@@ -199,6 +199,7 @@ export default function ShapeRegistry() {
       return (project.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
         || project.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
         || project.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+        || project.repository.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
       )
     }
   })
