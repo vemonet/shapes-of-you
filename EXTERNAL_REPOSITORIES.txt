@@ -9,3 +9,17 @@ FAIRDataTeam/FAIRDataPoint
 neo4j-labs/neosemantics
 factsmission/dcat-ap-ch-shacl
 INCF/neuroshapes
+BlueBrain/nexus
+BlueBrain/nexus-prov
+BlueBrain/nexus-forge
+pfps/shacl
+AKSW/RDFUnit
+ruby-rdf/shacl
+eclipse/rdf4j
+zazuko/rdf-validate-shacl
+fekaputra/shacl-plugin
+skemu/shacl-training
+Kapranov/test_shacl
+jwchoi/Shape4RDB2RDF
+JohannesLipp/ShaclPlayground
+cjc121703/ShaclValidation

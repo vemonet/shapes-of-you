@@ -1,0 +1,4 @@
+https://github.com/geneontology/go-shapes
+https://github.com/cmungall/obo-shapes
+https://github.com/HW-SWeL/ShEx-validator
+
