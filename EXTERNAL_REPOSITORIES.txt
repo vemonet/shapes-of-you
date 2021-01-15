@@ -22,7 +22,6 @@ Kapranov/test_shacl
 jwchoi/Shape4RDB2RDF
 JohannesLipp/ShaclPlayground
 cjc121703/ShaclValidation
-shexSpec/schemas
 egonw/shexWorkingBio
 geneontology/go-shapes
 cmungall/obo-shapes
@@ -33,6 +32,11 @@ HW-SWeL/ShEx-validator
 rgmprabodha/Internship_Testing_Projects
 ericprud/ShExDemo
 shexSpec/schemas
+shexSpec/spec
+shexSpec/examples
+hsolbrig/PyShEx
+labra/ShExcala
+iovka/shex-java
 weso/umlShaclex
 cursosLabra/shexShacl
 KnowledgeCaptureAndDiscovery/ShapeValidation
