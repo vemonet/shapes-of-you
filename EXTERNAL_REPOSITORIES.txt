@@ -9,3 +9,9 @@ FAIRDataTeam/FAIRDataPoint
 neo4j-labs/neosemantics
 factsmission/dcat-ap-ch-shacl
 INCF/neuroshapes
+BlueBrain/nexus
+BlueBrain/nexus-prov
+BlueBrain/nexus-forge
+pfps/shacl
+AKSW/RDFUnit
+ruby-rdf/shacl
