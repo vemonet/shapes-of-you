@@ -223,7 +223,7 @@ export default function ShapeRegistry() {
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
-          Your SHACL Shapes registry
+          Your SHACL & ShEx Shapes registry
         </Typography>
       </LoggedOut>
 
