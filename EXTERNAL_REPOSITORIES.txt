@@ -18,3 +18,10 @@ ruby-rdf/shacl
 zazuko/rdf-validate-shacl
 fekaputra/shacl-plugin
 skemu/shacl-training
+Kapranov/test_shacl
+jwchoi/Shape4RDB2RDF
+JohannesLipp/ShaclPlayground
+cjc121703/ShaclValidation
+HW-SWeL/ShEx-validator
+geneontology/go-shapes
+cmungall/obo-shapes

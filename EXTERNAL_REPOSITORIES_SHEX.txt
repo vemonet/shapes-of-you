@@ -1,8 +1,1 @@
 eclipse/rdf4j
-Kapranov/test_shacl
-jwchoi/Shape4RDB2RDF
-JohannesLipp/ShaclPlayground
-cjc121703/ShaclValidation
-HW-SWeL/ShEx-validator
-geneontology/go-shapes
-cmungall/obo-shapes
