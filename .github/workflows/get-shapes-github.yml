@@ -12,8 +12,8 @@ on:
   push:
     branches: [ main ]
     paths:
-    - '.github/workflows/get-github-data.yml'
-    - 'get_github_data/query_graphql.py'
+    - '.github/workflows/get-shapes-github.yml'
+    - 'get_github_data/'
     - 'EXTERNAL_REPOSITORIES.txt'
 
 jobs:
