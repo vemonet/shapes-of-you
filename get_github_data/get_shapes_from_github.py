@@ -162,44 +162,6 @@ query {
           defaultBranchRef {
             name
           }
-          object(expression: "HEAD:") {
-            ... on Blob {
-              text
-            }
-            ... on Tree{
-              entries {
-              name
-              path
-              object {
-                ... on Blob {
-                  text
-                }
-                ... on Tree {
-                entries {
-                  name
-                  path
-                  object {
-                    ... on Blob {
-                      text
-                    }
-                    ... on Tree {
-                    entries {
-                      name
-                      path
-                      object {
-                        ... on Blob {
-                          text
-                        }
-                      }
-                    }
-                    }
-                    }
-                  }
-                  }
-                }
-                }
-            }
-          }
         }
       }
     }
@@ -343,66 +305,16 @@ def get_extra_graphql_query(repo):
   owner=repo.split('/')[0]
   repo_name=repo.split('/')[1]
   return '''query {
-	repository(name:"''' + repo_name + '''", owner:"''' + owner + '''"){
-    url
-    shortDescriptionHTML
-    name
-    description
-    defaultBranchRef {
+    repository(name:"''' + repo_name + '''", owner:"''' + owner + '''"){
+      url
+      shortDescriptionHTML
       name
-    }
-    object(expression: "HEAD:") {
-      ... on Blob {
-        text
-      }
-      ... on Tree{
-        entries {
+      description
+      defaultBranchRef {
         name
-        path
-        object {
-          ... on Blob {
-            text
-          }
-          ... on Tree {
-          entries {
-            name
-            path
-            object {
-              ... on Blob {
-                text
-              }
-              ... on Tree {
-              entries {
-                name
-                path
-                object {
-                  ... on Blob {
-                    text
-                  }
-                  ... on Tree {
-                  entries {
-                    name
-                    path
-                    object {
-                      ... on Blob {
-                        text
-                      }
-                    }
-                  }
-                  }
-                }
-              }
-              }
-              }
-            }
-            }
-          }
-          }
       }
     }
-  }
-}
-  '''
+  }'''
 
 def fetch_extra_shape_files(oauth_token, shapes_graph):
   """Fetch additional Shapes files from a list of GitHub repos
