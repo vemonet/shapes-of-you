@@ -88,7 +88,7 @@ export default function ShapeRegistry() {
     return <span>Preferences stored at {webId}.</span>;
   }
 
-  async function createEmptyDocument(location) {
+  async function createEmptyDocument(location: any) {
     // webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
     return data[location].put();
   }
