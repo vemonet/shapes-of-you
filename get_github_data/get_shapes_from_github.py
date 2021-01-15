@@ -185,89 +185,141 @@ def get_files(extensions):
 #         f.write('File: ' + github_file_url + "\n\n"
 #             + 'In repository: ' + repo_url + "\n> " 
 #             + str(e) + "\n\n---\n")
+def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, branch):
+    relative_filepath = str(rdf_file_path)[12:]
+    github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+    g = Graph()
+    if shape_format == 'shex':
+      # no parsing possible for shex
+      file_uri = URIRef(github_file_url)
+      shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+      shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+      shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+      shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('ShEx model')))
+    else:
+      try:
+          g.parse(str(rdf_file_path.absolute()), format=shape_format)
+      except Exception as e:
+          print('No parser worked for the file ' + github_file_url)
+          if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
+              with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+                f.write('File: ' + github_file_url + "\n\n"
+                    + 'In repository: ' + repo_url + "\n> " 
+                    + str(e) + "\n\n---\n")
+
+      for shape in g.subjects(RDF.type, SH.NodeShape):
+          file_uri = URIRef(github_file_url)
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shape_label = shape
+          for label in g.objects(shape, RDFS.label):
+              # Try to get the label of the shape
+              shape_label = label
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+
+    return shapes_graph
 
 def clone_and_process_repo(shapes_graph, repo_url, branch):
     os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
     # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
 
+    for rdf_file_path in get_files(['*.shex']):
+        shapes_graph = process_shapes_file('shex', shapes_graph, rdf_file_path, repo_url, branch)
+
     for rdf_file_path in get_files(['*.trig', '*.n3']):
-        relative_filepath = str(rdf_file_path)[12:]
-        github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
-        g = Graph()
-        try:
-            g.parse(str(rdf_file_path.absolute()), format="n3")
-        except Exception as e:
-            print('No parser worked for the file ' + github_file_url)
-            # if not str(rdf_file_path).endswith('.json') or not str(rdf_file_path).endswith('.xml'):
-            if not str(rdf_file_path).endswith('.xml'):
-              with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
-                f.write('File: ' + github_file_url + "\n\n"
-                    + 'In repository: ' + repo_url + "\n> " 
-                    + str(e) + "\n\n---\n")
+        shapes_graph = process_shapes_file('n3', shapes_graph, rdf_file_path, repo_url, branch)
+        # relative_filepath = str(rdf_file_path)[12:]
+        # github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+        # g = Graph()
+        # try:
+        #     g.parse(str(rdf_file_path.absolute()), format="n3")
+        # except Exception as e:
+        #     print('No parser worked for the file ' + github_file_url)
+        #     # if not str(rdf_file_path).endswith('.json') or not str(rdf_file_path).endswith('.xml'):
+        #     if not str(rdf_file_path).endswith('.xml'):
+        #       with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+        #         f.write('File: ' + github_file_url + "\n\n"
+        #             + 'In repository: ' + repo_url + "\n> " 
+        #             + str(e) + "\n\n---\n")
 
     for rdf_file_path in get_files(['*.json', '*.jsonld', '*.json-ld']):
-        print(rdf_file_path)
-        relative_filepath = str(rdf_file_path)[12:]
-        github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
-        g = Graph()
-        try:
-            g.parse(str(rdf_file_path.absolute()), format="json-ld")
-        except Exception as e:
-            if not str(rdf_file_path).endswith('.json'):
-              with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
-                f.write('File: ' + github_file_url + "\n\n"
-                    + 'In repository: ' + repo_url + "\n> " 
-                    + str(e) + "\n\n---\n")
+        shapes_graph = process_shapes_file('json-ld', shapes_graph, rdf_file_path, repo_url, branch)
+        # print(rdf_file_path)
+        # relative_filepath = str(rdf_file_path)[12:]
+        # github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+        # g = Graph()
+        # try:
+        #     g.parse(str(rdf_file_path.absolute()), format="json-ld")
+        # except Exception as e:
+        #     if not str(rdf_file_path).endswith('.json'):
+        #       with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+        #         f.write('File: ' + github_file_url + "\n\n"
+        #             + 'In repository: ' + repo_url + "\n> " 
+        #             + str(e) + "\n\n---\n")
 
     for rdf_file_path in get_files(['*.xml', '*.rdf']):
-        relative_filepath = str(rdf_file_path)[12:]
-        github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
-        g = Graph()
-        try:
-            g.parse(str(rdf_file_path.absolute()), format="xml")
-        except Exception as e:
-            print('No parser worked for the file ' + github_file_url)
-            # if not str(rdf_file_path).endswith('.json') or not str(rdf_file_path).endswith('.xml'):
-            if not str(rdf_file_path).endswith('.xml'):
-                with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
-                  f.write('File: ' + github_file_url + "\n\n"
-                      + 'In repository: ' + repo_url + "\n> " 
-                      + str(e) + "\n\n---\n")
+        shapes_graph = process_shapes_file('xml', shapes_graph, rdf_file_path, repo_url, branch)
+        # relative_filepath = str(rdf_file_path)[12:]
+        # github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+        # g = Graph()
+        # try:
+        #     g.parse(str(rdf_file_path.absolute()), format="xml")
+        # except Exception as e:
+        #     print('No parser worked for the file ' + github_file_url)
+        #     # if not str(rdf_file_path).endswith('.json') or not str(rdf_file_path).endswith('.xml'):
+        #     if not str(rdf_file_path).endswith('.xml'):
+        #         with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+        #           f.write('File: ' + github_file_url + "\n\n"
+        #               + 'In repository: ' + repo_url + "\n> " 
+        #               + str(e) + "\n\n---\n")
+        # for shape in g.subjects(RDF.type, SH.NodeShape):
+        #     file_uri = URIRef(github_file_url)
+        #     shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+        #     shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+        #     shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+        #     shape_label = shape
+        #     for label in g.objects(shape, RDFS.label):
+        #         # Try to get the label of the shape
+        #         shape_label = label
+        #     shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
     for rdf_file_path in get_files(['*.ttl', '*.shacl']):
-        relative_filepath = str(rdf_file_path)[12:]
-        github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
-        g = Graph()
-        try:
-            g.parse(str(rdf_file_path.absolute()), format="ttl")
-        except Exception as e:
-            with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
-              f.write('File: ' + github_file_url + "\n\n"
-                  + 'In repository: ' + repo_url + "\n> " 
-                  + str(e) + "\n\n---\n")
+        shapes_graph = process_shapes_file('ttl', shapes_graph, rdf_file_path, repo_url, branch)
+        # relative_filepath = str(rdf_file_path)[12:]
+        # github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+        # g = Graph()
+        # try:
+        #     g.parse(str(rdf_file_path.absolute()), format="ttl")
+        # except Exception as e:
+        #     with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+        #       f.write('File: ' + github_file_url + "\n\n"
+        #           + 'In repository: ' + repo_url + "\n> " 
+        #           + str(e) + "\n\n---\n")
 
     for rdf_file_path in get_files(['*.nt']):
-        relative_filepath = str(rdf_file_path)[12:]
-        github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
-        g = Graph()
-        try:
-            g.parse(str(rdf_file_path.absolute()), format="nt")
-        except Exception as e:
-            with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
-              f.write('File: ' + github_file_url + "\n\n"
-                  + 'In repository: ' + repo_url + "\n> " 
-                  + str(e) + "\n\n---\n")
+        shapes_graph = process_shapes_file('nt', shapes_graph, rdf_file_path, repo_url, branch)
+        # relative_filepath = str(rdf_file_path)[12:]
+        # github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+        # g = Graph()
+        # try:
+        #     g.parse(str(rdf_file_path.absolute()), format="nt")
+        # except Exception as e:
+        #     with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+        #       f.write('File: ' + github_file_url + "\n\n"
+        #           + 'In repository: ' + repo_url + "\n> " 
+        #           + str(e) + "\n\n---\n")
         
-        for shape in g.subjects(RDF.type, SH.NodeShape):
-            file_uri = URIRef(github_file_url)
-            shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
-            shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-            shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
-            shape_label = shape
-            for label in g.objects(shape, RDFS.label):
-                # Try to get the label of the shape
-                shape_label = label
-            shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+        # for shape in g.subjects(RDF.type, SH.NodeShape):
+        #     file_uri = URIRef(github_file_url)
+        #     shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+        #     shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+        #     shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+        #     shape_label = shape
+        #     for label in g.objects(shape, RDFS.label):
+        #         # Try to get the label of the shape
+        #         shape_label = label
+        #     shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
         
     shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
     return shapes_graph
