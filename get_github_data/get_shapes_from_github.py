@@ -220,8 +220,7 @@ def clone_and_process_repo(shapes_graph, repo_url, branch):
     os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
     # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
 
-    for rdf_file_path in get_files(['*.ttl', '*.rdf', '*.xml', '*.nt', '*.nq', '*.trig', '*.shacl', '*.jsonld', '*.json-ld']):
-        # , '*.json'
+    for rdf_file_path in get_files(['*.xml' , '*.json', '*.ttl', '*.rdf', '*.nt', '*.nq', '*.trig', '*.shacl', '*.jsonld', '*.json-ld']):
         print(rdf_file_path)
         relative_filepath = str(rdf_file_path)[12:]
         github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
@@ -241,7 +240,8 @@ def clone_and_process_repo(shapes_graph, repo_url, branch):
                     # print('no jsonld')
                 except Exception as e:
                     print('No parser worked for the file ' + github_file_url)
-                    if not str(rdf_file_path).endswith('.json'):
+                    # if not str(rdf_file_path).endswith('.json') or not str(rdf_file_path).endswith('.xml'):
+                    if not str(rdf_file_path).endswith('.xml'):
                       with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
                         f.write('File: ' + github_file_url + "\n\n"
                             + 'In repository: ' + repo_url + "\n> " 
