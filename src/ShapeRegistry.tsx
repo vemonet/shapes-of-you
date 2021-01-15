@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles,  useTheme } from '@material-ui/core/styles';
 import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
 // import { data } from "@solid/query-ldflex";
@@ -49,6 +49,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function ShapeRegistry() {
   const classes = useStyles();
+  const theme = useTheme();
   
   const [state, setState] = React.useState({
     webid: '',
@@ -199,7 +200,7 @@ export default function ShapeRegistry() {
       return (project.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
         || project.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
         || project.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-        || project.repository.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+        || project.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
       )
     }
   })
@@ -231,13 +232,18 @@ export default function ShapeRegistry() {
         Add the tag <code>shacl-shapes</code> to your GitHub repository, we will automatically index all <code>.ttl</code> and <code>.rdf</code> files containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
       </Typography>
 
+      <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub+GraphQL+API%22">
+        <img src="https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub%20GraphQL%20API/badge.svg" 
+        style={{marginTop: theme.spacing(2)}} />
+      </a>
+
       <Typography variant="h5" style={{marginTop: '25px'}}>
         {Object.keys(state.repositories_hash).length} Shapes repositories
       </Typography>
 
       {/* Grid of github repo with shapes */}
       <Grid container spacing={2} style={{textAlign: 'center', marginTop: '10px'}}>
-        {Object.keys(state.repositories_hash).map(function(repo: any){
+        {Object.keys(state.repositories_hash).map(function(repo: any) {
           return <Grid item xs={12} md={6} key={repo}>
               <Paper elevation={3} style={{padding: '15px'}}>
                 {/* Using https://github.com/nwtgck/gh-card */}
