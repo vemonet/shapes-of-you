@@ -33,3 +33,6 @@ HW-SWeL/ShEx-validator
 rgmprabodha/Internship_Testing_Projects
 ericprud/ShExDemo
 shexSpec/schemas
+weso/umlShaclex
+cursosLabra/shexShacl
+KnowledgeCaptureAndDiscovery/ShapeValidation
