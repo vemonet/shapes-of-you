@@ -1,7 +1,4 @@
 eclipse/rdf4j
-zazuko/rdf-validate-shacl
-fekaputra/shacl-plugin
-skemu/shacl-training
 Kapranov/test_shacl
 jwchoi/Shape4RDB2RDF
 JohannesLipp/ShaclPlayground

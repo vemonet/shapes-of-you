@@ -15,3 +15,6 @@ BlueBrain/nexus-forge
 pfps/shacl
 AKSW/RDFUnit
 ruby-rdf/shacl
+zazuko/rdf-validate-shacl
+fekaputra/shacl-plugin
+skemu/shacl-training
