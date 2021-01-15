@@ -2,8 +2,10 @@ from logging import exception
 from python_graphql_client import GraphqlClient
 import pathlib
 import os
+import shutil
 import urllib
-from rdflib import Graph, Literal, RDF, URIRef, Namespace
+from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
+from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID
 from SPARQLWrapper import SPARQLWrapper, POST, JSON
 # import traceback
@@ -29,9 +31,9 @@ def main():
     f.write('## Fails loading files to `rdflib`\n' +
       '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
-  fetch_shape_files(TOKEN)
+  shapes_graph = fetch_shape_files(TOKEN)
 
-  fetch_extra_shape_files(TOKEN)
+  fetch_extra_shape_files(TOKEN, shapes_graph)
 
   insert_graph_in_sparql_endpoint(shapes_graph)
 
@@ -63,54 +65,55 @@ def generate_github_file_url(repo_url, filepath, branch):
   So we need to build the file URL from the github repo URL + branch + file path
   """
   file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
-  file_url += '/' + branch + '/' + filepath
+  file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
   return file_url
 
 
-def process_file_object(file_object, repo_url, branch):
-  # If the object is a RDF file, we read it with rdflib
-  if file_object["path"].endswith('.ttl') or file_object["path"].endswith('.rdf') or file_object["path"].endswith('.nt') or file_object["path"].endswith('.nq') or file_object["path"].endswith('.trig') or file_object["path"].endswith('.shacl'):
-    if file_object["object"]["text"]:
-      github_file_url = generate_github_file_url(repo_url, urllib.parse.quote_plus(file_object["path"]), branch)
-      print(file_object["path"])
-      print(github_file_url)
-      # print(file_object["object"]["text"])
+# def process_file_object(file_object, repo_url, branch):
+#   # If the object is a RDF file, we read it with rdflib
+#   if file_object["path"].endswith('.ttl') or file_object["path"].endswith('.rdf') or file_object["path"].endswith('.nt') or file_object["path"].endswith('.nq') or file_object["path"].endswith('.trig') or file_object["path"].endswith('.shacl'):
+#     if file_object["object"]["text"]:
+#       # Build the file download URL (githubusercontent)
+#       github_file_url = generate_github_file_url(repo_url, urllib.parse.quote_plus(file_object["path"]), branch)
+#       print(file_object["path"])
+#       print(github_file_url)
+#       # print(file_object["object"]["text"])
 
-      g = Graph()
-      try:
-        g.parse(data=file_object["object"]["text"], format="ttl")
-      except:
-        try:
-          rdf_string = file_object["object"]["text"]
-          g.parse(data=rdf_string)
-          # g.parse(data=rdf_string, format="xml")
-        except Exception as e:
-          with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
-            f.write('File: ' + github_file_url + "\n\n"
-                + 'In repository: ' + repo_url + "\n> " 
-                + str(e) + "\n\n---\n")
-            # f.write(github_file_url + "\n```python\n" 
-            #     + str(traceback.format_exc()) + "\n```\n\n\n")
-          print('No parser worked for the file ' + github_file_url)
+#       g = Graph()
+#       try:
+#         g.parse(data=file_object["object"]["text"], format="ttl")
+#       except:
+#         try:
+#           rdf_string = file_object["object"]["text"]
+#           g.parse(data=rdf_string)
+#           # g.parse(data=rdf_string, format="xml")
+#         except Exception as e:
+#           with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+#             f.write('File: ' + github_file_url + "\n\n"
+#                 + 'In repository: ' + repo_url + "\n> " 
+#                 + str(e) + "\n\n---\n")
+#             # f.write(github_file_url + "\n```python\n" 
+#             #     + str(traceback.format_exc()) + "\n```\n\n\n")
+#           print('No parser worked for the file ' + github_file_url)
       
-      # Check if sh:ShapeNode present
-      for shape in g.subjects(RDF.type, SH.NodeShape):
-        file_uri = URIRef(github_file_url)
-        shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
-        shapes_graph.add((file_uri, RDFS.label, Literal(file_object["name"])))
-        shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
-        shape_label = shape
-        for label in g.objects(shape, RDFS.label):
-          # Try to get the label of the shape
-          shape_label = label
-        shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
-        # TODO: get more infos about the shapes?
-        # e.g. owl:Ontology metadata https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/dev%2Fxslt%2Fdcat-ap.shacl.rdf
+#       # Check if sh:ShapeNode present
+#       for shape in g.subjects(RDF.type, SH.NodeShape):
+#         file_uri = URIRef(github_file_url)
+#         shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+#         shapes_graph.add((file_uri, RDFS.label, Literal(file_object["name"])))
+#         shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+#         shape_label = shape
+#         for label in g.objects(shape, RDFS.label):
+#           # Try to get the label of the shape
+#           shape_label = label
+#         shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+#         # TODO: get more infos about the shapes?
+#         # e.g. owl:Ontology metadata https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/dev%2Fxslt%2Fdcat-ap.shacl.rdf
   
-  # If the object is a folder we process it recusively
-  if file_object["object"] and "entries" in file_object["object"]:
-    for entries in file_object["object"]["entries"]:
-      process_file_object(entries, repo_url, branch)
+#   # If the object is a folder we process it recusively
+#   if file_object["object"] and "entries" in file_object["object"]:
+#     for entries in file_object["object"]["entries"]:
+#       process_file_object(entries, repo_url, branch)
 
   # GitHub GraphQL API output:
   # {
@@ -206,11 +209,63 @@ query {
         "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
     )
 
+def get_files(extensions):
+    all_files = []
+    for ext in extensions:
+        all_files.extend(pathlib.Path('cloned_repo').rglob(ext))
+    return all_files
+
+
+def clone_and_process_repo(shapes_graph, repo_url, branch):
+    os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
+    # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
+
+    for rdf_file_path in get_files(['*.ttl', '*.rdf', '*.xml', '*.nt', '*.nq', '*.trig', '*.shacl', '*.jsonld', '*.json-ld']):
+        # , '*.json'
+        print(rdf_file_path)
+        relative_filepath = str(rdf_file_path)[12:]
+        github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+        g = Graph()
+        try:
+            g.parse(str(rdf_file_path.absolute()), format="ttl")
+        except:
+            try:
+                # format="xml"
+                g.parse(str(rdf_file_path.absolute()))
+                print('XML WORKED')
+                # open file and read it
+                # g.parse(data=file_object["object"]["text"], format="ttl")
+            except:
+                try:
+                    g.parse(str(rdf_file_path.absolute()), format="json-ld")
+                    # print('no jsonld')
+                except Exception as e:
+                    print('No parser worked for the file ' + github_file_url)
+                    if not str(rdf_file_path).endswith('.json'):
+                      with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+                        f.write('File: ' + github_file_url + "\n\n"
+                            + 'In repository: ' + repo_url + "\n> " 
+                            + str(e) + "\n\n---\n")
+        
+        for shape in g.subjects(RDF.type, SH.NodeShape):
+            file_uri = URIRef(github_file_url)
+            shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+            shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+            shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+            shape_label = shape
+            for label in g.objects(shape, RDFS.label):
+                # Try to get the label of the shape
+                shape_label = label
+            shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+        
+    shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
+    return shapes_graph
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_shape_files(oauth_token):
     has_next_page = True
     after_cursor = None
+    shapes_graph = Graph()
 
     while has_next_page:
         data = client.execute(
@@ -220,16 +275,17 @@ def fetch_shape_files(oauth_token):
         # print(json.dumps(data, indent=4))
         for repository in data["data"]["search"]["repositories"]:
             repo_json = repository["repo"]
+            repo_url = repo_json["url"]
             branch = repo_json['defaultBranchRef']['name']
-            print(repo_json["url"])
-            if repo_json["object"]:
-              for entries in repo_json["object"]["entries"]:
-                process_file_object(entries, repo_json["url"], branch)
+            print(repo_url)
+            shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch)
                 
         has_next_page = data["data"]["search"]["pageInfo"][
             "hasNextPage"
         ]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+    
+    return shapes_graph
 
 
 def get_extra_graphql_query(repo):
@@ -299,7 +355,7 @@ def get_extra_graphql_query(repo):
 }
   '''
 
-def fetch_extra_shape_files(oauth_token):
+def fetch_extra_shape_files(oauth_token, shapes_graph):
   """Fetch additional Shapes files from a list of GitHub repos
   """
   print('extra_shapes_repositories')
@@ -313,13 +369,15 @@ def fetch_extra_shape_files(oauth_token):
     repo_json = data["data"]["repository"]
     try:
       branch = repo_json['defaultBranchRef']['name']
-      print(repo_json["url"])
-      if repo_json["object"]:
-        for entries in repo_json["object"]["entries"]:
-          process_file_object(entries, repo_json["url"], branch)
+      repo_url = repo_json["url"]
+      shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch)
+      # if repo_json["object"]:
+      #   for entries in repo_json["object"]["entries"]:
+      #     process_file_object(entries, repo_url, branch)
     except Exception as e:
-      print('FAILLL')
+      print('FAIL')
       print(e)
+  return shapes_graph
 
 
 if __name__ == "__main__":
@@ -335,7 +393,7 @@ if __name__ == "__main__":
 
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
-  global shapes_graph
-  shapes_graph = Graph()
+  # global shapes_graph
+  # shapes_graph = Graph()
 
   main()
