@@ -144,10 +144,10 @@ def generate_github_file_url(repo_url, filepath, branch):
 
 
 # Get all shapes for all repos with shacl-shapes tag
-def get_shapes_query(after_cursor=None):
+def get_shapes_query(github_topic, after_cursor=None):
     return """
 query {
-  search(query:"topic:shacl-shapes", type:REPOSITORY, last: 100, after:AFTER) {
+  search(query:"topic:""" + github_topic + """, type:REPOSITORY, last: 100, after:AFTER) {
     pageInfo {
       hasNextPage
       endCursor
@@ -260,27 +260,29 @@ def clone_and_process_repo(shapes_graph, repo_url, branch):
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_shape_files(oauth_token):
-    has_next_page = True
-    after_cursor = None
     shapes_graph = Graph()
+    topics = ['shacl-shapes', 'shex']
 
-    while has_next_page:
-        data = client.execute(
-            query=get_shapes_query(after_cursor),
-            headers={"Authorization": "Bearer {}".format(oauth_token)},
-        )
-        # print(json.dumps(data, indent=4))
-        for repository in data["data"]["search"]["repositories"]:
-            repo_json = repository["repo"]
-            repo_url = repo_json["url"]
-            branch = repo_json['defaultBranchRef']['name']
-            print(repo_url)
-            shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch)
-                
-        has_next_page = data["data"]["search"]["pageInfo"][
-            "hasNextPage"
-        ]
-        after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+    for github_topic in topics:
+      has_next_page = True
+      after_cursor = None
+      while has_next_page:
+          data = client.execute(
+              query=get_shapes_query(github_topic, after_cursor),
+              headers={"Authorization": "Bearer {}".format(oauth_token)},
+          )
+          # print(json.dumps(data, indent=4))
+          for repository in data["data"]["search"]["repositories"]:
+              repo_json = repository["repo"]
+              repo_url = repo_json["url"]
+              branch = repo_json['defaultBranchRef']['name']
+              print(repo_url)
+              shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch)
+                  
+          has_next_page = data["data"]["search"]["pageInfo"][
+              "hasNextPage"
+          ]
+          after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     
     return shapes_graph
 
