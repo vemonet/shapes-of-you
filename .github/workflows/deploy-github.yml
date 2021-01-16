@@ -4,7 +4,10 @@ on:
   push:
     branches: [ main ]
     paths:
-    - 'src/'
+    - 'src/*'
+    - 'package.json'
+    - 'App.tsx'
+    - 'App.css'
 
 jobs:
   deploy:
