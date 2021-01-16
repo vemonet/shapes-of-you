@@ -4,7 +4,7 @@
 
 This app regularly runs a python script to retrieve SHACL & ShEx Shapes from GitHub repositories. 
 
-1. We retrieve shapes from ShEx (`.shex`) and RDF files (`.ttl`, `.rdf`, `.jsonld`, `.trig`, `.nq`, etc) in GitHub repositories tagged with the topic `shacl-shapes` or included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt). 
+1. We retrieve shapes from ShEx (`.shex`) and RDF files (`.ttl`, `.rdf`, `.jsonld`, `.trig`, `.nq`, etc) in GitHub repositories tagged with the topics `shacl-shapes` or `shex`. Additional repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt)
 2. We check for the existence of a SHACL `sh:NodeShape` in each RDF files, and register all SHACL shapes described in each files.
 3. We publish the shapes files URL, and the shapes they contain in a public SPARQL endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
 4. You can now explore the existing shapes and easily retrieve their file in the web application: https://maastrichtu-ids.github.io/shapes-of-you

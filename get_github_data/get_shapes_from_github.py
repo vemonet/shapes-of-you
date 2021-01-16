@@ -147,7 +147,7 @@ def generate_github_file_url(repo_url, filepath, branch):
 def get_shapes_query(github_topic, after_cursor=None):
     return """
 query {
-  search(query:"topic:""" + github_topic + """, type:REPOSITORY, last: 100, after:AFTER) {
+  search(query:"topic:""" + github_topic + """", type:REPOSITORY, last: 100, after:AFTER) {
     pageInfo {
       hasNextPage
       endCursor
