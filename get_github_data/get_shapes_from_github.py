@@ -36,7 +36,7 @@ def main():
   fetch_extra_shape_files(TOKEN, shapes_graph)
 
   # insert_graph_in_sparql_endpoint(shapes_graph)
-  shapes_graph.serialize(root / '../shapes-of-you-rdf.ttl', format='turtle')
+  shapes_graph.serialize('shapes-of-you-rdf.ttl', format='turtle')
 
 
 def insert_graph_in_sparql_endpoint(g):
