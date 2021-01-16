@@ -38,15 +38,6 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install -r get_github_data/requirements.txt
-    
-    - name: Clear older graph in the triplestore
-      if: github.event.inputs.clear == 'true'
-      uses: vemonet/sparql-operations-action@v1
-      with:
-        query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
 
     - name: Query GitHub GraphQL API and populate triplestore with Python
       env:
@@ -61,3 +52,38 @@ jobs:
         name: failed-shapes-report
         path: FAILED_IMPORT_REPORT.md
 
+    - name: Upload RDF output 
+      uses: actions/upload-artifact@v1
+      with:
+        name: shapes-of-you-rdf
+        path: shapes-of-you-rdf.ttl
+
+    - name: Clear older graph in the triplestore
+      if: github.event.inputs.clear == 'true'
+      uses: vemonet/sparql-operations-action@v1
+      with:
+        query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+
+    - name: Upload the RDF to the triplestore
+      uses: MaastrichtU-IDS/RdfUpload@master
+      with:
+        file: shapes-of-you-rdf.ttl
+        endpoint: https://graphdb.dumontierlab.com/repositories/ids-projects/statements
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+        graph: "https://w3id.org/um/ids/projects/graph"
+
+    # - uses: MaastrichtU-IDS/sparql-operations-action@v1
+    #   with:
+    #     operation: upload
+    #     file: shapes-of-you-rdf.ttl
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/ids-projects/statements
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     graph: "https://w3id.org/um/ids/projects/graph"
+    #     # inputvar: https://w3id.org/d2s/graph/geonames
+    #     # outputvar: https://w3id.org/d2s/metadata
+    #     # servicevar: http://localhost:7200/repositories/test-vincent
