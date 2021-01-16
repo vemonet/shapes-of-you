@@ -2,15 +2,13 @@ import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
 import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
-// import { data } from "@solid/query-ldflex";
-import data from "@solid/query-ldflex";
-
 import SearchIcon from '@material-ui/icons/Search';
 import axios from 'axios';
 
-import { LoggedIn, LoggedOut, Value, useWebId } from '@solid/react';
-
+import { LoggedIn, LoggedOut, Value, useWebId, useLDflexValue, useLDflexList } from '@solid/react';
 import { Like } from '@solid/react';
+import data from "@solid/query-ldflex";
+// import { data } from "@solid/query-ldflex";
 // import SolidStar from "./SolidStar";
 
 // import {newEngine} from '@comunica/actor-init-sparql';
@@ -50,6 +48,8 @@ const useStyles = makeStyles(theme => ({
 export default function ShapeRegistry() {
   const classes = useStyles();
   const theme = useTheme();
+  const webId = useWebId();
+  const solid_name = useLDflexValue('user.name') || 'unknown';
   
   const [state, setState] = React.useState({
     webid: '',
@@ -71,29 +71,6 @@ export default function ShapeRegistry() {
   const pluralize = (count: any, noun: string, suffix = 's') =>
     `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
 
-
-  // function createEmptyDocument() {
-  //   // const location = "/public/shapes-of-you/preferences.ttl";
-  //   const webId = useWebId();
-  //   // console.log("webId!!");
-  //   // console.log(webId);
-  //   // return data[webId + location].put();
-  // }
-
-  async function WebIdStatus() {
-    updateState({webid: useWebId()})
-    // const webId = useWebId();
-    // .replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
-    // const location = webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
-    // return data[webId + location].put();
-    return <span>Preferences stored at {webId}.</span>;
-  }
-
-  async function createEmptyDocument(location: any) {
-    // webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
-    return data[location].put();
-  }
-  
 
   // componentDidMount: Query SPARQL endpoint to get the projects infos
   React.useEffect(() => {
@@ -188,8 +165,22 @@ export default function ShapeRegistry() {
     //   });
     // });
 
-  }, [])
+    console.log('webId');
+    console.log(webId);
+    if (webId) {
+      createSolidFile(webId);
+    }
+
+  }, [webId])
   // This useless array needs to be added for React to understand he needs to use the state inside...
+
+  function createSolidFile(webId: string) {
+    console.log('In createSolidFile');
+    // const location = webId + "/public/shapes-of-you/preferences.ttl";
+    const location = webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
+    console.log('Try to create file ' + location);
+    return data[location].put();
+  }
 
   const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setState({...state, search: event.target.value})
@@ -215,12 +206,17 @@ export default function ShapeRegistry() {
       </Typography>
       <LoggedIn>
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
-          Welcome to your SHACL & Shex Shapes registry <Value src="user.name"/>!
+          Welcome to your SHACL & ShEx Shapes registry <Value src="user.name"/>!
         </Typography>
+        {/* <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+          {webId}
+        </Typography> */}
+        {/* <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+          {solid_name}
+        </Typography> */}
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
           Soon you will be able to bookmark your favourites Shapes using your SOLID account! 🔖
         </Typography>
-        {/* <WebIdStatus/> */}
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
@@ -247,9 +243,20 @@ export default function ShapeRegistry() {
           return <Grid item xs={12} md={6} key={repo}>
               <Paper elevation={3} style={{padding: '15px'}}>
                 {/* Using https://github.com/nwtgck/gh-card */}
-                <a href={repo} key={repo} >
+                {/* <a href={repo} key={repo} >
                   <img src={'https://gh-card.dev/repos/' + repo.replace('https://github.com/', '') + '.svg?fullname'} alt={repo} key={'img' + repo}/>
-                </a>
+                </a> */}
+                <Typography variant="h6">
+                  <b><a href={repo} className={classes.link}>📁 {repo.replace('https://github.com/', '')}</a></b>&nbsp;&nbsp;
+                </Typography>
+                {/* Add GitHub description */}
+                {/* <SolidStar object={project.shapeFileUri}>Star</SolidStar> */}
+                {/* <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
+                  In repository:&nbsp;
+                  <a href={project.repository} className={classes.link}>
+                    {project.repository}
+                  </a>
+                </Typography> */}
                 {/* Using https://github.com/lepture/github-cards */}
                 {/* <div className="github-card" 
                   data-user={repo.replace('https://github.com/', '').split('/')[0]}

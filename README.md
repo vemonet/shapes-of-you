@@ -91,6 +91,10 @@ python3 get_github_data/get_shapes_from_github.py
 
 > Try out the GitHub GraphQL API [here](https://developer.github.com/v4/explorer/).
 
+## Use SOLID pod
+
+Go to your SOLID pod `/public/activities` folder and update permissions (the lock icon)
+
 ## Contribute
 
 Contributions are welcome! See the [guidelines to contribute 👨‍💻](/CONTRIBUTING.md).
