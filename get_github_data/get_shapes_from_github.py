@@ -25,8 +25,8 @@ def main():
     f.write('## Fails loading files to `rdflib`\n' +
       '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
-  # shapes_graph = fetch_shape_files(TOKEN)
-  shapes_graph = Graph()
+  # shapes_graph = Graph()
+  shapes_graph = fetch_shape_files(TOKEN)
   fetch_extra_shape_files(TOKEN, shapes_graph)
 
   # insert_graph_in_sparql_endpoint(shapes_graph)
