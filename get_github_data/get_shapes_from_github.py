@@ -31,12 +31,34 @@ def main():
     f.write('## Fails loading files to `rdflib`\n' +
       '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
-  shapes_graph = fetch_shape_files(TOKEN)
-
+  # shapes_graph = fetch_shape_files(TOKEN)
+  shapes_graph = Graph()
   fetch_extra_shape_files(TOKEN, shapes_graph)
 
-  insert_graph_in_sparql_endpoint(shapes_graph)
+  # insert_graph_in_sparql_endpoint(shapes_graph)
+  shapes_graph.serialize('shapes-of-you-rdf.ttl', format='turtle')
 
+
+def insert_graph_in_sparql_endpoint(g):
+  """Insert rdflib graph in a Update SPARQL endpoint using SPARQLWrapper
+
+  :param g: rdflib graph to insert
+  :return: SPARQL update query result
+  """
+  # print(g.serialize(format='nt').decode('utf-8'))
+  sparql = SPARQLWrapper(SPARQL_ENDPOINT_UPDATE_URL)
+  sparql.setMethod(POST)
+  # sparql.setHTTPAuth(BASIC)
+  sparql.setCredentials(SPARQL_ENDPOINT_USERNAME, SPARQL_ENDPOINT_PASSWORD)
+  query = """INSERT DATA {{ GRAPH  <{graph}>
+  {{
+  {ntriples}
+  }}
+  }}
+  """.format(ntriples=g.serialize(format='nt').decode('utf-8'), graph=GRAPH_URI)
+
+  sparql.setQuery(query)
+  return sparql.query()
 
 def insert_graph_in_sparql_endpoint(g):
   """Insert rdflib graph in a Update SPARQL endpoint using SPARQLWrapper
