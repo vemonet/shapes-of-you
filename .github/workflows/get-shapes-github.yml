@@ -39,20 +39,20 @@ jobs:
       run: |
         python -m pip install -r get_github_data/requirements.txt
 
-    - name: Query GitHub GraphQL API and populate triplestore with Python
+    - name: Run Python script to query GitHub GraphQL API
       env:
         GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |-
         python get_github_data/get_shapes_from_github.py
 
-    - name: Upload failed shapes report
+    - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
         name: failed-shapes-report
         path: FAILED_IMPORT_REPORT.md
 
-    - name: Upload RDF output 
+    - name: Upload RDF output as artifact
       uses: actions/upload-artifact@v1
       with:
         name: shapes-of-you-rdf
@@ -67,7 +67,7 @@ jobs:
         user: ${{ secrets.GRAPHDB_USER }}
         password: ${{ secrets.GRAPHDB_PASSWORD }}
 
-    - name: Upload the RDF to the triplestore
+    - name: Upload RDF file to the triplestore
       uses: MaastrichtU-IDS/RdfUpload@master
       with:
         file: shapes-of-you-rdf.ttl
@@ -75,6 +75,15 @@ jobs:
         user: ${{ secrets.GRAPHDB_USER }}
         password: ${{ secrets.GRAPHDB_PASSWORD }}
         graph: "https://w3id.org/um/ids/shapes"
+
+    # - name: Commit and push FAILED_IMPORT_REPORT.md file if changed
+    #   run: |-
+    #     git diff
+    #     git config --global user.email "vincent.emonet@gmail.com"
+    #     git config --global user.name "Vincent Emonet"
+    #     git add FAILED_IMPORT_REPORT.md
+    #     git commit -m "Update FAILED_IMPORT_REPORT.md" || exit 0
+    #     git push
 
     # - uses: MaastrichtU-IDS/sparql-operations-action@v1
     #   with:
