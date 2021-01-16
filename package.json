@@ -6,7 +6,7 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@solid/query-ldflex": "^2.11.3",
     "@solid/react": "^1.10.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "chartjs-plugin-labels": "^1.1.0",
     "expo": "~39.0.0",
