@@ -228,8 +228,8 @@ export default function ShapeRegistry() {
         Add the tag <code>shacl-shapes</code> or <code>shex</code> to your GitHub repository, we will automatically index all ShEx (<code>.shex</code>) and SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
       </Typography>
 
-      <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub+GraphQL+API%22">
-        <img src="https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub%20GraphQL%20API/badge.svg" 
+      <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
+        <img src="https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub/badge.svg" 
         style={{marginTop: theme.spacing(2)}} />
       </a>
 
