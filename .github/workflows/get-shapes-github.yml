@@ -71,10 +71,10 @@ jobs:
       uses: MaastrichtU-IDS/RdfUpload@master
       with:
         file: shapes-of-you-rdf.ttl
-        endpoint: https://graphdb.dumontierlab.com/repositories/ids-projects/statements
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
         user: ${{ secrets.GRAPHDB_USER }}
         password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: "https://w3id.org/um/ids/projects/graph"
+        graph: "https://w3id.org/um/ids/shapes"
 
     # - uses: MaastrichtU-IDS/sparql-operations-action@v1
     #   with:
