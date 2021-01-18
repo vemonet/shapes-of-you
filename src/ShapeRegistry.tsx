@@ -339,7 +339,8 @@ select distinct * where {
         dc:source ?repository ;
         dcterms:hasPart ?shapes .
     OPTIONAL { ?repository rdfs:comment ?repo_description }
-} LIMIT 1000`
+}`
+// } LIMIT 1000`
 
 const countRepositoriesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
