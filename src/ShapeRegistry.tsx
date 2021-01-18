@@ -52,9 +52,8 @@ export default function ShapeRegistry() {
     webid: '',
     shapes_files_list: [],
     search: '',
-    repositories_hash: {},
+    repositories_hash: [],
     repositories_autocomplete: [],
-    // repo_files_hash: {},
     category_pie: {},
     checkbox_shacl: true,
     checkbox_shex: true,
@@ -115,14 +114,27 @@ export default function ShapeRegistry() {
       })
 
     // Get repositories and their files counts
-    let repositories_hash: any = {}
+    let repositories_hash: any = []
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(countRepositoriesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
+        console.log('sparqlResultArray');
+        console.log(sparqlResultArray);
 
         sparqlResultArray.map((result: any) =>  {
-          repositories_hash[result.repository.value] = result.shapeFileCount.value;
+          // repositories_hash[result.repository.value] = {
+          let repo_description = '';
+          if (result.repo_description) {
+            repo_description = result.repo_description.value;
+          }
+          repositories_hash.push({
+            label: result.repository.value,
+            count: result.shapeFileCount.value,
+            description: repo_description,
+          })
         });
+        console.log('repositories_hash');
+        console.log(repositories_hash);
 
         updateState({repositories_hash: repositories_hash})
       })
@@ -177,6 +189,7 @@ export default function ShapeRegistry() {
 
   function handleAutocompleteRepositories(event: any, value: string[]) {
     updateState({ repositories_autocomplete: value})
+    console.log(value)
   }
   
   // Each faceted search filter can be added here (on the shapes files array)
@@ -184,7 +197,7 @@ export default function ShapeRegistry() {
     if (shapes_file.label) {
       // Filter by repo if 1 selected
       // @ts-ignore Useless warning on indexOf(shapes_file.repository)
-      if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.indexOf(shapes_file.repository) > -1) {
+      if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
         // Filter depending on shacl/shex checkboxes:
         if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
         || state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex')) {
@@ -240,9 +253,9 @@ export default function ShapeRegistry() {
       <Box display="flex" style={{margin: theme.spacing(2, 0)}}>
         {/* Search box */}
         <Paper component="form" className={classes.paperSearch}>
-          <InputBase  // https://material-ui.com/api/input-base/
+          <InputBase
             className={classes.searchInput} inputProps={{ 'aria-label': 'search' }}
-            placeholder={"Search shapes"}
+            placeholder={"🔎 Search shapes"}
             onChange={searchChange}
           />
           <IconButton aria-label="search">
@@ -259,8 +272,7 @@ export default function ShapeRegistry() {
                 onChange={handleCheckboxes}
                 name="checkbox_shacl"
                 color="primary"
-              />
-            }
+              /> }
             label="SHACL"
           />
           <FormControlLabel
@@ -270,8 +282,7 @@ export default function ShapeRegistry() {
                 onChange={handleCheckboxes}
                 name="checkbox_shex"
                 color="primary"
-              />
-            }
+              /> }
             label="ShEx"
           />
         </FormGroup>
@@ -283,22 +294,33 @@ export default function ShapeRegistry() {
         value={state.repositories_autocomplete}
         onChange={handleAutocompleteRepositories}
         id="autocomplete-repositories"
-        options={Object.keys(state.repositories_hash)}
+        options={state.repositories_hash.map((option: any) => option.label+ "," + option.count + "," + option.description)}
+        getOptionLabel={(option) => option.split(",")[0].replace('https://github.com/', '')}
+        renderOption={(option: any) => (
+          <React.Fragment>
+            {option.split(",")[0].replace('https://github.com/', '')} ({option.split(",")[1]} files) 
+            {option.split(",")[2] && 
+              <React.Fragment>
+                &nbsp;- {option.split(",")[2]}
+              </React.Fragment>
+            }
+          </React.Fragment>
+        )}
         renderInput={params => <TextField {...params} 
-        label="Filter by repositories" 
-        variant="outlined" 
-        style={{ backgroundColor: '#ffffff' }}
-        // onInputChange={handleAutocompleteRepositories}
-        // size='small'
-        // InputProps={{
-        //   className: classes.whiteColor
-        // }}
-        // ListboxProps={{
-        //   className: classes.whiteColor,
-        // }}
-        // getOptionLabel={option => option.title}
-        // style={{ width: '60ch' }}
-      />}
+          label="📁 Filter by repositories" 
+          variant="outlined" 
+          style={{ backgroundColor: '#ffffff' }}
+          // onInputChange={handleAutocompleteRepositories}
+          // size='small'
+          // InputProps={{
+          //   className: classes.whiteColor
+          // }}
+          // ListboxProps={{
+          //   className: classes.whiteColor,
+          // }}
+          // getOptionLabel={option => option.title}
+          // style={{ width: '60ch' }}
+        />}
       />
 
       {/* Iterate over shapes files */}
@@ -312,9 +334,9 @@ export default function ShapeRegistry() {
             </LoggedIn>
           </Typography>
           <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
-            In repository:&nbsp;
+            {/* In repository:&nbsp; */}
             <a href={project.repository} className={classes.link}>
-              {project.repository}
+              📁&nbsp;{project.repository.replace('https://github.com/', '')}
             </a>
           </Typography>
           <Typography style={{marginTop: '5px'}}>
@@ -338,16 +360,16 @@ select distinct * where {
         rdfs:label ?label ;
         dc:source ?repository ;
         dcterms:hasPart ?shapes .
-    OPTIONAL { ?repository rdfs:comment ?repo_description }
 }`
 // } LIMIT 1000`
 
 const countRepositoriesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-select ?repository (count(?shapeFileUri) as ?shapeFileCount) where { 
+select ?repository (count(?shapeFileUri) as ?shapeFileCount) ?repo_description where { 
   ?shapeFileUri a <https://schema.org/DataDownload> ;
     rdfs:label ?label ;
     dc:source ?repository .
-} GROUP BY ?repository
+  OPTIONAL { ?repository rdfs:comment ?repo_description }
+} GROUP BY ?repository ?repo_description
 `
