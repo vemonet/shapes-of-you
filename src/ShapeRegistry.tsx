@@ -239,7 +239,7 @@ export default function ShapeRegistry() {
       </LoggedOut>
 
       <Typography>
-        Add the tag <code>shacl-shapes</code> or <code>shex</code> to your GitHub repository, we automatically index all ShEx (<code>.shex</code>) and SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
+        Add the tag <code>shacl-shapes</code> or <code>shex</code> to your GitHub repository, we automatically index all ShEx (<code>.shex</code>) and SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
       </Typography>
 
       <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
@@ -359,19 +359,22 @@ export default function ShapeRegistry() {
           </Typography>
           {project.shapes.map((shapeLabel: string, key: number) => {
             // Limit shape label size to 150 chars
-            return <Tooltip title={shapeLabel} key={key.toString()}>
-              <Chip label={shapeLabel} color='primary' 
+            return <Chip label={shapeLabel} color='primary' 
                 style={{margin: theme.spacing(1, 1)}}/>
-            </Tooltip>
+            // <Tooltip title={shapeLabel} key={key.toString()}>
+            // </Tooltip>
           })}
         </Paper>
       })}
       <Pagination count={Math.floor(filtered_files.length / state.shapes_per_page) + 1} 
-        color="primary" onChange={(event,val)=> updateState({page: val})} />
+        color="primary" onChange={(event,val)=> updateState({page: val})} 
+        style={{ display:'flex', justifyContent: 'center' }}
+      />
     </Container>
   )
 }
 
+// SPARQL select query to get all shapes files and the list of their shapes
 const getShapesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -383,6 +386,7 @@ select distinct * where {
 }`
 // } LIMIT 1000`
 
+// SPARQL select query to get all GitHub repos, their description and the count of shapes file in it
 const countRepositoriesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
