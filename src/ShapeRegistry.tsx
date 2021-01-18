@@ -98,8 +98,16 @@ export default function ShapeRegistry() {
             const propertyHash = projects_converted_hash[project][property]
             if (propertyHash) {
               if (property == 'shapes') {
-                // Exception for programming language which is a list
-                projects_hash[projectName][property].push(propertyHash.value);
+                // Exception for shapes which is a list
+                let shape_label = propertyHash.value;
+                if (shape_label.length > 100) {
+                  const n = shape_label.lastIndexOf('#');
+                  shape_label = shape_label.substring(n + 1);
+                }
+                if (shape_label.length > 150) {
+                  shape_label = shape_label.substring(0, 150)
+                }
+                projects_hash[projectName][property].push(shape_label);
               } else {
                 projects_hash[projectName][property] = propertyHash.value 
               }
@@ -214,13 +222,13 @@ export default function ShapeRegistry() {
         💠 Shapes of You
       </Typography>
       <LoggedIn>
-        <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           Welcome to your SHACL & ShEx Shapes registry <Value src="user.name"/>!
         </Typography>
-        {/* <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+        {/* <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           {webId}
         </Typography> */}
-        <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           Soon you will be able to bookmark your favourites Shapes using your SOLID account! 🔖
         </Typography>
       </LoggedIn>
@@ -346,12 +354,15 @@ export default function ShapeRegistry() {
               📁&nbsp;{project.repository.replace('https://github.com/', '')}
             </a>
           </Typography>
-          <Typography style={{marginTop: '5px'}}>
+          <Typography style={{marginTop: theme.spacing(1)}}>
             Contains {pluralize(project.shapes.length, 'Shape')}:
           </Typography>
           {project.shapes.map((shapeLabel: string, key: number) => {
             // Limit shape label size to 150 chars
-            return <Chip label={shapeLabel.substring(0, 150)} color='primary' style={{margin: '5px', wordBreak: 'break-word'}} key={key.toString()}/>
+            return <Tooltip title={shapeLabel} key={key.toString()}>
+              <Chip label={shapeLabel} color='primary' 
+                style={{margin: theme.spacing(1, 1)}}/>
+            </Tooltip>
           })}
         </Paper>
       })}
