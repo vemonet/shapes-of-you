@@ -7,6 +7,7 @@ import axios from 'axios';
 
 import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import Pagination from '@material-ui/lab/Pagination';
 
 import { LoggedIn, LoggedOut, Value, useWebId, useLDflexValue, useLDflexList } from '@solid/react';
 import { Like } from '@solid/react';
@@ -57,6 +58,8 @@ export default function ShapeRegistry() {
     category_pie: {},
     checkbox_shacl: true,
     checkbox_shex: true,
+    page: 1,
+    shapes_per_page: 100,
   });
   const stateRef = React.useRef(state);
 
@@ -118,8 +121,6 @@ export default function ShapeRegistry() {
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(countRepositoriesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
-        console.log('sparqlResultArray');
-        console.log(sparqlResultArray);
 
         sparqlResultArray.map((result: any) =>  {
           // repositories_hash[result.repository.value] = {
@@ -133,8 +134,6 @@ export default function ShapeRegistry() {
             description: repo_description,
           })
         });
-        console.log('repositories_hash');
-        console.log(repositories_hash);
 
         updateState({repositories_hash: repositories_hash})
       })
@@ -286,6 +285,15 @@ export default function ShapeRegistry() {
             label="ShEx"
           />
         </FormGroup>
+        <TextField
+          id="shapes-per-page"
+          value={state.shapes_per_page}
+          onChange={(e: any) => {updateState({shapes_per_page: e.target.value})}}
+          label="Shapes files per page"
+          type="number"
+          variant="outlined"
+          style={{ backgroundColor: '#ffffff' }}
+        />
       </Box>
 
       {/* Autocomplete to filter by repositories */}
@@ -324,7 +332,7 @@ export default function ShapeRegistry() {
       />
 
       {/* Iterate over shapes files */}
-      {filtered_files.map(function(project: any, key: number){
+      {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}>
           <Typography variant="h6">
             Shapes file:&nbsp;
@@ -348,6 +356,8 @@ export default function ShapeRegistry() {
           })}
         </Paper>
       })}
+      <Pagination count={Math.floor(filtered_files.length / state.shapes_per_page) + 1} 
+        color="primary" onChange={(event,val)=> updateState({page: val})} />
     </Container>
   )
 }
