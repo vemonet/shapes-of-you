@@ -24,13 +24,12 @@ const useStyles = makeStyles(theme => ({
     padding: '2px 4px',
     display: 'flex',
     alignItems: 'center',
-    width: '30%',
+    width: '35ch',
     marginRight: theme.spacing(3)
   },
   searchInput: {
     marginLeft: theme.spacing(1),
-    width: '50%',
-    fontSize: '14px',
+    fontSize: '16px',
     flex: 1,
   },
   link: {
@@ -74,7 +73,6 @@ export default function ShapeRegistry() {
   // componentDidMount: Query SPARQL endpoint to get the shapes files infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
-    console.log(endpointToQuery);
 
     // Check SOLID pod for a shapes preference file
     // https://github.com/solid/react-components/blob/master/demo/app.jsx
@@ -167,11 +165,10 @@ export default function ShapeRegistry() {
   // This useless array needs to be added for React to understand he needs to use the state inside...
 
   function createSolidFile(webId: string) {
-    console.log('In createSolidFile');
-    console.log(webId);
+    // console.log(webId);
     // const location = webId + "/public/shapes-of-you/preferences.ttl";
     const location = webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
-    console.log('Try to create file ' + location);
+    // console.log('Try to create file ' + location);
     return data[location].put();
   }
 
@@ -188,7 +185,6 @@ export default function ShapeRegistry() {
 
   function handleAutocompleteRepositories(event: any, value: string[]) {
     updateState({ repositories_autocomplete: value})
-    console.log(value)
   }
   
   // Each faceted search filter can be added here (on the shapes files array)
@@ -229,7 +225,7 @@ export default function ShapeRegistry() {
         </Typography>
       </LoggedIn>
       <LoggedOut>
-        <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           Your SHACL & ShEx Shapes registry
         </Typography>
       </LoggedOut>
@@ -242,98 +238,101 @@ export default function ShapeRegistry() {
         <img src="https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub/badge.svg" 
         style={{marginTop: theme.spacing(2)}} />
       </a>
-    
-      <Typography variant="h5" style={{marginTop: theme.spacing(2)}}>
-        {filtered_files.length} Shapes files in&nbsp;
-        {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories 
-      </Typography>
 
-      {/* Filtering options */}
-      <Box display="flex" style={{margin: theme.spacing(2, 0)}}>
-        {/* Search box */}
-        <Paper component="form" className={classes.paperSearch}>
-          <InputBase
-            className={classes.searchInput} inputProps={{ 'aria-label': 'search' }}
-            placeholder={"🔎 Search shapes"}
-            onChange={searchChange}
-          />
-          <IconButton aria-label="search">
-            <SearchIcon />
-          </IconButton>
-        </Paper>
+      {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
+      <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(2, 0)}}>
+        <Typography variant="h5">
+          {filtered_files.length} Shapes files in&nbsp;
+          {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories 
+        </Typography>
 
-        {/* shacl/shex checkboxes */}
-        <FormGroup row>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_shacl}
-                onChange={handleCheckboxes}
-                name="checkbox_shacl"
-                color="primary"
-              /> }
-            label="SHACL"
+        {/* Filtering options */}
+        <Box display="flex" style={{margin: theme.spacing(2, 0)}}>
+          {/* Search box */}
+          <Paper component="form" className={classes.paperSearch}>
+            <InputBase
+              className={classes.searchInput} inputProps={{ 'aria-label': 'search' }}
+              placeholder={"🔎 Search shapes"}
+              onChange={searchChange}
+            />
+            <IconButton aria-label="search">
+              <SearchIcon />
+            </IconButton>
+          </Paper>
+
+          {/* shacl/shex checkboxes */}
+          <FormGroup row>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.checkbox_shacl}
+                  onChange={handleCheckboxes}
+                  name="checkbox_shacl"
+                  color="primary"
+                /> }
+              label="SHACL"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.checkbox_shex}
+                  onChange={handleCheckboxes}
+                  name="checkbox_shex"
+                  color="primary"
+                /> }
+              label="ShEx"
+            />
+          </FormGroup>
+          <TextField
+            id="shapes-per-page"
+            value={state.shapes_per_page}
+            onChange={(e: any) => {updateState({shapes_per_page: e.target.value})}}
+            label="Files per page"
+            type="number"
+            variant="outlined"
+            // style={{ backgroundColor: '#ffffff' }}
           />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_shex}
-                onChange={handleCheckboxes}
-                name="checkbox_shex"
-                color="primary"
-              /> }
-            label="ShEx"
-          />
-        </FormGroup>
-        <TextField
-          id="shapes-per-page"
-          value={state.shapes_per_page}
-          onChange={(e: any) => {updateState({shapes_per_page: e.target.value})}}
-          label="Shapes files per page"
-          type="number"
-          variant="outlined"
-          style={{ backgroundColor: '#ffffff' }}
+        </Box>
+
+        {/* Autocomplete to filter by repositories */}
+        <Autocomplete
+          multiple
+          value={state.repositories_autocomplete}
+          onChange={handleAutocompleteRepositories}
+          id="autocomplete-repositories"
+          options={state.repositories_hash.map((option: any) => option.label+ "," + option.count + "," + option.description)}
+          getOptionLabel={(option) => option.split(",")[0].replace('https://github.com/', '')}
+          renderOption={(option: any) => (
+            <React.Fragment>
+              {option.split(",")[0].replace('https://github.com/', '')} ({option.split(",")[1]} files) 
+              {option.split(",")[2] && 
+                <React.Fragment>
+                  &nbsp;- {option.split(",")[2]}
+                </React.Fragment>
+              }
+            </React.Fragment>
+          )}
+          renderInput={params => <TextField {...params} 
+            label="📁 Filter by repositories" 
+            variant="outlined" 
+            // style={{ backgroundColor: '#ffffff' }}
+            // onInputChange={handleAutocompleteRepositories}
+            // size='small'
+            // InputProps={{
+            //   className: classes.whiteColor
+            // }}
+            // ListboxProps={{
+            //   className: classes.whiteColor,
+            // }}
+            // getOptionLabel={option => option.title}
+            // style={{ width: '60ch' }}
+          />}
         />
-      </Box>
-
-      {/* Autocomplete to filter by repositories */}
-      <Autocomplete
-        multiple
-        value={state.repositories_autocomplete}
-        onChange={handleAutocompleteRepositories}
-        id="autocomplete-repositories"
-        options={state.repositories_hash.map((option: any) => option.label+ "," + option.count + "," + option.description)}
-        getOptionLabel={(option) => option.split(",")[0].replace('https://github.com/', '')}
-        renderOption={(option: any) => (
-          <React.Fragment>
-            {option.split(",")[0].replace('https://github.com/', '')} ({option.split(",")[1]} files) 
-            {option.split(",")[2] && 
-              <React.Fragment>
-                &nbsp;- {option.split(",")[2]}
-              </React.Fragment>
-            }
-          </React.Fragment>
-        )}
-        renderInput={params => <TextField {...params} 
-          label="📁 Filter by repositories" 
-          variant="outlined" 
-          style={{ backgroundColor: '#ffffff' }}
-          // onInputChange={handleAutocompleteRepositories}
-          // size='small'
-          // InputProps={{
-          //   className: classes.whiteColor
-          // }}
-          // ListboxProps={{
-          //   className: classes.whiteColor,
-          // }}
-          // getOptionLabel={option => option.title}
-          // style={{ width: '60ch' }}
-        />}
-      />
+      </Paper>
 
       {/* Iterate over shapes files */}
       {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(project: any, key: number){
-        return <Paper key={key.toString()} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}>
+        return <Paper key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
           <Typography variant="h6">
             Shapes file:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>&nbsp;&nbsp;
@@ -341,7 +340,7 @@ export default function ShapeRegistry() {
               <Like object={project.shapeFileUri}>the Shape</Like>
             </LoggedIn>
           </Typography>
-          <Typography style={{marginBottom: '5px', marginTop: '5px'}}>
+          <Typography style={{margin: theme.spacing(1, 0)}}>
             {/* In repository:&nbsp; */}
             <a href={project.repository} className={classes.link}>
               📁&nbsp;{project.repository.replace('https://github.com/', '')}
