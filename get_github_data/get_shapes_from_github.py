@@ -192,7 +192,7 @@ def get_extra_graphql_query(repo):
     }
   }'''
 
-def fetch_extra_shape_files(shapes_graph, client, oauth_token, extra_shapes_repositories):
+def fetch_extra_shape_files(shapes_graph, client, oauth_token):
   """Fetch additional Shapes files from a list of GitHub repos
   """
   extra_shapes_repositories = []
