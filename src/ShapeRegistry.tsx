@@ -215,6 +215,11 @@ export default function ShapeRegistry() {
     }
   })
 
+  // Return unique list of filtered repos
+  const filtered_repos = filtered_files.map( (shapes_file: any) =>{
+    return shapes_file.repository
+  }).filter((item, i, ar) => ar.indexOf(item) === i)
+
   // Define rendering of the page:
   return(
     <Container className='mainContainer'>
@@ -251,7 +256,8 @@ export default function ShapeRegistry() {
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(2, 0)}}>
         <Typography variant="h5">
           {filtered_files.length} Shapes files in&nbsp;
-          {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories 
+          {filtered_repos.length} Shapes repositories 
+          {/* {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories  */}
         </Typography>
 
         {/* Filtering options */}
@@ -308,7 +314,8 @@ export default function ShapeRegistry() {
           value={state.repositories_autocomplete}
           onChange={handleAutocompleteRepositories}
           id="autocomplete-repositories"
-          options={state.repositories_hash.map((option: any) => option.label+ "," + option.count + "," + option.description)}
+          options={state.repositories_hash.filter( (repo: any) =>{ return (filtered_repos.indexOf(repo.label) > -1) })
+            .map((option: any) => option.label+ "," + option.count + "," + option.description)}
           getOptionLabel={(option) => option.split(",")[0].replace('https://github.com/', '')}
           renderOption={(option: any) => (
             <React.Fragment>
@@ -359,7 +366,7 @@ export default function ShapeRegistry() {
           </Typography>
           {project.shapes.map((shapeLabel: string, key: number) => {
             // Limit shape label size to 150 chars
-            return <Chip label={shapeLabel} color='primary' 
+            return <Chip label={shapeLabel} color='primary' key={key.toString()}
                 style={{margin: theme.spacing(1, 1)}}/>
             // <Tooltip title={shapeLabel} key={key.toString()}>
             // </Tooltip>

@@ -12,13 +12,13 @@ This app regularly runs a python script to retrieve SHACL & ShEx Shapes from Git
 
 > The python script to get shapes and the website are automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) everyday at 1:00 and 13:00. 
 
-## Planned improvement ➕
+## Planned improvements ➕
 
 - [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
 - [ ] Star shapes with your SOLID accounts
 - [ ] Parse ShEx files to retrieve the defined shapes
 
-> Feel free to comment on this plan or propose new improvements by creating issues.
+> Feel free to comment on this plan or propose new improvements by creating issues in this GitHub repository.
 
 ## Run in development :construction:
 
