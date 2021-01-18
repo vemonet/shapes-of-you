@@ -5,7 +5,8 @@ import { IconButton, InputBase } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import axios from 'axios';
 
-import { FormControl, FormGroup, FormControlLabel, Checkbox } from "@material-ui/core";
+import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
+import Autocomplete from '@material-ui/lab/Autocomplete';
 
 import { LoggedIn, LoggedOut, Value, useWebId, useLDflexValue, useLDflexList } from '@solid/react';
 import { Like } from '@solid/react';
@@ -39,13 +40,6 @@ const useStyles = makeStyles(theme => ({
       textDecoration: 'none',
     },
   },
-  cardSubtitle: {
-    fontSize: 14,
-    marginTop: 8,
-  },
-  pos: {
-    // marginBottom: 12,
-  },
 }))
 
 export default function ShapeRegistry() {
@@ -56,15 +50,15 @@ export default function ShapeRegistry() {
   
   const [state, setState] = React.useState({
     webid: '',
-    projects_list: [],
+    shapes_files_list: [],
     search: '',
     repositories_hash: {},
+    repositories_autocomplete: [],
     // repo_files_hash: {},
     category_pie: {},
     checkbox_shacl: true,
     checkbox_shex: true,
   });
-
   const stateRef = React.useRef(state);
 
   // Avoid conflict when async calls
@@ -74,52 +68,20 @@ export default function ShapeRegistry() {
     setState(stateRef.current);
   }, [setState]);
 
-  const pluralize = (count: any, noun: string, suffix = 's') =>
-    `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
 
-
-  // componentDidMount: Query SPARQL endpoint to get the projects infos
+  // componentDidMount: Query SPARQL endpoint to get the shapes files infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
     console.log(endpointToQuery);
-    // WebIdStatus()
-    // updateState({webid: useWebId()})
 
     // Check SOLID pod for a shapes preference file
     // https://github.com/solid/react-components/blob/master/demo/app.jsx
     // https://solid.github.io/react-components/
-    // WebIdStatus();
-
-    // const webId = useWebId();
-    // console.log("webId!!");
-    // console.log(webId);
 
     // Query directly using Axios
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(getShapesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
-        // TODO: iterate over this array res.data.results.bindings
-        // to generate {repo: {shapefile}}
-        // Then iterate over repo and filter shapefiles to display
-        // let repo_files_hash: any = {}
-        // sparqlResultArray.map((result: any) =>  {
-        //   if (!(result.repository.value in repo_files_hash)) {
-        //     // Create repo entry
-        //     repo_files_hash[result.repository.value] = {}
-        //     if (result.repo_description) {
-        //       repo_files_hash[result.repository.value]['description'] = result.repo_description.value
-        //     }
-        //   }
-        //   if (!repo_files_hash[result.repository.value][result.shapeFileUri.value]){
-        //     // Create shape file entry
-        //     repo_files_hash[result.repository.value][result.shapeFileUri.value] = {shapes: []}
-        //   }
-        //   // Push the shape to object[repo_uri][shape_file_uri]['shapes']
-        //   repo_files_hash[result.repository.value][result.shapeFileUri.value].shapes.push(result.shapes.value)
-
-        //   // Add shapes files to repo
-        //   // repositories_hash[result.repository.value] = result.shapeFileCount.value;
-        // });
 
         // Convert array to object: {0:"a", 1:"b", 2:"c"}
         const projects_converted_hash = { ...sparqlResultArray }
@@ -146,15 +108,7 @@ export default function ShapeRegistry() {
         })
         // Convert back to array for filtering
         const project_final_array: any = Object.keys(projects_hash).map((key) => projects_hash[key]);
-        // setState({...state, projects_list: project_final_array})
-        updateState({projects_list: project_final_array})
-        // updateState({repo_files_hash: repo_files_hash})
-        
-        // Import JS script for GitHub cards
-        // const script = document.createElement("script");
-        // script.src = "https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js";
-        // script.async = true;
-        // document.body.appendChild(script);
+        updateState({shapes_files_list: project_final_array})
       })
       .catch(error => {
         console.log(error)
@@ -194,8 +148,6 @@ export default function ShapeRegistry() {
     //   });
     // });
 
-    console.log('webId');
-    console.log(webId);
     if (webId) {
       createSolidFile(webId);
     }
@@ -205,56 +157,53 @@ export default function ShapeRegistry() {
 
   function createSolidFile(webId: string) {
     console.log('In createSolidFile');
+    console.log(webId);
     // const location = webId + "/public/shapes-of-you/preferences.ttl";
     const location = webId.replace("profile/card#me", "public/shapes-of-you/preferences.ttl");
     console.log('Try to create file ' + location);
     return data[location].put();
   }
 
+  const pluralize = (count: any, noun: string, suffix = 's') =>
+  `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
+
   const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setState({...state, search: event.target.value})
+    updateState({ search: event.target.value })
   }
 
   const handleCheckboxes = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log('chaange')
-    console.log(event.target.name)
-    console.log(event.target.checked)
-    setState({ ...state, [event.target.name]: event.target.checked });
-  };
+    updateState({ [event.target.name]: event.target.checked });
+  }
 
-  // TODO: first iterate over repo hash
-  // Then filter each repo hash with this:
-  // {Object.keys(this.state.dataGoal)
-  //   .filter(key => this.state.dataGoal[key].main === true)
-  //   .map((key, index) => {
-  //     return <div key={key}>
-  //              <h1>{this.state.dataGoal[key].name}</h1>
-  //              <p>{this.state.dataGoal[key].main}</p>
-  //            </div>
-  //   })}
+  function handleAutocompleteRepositories(event: any, value: string[]) {
+    updateState({ repositories_autocomplete: value})
+  }
   
-  const filteredProjects = state.projects_list.filter( (project: any) =>{
-    if (project.label) {
-      // Filter depending on shacl/shex checboxes
-      if ((state.checkbox_shex === true && project.label.endsWith('.shex'))
-      || state.checkbox_shacl === true && !project.label.endsWith('.shex')) {
-
-        return (project.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
-          || project.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-          || project.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-          || project.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-        )
+  // Each faceted search filter can be added here (on the shapes files array)
+  const filtered_files = state.shapes_files_list.filter( (shapes_file: any) =>{
+    if (shapes_file.label) {
+      // Filter by repo if 1 selected
+      // @ts-ignore Useless warning on indexOf(shapes_file.repository)
+      if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.indexOf(shapes_file.repository) > -1) {
+        // Filter depending on shacl/shex checkboxes:
+        if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
+        || state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex')) {
+          // Filter on search:
+          return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
+            || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+            || shapes_file.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+            || shapes_file.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+          )
+        }
       }
     }
   })
-  // console.log('Filtered project:')
-  // console.log(state.projects_list);
 
+  // Define rendering of the page:
   return(
     <Container className='mainContainer'>
       <Typography variant="h4" style={{textAlign: 'center'}}>
         💠 Shapes of You
-        {/* <img src={idsLogo} style={{maxWidth: '200px'}} alt="IDS Logo" /> */}
       </Typography>
       <LoggedIn>
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
@@ -262,9 +211,6 @@ export default function ShapeRegistry() {
         </Typography>
         {/* <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
           {webId}
-        </Typography> */}
-        {/* <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
-          {solid_name}
         </Typography> */}
         <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
           Soon you will be able to bookmark your favourites Shapes using your SOLID account! 🔖
@@ -277,78 +223,22 @@ export default function ShapeRegistry() {
       </LoggedOut>
 
       <Typography>
-        Add the tag <code>shacl-shapes</code> or <code>shex</code> to your GitHub repository, we will automatically index all ShEx (<code>.shex</code>) and SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
+        Add the tag <code>shacl-shapes</code> or <code>shex</code> to your GitHub repository, we automatically index all ShEx (<code>.shex</code>) and SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from your repository everyday at 1:00 and 13:00 🕐
       </Typography>
 
       <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
         <img src="https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub/badge.svg" 
         style={{marginTop: theme.spacing(2)}} />
       </a>
-
-      <Typography variant="h5" style={{marginTop: '25px'}}>
-        {Object.keys(state.repositories_hash).length} Shapes repositories 
-        {/* {Object.keys(state.repositories_hash).map(function(key) { return state.repositories_hash[key].length; })} shapes files */}
-      </Typography>
-
-      {/* Search box */}
-      {/* <Box display="flex" style={{marginTop: '20px'}}>
-        <Paper component="form" className={classes.paperSearch}>
-          <InputBase  // https://material-ui.com/api/input-base/
-            className={classes.searchInput} inputProps={{ 'aria-label': 'search' }}
-            placeholder={"Search shapes"}
-            onChange={searchChange}
-          />
-          <IconButton aria-label="search">
-            <SearchIcon />
-          </IconButton>
-        </Paper>
-      </Box> */}
-      {/* TODO: shacl/shex checkbox + autocomplete for repo filtering */}
-
-      {/* Grid of shapes files per repo */}
-      {/* <Grid container spacing={2} style={{textAlign: 'center', marginTop: '10px'}}>
-        {Object.keys(state.repo_files_hash).map(function(repo_url: any) {
-          return <Grid item xs={12} md={12} key={repo_url}>
-                <Typography variant="h6">
-                  <b><a href={repo_url} className={classes.link}>📁 {repo_url.replace('https://github.com/', '')}</a></b>&nbsp;&nbsp;
-                </Typography>
-                {Object.keys(state.repo_files_hash[repo_url]).map(function(shapes_file_url: any, key: number) {
-
-                    { Object.keys(state.repo_files_hash[repo_url]).filter( (filtered_shapes_file_url: any, key: number) =>{
-                      if (state.search.length > 1) {
-                        if (repo_url.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
-                          || shapes_file_url.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-                          // || project.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-                          // || project.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-                        ) {
-
-                    return <Paper key={key.toString()} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}>
-                      <Typography variant="h6">
-                        Shapes file:&nbsp;
-                        <b><a href={filtered_shapes_file_url} className={classes.link}>{filtered_shapes_file_url.replace('https://raw.githubusercontent.com/', '')}</a></b>&nbsp;&nbsp;
-                        <LoggedIn>
-                          <Like object={filtered_shapes_file_url}>the Shape</Like>
-                        </LoggedIn>
-                      </Typography>
-                      <Typography style={{marginTop: '5px'}}>
-                        Contains {pluralize(state.repo_files_hash[repo_url][filtered_shapes_file_url].shapes.length, 'Shape')}:
-                      </Typography>
-                      {state.repo_files_hash[repo_url][filtered_shapes_file_url].shapes.map((shapeLabel: string, key: number) => {
-                        // Limit shape label size to 150 chars
-                        return <Chip label={shapeLabel.substring(0, 150)} color='primary' style={{margin: '5px'}} key={key.toString()}/>
-                      })}
-                    </Paper>
-                    }}})}
-                })}
-            </Grid>
-        })}
-      </Grid> */}
     
-      <Typography variant="h5" style={{marginTop: '25px'}}>
-        {filteredProjects.length} Shapes files
+      <Typography variant="h5" style={{marginTop: theme.spacing(2)}}>
+        {filtered_files.length} Shapes files in&nbsp;
+        {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories 
       </Typography>
-      {/* Search box */}
-      <Box display="flex" style={{marginTop: theme.spacing(2)}}>
+
+      {/* Filtering options */}
+      <Box display="flex" style={{margin: theme.spacing(2, 0)}}>
+        {/* Search box */}
         <Paper component="form" className={classes.paperSearch}>
           <InputBase  // https://material-ui.com/api/input-base/
             className={classes.searchInput} inputProps={{ 'aria-label': 'search' }}
@@ -387,10 +277,32 @@ export default function ShapeRegistry() {
         </FormGroup>
       </Box>
 
-      {/* TODO:  autocomplete for repo filtering */}
-      
-      {/* Iterate over projects */}
-      {filteredProjects.map(function(project: any, key: number){
+      {/* Autocomplete to filter by repositories */}
+      <Autocomplete
+        multiple
+        value={state.repositories_autocomplete}
+        onChange={handleAutocompleteRepositories}
+        id="autocomplete-repositories"
+        options={Object.keys(state.repositories_hash)}
+        renderInput={params => <TextField {...params} 
+        label="Filter by repositories" 
+        variant="outlined" 
+        style={{ backgroundColor: '#ffffff' }}
+        // onInputChange={handleAutocompleteRepositories}
+        // size='small'
+        // InputProps={{
+        //   className: classes.whiteColor
+        // }}
+        // ListboxProps={{
+        //   className: classes.whiteColor,
+        // }}
+        // getOptionLabel={option => option.title}
+        // style={{ width: '60ch' }}
+      />}
+      />
+
+      {/* Iterate over shapes files */}
+      {filtered_files.map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={4} style={{padding: '15px', marginTop: '25px', marginBottom: '25px'}}>
           <Typography variant="h6">
             Shapes file:&nbsp;
@@ -412,13 +324,6 @@ export default function ShapeRegistry() {
             // Limit shape label size to 150 chars
             return <Chip label={shapeLabel.substring(0, 150)} color='primary' style={{margin: '5px', wordBreak: 'break-word'}} key={key.toString()}/>
           })}
-          {project.gitUrl && ( 
-            <div>
-              <a href={project.gitUrl} key={project.gitUrl} >
-                <img src={'https://gh-card.dev/repos/' + project.gitUrl.replace('https://github.com/', '') + '.svg?fullname'} alt={project.gitUrl} key={'img' + project.gitUrl}/>
-              </a>
-            </div>
-          )}
         </Paper>
       })}
     </Container>
