@@ -204,8 +204,9 @@ export default function ShapeRegistry() {
       if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
         // Filter depending on shacl/shex checkboxes:
         if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
-        || (state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex'))
-        || (state.checkbox_sparql === true && !shapes_file.label.endsWith('.rq'))
+        || (state.checkbox_sparql === true && shapes_file.label.endsWith('.rq')
+        || (state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex') && !shapes_file.label.endsWith('.rq'))
+        // TODO: improve, some RDF files are shex)
         ) {
           // Filter on search:
           return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
