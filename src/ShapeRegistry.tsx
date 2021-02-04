@@ -204,7 +204,7 @@ export default function ShapeRegistry() {
       if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
         // Filter depending on shacl/shex checkboxes:
         if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
-        || (state.checkbox_sparql === true && shapes_file.label.endsWith('.rq'))
+        || (state.checkbox_sparql === true && (shapes_file.label.endsWith('.rq') || shapes_file.label.endsWith('.sparql')) )
         || (state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex') && !shapes_file.label.endsWith('.rq'))
         // TODO: improve, some RDF files are shex)
         ) {
@@ -219,10 +219,20 @@ export default function ShapeRegistry() {
     }
   })
 
+  // TODO: If no repo filter, then we user the filtered list to have the search filtered
+  // As soon as a repo is selected we use full list
+  // issue: when a repo is selected, all other repo
   // Return unique list of filtered repos
-  const filtered_repos = filtered_files.map( (shapes_file: any) =>{
-    return shapes_file.repository
-  }).filter((item, i, ar) => ar.indexOf(item) === i)
+  let filtered_repos: any = []
+  if (state.repositories_autocomplete.length == 0) {
+    filtered_repos = filtered_files.map( (shapes_file: any) =>{
+      return shapes_file.repository
+    }).filter((item, i, ar) => ar.indexOf(item) === i)
+  } else {
+    filtered_repos = state.shapes_files_list.map( (shapes_file: any) =>{
+      return shapes_file.repository
+    }).filter((item, i, ar) => ar.indexOf(item) === i)
+  }
 
   // Define rendering of the page:
   return(
@@ -248,7 +258,7 @@ export default function ShapeRegistry() {
       </LoggedOut>
 
       <Typography>
-        Add the tag <code>shacl-shapes</code> or <code>shex</code> to your GitHub repository, we automatically index all ShEx (<code>.shex</code>) and SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
+        Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
       </Typography>
 
       <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">

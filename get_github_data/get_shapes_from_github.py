@@ -103,6 +103,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         # Parse SPARQL query
         yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
         query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
+        shapes_graph.add((file_uri, SCHEMA['query'], Literal(query_string)))
+        
         grlc_metadata = {}
         try:  # Invalid YAMLs will produce empty metadata
           grlc_metadata = yaml.load(yaml_string, Loader=yaml.FullLoader)
@@ -111,6 +113,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         # Get metadata like grlc metadata
         if grlc_metadata:
           file_descriptions = []
+          if 'endpoint' in grlc_metadata:
+            shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(grlc_metadata['endpoint'])))
           if 'summary' in grlc_metadata:
             file_descriptions.append(grlc_metadata['summary'])
           if 'description' in grlc_metadata:
