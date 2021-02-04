@@ -231,7 +231,7 @@ export default function ShapeRegistry() {
       </Typography>
       <LoggedIn>
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
-          Welcome to your SHACL & ShEx Shapes registry <Value src="user.name"/>!
+          Welcome to your SPARQL, SHACL & ShEx Shapes registry <Value src="user.name"/>!
         </Typography>
         {/* <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           {webId}
@@ -242,7 +242,7 @@ export default function ShapeRegistry() {
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
-          Your SHACL & ShEx Shapes registry
+          A registry for SPARQL, SHACL & ShEx Shapes publicly available
         </Typography>
       </LoggedOut>
 
@@ -302,7 +302,7 @@ export default function ShapeRegistry() {
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={state.checkbox_shacl}
+                  checked={state.checkbox_sparql}
                   onChange={handleCheckboxes}
                   name="checkbox_sparql"
                   color="primary"
