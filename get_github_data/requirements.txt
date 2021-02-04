@@ -2,3 +2,4 @@ python-graphql-client==0.3.0
 rdflib
 rdflib-jsonld
 SPARQLWrapper
+PyShExC

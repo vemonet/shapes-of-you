@@ -6,6 +6,8 @@ import urllib
 from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID
+
+from pyshexc.parser_impl import generate_shexj
 # from logging import exception
 
 SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
@@ -17,6 +19,7 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 SH = Namespace("http://www.w3.org/ns/shacl#")
+SHEX = Namespace("http://www.w3.org/ns/shex#")
 SCHEMA = Namespace("https://schema.org/")
 
 def main():
@@ -67,6 +70,21 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
       if (repo_description):
         shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
+      # Convert ShEx to RDF shex and parse it
+      # shex_rdf = ''
+      # if rdf_file_path.endswith('.shex'):
+      #   with open(root / '../' + rdf_file_path, 'a') as f:
+      #     shex_rdf = generate_shexj.parse(f.read())
+      # # if rdf_file_path.endswith('.shexj'):
+      # #   with open(root / '../' + rdf_file_path, 'a') as f:
+      # #     shex_rdf = f.read()
+      
+      # print(shex_rdf)
+      # # for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
+      # #     add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape, SHEX.schema)
+      # # for shape in g.subjects(RDF.type, SHEX.Shape):
+      # #     add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape, SHEX.schema)
+
     else:
       try:
           g.parse(str(rdf_file_path.absolute()), format=shape_format)
@@ -78,9 +96,12 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
                     + 'In repository: ' + repo_url + "\n> " 
                     + str(e) + "\n\n---\n")
 
+      # Search for SHACL shapes
       for shape in g.subjects(RDF.type, SH.NodeShape):
+          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
           file_uri = URIRef(github_file_url)
           shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+          shapes_graph.add((file_uri, RDF.type, SH.Shape))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
           shape_label = shape
@@ -89,6 +110,30 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               shape_label = label
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
+      # TODO: Search for ShEx Shapes and ShapeAnd
+      for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
+          file_uri = URIRef(github_file_url)
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+          shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shape_label = shape
+          for label in g.objects(shape, RDFS.label):
+              # Try to get the label of the shape
+              shape_label = label
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+
+      for shape in g.subjects(RDF.type, SHEX.Shape):
+          file_uri = URIRef(github_file_url)
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+          shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shape_label = shape
+          for label in g.objects(shape, RDFS.label):
+              # Try to get the label of the shape
+              shape_label = label
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
     return shapes_graph
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
@@ -96,7 +141,8 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
     os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
     # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
 
-    for rdf_file_path in get_files(['*.shex']):
+    # TODO: move ShexJ to jsonld part?
+    for rdf_file_path in get_files(['*.shex', '*.shexj']):
         shapes_graph = process_shapes_file('shex', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
     for rdf_file_path in get_files(['*.trig', '*.n3']):
