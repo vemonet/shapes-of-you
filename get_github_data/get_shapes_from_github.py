@@ -6,6 +6,10 @@ import urllib
 from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID
+from rdflib.plugins.sparql.parser import Query, UpdateUnit
+from rdflib.plugins.sparql.processor import translateQuery
+import yaml
+import re
 
 from pyshexc.parser_impl import generate_shexj
 # from logging import exception
@@ -65,6 +69,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # no parsing possible for shex
       file_uri = URIRef(github_file_url)
       shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+      shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
       shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('ShEx model')))
       shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
@@ -84,6 +89,45 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # #     add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape, SHEX.schema)
       # # for shape in g.subjects(RDF.type, SHEX.Shape):
       # #     add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape, SHEX.schema)
+
+    elif shape_format == 'sparql':
+      file_uri = URIRef(github_file_url)
+      shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+      shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
+      shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+      shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+      if (repo_description):
+        shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
+      with open(rdf_file_path.absolute()) as file:
+        sparql_query = file.read()
+        # Parse SPARQL query
+        yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
+        query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
+        grlc_metadata = {}
+        try:  # Invalid YAMLs will produce empty metadata
+          grlc_metadata = yaml.load(yaml_string, Loader=yaml.FullLoader)
+        except:
+          pass
+        # Get metadata like grlc metadata
+        if grlc_metadata:
+          file_descriptions = []
+          if 'summary' in grlc_metadata:
+            file_descriptions.append(grlc_metadata['summary'])
+          if 'description' in grlc_metadata:
+            file_descriptions.append(grlc_metadata['description'])
+          shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
+          # If default params described for grlc SPARQL query we add then as shapes
+          if 'defaults' in grlc_metadata:
+            for args in grlc_metadata['defaults']:
+              for arg, default_label in args.items():
+                shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(arg)))
+
+        try:
+          parsed_query = translateQuery(Query.parseString(query_string, parseAll=True))
+          query_operation = re.sub(r"(\w)([A-Z])", r"\1 \2", parsed_query.algebra.name)
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
+        except:
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
 
     else:
       try:
@@ -145,6 +189,9 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
     for rdf_file_path in get_files(['*.shex', '*.shexj']):
         shapes_graph = process_shapes_file('shex', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
+    for rdf_file_path in get_files(['*.rq', '*.sparql']):
+        shapes_graph = process_shapes_file('sparql', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
     for rdf_file_path in get_files(['*.trig', '*.n3']):
         shapes_graph = process_shapes_file('n3', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
@@ -194,7 +241,7 @@ query {
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_shape_files(shapes_graph, client, oauth_token):
-    topics = ['shacl-shapes', 'shex']
+    topics = ['shacl-shapes', 'shex', 'grlc']
 
     for github_topic in topics:
       has_next_page = True

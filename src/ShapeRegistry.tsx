@@ -57,6 +57,7 @@ export default function ShapeRegistry() {
     category_pie: {},
     checkbox_shacl: true,
     checkbox_shex: true,
+    checkbox_sparql: true,
     page: 1,
     shapes_per_page: 100,
   });
@@ -203,7 +204,9 @@ export default function ShapeRegistry() {
       if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
         // Filter depending on shacl/shex checkboxes:
         if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
-        || state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex')) {
+        || (state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex'))
+        || (state.checkbox_sparql === true && !shapes_file.label.endsWith('.rq'))
+        ) {
           // Filter on search:
           return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
             || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
@@ -295,6 +298,16 @@ export default function ShapeRegistry() {
                   color="primary"
                 /> }
               label="ShEx"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.checkbox_shacl}
+                  onChange={handleCheckboxes}
+                  name="checkbox_sparql"
+                  color="primary"
+                /> }
+              label="SPARQL"
             />
           </FormGroup>
           <TextField

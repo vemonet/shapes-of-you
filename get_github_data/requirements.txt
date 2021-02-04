@@ -3,3 +3,4 @@ rdflib
 rdflib-jsonld
 SPARQLWrapper
 PyShExC
+PyYAML
