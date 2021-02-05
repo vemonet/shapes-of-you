@@ -43,7 +43,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
-      run: |-
+      run: |
         python get_github_data/get_shapes_from_github.py
 
     - name: Upload failed shapes report as artifact
@@ -53,7 +53,8 @@ jobs:
         path: FAILED_IMPORT_REPORT.md
 
     - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
-      run: |-
+      run: |
+        git fetch
         git checkout report
         git diff
         git config --global user.email "vincent.emonet@gmail.com"

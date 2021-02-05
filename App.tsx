@@ -1,20 +1,22 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Text, View, Platform } from "react-native";
-import { Router, Route, Link } from "./react-router";
+import { View } from "react-native";
+import { Router, Route } from "./react-router";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
 import './App.css';
 import NavBar from "./src/NavBar";
 import Footer from "./src/Footer";
 import ShapeRegistry from "./src/ShapeRegistry";
 import About from "./src/About";
+// import blue from '@material-ui/core/colors/blue';
 
 // Change theme color and typography here
 const theme = createMuiTheme({
   palette: {
+    // Blue
     primary: { light: '#63a4ff', main: '#1976d2', dark: '#004ba0' },
-    secondary: { light: '#4caf50', main: '#087f23', dark: '#00600f' },
+    // Green
+    secondary: { light: '#4caf50', main: '#7e57c2', dark: '#00600f' },
     // main: blue[700]
     // primary: { light: blue[50], main: blue[600], dark: blue[900] },
     // red: { light: '#f05545', main: '#b71c1c', dark: '#7f0000' },
@@ -33,24 +35,24 @@ const App = () => (
   <MuiThemeProvider theme={theme}>
     <Helmet>
       <title>Shapes of you</title>
-      <meta name="description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+      <meta name="description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>
 
-      {/* <!-- Google / Search Engine Tags --> */}
+      {/* Google / Search Engine Tags */}
       <meta itemprop="name" content="Shapes of you"/>
-      <meta itemprop="description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+      <meta itemprop="description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>
       <meta itemprop="image" content=""/>
 
-      {/* <!-- Facebook Meta Tags --> */}
+      {/* Facebook Meta Tags */}
       <meta property="og:url" content="https://maastrichtu-ids.github.io/shapes-of-you"/>
       <meta property="og:type" content="website"/>
       <meta property="og:title" content="Shapes of you"/>
-      <meta property="og:description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+      <meta property="og:description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>
       <meta property="og:image" content=""/>
 
-      {/* <!-- Twitter Meta Tags --> */}
+      {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:title" content="Shapes of you"/>
-      <meta name="twitter:description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+      <meta name="twitter:description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>
       <meta name="twitter:image" content=""/>
     </Helmet>
     <Router basename="/shapes-of-you/">
