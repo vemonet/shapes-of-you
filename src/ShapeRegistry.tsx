@@ -264,7 +264,7 @@ export default function ShapeRegistry() {
       </LoggedOut>
 
       <Typography style={{marginBottom: theme.spacing(2)}}>
-        Shapes of you is the best place to search and explore existing shapes. You need to validate RDF using SHACL or ShEx? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant for your projects, who knows? Linked Open Data are full of surprise!
+        Shapes of you is the best place to search and explore existing semantic shapes and queries. You need to validate RDF using SHACL or ShEx? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant for your projects, who knows? Linked Open Data are full of surprise!
       </Typography>
 
       <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
@@ -276,7 +276,7 @@ export default function ShapeRegistry() {
         Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
       </Typography> */}
       <Typography>
-        Add the right topic to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
+        Add one of these topics to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
       </Typography>
       <List>
       <ListItem>
