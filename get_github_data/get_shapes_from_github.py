@@ -119,7 +119,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             file_descriptions.append(grlc_metadata['summary'])
           if 'description' in grlc_metadata:
             file_descriptions.append(grlc_metadata['description'])
-          shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
+          if len(file_descriptions) > 0:
+            shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
           # If default params described for grlc SPARQL query we add then as shapes
           if 'defaults' in grlc_metadata:
             for args in grlc_metadata['defaults']:
