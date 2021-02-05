@@ -490,6 +490,14 @@ Bad syntax (Prefix "ex:" not bound) at ^ in:
 "b''^b'ex:NamedObjectStruct a sh:NodeShape ;\n\tsh:targetClass NamedO'..."
 
 ---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/data%2Finitial-openpredict-metadata.ttl
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> at line 25 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'tifier "HPO-SIM";\n  openpredict:embedding_type "Diseases" .\n'^b'aaa\n<https://w3id.org/openpredict/feature/PHENO-SIM> a mls:F'..."
+
+---
 File: https://raw.githubusercontent.com/w3c/data-shapes/gh-pages/unmaintained%2Fdata-shapes-primer%2Fldomsquare.ldom.ttl
 
 In repository: https://github.com/w3c/data-shapes
@@ -1570,5 +1578,57 @@ In repository: https://github.com/labra/ShExcala
 > at line 1 of <>:
 Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
+
+---
+File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-mapper-parent%2Fjena-sparql-api-mapper-core%2Fsrc%2Ftest%2Fresources%2Fdbpedia-companies.ttl
+
+In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'^b'@prefix xsd:  <http://www.w3.org/2001/XMLSchema#>\n@prefix rd'..."
+
+---
+File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-dcat-parent%2Fjena-sparql-api-dcat-api%2Fsrc%2Fmain%2Fresources%2Flangs.ttl
+
+In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> at line 9 of <>:
+Bad syntax (Prefix "skos:" not bound) at ^ in:
+"...b'http://www.example.org/> .\n\n\nr:rdfxml\n  a o:ContentType ;\n  '^b'skos:prefLabel "RDF/XML" ;\n  skos:altLabel "RDFXML", "RDF/XM'..."
+
+---
+File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-algebra%2Fsrc%2Fmain%2Fresources%2Fbnode-rewrites.ttl
+
+In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> at line 10 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'/> .\n\n@prefix ent: <http://www.ontotext.com/owlim/entity#>\n\n'^b'@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .'..."
+
+---
+File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-resources%2Fsrc%2Fmain%2Fresources%2Fxsd-ontology.ttl
+
+In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> at line 4 of <>:
+Bad syntax (Prefix "rdfs:" not bound) at ^ in:
+"...b'http://www.w3.org/2000/01/rdf-schema#>\n\nxsd:negativeInteger '^b'rdfs:subClassOf xsd:nonPositiveInteger .\nxsd:nonPositiveInte'..."
+
+---
+File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-io-core%2Fsrc%2Fmain%2Fresources%2Fsys-encoders.ttl
+
+In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> at line 1 of <>:
+Bad syntax (Prefix "eg:" not bound) at ^ in:
+"b''^b'eg:sysCmdLbzip2\n  a eg:SysCmd ;\n  eg:sysCmd "/usr/bin/lbzip2'..."
+
+---
+File: https://raw.githubusercontent.com/CLARIAH/wp4-cow-conversions/master/temp%2Fhg%2Fhg-vocab.rdf
+
+In repository: https://github.com/CLARIAH/wp4-cow-conversions
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/temp/hg/hg-vocab.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/CLARIAH/wp4-cow-conversions/master/temp%2Fhg%2Fhg-api.rdf
+
+In repository: https://github.com/CLARIAH/wp4-cow-conversions
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/temp/hg/hg-api.rdf:1:0: not well-formed (invalid token)
 
 ---
