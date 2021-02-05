@@ -115,10 +115,12 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           file_descriptions = []
           if 'endpoint' in grlc_metadata:
             shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(grlc_metadata['endpoint'])))
-          if 'summary' in grlc_metadata:
+          if 'summary' in grlc_metadata and grlc_metadata['summary']:
             file_descriptions.append(grlc_metadata['summary'])
-          if 'description' in grlc_metadata:
+            print(grlc_metadata['summary'])
+          if 'description' in grlc_metadata and grlc_metadata['description']:
             file_descriptions.append(grlc_metadata['description'])
+            
           if len(file_descriptions) > 0:
             shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
           # If default params described for grlc SPARQL query we add then as shapes
@@ -276,19 +278,20 @@ def fetch_shape_files(shapes_graph, client, oauth_token):
 def get_extra_graphql_query(repo):
   """Generate GraphQL query for repos in the list extra_shapes_repositories
   """
-  owner=repo.split('/')[0]
-  repo_name=repo.split('/')[1]
-  return '''query {
-    repository(name:"''' + repo_name + '''", owner:"''' + owner + '''"){
-      url
-      shortDescriptionHTML
-      name
-      description
-      defaultBranchRef {
+  if repo:
+    owner=repo.split('/')[0]
+    repo_name=repo.split('/')[1]
+    return '''query {
+      repository(name:"''' + repo_name + '''", owner:"''' + owner + '''"){
+        url
+        shortDescriptionHTML
         name
+        description
+        defaultBranchRef {
+          name
+        }
       }
-    }
-  }'''
+    }'''
 
 def fetch_extra_shape_files(shapes_graph, client, oauth_token):
   """Fetch additional Shapes files from a list of GitHub repos
