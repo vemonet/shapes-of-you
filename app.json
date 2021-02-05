@@ -1,6 +1,6 @@
 {
     "expo": {
-      "name": "Shapes registry",
+      "name": "Shapes of you",
       "description": "Registry for publicly available SPARQL, ShEx, and SHACL shapes files",
       "slug": "shapes-of-you",
       "privacy": "public",

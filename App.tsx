@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import { Text, View, Platform } from "react-native";
 import { Router, Route, Link } from "./react-router";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
@@ -30,6 +31,28 @@ const theme = createMuiTheme({
 
 const App = () => (
   <MuiThemeProvider theme={theme}>
+    <Helmet>
+      <title>Shapes of you</title>
+      <meta name="description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+
+      {/* <!-- Google / Search Engine Tags --> */}
+      <meta itemprop="name" content="Shapes of you"/>
+      <meta itemprop="description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+      <meta itemprop="image" content=""/>
+
+      {/* <!-- Facebook Meta Tags --> */}
+      <meta property="og:url" content="https://maastrichtu-ids.github.io/shapes-of-you"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:title" content="Shapes of you"/>
+      <meta property="og:description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+      <meta property="og:image" content=""/>
+
+      {/* <!-- Twitter Meta Tags --> */}
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:title" content="Shapes of you"/>
+      <meta name="twitter:description" content="Registry for publicly available SPARQL, ShEx, and SHACL shapes files"/>
+      <meta name="twitter:image" content=""/>
+    </Helmet>
     <Router basename="/shapes-of-you/">
       <View style={{height: '100%', backgroundColor: '#eceff1'}}>
         <NavBar />

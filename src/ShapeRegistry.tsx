@@ -264,7 +264,7 @@ export default function ShapeRegistry() {
       </LoggedOut>
 
       <Typography style={{marginBottom: theme.spacing(2)}}>
-        Shapes of you is the best place to search and explore existing shapes. You need to validate RDF using SHACL or ShEx? There might be a shapes out there waiting for you! Or you can randomly explore shapes to find inspirations. You might even find a grlc API serving data relevant for your projects, who knows? Linked Open Data are full of surprise!
+        Shapes of you is the best place to search and explore existing shapes. You need to validate RDF using SHACL or ShEx? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant for your projects, who knows? Linked Open Data are full of surprise!
       </Typography>
 
       <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
