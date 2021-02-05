@@ -45,7 +45,8 @@ MaastrichtU-IDS/d2s-cli
 peta-pico/nanopub-api
 fair-data/fairdatapoint-search
 yannnic/grlc-test
-garzoni/garzoni-sparql-api 
+rapw3k/cybele
+garzoni/garzoni-sparql-api
 Knowledge-Graph-Hub/kg-covid-19
 BiGCAT-UM/wp-interactions-api
 fair-workflows/sparql-api
@@ -67,5 +68,5 @@ SmartDataAnalytics/jena-sparql-api
 CLARIAH/grlc
 CLARIAH/wp4-cow-conversions
 CLARIAH/wp4-queries
-CLARIAH/wp4-stories 
+CLARIAH/wp4-stories
 CLARIAH/ATM
