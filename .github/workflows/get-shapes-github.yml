@@ -54,8 +54,11 @@ jobs:
 
     - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
       run: |
+        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_REPORT.md
+        git stash
         git fetch
         git checkout report
+        mv tmp-FAILED_IMPORT_REPORT.md FAILED_IMPORT_REPORT.md
         git diff
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
