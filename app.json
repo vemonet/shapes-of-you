@@ -1,7 +1,7 @@
 {
     "expo": {
       "name": "Shapes registry",
-      "description": "Registry for SHACL shapes at the Institute of Data Science at Maastricht University",
+      "description": "Registry for publicly available SPARQL, ShEx, and SHACL shapes files",
       "slug": "shapes-of-you",
       "privacy": "public",
       "sdkVersion": "35.0.0",
