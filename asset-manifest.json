@@ -1,23 +1,23 @@
 {
   "files": {
-    "app.js": "/shapes-of-you/static/js/app.c35c0655.chunk.js",
-    "app.js.map": "/shapes-of-you/static/js/app.c35c0655.chunk.js.map",
+    "app.js": "/shapes-of-you/static/js/app.dbda5bcb.chunk.js",
+    "app.js.map": "/shapes-of-you/static/js/app.dbda5bcb.chunk.js.map",
     "runtime~app.js": "/shapes-of-you/static/js/runtime~app.365b7f09.js",
     "runtime~app.js.map": "/shapes-of-you/static/js/runtime~app.365b7f09.js.map",
-    "static/js/2.443ac39c.chunk.js": "/shapes-of-you/static/js/2.443ac39c.chunk.js",
-    "static/js/2.443ac39c.chunk.js.map": "/shapes-of-you/static/js/2.443ac39c.chunk.js.map",
+    "static/js/2.7f9bbe20.chunk.js": "/shapes-of-you/static/js/2.7f9bbe20.chunk.js",
+    "static/js/2.7f9bbe20.chunk.js.map": "/shapes-of-you/static/js/2.7f9bbe20.chunk.js.map",
     "favicon-16.png": "/shapes-of-you/favicon-16.png",
     "favicon-32.png": "/shapes-of-you/favicon-32.png",
     "favicon.ico": "/shapes-of-you/favicon.ico",
     "index.html": "/shapes-of-you/index.html",
     "manifest.json": "/shapes-of-you/manifest.json",
     "serve.json": "/shapes-of-you/serve.json",
-    "static/js/2.443ac39c.chunk.js.LICENSE.txt": "/shapes-of-you/static/js/2.443ac39c.chunk.js.LICENSE.txt",
+    "static/js/2.7f9bbe20.chunk.js.LICENSE.txt": "/shapes-of-you/static/js/2.7f9bbe20.chunk.js.LICENSE.txt",
     "static/media/icon.png": "/shapes-of-you/static/media/icon.72626586.png"
   },
   "entrypoints": [
     "static/js/runtime~app.365b7f09.js",
-    "static/js/2.443ac39c.chunk.js",
-    "static/js/app.c35c0655.chunk.js"
+    "static/js/2.7f9bbe20.chunk.js",
+    "static/js/app.dbda5bcb.chunk.js"
   ]
 }
