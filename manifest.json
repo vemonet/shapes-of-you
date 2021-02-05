@@ -1,9 +1,9 @@
 {
-  "description": "Registry for SHACL shapes at the Institute of Data Science at Maastricht University",
+  "description": "Registry for publicly available SPARQL, ShEx, and SHACL shapes files",
   "display": "standalone",
   "lang": "en",
-  "name": "Shapes registry",
-  "short_name": "Shapes registry",
+  "name": "Shapes of you",
+  "short_name": "Shapes of you",
   "start_url": "/?utm_source=web_app_manifest",
   "orientation": "portrait",
   "icons": [
