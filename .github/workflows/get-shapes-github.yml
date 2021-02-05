@@ -52,6 +52,16 @@ jobs:
         name: failed-shapes-report
         path: FAILED_IMPORT_REPORT.md
 
+    - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
+      run: |-
+        git checkout report
+        git diff
+        git config --global user.email "vincent.emonet@gmail.com"
+        git config --global user.name "Vincent Emonet"
+        git add FAILED_IMPORT_REPORT.md
+        git commit -m "Update FAILED_IMPORT_REPORT.md" || exit 0
+        git push
+
     - name: Upload RDF output as artifact
       uses: actions/upload-artifact@v1
       with:
@@ -75,15 +85,6 @@ jobs:
         user: ${{ secrets.GRAPHDB_USER }}
         password: ${{ secrets.GRAPHDB_PASSWORD }}
         graph: "https://w3id.org/um/ids/shapes"
-
-    # - name: Commit and push FAILED_IMPORT_REPORT.md file if changed
-    #   run: |-
-    #     git diff
-    #     git config --global user.email "vincent.emonet@gmail.com"
-    #     git config --global user.name "Vincent Emonet"
-    #     git add FAILED_IMPORT_REPORT.md
-    #     git commit -m "Update FAILED_IMPORT_REPORT.md" || exit 0
-    #     git push
 
     # - uses: MaastrichtU-IDS/sparql-operations-action@v1
     #   with:
