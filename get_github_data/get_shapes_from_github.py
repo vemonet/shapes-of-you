@@ -295,7 +295,7 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
   extra_shapes_repositories = []
   with open(root / '../EXTERNAL_REPOSITORIES.txt', 'r') as f:
     for line in f:
-      extra_shapes_repositories.append(line.rstrip('\n'))
+      extra_shapes_repositories.append(line.rstrip('\n').strip())
 
   for extra_repo in extra_shapes_repositories:
     data = client.execute(
