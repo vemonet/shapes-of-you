@@ -304,14 +304,16 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
     )
     # print(json.dumps(data, indent=4))
     repo_json = data["data"]["repository"]
-    # try:
-    branch = repo_json['defaultBranchRef']['name']
     repo_url = repo_json["url"]
-    repo_description = repo_json["description"]
+    try:
+      branch = repo_json['defaultBranchRef']['name']
+      repo_description = repo_json["description"]
+    except Exception as e:
+      print(e)
+      print('Trying with master branch')
+      branch = 'master'
+      repo_description = ''
     shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-    # except Exception as e:
-    #   print('FAIL')
-    #   print(e)
   return shapes_graph
 
 
