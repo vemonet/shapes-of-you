@@ -2,7 +2,13 @@ import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
 import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
+import { List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import SquareFootIcon from '@material-ui/icons/SquareFoot';
+import CodeIcon from '@material-ui/icons/Code';
+import BubbleChartIcon from '@material-ui/icons/BubbleChart';
+
 import axios from 'axios';
 
 import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
@@ -34,9 +40,9 @@ const useStyles = makeStyles(theme => ({
   },
   link: {
     textDecoration: 'none',
-    color: 'inherit',
+    color: theme.palette.primary.main,
     '&:hover': {
-      color: theme.palette.primary.main,
+      color: theme.palette.secondary.main,
       textDecoration: 'none',
     },
   },
@@ -247,30 +253,72 @@ export default function ShapeRegistry() {
         {/* <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           {webId}
         </Typography> */}
-        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
+        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
           Soon you will be able to bookmark your favourites Shapes using your SOLID account! 🔖
         </Typography>
       </LoggedIn>
       <LoggedOut>
-        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
+        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
           A registry for SPARQL, SHACL & ShEx Shapes publicly available
         </Typography>
       </LoggedOut>
 
-      <Typography>
-        Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
+      <Typography style={{marginBottom: theme.spacing(2)}}>
+        Shapes of you is the best place to search and explore existing shapes. You need to validate RDF using SHACL or ShEx? There might be a shapes out there waiting for you! Or you can randomly explore shapes to find inspirations. You might even find a grlc API serving data relevant for your projects, who knows? Linked Open Data are full of surprise!
       </Typography>
 
       <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
         <img src="https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub/badge.svg" 
-        style={{marginTop: theme.spacing(2)}} />
+        style={{marginBottom: theme.spacing(2)}} />
       </a>
+
+      {/* <Typography>
+        Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
+      </Typography> */}
+      <Typography>
+        Add the right topic to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
+      </Typography>
+      <List>
+      <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <CheckBoxIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText
+            // secondary="shacl-shapes"
+          > 
+            <b>SHACL shapes</b>: add the topic <code>shacl-shapes</code>, we index RDF files such as <code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, etc), with all <code>sh:NodeShape</code> they contain
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <BubbleChartIcon />
+              {/* <SquareFootIcon /> */}
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText>
+            <b>ShEx expressions</b>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <CodeIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText>
+            <b>SPARQL queries</b>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link}>grlc.io</a> APIs metadata
+          </ListItemText>
+        </ListItem>
+      </List>
 
       {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(2, 0)}}>
         <Typography variant="h5">
-          {filtered_files.length} Shapes files in&nbsp;
-          {filtered_repos.length} Shapes repositories 
+          {filtered_files.length} shapes files in&nbsp;
+          {filtered_repos.length} repositories 
           {/* {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories  */}
         </Typography>
 
