@@ -1,4 +1,4 @@
-#+ endpoint: https://graphdb.dumontierlab.com/repositories/Fooshapes-registrydHealthClaimsKG
+#+ endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
 #+ endpoint_in_url: False
 #+ summary:  List all shapes in shape files
 #+ tags:
