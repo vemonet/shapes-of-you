@@ -206,7 +206,6 @@ export default function ShapeRegistry() {
   const filtered_files = state.shapes_files_list.filter( (shapes_file: any) =>{
     if (shapes_file.label) {
       // Filter by repo if 1 selected
-      // @ts-ignore Useless warning on indexOf(shapes_file.repository)
       if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
         // Filter depending on shacl/shex checkboxes:
         if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
@@ -231,9 +230,7 @@ export default function ShapeRegistry() {
     }
   })
 
-  // TODO: If no repo filter, then we user the filtered list to have the search filtered
-  // As soon as a repo is selected we use full list
-  // issue: when a repo is selected, all other repo
+  // If no repo filter, then we use the filtered list to have the repo filtered
   // Return unique list of filtered repos
   let filtered_repos: any = []
   if (state.repositories_autocomplete.length == 0) {
@@ -265,12 +262,12 @@ export default function ShapeRegistry() {
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
-          A registry for SPARQL, SHACL & ShEx Shapes publicly available
+          A registry for publicly available SPARQL, SHACL & ShEx Shapes
         </Typography>
       </LoggedOut>
 
       <Typography style={{marginBottom: theme.spacing(2)}}>
-        Shapes of you is the best place to search and explore existing semantic shapes and queries. You need to validate RDF using SHACL or ShEx? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant for your projects, who knows? Linked Open Data are full of surprise!
+        Shapes of you is the best place to <b>search and explore existing semantic shapes and queries</b>. Do you need to validate RDF using SHACL or ShEx? Or do you want to find SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprise!
       </Typography>
 
       <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
