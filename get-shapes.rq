@@ -25,7 +25,7 @@ SELECT DISTINCT * WHERE {
         rdfs:label ?label ;
         dc:source ?repository ;
         dcterms:hasPart ?shapes .
-    # OPTIONAL { ?shapeFileUri rdfs:comment ?repo_description }
+    OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
     OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }

@@ -416,7 +416,7 @@ export default function ShapeRegistry() {
         />
       </Paper>
 
-      {/* Iterate over shapes files */}
+      {/* Display Shapes files */}
       {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
           <Typography variant="h6">
@@ -426,11 +426,22 @@ export default function ShapeRegistry() {
               <Like object={project.shapeFileUri}>the Shape</Like>
             </LoggedIn>
           </Typography>
+          {/* shape_file_description */}
+          {project.shape_file_description &&
+            <Typography style={{fontStyle: 'italic', margin: theme.spacing(1, 0)}}>
+              {project.shape_file_description}
+            </Typography>
+          }
           <Typography style={{margin: theme.spacing(1, 0)}}>
             {/* In repository:&nbsp; */}
             <a href={project.repository} className={classes.link}>
               📁&nbsp;{project.repository.replace('https://github.com/', '')}
             </a>
+            {project.repo_description &&
+              <>
+                &nbsp;-&nbsp;{project.repo_description}
+              </>
+            }
           </Typography>
           <Typography style={{marginTop: theme.spacing(1)}}>
             Contains {pluralize(project.shapes.length, 'Shape')}:
@@ -465,7 +476,7 @@ SELECT DISTINCT * WHERE {
         rdfs:label ?label ;
         dc:source ?repository ;
         dcterms:hasPart ?shapes .
-    OPTIONAL { ?shapeFileUri rdfs:comment ?repo_description }
+    OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
     OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }

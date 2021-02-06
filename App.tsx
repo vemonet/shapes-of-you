@@ -38,9 +38,9 @@ const App = () => (
       <meta name="description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>
 
       {/* Google / Search Engine Tags */}
-      <meta itemprop="name" content="Shapes of you"/>
-      <meta itemprop="description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>
-      <meta itemprop="image" content=""/>
+      <meta itemProp="name" content="Shapes of you"/>
+      <meta itemProp="description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>
+      <meta itemProp="image" content=""/>
 
       {/* Facebook Meta Tags */}
       <meta property="og:url" content="https://maastrichtu-ids.github.io/shapes-of-you"/>
