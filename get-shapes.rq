@@ -8,9 +8,10 @@
 #+ defaults:
 #+   - foodlabel: calcium
 # enumerate:
-#   - food:
-#     - https://foodb.ca/compounds/FDB003513
-
+#   - type:
+#     - shacl
+#     - shex
+#     - sparql
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>

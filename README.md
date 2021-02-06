@@ -2,6 +2,31 @@
 
 [![Get shapes from GitHub GraphQL API](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22) [![Deploy to GitHub Pages](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Deploy%20website%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+website+to+GitHub+Pages%22) [![CodeQL analysis](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
 
+
+Access the Shapes of You web app at https://maastrichtu-ids.github.io/shapes-of-you
+
+Access the OpenAPI at http://grlc.io/api-git/MaastrichtU-IDS/shapes-of-you (powered by [grlc.io](http://grlc.io))
+
+Shapes of You is as registry for semantic shapes and query files. Add one of these  topics to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
+
+* **SHACL shapes**: add the topic `shacl-shapes`, we index RDF files such as `.ttl`, `.rdf`, `.jsonld`, etc), with all `sh:NodeShape` they contain
+
+* **ShEx expressions**: add the topic `shex`, we index `.shex` files, and ShEx shapes defined in RDF files
+
+* **SPARQL queries**: add the topic `grlc`, we index `.rq` and `.sparql` files, and parse [grlc.io](http://grlc.io) APIs metadata
+
+
+## Planned improvements ➕
+
+- [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
+- [ ] Index more types of files (OWL ontologies, OpenAPI YAML)
+- [ ] Star shapes with your SOLID accounts
+- [ ] Parse ShEx files to retrieve the defined shapes
+
+> Feel free to comment on this plan or propose new improvements by creating issues in this GitHub repository.
+
+## Overview 🧭
+
 This app is composed of 2 parts:
 
 * A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories which is run regularly. The retrieved data is stored in a RDF striplestore
@@ -21,15 +46,8 @@ This app regularly runs a python script to retrieve SHACL & ShEx Shapes from Git
 
 > The python script to get shapes and the website are automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) everyday at 1:00 and 13:00. 
 
-## Planned improvements ➕
 
-- [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
-- [ ] Star shapes with your SOLID accounts
-- [ ] Parse ShEx files to retrieve the defined shapes
-
-> Feel free to comment on this plan or propose new improvements by creating issues in this GitHub repository.
-
-## Run in development :construction:
+## Run in development 🚧
 
 Requirements:  [npm](https://www.npmjs.com/get-npm) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
 
@@ -64,7 +82,7 @@ yarn upgrade
 
 > This website is automatically deployed by a [GitHub Actions worklow](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://maastrichtu-ids.github.io/shapes-of-you
 
-You can build locally in `/web-build` folder and serve on [http://localhost:5000 :package:](http://localhost:5000)
+You can build locally in `/web-build` folder and serve on http://localhost:5000
 
 ```bash
 yarn build
