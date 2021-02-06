@@ -92,18 +92,25 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     if shape_format == 'obo':
       # Get OBO ontologies
-      graph = obonet.read_obo(github_file_url)
-      # for id_, data in graph.nodes(data=True):
-      for id_, data in graph.nodes(data=True):
-        shape_found = True
-        shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
-        shapes_graph.add((file_uri, RDF.type, SIO['SIO_000623'])) # OBO ontology
-        shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-        shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
-        shape_label = data.get('name')
-        if not shape_label:
-          shape_label = id_
-        shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+      try:
+        graph = obonet.read_obo(github_file_url)
+        # for id_, data in graph.nodes(data=True):
+        for id_, data in graph.nodes(data=True):
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+          shapes_graph.add((file_uri, RDF.type, SIO['SIO_000623'])) # OBO ontology
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shape_label = data.get('name')
+          if not shape_label:
+            shape_label = id_
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+      except Exception as e:
+        print('Issue with OBO parser file ' + github_file_url)
+        with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+          f.write('File: ' + github_file_url + "\n\n"
+              + 'In repository: ' + repo_url + "\n> " 
+              + str(e) + "\n\n---\n")
 
     # Search for shex files
     if shape_format == 'shex':
