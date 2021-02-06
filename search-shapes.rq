@@ -6,7 +6,7 @@
 #+ method: GET
 #+ pagination: 100
 #+ defaults:
-#+   - shape_label: dataset
+#+   - shapelabel: dataset
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -24,5 +24,5 @@ SELECT DISTINCT * WHERE {
     OPTIONAL { ?shapeFileUri schema:query ?query }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
     OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }
-    FILTER regex(?shapes, ?_shape_label,  "i")
+    FILTER regex(?shapes, ?_shapelabel,  "i")
 }
