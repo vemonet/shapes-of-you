@@ -97,7 +97,7 @@ docker-compose up
 
 Checkout the GitHub workflow file to see how to run the Python script to retrieve the shapes from the GitHub GraphQL API and publish them to the .
 
-You can find the scripts and requirements in the [`get_github_data`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/get_github_data) folder.
+You can find the scripts and requirements in the [`etl`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/etl) folder.
 
 Use this command to locally define the `GITHUB_APIKEY` and `SPARQL_PASSWORD` environment variable required to run the script:
 
@@ -111,13 +111,13 @@ export SPARQL_PASSWORD=password
 Install requirements:
 
 ```bash
-pip3 install -r get_github_data/requirements.txt
+pip3 install -r etl/requirements.txt
 ```
 
 Run script:
 
 ```bash
-python3 get_github_data/get_shapes_from_github.py
+python3 etl/get_shapes_from_github.py
 ```
 
 > Try out the GitHub GraphQL API [here](https://developer.github.com/v4/explorer/).

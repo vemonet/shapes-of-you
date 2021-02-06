@@ -13,7 +13,7 @@ on:
     branches: [ main ]
     paths:
     - '.github/workflows/get-shapes-github.yml'
-    - 'get_github_data/*'
+    - 'etl/*'
     - 'EXTERNAL_REPOSITORIES.txt'
 
 jobs:
@@ -37,14 +37,14 @@ jobs:
     # Important part here (can be reused to run locally):
     - name: Install Python dependencies
       run: |
-        python -m pip install -r get_github_data/requirements.txt
+        python -m pip install -r etl/requirements.txt
 
     - name: Run Python script to query GitHub GraphQL API
       env:
         GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
-        python get_github_data/get_shapes_from_github.py
+        python etl/get_shapes_from_github.py
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
