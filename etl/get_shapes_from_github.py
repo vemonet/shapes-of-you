@@ -5,7 +5,7 @@ import shutil
 import urllib
 from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
-from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID
+from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL
 from rdflib.plugins.sparql.parser import Query, UpdateUnit
 from rdflib.plugins.sparql.processor import translateQuery
 import yaml
@@ -64,13 +64,13 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
     """
     relative_filepath = str(rdf_file_path)[12:]
     github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+    file_uri = URIRef(github_file_url)
     shape_found = False
     g = Graph()
 
     # Search for shex files
     if shape_format == 'shex':
       # no parsing possible for shex
-      file_uri = URIRef(github_file_url)
       shape_found = True
       # TODO: use https://schema.org/SoftwareSourceCode ?
       shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
@@ -95,7 +95,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     # Parse SPARQL query files
     elif shape_format == 'sparql':
-      file_uri = URIRef(github_file_url)
       shape_found = True
       shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
       shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
@@ -153,7 +152,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # Search for SHACL shapes
       for shape in g.subjects(RDF.type, SH.NodeShape):
           # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
-          file_uri = URIRef(github_file_url)
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SH.Shape))
@@ -166,9 +164,19 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Fixing
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
+      # Get rdfs:label of owl:Ontology and shaclTest:Validate for file description
+      file_descriptions = []
+      for shape in g.subjects(RDF.type, OWL.ontology):
+          for ontology_label in g.objects(shape, RDFS.label):
+            file_descriptions.append(str(ontology_label))
+      for shape in g.subjects(RDF.type, URIRef('http://www.w3.org/ns/shacl-test#Validate')):
+          for ontology_label in g.objects(shape, RDFS.label):
+            file_descriptions.append(str(ontology_label))
+      if len(file_descriptions) > 0:
+        shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
+
       # TODO: Search for ShEx Shapes and ShapeAnd
       for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
-          file_uri = URIRef(github_file_url)
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
@@ -181,7 +189,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
       for shape in g.subjects(RDF.type, SHEX.Shape):
-          file_uri = URIRef(github_file_url)
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
