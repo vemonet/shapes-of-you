@@ -75,7 +75,7 @@ In repository: https://github.com/weso/shaclex
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fperson.jsonld
 
 In repository: https://github.com/weso/shaclex
-> Expecting value: line 2 column 1 (char 1)
+> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
 
 ---
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshex%2Fgood1.ttl
@@ -777,7 +777,7 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 File: https://raw.githubusercontent.com/biotea/validation-shapes-bioschemas/master/journal.jsonld
 
 In repository: https://github.com/biotea/validation-shapes-bioschemas
-> Expecting value: line 2 column 1 (char 1)
+> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
 
 ---
 File: https://raw.githubusercontent.com/rgmprabodha/Internship_Testing_Projects/master/shexjava%2Ftarget%2Fclasses%2FtemperatureReport.ttl
