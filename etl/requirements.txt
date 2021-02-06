@@ -5,3 +5,4 @@ rdflib-jsonld
 SPARQLWrapper
 PyShExC
 PyYAML
+obonet

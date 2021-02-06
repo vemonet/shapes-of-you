@@ -1,3 +1,4 @@
+from io import StringIO
 from python_graphql_client import GraphqlClient
 import gitlab
 import pathlib
@@ -7,12 +8,13 @@ import shutil
 import urllib
 from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
-from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL
+from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
 from rdflib.plugins.sparql.parser import Query, UpdateUnit
 from rdflib.plugins.sparql.processor import translateQuery
 import yaml
 import re
 
+import obonet
 from pyshexc.parser_impl import generate_shexj
 # from logging import exception
 
@@ -28,6 +30,7 @@ RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 SH = Namespace("http://www.w3.org/ns/shacl#")
 SHEX = Namespace("http://www.w3.org/ns/shex#")
 SCHEMA = Namespace("https://schema.org/")
+SIO = Namespace("http://semanticscience.org/resource/")
 
 def main(argv):
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
@@ -86,6 +89,21 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
     file_uri = URIRef(github_file_url)
     shape_found = False
     g = Graph()
+
+    if shape_format == 'obo':
+      # Get OBO ontologies
+      graph = obonet.read_obo(github_file_url)
+      # for id_, data in graph.nodes(data=True):
+      for id_, data in graph.nodes(data=True):
+        shape_found = True
+        shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+        shapes_graph.add((file_uri, RDF.type, SIO['SIO_000623'])) # OBO ontology
+        shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+        shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+        shape_label = data.get('name')
+        if not shape_label:
+          shape_label = id_
+        shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
     # Search for shex files
     if shape_format == 'shex':
@@ -155,7 +173,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
         except:
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
-
+    # Parse RDF files
     else:
       try:
           g.parse(str(rdf_file_path.absolute()), format=shape_format)
@@ -182,7 +200,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Fixing
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
-      # Search for owl classes, limit to 300 classes retrieved maximum
+      # Search for OWL classes, limit to max 300 classes/concepts retrieved
       classes_limit = 300
       classes_count = 0
       for shape in g.subjects(RDF.type, OWL.Class):
@@ -204,10 +222,17 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # Get rdfs:label of owl:Ontology and shaclTest:Validate for file description
       file_descriptions = []
       for shape in g.subjects(RDF.type, OWL.ontology):
+          # Get one of the labels
           for ontology_label in g.objects(shape, RDFS.label):
-            file_descriptions.append(str(ontology_label))
-          for label in g.objects(shape, DC.title):
-            file_descriptions.append(str(label))
+            if len(file_descriptions) < 1:
+              file_descriptions.append(str(ontology_label))
+          if len(file_descriptions) == 0:
+            for label in g.objects(shape, DC.title):
+              file_descriptions.append(str(label))
+          if len(file_descriptions) == 0:
+            for label in g.objects(shape, DCTERMS.title):
+              file_descriptions.append(str(label))
+          # Now add the description
           for comment in g.objects(shape, RDFS.comment):
             file_descriptions.append(str(comment))
           for label in g.objects(shape, DC.description):
@@ -220,7 +245,43 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       if len(file_descriptions) > 0:
         shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
 
-      # TODO: Improve 
+      # Get SKOS concepts and concept scheme
+      classes_count = 0
+      for shape in g.subjects(RDF.type, SKOS.Concept):
+          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+          shapes_graph.add((file_uri, RDF.type, SKOS.ConceptScheme))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shape_label = shape
+          for label in g.objects(shape, SKOS.prefLabel):
+              # Try to get the label of the class
+              shape_label = label
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+          classes_count += 1
+          if classes_count >= classes_limit:
+            break
+      for shape in g.subjects(RDF.type, SKOS.ConceptScheme):
+          # Get one of the labels
+          for ontology_label in g.objects(shape, RDFS.label):
+            if len(file_descriptions) < 1:
+              file_descriptions.append(str(ontology_label))
+          if len(file_descriptions) == 0:
+            for label in g.objects(shape, DC.title):
+              file_descriptions.append(str(label))
+          if len(file_descriptions) == 0:
+            for label in g.objects(shape, DCTERMS.title):
+              file_descriptions.append(str(label))
+          # Now add the description
+          for comment in g.objects(shape, RDFS.comment):
+            file_descriptions.append(str(comment))
+          for label in g.objects(shape, DC.description):
+            file_descriptions.append(str(label))
+          for description in g.objects(shape, DCTERMS.description):
+            file_descriptions.append(str(description))
+
+      # TODO: Improve
       # Search for ShEx Shapes and ShapeAnd
       for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
           shape_found = True
@@ -282,6 +343,9 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
 
     for rdf_file_path in get_files(['*.nt']):
         shapes_graph = process_shapes_file('nt', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.obo']):
+        shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
         
     return shapes_graph
 
@@ -316,8 +380,8 @@ query {
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_shape_files(shapes_graph, client, oauth_token):
-    # topics = ['shacl-shapes', 'shex', 'grlc']
-    topics = ['owl', 'shacl-shapes', 'shex', 'grlc']
+    topics = ['obofoundry']
+    # topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
     # , 'ontology'
 
     for github_topic in topics:
@@ -392,8 +456,7 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
 
 # Fetch files from GitLab
 def fetch_from_gitlab(shapes_graph, gl):
-    # topics = ['shacl-shapes', 'shex', 'grlc']
-    topics = ['owl', 'shacl', 'shex', 'sparql']
+    topics = ['owl', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
     # , 'ontology'
     # curl --header "PRIVATE-TOKEN: GITLAB_TOKEN" "https://gitlab.com/api/v4/search?scope=projects&search=owl%20ontology"
 
