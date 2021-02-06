@@ -480,3 +480,11 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
 
 ---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/fuseki%2Fconfig.ttl
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> at line 12 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'db#> .\n@prefix tdb2:    <http://jena.apache.org/2016/tdb#>\n\n'^b'@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>'..."
+
+---
