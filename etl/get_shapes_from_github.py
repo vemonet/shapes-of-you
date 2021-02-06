@@ -38,7 +38,7 @@ def main(argv):
       '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
   shapes_graph = Graph()
-  if argv[1]:
+  if len(argv) > 0:
     git_registry = argv[1].lowercase()
   else:
     git_registry = 'github'

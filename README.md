@@ -122,7 +122,12 @@ docker-compose up
 
 ## Get data from GitHub GraphQL API ⛏️
 
-Checkout the GitHub workflow file to see how to run the Python script to retrieve the shapes from the GitHub GraphQL API and publish them to the .
+Checkout the GitHub workflow file to see how to run the Python script to retrieve the shapes from various popular Git registries:
+
+* GitHub GraphQL API 
+* GitLab API 
+
+And publish them to the publicly available triplestore.
 
 You can find the scripts and requirements in the [`etl`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/etl) folder.
 
@@ -141,13 +146,17 @@ Install requirements:
 pip3 install -r etl/requirements.txt
 ```
 
-Run script:
+Retrieve shapes files from [GitHub GraphQL API](https://developer.github.com/v4/explorer):
 
 ```bash
 python3 etl/get_shapes_from_github.py
 ```
 
-> Try out the GitHub GraphQL API [here](https://developer.github.com/v4/explorer/).
+Retrieve shapes files from [GitLab API](https://docs.gitlab.com/ee/api/) using the [`python-gitlab` package](https://pypi.org/project/python-gitlab/):
+
+```bash
+python3 etl/get_shapes_from_github.py gitlab
+```
 
 ## Contribute 👩‍💻
 
