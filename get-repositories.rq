@@ -2,7 +2,7 @@
 #+ endpoint_in_url: False
 #+ summary:  List all repositories with the count of shapes files they contain
 #+ tags:
-#+   - Shapes registry
+#+   - Overview
 #+ method: GET
 #+ pagination: 100
 

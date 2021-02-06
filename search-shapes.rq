@@ -2,7 +2,7 @@
 #+ endpoint_in_url: False
 #+ summary:  Search for a shapes in shapes files
 #+ tags:
-#+   - Shapes registry
+#+   - Search
 #+ method: GET
 #+ pagination: 100
 #+ defaults:
