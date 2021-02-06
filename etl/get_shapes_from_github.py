@@ -206,6 +206,12 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       for shape in g.subjects(RDF.type, OWL.ontology):
           for ontology_label in g.objects(shape, RDFS.label):
             file_descriptions.append(str(ontology_label))
+          for label in g.objects(shape, DC.title):
+            file_descriptions.append(str(label))
+          for comment in g.objects(shape, RDFS.comment):
+            file_descriptions.append(str(comment))
+          for label in g.objects(shape, DC.description):
+            file_descriptions.append(str(label))
           for description in g.objects(shape, DCTERMS.description):
             file_descriptions.append(str(description))
       for shape in g.subjects(RDF.type, URIRef('http://www.w3.org/ns/shacl-test#Validate')):
@@ -214,7 +220,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       if len(file_descriptions) > 0:
         shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
 
-      # TODO: Search for ShEx Shapes and ShapeAnd
+      # TODO: Improve 
+      # Search for ShEx Shapes and ShapeAnd
       for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
