@@ -457,11 +457,19 @@ export default function ShapeRegistry() {
 const getShapesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-select distinct * where { 
-    ?shapeFileUri a <https://schema.org/DataDownload> ;
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shex: <http://www.w3.org/ns/shex#>
+PREFIX void: <http://rdfs.org/ns/void#>
+SELECT DISTINCT * WHERE { 
+    ?shapeFileUri a schema:SoftwareSourceCode ;
         rdfs:label ?label ;
         dc:source ?repository ;
         dcterms:hasPart ?shapes .
+    OPTIONAL { ?shapeFileUri rdfs:comment ?repo_description }
+    OPTIONAL { ?shapeFileUri schema:query ?query }
+    OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
+    OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }
 }`
 // } LIMIT 1000`
 
@@ -469,8 +477,11 @@ select distinct * where {
 const countRepositoriesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-select ?repository (count(?shapeFileUri) as ?shapeFileCount) ?repo_description where { 
-  ?shapeFileUri a <https://schema.org/DataDownload> ;
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shex: <http://www.w3.org/ns/shex#>
+SELECT ?repository (count(?shapeFileUri) AS ?shapeFileCount) ?repo_description WHERE { 
+  ?shapeFileUri a <https://schema.org/SoftwareSourceCode> ;
     rdfs:label ?label ;
     dc:source ?repository .
   OPTIONAL { ?repository rdfs:comment ?repo_description }

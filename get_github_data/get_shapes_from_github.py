@@ -64,17 +64,20 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
     """
     relative_filepath = str(rdf_file_path)[12:]
     github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
+    shape_found = False
     g = Graph()
+
+    # Search for shex files
     if shape_format == 'shex':
       # no parsing possible for shex
       file_uri = URIRef(github_file_url)
-      shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+      shape_found = True
+      # TODO: use https://schema.org/SoftwareSourceCode ?
+      shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
       shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
       shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('ShEx model')))
       shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
-      if (repo_description):
-        shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
       # Convert ShEx to RDF shex and parse it
       # shex_rdf = ''
       # if rdf_file_path.endswith('.shex'):
@@ -90,14 +93,14 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # # for shape in g.subjects(RDF.type, SHEX.Shape):
       # #     add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape, SHEX.schema)
 
+    # Parse SPARQL query files
     elif shape_format == 'sparql':
       file_uri = URIRef(github_file_url)
-      shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+      shape_found = True
+      shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
       shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
       shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
-      if (repo_description):
-        shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
       with open(rdf_file_path.absolute()) as file:
         sparql_query = file.read()
         # Parse SPARQL query
@@ -151,7 +154,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       for shape in g.subjects(RDF.type, SH.NodeShape):
           # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
           file_uri = URIRef(github_file_url)
-          shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SH.Shape))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
@@ -165,7 +169,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # TODO: Search for ShEx Shapes and ShapeAnd
       for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
           file_uri = URIRef(github_file_url)
-          shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
@@ -177,7 +182,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
       for shape in g.subjects(RDF.type, SHEX.Shape):
           file_uri = URIRef(github_file_url)
-          shapes_graph.add((file_uri, RDF.type, SCHEMA['DataDownload']))
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
@@ -186,6 +192,14 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Try to get the label of the shape
               shape_label = label
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+
+    # Add repository RDF
+    if shape_found:
+      shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['codeRepository']))
+      shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url).rsplit('/', 1)))
+      if (repo_description):
+        shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
+
     return shapes_graph
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
