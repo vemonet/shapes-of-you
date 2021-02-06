@@ -23,6 +23,7 @@ You can check the RDF files which are not successfully parsed by [`rdflib`](http
 - [ ] Index more types of files (OWL ontologies, OpenAPI YAML)
 - [ ] Star shapes with your SOLID accounts
 - [ ] Parse ShEx files to retrieve the defined shapes
+- [ ] Store the data as [Nanopublications](http://nanopub.org/wordpress/), instead of requiring the deployment of a triplestore
 
 > Feel free to comment on this plan or propose new improvements by creating issues in this GitHub repository.
 
@@ -30,9 +31,9 @@ You can check the RDF files which are not successfully parsed by [`rdflib`](http
 
 This app is composed of those main parts:
 
-* A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories which is run regularly. The retrieved data is published to a public SPARQL endpoint
-  * The python script to get shapes files, and publish them to the triplestore, is automatically run by a [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) everyday at 1:00 and 13:00. 
-* A React webapp written in TypeScript, which displays the files and metadata with filters, and search
+* A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories. The retrieved data is defined using [RDF](https://www.w3.org/RDF/).
+  * A [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
+* A React webapp written in TypeScript, which displays the files and metadata from the SPARQL endpoint with filters, and search
   * The website is automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) at each push to the `main` branch.
 
 * A triplestore with a publicly available SPARQL endpoint at https://graphdb.dumontierlab.com/repositories/shapes-registry
