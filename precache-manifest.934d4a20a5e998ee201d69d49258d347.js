@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "fe9b8d616cefa10144ef",
-    "url": "/shapes-of-you/static/js/app.36d7853c.chunk.js"
+    "revision": "5b5bc2a7674a54ab4adc",
+    "url": "/shapes-of-you/static/js/app.f44a49bc.chunk.js"
   },
   {
     "revision": "f246115242be5aaba1b8",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/shapes-of-you/static/media/icon.72626586.png"
   },
   {
-    "revision": "61585a31b1e2f83b83a32c9783eb2ac8",
+    "revision": "9ad0ac15cdfc1e5907a093abd241c4cc",
     "url": "/shapes-of-you/index.html"
   },
   {
