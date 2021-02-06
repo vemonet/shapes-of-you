@@ -203,6 +203,7 @@ export default function ShapeRegistry() {
   }
   
   // Each faceted search filter can be added here (on the shapes files array)
+  // Could not find good dynamic faceted search, best is https://github.com/ebi-gene-expression-group/scxa-faceted-search-results
   const filtered_files = state.shapes_files_list.filter( (shapes_file: any) =>{
     if (shapes_file.label) {
       // Filter by repo if 1 selected

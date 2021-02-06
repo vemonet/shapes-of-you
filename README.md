@@ -24,6 +24,7 @@ You can check the RDF files which are not successfully parsed by [`rdflib`](http
 ## Planned improvements ➕
 
 - [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
+- [ ] Filtering files/repositories based on categories, could be GitHub topics to start (e.g. only show most popular topics, and filter)
 - [ ] Index more types of files (OWL ontologies, OpenAPI YAML)
 - [ ] Parse ShEx files to retrieve the defined shapes
 - [ ] Star shapes files with your SOLID account
@@ -71,7 +72,7 @@ This web service is composed of those 4 main parts:
   * Properties:
     * `rdfs:comment`
 
-## Run web app in development 🚧
+## Run web app in development 🏗
 
 Requirements:  [npm](https://www.npmjs.com/get-npm) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
 
@@ -125,11 +126,10 @@ Checkout the GitHub workflow file to see how to run the Python script to retriev
 
 You can find the scripts and requirements in the [`etl`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/etl) folder.
 
-Use this command to locally define the `GITHUB_APIKEY` and `SPARQL_PASSWORD` environment variable required to run the script:
+Use this command to locally define the `GITHUB_APIKEY` environment variable required to run the script:
 
 ```bash
 export GITHUB_APIKEY=MYKEY000
-export SPARQL_PASSWORD=password
 ```
 
 > You can create a new GitHub API key (aka. personal access token) at https://github.com/settings/tokens
@@ -147,17 +147,6 @@ python3 etl/get_shapes_from_github.py
 ```
 
 > Try out the GitHub GraphQL API [here](https://developer.github.com/v4/explorer/).
-
-## Use SOLID pod 👤
-
-> 🏗️ Work in progress, currently adding data to a pod fail due to permissions issue. But the user name is properly retrieved, and displayed!
-
-To give permissions to Shapes of you to add data to your pod: 
-
-* Go to your SOLID pod `/public/activities` folder 
-* Click on the lock icon 🔒 
-* Update permissions by adding the web app URL: https://maastrichtu-ids.github.io/shapes-of-you
-  * You can also add the localhost URL for development: http://localhost:19006
 
 ## Contribute 👩‍💻
 

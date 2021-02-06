@@ -164,11 +164,32 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Fixing
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
+      # Search for owl classes, limit to 300 classes retrieved maximum
+      classes_limit = 300
+      classes_count = 0
+      for shape in g.subjects(RDF.type, OWL.Class):
+          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+          shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shape_label = shape
+          for label in g.objects(shape, RDFS.label):
+              # Try to get the label of the class
+              shape_label = label
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+          classes_count += 1
+          if classes_count >= classes_limit:
+            break
+
       # Get rdfs:label of owl:Ontology and shaclTest:Validate for file description
       file_descriptions = []
       for shape in g.subjects(RDF.type, OWL.ontology):
           for ontology_label in g.objects(shape, RDFS.label):
             file_descriptions.append(str(ontology_label))
+          for description in g.objects(shape, DCTERMS.description):
+            file_descriptions.append(str(description))
       for shape in g.subjects(RDF.type, URIRef('http://www.w3.org/ns/shacl-test#Validate')):
           for ontology_label in g.objects(shape, RDFS.label):
             file_descriptions.append(str(ontology_label))
@@ -227,7 +248,7 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
     for rdf_file_path in get_files(['*.json', '*.jsonld', '*.json-ld']):
         shapes_graph = process_shapes_file('json-ld', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
-    for rdf_file_path in get_files(['*.xml', '*.rdf']):
+    for rdf_file_path in get_files(['*.xml', '*.rdf', '*.owl']):
         shapes_graph = process_shapes_file('xml', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
     for rdf_file_path in get_files(['*.ttl', '*.shacl']):
@@ -270,7 +291,9 @@ query {
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_shape_files(shapes_graph, client, oauth_token):
-    topics = ['shacl-shapes', 'shex', 'grlc']
+    # topics = ['shacl-shapes', 'shex', 'grlc']
+    topics = ['owl', 'shacl-shapes', 'shex', 'grlc']
+    # , 'ontology'
 
     for github_topic in topics:
       has_next_page = True
