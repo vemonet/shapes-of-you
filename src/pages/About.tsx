@@ -1,16 +1,17 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Container, Paper, Button } from "@material-ui/core";
+
+// @ts-ignore
+import iconImage from '../../assets/icon.png';
+
+// import { FormControl, TextField, Input, InputLabel, FormHelperText, Select } from '@material-ui/core';
+// import GetAppIcon from '@material-ui/icons/GetApp';
+// import Autocomplete from '@material-ui/lab/Autocomplete';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import Snackbar from '@material-ui/core/Snackbar';
+// import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 // import { Graph } from "perfect-graph";
-
-import iconImage from '../assets/icon.png';
-
-import { FormControl, TextField, Input, InputLabel, FormHelperText, Select } from '@material-ui/core';
-import GetAppIcon from '@material-ui/icons/GetApp';
-import Autocomplete from '@material-ui/lab/Autocomplete';
-import MenuItem from '@material-ui/core/MenuItem';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 
 const useStyles = makeStyles(theme => ({
   settingsForm: {

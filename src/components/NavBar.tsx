@@ -6,15 +6,16 @@ import { AppBar, Toolbar, Button } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
-import InfoIcon from '@material-ui/icons/Info';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
-import MenuBookIcon from '@material-ui/icons/MenuBook';
-import WarningIcon from '@material-ui/icons/Warning';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+// import InfoIcon from '@material-ui/icons/Info';
+// import DashboardIcon from '@material-ui/icons/Dashboard';
+// import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
+// import MenuBookIcon from '@material-ui/icons/MenuBook';
+// import WarningIcon from '@material-ui/icons/Warning';
 
 import { AuthButton, Value } from '@solid/react';
 
+// @ts-ignore
 import iconImage from '../../assets/icon.png';
 
 const useStyles = makeStyles(theme => ({
