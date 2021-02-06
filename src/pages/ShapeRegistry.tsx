@@ -215,10 +215,16 @@ export default function ShapeRegistry() {
         // TODO: improve, some RDF files are shex)
         ) {
           // Filter on search:
+          let file_description = '';
+          if (shapes_file.repo_description) file_description = file_description + ' ' + shapes_file.repo_description;
+          if (shapes_file.shape_file_description) file_description = file_description + ' ' + shapes_file.shape_file_description;
+          if (shapes_file.sparqlEndpoint) file_description = file_description + ' ' + shapes_file.sparqlEndpoint;
+          if (shapes_file.query) file_description = file_description + ' ' + shapes_file.query;
           return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
             || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
             || shapes_file.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
             || shapes_file.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+            || file_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
           )
         }
       }
@@ -422,7 +428,7 @@ export default function ShapeRegistry() {
         return <Paper key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
           <Typography variant="h6">
             File:&nbsp;
-            <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>&nbsp;&nbsp;
+            <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>
             {project.query && project.sparqlEndpoint &&
               // Add YASGUI link if relevant
               // https://yasgui.triply.cc/#query=  &endpoint=
@@ -438,8 +444,8 @@ export default function ShapeRegistry() {
               <a href={'https://yasgui.triply.cc/#query=' + encodeURIComponent(project.query)} 
                 className={classes.link} target='_blank'>
                 <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}>
-                  <SendIcon />
-                  &nbsp;Query on YASGUI
+                  <SearchIcon />
+                  &nbsp;See on YASGUI
                 </Button>
               </a>
             }
