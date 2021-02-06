@@ -7,13 +7,14 @@ Access the Shapes of You web app at https://maastrichtu-ids.github.io/shapes-of-
 
 Access the OpenAPI at http://grlc.io/api-git/MaastrichtU-IDS/shapes-of-you (powered by [grlc.io](http://grlc.io))
 
-Shapes of You is as registry for semantic shapes and query files. Add one of these  topics to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
+Shapes of You is as registry for SHACL & ShEx shapes, and SPARQL query files. Add one of these  topics to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
 
 * **SHACL shapes**: add the topic `shacl-shapes`, we index RDF files such as `.ttl`, `.rdf`, `.jsonld`, etc), with all `sh:NodeShape` they contain
-
 * **ShEx expressions**: add the topic `shex`, we index `.shex` files, and ShEx shapes defined in RDF files
-
 * **SPARQL queries**: add the topic `grlc`, we index `.rq` and `.sparql` files, and parse [grlc.io](http://grlc.io) APIs metadata
+* Additional repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt)
+
+You can check the RDF files which are not successfully parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md) file.
 
 
 ## Planned improvements ➕
@@ -27,24 +28,16 @@ Shapes of You is as registry for semantic shapes and query files. Add one of the
 
 ## Overview 🧭
 
-This app is composed of 2 parts:
+This app is composed of those main parts:
 
-* A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories which is run regularly. The retrieved data is stored in a RDF striplestore
-* A React webapp written in TypeScript that display the files and metadata with filters and search
+* A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories which is run regularly. The retrieved data is published to a public SPARQL endpoint
+  * The python script to get shapes files, and publish them to the triplestore, is automatically run by a [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) everyday at 1:00 and 13:00. 
+* A React webapp written in TypeScript, which displays the files and metadata with filters, and search
+  * The website is automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) at each push to the `main` branch.
 
-This app regularly runs a python script to retrieve SHACL & ShEx Shapes from GitHub repositories. 
+* A triplestore with a publicly available SPARQL endpoint at https://graphdb.dumontierlab.com/repositories/shapes-registry
 
-1. We retrieve shapes from GitHub repositories tagged with the topics `shacl-shapes` or `shex` or `grlc`. Additional repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt)
-2. The following files are parsed and index in analyzed repositories:
-  * ShEx files (`.shex`)
-  * RDF files (`.ttl`, `.rdf`, `.jsonld`, `.trig`, `.nq`, etc)  for SHACL (`sh:NodeShape`) or ShEx shapes
-  * SPARQL query files (`.rq`, `sparql`)
-3. We check for the existence of a SHACL `sh:NodeShape` in each RDF files, and register all SHACL shapes described in each files.
-4. We publish the shapes files URL, and the shapes they contain in a public SPARQL endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
-5. You can now explore the existing shapes and easily retrieve their file in the web application: https://maastrichtu-ids.github.io/shapes-of-you
-6. You can check the SHACL Shapes files which are not successfully parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](/FAILED_IMPORT_REPORT.md) file.
-
-> The python script to get shapes and the website are automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) everyday at 1:00 and 13:00. 
+* A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/MaastrichtU-IDS/shapes-of-you
 
 
 ## Run in development 🚧
@@ -64,7 +57,7 @@ Install dependencies :inbox_tray:
 yarn
 ```
 
-Web app will run on http://localhost:19006
+Run the web app on http://localhost:19006
 
 ```bash
 yarn web
