@@ -9,7 +9,7 @@
 
 🕸 Query the [SPARQL endpoint on YASGUI](http://yasgui.triply.cc/#query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0APREFIX%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0Aselect%20distinct%20*%20where%20%7B%20%0A%20%20%20%20%3FshapeFileUri%20a%20%3Chttps%3A%2F%2Fschema.org%2FDataDownload%3E%20%3B%0A%20%20%20%20%20%20%20%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20dc%3Asource%20%3Frepository%20%3B%0A%20%20%20%20%20%20%20%20dcterms%3AhasPart%20%3Fshapes%20.%0A%7D&endpoint=https%3A%2F%2Fgraphdb.dumontierlab.com%2Frepositories%2Fshapes-registry&requestMethod=GET&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table).
 
-Shapes of You is a registry for SHACL & ShEx shapes, and SPARQL query files, published to public GitHub repositories.
+**Shapes of you** is a registry for SHACL & ShEx shapes, and SPARQL query files, published to public GitHub repositories.
 
 Add one of these  topics to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
 
@@ -18,7 +18,7 @@ Add one of these  topics to your GitHub repository, we automatically index files
 * **SPARQL queries**: add the topic `grlc`, we index `.rq` and `.sparql` files, and parse [grlc.io](http://grlc.io) APIs metadata
 * Additional repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt)
 
-You can check the RDF files which are not successfully parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md) file.
+You can check the RDF files which are not successfully parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md) file, and fix them!
 
 
 ## Planned improvements ➕
@@ -26,7 +26,7 @@ You can check the RDF files which are not successfully parsed by [`rdflib`](http
 - [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
 - [ ] Index more types of files (OWL ontologies, OpenAPI YAML)
 - [ ] Parse ShEx files to retrieve the defined shapes
-- [ ] Star shapes with your SOLID accounts
+- [ ] Star shapes files with your SOLID account
 - [ ] Store the data as [Nanopublications](http://nanopub.org/wordpress/), instead of requiring the deployment of a triplestore
 
 > Feel free to comment on this plan, or propose new improvements by creating an issue in this GitHub repository.
@@ -44,8 +44,34 @@ This web service is composed of those 4 main parts:
 
 * A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/MaastrichtU-IDS/shapes-of-you
 
+## Data model 📋
 
-## Run in development 🚧
+### Prefixes
+
+- rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+- dc: <http://purl.org/dc/elements/1.1/>
+- dcterms: <http://purl.org/dc/terms/>
+- schema: <https://schema.org/>
+- sh: <http://www.w3.org/ns/shacl#>
+- shex: <http://www.w3.org/ns/shex#>
+- void: <http://rdfs.org/ns/void#>
+
+### Classes
+
+* `schema:SoftwareSourceCode`
+  * Properties:
+    * `dcterms:hasPart`
+    * `dc:description`
+    * `dc:source` > `schema:CodeRepository`
+  * Subclasses:
+    * `sh:Shape`
+    * `shex:Schema`
+    * `sh:SPARQLFunction` - additional properties: `void:sparqlEndpoint`, `schema:query`
+* `schema:CodeRepository`
+  * Properties:
+    * `rdfs:comment`
+
+## Run web app in development 🚧
 
 Requirements:  [npm](https://www.npmjs.com/get-npm) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
 
@@ -68,17 +94,17 @@ Run the web app on http://localhost:19006, it should reload automatically at eac
 yarn web
 ```
 
-Upgrade the packages versions in `yarn.lock`
+Upgrade the packages versions in `yarn.lock`:
 
 ```bash
 yarn upgrade
 ```
 
-## Run in production 🛩️
+## Run web app in production 🛩️
 
-> This website is automatically deployed by a [GitHub Actions worklow](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://maastrichtu-ids.github.io/shapes-of-you
+This website is automatically deployed by a [GitHub Actions worklow](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://maastrichtu-ids.github.io/shapes-of-you
 
-You can build locally in `/web-build` folder and serve on http://localhost:5000
+You can also build locally in `/web-build` folder and serve on http://localhost:5000
 
 ```bash
 yarn build
@@ -93,7 +119,7 @@ docker-compose up
 
 > Checkout the [docker-compose.yml](/docker-compose.yml) file to see how we run the Docker image.
 
-## Get data from GitHub GraphQL API
+## Get data from GitHub GraphQL API ⛏️
 
 Checkout the GitHub workflow file to see how to run the Python script to retrieve the shapes from the GitHub GraphQL API and publish them to the .
 
@@ -122,12 +148,17 @@ python3 etl/get_shapes_from_github.py
 
 > Try out the GitHub GraphQL API [here](https://developer.github.com/v4/explorer/).
 
-## Use SOLID pod
+## Use SOLID pod 👤
 
-> Work in progress 🏗️
+> 🏗️ Work in progress, currently adding data to a pod fail due to permissions issue. But the user name is properly retrieved, and displayed!
 
-Go to your SOLID pod `/public/activities` folder and update permissions (the lock icon)
+To give permissions to Shapes of you to add data to your pod: 
 
-## Contribute
+* Go to your SOLID pod `/public/activities` folder 
+* Click on the lock icon 🔒 
+* Update permissions by adding the web app URL: https://maastrichtu-ids.github.io/shapes-of-you
+  * You can also add the localhost URL for development: http://localhost:19006
 
-Contributions are welcome! See the [guidelines to contribute 👨‍💻](/CONTRIBUTING.md).
+## Contribute 👩‍💻
+
+Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).
