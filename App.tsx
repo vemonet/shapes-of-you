@@ -1,13 +1,13 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { View } from "react-native";
-import { Router, Route } from "./react-router";
+import { Router, Route } from "./src/components/react-router";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
-import NavBar from "./src/NavBar";
-import Footer from "./src/Footer";
-import ShapeRegistry from "./src/ShapeRegistry";
-import About from "./src/About";
+import NavBar from "./src/components/NavBar";
+import Footer from "./src/components/Footer";
+import ShapeRegistry from "./src/pages/ShapeRegistry";
+import About from "./src/pages/About";
 // import blue from '@material-ui/core/colors/blue';
 
 // Change theme color and typography here

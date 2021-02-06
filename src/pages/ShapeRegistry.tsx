@@ -5,7 +5,6 @@ import { IconButton, InputBase } from "@material-ui/core";
 import { List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
-import SquareFootIcon from '@material-ui/icons/SquareFoot';
 import CodeIcon from '@material-ui/icons/Code';
 import BubbleChartIcon from '@material-ui/icons/BubbleChart';
 

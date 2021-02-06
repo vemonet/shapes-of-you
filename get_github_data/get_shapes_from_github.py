@@ -196,7 +196,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
     # Add repository RDF
     if shape_found:
       shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['codeRepository']))
-      shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url).rsplit('/', 1)))
+      shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url.rsplit('/', 1))))
       if (repo_description):
         shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
 

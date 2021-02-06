@@ -15,7 +15,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 
 import { AuthButton, Value } from '@solid/react';
 
-import iconImage from '../assets/icon.png';
+import iconImage from '../../assets/icon.png';
 
 const useStyles = makeStyles(theme => ({
   menuButton: {
