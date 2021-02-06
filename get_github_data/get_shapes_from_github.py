@@ -159,6 +159,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           for label in g.objects(shape, RDFS.label):
               # Try to get the label of the shape
               shape_label = label
+              # Fixing
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
       # TODO: Search for ShEx Shapes and ShapeAnd

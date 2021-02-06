@@ -1,0 +1,18 @@
+#+ endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
+#+ endpoint_in_url: False
+#+ summary:  List all repositories with the count of shapes files they contain
+#+ tags:
+#+   - Shapes registry
+#+ method: GET
+#+ pagination: 100
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+select ?repository (count(?shapeFileUri) as ?shapeFileCount) ?repo_description where { 
+  ?shapeFileUri a <https://schema.org/DataDownload> ;
+    rdfs:label ?label ;
+    dc:source ?repository .
+  OPTIONAL { ?repository rdfs:comment ?repo_description }
+} GROUP BY ?repository ?repo_description

@@ -1,0 +1,23 @@
+#+ endpoint: https://graphdb.dumontierlab.com/repositories/Fooshapes-registrydHealthClaimsKG
+#+ endpoint_in_url: False
+#+ summary:  List all shapes in shape files
+#+ tags:
+#+   - Shapes registry
+#+ method: GET
+#+ pagination: 100
+#+ defaults:
+#+   - foodlabel: calcium
+# enumerate:
+#   - food:
+#     - https://foodb.ca/compounds/FDB003513
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+select distinct * where { 
+    ?shapeFileUri a <https://schema.org/DataDownload> ;
+        rdfs:label ?label ;
+        dc:source ?repository ;
+        dcterms:hasPart ?shapes .
+}
