@@ -1,6 +1,8 @@
 from python_graphql_client import GraphqlClient
+import gitlab
 import pathlib
 import os
+import sys
 import shutil
 import urllib
 from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
@@ -19,6 +21,7 @@ SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes
 SPARQL_ENDPOINT_USERNAME='import_user'
 SPARQL_ENDPOINT_PASSWORD = os.getenv('SPARQL_PASSWORD')
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
+GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -26,7 +29,7 @@ SH = Namespace("http://www.w3.org/ns/shacl#")
 SHEX = Namespace("http://www.w3.org/ns/shex#")
 SCHEMA = Namespace("https://schema.org/")
 
-def main():
+def main(argv):
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
   # Reset failed shapes report file
@@ -35,8 +38,18 @@ def main():
       '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
   shapes_graph = Graph()
-  shapes_graph = fetch_shape_files(shapes_graph, client, TOKEN)
-  shapes_graph = fetch_extra_shape_files(shapes_graph, client, TOKEN)
+  if argv[1]:
+    git_registry = argv[1].lowercase()
+  else:
+    git_registry = 'github'
+
+  if git_registry == 'github':
+    shapes_graph = fetch_shape_files(shapes_graph, client, TOKEN)
+    shapes_graph = fetch_extra_shape_files(shapes_graph, client, TOKEN)
+  elif git_registry == 'gitlab':
+    gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
+    shapes_graph = fetch_from_gitlab(shapes_graph, gl)
+  # curl --header "PRIVATE-TOKEN: GITLAB_TOKEN" "https://gitlab.com/api/v4/search?scope=projects&search=owl%20ontology"
 
   shapes_graph.serialize('shapes-of-you-rdf.ttl', format='turtle')
 
@@ -45,8 +58,14 @@ def generate_github_file_url(repo_url, filepath, branch):
   """GitHub does not provide a way to get the download URL directly from GraphQL
   So we need to build the file URL from the github repo URL + branch + file path
   """
-  file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
-  file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
+  # file_url = ''
+  if repo_url.startswith('https://gitlab.com/'):
+    file_url = repo_url + '/-/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
+  else:
+    file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
+    file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
+  # https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src/main/resources/config.schema.json
+
   return file_url
 
 def get_files(extensions):
@@ -86,7 +105,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # # if rdf_file_path.endswith('.shexj'):
       # #   with open(root / '../' + rdf_file_path, 'a') as f:
       # #     shex_rdf = f.read()
-      
       # print(shex_rdf)
       # # for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
       # #     add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape, SHEX.schema)
@@ -232,6 +250,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
     print('Cloning ' + repo_url)
+    shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
     os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
     # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
 
@@ -257,7 +276,6 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
     for rdf_file_path in get_files(['*.nt']):
         shapes_graph = process_shapes_file('nt', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
         
-    shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
     return shapes_graph
 
 
@@ -365,6 +383,40 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
     shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
   return shapes_graph
 
+# Fetch files from GitLab
+def fetch_from_gitlab(shapes_graph, gl):
+    # topics = ['shacl-shapes', 'shex', 'grlc']
+    topics = ['owl', 'shacl', 'shex', 'sparql']
+    # , 'ontology'
+    # curl --header "PRIVATE-TOKEN: GITLAB_TOKEN" "https://gitlab.com/api/v4/search?scope=projects&search=owl%20ontology"
+
+    for search_topic in topics:
+      gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
+      # print(gitlab_repos_list)
+      for repo_json in gitlab_repos_list:
+        # Check shapes parsed
+        for shape in shapes_graph.subjects(RDF.type, SCHEMA['SoftwareSourceCode']):
+          print(shape)
+        # repo_json = repository["repo"]
+        # repo_url = repo_json["http_url_to_repo"]
+        repo_url = repo_json["web_url"]
+        if 'default_branch' in repo_json:
+          branch = repo_json['default_branch']
+        else:
+          branch = 'master'
+          print('No default_branch found for repo_url, using master')
+        repo_descriptions = []
+        if repo_json["name"]:
+          repo_descriptions.append(repo_json["name"])
+        if repo_json["description"]:
+          repo_descriptions.append(repo_json["description"])
+
+        repo_description = ' - '.join(repo_descriptions)
+        # repo_description = repo_json["shortDescriptionHTML"]
+        shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+    
+    return shapes_graph
+
 
 if __name__ == "__main__":
   # The script starts here
@@ -378,7 +430,7 @@ if __name__ == "__main__":
 
   # client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
-  main()
+  main(sys.argv)
 
 
 # def insert_graph_in_sparql_endpoint(g):

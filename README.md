@@ -126,10 +126,11 @@ Checkout the GitHub workflow file to see how to run the Python script to retriev
 
 You can find the scripts and requirements in the [`etl`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/etl) folder.
 
-Use this command to locally define the `GITHUB_APIKEY` environment variable required to run the script:
+Use this command to locally define the `GITHUB_TOKEN` and `GITLAB_TOKEN` environment variable required to run the script:
 
 ```bash
-export GITHUB_APIKEY=MYKEY000
+export GITHUB_TOKEN=MYGITHUBTOKEN000
+export GITLAB_TOKEN=MYGITLABTOKEN000
 ```
 
 > You can create a new GitHub API key (aka. personal access token) at https://github.com/settings/tokens
