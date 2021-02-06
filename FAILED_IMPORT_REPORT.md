@@ -2,6 +2,7525 @@
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsparql-compliance%2Fsrc%2Ftest%2Fresources%2Ftestdata-update%2Fdataset-update.trig
+
+In repository: https://github.com/ontop/ontop
+> at line 25 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsparql-compliance%2Fsrc%2Ftest%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig
+
+In repository: https://github.com/ontop/ontop
+> at line 15 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsparql-compliance%2Fsrc%2Ftest%2Fresources%2Ftestdata-query%2Fdataset-query.trig
+
+In repository: https://github.com/ontop/ontop
+> at line 38 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsparql-compliance%2Fsrc%2Ftest%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+In repository: https://github.com/ontop/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsparql-compliance%2Fsrc%2Ftest%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
+
+In repository: https://github.com/ontop/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fljoptional%2Frais-ontology.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/ljoptional/rais-ontology.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fissue381%2Fontology.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/issue381/ontology.owl:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fwkt%2Fwkt_test.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/wkt/wkt_test.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FlangTag%2FlangTag.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/langTag/langTag.owl:18:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ffilter%2Fdatatypes.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/filter/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fnpd-v2%2Fbfo-1.1.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/npd-v2/bfo-1.1.owl:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/engine%2Fsystem%2Fsql%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2Fregex%2Foracle-regexp.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/regex/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2FontologyType%2FdataPropertiesOntologyType.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fperson%2Fperson.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/person/person.owl:52:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fmaterializer%2FMaterializeTest.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnestedconcat%2Ftest.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/nestedconcat/test.owl:35:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fnumeric%2Fdatatypes.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fgeneral%2Fdatatypes.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fdatetime%2Fdatatypes.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fcharacter%2Fdatatypes.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fboolean%2Fdatatypes.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2FEPNet.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/EPNet.owl:33:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2Fimdb%2FontologyIMDB.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/imdb/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Flocal%2Fadp%2Fnpd-ql.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/local/adp/npd-ql.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/describeConstruct.owl:35:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/mapping%2Fsql%2Fall%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fio%2FSchool.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/src/test/resources/it/unibz/inf/ontop/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/client%2Fprotege%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fapi%2Fio%2FSchool.owl
+
+In repository: https://github.com/ontop/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/src/test/resources/it/unibz/inf/ontop/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FrepeatedCN%2FrepeatedCN_test.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 9 of <>:
+Bad syntax (Prefix "rr:" not bound) at ^ in:
+"...b': <http://www.w3.org/2000/01/rdf-schema#> .\n\n<#Professor> a '^b'rr:TriplesMap;\n        rr:logicalTable [ rr:tableName "profe'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fnullif%2Fnullif.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"b'PREFIX owl: <http://www.w3.org/2002/07/owl#> '^b'.\n\n<http://example.org/hasNumber> a owl:DataProperty .'"
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Frdf4j%2Fsrc%2Ftest%2Fresources%2Fissue390%2Fmapping.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 2 of <>:
+Bad syntax (Prefix "rr:" not bound) at ^ in:
+"b'<agency>\n\t'^b'rr:logicalTable [\n\t\trr:tableName "AGENCY";\n\t];\n\trr:subjectMa'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Frdf4j%2Fsrc%2Ftest%2Fresources%2Fissue325%2Fmapping.r2rml.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 2 of <>:
+Bad syntax (Prefix "rr:" not bound) at ^ in:
+"b'<example1>\n\t'^b'rr:logicalTable [\n\t\trr:tableName "example1";\n\t];\n\trr:subject'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Frdf4j%2Fsrc%2Ftest%2Fresources%2Fempty-query-mapping%2Fmapping.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 2 of <>:
+Bad syntax (Prefix "rr:" not bound) at ^ in:
+"b'<agency>\n\t'^b'rr:logicalTable [\n\t\trr:sqlQuery "select * from AGENCY where '..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/binding%2Frdf4j%2Fsrc%2Ftest%2Fresources%2Fissue107b%2Fmapping.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 2 of <>:
+Bad syntax (Prefix "rr:" not bound) at ^ in:
+"b'<#just_a_map_five>\n\ta '^b'rr:TriplesMap;\n\trr:logicalTable [\n\t\trr:tableName "SG_TABLE_O'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnorthwind%2Fmapping-northwind-platform.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 6 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'D5(CONCAT(COALESCE(Address, RAND()), COALESCE(City, RAND()),'^b'\n                                           COALESCE(Region,'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+In repository: https://github.com/ontop/ontop
+> at line 6 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FConceptualSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/GaugeTheories> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/GaugeTheories> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FFoodDrink-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FVisualInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FPlants-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PlumTree> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PlumTree> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FProducts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FMediativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SportsAtTheWinterOlympics> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SportsAtTheWinterOlym'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAdjunctualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FSymbolic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FTimes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SexualityInTheClassicalWorld> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SexualityInTheClassic'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAreaRegion-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FEventTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/OffshoreEngineering> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/OffshoreEngineering> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAVInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FNaturalSubstances-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAssociatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ConferenceProceedingsSeries> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ConferenceProceedings'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FDrugs-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Pentobarbital> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Pentobarbital> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FInformation-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FSituationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NuclearAttack> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NuclearAttack> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FForms-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FContextualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Widowed> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Widowed> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FIndexes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAnimals-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FDenotatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVCommercial-IBT> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVCommercial-IBT> rdf'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAudioInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FDiseases-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PsychologicalAilment> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PsychologicalAilment>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FMethodeutic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TeachingMethod> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TeachingMethod> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FArtifacts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/IndianCurries> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/IndianCurries> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FOrganizations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FCopulativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAgents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FPersons-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FSpaceTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FGeopolitical-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FProkaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PseudomonasPertucinogena> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PseudomonasPertucinog'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FConstituents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Paradoxes> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Paradoxes> rdfs:subCl'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FProtistsFungus-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Acrasiomycota> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Acrasiomycota> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FNaturalPhenomena-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FBiologicalProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/CellularRespiration-Aerobic> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/CellularRespiration-A'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FKnowledgeDomains-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AutoAudioSystem> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AutoAudioSystem> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FFacilities-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FPlaces-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FLivingThings-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Widowed> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Widowed> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FInquiryMethods-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'ttp://kbpedia.org/kko/rc/GraduateManagementAdmissionTest> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/GraduateManagementAdm'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FLearningProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'ernativeTherapiesForDevelopmentalAndLearningDisabilities> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AlternativeTherapiesF'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FNaturalMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FSociety-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FEukaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FSocialSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FActionTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FIntrinsicAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FEmergentKnowledge-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Emergence> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Emergence> rdfs:subCl'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FWrittenInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FShapes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FDirectRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Chemistry-Topic> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Chemistry-Topic> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FAtomsElements-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FOrganicMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FTopicsCategories-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FLocationPlace-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FConcepts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FOrganicChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FTimeTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Timekeeping> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Timekeeping> rdfs:sub'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FRelationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FunctionalRelation> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FunctionalRelation> r'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FStructuredInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FEconomicSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Ftypologies%2FManifestations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fgeo.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SpatialThing> '^b'owl:equivalentClass <http://www.w3.org/2003/01/geo/wgs84_pos'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Ffrbr.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://purl.org/vocab/frbr/core#Concept> '^b'owl:equivalentClass <http:/kbpedia.org/kbpedia/rc/Concept> .'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fwikidata.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://www.wikidata.org/entity/Q127980> '^b'owl:equivalentClass <http://kbpedia.org/kko/rc/Fat> .\n<http:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fcc.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/CopyrightLicense> '^b'owl:equivalentClass <http://creativecommons.org/ns#License> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fgeonames.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Airfield> '^b'kko:superClassOf <http://www.geonames.org/ontology#S.AIRF> .'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Ftransit.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Fare> '^b'kko:superClassOf <http://vocab.org/transit/terms/Fare> .\n<ht'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fdc.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Encoding> '^b'kko:superClassOf <http://purl.org/dc/dcam/VocabularyEncoding'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fbibo.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "rdfs:" not bound) at ^ in:
+"b'<http://purl.org/ontology/bibo/AudioVisualDocument> '^b'rdfs:subClassOf <http://kbpedia.org/kko/rc/VideoConceptualWo'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Ftime.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/January> '^b'kko:superClassOf <http://www.w3.org/2006/time#January> .\n<ht'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Forg.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Business> '^b'kko:superClassOf <http://purl.org/goodrelations/v1#BusinessE'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Frss.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "rdfs:" not bound) at ^ in:
+"b'<http://purl.org/rss/1.0/channel> '^b'rdfs:subClassOf <http://kbpedia.org/kko/rc/CommunicationChan'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Ffoaf.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/IDDocument> '^b'kko:superClassOf <http://xmlns.com/foaf/0.1/PersonalProfileD'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Foo.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Agent-Generic> '^b'kko:superClassOf <http://purl.org/dc/terms/Agent> .\n<http://'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fmo.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/MusicPerformanceAgent> '^b'owl:equivalentClass <http://purl.org/ontology/mo/MusicArtist'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fevent.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Event> '^b'owl:equivalentClass <http://purl.org/NET/c4dm/event.owl#Even'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fdoap.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/InformationStore> '^b'kko:superClassOf <http://usefulinc.com/ns/doap#Repository> .'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fumbel.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://umbel.org/umbel/rc/Abnormal-Organism-Whole> '^b'owl:equivalentClass <http://kbpedia.org/kko/rc/Abnormal-Orga'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fdbpedia-ontology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "kko:" not bound) at ^ in:
+"b'<http://dbpedia.org/ontology/BiologicalDatabase> '^b'kko:superClassOf <http://kbpedia.org/kko/rc/MedicalDatabase>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fwikipedia.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://wikipedia.org/wiki/1-Amino-2-propanol> '^b'owl:equivalentClass <http://kbpedia.org/kko/rc/1-Amino-2-pro'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fschema.org.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://schema.org/Abdomen> '^b'owl:equivalentClass <http://kbpedia.org/kko/rc/Abdomen> .\n<h'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fpo.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Broadcasting> '^b'owl:equivalentClass <http://purl.org/ontology/po/Broadcast> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F1.60%2Flinkages%2Fsioc.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/MessageThread> '^b'owl:equivalentClass <http://rdfs.org/sioc/ns#Thread> .\n<http'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FConceptualSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FFoodDrink-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FVisualInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FPlants-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PlumTree> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PlumTree> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FProducts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FMediativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SportsAtTheWinterOlympics> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SportsAtTheWinterOlym'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAdjunctualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FSymbolic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FTimes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SexualityInTheClassicalWorld> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SexualityInTheClassic'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAreaRegion-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FEventTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAVInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FNaturalSubstances-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAssociatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ConferenceProceedingsSeries> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ConferenceProceedings'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FDrugs-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Pentobarbital> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Pentobarbital> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FInformation-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FSituationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NuclearAttack> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NuclearAttack> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FForms-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FContextualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Widowed> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Widowed> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FIndexes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAnimals-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FDenotatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAudioInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FDiseases-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PsychologicalAilment> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PsychologicalAilment>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FMethodeutic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TeachingMethod> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TeachingMethod> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FArtifacts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FOrganizations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FCopulativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAgents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FPersons-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FSpaceTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FGeopolitical-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WesternEuropeanCountry> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WesternEuropeanCountr'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FProkaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PseudomonasPertucinogena> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PseudomonasPertucinog'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FConstituents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Words> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Words> rdfs:subClassO'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FProtistsFungus-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Acrasiomycota> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Acrasiomycota> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FNaturalPhenomena-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FBiologicalProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/CellularProcess> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/CellularProcess> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FKnowledgeDomains-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AutoAudioSystem> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AutoAudioSystem> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FFacilities-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FPlaces-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FLivingThings-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FInquiryMethods-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Morphism> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Morphism> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FLearningProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/StandardModel> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/StandardModel> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FNaturalMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FSociety-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FEukaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FSocialSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FActionTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FIntrinsicAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FEmergentKnowledge-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Emergence> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Emergence> rdfs:subCl'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FWrittenInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FShapes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FDirectRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/LacrimalCanal> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/LacrimalCanal> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FAtomsElements-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FOrganicMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FTopicsCategories-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FLocationPlace-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WesternEuropeanCountry> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WesternEuropeanCountr'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FConcepts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FOrganicChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FTimeTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Timekeeping> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Timekeeping> rdfs:sub'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FRelationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FunctionalRelation> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FunctionalRelation> r'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FStructuredInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FEconomicSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.00%2Ftypologies%2FManifestations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FConceptualSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FFoodDrink-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FVisualInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FPlants-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Brassicaceae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Brassicaceae> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FProducts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FMediativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SportsAtTheWinterOlympics> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SportsAtTheWinterOlym'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAdjunctualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FSymbolic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FTimes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SexualityInTheClassicalWorld> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SexualityInTheClassic'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAreaRegion-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FEventTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAVInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FNaturalSubstances-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAssociatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ConferenceProceedingsSeries> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ConferenceProceedings'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FDrugs-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Pentobarbital> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Pentobarbital> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FInformation-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FSituationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NuclearAttack> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NuclearAttack> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FForms-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FContextualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FIndexes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAnimals-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FDenotatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAudioInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FDiseases-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PsychologicalAilment> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PsychologicalAilment>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FMethodeutic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TRIZ> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TRIZ> rdfs:subClassOf'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FArtifacts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FOrganizations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FCopulativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAgents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FPersons-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FSpaceTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FGeopolitical-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FProkaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Bacterium-MotileByFlagellum> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Bacterium-MotileByFla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FConstituents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Words> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Words> rdfs:subClassO'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FProtistsFungus-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Acrasiomycota> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Acrasiomycota> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FNaturalPhenomena-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FBiologicalProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/CellularProcess> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/CellularProcess> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FKnowledgeDomains-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AutoAudioSystem> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AutoAudioSystem> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FFacilities-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FPlaces-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FLivingThings-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FInquiryMethods-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Morphism> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Morphism> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FLearningProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FNaturalMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FSociety-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FEukaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FSocialSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FActionTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FIntrinsicAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FEmergentKnowledge-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Emergence> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Emergence> rdfs:subCl'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FWrittenInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FShapes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FDirectRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/LacrimalCanal> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/LacrimalCanal> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FAtomsElements-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FOrganicMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FTopicsCategories-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FLocationPlace-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FConcepts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FOrganicChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FTimeTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Timekeeping> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Timekeeping> rdfs:sub'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FRelationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FunctionalRelation> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FunctionalRelation> r'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FStructuredInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FEconomicSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FManifestations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FConceptualSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FFoodDrink-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PlumTree> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PlumTree> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FVisualInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FPlants-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Brassicaceae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Brassicaceae> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FProducts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WindowTreatment> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WindowTreatment> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FMediativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SportsAtTheWinterOlympics> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SportsAtTheWinterOlym'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAdjunctualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'ttp://kbpedia.org/kko/rc/InMoldDecoratedInjectionMolding> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/InMoldDecoratedInject'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FSymbolic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FSecondarySectorProduct-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'ttp://kbpedia.org/kko/rc/InMoldDecoratedInjectionMolding> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/InMoldDecoratedInject'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FTimes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SexualityInTheClassicalWorld> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SexualityInTheClassic'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAreaRegion-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FEventTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'ttp://kbpedia.org/kko/rc/InMoldDecoratedInjectionMolding> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/InMoldDecoratedInject'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAVInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FNaturalSubstances-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAssociatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVCommercial-IBT> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVCommercial-IBT> rdf'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FDrugs-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AnalgesicSynthesized> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AnalgesicSynthesized>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FInformation-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FSituationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FForms-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FContextualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FIndexes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAnimals-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FDenotatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVCommercial-IBT> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVCommercial-IBT> rdf'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAudioInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FDiseases-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PsychologicalAilment> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PsychologicalAilment>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FMethodeutic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TRIZ> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TRIZ> rdfs:subClassOf'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FArtifacts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FOrganizations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FCopulativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAgents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FPersons-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FSpaceTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FGeopolitical-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FProkaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Bacterium-MotileByFlagellum> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Bacterium-MotileByFla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FConstituents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/KnowledgeGraph> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/KnowledgeGraph> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FProtistsFungus-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Acrasiomycota> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Acrasiomycota> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FNaturalPhenomena-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FBiologicalProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/CellularProcess> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/CellularProcess> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FKnowledgeDomains-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Modulator> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Modulator> rdfs:subCl'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FPrimarySectorProduct-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FFacilities-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FPlaces-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FLivingThings-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FInquiryMethods-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Morphism> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Morphism> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FLearningProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FNaturalMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FSociety-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FEukaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NFLCheerleader> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NFLCheerleader> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FSocialSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FActionTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FIntrinsicAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FEmergentKnowledge-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/KnowledgeGraph> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/KnowledgeGraph> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FWrittenInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Adware> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Adware> rdfs:subClass'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FShapes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FDirectRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/LacrimalCanal> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/LacrimalCanal> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FAtomsElements-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FOrganicMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FTopicsCategories-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FLocationPlace-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FTertiarySectorService-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/OffshoreEngineering> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/OffshoreEngineering> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FConcepts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FOrganicChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FTimeTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TimeAsAQuantity-TimeTopic> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TimeAsAQuantity-TimeT'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FRelationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FunctionalRelation> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FunctionalRelation> r'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FStructuredInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Adware> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Adware> rdfs:subClass'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FEconomicSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.50%2Ftypologies%2FManifestations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FConceptualSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FFoodDrink-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FVisualInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FPlants-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PlumTree> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PlumTree> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FProducts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FMediativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SportsAtTheWinterOlympics> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SportsAtTheWinterOlym'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAdjunctualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FSymbolic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FTimes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SexualityInTheClassicalWorld> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SexualityInTheClassic'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAreaRegion-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FEventTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAVInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FNaturalSubstances-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAssociatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ConferenceProceedingsSeries> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ConferenceProceedings'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FDrugs-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Pentobarbital> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Pentobarbital> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FInformation-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FSituationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NuclearAttack> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NuclearAttack> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FForms-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FContextualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FIndexes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAnimals-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FDenotatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAudioInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FDiseases-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PsychologicalAilment> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PsychologicalAilment>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FMethodeutic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TeachingMethod> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TeachingMethod> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FArtifacts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FOrganizations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FCopulativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAgents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FPersons-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FSpaceTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FGeopolitical-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FProkaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PseudomonasPertucinogena> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PseudomonasPertucinog'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FConstituents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Words> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Words> rdfs:subClassO'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FProtistsFungus-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Acrasiomycota> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Acrasiomycota> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FNaturalPhenomena-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FBiologicalProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/CellularProcess> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/CellularProcess> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FKnowledgeDomains-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AutoAudioSystem> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AutoAudioSystem> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FFacilities-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FPlaces-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FLivingThings-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FInquiryMethods-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Morphism> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Morphism> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FLearningProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/StandardModel> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/StandardModel> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FNaturalMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FSociety-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FEukaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FSocialSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FActionTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FIntrinsicAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FEmergentKnowledge-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Emergence> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Emergence> rdfs:subCl'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FWrittenInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FShapes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FDirectRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/LacrimalCanal> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/LacrimalCanal> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FAtomsElements-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FOrganicMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FTopicsCategories-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FLocationPlace-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FConcepts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FOrganicChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FTimeTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Timekeeping> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Timekeeping> rdfs:sub'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FRelationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FunctionalRelation> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FunctionalRelation> r'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FStructuredInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FEconomicSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.10%2Ftypologies%2FManifestations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FConceptualSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FFoodDrink-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FVisualInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FPlants-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Brassicaceae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Brassicaceae> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FProducts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FMediativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SportsAtTheWinterOlympics> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SportsAtTheWinterOlym'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAdjunctualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FSymbolic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FTimes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/SexualityInTheClassicalWorld> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/SexualityInTheClassic'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAreaRegion-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FEventTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAVInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TVGameShow> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TVGameShow> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FNaturalSubstances-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAssociatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ConferenceProceedingsSeries> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ConferenceProceedings'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FDrugs-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Pentobarbital> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Pentobarbital> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FInformation-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FSituationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NuclearAttack> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NuclearAttack> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FForms-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FContextualAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FIndexes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAnimals-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FDenotatives-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAudioInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FDiseases-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/PsychologicalAilment> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/PsychologicalAilment>'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FMethodeutic-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/TRIZ> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/TRIZ> rdfs:subClassOf'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FArtifacts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/The2PillarsOfWisdom> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FOrganizations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FCopulativeRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAgents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FPersons-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FSpaceTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FGeopolitical-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FProkaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Bacterium-MotileByFlagellum> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Bacterium-MotileByFla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FConstituents-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Words> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Words> rdfs:subClassO'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FProtistsFungus-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Acrasiomycota> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Acrasiomycota> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FNaturalPhenomena-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/NewSchoolHipHop> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/NewSchoolHipHop> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FBiologicalProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/CellularProcess> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/CellularProcess> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FKnowledgeDomains-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AutoAudioSystem> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AutoAudioSystem> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FFacilities-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Knife-Electric> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Knife-Electric> rdfs:'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FPlaces-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/AntarcticRegion> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/AntarcticRegion> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FLivingThings-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FInquiryMethods-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Morphism> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Morphism> rdfs:subCla'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FLearningProcesses-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FNaturalMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FSociety-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/WestVirginiaCulture> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/WestVirginiaCulture> '..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FEukaryotes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Blephariceridae> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Blephariceridae> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FSocialSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FActionTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ChildGrooming> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ChildGrooming> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FIntrinsicAttributes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FleshWhiteColor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FleshWhiteColor> rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FEmergentKnowledge-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Emergence> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Emergence> rdfs:subCl'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FWrittenInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FShapes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FDirectRelations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/LacrimalCanal> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/LacrimalCanal> rdfs:s'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FAtomsElements-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FOrganicMatter-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FTopicsCategories-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Meitnerium> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Meitnerium> rdfs:subC'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FLocationPlace-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/UrbanMunicipality-Germany> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/UrbanMunicipality-Ger'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FConcepts-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/HouseOfTudor> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/HouseOfTudor> rdfs:su'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FOrganicChemistry-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FTimeTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Timekeeping> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Timekeeping> rdfs:sub'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FRelationTypes-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/FunctionalRelation> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/FunctionalRelation> r'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FStructuredInfo-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FEconomicSystems-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/ContentsInsurance> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/ContentsInsurance> rd'..."
+
+---
+File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.21%2Ftypologies%2FManifestations-typology.n3
+
+In repository: https://github.com/Cognonto/kbpedia
+> at line 1 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp_ncit_eq.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp_ncit_eq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-idranges.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-idranges.owl:2:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-edit.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-qc.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-qc.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Farchive%2Fhp_go-redundant.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/archive/hp_go-redundant.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fbeer.rdf
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/beer.rdf:24:3315: two elements cannot use the same ID: 'file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/beer.rdf#Hops'
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Flife%2FBiological+Taxonomy+Vocabulary+0.2+%28Core%29.rdf
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/life/Biological%20Taxonomy%20Vocabulary%200.2%20%28Core%29.rdf:159:4: Property attr 'http://www.w3.org/1999/02/22-rdf-syntax-ns#datatype' now allowed here
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.dumontierlab.com%2Fperiodic-table-complex.rdf
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.dumontierlab.com/periodic-table-complex.rdf:37:90: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Ontology
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontologi.es%2Fplace_arc.rdf
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontologi.es/place_arc.rdf:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2FPlans.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/Plans.owl:104:86: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#class
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2FProjectManagement.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ProjectManagement.owl:558:10: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#resource
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2FSWEET%2F2.2%2FreprSciUnits.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/SWEET/2.2/reprSciUnits.owl:714:2: two elements cannot use the same ID: 'http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#lux'
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fdaml%2Fowl-s+1.2%2FServiceParameter.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/daml/owl-s%201.2/ServiceParameter.owl:80:2: two elements cannot use the same ID: 'http://www.daml.org/services/owl-s/1.2/ServiceParameter.owl#serviceParameter'
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FGCI-Innovation.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/GCI-Innovation.owl:54:70: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FInnovation-ISO+37120+Innovation+Theme+Indicators+Definitions.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/Innovation-ISO%2037120%20Innovation%20Theme%20Indicators%20Definitions.owl:56:70: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FEducation-ISO+37120+Education+Theme+Indicators+Definitions.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/Education-ISO%2037120%20Education%20Theme%20Indicators%20Definitions.owl:50:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Ftrust.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/trust.owl:35:77: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FGCI-Foundation.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/GCI-Foundation.owl:47:92: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Ficontact.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/icontact.owl:41:125: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Forganization.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/organization.owl:31:98: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Fretail.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/retail.owl:26:64: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FISO37120.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/ISO37120.owl:31:76: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Fopen311.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/open311.owl:42:92: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Fkp.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/kp.owl:35:100: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Factivity.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/activity.owl:21:100: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2Fgovstat.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/govstat.owl:27:104: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FGCI-Education.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/GCI-Education.owl:50:92: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FCity+of+Toronto+2013+ISO+37120+Indicators%2FEducation+Theme+Indicators%2FISO37120_6_2013_TO.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/City%20of%20Toronto%202013%20ISO%2037120%20Indicators/Education%20Theme%20Indicators/ISO37120_6_2013_TO.owl:46:92: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontology.eil.utoronto.ca%2FCity+of+Toronto+2013+ISO+37120+Indicators%2FShelter+Theme+Indicators%2FISO37120_15_2013_TO.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology.eil.utoronto.ca/City%20of%20Toronto%202013%20ISO%2037120%20Indicators/Shelter%20Theme%20Indicators/ISO37120_15_2013_TO.owl:46:92: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fw3id.org%2Fengineering-vocabulary.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/w3id.org/engineering-vocabulary.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2FeBiquity%2Fassertion.owl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/eBiquity/assertion.owl:279:2: two elements cannot use the same ID: 'http://ebiquity.umbc.edu/ontology/assertion.owl#hasResource'
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Flike%28Ultra-simple+Review+Vocabulary%29.ttl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> at line 159 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b' ## ## ## ## ## ##\n\n# Imply flattened form from reified form'^b'.\n{ ?person like:opinion [ a like:PositiveOpinion ; like:reg'..."
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fw3.org%2Fw3-adms.ttl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> at line 26 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b'p://www.w3.org/People/all#phila>;\n  \tfoaf:name "Phil Archer"'^b'.] ,\n    [schema:affiliation [foaf:homepage <http://ies.jrc.'..."
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fw3.org%2Fw3-person.ttl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> at line 66 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'mple. In Bulgaria and Russia, patronymic names are in every '^b'day usage, for example, the &quot;Sergeyevich&quot; (\xd0\xa1\xd0\xb5\xd1\x80\xd0'..."
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fw3.org%2Fcsvw.ttl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> 'utf-8' codec can't decode byte 0xc3 in position 1956: invalid continuation byte
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fw3id.org%2Ffunction%2Ffunctions.ttl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> at line 32 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'e "Ben De Meester"@en\n  ];\n  dcterms:modified "2016-06-16"^^'^b'xsd:date;\n  cc:license <http://creativecommons.org/license/b'..."
+
+---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fontologydesignpatterns.org%2Fregorg.ttl
+
+In repository: https://github.com/taurenshaman/semantic-web
+> at line 24 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b'Archer"@en;\n    schema:affiliation [foaf:name "W3C/ERCIM"@en'^b'.]],\n    [rdfs:seeAlso <http://andrea-perego.name/foaf/#me>;'..."
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-idranges.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/go-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fgo-taxon-groupings-edit.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/go-taxon-groupings-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-modules-annotations.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-modules-annotations.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-gci.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-gci.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-bridge.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Flegorel.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/legorel.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgorel-edit.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/gorel-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fontology%2Fsweet-edit.owl
+
+In repository: https://github.com/ESIPFed/sweet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ci/ontology/sweet-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fontology%2Fsweet-idranges.owl
+
+In repository: https://github.com/ESIPFed/sweet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ci/ontology/sweet-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparql-dawg-tests%2Ftest-manifest.n3
+
+In repository: https://github.com/Galigator/openllet
+> at line 82 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fswrl-test%2Fmisc%2FbasicFamilyRules.owl
+
+In repository: https://github.com/Galigator/openllet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/src/test/resources/test/data/swrl-test/misc/basicFamilyRules.owl:34:15: two elements cannot use the same ID: 'http://www.csc.liv.ac.uk/~luigi/basicFamily/rules#x'
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fliebig-tests%2F29b.owl
+
+In repository: https://github.com/Galigator/openllet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/src/test/resources/test/data/liebig-tests/29b.owl:37:0: two elements cannot use the same ID: 'file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/src/test/resources/test/data/liebig-tests/29b.owl#rs3'
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fliebig-tests%2F29.owl
+
+In repository: https://github.com/Galigator/openllet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/src/test/resources/test/data/liebig-tests/29.owl:38:0: two elements cannot use the same ID: 'http://www.informatik.uni-ulm.de/ki/Liebig/reasoner-eval/29.owl#rs3'
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fliebig-tests%2F29a.owl
+
+In repository: https://github.com/Galigator/openllet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/src/test/resources/test/data/liebig-tests/29a.owl:38:0: two elements cannot use the same ID: 'http://www.informatik.uni-ulm.de/ki/Liebig/reasoner-eval/29a.owl#rs3'
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fmodularity%2Fgalen.owl
+
+In repository: https://github.com/Galigator/openllet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/src/test/resources/test/data/modularity/galen.owl:39380:0: rdf:ID value is not a valid NCName: 1.0
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/module-jena%2Fsrc%2Ftest%2Fresources%2Fjena-datatypes.owl
+
+In repository: https://github.com/Galigator/openllet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/module-jena/src/test/resources/jena-datatypes.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/module-owlapi%2Fsrc%2Ftest%2Fresources%2Ftest_data%2Frestriction_conjonction.owl
+
+In repository: https://github.com/Galigator/openllet
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/module-owlapi/src/test/resources/test_data/restriction_conjonction.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fowl2ConstructorsData4.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fsimple.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fowl2ConstructorsData2.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fowl2ConstructorsData6.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Flang.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix foaf: <http://xmlns.com/foaf/0.1/> .\r@prefix : <htt'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fowl2ConstructorsData1.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fowl2ConstructorsData3.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fowl2ConstructorsData5.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparqldl-tests%2Fsimple%2Fparent.ttl
+
+In repository: https://github.com/Galigator/openllet
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmondo-idranges.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/mondo-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fequivs.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/equivs.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fdisease_by_location.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/disease_by_location.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-pattern.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/dosdp-pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fcomponents%2Fpattern-ontology-remove-axioms.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/components/pattern-ontology-remove-axioms.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/RDFLib/pyLODE/master/pylode%2Ftests%2Ftest_broken_rdf.ttl
+
+In repository: https://github.com/RDFLib/pyLODE
+> at line 11 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'Schema#> .\n\n@prefix : <http://example-ontology.org/> .\n\n: a '^b'owl:Ontology .\n\n# normal, basic\n:testprop\n    a owl:ObjectPr'..."
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-ML/master/sansa-ml-spark%2Fsrc%2Ftest%2Fresources%2FClassification%2Ftrains.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-ML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-ml-spark/src/test/resources/Classification/trains.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-ML/master/sansa-ml-spark%2Fsrc%2Ftest%2Fresources%2FClassification%2Font_functional.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-ML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-ml-spark/src/test/resources/Classification/ont_functional.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/Ebiquity/Unified-Cybersecurity-Ontology/master/uco_1_5.owl
+
+In repository: https://github.com/Ebiquity/Unified-Cybersecurity-Ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/uco_1_5.owl:673:32: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fnif_import.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/nif_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-refactored.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-refactored.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-removedaxioms.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-removedaxioms.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-idranges.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-edit.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fnif_import.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/nif_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fro_seed.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ro_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fabox.owl
+
+In repository: https://github.com/geneontology/obographs
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/abox.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-dl-query%2Fcc.owl
+
+In repository: https://github.com/geneontology/protege-tutorial
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/basic-dl-query/cc.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/template-examples%2Fpato-slim.owl
+
+In repository: https://github.com/geneontology/protege-tutorial
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/template-examples/pato-slim.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/template-examples%2Fto-slim.owl
+
+In repository: https://github.com/geneontology/protege-tutorial
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/template-examples/to-slim.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/template-examples%2Fro-slim.owl
+
+In repository: https://github.com/geneontology/protege-tutorial
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/template-examples/ro-slim.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/template-examples%2Fpo-slim.owl
+
+In repository: https://github.com/geneontology/protege-tutorial
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/template-examples/po-slim.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/template-examples%2Ftest1.owl
+
+In repository: https://github.com/geneontology/protege-tutorial
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/template-examples/test1.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/callahantiff/PheKnowLator/master/tests%2Fdata%2Fontologies%2Fempty_hp_with_imports.owl
+
+In repository: https://github.com/callahantiff/PheKnowLator
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/data/ontologies/empty_hp_with_imports.owl:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/mobi-itests%2Fitests-etl%2Fsrc%2Ftest%2Fresources%2FtestData.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 8 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'                   <http://mobi.com/data/uhtc/element/C> .\n\n'^b'GRAPH <http://mobi.com/data/uhtc/elements> {\n    <http://mob'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/mobi-itests%2Fitests-orm%2Fsrc%2Ftest%2Fresources%2Fontologies%2Fagent.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix foaf: <http://xmlns.com/foaf/0.1/>\n'^b'@prefix : <urn://mobi.com/orm/test/>\n\n\n:testAgent {\n\t:testAg'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.catalog.impl%2Fsrc%2Ftest%2Fresources%2FtestCommitChainData.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 19 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'raphs#> .\n\n# Duplicate Addition From Same Base Commit Test\n\n'^b'GRAPH records:duplicate-change-record {\n    records:duplicat'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.catalog.impl%2Fsrc%2Ftest%2Fresources%2FtestCatalogData.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 20 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b' mergereqs: <http://mobi.com/ontologies/merge-requests#> .\n\n'^b'GRAPH <http://mobi.com/test#empty> { }\n\nGRAPH <http://mobi.c'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.explorable.dataset.rest%2Fsrc%2Ftest%2Fresources%2Ftest-dataset-data.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 213 of <>:
+Bad syntax (EOF found in middle of path syntax) at ^ in:
+"b'<http://mobi.com/dataset/a9a20370-e4d8-43c0-8a13-6e720b2ede10_system_dng> {\n\t<http://mobi.com/data/uhtc/material/c1855eb9-89dc-445e-8f02-22c1162c0844> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "ZrN" ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 7.29E0 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/FCC> .\n\n\t<http://mobi.com/data/uhtc/material/fb17ca2f-f9d0-4a4d-b780-2f4025983ae2> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 1.276E1 ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/FCC> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "HfC" .\n\n\t<http://mobi.com/data/uhtc/material/4e60785a-e091-4f26-834a-198aebeb3483> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 1.119E1 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "HfB2" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Hexagonal> .\n\n\t<http://mobi.com/data/uhtc/material/2e345d0d-20a6-4329-b8e7-e5cb2709edb6> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 1.45E1 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "TaC" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Cubic> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" .\n\n\t<http://mobi.com/data/uhtc/material/9d273e6a-2a97-47eb-9a14-529ce8d8343e> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Polymorphic> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 3.21E0 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "SiC" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" .\n\n\t<http://mobi.com/data/uhtc/material/b5989d3b-047d-4903-8533-1f520d8ce5b2> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 1.254E1 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "TaB2" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Hexagonal> .\n\n\t<http://mobi.com/data/uhtc/material/6e6e9300-bf78-4493-8705-223d10ef0093> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "TiN" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 5.39E0 ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/FCC> .\n\n\t<http://mobi.com/data/uhtc/material/12e0c002-1bec-4bdc-b475-19ca88cc04cc> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "ZrB2" ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 6.1E0 ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Hexagonal> .\n\n\t<http://mobi.com/data/uhtc/material/00698807-763b-40cc-a74a-4f78b706f1d5> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 1.43E1 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "TaN" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Cubic> .\n\n\t<http://mobi.com/data/uhtc/material/70402dcc-47ae-4b9f-a788-8f66b06b2d00> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 4.94E0 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "TiC" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Cubic> .\n\n\t<http://mobi.com/data/uhtc/material/57824c72-69ca-4d4d-875a-22c37d179549> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 1.39E1 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "HfN" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/FCC> .\n\n\t<http://mobi.com/data/uhtc/material/810a4205-df93-4951-8945-5081680a4fcf> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 4.52E0 ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "TiB2" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/Hexagonal> .\n\n\t<http://mobi.com/data/uhtc/material/14fb99d6-32ec-445e-8192-12630fcb77a6> a <http://mobi.com/ontologies/uhtc/Material> ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://www.w3.org/2000/01/rdf-schema#label> "ZrC" ;\n\t\t<http://mobi.com/ontologies/uhtc/crystalStructure> <http://mobi.com/data/uhtc/crystalstructure/FCC> ;\n\t\t<http://mobi.com/ontologies/uhtc/density> 6.56E0 .\n\n\t<http://mobi.com/data/uhtc/crystalstructure/Cubic> a <http://mobi.com/ontologies/uhtc/CrystalStructure> ;\n\t    <http://www.w3.org/2000/01/rdf-schema#label> "French Label"@fr ;\n\t    <http://www.w3.org/2000/01/rdf-schema#label> "Label"@en ;\n\t    <http://www.w3.org/2000/01/rdf-schema#comment> "Comment" ;\n\t\t<http://purl.org/dc/terms/title> "Title" ;\n\t\t<http://purl.org/dc/terms/description> "Description" .\n\n\t<http://mobi.com/data/uhtc/crystalstructure/FCC> a <http://mobi.com/ontologies/uhtc/CrystalStructure> ;\n\t    <http://www.w3.org/2000/01/rdf-schema#comment> "French Comment"@fr ;\n\t    <http://www.w3.org/2000/01/rdf-schema#comment> "Comment"@en ;\n\t\t<http://purl.org/dc/terms/title> "Title" ;\n\t\t<http://purl.org/dc/terms/description> "Description" .\n\n\t<http://mobi.com/data/uhtc/crystalstructure/Hexagonal> a <http://mobi.com/ontologies/uhtc/CrystalStructure> ;\n\t    <http://www.w3.org/2000/01/rdf-schema#label> "Label" ;\n\t\t<http://purl.org/dc/terms/title> "Title" ;\n\t\t<http://purl.org/dc/terms/description> "French Description"@fr ;\n\t\t<http://purl.org/dc/terms/description> "Description"@en .\n\n\t<http://mobi.com/data/uhtc/crystalstructure/Polymorphic> a <http://mobi.com/ontologies/uhtc/CrystalStructure> ;\n\t    <http://purl.org/dc/terms/title> "French Title"@fr ;\n\t\t<http://purl.org/dc/terms/title> "Title"@en ;\n\t\t<http://purl.org/dc/terms/description> "Description" .\n\n\t_:x1 a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;\n\t    <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://mobi.com/data/uhtc/crystalstructure/Polymorphic> ;\n\t    <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://purl.org/dc/terms/description> ;\n\t    <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> "Description" ;\n\t    <http://purl.org/dc/terms/creator> <http://mobi.com/user/1> .\n\n\t<http://mobi.com/data/large> <http://purl.org/dc/terms/title> "0" ;\n\t    <http://purl.org/dc/terms/title> "1" ;\n\t    <http://purl.org/dc/terms/title> "2" ;\n\t    <http://purl.org/dc/terms/title> "3" ;\n\t    <http://purl.org/dc/terms/title> "4" ;\n\t    <http://purl.org/dc/terms/title> "5" ;\n\t    <http://purl.org/dc/terms/title> "6" ;\n\t    <http://purl.org/dc/terms/title> "7" ;\n\t    <http://purl.org/dc/terms/title> "8" ;\n\t    <http://purl.org/dc/terms/title> "9" ;\n\t    <http://purl.org/dc/terms/title> "10" ;\n\t    <http://purl.org/dc/terms/title> "11" ;\n\t    <http://purl.org/dc/terms/title> "12" ;\n\t    <http://purl.org/dc/terms/title> "13" ;\n\t    <http://purl.org/dc/terms/title> "14" ;\n\t    <http://purl.org/dc/terms/title> "15" ;\n\t    <http://purl.org/dc/terms/title> "16" ;\n\t    <http://purl.org/dc/terms/title> "17" ;\n\t    <http://purl.org/dc/terms/title> "18" ;\n\t    <http://purl.org/dc/terms/title> "19" ;\n\t    <http://purl.org/dc/terms/title> "20" ;\n\t    <http://purl.org/dc/terms/title> "21" ;\n\t    <http://purl.org/dc/terms/title> "22" ;\n\t    <http://purl.org/dc/terms/title> "23" ;\n\t    <http://purl.org/dc/terms/title> "24" ;\n\t    <http://purl.org/dc/terms/title> "25" ;\n\t    <http://purl.org/dc/terms/title> "26" ;\n\t    <http://purl.org/dc/terms/title> "27" ;\n\t    <http://purl.org/dc/terms/title> "28" ;\n\t    <http://purl.org/dc/terms/title> "29" ;\n\t    <http://purl.org/dc/terms/title> "30" ;\n\t    <http://purl.org/dc/terms/title> "31" ;\n\t    <http://purl.org/dc/terms/title> "32" ;\n\t    <http://purl.org/dc/terms/title> "33" ;\n\t    <http://purl.org/dc/terms/title> "34" ;\n\t    <http://purl.org/dc/terms/title> "35" ;\n\t    <http://purl.org/dc/terms/title> "36" ;\n\t    <http://purl.org/dc/terms/title> "37" ;\n\t    <http://purl.org/dc/terms/title> "38" ;\n\t    <http://purl.org/dc/terms/title> "39" ;\n\t    <http://purl.org/dc/terms/title> "40" ;\n\t    <http://purl.org/dc/terms/title> "41" ;\n\t    <http://purl.org/dc/terms/title> "42" ;\n\t    <http://purl.org/dc/terms/title> "43" ;\n\t    <http://purl.org/dc/terms/title> "44" ;\n\t    <http://purl.org/dc/terms/title> "45" ;\n\t    <http://purl.org/dc/terms/title> "46" ;\n\t    <http://purl.org/dc/terms/title> "47" ;\n\t    <http://purl.org/dc/terms/title> "48" ;\n\t    <http://purl.org/dc/terms/title> "49" ;\n\t    <http://purl.org/dc/terms/title> "50" ;\n\t    <http://purl.org/dc/terms/title> "51" ;\n\t    <http://purl.org/dc/terms/title> "52" ;\n\t    <http://purl.org/dc/terms/title> "53" ;\n\t    <http://purl.org/dc/terms/title> "54" ;\n\t    <http://purl.org/dc/terms/title> "55" ;\n\t    <http://purl.org/dc/terms/title> "56" ;\n\t    <http://purl.org/dc/terms/title> "57" ;\n\t    <http://purl.org/dc/terms/title> "58" ;\n\t    <http://purl.org/dc/terms/title> "59" ;\n\t    <http://purl.org/dc/terms/title> "60" ;\n\t    <http://purl.org/dc/terms/title> "61" ;\n\t    <http://purl.org/dc/terms/title> "62" ;\n\t    <http://purl.org/dc/terms/title> "63" ;\n\t    <http://purl.org/dc/terms/title> "64" ;\n\t    <http://purl.org/dc/terms/title> "65" ;\n\t    <http://purl.org/dc/terms/title> "66" ;\n\t    <http://purl.org/dc/terms/title> "67" ;\n\t    <http://purl.org/dc/terms/title> "68" ;\n\t    <http://purl.org/dc/terms/title> "69" ;\n\t    <http://purl.org/dc/terms/title> "70" ;\n\t    <http://purl.org/dc/terms/title> "71" ;\n\t    <http://purl.org/dc/terms/title> "72" ;\n\t    <http://purl.org/dc/terms/title> "73" ;\n\t    <http://purl.org/dc/terms/title> "74" ;\n\t    <http://purl.org/dc/terms/title> "75" ;\n\t    <http://purl.org/dc/terms/title> "76" ;\n\t    <http://purl.org/dc/terms/title> "77" ;\n\t    <http://purl.org/dc/terms/title> "78" ;\n\t    <http://purl.org/dc/terms/title> "79" ;\n\t    <http://purl.org/dc/terms/title> "80" ;\n\t    <http://purl.org/dc/terms/title> "81" ;\n\t    <http://purl.org/dc/terms/title> "82" ;\n\t    <http://purl.org/dc/terms/title> "83" ;\n\t    <http://purl.org/dc/terms/title> "84" ;\n\t    <http://purl.org/dc/terms/title> "85" ;\n\t    <http://purl.org/dc/terms/title> "86" ;\n\t    <http://purl.org/dc/terms/title> "87" ;\n\t    <http://purl.org/dc/terms/title> "88" ;\n\t    <http://purl.org/dc/terms/title> "89" ;\n\t    <http://purl.org/dc/terms/title> "90" ;\n\t    <http://purl.org/dc/terms/title> "91" ;\n\t    <http://purl.org/dc/terms/title> "92" ;\n\t    <http://purl.org/dc/terms/title> "93" ;\n\t    <http://purl.org/dc/terms/title> "94" ;\n\t    <http://purl.org/dc/terms/title> "95" ;\n\t    <http://purl.org/dc/terms/title> "96" ;\n\t    <http://purl.org/dc/terms/title> "97" ;\n\t    <http://purl.org/dc/terms/title> "98" ;\n\t    <http://purl.org/dc/terms/title> "99" ;\n\t    <http://purl.org/dc/terms/title> "100" ;\n\t    <http://purl.org/dc/terms/title> "101" .\n\n'^b''..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.explorable.dataset.rest%2Fsrc%2Ftest%2Fresources%2Fpartial-compiled-resource.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 4 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'l" ;\n    <http://www.w3.org/2002/07/owl#deprecated> "true"^^'^b'xsd:boolean .\n\n<http://mobi.com/ontologies/uhtc> a <http://w'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.dataset.impl%2Fsrc%2Ftest%2Fresources%2Ftest-catalog_no-records.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 16 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'02/07/owl#> .\n\n### DATASETS\n\n\n### OTHER DATA\n\n\n### CATALOG\n\n'^b'GRAPH <http://mobi.com/test/catalog-local> {\n    <http://mob'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.dataset.impl%2Fsrc%2Ftest%2Fresources%2Ftest-catalog_no-catalog-records.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 11 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'efix owl: <http://www.w3.org/2002/07/owl#> .\n\n### DATASETS\n\n'^b'GRAPH <http://mobi.com/dataset/not-in-catalog> {\n    <http:/'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.dataset.impl%2Fsrc%2Ftest%2Fresources%2Ftest-catalog_test-repo-datasets.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 11 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'efix owl: <http://www.w3.org/2002/07/owl#> .\n\n### DATASETS\n\n'^b'GRAPH <http://mobi.com/dataset/test5> {\n    <http://mobi.com'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.dataset.impl%2Fsrc%2Ftest%2Fresources%2Ftest-catalog_only-ds-records.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 11 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'efix owl: <http://www.w3.org/2002/07/owl#> .\n\n### DATASETS\n\n'^b'GRAPH <http://mobi.com/record/dataset/test1> {\n    <http://m'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.dataset.impl%2Fsrc%2Ftest%2Fresources%2FtestCatalogData.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 10 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'owl: <http://www.w3.org/2002/07/owl#> .\n\n### DATASET STUFF\n\n'^b'GRAPH <http://mobi.com/test/records#dataset> {\n    <http://m'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.ontology.utils%2Fsrc%2Ftest%2Fresources%2FIRI_subject.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 3 of <>:
+Bad syntax (EOF found after object) at ^ in:
+"b'{<http://a.example/s> <http://a.example/p> <http://a.example/o> .}\n<http://example/graph> {<http://a.example/s> <http://a.example/p> <http://a.example/o> .}'^b''..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.ontology.impl.core%2Fsrc%2Ftest%2Fresources%2FtestData.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 14 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'rBranch branches:branch .\n\nbranches:branch a mcat:Branch .\n\n'^b'GRAPH <http://mobi.com/test/additions#commit> {\n    <http://'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.rest.util%2Fsrc%2Ftest%2Fresources%2Ftest.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 18 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'> "true";\n    <http://example.com/prop4> "true", "false" .\n}'^b'\n'"
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/document-translation%2Fcom.mobi.document.translator.api%2Fsrc%2Fmain%2Fresources%2Fontologies%2Fsemantic-translation-ont.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 12 of <>:
+Bad syntax (Prefix "foaf:" not bound) at ^ in:
+"...b'xtension for generating ontologies ."@en ;\n    dct:creator ['^b'foaf:name "Ben Gould"] ;\n    foaf:maker [foaf:name "Mobi"; f'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.rdf%2Fsrc%2Ftest%2Fresources%2Fexporter%2FtestFile.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 19 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'ex:Management ,\n                          ex:Programming . }'^b'\n\n\n'"
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.rdf%2Fsrc%2Ftest%2Fresources%2Fimporter%2FtestFile.trig
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 19 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'ex:Management ,\n                          ex:Programming . }'^b'\n\n\n'"
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.rdf%2Fsrc%2Ftest%2Fresources%2Fexporter%2FjsonldExport.jsonld
+
+In repository: https://github.com/inovexcorp/mobi
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.rdf
+
+In repository: https://github.com/inovexcorp/mobi
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/com.mobi.etl.rdf'
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.rdf%2Fsrc%2Ftest%2Fresources%2Fexporter%2FrdfExport.rdf
+
+In repository: https://github.com/inovexcorp/mobi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/com.mobi.etl.rdf/src/test/resources/exporter/rdfExport.rdf:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.catalog.api%2Fsrc%2Fmain%2Fresources%2FmergeRequests.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 16 of <>:
+Bad syntax (Prefix "foaf:" not bound) at ^ in:
+"...b'ionedRDFRecords in the Mobi catalog."@en ;\n    dct:creator ['^b'foaf:name "Megan Mercer"] ;\n    foaf:maker [foaf:name "Mobi"'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/mobi-itests%2Fitests-web%2Fsrc%2Ftest%2Fresources%2Fontologies%2Ftest-local-imports-1e.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 16 of <>:
+Bad syntax (Prefix "rdubClassO:" not bound) at ^ in:
+"...b'/mobi.com/ontology/test-local-imports-2#Class2> .\n\n:Cla\n    '^b'rdubClassO://mobi.com/ontology/test-local-imports-2#Class2> '..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.api%2Fsrc%2Fmain%2Fresources%2Fdelimited.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 15 of <>:
+Bad syntax (Prefix "foaf:" not bound) at ^ in:
+"...b'd their records in the Mobi catalog."@en ;\n    dct:creator ['^b'foaf:name "Bryan Miller"], [foaf:name "Megan Mercer"];\n    f'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.prov.rest%2Fsrc%2Ftest%2Fresources%2Fprov-data.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 7 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'rov:Activity ;\n    prov:endedAtTime "2016-10-12T16:44:42Z"^^'^b'xsd:dateTime ;\n    prov:invalidated entities:Entity2, entiti'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.ontology.rest%2Fsrc%2Ftest%2Fresources%2Ftest-local-imports-1e.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 16 of <>:
+Bad syntax (Prefix "rdubClassO:" not bound) at ^ in:
+"...b'/mobi.com/ontology/test-local-imports-2#Class2> .\n\n:Cla\n    '^b'rdubClassO://mobi.com/ontology/test-local-imports-2#Class2> '..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.rdf.orm.ontologies%2Fsrc%2Fmain%2Fresources%2Fmobi.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 14 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'age <http://mobi.com>] ;\n    dcterms:modified "2017-10-06"^^'^b'xsd:date .\n\n:Identifier a rdfs:Class, owl:Class ;\n    rdfs:l'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.delimited%2Fsrc%2Ftest%2Fresources%2FnewestMapping.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 26 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'       uhtc:formula ;\n              delim:datatypeSpec      '^b'xsd:double ;\n              delim:languageSpec      "fr" .\n\n:'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.delimited%2Fsrc%2Ftest%2Fresources%2FmappingNoLocalName.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 25 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'       uhtc:formula ;\n              delim:datatypeSpec      '^b'xsd:double ;\n              delim:languageSpec      "fr" .\n\n:'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.delimited%2Fsrc%2Ftest%2Fresources%2FtestOutputWithDatatypes.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 3 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'2" ;\n    <http://mobi.com/ontologies/uhtc/density> "11.19"^^'^b'xsd:double ;\n    <http://mobi.com/ontologies/uhtc/latticePar'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.etl.delimited%2Fsrc%2Ftest%2Fresources%2FtestOutputWithDatatypesAndInvalidValues.ttl
+
+In repository: https://github.com/inovexcorp/mobi
+> at line 3 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'<http://mobi.com/ontologies/uhtc/latticeParameter> "3.142"^^'^b'xsd:float ;\n    <http://mobi.com/ontologies/uhtc/source> "ht'..."
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Fmain%2Fresources%2Font_functional.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/main/resources/ont_functional.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o2.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o2.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o12ab_data_props.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o12ab_data_props.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_r6.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_r6.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o3.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o3.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o7a.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o7a.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_r3.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_r3.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o10.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o10.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_rdfs9.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_rdfs9.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o15.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o15.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_r2.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_r2.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_rdfs5.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_rdfs5.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_r5.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_r5.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o1.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o1.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_rdfs7.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_rdfs7.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_rdfs3.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_rdfs3.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_rdfs2.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_rdfs2.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o7b.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o7b.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o13.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o13.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_rdfs11.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_rdfs11.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o16.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o16.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_r4.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_r4.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o4.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o4.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o14.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o14.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o12c.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o12c.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_r1.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_r1.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o11ab.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o11ab.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o12ab_obj_props.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o12ab_obj_props.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_o11c.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-inference-spark/src/test/resources/forward_chaining/axioms/test_o11c.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-tests%2Fsrc%2Ftest%2Fresources%2Fdata%2Fdbpedia_sample.nt
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> Invalid line: '<http://dbpedia.org/resource/Abraham_Lincoln'
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sansa-owl-flink%2Fsrc%2Ftest%2Fresources%2Font_manchester.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-owl-flink/src/test/resources/ont_manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sansa-owl-flink%2Fsrc%2Ftest%2Fresources%2Font_functional.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-owl-flink/src/test/resources/ont_functional.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sansa-owl-spark%2Fsrc%2Fmain%2Fresources%2FOWLXMLTest.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-owl-spark/src/main/resources/OWLXMLTest.owl:298:32: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#about
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sansa-owl-spark%2Fsrc%2Ftest%2Fresources%2Font_OWLXML.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-owl-spark/src/test/resources/ont_OWLXML.owl:263:32: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#about
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sansa-owl-spark%2Fsrc%2Ftest%2Fresources%2Font_manchester.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-owl-spark/src/test/resources/ont_manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sansa-owl-spark%2Fsrc%2Ftest%2Fresources%2Font_functional.owl
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-owl-spark/src/test/resources/ont_functional.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FAGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FOFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FREQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSecurityLevelTemplates%2FSECURITY_LEVEL_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSecurityLevelTemplates%2FSECURITY_LEVEL_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSecurityLevelTemplates%2FSECURITY_LEVEL_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FNTimesUsageTemplates%2FN_TIMES_USAGE_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FNTimesUsageTemplates%2FN_TIMES_USAGE_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FNTimesUsageTemplates%2FN_TIMES_USAGE_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTargetTemplates%2FASSET_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageLoggingTemplates%2FUSAGE_LOGGING_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageLoggingTemplates%2FUSAGE_LOGGING_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageLoggingTemplates%2FUSAGE_LOGGING_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FEventRestrictedUsage%2FEVENT_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FEventRestrictedUsage%2FEVENT_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FEventRestrictedUsage%2FEVENT_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FObligationTemplates%2FOBLIGATION_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FActionTemplates%2FACTION_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSalesTemplates%2FSALES_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSalesTemplates%2FSALES_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSalesTemplates%2FSALES_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPermissionTemplates%2FREQUEST_PERMISSION_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPermissionTemplates%2FAGREEMENT_PERMISSION_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPermissionTemplates%2FOFFER_PERMISSION_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FParticipantTemplates%2FPARTICIPANT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSpatialRestrictedTemplates%2FSPATIAL_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSpatialRestrictedTemplates%2FSPATIAL_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSpatialRestrictedTemplates%2FSPATIAL_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageNotificationTemplates%2FUSAGE_NOTIFICATION_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageNotificationTemplates%2FUSAGE_NOTIFICATION_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageNotificationTemplates%2FUSAGE_NOTIFICATION_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConstraintTemplates%2FTEMPORAL_CONSTRAINT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConstraintTemplates%2FCONSTRAINT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConnectorbasedAgreementTemplates%2FCONNECTORBASED_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConnectorbasedAgreementTemplates%2FCONNECTORBASED_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConnectorbasedAgreementTemplates%2FCONNECTORBASED_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPurposeRestrictedUsageTemplates%2FPURPOSE_RESTRICTED_USAGE_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPurposeRestrictedUsageTemplates%2FPURPOSE_RESTRICTED_USAGE_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPurposeRestrictedUsageTemplates%2FPURPOSE_RESTRICTED_USAGE_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_DURING_INTERVAL_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_USAGE_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_UNTIL_DELETION_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_UNTIL_DELETION_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_USAGE_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_DURING_INTERVAL_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_UNTIL_DELETION_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_DURING_INTERVAL_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_USAGE_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FDistributeEncryptedTemplates%2FDISTRIBUTE_ENCRYPTED_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FDistributeEncryptedTemplates%2FDISTRIBUTE_ENCRYPTED_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FDistributeEncryptedTemplates%2FDISTRIBUTE_ENCRYPTED_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRolebasedAgreementTemplates%2FROLEBASED_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRolebasedAgreementTemplates%2FROLEBASED_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRolebasedAgreementTemplates%2FROLEBASED_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRentalTemplates%2FRENTAL_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRentalTemplates%2FRENTAL_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRentalTemplates%2FRENTAL_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSwapTemplates%2FSWAP_REQUEST_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSwapTemplates%2FSWAP_AGREEMENT_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSwapTemplates%2FSWAP_OFFER_TEMPLATE.jsonld
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FREQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 20 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FOFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 20 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FAGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'E ;\n    ( ids:permission idsc:AGREEMENT_PERMISSION_TEMPLATE '^b'; )+\n.\n'"
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSecurityLevelTemplates%2FSECURITY_LEVEL_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSecurityLevelTemplates%2FSECURITY_LEVEL_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSecurityLevelTemplates%2FSECURITY_LEVEL_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> Attempted to create variable with empty string as name!
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FNTimesUsageTemplates%2FN_TIMES_USAGE_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 35 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'      ] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FNTimesUsageTemplates%2FN_TIMES_USAGE_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FNTimesUsageTemplates%2FN_TIMES_USAGE_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTargetTemplates%2FASSET_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 19 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'                  # directly insert the Asset URI, if known\n'^b'| # or\n    [\n        a ids:AssetCollection ;\n        ids:ass'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageLoggingTemplates%2FUSAGE_LOGGING_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageLoggingTemplates%2FUSAGE_LOGGING_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageLoggingTemplates%2FUSAGE_LOGGING_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 35 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'      ] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FEventRestrictedUsage%2FEVENT_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FEventRestrictedUsage%2FEVENT_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FObligationTemplates%2FOBLIGATION_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'TEMPLATE ;\n    [ ids:constraint idsc:CONSTRAINT_TEMPLATE ; ]'^b'*      # zero or more Constraints\n.\n'"
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FActionTemplates%2FACTION_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 19 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'          # directly insert the Action URI and nothing else\n'^b'| # or\n    [\n        a ids:Action ;\n        ids:includedIn ?'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSalesTemplates%2FSALES_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSalesTemplates%2FSALES_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSalesTemplates%2FSALES_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 45 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'      ] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPermissionTemplates%2FREQUEST_PERMISSION_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 17 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'ssion ;\n    (\n      (ids:assigner idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:assignee idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPermissionTemplates%2FOFFER_PERMISSION_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 17 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'ssion ;\n    (\n      (ids:assigner idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:assignee idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPermissionTemplates%2FAGREEMENT_PERMISSION_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 20 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'TEMPLATE ;\n    [ ids:constraint idsc:CONSTRAINT_TEMPLATE ; ]'^b'*      # zero or more Constraints\n    [ ids:preDuty idsc:OBL'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FParticipantTemplates%2FPARTICIPANT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 19 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'            # directly insert the Participant URI, if known\n'^b'| # or\n    [\n        a ids:Participant ;\n        ids:memberP'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSpatialRestrictedTemplates%2FSPATIAL_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 21 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSpatialRestrictedTemplates%2FSPATIAL_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSpatialRestrictedTemplates%2FSPATIAL_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 33 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'c:INSIDE\n            ids:rightOperand (\n              ?area '^b';                                       # a URI of a named a'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageNotificationTemplates%2FUSAGE_NOTIFICATION_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageNotificationTemplates%2FUSAGE_NOTIFICATION_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 42 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'   ] ;\n        [ ids:constraint idsc:CONSTRAINT_TEMPLATE ; ]'^b'*      # zero or more Constraints\n    ]\n.\n'"
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FUsageNotificationTemplates%2FUSAGE_NOTIFICATION_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConstraintTemplates%2FTEMPORAL_CONSTRAINT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 19 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'position in an IDS Usage Control Template.\n\n(\n    (\n        '^b'a ids:TemporalConstraint ;                                  '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConstraintTemplates%2FCONSTRAINT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 23 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b' ?Value := "5"\n        ( ids:pipEndpoint ?AttributeLocation '^b'; )?       # A URI or path expression to the target attribut'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConnectorbasedAgreementTemplates%2FCONNECTORBASED_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FConnectorbasedAgreementTemplates%2FCONNECTORBASED_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPurposeRestrictedUsageTemplates%2FPURPOSE_RESTRICTED_USAGE_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FPurposeRestrictedUsageTemplates%2FPURPOSE_RESTRICTED_USAGE_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_UNTIL_DELETION_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_UNTIL_DELETION_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 56 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'      ] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 34 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'      ] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_DURING_INTERVAL_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 39 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b';\n\t\t\t\t] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_USAGE_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 34 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'      ] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_UNTIL_DELETION_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_USAGE_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_USAGE_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FDURATION_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_DURING_INTERVAL_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FTimeRestrictedUsageTemplates%2FUSAGE_DURING_INTERVAL_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FDistributeEncryptedTemplates%2FDISTRIBUTE_ENCRYPTED_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FDistributeEncryptedTemplates%2FDISTRIBUTE_ENCRYPTED_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FDistributeEncryptedTemplates%2FDISTRIBUTE_ENCRYPTED_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 35 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'      ] ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRolebasedAgreementTemplates%2FROLEBASED_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRolebasedAgreementTemplates%2FROLEBASED_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRentalTemplates%2FRENTAL_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRentalTemplates%2FRENTAL_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 34 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'the involved parties.\n            ( ids:pipEndpoint ?pipUri '^b'; )?                  # The location where to find this stat'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FRentalTemplates%2FRENTAL_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSwapTemplates%2FSWAP_REQUEST_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSwapTemplates%2FSWAP_AGREEMENT_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 29 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'EMPLATE ;\n        ( ids:constraint idsc:CONSTRAINT_TEMPLATE '^b'; )*      # zero or more Constraints\n        ( ids:preDuty i'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FSwapTemplates%2FSWAP_OFFER_TEMPLATE.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 22 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'!"@en ;\n    (\n      (ids:provider idsc:PARTICIPANT_TEMPLATE '^b';)\n    | # or\n      (ids:consumer idsc:PARTICIPANT_TEMPLATE '..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/version_mapping%2F3.0.0-3.1.0%2FUpgradeShapes-3.0.0-to-3.1.0.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 43 of <>:
+Bad syntax (bad escape) at ^ in:
+"...b'edAt ?oldEndedAt .}\t\t\t\n\t\t\tBIND(if(regex(?oldEndedAt, ".*(Z|('^b'\\+|-)[0-9][0-9]:[0-9][0-9])"),\n\t\t\t\toldEndedAt,\n\t\t\t\tSTRDT(CON'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/model%2Fcontent%2FDataApp.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 60 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ds:UsagePolicyClass ;\n\trdfs:label "supported usage policies"'^b' @en;\n\trdfs:comment "IDS Usage Policies a DataApp supports"@'..."
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/codes%2FUsagePolicyClass.ttl
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> at line 9 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'E\n\ta ids:UsagePolicyClass ;\n\trdfs:label: "Allow data usage" '^b'@en;\n\trdfs:comment: "This policy restricts the usage of the '..."
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/examples%2Fnouns.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/nouns.owl:8:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/examples%2Fexample_old.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/example_old.owl:19:8: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl11-xml#Annotation
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/examples%2Fpeople.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/people.owl:312:88: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/examples%2Fexample.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/example.owl:11:43: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/examples%2Fmary.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/mary.owl:13:32: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/examples%2Fpizza.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/pizza.owl:124:82: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/examples%2Fprimer_20091027.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/primer_20091027.owl:44:16: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/ontologies%2Ftests.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/tests.owl:13:42: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/ontologies%2Fabbr_iri_test3.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/abbr_iri_test3.owl:19:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectMinCardinality
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/ontologies%2Fabbr_iri_test1.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/abbr_iri_test1.owl:12:22: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#AbbreviatedIRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/ontologies%2Fabbr_iri_test2.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/abbr_iri_test2.owl:12:22: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#AbbreviatedIRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/ontologies%2Fabbr_iri_test4.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/abbr_iri_test4.owl:19:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/owl-verbalizer/master/ontologies%2Fgalen%2Ffull-galen.owl2xml.owl
+
+In repository: https://github.com/Kaljurand/owl-verbalizer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/galen/full-galen.owl2xml.owl:72308:47: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/EcoStruxure/OLGA/master/OLGA%2FOLGA-Core%2Fsrc%2Ftest%2Fresources%2Fm3%2Fm3-lite.owl
+
+In repository: https://github.com/EcoStruxure/OLGA
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OLGA/OLGA-Core/src/test/resources/m3/m3-lite.owl:1469:298: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fannotatedpropertychain.ttl.rdf
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/annotatedpropertychain.ttl.rdf:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fprimer.turtle.rdf
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/primer.turtle.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2FextraBlankNodes.owl
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/extraBlankNodes.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fimport_test_imported.owl
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/import_test_imported.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsimple.owl
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/simple.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2FCopy+of+import_test_main.owl
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/Copy%20of%20import_test_main.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2FsubAnnotProp.owl
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/subAnnotProp.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Fload-test-a.owl
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/ontapi/load-test-a.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Ftest2.owl
+
+In repository: https://github.com/avicomp/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/ontapi/test2.owl:25:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Fwrong-core.ttl
+
+In repository: https://github.com/avicomp/ont-api
+> at line 3 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'# no prefixes.\n\n[ a '^b'owl:Ontology ;\n     owl:imports <http://www.w3.org/2013/12/F'..."
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Fload-test-b.ttl
+
+In repository: https://github.com/avicomp/ont-api
+> at line 55 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b'                       ) ;\n   rdfs:isDefinedBy :do-not-click'^b'/please\n ] .\n\n[ rdf:type owl:Axiom ;\n   owl:annotatedSource '..."
+
+---
+File: https://raw.githubusercontent.com/kbss-cvut/jopa/master/jopa-owl2java%2Fsrc%2Ftest%2Fresources%2Fmodel.rdf
+
+In repository: https://github.com/kbss-cvut/jopa
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jopa-owl2java/src/test/resources/model.rdf:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/kbss-cvut/jopa/master/jopa-owl2java%2Fsrc%2Ftest%2Fresources%2Fbad-import.owl
+
+In repository: https://github.com/kbss-cvut/jopa
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jopa-owl2java/src/test/resources/bad-import.owl:21:39: no element found
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.jsonld
+
+In repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fannotations.jsonld
+
+In repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/Users/solbrig/git/biolink/biolinkml/tests/input/includes/extensions.context.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgenjsonld%2Fmeta.jsonld
+
+In repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_scripts/output/genjsonld/output/gencontext/meta.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fextensions.jsonld
+
+In repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fannotations.jsonld
+
+In repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fmappings.jsonld
+
+In repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/meta.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Foutput%2Fmeta.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/output/meta.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fowl1.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_utils/output/owl1.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fowl2.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_utils/output/owl2.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fbiolink-model.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_biolink_model/output/biolink-model.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fbiolink-model.native.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_biolink_model/output/biolink-model.native.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_163.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_163.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_163b.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_163b.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_163c.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_163c.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_290.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_290.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_tccm%2Fminimalmodel.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_tccm/minimalmodel.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Fdata%2Fhp_f.ttl
+
+In repository: https://github.com/biolink/biolinkml
+> at line 70315 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'os:seeAlso "http://www.human-phenotype-ontology.org#HP_30000'^b'79"^^xsd:anyURI ;\n\nccdh:SpecimenType a skos:Collection ;\n   '..."
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases%2F1.2%2Fstato.owl
+
+In repository: https://github.com/ISA-tools/stato
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/1.2/stato.owl:16:117: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases%2F1.1%2Fstato.owl
+
+In repository: https://github.com/ISA-tools/stato
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/1.1/stato.owl:16:206: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases%2F1.3%2Fstato.owl
+
+In repository: https://github.com/ISA-tools/stato
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/1.3/stato.owl:17:117: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases%2F1.0%2Fstato.owl
+
+In repository: https://github.com/ISA-tools/stato
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/1.0/stato.owl:16:206: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Fstato.owl
+
+In repository: https://github.com/ISA-tools/stato
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/dev/ontology/stato.owl:18:70: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Fstato-experimental.owl
+
+In repository: https://github.com/ISA-tools/stato
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/dev/ontology/stato-experimental.owl:43:16: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Freasoned%2Fowl%2Fstato-reasoned.owl
+
+In repository: https://github.com/ISA-tools/stato
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/dev/ontology/reasoned/owl/stato-reasoned.owl:16:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fannotatedpropertychain.ttl.rdf
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/annotatedpropertychain.ttl.rdf:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fprimer.turtle.rdf
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/primer.turtle.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2FextraBlankNodes.owl
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/extraBlankNodes.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fimport_test_imported.owl
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/import_test_imported.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsimple.owl
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/simple.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2FCopy+of+import_test_main.owl
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/Copy%20of%20import_test_main.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2FsubAnnotProp.owl
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/owlapi/obo/subAnnotProp.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Fload-test-a.owl
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/ontapi/load-test-a.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Ftest2.owl
+
+In repository: https://github.com/owlcs/ont-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/ontapi/test2.owl:25:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Fwrong-core.ttl
+
+In repository: https://github.com/owlcs/ont-api
+> at line 3 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"b'# no prefixes.\n\n[ a '^b'owl:Ontology ;\n     owl:imports <http://www.w3.org/2013/12/F'..."
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Fload-test-b.ttl
+
+In repository: https://github.com/owlcs/ont-api
+> at line 55 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b'                       ) ;\n   rdfs:isDefinedBy :do-not-click'^b'/please\n ] .\n\n[ rdf:type owl:Axiom ;\n   owl:annotatedSource '..."
+
+---
+File: https://raw.githubusercontent.com/ansell/rdf4j-schema-generator/master/core%2Fsrc%2Ftest%2Fresources%2Fldp.ttl
+
+In repository: https://github.com/ansell/rdf4j-schema-generator
+> at line 13 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'rovides an informal representation of the concepts and terms'^b'\n\tas defined in the LDP specification.  Consult the LDP spec'..."
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/OWL-API-for-iOS/master/lib%2Fcowl%2Fdata%2Ftest_onto.owl
+
+In repository: https://github.com/sisinflab-swot/OWL-API-for-iOS
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/lib/cowl/data/test_onto.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/OWL-API-for-iOS/master/lib%2Fcowl%2Fdata%2Fexample_pizza.owl
+
+In repository: https://github.com/sisinflab-swot/OWL-API-for-iOS
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/lib/cowl/data/example_pizza.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/OWL-API-for-iOS/master/lib%2Fcowl%2Fdata%2Ftest_import.owl
+
+In repository: https://github.com/sisinflab-swot/OWL-API-for-iOS
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/lib/cowl/data/test_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/OWL-API-for-iOS/master/OWLAPITests%2FDataset%2Fbuilding.owl
+
+In repository: https://github.com/sisinflab-swot/OWL-API-for-iOS
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OWLAPITests/Dataset/building.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/robotenique/movies-ontology/master/ontologia_manchester.owl
+
+In repository: https://github.com/robotenique/movies-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologia_manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fresources%2Fwikidata%2Fexposure-symptom-assocs.rdf
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/resources/wikidata/exposure-symptom-assocs.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fecto-idranges.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/ecto-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fecto-edit.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/ecto-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fprenatal.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/prenatal.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_change_in_levels.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_change_in_levels.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fsurgical_procedure.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/surgical_procedure.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_environmental_process.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_environmental_process.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_via_route.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_via_route.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Factivity.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/activity.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_levels_in_medium.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_levels_in_medium.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_environmental_condition.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_environmental_condition.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_radiation.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_radiation.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_chemical.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_chemical.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_material.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_material.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_chemical_with_role.owl
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_chemical_with_role.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/PhilosophyOfMind%2Fphil_mind.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PhilosophyOfMind/phil_mind.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/Negotiate%2Fnegotiate.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Negotiate/negotiate.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/FaultTolerantRTOS%2FFaultTolerantRTOS.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/FaultTolerantRTOS/FaultTolerantRTOS.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/AnytimeOS%2Fanytime_os.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/AnytimeOS/anytime_os.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/NervousSystem%2FNervousSystem.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/NervousSystem/NervousSystem.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/UI%2Fui.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UI/ui.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/IncidentReport%2FIncidentReportOntology.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/IncidentReport/IncidentReportOntology.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/AIRS%2Fairs.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/AIRS/airs.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/Organization%2Forganization.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Organization/organization.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/WSN%2FWSN.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/WSN/WSN.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/morteza/ontologies/master/SystemSoftware%2FSystemSoftware.owl
+
+In repository: https://github.com/morteza/ontologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/SystemSoftware/SystemSoftware.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FVocabolariControllati%2Ftheme-subtheme-mapping%2Ftheme-subtheme-mapping.jsonld
+
+In repository: https://github.com/italia/daf-semantics
+> Expecting property name enclosed in double quotes: line 1587 column 1 (char 39975)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FVocabolariControllati%2Fclassifications-for-people%2Fgender%2Fgender.jsonld
+
+In repository: https://github.com/italia/daf-semantics
+> Expecting property name enclosed in double quotes: line 140 column 1 (char 4607)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FVocabolariControllati%2Fpoi-category-classification%2Fpoi-category-classification.jsonld
+
+In repository: https://github.com/italia/daf-semantics
+> Expecting property name enclosed in double quotes: line 22 column 1 (char 819)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FVocabolariControllati%2FEventiPubblici%2FEventiPubblici.rdf
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_manager/dist/data/dati-ontologie-vocabolari-controllati/VocabolariControllati/EventiPubblici/EventiPubblici.rdf:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FVocabolariControllati%2FEventiPubblici%2FEventiPubblici.rdf
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_repository/dist/data/dati-ontologie-vocabolari-controllati/VocabolariControllati/EventiPubblici/EventiPubblici.rdf:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FVocabolariControllati%2Ftheme-subtheme-mapping%2Ftheme-subtheme-mapping.rdf
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/VocabolariControllati/theme-subtheme-mapping/theme-subtheme-mapping.rdf:14:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FVocabolariControllati%2Fclassifications-for-people%2Fgender%2Fgender.rdf
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/VocabolariControllati/classifications-for-people/gender/gender.rdf:21:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FVocabolariControllati%2Fpoi-category-classification%2Fpoi-category-classification.rdf
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/VocabolariControllati/poi-category-classification/poi-category-classification.rdf:16:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.6%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_manager/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.6/IoT-AP_IT.owl:36:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.4%2FIoT-AP_IT-test.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_manager/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.4/IoT-AP_IT-test.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.4%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_manager/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.4/IoT-AP_IT.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.5%2Falignments%2FIoT-AP_IT-aligns.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_manager/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.5/alignments/IoT-AP_IT-aligns.owl:147:49: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.5%2Fcore%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_manager/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.5/core/IoT-AP_IT.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.6%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_repository/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.6/IoT-AP_IT.owl:36:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.4%2FIoT-AP_IT-test.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_repository/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.4/IoT-AP_IT-test.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.4%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_repository/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.4/IoT-AP_IT.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.5%2Falignments%2FIoT-AP_IT-aligns.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_repository/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.5/alignments/IoT-AP_IT-aligns.owl:147:49: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fdist%2Fdata%2Fdati-ontologie-vocabolari-controllati%2FOntologie%2FIoT-AP_IT%2Fv0.5%2Fcore%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_repository/dist/data/dati-ontologie-vocabolari-controllati/Ontologie/IoT-AP_IT/v0.5/core/IoT-AP_IT.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FCPV%2Fv0.1%2Fperson.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/CPV/v0.1/person.owl:144:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FCOV%2Fv0.2%2FCOV-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/COV/v0.2/COV-AP_IT.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FIoT%2Fv0.6%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/IoT/v0.6/IoT-AP_IT.owl:36:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FIoT%2Fv0.4%2FIoT-AP_IT-test.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/IoT/v0.4/IoT-AP_IT-test.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FIoT%2Fv0.4%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/IoT/v0.4/IoT-AP_IT.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FIoT%2Fv0.5%2Falignments%2FIoT-AP_IT-aligns.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/IoT/v0.5/alignments/IoT-AP_IT-aligns.owl:147:49: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FIoT%2Fv0.5%2Fcore%2FIoT-AP_IT.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/IoT/v0.5/core/IoT-AP_IT.owl:36:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FIoT%2Fv0.7%2Falignments%2FIoT-AP_IT-aligns.owl
+
+In repository: https://github.com/italia/daf-semantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic_standardization/ontologie-vocabolari-controllati/Ontologie/IoT/v0.7/alignments/IoT-AP_IT-aligns.owl:147:49: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fdist%2Fdata%2Fontologies%2Fexamples%2Fexample-data-artists.ttl
+
+In repository: https://github.com/italia/daf-semantics
+> at line 14 of <>:
+Bad syntax (Prefix "rdfs:" not bound) at ^ in:
+"...b':country "Spain" .\n\nex:guernica a ex:Painting ;\n            '^b'rdfs:label "Guernica";\n            ex:technique "oil on canv'..."
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fdist%2Fdata%2Fontologies%2Fexamples%2Fexample-data-artists.ttl
+
+In repository: https://github.com/italia/daf-semantics
+> at line 14 of <>:
+Bad syntax (Prefix "rdfs:" not bound) at ^ in:
+"...b':country "Spain" .\n\nex:guernica a ex:Painting ;\n            '^b'rdfs:label "Guernica";\n            ex:technique "oil on canv'..."
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FPOI%2Fv0.1%2Fpoiapit-aligns.ttl
+
+In repository: https://github.com/italia/daf-semantics
+> at line 22 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'l Transformation Team"@en ;\n    dct:issued "2017-10-20"\n    '^b'dc:modified "2017-10-20" ;\n    dc:title "These are the align'..."
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FPOI%2Fv0.2%2Fpoiapit-aligns.ttl
+
+In repository: https://github.com/italia/daf-semantics
+> at line 22 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'l Transformation Team"@en ;\n    dct:issued "2017-10-20"\n    '^b'dc:modified "2017-10-20" ;\n    dc:title "These are the align'..."
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FOntologie%2FACCO%2Fv0.2%2Faligns%2Faccoapit-aligns.ttl
+
+In repository: https://github.com/italia/daf-semantics
+> at line 44 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b':LodgingBusiness , acco:Accommodation ;\n\naccoapit:OSDFeature'^b' a owl:Class ;\n  rdfs:isDefinedBy accoapit: ;\n  rdfs:subClas'..."
+
+---
+File: https://raw.githubusercontent.com/DataFabricRus/ontology-fts/master/fibo-ru%2Fexamples%2Fle-itmo_university.ttl
+
+In repository: https://github.com/DataFabricRus/ontology-fts
+> at line 46 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'\x9b\xd0\xac\xd0\x9d\xd0\x9e\xd0\x95 \xd0\x93\xd0\x9e\xd0\xa1\xd0\xa3\xd0\x94\xd0\x90\xd0\xa0\xd0\xa1\xd0\xa2\xd0\x92\xd0\x95\xd0\x9d\xd0\x9d\xd0\x9e\xd0\x95 \xd0\x90\xd0\x92\xd0\xa2\xd0\x9e\xd0\x9d\xd0\x9e\xd0\x9c\xd0\x9d\xd0\x9e\xd0'^b'\x95 \xd0\x9e\xd0\x91\xd0\xa0\xd0\x90\xd0\x97\xd0\x9e\xd0\x92\xd0\x90\xd0\xa2\xd0\x95\xd0\x9b\xd0\xac\xd0\x9d\xd0\x9e\xd0\x95 \xd0\xa3\xd0\xa7\xd0\xa0\xd0\x95\xd0\x96\xd0\x94\xd0\x95\xd0\x9d\xd0\x98\xd0\x95 \xd0\x92\xd0\xab\xd0\xa1'..."
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/aceview/master/site%2Fexamples%2Frendering_ambiguity.owl
+
+In repository: https://github.com/Kaljurand/aceview
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/site/examples/rendering_ambiguity.owl:33:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/aceview/master/site%2Fexamples%2Fjobs_base.owl
+
+In repository: https://github.com/Kaljurand/aceview
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/site/examples/jobs_base.owl:31:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/aceview/master/site%2Fexamples%2Fcountries_base.owl
+
+In repository: https://github.com/Kaljurand/aceview
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/site/examples/countries_base.owl:53:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/Kaljurand/aceview/master/site%2Fexamples%2Fannotations.owl
+
+In repository: https://github.com/Kaljurand/aceview
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/site/examples/annotations.owl:52:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/cowl/master/data%2Ftest_onto.owl
+
+In repository: https://github.com/sisinflab-swot/cowl
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/test_onto.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/cowl/master/data%2Fexample_pizza.owl
+
+In repository: https://github.com/sisinflab-swot/cowl
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/example_pizza.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/cowl/master/data%2Ftest_import.owl
+
+In repository: https://github.com/sisinflab-swot/cowl
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/test_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/shful/gofp/master/example%2Fpizza%2Fpizza-functional.owl
+
+In repository: https://github.com/shful/gofp
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/example/pizza/pizza-functional.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-d2rq/master/api%2Fsrc%2Ftest%2Fresources%2Fparser%2Fsimple.ttl
+
+In repository: https://github.com/avicomp/ont-d2rq
+> at line 17 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'n "http://example.org/p@@People.ID@@";\n  :class ex:Person\n  '^b':properties [ :property ex:name; :column "People.name"; ];\n '..."
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/OnToology%2Ftests%2Fexample1.owl%2Fcontext%2Fcontext.jsonld
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/OnToology%2Ftests%2Fexample2.owl%2Fcontext%2Fcontext.jsonld
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> Expecting value: line 1 column 1 (char 0)
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/data-model-v1.8.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data-model-v1.8.owl:278:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/data-model-v2.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data-model-v2.owl:356:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/old%2Fv1.6%2Fdata-model-v1.6.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1.6/data-model-v1.6.owl:263:56: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/old%2Fv1.5%2Fdata-model-v1.5.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1.5/data-model-v1.5.owl:233:56: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/old%2Fv1.5%2Fexamples%2Fexample1.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1.5/examples/example1.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/old%2Fv1.5%2Fexamples%2Fexample2.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1.5/examples/example2.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/OnToology%2Fdata-model-v1.6.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/data-model-v1.6.owl'
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/OnToology%2Fdata-model-v1.5.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/data-model-v1.5.owl'
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/OnToology%2Ftests%2Fexample1.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/tests/example1.owl'
+
+---
+File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/OnToology%2Ftests%2Fexample2.owl
+
+In repository: https://github.com/eureadit/reading-experience-ontology
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/tests/example2.owl'
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_32_qbPostProcessingTest%2Fexpected.ttl
+
+In repository: https://github.com/sparna-git/xls2rdf
+> at line 14 of <>:
+Bad syntax (Prefix "dcat:" not bound) at ^ in:
+"...b'atoiredeslangues.culture.gouv.fr/dataset/enquete-INED>\n  \ta '^b'dcat:Dataset;\n    a qb:DataSet;\n    dct:title "statistique d'..."
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_35_specialCharacters%2Fexpected.ttl
+
+In repository: https://github.com/sparna-git/xls2rdf
+> at line 19 of <>:
+Bad syntax (Prefix "dcterms:" not bound) at ^ in:
+"...b'inebleau.fr/vocabulaires/personnes> a skos:ConceptScheme ;\n\t'^b'dcterms:title "Personnes"@fr;\n\tskos:hasTopConcept <http://ww'..."
+
+---
+File: https://raw.githubusercontent.com/DSupertramp/SchoolRank/master/SchoolRank%2FNotebook%2FOntologia%2Fontologia.owl
+
+In repository: https://github.com/DSupertramp/SchoolRank
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/SchoolRank/Notebook/Ontologia/ontologia.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/DSupertramp/SchoolRank/master/SchoolRank%2FCodici+Py%2Fontologia.owl
+
+In repository: https://github.com/DSupertramp/SchoolRank
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/SchoolRank/Codici%20Py/ontologia.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/Alliander/schema-composer/master/src%2Fmain%2Fresources%2Fpublic%2Fontologies%2Fcim.owl
+
+In repository: https://github.com/Alliander/schema-composer
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/public/ontologies/cim.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/cmungall/chemistry-ontology/master/src%2Fschema%2Fchemont.owl
+
+In repository: https://github.com/cmungall/chemistry-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/schema/chemont.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/plazi/TreatmentOntologies/master/test%2FSzero.rdf
+
+In repository: https://github.com/plazi/TreatmentOntologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/Szero.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/plazi/TreatmentOntologies/master/ontologies%2Ftaxonomic_nomenclatural_status_terms.owl
+
+In repository: https://github.com/plazi/TreatmentOntologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/taxonomic_nomenclatural_status_terms.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/plazi/TreatmentOntologies/master/ontologies%2FdwcFP.owl
+
+In repository: https://github.com/plazi/TreatmentOntologies
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologies/dwcFP.owl:1:1: XML or text declaration not at start of entity
+
+---
+File: https://raw.githubusercontent.com/plazi/TreatmentOntologies/master/drafts%2Fschema.ttl
+
+In repository: https://github.com/plazi/TreatmentOntologies
+> at line 1 of <>:
+Bad syntax (Prefix ":" not bound) at ^ in:
+"b''^b':Treatment a rdfs:Class.\n:TaxonConcept a rdfs:Class.\n:Scient'..."
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Ftutorial%2Fexposure_with_input.owl
+
+In repository: https://github.com/INCATools/dosdp-tools
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/tutorial/exposure_with_input.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Ftutorial%2Fexposure_with_input_with_role.owl
+
+In repository: https://github.com/INCATools/dosdp-tools
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/tutorial/exposure_with_input_with_role.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EdDuarte/semantic-graph/master/data%2Fdata.nt
+
+In repository: https://github.com/EdDuarte/semantic-graph
+> Invalid line: 'rdf:type <http://www.semanticweb.prv/taxonomy#Kingdom>.'
+
+---
+File: https://raw.githubusercontent.com/argu-co/popolo-ori/master/popolo-ori.owl
+
+In repository: https://github.com/argu-co/popolo-ori
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/popolo-ori.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/vocol/MTConnect/master/test_data%2FAgie.ttl
+
+In repository: https://github.com/vocol/MTConnect
+> at line 243 of <>:
+Bad syntax (bad escape) at ^ in:
+"...b'39";\r\n\t\t\t\tmto:hasCategory "EVENT";\r\n\t\t\t\tmto:hasProgram "TNC:'^b'\\BRIAN\\WARMUP.H".\r\nmto:Line3 rdf:type mto:Line;\r\n\t\t\t\tsaref:h'..."
+
+---
+File: https://raw.githubusercontent.com/Konstantin-Bogdanoski/WBS/master/Homeworks%2Fsrc%2Fmain%2Fjava%2FH-03_OWL%2FPizzaOntology.owl
+
+In repository: https://github.com/Konstantin-Bogdanoski/WBS
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Homeworks/src/main/java/H-03_OWL/PizzaOntology.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/Konstantin-Bogdanoski/WBS/master/Homeworks%2Fsrc%2Fmain%2Fjava%2FH-05_CreatingLinkedData%2Fkonstantin-bogdanoski.ttl
+
+In repository: https://github.com/Konstantin-Bogdanoski/WBS
+> at line 4 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'fileDocument rdf:about="">\n  <foaf:maker rdf:resource="#me"/'^b'>\n  <foaf:primaryTopic rdf:resource="#me"/>\n  <admin:generat'..."
+
+---
+File: https://raw.githubusercontent.com/Konstantin-Bogdanoski/WBS/master/Homeworks%2Fsrc%2Fmain%2Fresources%2Ffoaf.ttl
+
+In repository: https://github.com/Konstantin-Bogdanoski/WBS
+> at line 3 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ment rdf:about=""> <foaf:maker rdf:resource="#me"/>\n        '^b'<foaf:primaryTopic rdf:resource="#me"/>\n  <admin:generatorAg'..."
+
+---
+File: https://raw.githubusercontent.com/alvarosaurus/UML-ODM-to-OWL-XML/master/test%2Ftestdata%2Finheritance.owl
+
+In repository: https://github.com/alvarosaurus/UML-ODM-to-OWL-XML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/testdata/inheritance.owl:33:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/alvarosaurus/UML-ODM-to-OWL-XML/master/test%2Ftestdata%2Fclasses_and_properties.owl
+
+In repository: https://github.com/alvarosaurus/UML-ODM-to-OWL-XML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/testdata/classes_and_properties.owl:34:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/picorana/owla.py/master/monet%2Ftest_output.rdf
+
+In repository: https://github.com/picorana/owla.py
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/monet/test_output.rdf:13:6: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#resource
+
+---
+File: https://raw.githubusercontent.com/spice-h2020/SON/main/Narrative-Labyrinth%2Fontology.owl
+
+In repository: https://github.com/spice-h2020/SON
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Narrative-Labyrinth/ontology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/spice-h2020/SON/main/emotionInCulturalContext%2Fscenario2.ttl
+
+In repository: https://github.com/spice-h2020/SON
+> at line 66 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'era1ER e:stimulus e:ChairLegs;\n    e:experiencer e:B ;\n    a'^b' BSampleOperaER .\n\n\n\n\n\n'"
+
+---
+File: https://raw.githubusercontent.com/spice-h2020/SON/main/issues%2F31%2Fexample.ttl
+
+In repository: https://github.com/spice-h2020/SON
+> at line 226 of <>:
+Bad syntax (Prefix "rdfs:" not bound) at ^ in:
+"...b'atingOf ex:BarKochvaRebellion ;\n\tarco-cd:hasDatingEvent [\n\t\t'^b'rdfs:label "Time period 132 CE" ;\n\t] .\n\n\nex:Corridor bot:con'..."
+
+---
+File: https://raw.githubusercontent.com/arhs/owl2json-schema/master/src%2Ftest%2Fresources%2Fontology%2FAppolo18_00000D1066.rdf
+
+In repository: https://github.com/arhs/owl2json-schema
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/ontology/Appolo18_00000D1066.rdf:5:1: undefined entity
+
+---
+File: https://raw.githubusercontent.com/nabito/hls/master/hls_2015-12-6.owl
+
+In repository: https://github.com/nabito/hls
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/hls_2015-12-6.owl:35:97: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nabito/hls/master/hls-latest.owl
+
+In repository: https://github.com/nabito/hls
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/hls-latest.owl:35:97: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nabito/hls/master/hls-eval.owl
+
+In repository: https://github.com/nabito/hls
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/hls-eval.owl:35:97: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/cbcm-ontology/master/working_copy%2Feu-cm-ontology_owlxml.owl
+
+In repository: https://github.com/MaastrichtU-IDS/cbcm-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/working_copy/eu-cm-ontology_owlxml.owl:20:137: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/hsu-aut/Mapping-MTP-to-OWL/develop/src%2Fmain%2Fresources%2Fmapping.ttl
+
+In repository: https://github.com/hsu-aut/Mapping-MTP-to-OWL
+> at line 548 of <>:
+Bad syntax (Prefix "xsd:" not bound) at ^ in:
+"...b'te "{./Attribute[@Name=\'ProcedureID\']/Value}";\n\trr:datatype '^b'xsd:strg\n\t]];\n\t\n  \trr:predicateObjectMap [\n    rr:predicate '..."
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl
+
+In repository: https://github.com/sisinflab-swot/semantic-coap
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/LUMC-BioSemantics/dcat-extension/master/stardog-rules%2Fstandard-rule.ttl
+
+In repository: https://github.com/LUMC-BioSemantics/dcat-extension
+> at line 10 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'org/ns/dcat#>\nprefix dcterms: <http://purl.org/dc/terms/>\n\n\n'^b'IF {\n   ?res a dcat:Resource.\n   ?res dcterms:type dcterms:S'..."
+
+---
+File: https://raw.githubusercontent.com/ddaedalus/knowledge-systems-ntua/master/ontology%2Fmyontology-turtle.owl
+
+In repository: https://github.com/ddaedalus/knowledge-systems-ntua
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/myontology-turtle.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/NVTO%2Fnvto_protege.owl
+
+In repository: https://github.com/mawittbe/NVT_Data-Model
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/NVTO/nvto_protege.owl:23:128: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/Examples%2FExamples.ttl
+
+In repository: https://github.com/mawittbe/NVT_Data-Model
+> at line 131 of <>:
+Bad syntax (Prefix "nvto:" not bound) at ^ in:
+"...b's" .\n\n#Gruppen\nex:Group1 rdf:type paam:Agent ;\n            r'^b'df:type nvto:PerformingArtsGroup ;\n            paam:hasName '..."
+
+---
+File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/Extensions%2Fmtt_a.ttl
+
+In repository: https://github.com/mawittbe/NVT_Data-Model
+> at line 4 of <>:
+Bad syntax (Prefix "rdf:" not bound) at ^ in:
+"...b'schema/mtt_a/> .\n\n<http://lod.iti-germany.de/schema/mtt_a/> '^b'rdf:type owl:Ontology ;\n                                    '..."
+
+---
+File: https://raw.githubusercontent.com/blankdots/PersonasOntology/master/ontology%2Fpersonasonto.owl
+
+In repository: https://github.com/blankdots/PersonasOntology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/personasonto.owl:21:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/cmungall/dasher/master/src%2Fschema%2Fsemqc.owl
+
+In repository: https://github.com/cmungall/dasher
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/schema/semqc.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/luiseraso/expert-systems-examples/master/ims-examples-owl%2Fsrc%2Fmain%2Fresources%2Fedu%2Ffup%2Fims%2Fontologies%2FSecurityAndPrivacyOntology.owl
+
+In repository: https://github.com/luiseraso/expert-systems-examples
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ims-examples-owl/src/main/resources/edu/fup/ims/ontologies/SecurityAndPrivacyOntology.owl:26:82: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/luiseraso/expert-systems-examples/master/ims-examples-jena%2Fsrc%2Fmain%2Fresources%2Fedu%2Ffup%2Fims%2Fontologies%2Fsoa.owl
+
+In repository: https://github.com/luiseraso/expert-systems-examples
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ims-examples-jena/src/main/resources/edu/fup/ims/ontologies/soa.owl:33:6: two elements cannot use the same ID: 'http://www.semanticweb.org/ontologies/2010/01/core-soa.owl#ServiceContract'
+
+---
+File: https://raw.githubusercontent.com/luiseraso/expert-systems-examples/master/ims-examples-jena%2Fsrc%2Fmain%2Fresources%2Fedu%2Ffup%2Fims%2Fontologies%2FSecurityAndPrivacyOntology.owl
+
+In repository: https://github.com/luiseraso/expert-systems-examples
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ims-examples-jena/src/main/resources/edu/fup/ims/ontologies/SecurityAndPrivacyOntology.owl:26:82: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/cod3rs-ns/4-xml-govrs-service/master/src%2Fmain%2Fresources%2Fschemas%2Frdf%2Fskupstina.owl
+
+In repository: https://github.com/cod3rs-ns/4-xml-govrs-service
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/schemas/rdf/skupstina.owl:79:32: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/schema%2Fpdbx-validation-v3.owl
+
+In repository: https://github.com/yokochi47/pdbx-validation
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/schema/pdbx-validation-v3.owl:40037:6: unclosed token
+
+---
+File: https://raw.githubusercontent.com/yokochi47/pdbx-validation/master/schema%2Fpdbx-validation-v3.338.owl
+
+In repository: https://github.com/yokochi47/pdbx-validation
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/schema/pdbx-validation-v3.338.owl:40037:6: unclosed token
+
+---
+File: https://raw.githubusercontent.com/sasjonge/epartition/master/res%2Fpartitioner_test.owl
+
+In repository: https://github.com/sasjonge/epartition
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/res/partitioner_test.owl:40:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectIntersectionOf
+
+---
+File: https://raw.githubusercontent.com/sasjonge/epartition/master/res%2Fkoala_small.owl
+
+In repository: https://github.com/sasjonge/epartition
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/res/koala_small.owl:89:36: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/sasjonge/epartition/master/res%2Fkoala.owl
+
+In repository: https://github.com/sasjonge/epartition
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/res/koala.owl:113:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/KB_in_owl_Manchester.owl
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/KB_in_owl_Manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/KB_in_json.owl
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/KB_in_json.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/KB_in_latex.owl
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/KB_in_latex.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/KB_in_owl_functional.owl
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/KB_in_owl_functional.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/original_owl_code.owl
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/original_owl_code.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/KB_in_turtle.owl
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/KB_in_turtle.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/KB_in_owl.owl
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/KB_in_owl.owl:115:73: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/old%2Fv1%2FSecurityPatternCatalogNaiveSchema.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1/SecurityPatternCatalogNaiveSchema.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/old%2Fv1%2Ftest%2Fout%2FSecurityPatternCatalog.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1/test/out/SecurityPatternCatalog.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/old%2Fv1%2Ftest%2Fcatalog%2Fpattern2.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1/test/catalog/pattern2.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/old%2Fv1%2Ftest%2Fcatalog%2Fpattern1.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1/test/catalog/pattern1.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/old%2Fv1%2Ftest%2Fcatalog%2Fpattern_SecureDistributedPublishSubscribeIoT.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1/test/catalog/pattern_SecureDistributedPublishSubscribeIoT.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/catalogs%2Fcloudclassicdynamic%2Fcatalog%2Fcommon.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/catalogs/cloudclassicdynamic/catalog/common.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/catalogs%2Fcloudclassicdynamic%2Fcatalog%2FCloudSecurityPatternCatalog.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/catalogs/cloudclassicdynamic/catalog/CloudSecurityPatternCatalog.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/catalogs%2Facctp%2Fcatalog%2Fcommon.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/catalogs/acctp/catalog/common.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/catalogs%2Facctp%2Fcatalog%2FACCTPCatalog.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/catalogs/acctp/catalog/ACCTPCatalog.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/schema%2FSecurityPatternCatalogNaiveSchema.owl
+
+In repository: https://github.com/nets4geeks/SPCatalogMaker
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/schema/SecurityPatternCatalogNaiveSchema.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/fairgenomes/fairgenomes-semantic-model/main/transformation-output%2Fowl-xml%2Ffair-genomes.owl
+
+In repository: https://github.com/fairgenomes/fairgenomes-semantic-model
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/transformation-output/owl-xml/fair-genomes.owl:24:29: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/fairgenomes/fairgenomes-semantic-model/main/transformation-output%2Frdf-ttl%2Ffair-genomes.ttl
+
+In repository: https://github.com/fairgenomes/fairgenomes-semantic-model
+> at line 8 of <>:
+Bad syntax (Prefix "https:" not bound) at ^ in:
+"...b'owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n'^b'https://fair-genomes.org/ a owl:Ontology ; \n\tdc:title "FAIR '..."
+
+---
+File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/experiments%2Feinsteins_riddle_manchester.owl
+
+In repository: https://github.com/cknoll/yamlpyowl
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/experiments/einsteins_riddle_manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fdataset-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 14 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'onosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\n}'^b'\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fproject-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 20 of <>:
+Bad syntax (EOF found after object) at ^ in:
+"b'\n{\n\t<http://lod.eurohelp.es/aldapa/catalog/donosti-parkings-2> <http://schema.org/isPartOf> <http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> ;\n\t\ta <http://www.w3.org/ns/dcat#Catalog> ;\n\t\t<http://www.w3.org/ns/dcat#dataset> <http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> .\n\t\n\t<http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> a <http://rdfs.org/ns/void#Dataset> , <http://schema.org/Distribution> , <http://www.w3.org/ns/dcat#Distribution> ;\n\t\t<http://www.w3.org/ns/sparql-service-description#namedGraph> <http://euskadi.eus/graph/donosti-parkings-febr-0012> .\n\t\n\t<http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\n}\n\n<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\n\t<http://opendata.eurohelp.es/resource/resource_004> <http://opendata.eurohelp.es/property/property_005> <http://opendata.eurohelp.es/resource/resource_006> .\n\t\n\t<http://opendata.eurohelp.es/resource/resource_006> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\n\t\n\t<http://opendata.eurohelp.es/resource/resource_007> <http://www.w3.org/2000/01/rdf-schema#label> "Resource 007"@en .\n}'^b''..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2FtestReset-namedgraph-data-created.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 65 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'41559961978044"^^<http://www.w3.org/2001/XMLSchema#double> .'^b'\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fnamed-graph-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'02/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\n}\n\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\n\t<ht'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2FtestAddDataToNamedGraph-data-added.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 65 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'41559961978044"^^<http://www.w3.org/2001/XMLSchema#double> .'^b'\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fdataset-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'02/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\n}\n\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\n\t<ht'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fdata-named-graph-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (EOF found after object) at ^ in:
+"b'\n{\n\t<http://lod.eurohelp.es/aldapa/catalog/donosti-parkings> <http://schema.org/isPartOf> <http://lod.eurohelp.es/aldapa/project/donosti-movilidad> ;\n\t\ta <http://www.w3.org/ns/dcat#Catalog> ;\n\t\t<http://www.w3.org/ns/dcat#dataset> <http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr> .\n\t\n\t<http://lod.eurohelp.es/aldapa/catalog/donosti-parkings-2> <http://schema.org/isPartOf> <http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> ;\n\t\ta <http://www.w3.org/ns/dcat#Catalog> ;\n\t\t<http://www.w3.org/ns/dcat#dataset> <http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> .\n\t\n\t<http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr> a <http://rdfs.org/ns/void#Dataset> , <http://schema.org/Distribution> , <http://www.w3.org/ns/dcat#Distribution> ;\n\t\t<http://www.w3.org/ns/sparql-service-description#namedGraph> <http://euskadi.eus/graph/donosti-parkings-febr-001> .\n\t\n\t<http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> a <http://rdfs.org/ns/void#Dataset> , <http://schema.org/Distribution> , <http://www.w3.org/ns/dcat#Distribution> ;\n\t\t<http://www.w3.org/ns/sparql-service-description#namedGraph> <http://euskadi.eus/graph/donosti-parkings-febr-0012> .\n\t\n\t<http://lod.eurohelp.es/aldapa/project/donosti-movilidad> a <http://xmlns.com/foaf/0.1/Project> .\n\t\n\t<http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\n}\n\n<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\n\t<http://opendata.eurohelp.es/resource/resource_004> <http://opendata.eurohelp.es/property/property_005> <http://opendata.eurohelp.es/resource/resource_006> .\n\t\n\t<http://opendata.eurohelp.es/resource/resource_006> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\n\t\n\t<http://opendata.eurohelp.es/resource/resource_007> <http://www.w3.org/2000/01/rdf-schema#label> "Resource 007"@en .\n}'^b''..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fdata-named-graph-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'02/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\n}\n\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\n\t<ht'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fcatalog-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 9 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'onosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\n}'^b'\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fnamed-graph-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 19 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'onosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\n}'^b'\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fcatalog-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'02/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\n}\n\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\n\t<ht'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fproject-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'02/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\n}\n\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\n\t<ht'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2Fdefault-model.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 17 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'#######\n\n############################\n# \n# Common prefixes\n\n'^b'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPR'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fdataset-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 14 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'nosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\r\n}'^b'\r\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fproject-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 20 of <>:
+Bad syntax (EOF found after object) at ^ in:
+"b'\r\n{\r\n\t<http://lod.eurohelp.es/aldapa/catalog/donosti-parkings-2> <http://schema.org/isPartOf> <http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> ;\r\n\t\ta <http://www.w3.org/ns/dcat#Catalog> ;\r\n\t\t<http://www.w3.org/ns/dcat#dataset> <http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> .\r\n\t\r\n\t<http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> a <http://rdfs.org/ns/void#Dataset> , <http://schema.org/Distribution> , <http://www.w3.org/ns/dcat#Distribution> ;\r\n\t\t<http://www.w3.org/ns/sparql-service-description#namedGraph> <http://euskadi.eus/graph/donosti-parkings-febr-0012> .\r\n\t\r\n\t<http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\r\n}\r\n\r\n<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\r\n\t<http://opendata.eurohelp.es/resource/resource_004> <http://opendata.eurohelp.es/property/property_005> <http://opendata.eurohelp.es/resource/resource_006> .\r\n\t\r\n\t<http://opendata.eurohelp.es/resource/resource_006> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n\t\r\n\t<http://opendata.eurohelp.es/resource/resource_007> <http://www.w3.org/2000/01/rdf-schema#label> "Resource 007"@en .\r\n}\r'^b''..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2FtestReset-namedgraph-data-created.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 75 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'41559961978044"^^<http://www.w3.org/2001/XMLSchema#double> .'^b'\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fnamed-graph-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n}\r\n\r\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\r\n\t<h'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2FtestAddDataToNamedGraph-data-added.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 75 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'41559961978044"^^<http://www.w3.org/2001/XMLSchema#double> .'^b'\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fdataset-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n}\r\n\r\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\r\n\t<h'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Ftest-ejie-calidad-aire-namedgraph-created-2.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 65 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'41559961978044"^^<http://www.w3.org/2001/XMLSchema#double> .'^b'\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fdata-named-graph-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (EOF found after object) at ^ in:
+"b'\r\n{\r\n\t<http://lod.eurohelp.es/aldapa/catalog/donosti-parkings> <http://schema.org/isPartOf> <http://lod.eurohelp.es/aldapa/project/donosti-movilidad> ;\r\n\t\ta <http://www.w3.org/ns/dcat#Catalog> ;\r\n\t\t<http://www.w3.org/ns/dcat#dataset> <http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr> .\r\n\t\r\n\t<http://lod.eurohelp.es/aldapa/catalog/donosti-parkings-2> <http://schema.org/isPartOf> <http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> ;\r\n\t\ta <http://www.w3.org/ns/dcat#Catalog> ;\r\n\t\t<http://www.w3.org/ns/dcat#dataset> <http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> .\r\n\t\r\n\t<http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr> a <http://rdfs.org/ns/void#Dataset> , <http://schema.org/Distribution> , <http://www.w3.org/ns/dcat#Distribution> ;\r\n\t\t<http://www.w3.org/ns/sparql-service-description#namedGraph> <http://euskadi.eus/graph/donosti-parkings-febr-001> .\r\n\t\r\n\t<http://lod.eurohelp.es/aldapa/dataset/donosti-parkings-febr2> a <http://rdfs.org/ns/void#Dataset> , <http://schema.org/Distribution> , <http://www.w3.org/ns/dcat#Distribution> ;\r\n\t\t<http://www.w3.org/ns/sparql-service-description#namedGraph> <http://euskadi.eus/graph/donosti-parkings-febr-0012> .\r\n\t\r\n\t<http://lod.eurohelp.es/aldapa/project/donosti-movilidad> a <http://xmlns.com/foaf/0.1/Project> .\r\n\t\r\n\t<http://lod.eurohelp.es/aldapa/project/donosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\r\n}\r\n\r\n<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\r\n\t<http://opendata.eurohelp.es/resource/resource_004> <http://opendata.eurohelp.es/property/property_005> <http://opendata.eurohelp.es/resource/resource_006> .\r\n\t\r\n\t<http://opendata.eurohelp.es/resource/resource_006> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n\t\r\n\t<http://opendata.eurohelp.es/resource/resource_007> <http://www.w3.org/2000/01/rdf-schema#label> "Resource 007"@en .\r\n}\r'^b''..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fdata-named-graph-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n}\r\n\r\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\r\n\t<h'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fcatalog-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 9 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'nosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\r\n}'^b'\r\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fnamed-graph-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 19 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'nosti-movilidad2> a <http://xmlns.com/foaf/0.1/Project> .\r\n}'^b'\r\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fcatalog-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n}\r\n\r\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\r\n\t<h'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Ftest-ejie-calidad-aire-namedgraph-created.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 75 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'41559961978044"^^<http://www.w3.org/2001/XMLSchema#double> .'^b'\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2Fproject-before-deleted.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 29 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n}\r\n\r\n'^b'<http://euskadi.eus/graph/donosti-parkings-febr-0012> {\r\n\t<h'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Ftest%2Fresources%2Fdata%2Ffake_data2.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"b''^b'PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdfs: <h'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Ftest%2Fresources%2Fdata%2Ffake_data.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"b''^b'PREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdfs: <h'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fdata%2Fdefault-model-outputData.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 9 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'002/07/owl#sameAs> <http://dbpedia.org/resource/Bilbao> .\r\n}'^b'\r\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fdata%2Fdefault-model-outputMetaData.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 38 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'://www.w3.org/ns/prov#wasGeneratedBy> _:node1cdn6vdfgx20 .\n}'^b'\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fdata%2Fdefault-model-outputMetaDataProjectRemoved.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 36 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b's://www.w3.org/ns/prov#wasGeneratedBy> _:node1cdn6vdfgx6 .\n}'^b'\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fdata%2FBlazegraphRESTStoreTest-flushNamedGraph.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 8 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'.1/firstName> "Mikel Egana Aranguren flush flush flush" .\r\n}'^b'\r\n'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fsrc%2Ftest%2Fresources%2Fdata%2Fdefault-model.trig
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 17 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'#######\n\n############################\n# \n# Common prefixes\n\n'^b'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPR'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fsrc%2Ftest%2Fresources%2Fdata%2Fdata.n3
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"b''^b'PREFIX : <http://blazegraph.com/>\nPREFIX schema: <http://sch'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2FaddMetaDataToNamedGraph.ttl
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 4 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'w3.org/ns/prov#>\nPREFIX csvw: <http://www.w3.org/ns/csvw#>\n\n'^b'GRAPH_URI prov:wasGeneratedBy [\n    \ta prov:Activity ;\n    \t'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2FaddNamedGraph.ttl
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 3 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'FIX sd: <http://www.w3.org/ns/sparql-service-description#>\n\n'^b'DATASET_URI sd:namedGraph GRAPH_URI . # Actual data goes int'..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2FaddDataset.ttl
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 6 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'ttp://schema.org/>\nPREFIX void: <http://rdfs.org/ns/void#>\n\n'^b'CATALOG_URI dcat:dataset DATASET_URI .\nDATASET_URI rdf:type '..."
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2FaddProject.ttl
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 4 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'2-rdf-syntax-ns#>\nPREFIX foaf:<http://xmlns.com/foaf/0.1/>\n\n'^b'PROJECT_URI rdf:type foaf:Project .'"
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2FaddCatalog.ttl
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> at line 5 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'//www.w3.org/ns/dcat#>\nPREFIX schema: <http://schema.org/>\n\n'^b'CATALOG_URI rdf:type dcat:Catalog ;\n\t\tschema:isPartOf PROJEC'..."
+
+---
+File: https://raw.githubusercontent.com/LeonDsouza/B.E./master/LearningSPARQLExamples%2Fex420.ttl
+
+In repository: https://github.com/LeonDsouza/B.E.
+> at line 11 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'irstName     "Richard" ;\n        ab:lastName       "Mutt" ;\n'^b'NOT DONE\n\nab:playsInstrument\n      rdf:type rdf:Property ;\n '..."
+
+---
+File: https://raw.githubusercontent.com/LeonDsouza/B.E./master/LearningSPARQLExamples%2Fex319.ttl
+
+In repository: https://github.com/LeonDsouza/B.E.
+> at line 7 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'09-21" .\n\n<http://rdf.freebase.com/ns/en.tommy_potter>\t\n    '^b'owl:sameAs\t\n    <http://dbpedia.org/resource/Tommy_Potter> .'..."
+
+---
+File: https://raw.githubusercontent.com/LeonDsouza/B.E./master/LearningSPARQLExamples%2Fex442.ttl
+
+In repository: https://github.com/LeonDsouza/B.E.
+> at line 3 of <>:
+Bad syntax (Prefix "void:" not bound) at ^ in:
+"b'# filename: ex442.ttl (excerpt from void.ttl)\n\n'^b'void:Linkset a rdfs:Class, owl:Class;\n    rdfs:label "linkse'..."
+
+---
+File: https://raw.githubusercontent.com/sap218/ocimido/master/ontology%2Focimido.owl
+
+In repository: https://github.com/sap218/ocimido
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/ocimido.owl:18:69: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/houzw/knowledge-base-data/master/ConstaintsDemo%2Fshacl_test.ttl
+
+In repository: https://github.com/houzw/knowledge-base-data
+> at line 14 of <>:
+Bad syntax (expected item in list or ')') at ^ in:
+"...b'  sh:property [\n    sh:path props:hasTextValue;\n    sh:in (1'^b',2,3);\n    sh:message "must be in";\n  ] ;\n\n'"
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
+
+In repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
+> at line 4 of <>:
+Bad syntax (Prefix "    my:" not bound) at ^ in:
+"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
+
+---
+File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
+
+In repository: https://github.com/paya54/Reason-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
+
+In repository: https://github.com/falpema/PlanesCuenca
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/resourcesfp/restaurantes.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Frecursos%2Fontologia_ruta.owl
+
+In repository: https://github.com/falpema/PlanesCuenca
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/recursos/ontologia_ruta.owl:85:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Ftemp.nt
+
+In repository: https://github.com/falpema/PlanesCuenca
+> Invalid line: '<rdf:RDF'
+
+---
+File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl
+
+In repository: https://github.com/Inria-Chile/mining-inspection-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/MineInspectionOntology.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/AVeillas/IA301-urban-transport-ontology/master/UrbanTransportOntology.owl
+
+In repository: https://github.com/AVeillas/IA301-urban-transport-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl
+
+In repository: https://github.com/Svpwm/ChronicDiseaseManagement
+> at line 8 of <>:
+Bad syntax (Prefix "rule1:" not bound) at ^ in:
+"...b'refix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r\n\r\n\r\n['^b'rule1: (?p :hasCookingMethod ?n), (?n rdf:type :NotFryMethod'..."
+
+---
+File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Feiffel.ttl
+
+In repository: https://github.com/hartig/eiffel-rdf-vocabularies
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/eiffel.ttl'
+
+---
+File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Flink.ttl
+
+In repository: https://github.com/hartig/eiffel-rdf-vocabularies
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/link.ttl'
+
+---
+File: https://raw.githubusercontent.com/isuruamantha/OWL-to-AIML/master/src%2Fmain%2Fresources%2Fcoronavirus.owl
+
+In repository: https://github.com/isuruamantha/OWL-to-AIML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
+
+In repository: https://github.com/AdhamGamal/QASAL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
+
+In repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
+
+In repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
+
+In repository: https://github.com/amhiggin/CrimeGeolocationOntology
+> Quote expected in string at ^ in T>
+                "^POLYGON ((-6.3220487
+
+---
+File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
+
+In repository: https://github.com/CSIRO-enviro-informatics/eudm-profile
+> at line 26 of <>:
+Bad syntax (Prefix "agrif:" not bound) at ^ in:
+"...b'ef/agrif> ;\n.\n\n#\n# Classes\n#\ndcat:Dataset\n  rdfs:subClassOf '^b'agrif:Record ;\n  dct:description "A Dataset is easily seen a'..."
+
+---
+File: https://raw.githubusercontent.com/decrn/virtual-university/main/data%2Fvu-mapping.ttl
+
+In repository: https://github.com/decrn/virtual-university
+> at line 14 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ce/> .\r\n@prefix dbo:      <http://dbpedia.org/ontology/>\r\n\r\n'^b'<#Courses>  a \trr:TriplesMap;\r\n            rr:logicalTable ['..."
+
+---
+File: https://raw.githubusercontent.com/davysouza/CineOnto/master/cinema_full.owl
+
+In repository: https://github.com/davysouza/CineOnto
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cinema_full.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/davysouza/CineOnto/master/cinema_database.owl
+
+In repository: https://github.com/davysouza/CineOnto
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cinema_database.owl:1:11: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/davysouza/CineOnto/master/cinema.owl
+
+In repository: https://github.com/davysouza/CineOnto
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cinema.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ROHITHKUMARN/CS5560_KDM_Project/master/Source%2FPhase3%2FOntContructor%2Fdata%2Fmedical.owl
+
+In repository: https://github.com/ROHITHKUMARN/CS5560_KDM_Project
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Source/Phase3/OntContructor/data/medical.owl:148:56: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/ROHITHKUMARN/CS5560_KDM_Project/master/Source%2FProject_Phase3%2FQ2Query%2Fdata%2Fmedical.owl
+
+In repository: https://github.com/ROHITHKUMARN/CS5560_KDM_Project
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Source/Project_Phase3/Q2Query/data/medical.owl:148:56: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/ROHITHKUMARN/CS5560_KDM_Project/master/Source%2FProject_Phase3%2FOntologyConstruction%2Fdata%2Ffootball.owl
+
+In repository: https://github.com/ROHITHKUMARN/CS5560_KDM_Project
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Source/Project_Phase3/OntologyConstruction/data/football.owl:166:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/comfyneet/BachelorThesis/master/Source%2FJava%2Fsrc%2Fmain%2Fresources%2Frice.owl
+
+In repository: https://github.com/comfyneet/BachelorThesis
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Source/Java/src/main/resources/rice.owl:906:40: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/cmungall/ontology-change-language/master/src%2Fschema%2Focl.owl
+
+In repository: https://github.com/cmungall/ontology-change-language
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/schema/ocl.owl:1:0: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/GovDataOfficial/DCAT-AP.de-SHACL-Validation/master/validator%2Fresources%2Fv1.0.2%2Fshapes%2Fdcat-ap-de-shapes-specification.ttl
 
 In repository: https://github.com/GovDataOfficial/DCAT-AP.de-SHACL-Validation
@@ -426,6 +7945,72 @@ In repository: https://github.com/biolink/biolinkml
 > [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
 
 ---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/meta.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Foutput%2Fmeta.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/output/meta.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fowl1.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_utils/output/owl1.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fowl2.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_utils/output/owl2.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fbiolink-model.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_biolink_model/output/biolink-model.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fbiolink-model.native.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_biolink_model/output/biolink-model.native.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_163.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_163.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_163b.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_163b.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_163c.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_163c.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_290.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_290.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_tccm%2Fminimalmodel.owl
+
+In repository: https://github.com/biolink/biolinkml
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_issues/output/issue_tccm/minimalmodel.owl:1:0: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Fdata%2Fhp_f.ttl
 
 In repository: https://github.com/biolink/biolinkml
@@ -488,6 +8073,18 @@ In repository: https://github.com/MBoegers/ShexSHACLAndFriends
 > at line 1 of <>:
 Bad syntax (Prefix "ex:" not bound) at ^ in:
 "b''^b'ex:NamedObjectStruct a sh:NodeShape ;\n\tsh:targetClass NamedO'..."
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.1.owl
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.1.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.2.owl
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.2.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
 
 ---
 File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/data%2Finitial-openpredict-metadata.ttl
@@ -568,6 +8165,12 @@ In repository: https://github.com/neo4j-labs/neosemantics
 > at line 20 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'ogramming ;\n              ex:knows exDoc:John . }\n\nexDoc:G2 '^b'{\n    exDoc:Monica\n              ex:city "New York" ;\n      '..."
+
+---
+File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/docs%2F_unused%2Frdf%2Fvw.owl
+
+In repository: https://github.com/neo4j-labs/neosemantics
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/docs/_unused/rdf/vw.owl:1:0: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/src%2Ftest%2Fresources%2FcustomDataTypes.ttl
@@ -746,6 +8349,12 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'owl#> .\n\n@prefix dsp:      <http://dublincore.org/dc-dsp#>\n\n'^b'exdsp:correcta1 a exdsp:PropCard_1_1 ;\n\texdsp:prop_1_1 exdsp'..."
 
 ---
+File: https://raw.githubusercontent.com/fekaputra/shacl-plugin/master/src%2Fmain%2Fresources%2Fexample3-data.owl
+
+In repository: https://github.com/fekaputra/shacl-plugin
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/example3-data.owl:1:0: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/fekaputra/shacl-plugin/master/src%2Fmain%2Fresources%2Fexample2.ttl
 
 In repository: https://github.com/fekaputra/shacl-plugin
@@ -774,6 +8383,12 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'-schema#> .\r\n@prefix owl: <http://www.w3.org/2002/07/owl#>\r\n'^b'@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\r\n\r\nex:Ali'..."
 
 ---
+File: https://raw.githubusercontent.com/geneontology/go-shapes/master/ontology%2Fgo-lego-local.owl
+
+In repository: https://github.com/geneontology/go-shapes
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/go-lego-local.owl:1:6: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/biotea/validation-shapes-bioschemas/master/journal.jsonld
 
 In repository: https://github.com/biotea/validation-shapes-bioschemas
@@ -794,6 +8409,12 @@ In repository: https://github.com/rgmprabodha/Internship_Testing_Projects
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "b''^b'ResultShapeMap [associations=[ShapeAssociation [nodeSelector'..."
+
+---
+File: https://raw.githubusercontent.com/shexSpec/examples/master/ShEx_vs_OWL%2Fuser.owl
+
+In repository: https://github.com/shexSpec/examples
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ShEx_vs_OWL/user.owl:1:0: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/hsolbrig/PyShEx/master/tests%2Ftest_utils%2Fobject%2Fobservation_example_haplotype1.ttl
@@ -1578,6 +9199,30 @@ In repository: https://github.com/labra/ShExcala
 > at line 1 of <>:
 Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
+
+---
+File: https://raw.githubusercontent.com/fair-workflows/openpredict/master/data%2Fontology%2Fplex_tbox_0.1.1.owl
+
+In repository: https://github.com/fair-workflows/openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology/plex_tbox_0.1.1.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/fair-workflows/openpredict/master/data%2Fontology%2Fplex_tbox_0.1.2.owl
+
+In repository: https://github.com/fair-workflows/openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/ontology/plex_tbox_0.1.2.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/ramaschittella/INK-Browser/master/DaSE%2Fowl%2FTreePattern.owl
+
+In repository: https://github.com/ramaschittella/INK-Browser
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/DaSE/owl/TreePattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ramaschittella/INK-Browser/master/DaSE%2Fowl%2FComputationalEnvironment.owl
+
+In repository: https://github.com/ramaschittella/INK-Browser
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/DaSE/owl/ComputationalEnvironment.owl:27:137: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
 File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-mapper-parent%2Fjena-sparql-api-mapper-core%2Fsrc%2Ftest%2Fresources%2Fdbpedia-companies.ttl
