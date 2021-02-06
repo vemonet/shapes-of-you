@@ -380,8 +380,8 @@ query {
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_shape_files(shapes_graph, client, oauth_token):
-    topics = ['obofoundry']
-    # topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
+    # topics = ['obofoundry']
+    topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
     # , 'ontology'
 
     for github_topic in topics:
