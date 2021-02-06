@@ -39,7 +39,7 @@ def main(argv):
 
   shapes_graph = Graph()
   if len(argv) > 0:
-    git_registry = argv[1].lowercase()
+    git_registry = argv[1].lower()
   else:
     git_registry = 'github'
 
