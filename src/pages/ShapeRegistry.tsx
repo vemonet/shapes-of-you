@@ -7,6 +7,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import CodeIcon from '@material-ui/icons/Code';
 import BubbleChartIcon from '@material-ui/icons/BubbleChart';
+import SendIcon from '@material-ui/icons/Send';
 
 import axios from 'axios';
 
@@ -420,8 +421,28 @@ export default function ShapeRegistry() {
       {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
           <Typography variant="h6">
-            Shapes file:&nbsp;
+            File:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>&nbsp;&nbsp;
+            {project.query && project.sparqlEndpoint &&
+              // Add YASGUI link if relevant
+              // https://yasgui.triply.cc/#query=  &endpoint=
+              <a href={'https://yasgui.triply.cc/#query=' + encodeURIComponent(project.query) + '&endpoint=' + project.sparqlEndpoint}
+                className={classes.link} target='_blank'>
+                <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}>
+                  <SendIcon />
+                  &nbsp;Query on YASGUI
+                </Button>
+              </a>
+            }
+            {project.query && !project.sparqlEndpoint &&
+              <a href={'https://yasgui.triply.cc/#query=' + encodeURIComponent(project.query)} 
+                className={classes.link} target='_blank'>
+                <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}>
+                  <SendIcon />
+                  &nbsp;Query on YASGUI
+                </Button>
+              </a>
+            }
             <LoggedIn>
               <Like object={project.shapeFileUri}>the Shape</Like>
             </LoggedIn>
