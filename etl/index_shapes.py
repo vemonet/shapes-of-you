@@ -2,7 +2,7 @@ import os
 import sys
 import shutil
 import pathlib
-from datetime import datetime
+from datetime import datetime, timedelta
 import re
 import urllib
 import requests
@@ -516,9 +516,10 @@ def fetch_from_gitee(shapes_graph, token):
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
       for repo_json in gitee_repos_list:
-        now = datetime.now() - time_start
-        if now.hour == 5 and now.minute >= 45:
-          print('Running for ' + str(now) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
+        runtime = datetime.now() - time_start
+        # Stop if more than 5h45
+        if runtime > timedelta(minutes=345):
+          print('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
           stopping_job = True
           break
 
