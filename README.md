@@ -22,7 +22,7 @@ Add one of these topics to your GitHub repository, we automatically index files 
 
 We also index the same topics in GitLab and Gitee, there is no topic on those websites, so just mention it in your project name or description.
 
-Additional GitHub repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt) (if not tagged with the right topic)
+Additional GitHub repositories can be included in the file [`EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_GITHUB_REPOSITORIES.txt) (if not tagged with the right topic)
 
 You can check RDF files which failed to be parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`REPORT.md`](https://github.com/vemonet/shapes-of-you/blob/report/REPORT.md), feel free to fix them if you are the owner!
 

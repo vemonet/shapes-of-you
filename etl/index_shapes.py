@@ -53,6 +53,7 @@ def main(argv):
 
   if git_registry == 'github':
     shapes_graph = fetch_shape_files(shapes_graph, client, GITHUB_TOKEN)
+  elif git_registry == 'github-extras':
     shapes_graph = fetch_extra_shape_files(shapes_graph, client, GITHUB_TOKEN)
   elif git_registry == 'gitlab':
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
@@ -60,7 +61,7 @@ def main(argv):
   elif git_registry == 'gitee':
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN)
 
-  shapes_graph.serialize('shapes-of-you-rdf.ttl', format='turtle')
+  shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
 
 
 def generate_github_file_url(repo_url, filepath, branch):
@@ -446,7 +447,7 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
   """Fetch additional Shapes files from a list of GitHub repos
   """
   extra_shapes_repositories = []
-  with open(root / '../EXTERNAL_REPOSITORIES.txt', 'r') as f:
+  with open(root / '../EXTRAS_GITHUB_REPOSITORIES.txt', 'r') as f:
     for line in f:
       extra_shapes_repositories.append(line.rstrip('\n').strip())
 
@@ -553,7 +554,7 @@ if __name__ == "__main__":
 
   # global extra_shapes_repositories
   # extra_shapes_repositories = []
-  # with open(root / '../EXTERNAL_REPOSITORIES.txt', 'r') as f:
+  # with open(root / '../EXTRAS_GITHUB_REPOSITORIES.txt', 'r') as f:
   #   for line in f:
   #     extra_shapes_repositories.append(line.rstrip('\n'))
 

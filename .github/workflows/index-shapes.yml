@@ -1,26 +1,31 @@
 name: Index shapes
 on:
-  workflow_dispatch:
-    inputs:
-      clear:
-        description: 'Clear the Shapes triplestore'
-        required: true
-        default: 'false'
   schedule:
     # Everyday at 01:00 
     - cron:  '00 01 * * *'
-  push:
-    branches: [ main ]
-    paths:
-    - '.github/workflows/get-shapes.yml'
-    - 'etl/*'
-    - 'EXTERNAL_REPOSITORIES.txt'
+  # push:
+  #   branches: [ main ]
+  #   paths:
+  #   - '.github/workflows/get-shapes.yml'
+  #   - 'etl/*'
+  #   - 'EXTRAS_GITHUB_REPOSITORIES.txt'
+  workflow_dispatch:
+    # inputs:
+    #   clear:
+    #     description: 'Clear the Shapes triplestore'
+    #     required: true
+    #     default: 'false'
 
 jobs:
-  query-github-for-shapes:
+  query-git-services-for-shapes:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        git-service: ['github', 'github-extras', 'gitlab', 'gitee']
+
     steps:
-    - name: Check out repo
+    - name: Checkout the repo code
       uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -34,184 +39,263 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
     
-    # Important part here (can be reused to run locally):
-    - name: Install Python dependencies
+    - name: Install Python requirements
       run: |
         python -m pip install -r etl/requirements.txt
 
-    - name: Run Python script to query GitHub GraphQL API
+    - name: Run Python script to index ${{ matrix.git-service }}
       env:
+        GIT_SERVICE: ${{ matrix.git-service }}
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
-        python etl/index_shapes.py github
+        python etl/index_shapes.py $GIT_SERVICE
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: failed-shapes-report-github
+        name: report-${{ matrix.git-service }}
         path: REPORT.md
 
-    - name: Commit and push REPORT.md file in report branch
-      run: |
-        mv REPORT.md tmp-REPORT.md
-        git stash
-        git fetch
-        git checkout report
-        mv tmp-REPORT.md REPORT_GITHUB.md
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add REPORT_GITHUB.md
-        git commit -m "Update REPORT_GITHUB.md" || exit 0
-        git push
-
-    - name: Upload GitHub RDF output as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: shapes-of-you-rdf-github
-        path: shapes-of-you-rdf.ttl
-
-    - name: Clear older graph in the triplestore
-      if: github.event.inputs.clear == 'true'
-      uses: vemonet/sparql-operations-action@v1
-      with:
-        query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
-
-    - name: Upload GitHub RDF file to the triplestore
-      uses: MaastrichtU-IDS/RdfUpload@master
-      with:
-        file: shapes-of-you-rdf.ttl
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: "https://w3id.org/um/ids/shapes/github"
-
-  query-gitlab-for-shapes:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Check out repo
-      uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-    - uses: actions/cache@v2
-      name: Configure pip caching
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-    
-    # Important part here (can be reused to run locally):
-    - name: Install Python dependencies
-      run: |
-        python -m pip install -r etl/requirements.txt
-
-    - name: Run Python script to query GitLab API
+    - name: Commit and push report-${{ matrix.git-service }}.md file in report branch
       env:
-        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
-      run: |
-        python etl/index_shapes.py gitlab
-
-    - name: Upload failed shapes report as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: failed-shapes-report-gitlab
-        path: REPORT.md
-
-    - name: Commit and push REPORT.md file in report branch
+        GIT_SERVICE: ${{ matrix.git-service }}
       run: |
         mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
         git checkout report
-        mv tmp-REPORT.md REPORT_GITLAB.md
+        mv tmp-REPORT.md report-$GIT_SERVICE.md
         git diff
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
-        git add REPORT_GITLAB.md
-        git commit -m "Update REPORT_GITLAB.md" || exit 0
+        git add report-$GIT_SERVICE.md
+        git commit -m "Update report-$GIT_SERVICE.md" || exit 0
         git push
 
-    - name: Upload RDF output as artifact
+    - name: Upload ${{ matrix.git-service }} RDF output as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: shapes-of-you-rdf-gitlab
-        path: shapes-of-you-rdf.ttl
+        name: shapes-rdf-${{ matrix.git-service }}
+        path: shapes-rdf.ttl
 
-    - name: Upload GitLab RDF file to the triplestore
+    # - name: Clear older graph in the triplestore
+    #   if: github.event.inputs.clear == 'true'
+    #   uses: vemonet/sparql-operations-action@v1
+    #   with:
+    #     query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+
+    - name: Upload ${{ matrix.git-service }} RDF file to the triplestore
       uses: MaastrichtU-IDS/RdfUpload@master
       with:
-        file: shapes-of-you-rdf.ttl
+        file: shapes-rdf.ttl
         endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
         user: ${{ secrets.GRAPHDB_USER }}
         password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: "https://w3id.org/um/ids/shapes/gitlab"
+        graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
 
-  query-gitee-for-shapes:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Check out repo
-      uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-    - uses: actions/cache@v2
-      name: Configure pip caching
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+
+
+
+
+  # query-github-extras-for-shapes:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Check out repo
+  #     uses: actions/checkout@v2
+  #   - name: Set up Python
+  #     uses: actions/setup-python@v2
+  #     with:
+  #       python-version: 3.8
+  #   - uses: actions/cache@v2
+  #     name: Configure pip caching
+  #     with:
+  #       path: ~/.cache/pip
+  #       key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+  #       restore-keys: |
+  #         ${{ runner.os }}-pip-
     
-    # Important part here (can be reused to run locally):
-    - name: Install Python dependencies
-      run: |
-        python -m pip install -r etl/requirements.txt
+  #   # Important part here (can be reused to run locally):
+  #   - name: Install Python dependencies
+  #     run: |
+  #       python -m pip install -r etl/requirements.txt
 
-    - name: Run Python script to query Gitee API
-      env:
-        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-      run: |
-        python etl/index_shapes.py gitee
+  #   - name: Run Python script to query GitHub GraphQL API
+  #     env:
+  #       API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+  #       SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+  #     run: |
+  #       python etl/index_shapes.py github-extras
 
-    - name: Upload failed shapes report as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: failed-shapes-report-gitee
-        path: REPORT.md
+  #   - name: Upload failed shapes report as artifact
+  #     uses: actions/upload-artifact@v1
+  #     with:
+  #       name: failed-shapes-report-github-extras
+  #       path: REPORT.md
 
-    - name: Commit and push REPORT_GITEE.md file in report branch
-      run: |
-        mv REPORT.md tmp-REPORT.md
-        git stash
-        git fetch
-        git checkout report
-        mv tmp-REPORT.md REPORT_GITEE.md
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add REPORT_GITEE.md
-        git commit -m "Update REPORT_GITEE.md" || exit 0
-        git push
+  #   - name: Commit and push REPORT.md file in report branch
+  #     run: |
+  #       mv REPORT.md tmp-REPORT.md
+  #       git stash
+  #       git fetch
+  #       git checkout report
+  #       mv tmp-REPORT.md REPORT_GITHUB.md
+  #       git diff
+  #       git config --global user.email "vincent.emonet@gmail.com"
+  #       git config --global user.name "Vincent Emonet"
+  #       git add REPORT_GITHUB.md
+  #       git commit -m "Update REPORT_GITHUB.md" || exit 0
+  #       git push
 
-    - name: Upload Gitee RDF output as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: shapes-of-you-rdf-gitee
-        path: shapes-of-you-rdf.ttl
+  #   - name: Upload GitHub RDF output as artifact
+  #     uses: actions/upload-artifact@v1
+  #     with:
+  #       name: shapes-rdf-github
+  #       path: shapes-rdf.ttl
 
-    - name: Upload Gitee RDF file to the triplestore
-      uses: MaastrichtU-IDS/RdfUpload@master
-      with:
-        file: shapes-of-you-rdf.ttl
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: "https://w3id.org/um/ids/shapes/gitee"
+  #   - name: Clear older graph in the triplestore
+  #     if: github.event.inputs.clear == 'true'
+  #     uses: vemonet/sparql-operations-action@v1
+  #     with:
+  #       query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
+  #       endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+  #       user: ${{ secrets.GRAPHDB_USER }}
+  #       password: ${{ secrets.GRAPHDB_PASSWORD }}
+
+  #   - name: Upload GitHub RDF file to the triplestore
+  #     uses: MaastrichtU-IDS/RdfUpload@master
+  #     with:
+  #       file: shapes-rdf.ttl
+  #       endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+  #       user: ${{ secrets.GRAPHDB_USER }}
+  #       password: ${{ secrets.GRAPHDB_PASSWORD }}
+  #       graph: "https://w3id.org/um/ids/shapes/github"
+
+  # query-gitlab-for-shapes:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Check out repo
+  #     uses: actions/checkout@v2
+  #   - name: Set up Python
+  #     uses: actions/setup-python@v2
+  #     with:
+  #       python-version: 3.8
+  #   - uses: actions/cache@v2
+  #     name: Configure pip caching
+  #     with:
+  #       path: ~/.cache/pip
+  #       key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+  #       restore-keys: |
+  #         ${{ runner.os }}-pip-
+    
+  #   # Important part here (can be reused to run locally):
+  #   - name: Install Python dependencies
+  #     run: |
+  #       python -m pip install -r etl/requirements.txt
+
+  #   - name: Run Python script to query GitLab API
+  #     env:
+  #       GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+  #     run: |
+  #       python etl/index_shapes.py gitlab
+
+  #   - name: Upload failed shapes report as artifact
+  #     uses: actions/upload-artifact@v1
+  #     with:
+  #       name: failed-shapes-report-gitlab
+  #       path: REPORT.md
+
+  #   - name: Commit and push REPORT.md file in report branch
+  #     run: |
+  #       mv REPORT.md tmp-REPORT.md
+  #       git stash
+  #       git fetch
+  #       git checkout report
+  #       mv tmp-REPORT.md REPORT_GITLAB.md
+  #       git diff
+  #       git config --global user.email "vincent.emonet@gmail.com"
+  #       git config --global user.name "Vincent Emonet"
+  #       git add REPORT_GITLAB.md
+  #       git commit -m "Update REPORT_GITLAB.md" || exit 0
+  #       git push
+
+  #   - name: Upload RDF output as artifact
+  #     uses: actions/upload-artifact@v1
+  #     with:
+  #       name: shapes-rdf-gitlab
+  #       path: shapes-rdf.ttl
+
+  #   - name: Upload GitLab RDF file to the triplestore
+  #     uses: MaastrichtU-IDS/RdfUpload@master
+  #     with:
+  #       file: shapes-rdf.ttl
+  #       endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+  #       user: ${{ secrets.GRAPHDB_USER }}
+  #       password: ${{ secrets.GRAPHDB_PASSWORD }}
+  #       graph: "https://w3id.org/um/ids/shapes/gitlab"
+
+  # query-gitee-for-shapes:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Check out repo
+  #     uses: actions/checkout@v2
+  #   - name: Set up Python
+  #     uses: actions/setup-python@v2
+  #     with:
+  #       python-version: 3.8
+  #   - uses: actions/cache@v2
+  #     name: Configure pip caching
+  #     with:
+  #       path: ~/.cache/pip
+  #       key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+  #       restore-keys: |
+  #         ${{ runner.os }}-pip-
+    
+  #   # Important part here (can be reused to run locally):
+  #   - name: Install Python dependencies
+  #     run: |
+  #       python -m pip install -r etl/requirements.txt
+
+  #   - name: Run Python script to query Gitee API
+  #     env:
+  #       GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+  #     run: |
+  #       python etl/index_shapes.py gitee
+
+  #   - name: Upload failed shapes report as artifact
+  #     uses: actions/upload-artifact@v1
+  #     with:
+  #       name: failed-shapes-report-gitee
+  #       path: REPORT.md
+
+  #   - name: Commit and push REPORT_GITEE.md file in report branch
+  #     run: |
+  #       mv REPORT.md tmp-REPORT.md
+  #       git stash
+  #       git fetch
+  #       git checkout report
+  #       mv tmp-REPORT.md REPORT_GITEE.md
+  #       git diff
+  #       git config --global user.email "vincent.emonet@gmail.com"
+  #       git config --global user.name "Vincent Emonet"
+  #       git add REPORT_GITEE.md
+  #       git commit -m "Update REPORT_GITEE.md" || exit 0
+  #       git push
+
+  #   - name: Upload Gitee RDF output as artifact
+  #     uses: actions/upload-artifact@v1
+  #     with:
+  #       name: shapes-rdf-gitee
+  #       path: shapes-rdf.ttl
+
+  #   - name: Upload Gitee RDF file to the triplestore
+  #     uses: MaastrichtU-IDS/RdfUpload@master
+  #     with:
+  #       file: shapes-rdf.ttl
+  #       endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+  #       user: ${{ secrets.GRAPHDB_USER }}
+  #       password: ${{ secrets.GRAPHDB_PASSWORD }}
+  #       graph: "https://w3id.org/um/ids/shapes/gitee"

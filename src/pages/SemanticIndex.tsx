@@ -353,7 +353,7 @@ export default function SemanticIndex() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <a href="https://www.w3.org/OWL/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>OWL ontologies</b></a>: add the topic <code>owl</code>, we index RDF files, with all <code>owl:Class</code> they contain
+            <b><a href="https://www.w3.org/OWL/" className={classes.link} target="_blank" rel="noopener noreferrer">OWL</a> ontologies</b>: add the topic <code>owl</code>, we index RDF files, with all <code>owl:Class</code> they contain
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -363,7 +363,7 @@ export default function SemanticIndex() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <a href="https://www.w3.org/TR/swbp-skos-core-spec/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>SKOS vocabularies</b></a>: add the topic <code>skos</code>, we index RDF files, with all <code>skos:Concept</code> they contain
+            <b><a href="https://www.w3.org/TR/swbp-skos-core-spec/" className={classes.link} target="_blank" rel="noopener noreferrer">SKOS</a> vocabularies</b>: add the topic <code>skos</code>, we index RDF files, with all <code>skos:Concept</code> they contain
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -375,7 +375,7 @@ export default function SemanticIndex() {
           <ListItemText
             // secondary="shacl-shapes"
           > 
-            <a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>SHACL shapes</b></a>: add the topic <code>shacl-shapes</code>, we index RDF files, with all <code>sh:NodeShape</code> they contain
+            <b><a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer">SHACL</a> shapes</b>: add the topic <code>shacl-shapes</code>, we index RDF files, with all <code>sh:NodeShape</code> they contain
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -386,7 +386,7 @@ export default function SemanticIndex() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <a href="https://shex.io/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>ShEx expressions</b></a>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files (but no metadata described in ShEx)
+            <b><a href="https://shex.io/" className={classes.link} target="_blank" rel="noopener noreferrer">ShEx</a> expressions</b>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files (but no metadata described in ShEx)
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -396,7 +396,7 @@ export default function SemanticIndex() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <a href="https://www.w3.org/TR/sparql11-query/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>SPARQL queries</b></a>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link} target="_blank" rel="noopener noreferrer">grlc.io</a> APIs metadata, complying with the <a href="https://github.com/the-open-university/basil/wiki/Introduction" className={classes.link} target="_blank" rel="noopener noreferrer">BASIL convention</a>
+            <b><a href="https://www.w3.org/TR/sparql11-query/" className={classes.link} target="_blank" rel="noopener noreferrer">SPARQL</a> queries</b>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link} target="_blank" rel="noopener noreferrer">grlc.io</a> APIs metadata, complying with the <a href="https://github.com/the-open-university/basil/wiki/Introduction" className={classes.link} target="_blank" rel="noopener noreferrer">BASIL convention</a>
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -406,7 +406,7 @@ export default function SemanticIndex() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>OBO ontologies</b></a>: add the topic <code>obo</code>, we index <code>.obo</code> files, with all terms they contain
+            <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, with all terms they contain
           </ListItemText>
         </ListItem>
       </List>
