@@ -24,7 +24,7 @@ We also index the same topics in GitLab and Gitee, there is no topic on those we
 
 Additional GitHub repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt) (if not tagged with the right topic)
 
-You can check RDF files which failed to be parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](https://github.com/vemonet/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md), feel free to fix them if you are the owner!
+You can check RDF files which failed to be parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`REPORT.md`](https://github.com/vemonet/shapes-of-you/blob/report/REPORT.md), feel free to fix them if you are the owner!
 
 ## Overview 🧭
 

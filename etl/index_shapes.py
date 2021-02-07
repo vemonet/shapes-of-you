@@ -41,7 +41,7 @@ def main(argv):
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
   # Reset failed shapes report file
-  with open(root / '../FAILED_IMPORT_REPORT.md', 'w') as f:
+  with open(root / '../REPORT.md', 'w') as f:
     f.write('## Fails loading files to `rdflib`\n' +
       '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
@@ -115,7 +115,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
       except Exception as e:
         print('Issue with OBO parser file ' + github_file_url)
-        with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+        with open(root / '../REPORT.md', 'a') as f:
           f.write('File: ' + github_file_url + "\n\n"
               + 'In repository: ' + repo_url + "\n> " 
               + str(e) + "\n\n---\n")
@@ -195,7 +195,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
           print('No parser worked for the file ' + github_file_url)
           if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
-              with open(root / '../FAILED_IMPORT_REPORT.md', 'a') as f:
+              with open(root / '../REPORT.md', 'a') as f:
                 f.write('File: ' + github_file_url + "\n\n"
                     + 'In repository: ' + repo_url + "\n> " 
                     + str(e) + "\n\n---\n")

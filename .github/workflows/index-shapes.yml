@@ -50,20 +50,20 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: failed-shapes-report-github
-        path: FAILED_IMPORT_REPORT.md
+        path: REPORT.md
 
-    - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
+    - name: Commit and push REPORT.md file in report branch
       run: |
-        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_REPORT.md
+        mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
         git checkout report
-        mv tmp-FAILED_IMPORT_REPORT.md FAILED_IMPORT_REPORT_GITHUB.md
+        mv tmp-REPORT.md REPORT_GITHUB.md
         git diff
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
-        git add FAILED_IMPORT_REPORT_GITHUB.md
-        git commit -m "Update FAILED_IMPORT_REPORT_GITHUB.md" || exit 0
+        git add REPORT_GITHUB.md
+        git commit -m "Update REPORT_GITHUB.md" || exit 0
         git push
 
     - name: Upload GitHub RDF output as artifact
@@ -122,20 +122,20 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: failed-shapes-report-gitlab
-        path: FAILED_IMPORT_REPORT.md
+        path: REPORT.md
 
-    - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
+    - name: Commit and push REPORT.md file in report branch
       run: |
-        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_REPORT.md
+        mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
         git checkout report
-        mv tmp-FAILED_IMPORT_REPORT.md FAILED_IMPORT_REPORT_GITLAB.md
+        mv tmp-REPORT.md REPORT_GITLAB.md
         git diff
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
-        git add FAILED_IMPORT_REPORT_GITLAB.md
-        git commit -m "Update FAILED_IMPORT_REPORT_GITLAB.md" || exit 0
+        git add REPORT_GITLAB.md
+        git commit -m "Update REPORT_GITLAB.md" || exit 0
         git push
 
     - name: Upload RDF output as artifact
@@ -185,20 +185,20 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: failed-shapes-report-gitee
-        path: FAILED_IMPORT_REPORT.md
+        path: REPORT.md
 
-    - name: Commit and push FAILED_IMPORT_REPORT_GITEE.md file in report branch
+    - name: Commit and push REPORT_GITEE.md file in report branch
       run: |
-        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_REPORT.md
+        mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
         git checkout report
-        mv tmp-FAILED_IMPORT_REPORT.md FAILED_IMPORT_REPORT_GITEE.md
+        mv tmp-REPORT.md REPORT_GITEE.md
         git diff
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
-        git add FAILED_IMPORT_REPORT_GITEE.md
-        git commit -m "Update FAILED_IMPORT_REPORT_GITEE.md" || exit 0
+        git add REPORT_GITEE.md
+        git commit -m "Update REPORT_GITEE.md" || exit 0
         git push
 
     - name: Upload Gitee RDF output as artifact
