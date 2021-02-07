@@ -79,7 +79,7 @@ export default function About() {
             position: { x: 10, y: 10 },
             data: {
               name: 'Institute of Data Science',
-              image: 'https://raw.githubusercontent.com/MaastrichtU-IDS/shapes-of-you/main/assets/icon.png',
+              image: 'https://raw.githubusercontent.com/vemonet/shapes-of-you/main/assets/icon.png',
               story: `Develop responsible data science by design to accelerate discovery across all sectors of society.`,
               color: 'grey'
             }
@@ -89,7 +89,7 @@ export default function About() {
             position: { x: 600, y: 10 },
             data: {
               name: 'Maastricht University',
-              image: 'https://raw.githubusercontent.com/MaastrichtU-IDS/shapes-of-you/main/assets/icon.png',
+              image: 'https://raw.githubusercontent.com/vemonet/shapes-of-you/main/assets/icon.png',
               story: `The most international university in the Netherlands, stands out for its innovative education model, and multidisciplinary approach to research and education.`,
               color: 'grey'
             }

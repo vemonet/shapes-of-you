@@ -1,38 +1,40 @@
 # Contributing 👩‍💻
 
-When contributing to this repository, please first discuss the change you wish to make via an [issue](https://github.com/MaastrichtU-IDS/shapes-of-you/issues) if applicable.
+When contributing to this repository, please first discuss the change you wish to make via an [issue](https://github.com/vemonet/shapes-of-you/issues) if applicable.
 
-If you are part of the [MaastrichtU-IDS organization on GitHub](https://github.com/MaastrichtU-IDS) you can directly create a branch in this repository. Otherwise you will need to first [fork this repository](https://github.com/MaastrichtU-IDS/shapes-of-you/fork).
+
 
 To contribute:
 
-1. Clone the repository 📥
+1. [Fork this repository](https://github.com/vemonet/shapes-of-you/fork).
+
+2. Clone the repository 📥 (example given with the main repository URL)
 
 ```bash
-git clone https://github.com/MaastrichtU-IDS/shapes-of-you.git
+git clone https://github.com/vemonet/shapes-of-you.git
 cd shapes-of-you
 ```
 
-2. Create a new branch from the `main` branch and add your changes to this branch 🕊️
+3. Create a new branch from the `main` branch and add your changes to this branch 🕊️
 
 ```bash
 git checkout -b my-branch
 ```
 
-3. Run the API in development on http://localhost:19006 🛩
+4. Run the API in development on http://localhost:19006 🛩
 
 ```bash
 yarn install
 yarn web
 ```
 
-4. Add your change in this branch 📝
-5. Send a pull request to the `main` branch when your changes are done 📤
+5. Add your change in this branch 📝
+6. Send a pull request to the `main` branch when your changes are done 📤
 
 ## Pull Request process ✔️
 
 1. Before sending a pull request make sure the project still work as expected with the new changes properly integrated 📝
-2. [Send a pull request](https://github.com/MaastrichtU-IDS/shapes-of-you/compare) to the `main` branch 📤
+2. [Send a pull request](https://github.com/vemonet/shapes-of-you/compare) to the `main` branch 📤
 3. Project contributors will review your change as soon as they can ✔️
 
 ## Planned improvements ➕

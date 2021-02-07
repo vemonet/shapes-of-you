@@ -1,11 +1,11 @@
 # Registry for SPARQL, SHACL & ShEx Shapes
 
-[![Index shapes](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Index%20shapes/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22) [![Deploy to GitHub Pages](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Deploy%20website%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+website+to+GitHub+Pages%22) [![CodeQL analysis](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
+[![Index shapes](https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22) [![Deploy to GitHub Pages](https://github.com/vemonet/shapes-of-you/workflows/Deploy%20website%20to%20GitHub%20Pages/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+website+to+GitHub+Pages%22) [![CodeQL analysis](https://github.com/vemonet/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
 
 
 🖥 Access the Shapes of You web app at https://maastrichtu-ids.github.io/shapes-of-you
 
-📬 Access the OpenAPI at http://grlc.io/api-git/MaastrichtU-IDS/shapes-of-you (powered by [grlc.io](http://grlc.io))
+📬 Access the OpenAPI at http://grlc.io/api-git/vemonet/shapes-of-you (powered by [grlc.io](http://grlc.io))
 
 🕸 Query the [SPARQL endpoint on YASGUI](http://yasgui.triply.cc/#query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0APREFIX%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20sh%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fshacl%23%3E%0APREFIX%20shex%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fshex%23%3E%0APREFIX%20void%3A%20%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0ASELECT%20DISTINCT%20*%20WHERE%20%7B%20%0A%20%20%20%20%3FshapeFileUri%20a%20schema%3ASoftwareSourceCode%20%3B%0A%20%20%20%20%20%20%20%20a%20%3Fshape_type%20%3B%0A%20%20%20%20%20%20%20%20rdfs%3Alabel%20%3Flabel%20%3B%0A%20%20%20%20%20%20%20%20dc%3Asource%20%3Frepository%20%3B%0A%20%20%20%20%20%20%20%20dcterms%3AhasPart%20%3Fshapes%20.%0A%20%20%20%20FILTER(%3Fshape_type%20!%3D%20schema%3ASoftwareSourceCode)%0A%20%20%20%20OPTIONAL%20%7B%20%3Frepository%20rdfs%3Acomment%20%3Frepo_description%20%7D%0A%20%20%20%20OPTIONAL%20%7B%20%3FshapeFileUri%20schema%3Aquery%20%3Fquery%20%7D%0A%20%20%20%20OPTIONAL%20%7B%20%3FshapeFileUri%20void%3AsparqlEndpoint%20%3FsparqlEndpoint%20%7D%0A%20%20%20%20OPTIONAL%20%7B%20%3FshapeFileUri%20dc%3Adescription%20%3Fshape_file_description%20%7D%0A%7D&endpoint=https%3A%2F%2Fgraphdb.dumontierlab.com%2Frepositories%2Fshapes-registry&requestMethod=GET&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table).
 
@@ -22,22 +22,22 @@ Add one of these topics to your GitHub repository, we automatically index files 
 
 We also index the same topics in GitLab and Gitee, there is no topic on those websites, so just mention it in your project name or description.
 
-Additional GitHub repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt) (if not tagged with the right topic)
+Additional GitHub repositories can be included in the file [`EXTERNAL_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTERNAL_REPOSITORIES.txt) (if not tagged with the right topic)
 
-You can check RDF files which failed to be parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](https://github.com/MaastrichtU-IDS/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md), feel free to fix them if you are the owner!
+You can check RDF files which failed to be parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`FAILED_IMPORT_REPORT.md`](https://github.com/vemonet/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md), feel free to fix them if you are the owner!
 
 ## Overview 🧭
 
 This web service is composed of those 4 main parts:
 
 * A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories. The retrieved data is defined using [RDF](https://www.w3.org/RDF/).
-  * A [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
+  * A [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
 * A React webapp written in TypeScript, which displays the files and metadata from the SPARQL endpoint with filters, and search
-  * The website is automatically deployed by [GitHub Actions worklows](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) at each push to the `main` branch.
+  * The website is automatically deployed by [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) at each push to the `main` branch.
 
 * A triplestore with a publicly available SPARQL endpoint at https://graphdb.dumontierlab.com/repositories/shapes-registry
 
-* A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/MaastrichtU-IDS/shapes-of-you
+* A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/vemonet/shapes-of-you
 
 ## Data model 📋
 
@@ -79,7 +79,7 @@ Requirements:  [npm](https://www.npmjs.com/get-npm) and [yarn](https://classic.y
 Clone the repository:
 
 ```bash
-git clone https://github.com/MaastrichtU-IDS/shapes-of-you
+git clone https://github.com/vemonet/shapes-of-you
 cd shapes-of-you
 ```
 
@@ -103,7 +103,7 @@ yarn upgrade
 
 ## Run web app in production 🛩️
 
-This website is automatically deployed by a [GitHub Actions worklow](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://maastrichtu-ids.github.io/shapes-of-you
+This website is automatically deployed by a [GitHub Actions worklow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://maastrichtu-ids.github.io/shapes-of-you
 
 You can also build locally in `/web-build` folder and serve on http://localhost:5000
 
@@ -132,7 +132,7 @@ Run the Python script to retrieve the shapes from various popular Git registries
 
 The script generates RDF data, which is automatically published to the publicly available triplestore by the GitHub workflow.
 
-You can find the scripts and requirements in the [`etl`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/etl) folder.
+You can find the scripts and requirements in the [`etl`](https://github.com/vemonet/shapes-of-you/tree/main/etl) folder.
 
 Use this command to locally define the `GITHUB_TOKEN` and `GITLAB_TOKEN` environment variable required to run the script:
 

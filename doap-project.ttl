@@ -10,8 +10,8 @@
   bibo:status "Active" ;
 
   doap:programming-language "TypeScript", "Python" ;
-  doap:license <https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/LICENSE> ;
-  doap:bug-database <https://github.com/MaastrichtU-IDS/shapes-of-you/issues> ;
+  doap:license <https://github.com/vemonet/shapes-of-you/blob/main/LICENSE> ;
+  doap:bug-database <https://github.com/vemonet/shapes-of-you/issues> ;
   doap:homepage <https://maastrichtu-ids.github.io/shapes-of-you> ;
   
   
@@ -20,7 +20,7 @@
   doap:category "Development" ;
   doap:repository [
     a doap:GitRepository ;
-    doap:location <https://github.com/MaastrichtU-IDS/shapes-of-you> ;
+    doap:location <https://github.com/vemonet/shapes-of-you> ;
   ] ;
   doap:maintainer [
     a foaf:Person ;

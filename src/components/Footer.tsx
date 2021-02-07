@@ -35,7 +35,7 @@ function Copyright() {
       {'Copyright © '}
       <a className={classes.darkLink} target="_blank" rel="noopener noreferrer"
       href="https://maastrichtuniversity.nl/ids">
-        Institute of Data Science at Maastricht University
+        Vincent Emonet
       </a>{' '}
       {'2020.'}
     </Typography>
@@ -69,7 +69,7 @@ export default function Footer() {
           <Typography variant="body2" >
             Built for you, to explore the semantic space ✨️ website under the&nbsp;
             <a className={classes.whiteLink} target="_blank" rel="noopener noreferrer"
-            href="https://github.com/MaastrichtU-IDS/shapes-of-you/blob/main/LICENSE">
+            href="https://github.com/vemonet/shapes-of-you/blob/main/LICENSE">
               MIT license
             </a>
             {/* <img src={require('../assets/images/mit_license.png')} /> */}

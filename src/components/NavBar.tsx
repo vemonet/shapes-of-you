@@ -64,7 +64,7 @@ export default function NavBar() {
           </Tooltip>
         </Link> */}
         <div className="flexGrow"></div>
-        <a href="https://github.com/MaastrichtU-IDS/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md" 
+        <a href="https://github.com/vemonet/shapes-of-you/blob/report/FAILED_IMPORT_REPORT.md" 
             target="_blank" rel="noopener noreferrer" className={classes.linkButton}>
           <Tooltip title='List of shapes we failed to process'>
             <Button className={classes.menuButton}>
@@ -87,9 +87,9 @@ export default function NavBar() {
             <MenuBookIcon />
           </Button>
         </Tooltip> */}
-        <Tooltip  title='Go to https://github.com/MaastrichtU-IDS/shapes-of-you'>
+        <Tooltip  title='Go to https://github.com/vemonet/shapes-of-you'>
           <Button className={classes.menuButton} target="_blank"
-          href="https://github.com/MaastrichtU-IDS/shapes-of-you" rel="noopener noreferrer">
+          href="https://github.com/vemonet/shapes-of-you" rel="noopener noreferrer">
             <GitHubIcon />
           </Button>
         </Tooltip>
