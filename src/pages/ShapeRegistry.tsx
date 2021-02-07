@@ -318,12 +318,12 @@ export default function ShapeRegistry() {
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
-          A registry for publicly available SPARQL, SHACL & ShEx Shapes
+          A registry for publicly available semantic resources
         </Typography>
       </LoggedOut>
 
       <Typography style={{marginBottom: theme.spacing(2)}}>
-        Shapes of you is the best place to <b>search and explore existing semantic shapes and queries</b>. Do you need to validate RDF using SHACL or ShEx? Or do you want to find SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprise!
+        Shapes of you is the best place to <b>search and explore existing semantic shapes, ontologies and queries</b>. Do you need to validate RDF using SHACL or ShEx? Or do you want to find SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprise!
       </Typography>
 
       <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
