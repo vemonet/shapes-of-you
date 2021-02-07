@@ -506,6 +506,8 @@ def fetch_from_gitee(shapes_graph, token):
       for repo_json in gitee_repos_list:
         repo_url = repo_json["html_url"].rstrip('.git')
         print(repo_url)
+        if repo_url == 'https://gitee.com/mad_matrix/OntologyModelin':
+          continue
         if 'default_branch' in repo_json:
           branch = repo_json['default_branch']
         else:

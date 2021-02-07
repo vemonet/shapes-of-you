@@ -1,6 +1,6 @@
 # Registry for SPARQL, SHACL & ShEx Shapes
 
-[![Get shapes from GitHub GraphQL API](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Get%20shapes%20from%20GitHub/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22) [![Deploy to GitHub Pages](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Deploy%20website%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+website+to+GitHub+Pages%22) [![CodeQL analysis](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
+[![Index shapes](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Index%20shapes/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22) [![Deploy to GitHub Pages](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/Deploy%20website%20to%20GitHub%20Pages/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22Deploy+website+to+GitHub+Pages%22) [![CodeQL analysis](https://github.com/MaastrichtU-IDS/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/MaastrichtU-IDS/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
 
 
 🖥 Access the Shapes of You web app at https://maastrichtu-ids.github.io/shapes-of-you
@@ -114,14 +114,17 @@ docker-compose up
 
 > Checkout the [docker-compose.yml](/docker-compose.yml) file to see how we run the Docker image.
 
-## Get data from GitHub GraphQL API ⛏️
+## Index shapes files ⛏️
 
-Checkout the GitHub workflow file to see how to run the Python script to retrieve the shapes from various popular Git registries:
+This script is run every day by the `.github/workflows/index-shapes.yml` workflow 
+
+Run the Python script to retrieve the shapes from various popular Git registries API:
 
 * GitHub GraphQL API 
 * GitLab API 
+* Gitee API
 
-And publish them to the publicly available triplestore.
+The script generates RDF data, which is automatically published to the publicly available triplestore by the GitHub workflow.
 
 You can find the scripts and requirements in the [`etl`](https://github.com/MaastrichtU-IDS/shapes-of-you/tree/main/etl) folder.
 
@@ -130,9 +133,10 @@ Use this command to locally define the `GITHUB_TOKEN` and `GITLAB_TOKEN` environ
 ```bash
 export GITHUB_TOKEN=MYGITHUBTOKEN000
 export GITLAB_TOKEN=MYGITLABTOKEN000
+export GITEE_TOKEN=MYGITEETOKEN000
 ```
 
-> You can create a new GitHub API key (aka. personal access token) at https://github.com/settings/tokens
+> For GitHub you can create a new GitHub API key (aka. personal access token) at https://github.com/settings/tokens
 
 Install requirements:
 
@@ -143,13 +147,19 @@ pip3 install -r etl/requirements.txt
 Retrieve shapes files from [GitHub GraphQL API](https://developer.github.com/v4/explorer):
 
 ```bash
-python3 etl/get_shapes_from_github.py
+python3 etl/index_shapes_files.py
 ```
 
 Retrieve shapes files from [GitLab API](https://docs.gitlab.com/ee/api/) using the [`python-gitlab` package](https://pypi.org/project/python-gitlab/):
 
 ```bash
-python3 etl/get_shapes_from_github.py gitlab
+python3 etl/index_shapes_files.py gitlab
+```
+
+Retrieve shapes files from [Gitee API](https://gitee.com/api/v5/swagger#/getV5SearchRepositories):
+
+```bash
+python3 etl/index_shapes_files.py gitee
 ```
 
 ## Contribute 👩‍💻

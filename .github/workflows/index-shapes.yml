@@ -1,4 +1,4 @@
-name: Get shapes from GitHub
+name: Index shapes
 on:
   workflow_dispatch:
     inputs:
@@ -12,7 +12,7 @@ on:
   push:
     branches: [ main ]
     paths:
-    - '.github/workflows/get-shapes-github.yml'
+    - '.github/workflows/get-shapes.yml'
     - 'etl/*'
     - 'EXTERNAL_REPOSITORIES.txt'
 
@@ -44,7 +44,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
-        python etl/get_shapes_from_github.py
+        python etl/index_shapes_files.py
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
@@ -99,7 +99,7 @@ jobs:
       env:
         GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
       run: |
-        python etl/get_shapes_from_github.py gitlab
+        python etl/index_shapes_files.py gitlab
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
@@ -162,7 +162,7 @@ jobs:
       env:
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
       run: |
-        python etl/get_shapes_from_github.py gitee
+        python etl/index_shapes_files.py gitee
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
