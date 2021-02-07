@@ -500,8 +500,8 @@ def fetch_from_gitlab(shapes_graph, gl):
 
 def fetch_from_gitee(shapes_graph, token):
     # topics = ['ontology', 'ontologies', 'sparql', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
-    # topics = ['ontology', 'ontologies', 'sparql']
-    topics = ['ontologies', 'sparql']
+    # topics = ['ontologies', 'sparql']
+    topics = ['ontology']
 
     # Record time to avoid hitting GitHub Actions limits
     time_start = datetime.now()
