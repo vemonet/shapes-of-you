@@ -3768,6 +3768,156 @@ In repository: https://github.com/obophenotype/human-phenotype-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp-base.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp-full.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fmpath_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fnbo_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fhsapdv_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/scratch%2Fhp-equivalence-axioms.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fuo.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fwinni-genp.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fgo.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fcio.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2FimagingMS.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fplana.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fms.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fhp.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fowen-jones-gen.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fmp.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fpato.obo
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fbeer.rdf
 
 In repository: https://github.com/taurenshaman/semantic-web
@@ -3970,6 +4120,12 @@ Bad syntax (']' expected) at ^ in:
 "...b'Archer"@en;\n    schema:affiliation [foaf:name "W3C/ERCIM"@en'^b'.]],\n    [rdfs:seeAlso <http://andrea-perego.name/foaf/#me>;'..."
 
 ---
+File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Flife%2Fbioontology.org%2Fplant_ontology_vunknown.obo
+
+In repository: https://github.com/taurenshaman/semantic-web
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-idranges.owl
 
 In repository: https://github.com/geneontology/go-ontology
@@ -4012,6 +4168,150 @@ In repository: https://github.com/geneontology/go-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/gorel-edit.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/scratch%2Fchebi-ion-syns.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/contrib%2FoboInOwl.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-edit.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Ffao_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fpo_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fddanat_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Foba_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fopl_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fso_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Freactome_xrefs_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fcaro_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fpr_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fgo-taxon-groupings.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-upper.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-upper.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgorel.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-taxon-subsets.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-nifstd-bridge.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fontology%2Fsweet-edit.owl
 
 In repository: https://github.com/ESIPFed/sweet
@@ -4022,6 +4322,12 @@ File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fontology%2Fswe
 
 In repository: https://github.com/ESIPFed/sweet
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ci/ontology/sweet-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fontology%2Fsweet.obo
+
+In repository: https://github.com/ESIPFed/sweet
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparql-dawg-tests%2Ftest-manifest.n3
@@ -4176,6 +4482,294 @@ In repository: https://github.com/monarch-initiative/mondo
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/components/pattern-ontology-remove-axioms.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/mondo-lastbuild.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Ffoodon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fenvo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fecto_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fro_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fequivalencies.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Foba_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fbfo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fso_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fmf_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fhgnc_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fncit_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fhp_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fmfoem_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/scratch%2Fvicc.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/scratch%2Fvicc.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fobo-exclusion-set.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fomim-exclusion-set.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fomim-exclusion-set.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmondo-edit.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Ffoodon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fenvo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fecto_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Foba_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fbfo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fso_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fmf_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fhgnc_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fncit_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fhp_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Freports%2Freasoner-diff.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Freports%2Freasoner-diff.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fsparql%2Fbad.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fsparql%2Fbad.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Fgo-mini%2Fgo-edit.obo
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/RDFLib/pyLODE/master/pylode%2Ftests%2Ftest_broken_rdf.ttl
 
 In repository: https://github.com/RDFLib/pyLODE
@@ -4268,10 +4862,208 @@ In repository: https://github.com/obophenotype/cell-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-basic.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-base.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-simple.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-non-classified.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-full.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fclo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-relations.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fextsubset%2Fchebi_lite.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fextsubset%2Fpr-simple.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fextsubset%2Fpr-core.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fclo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fbridge%2Fcl-bridge-to-uberon.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fabox.owl
 
 In repository: https://github.com/geneontology/obographs
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/abox.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fnucleus.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2FequivNodeSetTest.obo
+
+In repository: https://github.com/geneontology/obographs
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2FequivNodeSetTest.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fbasic.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fobsoletion_example.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2FlogicalDefinitionTest.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-dl-query%2Fcc.owl
@@ -4308,6 +5100,42 @@ File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/tem
 
 In repository: https://github.com/geneontology/protege-tutorial
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/template-examples/test1.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-restriction%2FHINTS.obo
+
+In repository: https://github.com/geneontology/protege-tutorial
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-restriction%2FHINTS.obo
+
+In repository: https://github.com/geneontology/protege-tutorial
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-classification%2FHINTS.obo
+
+In repository: https://github.com/geneontology/protege-tutorial
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-classification%2FHINTS.obo
+
+In repository: https://github.com/geneontology/protege-tutorial
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-subclass%2FHINTS.obo
+
+In repository: https://github.com/geneontology/protege-tutorial
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-subclass%2FHINTS.obo
+
+In repository: https://github.com/geneontology/protege-tutorial
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/callahantiff/PheKnowLator/master/tests%2Fdata%2Fontologies%2Fempty_hp_with_imports.owl
@@ -4548,6 +5376,12 @@ In repository: https://github.com/inovexcorp/mobi
 > at line 3 of <>:
 Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'<http://mobi.com/ontologies/uhtc/latticeParameter> "3.142"^^'^b'xsd:float ;\n    <http://mobi.com/ontologies/uhtc/source> "ht'..."
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.persistence.utils%2Fsrc%2Ftest%2Fresources%2Fbfo.obo
+
+In repository: https://github.com/inovexcorp/mobi
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Fmain%2Fresources%2Font_functional.owl
@@ -5792,6 +6626,440 @@ Bad syntax (']' expected) at ^ in:
 "...b'                       ) ;\n   rdfs:isDefinedBy :do-not-click'^b'/please\n ] .\n\n[ rdf:type owl:Axiom ;\n   owl:annotatedSource '..."
 
 ---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcardinality.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxptest.obo
+
+In repository: https://github.com/avicomp/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxptest.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frelationship_vs_property.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Falt_id_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxref_annotation.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsynapsed_to.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftreat_xrefs_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftrailing_qualifier_roundtrip.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fobsolete_term_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fqualifier_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fempty_lines.obo
+
+In repository: https://github.com/avicomp/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fempty_lines.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Flogical-definition-view-relation-test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fnamespace-id-rule.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Funion_of_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fdb_xref_comments.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsingle_intersection_of_tag_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcomment_remark_conversion.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fuberon_header_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fmultiple_def_xref_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fequivtest.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Froundtrip_cardinality.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsynonym_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ffbbt_comment_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fproperty_value_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fno_overlap.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fopaque_ids_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftag_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fnothing_expansion_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fhomrel.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fidspace_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fannotated_no_overlap.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fproperty_value_qualifier_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fchaintest.obo
+
+In repository: https://github.com/avicomp/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fchaintest.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftaxon_union_terms.obo
+
+In repository: https://github.com/avicomp/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftaxon_union_terms.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxref_escapecolon.obo
+
+In repository: https://github.com/avicomp/ont-api
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxref_escapecolon.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Froundtrip_non_standard_synonyms.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftag_order_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fmultiple_comments_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsynonymtypedef_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsimplego.obo
+
+In repository: https://github.com/avicomp/ont-api
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsimplego.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fdc_header_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fimport_test_main.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fgci_qualifier_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Flabeled_xrefs.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fdangling_roundtrip_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftestqvs.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcaro.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fannotated_import.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftrailing_qualifier.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frel-pv-roundtrip.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fescape_chars_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fis_inferred_annotation.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftaxon_constraints.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcaro_modified.obo
+
+In repository: https://github.com/avicomp/ont-api
+> Tag-value pair parsing failed for:
+[Typedef]
+
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcaro_modified.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frelation_shorthand_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fchebi_problematic_xref.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fversion_iri_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftypedef_comments.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frel_xref_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Froundtrip_equivalent_to_chain.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsubset_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsubset_test.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fheader_lost_bug.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/avicomp/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Ftest2.obo
+
+In repository: https://github.com/avicomp/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/kbss-cvut/jopa/master/jopa-owl2java%2Fsrc%2Ftest%2Fresources%2Fmodel.rdf
 
 In repository: https://github.com/kbss-cvut/jopa
@@ -5956,6 +7224,18 @@ In repository: https://github.com/ISA-tools/stato
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/dev/ontology/reasoned/owl/stato-reasoned.owl:16:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases%2F1.4%2Fstato.obo
+
+In repository: https://github.com/ISA-tools/stato
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Freasoned%2Fobo%2Fstato-reasoned.obo
+
+In repository: https://github.com/ISA-tools/stato
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fannotatedpropertychain.ttl.rdf
 
 In repository: https://github.com/owlcs/ont-api
@@ -6024,6 +7304,440 @@ In repository: https://github.com/owlcs/ont-api
 > at line 55 of <>:
 Bad syntax (']' expected) at ^ in:
 "...b'                       ) ;\n   rdfs:isDefinedBy :do-not-click'^b'/please\n ] .\n\n[ rdf:type owl:Axiom ;\n   owl:annotatedSource '..."
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcardinality.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxptest.obo
+
+In repository: https://github.com/owlcs/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxptest.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frelationship_vs_property.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Falt_id_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxref_annotation.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsynapsed_to.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftreat_xrefs_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftrailing_qualifier_roundtrip.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fobsolete_term_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fqualifier_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fempty_lines.obo
+
+In repository: https://github.com/owlcs/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fempty_lines.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Flogical-definition-view-relation-test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fnamespace-id-rule.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Funion_of_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fdb_xref_comments.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsingle_intersection_of_tag_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcomment_remark_conversion.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fuberon_header_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fmultiple_def_xref_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fequivtest.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Froundtrip_cardinality.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsynonym_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ffbbt_comment_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fproperty_value_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fno_overlap.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fopaque_ids_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftag_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fnothing_expansion_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fhomrel.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fidspace_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fannotated_no_overlap.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fproperty_value_qualifier_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fchaintest.obo
+
+In repository: https://github.com/owlcs/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fchaintest.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftaxon_union_terms.obo
+
+In repository: https://github.com/owlcs/ont-api
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftaxon_union_terms.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxref_escapecolon.obo
+
+In repository: https://github.com/owlcs/ont-api
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fxref_escapecolon.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Froundtrip_non_standard_synonyms.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftag_order_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fmultiple_comments_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsynonymtypedef_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsimplego.obo
+
+In repository: https://github.com/owlcs/ont-api
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsimplego.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fdc_header_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fimport_test_main.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fgci_qualifier_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Flabeled_xrefs.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fdangling_roundtrip_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftestqvs.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcaro.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fannotated_import.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftrailing_qualifier.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frel-pv-roundtrip.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fescape_chars_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fis_inferred_annotation.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftaxon_constraints.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcaro_modified.obo
+
+In repository: https://github.com/owlcs/ont-api
+> Tag-value pair parsing failed for:
+[Typedef]
+
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fcaro_modified.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frelation_shorthand_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fchebi_problematic_xref.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fversion_iri_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Ftypedef_comments.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Frel_xref_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Froundtrip_equivalent_to_chain.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsubset_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fsubset_test.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fobo%2Fheader_lost_bug.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fontapi%2Ftest2.obo
+
+In repository: https://github.com/owlcs/ont-api
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/ansell/rdf4j-schema-generator/master/core%2Fsrc%2Ftest%2Fresources%2Fldp.ttl
@@ -6176,6 +7890,444 @@ File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposu
 
 In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/old_modules/exposure_to_chemical_with_role.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto-base.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto-incl-mappings.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto-full.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fenvo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fxco_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fmaxo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fnpo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fiao_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fcurated_synonyms.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fcurated_synonyms.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fncit_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fsynonyms.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fsynonyms.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Factivity_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fnbo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fexo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/imports%2Fbridge.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fenvo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fxco_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fmaxo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fnpo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fiao_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fncit_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fnbo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fimports%2Fexo_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fcomponents%2Fecto-xrefs-mre.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fcomponents%2Fecto-xrefs-wikidata.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fcomponents%2Fecto-xrefs-ncit.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fmirror%2Fnpo-orig.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fcurated_synonyms.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fcurated_synonyms.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Factivity_import.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fecto-edit.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fbridge.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fexposure-eo.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fcombined-exposure.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fexposure-xco.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fexposure-go.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fmerged-exposure.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fexposure-ncit.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Faxioms-r.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fexposure-exo.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fexposure-zeco.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_chemical_with_role.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_change_in_levels.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_radiation.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_chemical.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_via_route.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_environmental_process.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Factivity.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fprenatal.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_environmental_condition.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_levels_in_medium.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdata%2Fold_modules%2Fexposure_to_material.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fresources%2Fwikidata%2Fchem-hazard-hierarchy.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fresources%2Fwikidata%2Fexposure-symptom-assocs.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fresources%2Fwikidata%2Fexposure-route-symptom-assocs.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fresources%2Fwikidata%2Fsymptom-hierarchy.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fresources%2Fwikidata%2Fexposure-all-ecto.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/subsets%2Fecto-basic.obo
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/morteza/ontologies/master/PhilosophyOfMind%2Fphil_mind.owl
@@ -6490,18 +8642,18 @@ In repository: https://github.com/sisinflab-swot/cowl
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/test_import.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/shful/gofp/master/example%2Fpizza%2Fpizza-functional.owl
-
-In repository: https://github.com/shful/gofp
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/example/pizza/pizza-functional.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/avicomp/ont-d2rq/master/api%2Fsrc%2Ftest%2Fresources%2Fparser%2Fsimple.ttl
 
 In repository: https://github.com/avicomp/ont-d2rq
 > at line 17 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'n "http://example.org/p@@People.ID@@";\n  :class ex:Person\n  '^b':properties [ :property ex:name; :column "People.name"; ];\n '..."
+
+---
+File: https://raw.githubusercontent.com/shful/gofp/master/example%2Fpizza%2Fpizza-functional.owl
+
+In repository: https://github.com/shful/gofp
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/example/pizza/pizza-functional.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/OnToology%2Ftests%2Fexample1.owl%2Fcontext%2Fcontext.jsonld
@@ -6774,18 +8926,18 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'te "{./Attribute[@Name=\'ProcedureID\']/Value}";\n\trr:datatype '^b'xsd:strg\n\t]];\n\t\n  \trr:predicateObjectMap [\n    rr:predicate '..."
 
 ---
-File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl
-
-In repository: https://github.com/sisinflab-swot/semantic-coap
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
-
----
 File: https://raw.githubusercontent.com/LUMC-BioSemantics/dcat-extension/master/stardog-rules%2Fstandard-rule.ttl
 
 In repository: https://github.com/LUMC-BioSemantics/dcat-extension
 > at line 10 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'org/ns/dcat#>\nprefix dcterms: <http://purl.org/dc/terms/>\n\n\n'^b'IF {\n   ?res a dcat:Resource.\n   ?res dcterms:type dcterms:S'..."
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl
+
+In repository: https://github.com/sisinflab-swot/semantic-coap
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/ddaedalus/knowledge-systems-ntua/master/ontology%2Fmyontology-turtle.owl
@@ -7002,6 +9154,20 @@ File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/experiments%2Feins
 
 In repository: https://github.com/cknoll/yamlpyowl
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/experiments/einsteins_riddle_manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
+
+In repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
+> at line 4 of <>:
+Bad syntax (Prefix "    my:" not bound) at ^ in:
+"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
+
+---
+File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
+
+In repository: https://github.com/paya54/Reason-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
 
 ---
 File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fdata%2Fdataset-deleted.trig
@@ -7362,20 +9528,6 @@ Bad syntax (expected item in list or ')') at ^ in:
 "...b'  sh:property [\n    sh:path props:hasTextValue;\n    sh:in (1'^b',2,3);\n    sh:message "must be in";\n  ] ;\n\n'"
 
 ---
-File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
-
-In repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
-> at line 4 of <>:
-Bad syntax (Prefix "    my:" not bound) at ^ in:
-"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
-
----
-File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
-
-In repository: https://github.com/paya54/Reason-OWL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
-
----
 File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
 
 In repository: https://github.com/falpema/PlanesCuenca
@@ -7444,10 +9596,58 @@ In repository: https://github.com/Dorsa-Arezooji/AutoDoc
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
-File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fbase.owl
 
-In repository: https://github.com/Dorsa-Arezooji/AutoDoc
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/base.owl:21:114: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcounciliar-works.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/counciliar-works.owl:20:118: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcgg.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/cgg.owl:21:126: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Finternational-delegations.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/international-delegations.owl:20:214: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Ftextual-products.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/textual-products.owl:20:117: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcouncil-of-12.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/council-of-12.owl:21:191: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcongress.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/congress.owl:22:180: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fregency.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/regency.owl:20:108: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcommissions.owl
+
+In repository: https://github.com/nicorsm/cgg-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/commissions.owl:23:184: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
 File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
@@ -8093,6 +10293,6230 @@ In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
 > at line 25 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'tifier "HPO-SIM";\n  openpredict:embedding_type "Diseases" .\n'^b'aaa\n<https://w3id.org/openpredict/feature/PHENO-SIM> a mls:F'..."
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosify/master/examples%2Fdctype.out.rdf
+
+In repository: https://github.com/NatLibFi/Skosify
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/dctype.out.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_32_qbPostProcessingTest%2Fexpected.ttl
+
+In repository: https://github.com/sparna-git/xls2rdf
+> at line 14 of <>:
+Bad syntax (Prefix "dcat:" not bound) at ^ in:
+"...b'atoiredeslangues.culture.gouv.fr/dataset/enquete-INED>\n  \ta '^b'dcat:Dataset;\n    a qb:DataSet;\n    dct:title "statistique d'..."
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_35_specialCharacters%2Fexpected.ttl
+
+In repository: https://github.com/sparna-git/xls2rdf
+> at line 19 of <>:
+Bad syntax (Prefix "dcterms:" not bound) at ^ in:
+"...b'inebleau.fr/vocabulaires/personnes> a skos:ConceptScheme ;\n\t'^b'dcterms:title "Personnes"@fr;\n\tskos:hasTopConcept <http://ww'..."
+
+---
+File: https://raw.githubusercontent.com/Coleridge-Initiative/adrf-onto/master/adrf.ttl
+
+In repository: https://github.com/Coleridge-Initiative/adrf-onto
+> at line 24 of <>:
+Bad syntax (Prefix ":" not bound) at ^ in:
+"...b'ce> .\n@prefix xsd:\t\t<http://www.w3.org/2001/XMLSchema#> .\n\n\n'^b':ADRF_Ontology rdf:type skos:ConceptScheme ;\n  skos:definiti'..."
+
+---
+File: https://raw.githubusercontent.com/Coleridge-Initiative/adrf-onto/master/rcc.ttl
+
+In repository: https://github.com/Coleridge-Initiative/adrf-onto
+> at line 12 of <>:
+Bad syntax (Prefix ":" not bound) at ^ in:
+"...b'ns#> .\n@prefix xsd:\t<http://www.w3.org/2001/XMLSchema#> .\n\n\n'^b':dataset481\n  rdf:type :Dataset ;\n  dct:title "National Heal'..."
+
+---
+File: https://raw.githubusercontent.com/NisrineBennor/Project_Master2_SemanticWeb/main/Ontologie_Orthodef_Orthophonie.owl
+
+In repository: https://github.com/NisrineBennor/Project_Master2_SemanticWeb
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Ontologie_Orthodef_Orthophonie.owl:26:0: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/alcinnz/skos-cloud/master/rdf-parser-tests%2Ftimescale-isc2014.ttl
+
+In repository: https://github.com/alcinnz/skos-cloud
+> at line 11286 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ologicEra ;\n  rdf:type skos:Concept ;\n  gts:rank <http://res'^b'ource.geosciml.org/ontology/timescale/rank/Eon> ;\n  thors:be'..."
+
+---
+File: https://raw.githubusercontent.com/alcinnz/skos-cloud/master/rdf-parser-tests%2Ftests%2Ffinal.ttl
+
+In repository: https://github.com/alcinnz/skos-cloud
+> at line 11286 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ologicEra ;\n  rdf:type skos:Concept ;\n  gts:rank <http://res'^b'ource.geosciml.org/ontology/timescale/rank/Eon> ;\n  thors:be'..."
+
+---
+File: https://raw.githubusercontent.com/kbss-cvut/termit/master/rulesets%2Frules-termit-spin.ttl
+
+In repository: https://github.com/kbss-cvut/termit
+> at line 16 of <>:
+Bad syntax (Prefix "skos:" not bound) at ^ in:
+"...b'          WHERE { ?vocabulary pdp:popisuje-dokument ?this . '^b'}"""\n] .\n\nskos:Concept a rdfs:Class ;\n# InverseOf between je'..."
+
+---
+File: https://raw.githubusercontent.com/kbss-cvut/termit/master/src%2Ftest%2Fresources%2Fvocabularies%2Fipr-glossaries.ttl
+
+In repository: https://github.com/kbss-cvut/termit
+> at line 1 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'<http://data.iprpraha.cz/zdroj/slovnik/mpp-3> '^b'{\n    <http://data.iprpraha.cz/zdroj/slovnik/mpp-3/plocha-te'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/m%C3%ADra-specifikace-t%C3%A9matu-pr%C3%A1ce.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 36 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'  skos:note "Area from which topics can be selected"@en, "Ok'^b'ruh, ze kter\xc3\xa9ho mohou b\xc3\xbdt vyb\xc3\xadr\xc3\xa1na t\xc3\xa9mata"@cs;\n    skos'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-ud%C3%A1lost%C3%AD.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 62 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'roj/\xc4\x8d\xc3\xadseln\xc3\xadky/typy-ud\xc3\xa1lost\xc3\xad/polo\xc5\xbeky/um\xc4\x9bleck\xc3\xa1-produkc'^b'e>\n    a skos:Concept;\n    skos:inScheme <https://data.mvcr.'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/pohlav%C3%AD.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 19 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'://data.mvcr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/pohlav\xc3\xad>;\n    skos:p'^b'refLabel "Female"@en, "\xc5\xbdensk\xc3\xa9"@cs .\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-t%C5%99%C3%ADd%C4%9Bn%C3%BDch-odpad%C5%AF.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 230 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'-odpad\xc5\xaf/polo\xc5\xbeky/kabely> a\n      skos:Concept;\n    skos:inS'^b'cheme <https://data.mvcr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/typy-t\xc5\x99\xc3'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-turistick%C3%BDch-c%C3%ADl%C5%AF.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 21 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'data.mvcr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/typy-turistick\xc3\xbdch-c\xc3\xadl\xc5'^b'\xaf>;\n    skos:prefLabel "Kulturn\xc3\xad"@cs, "Manmade"@en .\n}\n'"
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-pracovn%C3%ADch-vztah%C5%AF.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 34 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'>\n    a skos:Concept;\n    skos:inScheme <https://data.mvcr.g'^b'ov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/typy-pracovn\xc3\xadch-vztah\xc5\xaf>;\n    skos'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/jin%C3%A1-%C4%8Dasov%C3%A1-specifikace.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 23 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'cr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/jin\xc3\xa1-\xc4\x8dasov\xc3\xa1-specifikace>;\n  '^b'  skos:prefLabel "Bad weather"@en, "\xc5\xa0patn\xc3\xa9 po\xc4\x8das\xc3\xad"@cs .\n'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/t%C3%A9mata-ud%C3%A1lost%C3%AD.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 111 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'roj/\xc4\x8d\xc3\xadseln\xc3\xadky/t\xc3\xa9mata-ud\xc3\xa1lost\xc3\xad/polo\xc5\xbeky/n\xc3\xa1bo\xc5\xbeenstv\xc3\xad>'^b' a skos:Concept;\n    skos:inScheme <https://data.mvcr.gov.cz'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-d%C5%99evin.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 60 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'cs .\n  \n  <https://data.mvcr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/typy-'^b'd\xc5\x99evin/polo\xc5\xbeky/strom> a skos:Concept;\n    skos:inScheme <h'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/kategorie-%C3%BAzemn%C3%AD-ochrany.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 49 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'y/kategorie-\xc3\xbazemn\xc3\xad-ochrany/polo\xc5\xbeky/p\xc5\x99\xc3\xadrodn\xc3\xad-rezervace>'^b'\n    a skos:Concept;\n    skos:inScheme <https://data.mvcr.go'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/stupn%C4%9B-p%C5%99%C3%ADstupnosti.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 26 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/stupn\xc4\x9b-p\xc5\x99\xc3\xadstupnosti>;\n    skos:pre'^b'fLabel "Difficult to access or inaccessible"@en, "Obt\xc3\xad\xc5\xben\xc4\x9b'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/sporty.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 412 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'porty>;\n    skos:prefLabel "Workout"@cs, "Workout"@en .\n  \n '^b' <https://data.mvcr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/sporty/polo\xc5\xbek'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/dny-v-t%C3%BDdnu.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 39 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'/ned\xc4\x9ble> a skos:Concept;\n    skos:inScheme <https://data.mv'^b'cr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/dny-v-t\xc3\xbddnu>;\n    skos:prefLab'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-sportovi%C5%A1%C5%A5.trig
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> at line 120 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'sportovi\xc5\xa1\xc5\xa5/polo\xc5\xbeky/velodrome> a skos:Concept;\n    skos:in'^b'Scheme <https://data.mvcr.gov.cz/zdroj/\xc4\x8d\xc3\xadseln\xc3\xadky/typy-spo'..."
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-pracovn%C3%ADch-vztah%C5%AF.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/sporty.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/t%C3%A9mata-ud%C3%A1lost%C3%AD.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-sportovi%C5%A1%C5%A5.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/jin%C3%A1-%C4%8Dasov%C3%A1-specifikace.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/kategorie-%C3%BAzemn%C3%AD-ochrany.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/m%C3%ADra-specifikace-t%C3%A9matu-pr%C3%A1ce.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/pohlav%C3%AD.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-ud%C3%A1lost%C3%AD.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/dny-v-t%C3%BDdnu.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-d%C5%99evin.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-turistick%C3%BDch-c%C3%ADl%C5%AF.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-t%C5%99%C3%ADd%C4%9Bn%C3%BDch-odpad%C5%AF.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/stupn%C4%9B-p%C5%99%C3%ADstupnosti.jsonld
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/sector-publico%2Fterritorio%2Ftipo-estado.ttl
+
+In repository: https://github.com/opencitydata/listas-codigos-skos
+> at line 13 of <>:
+Bad syntax (Prefix "dc:" not bound) at ^ in:
+"...b'os/sector-publico/territorio/tipo-estado/provisional> ;\n    '^b'dc:creator "Oscar Corcho (Universidad Polit\xc3\xa9cnica de Madrid'..."
+
+---
+File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/transporte%2Ftrafico%2Ftipo-incidencia.ttl
+
+In repository: https://github.com/opencitydata/listas-codigos-skos
+> at line 31 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'ddata.es/datosabiertos/kos/transporte/trafico/tipo-incidenci'^b'a> .\n\n<http://vocab.linkeddata.es/datosabiertos/kos/transpor'..."
+
+---
+File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/demografia%2Fpadron-municipal%2Ftipo-local-residencia%2Ftipo-local-residencia.ttl
+
+In repository: https://github.com/opencitydata/listas-codigos-skos
+> at line 11 of <>:
+Bad syntax (Prefix "dc:" not bound) at ^ in:
+"...b'/demografia/padron-municipal/tipo-local-residencia/2> ;\n    '^b'dc:creator "Paola Espinoza Arias (Universidad Polit\xc3\xa9cnica d'..."
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp_ncit_eq.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp_ncit_eq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-idranges.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-idranges.owl:2:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-edit.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-qc.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-qc.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Farchive%2Fhp_go-redundant.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/archive/hp_go-redundant.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp-base.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp-full.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fmpath_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fnbo_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fhsapdv_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/imports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/scratch%2Fhp-equivalence-axioms.obo
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-idranges.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/go-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fgo-taxon-groupings-edit.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/go-taxon-groupings-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-modules-annotations.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-modules-annotations.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-gci.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-gci.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-bridge.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Flegorel.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/legorel.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgorel-edit.owl
+
+In repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/gorel-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/scratch%2Fchebi-ion-syns.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/contrib%2FoboInOwl.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-edit.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Ffao_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fpo_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fddanat_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Foba_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fopl_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fso_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Freactome_xrefs_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fcaro_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fpr_import.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fgo-taxon-groupings.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-upper.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-upper.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgorel.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-taxon-subsets.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-nifstd-bridge.obo
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/tests%2Fresources%2Fskos_example.rdf
+
+In repository: https://github.com/biolink/ontobio
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/resources/skos_example.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/tests%2Fresources%2Fgocam-example.rdf
+
+In repository: https://github.com/biolink/ontobio
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/resources/gocam-example.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmondo-idranges.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/mondo-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fequivs.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/equivs.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fdisease_by_location.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/disease_by_location.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-pattern.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/dosdp-pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fcomponents%2Fpattern-ontology-remove-axioms.owl
+
+In repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/components/pattern-ontology-remove-axioms.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/mondo-lastbuild.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Ffoodon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fenvo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fecto_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fro_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fequivalencies.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Foba_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fbfo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fso_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fmf_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fhgnc_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fncit_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fhp_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports%2Fmfoem_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/scratch%2Fvicc.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/scratch%2Fvicc.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fobo-exclusion-set.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fomim-exclusion-set.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fomim-exclusion-set.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmondo-edit.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Ffoodon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fenvo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fecto_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Foba_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fbfo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fso_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fmf_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fhgnc_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fncit_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fimports%2Fhp_import.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Freports%2Freasoner-diff.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Freports%2Freasoner-diff.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fsparql%2Fbad.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fsparql%2Fbad.obo
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-ZFA-MA-201009.rdf
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-ZFA-MA-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-MA.rdf
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-MA.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-FBbt.rdf
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-FBbt.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-ZFA-MA.rdf
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-ZFA-MA.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-MA-201009.rdf
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-MA-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-FBbt-201009.rdf
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-FBbt-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-GAZ-FMA.rdf
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-GAZ-FMA.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/reasoner_axioms.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/reasoner_axioms.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/homology-relations.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/homology-relations.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/reflexivity_axioms.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/reflexivity_axioms.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon-idranges.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/uberon-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-mouse.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-mouse.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-drosophila.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-drosophila.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-xenopus.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-xenopus.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-nematode.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-nematode.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-human.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-human.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-zebrafish.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-zebrafish.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-gnathostome.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-gnathostome.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/modules%2Fluminal_space_of-gci.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/modules/luminal_space_of-gci.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/reference%2Fuberonref-idranges.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/reference/uberonref-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Ftaxon-constraints.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/subsets/taxon-constraints.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.owl
+
+In repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/issues/contributor.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/pending-disjoints-core.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/pending-disjoints-core.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/disjoint_union_over.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon_edit.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon-taxmod-amniote.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon-simple-rel.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon-simple-rel.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon-with-isa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/basic.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/pending-disjoints.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/pending-disjoints.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/external-disjoints.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/composite-aba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/deleted_axioms.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/deleted_axioms.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/examples%2Fpituitary-slim.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/examples%2Fpituitary.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/scratch%2Fcomments.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fplant_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fhog_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fhog_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fxenopus_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fworm_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fworm_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ftick_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ftick_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma-digit-extension.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fuberon_CL.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fmouse_anatomy_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fmouse_anatomy_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fceph.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fcell_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fcell_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fpo_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fpo_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fuberon_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+	Redefined static procedure anatomical_continuant5/3
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fuberon_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_cell.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_cell.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fhog_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fhog_xp_uberon.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fdictyostelium_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fdictyostelium_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fmouse_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fmouse_anatomy_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_subcellular_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_subcellular_xp.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-hsapdv.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-zfa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-go.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-ehdaa2.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-dhba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-aao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-hba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-caro.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-aao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-ehdaa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-fma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-aeo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-spd.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-oges.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-ehdaa2.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-fbbt.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-wbbt.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-sctid.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-sctid.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-ext-bridge-to-zfa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-fbbt.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-emapa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-aao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-xao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-vsao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-ma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-mba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-bsd.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-zfs.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-vhog.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-wbbt.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-fbdv.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-zfa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-fma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-ma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fext-xref.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-tgma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-tgma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-ma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-fbbt.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-ncit.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-ext-bridge-to-zfa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-bila.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-emapa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-hao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-tao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-go.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-xao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-wbls.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-nif_grossanatomy.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-olatdv.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-aao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-tao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-ehdaa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-vsao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-wbls.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-hao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-nifstd.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-kupo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-mfo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-ehdaa2.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-vsao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-caro.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-fbbt.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-xao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-ev.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-aba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-tao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-ehdaa2.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-bspo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-vhog.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-zfa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-vsao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-dmba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-tads.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-pba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-tads.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-vhog.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-vao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-og.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-bfo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-ext-bridge-to-zfa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-og.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-ma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-emapa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-tao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-efo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-zfa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-mfo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-emap.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-fma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-mmusdv.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-bila.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-bspo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-cl-bridge-to-emapa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fhdr-uberon-bridge-to-sctid.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-spd.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fuberon-bridge-to-xao.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/bridge%2Fcl-bridge-to-fma.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Flife-stages-core.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Fuberon-with-isa-for-FMA-MA-ZFA.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Fcumbo.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Fvertebrate-head.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Flife-stages-composite.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Fpulmonary-minimal.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fcommon-mammalian-nomencl-structural.obo
+
+In repository: https://github.com/obophenotype/uberon
+> 'utf-8' codec can't decode byte 0xc9 in position 14503: invalid continuation byte
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fcommon-mammalian-nomencl-structural.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2FNeuroNames.obo
+
+In repository: https://github.com/obophenotype/uberon
+> 'utf-8' codec can't decode byte 0xe9 in position 1248: invalid continuation byte
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2FNeuroNames.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fihog.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fallen-mba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fallen-dmba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Femapaa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> 'utf-8' codec can't decode byte 0xbc in position 208773: invalid start byte
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Femapaa.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fallen-pba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fallen-dhba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fallen-hba.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fgalen.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/attic%2Fuberon_disjoint_from_strict.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/attic%2Fuberon_disjoint_from_strict.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Fbams.obo
+
+In repository: https://github.com/obophenotype/uberon
+> too many values to unpack (expected 2)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Fbams.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Finsect_glossary.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Finsect_glossary.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Fdhb.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.obo
+
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.obo
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fnif_import.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/nif_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-refactored.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-refactored.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-removedaxioms.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-removedaxioms.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-idranges.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-edit.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fnif_import.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/nif_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fro_seed.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ro_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-basic.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-base.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-simple.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-non-classified.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-full.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fclo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-relations.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fextsubset%2Fchebi_lite.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fextsubset%2Fpr-simple.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fextsubset%2Fpr-core.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fncbitaxon_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fclo_import.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fbridge%2Fcl-bridge-to-uberon.obo
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fabox.owl
+
+In repository: https://github.com/geneontology/obographs
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/abox.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fnucleus.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2FequivNodeSetTest.obo
+
+In repository: https://github.com/geneontology/obographs
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2FequivNodeSetTest.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fbasic.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fobsoletion_example.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2FlogicalDefinitionTest.obo
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/upheno_root_alignments.owl
+
+In repository: https://github.com/obophenotype/upheno
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/upheno_root_alignments.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/imports%2Fimports_requests.owl
+
+In repository: https://github.com/obophenotype/upheno
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/imports_requests.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/archive%2Fwbphenotype%2Fwbphenotype-equivalence-axioms-edit.owl
+
+In repository: https://github.com/obophenotype/upheno
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/archive/wbphenotype/wbphenotype-equivalence-axioms-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fontology%2Fcomponents%2Fpattern-ontology-remove-axioms.owl
+
+In repository: https://github.com/obophenotype/upheno
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/pattern-ontology-remove-axioms.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Freview_pattern.owl
+
+In repository: https://github.com/obophenotype/upheno
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/review_pattern.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/imports%2Fmpath_import.obo
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/vt%2Fvt.obo
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-disjoint_from.obo
+
+In repository: https://github.com/obophenotype/upheno
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-disjoint_from.obo
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-align-equiv.obo
+
+In repository: https://github.com/obophenotype/upheno
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-align-equiv.obo
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-align-equiv-labeled.obo
+
+In repository: https://github.com/obophenotype/upheno
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-align-equiv-labeled.obo
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/callahantiff/OMOP2OBO/master/tests%2Fdata%2Fontologies%2Fempty_hp_without_imports.owl
+
+In repository: https://github.com/callahantiff/OMOP2OBO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/data/ontologies/empty_hp_without_imports.owl:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fontology%2Fgeno-edit.owl
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/geno-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fontology%2Fgeno-idranges.owl
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/geno-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/geno.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/geno-base.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/geno-full.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/imports%2Fro_import.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/imports%2Fiao_import.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fontology%2Fimports%2Fiao_import.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fontology%2Fimports%2Fso_import.obo
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Ffbbt-idranges.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/fbbt-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/fbbt-ext.owl:110:75: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Fimports%2Fflybase_imports.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/imports/flybase_imports.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-05-03%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-05-03/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Ftrunk%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-06-02/trunk/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-06-02/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-05-12%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-05-12/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-01-21%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-01-21/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-12-08%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-12-08/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-09-06%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-09-06/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-08-17%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-08-17/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-26%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2013-07-26/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-11-07%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2014-11-07/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-07-16%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-07-16/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-09-16%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-09-16/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-05-26%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2014-05-26/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-02-15%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-02-15/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-03-11%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-03-11/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-01-29%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2014-01-29/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-10%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2013-07-10/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2018-02-21%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2018-02-21/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-04-05%2Fontologies%2Ffbbt-ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-04-05/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Ffbbt-idranges.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbbt-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Ffbbt-edit-release.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbbt-edit-release.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fcomponents%2Ffbbt_ext.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fbbt_ext.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fcomponents%2Fqc_assertions_unmerge.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions_unmerge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt-full.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt-base.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2Ffbdv-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2Ffbdv.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2Ffbdv-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2Ffbdv-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2015-07-02%2Ffbdv-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2015-07-02%2Ffbdv.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2015-07-02%2Ffbdv-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2015-07-02%2Ffbdv-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2013-06-11%2Ffbdv-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2013-06-11%2Ffbdv.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2013-06-11%2Ffbdv-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2013-06-11%2Ffbdv-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2016-10-14%2Ffbdv-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2016-10-14%2Ffbdv.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2016-10-14%2Ffbdv-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Freleases%2F2016-10-14%2Ffbdv-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Fsrc%2Ftrunk%2Fontologies%2Ffbdv-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Fsrc%2Ftags%2F2015-07-02%2Fontologies%2Ffbdv-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Fsrc%2Ftags%2F2014-07-29%2Fontologies%2Ffbdv-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv%2Fsrc%2Ftags%2F2016-10-14%2Fontologies%2Ffbdv-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2Ffbbt-basic.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-02-14%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-02-14%2Ffbbt-basic.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-02-14%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-02-14%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-02-14%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-02-14%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-05-03%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-05-03%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-05-03%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-05-03%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-06-02%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-06-02%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-06-02%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-06-02%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-09%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-09%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-09%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-09%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-09%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-09%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-05-12%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-05-12%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-05-12%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-05-12%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-01-21%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-01-21%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-01-21%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-01-21%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-06-13%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-06-13%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-06-13%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-06-13%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-06-13%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-06-13%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-12-08%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-12-08%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-12-08%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-12-08%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-09-06%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-09-06%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-09-06%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-09-06%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-08-17%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-08-17%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-08-17%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-08-17%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-01-16%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-01-16%2Ffbbt-basic.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-01-16%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-01-16%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-01-16%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-01-16%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-07-05%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-07-05%2Ffbbt-basic.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-07-05%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-07-05%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-07-05%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-07-05%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-26%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-26%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-26%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-26%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-26%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-11-07%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-11-07%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-11-07%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-11-07%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-07-16%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-07-16%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-07-16%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-07-16%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-09-16%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-09-16%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-09-16%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-09-16%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-10-03%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-10-03%2Ffbbt-basic.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-10-03%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-10-03%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-10-03%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-10-03%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-05-26%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-05-26%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-05-26%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-05-26%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-02-15%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-02-15%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-02-15%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2017-02-15%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-08-08%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-08-08%2Ffbbt-basic.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-08-08%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-08-08%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-08-08%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-08-08%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-03-11%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-03-11%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-03-11%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2015-03-11%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-01-29%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-01-29%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-01-29%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2014-01-29%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-10%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-10%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-10%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2013-07-10%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-02-21%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-02-21%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-02-21%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2018-02-21%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-03-28%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-03-28%2Ffbbt-basic.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-03-28%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-03-28%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-03-28%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2019-03-28%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-04-05%2Ffbbt-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-04-05%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-04-05%2Ffbbt-relaxed.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Freleases%2F2016-04-05%2Ffbbt-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Ffbbt.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Fimports%2Fflybase_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftrunk%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-05-03%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-05-03%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Ftrunk%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Ftrunk%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-05-12%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-05-12%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-01-21%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-01-21%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-12-08%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-12-08%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-09-06%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-09-06%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-08-17%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-08-17%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-26%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-26%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-11-07%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-11-07%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-07-16%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-07-16%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-09-16%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-09-16%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-05-26%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-05-26%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-02-15%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-02-15%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-03-11%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-03-11%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-01-29%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-01-29%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-10%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-10%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2018-02-21%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2018-02-21%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-04-05%2Fontologies%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-04-05%2Fontologies%2Ffbbt-cl-bridge.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/tutorial%2Fontologies%2Ftutorial.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Ffly_anatomy.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Ffbbt-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Fplana.obo
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Fms.obo
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Froundtrip%2Fmsterm.obo
+
+In repository: https://github.com/fastobo/fastobo
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Froundtrip%2Fmsterm.obo
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Froundtrip%2Fimportlist.obo
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Froundtrip%2Fmslite.obo
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Fcanonicalize%2Fheader.input.obo
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Fcanonicalize%2Fheader.output.obo
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Ffbcv-idranges.owl
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbcv-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv-base.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv-non-classified.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/flybase_controlled_vocabulary.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv-full.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/imports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2Fdpo.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-09-23%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-09-23%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-09-23%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-09-23%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-03-08%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-03-08%2Ffbcv-relaxed.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-08-23%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-08-23%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-08-23%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2015-11-19%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2015-11-19%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2015-11-19%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2015-11-19%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2018-01-03%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2018-01-03%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2018-01-03%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2018-01-03%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08a%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08a%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08a%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08a%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-04-08%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-03-28%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-03-28%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-03-28%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-03-28%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2017-07-05%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2017-07-05%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2017-07-05%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2017-07-05%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-26%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-26%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-26%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-26%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Fdpo-non-classified.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Ffbcv-non-classified.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Ffbcv-relaxed.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Fdpo.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Fdpo-relaxed.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2013-07-11%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-02-27%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-02-27%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2014-02-27%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-27%2Fdpo-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-27%2Ffbcv-simple.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-27%2Ffbcv-flybase.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases%2F2016-10-27%2Ffbcv.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Fflybase_controlled_vocabulary.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftrunk%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftrunk%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftrunk%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-09-23%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-09-23%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-09-23%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-09-23%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2013-08-23%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2013-08-23%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2013-08-23%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2013-08-23%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2015-11-19%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2015-11-19%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2015-11-19%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2015-11-19%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2018-01-03%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2018-01-03%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2018-01-03%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2018-01-03%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08a%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08a%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08a%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08a%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-04-08%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-03-28%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-03-28%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-03-28%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-03-28%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2017-07-05%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2017-07-05%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2017-07-05%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2017-07-05%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-26%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-26%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-26%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-26%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2013-07-11%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2013-07-11%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2013-07-11%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Ftrunk%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Ftrunk%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Ftrunk%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Ftrunk%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2014-02-27%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-27%2Fontologies%2Ffbcv-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-27%2Fontologies%2Fdpo-edit.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-27%2Fontologies%2Fimports%2FFBdv_life_stages_with_reciprocal_timing_rel.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Ftags%2F2016-10-27%2Fontologies%2Fimports%2FFBdv_life_stages.obo
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Ffypo-idranges.owl
+
+In repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fypo-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fcomponents%2Flost-inferred-subsumptions-pre-odk.owl
+
+In repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/lost-inferred-subsumptions-pre-odk.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fcomponents%2Ffypo-eqs.owl
+
+In repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fypo-eqs.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/fypo-simple.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/fypo-simple-pombase.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/fypo-base.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/fypo-non-classified.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/fypo-full.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/peco.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/fypo.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fro_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fiao_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fso_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fpr_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/imports%2Fbto_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/release%2Ffypo-simple.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/release%2Ffypo-merged.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/release%2Ffypo-basic.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/release%2Ffypo.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Fmini_test_fypo.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Fseparate_xp_file.obo
+
+In repository: https://github.com/pombase/fypo
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Fseparate_xp_file.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Fsaved_cell-pop_xp.obo
+
+In repository: https://github.com/pombase/fypo
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Fsaved_cell-pop_xp.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Ffypo_imports.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Ffypo_extension_relations.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fmerged-fypo-edit.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Ffypo-edit.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fiao_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fso_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fpr_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fimports%2Fbto_import.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fmigration%2Ffypo.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/archived_phenotype_files%2Funasserted_fypo.obo
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/mappings%2Fncbitaxon-to-eol.obo
+
+In repository: https://github.com/obophenotype/ncbitaxon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/subsets%2Ftaxslim.obo
+
+In repository: https://github.com/obophenotype/ncbitaxon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/poro.owl
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/poro.owl:14569:8: rdf:nodeID value is not a valid NCName: _:genid887
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fporo-idranges.owl
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/poro-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fporo-edit.owl
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/poro-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/poro.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/imports%2Fcaro_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/imports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fimports%2Fcaro_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fimports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Freasoner_axioms.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/reasoner_axioms.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fgo_seed.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/go_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fpato_seed.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/pato_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fcl_seed.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/cl_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fpo_seed.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/po_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fuberon_seed.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/uberon_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Freasoner_axioms.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/reasoner_axioms.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fmodules%2Fattribute_location.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/attribute_location.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fmodules%2Fentity_attribute.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/entity_attribute.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fmodules%2Fentity_attribute_location.owl
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/entity_attribute_location.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fpo_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fso_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fpr_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Foba-edit.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Fuberon_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Fpo_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fmodules%2Fvt.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/subsets%2Foba-basic.obo
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-equivalent-axioms-subq.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/wbphenotype-equivalent-axioms-subq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwbphenotype-idranges.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbphenotype-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype_eq.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype_eq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype-edit.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype_eq_stripped.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype_eq_stripped.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Fwbphenotype-equivalent-axioms-subq.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/wbphenotype-equivalent-axioms-subq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-simple-non-classified.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-full.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-simple.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-base.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fbfo_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fiao_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fwbbt_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/imports%2Fwbls_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype_orig.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fbfo_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fiao_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fwbbt_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fimports%2Fwbls_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Farchive%2Froundtrip%2Fwbphenotype_orig.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Farchive%2Froundtrip%2Fwbphenotype_converted.obo
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-idranges.owl
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-edit.owl
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-edit-test.owl
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-edit-test.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/wbbt-full.obo
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/wbbt-base.obo
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/wbbt-simple.obo
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/wbbt.obo
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/hymao/hao/master/arthropod-mappings.obo
+
+In repository: https://github.com/hymao/hao
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/hymao/hao/master/hao.obo
+
+In repository: https://github.com/hymao/hao
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/hymao/hao/master/course%2Fhao-course.obo
+
+In repository: https://github.com/hymao/hao
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-idranges.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/dpo-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-edit.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/dpo-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Ffbdv_extension.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fbdv_extension.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdata%2Farchive%2Fdefinitions_original.owl
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/archive/definitions_original.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo-base.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo-full.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fpco_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Ffbdv_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fbfo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fcl_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fpato_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fchebi_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Ffbbt_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/imports%2Fcaro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Ftest.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fpco_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Ffbdv_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fbfo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fcl_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fpato_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fchebi_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Ffbbt_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fimports%2Fcaro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit-test.owl
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit-test.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit.owl
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-idranges.owl
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/wbls-full.obo
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/wbls-simple.obo
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/wbls.obo
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/wbls-base.obo
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fworm_development.obo
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro-with-annotations.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/caro-with-annotations.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro-idranges.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/caro-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/caro.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro_bridge.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/caro_bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fpco_import.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pco_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fchebi_import.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/chebi_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fncbitaxon_import.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ncbitaxon_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fgo_import.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/go_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fpato_seed.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pato_seed.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fpato_import.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pato_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fro_import.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ro_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fcl_import.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/cl_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Fxao_bridge.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/xao_bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Fpo_bridge.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/po_bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Ffbbt_bridge.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/fbbt_bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Fzfa_bridge.owl
+
+In repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/zfa_bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fattic%2F2011-12-14%2Fcaro.obo
+
+In repository: https://github.com/obophenotype/caro
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fdefinitions.owl
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fpattern.owl
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-idranges.owl
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbdv-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fly_development.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv-base.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv-full.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv-simple.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/imports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/imports%2Fgo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffly_development.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-non-classified.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Fmerged-fbdv-edit.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Fimports%2Fro_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Fimports%2Fgo_import.obo
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/src%2Fontology%2Fbspo-idranges.owl
+
+In repository: https://github.com/obophenotype/biological-spatial-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bspo-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/bspo.obo
+
+In repository: https://github.com/obophenotype/biological-spatial-ontology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/w3c/data-shapes/gh-pages/unmaintained%2Fdata-shapes-primer%2Fldomsquare.ldom.ttl
