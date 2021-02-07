@@ -2,8 +2,6 @@
 
 When contributing to this repository, please first discuss the change you wish to make via an [issue](https://github.com/vemonet/shapes-of-you/issues) if applicable.
 
-
-
 To contribute:
 
 1. [Fork this repository](https://github.com/vemonet/shapes-of-you/fork).
@@ -40,12 +38,15 @@ yarn dev
 ## Planned improvements ➕
 
 - [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
+- [x] Index more types of files: OWL, SKOS, OBO
+- [ ] Index more types of files:
+  - [ ] [OpenAPI YAML](https://github.com/jfinkhaeuser/prance)
+  - [ ] [SmartAPI](https://smart-api.info/): `info.termOfService`, `info.contact.x-role`, `info.version`, `operation.summary`
 - [ ] Regex search filter
 - [ ] Add page for each file: download the file, parse it with JavaScript, and display relevant infos: metadata, classes, properties, instances, subClassOf hierarchy...
 - [ ] Allow to easily add a new GitLab self-hosted server (API key required as secret) 
 - [ ] Filtering files/repositories based on categories, could be GitHub topics to start (e.g. only show most popular topics, and filter)
-- [ ] Index more types of files (OWL ontologies, OpenAPI YAML)
-- [ ] Parse ShEx files to retrieve the defined shapes (if possible)
+- [ ] Parse ShEx files to retrieve the defined shapes and their metadata (if possible)
 - [ ] Star shapes files with your SOLID account
 - [ ] Store the data as [Nanopublications](http://nanopub.org/wordpress/), instead of requiring the deployment of a triplestore
 

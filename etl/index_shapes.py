@@ -63,6 +63,9 @@ def main(argv):
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
 
+def add_to_report(report_string):
+  with open(root / '../REPORT.md', 'a') as f:
+    f.write(report_string)
 
 def generate_github_file_url(repo_url, filepath, branch):
   """GitHub does not provide a way to get the download URL directly from GraphQL
@@ -116,8 +119,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
       except Exception as e:
         print('Issue with OBO parser file ' + github_file_url)
-        with open(root / '../REPORT.md', 'a') as f:
-          f.write('File: ' + github_file_url + "\n\n"
+        add_to_report('File: ' + github_file_url + "\n\n"
               + 'In repository: ' + repo_url + "\n> " 
               + str(e) + "\n\n---\n")
 
@@ -196,10 +198,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
           print('No parser worked for the file ' + github_file_url)
           if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
-              with open(root / '../REPORT.md', 'a') as f:
-                f.write('File: ' + github_file_url + "\n\n"
-                    + 'In repository: ' + repo_url + "\n> " 
-                    + str(e) + "\n\n---\n")
+              add_to_report('File: ' + github_file_url + "\n\n"
+                  + 'In repository: ' + repo_url + "\n> " 
+                  + str(e) + "\n\n---\n")
 
       # Search for SHACL shapes
       for shape in g.subjects(RDF.type, SH.NodeShape):
@@ -522,6 +523,9 @@ def fetch_from_gitee(shapes_graph, token):
         if runtime > timedelta(minutes=345):
           print('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
           stopping_job = True
+          repo_missing = gitee_repos_list[gitee_repos_list.index(repo_json):]
+          add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
+              + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
           break
 
         repo_url = repo_json["html_url"].rstrip('.git')
@@ -544,6 +548,7 @@ def fetch_from_gitee(shapes_graph, token):
         # repo_description = repo_json["shortDescriptionHTML"]
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
       if stopping_job:
+        add_to_report('\n\n\nSkipping topic: ' + search_topic + ' in ' + str(topics))
         break
     return shapes_graph
 
