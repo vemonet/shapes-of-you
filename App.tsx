@@ -58,7 +58,8 @@ const App = () => (
       <meta name="twitter:description" content={website_description}/>
       <meta name="twitter:image" content=""/>
     </Helmet>
-    <Router basename="/shapes-of-you/">
+    {/* <Router basename="/shapes-of-you/"> */}
+    <Router basename="/">
       <View style={{height: '100%', backgroundColor: '#eceff1'}}>
         <NavBar />
 
