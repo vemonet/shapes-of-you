@@ -1,5 +1,5 @@
 {
-  "description": "Registry for publicly available SPARQL, ShEx, and SHACL shapes files",
+  "description": "Index for publicly available semantic resources (ontologies, vocabularies, shapes, queries) stored in Git repositories (GitHub, GitLab, Gitee)",
   "display": "standalone",
   "lang": "en",
   "name": "Shapes of you",
