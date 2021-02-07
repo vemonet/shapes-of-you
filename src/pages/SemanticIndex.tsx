@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function ShapeRegistry() {
+export default function SemanticIndex() {
   const classes = useStyles();
   const theme = useTheme();
   const webId = useWebId();

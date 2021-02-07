@@ -1,7 +1,7 @@
 {
     "expo": {
       "name": "Shapes of you",
-      "description": "Registry for publicly available SPARQL, ShEx, and SHACL shapes files",
+      "description": "Index for publicly available semantic resources (ontologies, vocabularies, shapes, queries) stored in Git repositories (GitHub, GitLab, Gitee)",
       "slug": "shapes-of-you",
       "privacy": "public",
       "sdkVersion": "35.0.0",

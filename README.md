@@ -1,4 +1,4 @@
-# Registry for SPARQL, SHACL & ShEx Shapes
+# Index for semantic resources
 
 [![Index shapes](https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22) [![Deploy to GitHub Pages](https://github.com/vemonet/shapes-of-you/workflows/Deploy%20website/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+website%22) [![CodeQL analysis](https://github.com/vemonet/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
 

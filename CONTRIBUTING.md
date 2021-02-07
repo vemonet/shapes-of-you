@@ -42,7 +42,7 @@ yarn dev
 - [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
 - [ ] Regex search filter
 - [ ] Add page for each file: download the file, parse it with JavaScript, and display relevant infos: metadata, classes, properties, instances, subClassOf hierarchy...
-- [ ] Allow to easily add a new GitLab registry (API key required as secret) 
+- [ ] Allow to easily add a new GitLab self-hosted server (API key required as secret) 
 - [ ] Filtering files/repositories based on categories, could be GitHub topics to start (e.g. only show most popular topics, and filter)
 - [ ] Index more types of files (OWL ontologies, OpenAPI YAML)
 - [ ] Parse ShEx files to retrieve the defined shapes (if possible)
@@ -81,4 +81,4 @@ We could not find a good dynamic faceted search, the most relevant options for R
 * [ebi-gene-expression-group/scxa-faceted-search-results](https://github.com/ebi-gene-expression-group/scxa-faceted-search-results): multiple inputs faceted search, but does not seems to support dynamic filtering of displayed options
 * [eduardobcastro/in-memory-faceted-search](https://github.com/eduardobcastro/in-memory-faceted-search)
 
-Currently we prefer to implement it ourself (search for "faceted" in the **ShapeRegistry** page). But it could be tricky when we will start to have more categories to filter on.
+Currently we prefer to implement it ourself (search for "faceted" in the **SemanticIndex** page). But it could be tricky when we will start to have more categories to filter on.
