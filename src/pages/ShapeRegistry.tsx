@@ -86,48 +86,101 @@ export default function ShapeRegistry() {
     // https://solid.github.io/react-components/
 
     // Query directly using Axios
-    axios.get(endpointToQuery + `?query=` + encodeURIComponent(getShapesQuery))
+    axios.get(endpointToQuery + `?query=` + encodeURIComponent(getFilesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
 
         // Convert array to object: {0:"a", 1:"b", 2:"c"}
-        const projects_converted_hash = { ...sparqlResultArray }
-        let projects_hash: any = {}
-        // Iterate over projects
-        Object.keys(projects_converted_hash).forEach(function(project) {
-          const projectName = projects_converted_hash[project]['shapeFileUri']['value']
-          // Use the project URI as key in the hash
-          if (!projects_hash[projectName]){
-            projects_hash[projectName] = {shapes: []}
-          }
-          // Iterate over project properties
-          Object.keys(projects_converted_hash[project]).forEach(function(property: any) {
-            const propertyHash = projects_converted_hash[project][property]
-            if (propertyHash) {
-              if (property == 'shapes') {
-                // Exception for shapes which is a list
-                let shape_label = propertyHash.value;
-                if (shape_label.length > 100) {
-                  const n = shape_label.lastIndexOf('#');
-                  shape_label = shape_label.substring(n + 1);
-                }
-                if (shape_label.length > 150) {
-                  shape_label = shape_label.substring(0, 150)
-                }
-                projects_hash[projectName][property].push(shape_label);
-              } else {
-                projects_hash[projectName][property] = propertyHash.value 
-              }
-            }
-          })
-        })
+        // const projects_converted_hash = { ...sparqlResultArray }
+        // let projects_hash: any = {}
+        // // Iterate over projects
+        // Object.keys(projects_converted_hash).forEach(function(project) {
+        //   const projectName = projects_converted_hash[project]['shapeFileUri']['value']
+        //   // Use the project URI as key in the hash
+        //   if (!projects_hash[projectName]){
+        //     projects_hash[projectName] = {shapes: []}
+        //   }
+        //   // Iterate over project properties
+        //   Object.keys(projects_converted_hash[project]).forEach(function(property: any) {
+        //     const propertyHash = projects_converted_hash[project][property]
+        //     if (propertyHash) {
+        //       if (property == 'shapes') {
+        //         // Exception for shapes which is a list
+        //         let shape_label = propertyHash.value;
+        //         if (shape_label.length > 100) {
+        //           const n = shape_label.lastIndexOf('#');
+        //           shape_label = shape_label.substring(n + 1);
+        //         }
+        //         if (shape_label.length > 150) {
+        //           shape_label = shape_label.substring(0, 150)
+        //         }
+        //         projects_hash[projectName][property].push(shape_label);
+        //       } else {
+        //         projects_hash[projectName][property] = propertyHash.value 
+        //       }
+        //     }
+        //   })
+        // })
         // Convert back to array for filtering
-        const project_final_array: any = Object.keys(projects_hash).map((key) => projects_hash[key]);
+        // const project_final_array: any = Object.keys(projects_hash).map((key) => projects_hash[key]);
+        const project_final_array: any = sparqlResultArray.map((row: any) => {
+          // console.log(row);
+          Object.keys(row).map((key) => row[key] = row[key]['value']);
+          return row
+          // Object.keys(row).map((key) => key['value']);
+        }); 
+        console.log('project_final_array');
+        console.log(project_final_array);
+        // sparqlResultArray
         updateState({shapes_files_list: project_final_array})
       })
       .catch(error => {
         console.log(error)
       })
+
+    // Get all shapes in files (3m2)
+    // axios.get(endpointToQuery + `?query=` + encodeURIComponent(getShapesQuery))
+    //   .then(res => {
+    //     const sparqlResultArray = res.data.results.bindings;
+
+    //     // Convert array to object: {0:"a", 1:"b", 2:"c"}
+    //     const projects_converted_hash = { ...sparqlResultArray }
+    //     let projects_hash: any = {}
+    //     // Iterate over projects
+    //     Object.keys(projects_converted_hash).forEach(function(project) {
+    //       const projectName = projects_converted_hash[project]['shapeFileUri']['value']
+    //       // Use the project URI as key in the hash
+    //       if (!projects_hash[projectName]){
+    //         projects_hash[projectName] = {shapes: []}
+    //       }
+    //       // Iterate over project properties
+    //       Object.keys(projects_converted_hash[project]).forEach(function(property: any) {
+    //         const propertyHash = projects_converted_hash[project][property]
+    //         if (propertyHash) {
+    //           if (property == 'shapes') {
+    //             // Exception for shapes which is a list
+    //             let shape_label = propertyHash.value;
+    //             if (shape_label.length > 100) {
+    //               const n = shape_label.lastIndexOf('#');
+    //               shape_label = shape_label.substring(n + 1);
+    //             }
+    //             if (shape_label.length > 150) {
+    //               shape_label = shape_label.substring(0, 150)
+    //             }
+    //             projects_hash[projectName][property].push(shape_label);
+    //           } else {
+    //             projects_hash[projectName][property] = propertyHash.value 
+    //           }
+    //         }
+    //       })
+    //     })
+    //     // Convert back to array for filtering
+    //     const project_final_array: any = Object.keys(projects_hash).map((key) => projects_hash[key]);
+    //     updateState({shapes_files_list: project_final_array})
+    //   })
+    //   .catch(error => {
+    //     console.log(error)
+    //   })
 
     // Get repositories and their files counts
     let repositories_hash: any = []
@@ -205,27 +258,29 @@ export default function ShapeRegistry() {
   // Each faceted search filter can be added here (on the shapes files array)
   // Could not find good dynamic faceted search, best is https://github.com/ebi-gene-expression-group/scxa-faceted-search-results
   const filtered_files = state.shapes_files_list.filter( (shapes_file: any) =>{
-    if (shapes_file.label) {
-      // Filter by repo if 1 selected
-      if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
-        // Filter depending on shacl/shex checkboxes:
-        if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
-        || (state.checkbox_sparql === true && (shapes_file.label.endsWith('.rq') || shapes_file.label.endsWith('.sparql')) )
-        || (state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex') && !shapes_file.label.endsWith('.rq'))
-        // TODO: improve, some RDF files are shex)
-        ) {
-          // Filter on search:
-          let file_description = '';
-          if (shapes_file.repo_description) file_description = file_description + ' ' + shapes_file.repo_description;
-          if (shapes_file.shape_file_description) file_description = file_description + ' ' + shapes_file.shape_file_description;
-          if (shapes_file.sparqlEndpoint) file_description = file_description + ' ' + shapes_file.sparqlEndpoint;
-          if (shapes_file.query) file_description = file_description + ' ' + shapes_file.query;
-          return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
-            || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-            || shapes_file.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-            || shapes_file.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-            || file_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-          )
+    if (shapes_file) {
+      if (shapes_file.label) {
+        // Filter by repo if 1 selected
+        if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
+          // Filter depending on shacl/shex checkboxes:
+          if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
+          || (state.checkbox_sparql === true && (shapes_file.label.endsWith('.rq') || shapes_file.label.endsWith('.sparql')) )
+          || (state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex') && !shapes_file.label.endsWith('.rq'))
+          // TODO: improve, some RDF files are shex)
+          ) {
+            // Filter on search:
+            let file_description = '';
+            if (shapes_file.repo_description) file_description = file_description + ' ' + shapes_file.repo_description;
+            if (shapes_file.shape_file_description) file_description = file_description + ' ' + shapes_file.shape_file_description;
+            if (shapes_file.sparqlEndpoint) file_description = file_description + ' ' + shapes_file.sparqlEndpoint;
+            if (shapes_file.query) file_description = file_description + ' ' + shapes_file.query;
+            return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
+              || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+              || shapes_file.shapes && shapes_file.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+              || shapes_file.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+              || file_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+            )
+          }
         }
       }
     }
@@ -474,16 +529,20 @@ export default function ShapeRegistry() {
               </>
             }
           </Typography>
-          <Typography style={{marginTop: theme.spacing(1)}}>
-            Contains {pluralize(project.shapes.length, 'Shape')}:
-          </Typography>
-          {project.shapes.map((shapeLabel: string, key: number) => {
-            // Limit shape label size to 150 chars
-            return <Chip label={shapeLabel} color='primary' key={key.toString()}
-                style={{margin: theme.spacing(1, 1)}}/>
-            // <Tooltip title={shapeLabel} key={key.toString()}>
-            // </Tooltip>
-          })}
+          {project.shapes &&
+            <>
+              <Typography style={{marginTop: theme.spacing(1)}}>
+                Contains {pluralize(project.shapes.length, 'Shape')}:
+              </Typography>
+              {project.shapes.map((shapeLabel: string, key: number) => {
+                // Limit shape label size to 150 chars
+                return <Chip label={shapeLabel} color='primary' key={key.toString()}
+                    style={{margin: theme.spacing(1, 1)}}/>
+                // <Tooltip title={shapeLabel} key={key.toString()}>
+                // </Tooltip>
+              })}
+            </>
+          }
         </Paper>
       })}
       <Pagination count={Math.floor(filtered_files.length / state.shapes_per_page) + 1} 
@@ -493,6 +552,25 @@ export default function ShapeRegistry() {
     </Container>
   )
 }
+
+const getFilesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shex: <http://www.w3.org/ns/shex#>
+PREFIX void: <http://rdfs.org/ns/void#>
+SELECT DISTINCT * WHERE { 
+    ?shapeFileUri a schema:SoftwareSourceCode ;
+        a ?shape_type ;
+        rdfs:label ?label ;
+        dc:source ?repository .
+    FILTER(?shape_type != schema:SoftwareSourceCode)
+    OPTIONAL { ?repository rdfs:comment ?repo_description }
+    OPTIONAL { ?shapeFileUri schema:query ?query }
+    OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
+    OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }
+}`
 
 // SPARQL select query to get all shapes files and the list of their shapes
 const getShapesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

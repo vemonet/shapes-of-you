@@ -1,0 +1,33 @@
+#+ endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
+#+ endpoint_in_url: False
+#+ summary:  List all shapes in shape files
+#+ tags:
+#+   - Overview
+#+ method: GET
+#+ pagination: 100
+#+ defaults:
+#+   - foodlabel: calcium
+# enumerate:
+#   - type:
+#     - shacl
+#     - shex
+#     - sparql
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shex: <http://www.w3.org/ns/shex#>
+PREFIX void: <http://rdfs.org/ns/void#>
+SELECT DISTINCT * WHERE { 
+    ?shapeFileUri a schema:SoftwareSourceCode ;
+        a ?shape_type ;
+        rdfs:label ?label ;
+        dc:source ?repository .
+    FILTER(?shape_type != schema:SoftwareSourceCode)
+    OPTIONAL { ?repository rdfs:comment ?repo_description }
+    OPTIONAL { ?shapeFileUri schema:query ?query }
+    OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
+    OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }
+}
