@@ -19,20 +19,23 @@ jobs:
       with:
         node-version: 12
 
-    - name: Install dependencies and build
+    - name: Install dependencies, build and deploy
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --global user.email "vincent.emonet@maastrichtuniversity.nl"
         git config --global user.name "Vincent Emonet"
         yarn install
         yarn build
+        yarn deploy
 
-    - name: Deploy on GitHub
-      uses: JamesIves/github-pages-deploy-action@3.7.1
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: web-build
-        CLEAN: true
+    # - name: Deploy on GitHub
+    #   uses: JamesIves/github-pages-deploy-action@3.7.1
+    #   with:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     BRANCH: gh-pages
+    #     FOLDER: web-build
+    #     CLEAN: true
 
     # - name: Deploy on GitHub
     #   run: yarn deploy
