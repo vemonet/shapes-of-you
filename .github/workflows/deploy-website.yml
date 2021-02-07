@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-    - 'src/*'
+    - 'src/**'
     - 'package.json'
     - 'App.tsx'
     - 'App.css'
@@ -17,13 +17,13 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: 12
+        node-version: 14
 
     - name: Install dependencies, build and deploy
       # env: 
       #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config --global user.email "vincent.emonet@maastrichtuniversity.nl"
+        git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
         yarn install
         yarn build

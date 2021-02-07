@@ -1,30 +1,32 @@
-from io import StringIO
-from python_graphql_client import GraphqlClient
-import gitlab
-import pathlib
 import os
 import sys
 import shutil
+import pathlib
+from datetime import datetime
+import re
 import urllib
 import requests
+
+import yaml
+import json
 from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
 from rdflib.plugins.sparql.parser import Query, UpdateUnit
 from rdflib.plugins.sparql.processor import translateQuery
-import yaml
-import json
-import re
-
 import obonet
 from pyshexc.parser_impl import generate_shexj
+
+from python_graphql_client import GraphqlClient
+import gitlab
+
 # from logging import exception
 
 SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
 SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'
 SPARQL_ENDPOINT_USERNAME='import_user'
 SPARQL_ENDPOINT_PASSWORD = os.getenv('SPARQL_PASSWORD')
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
@@ -50,8 +52,8 @@ def main(argv):
     git_registry = 'github'
 
   if git_registry == 'github':
-    shapes_graph = fetch_shape_files(shapes_graph, client, TOKEN)
-    shapes_graph = fetch_extra_shape_files(shapes_graph, client, TOKEN)
+    shapes_graph = fetch_shape_files(shapes_graph, client, GITHUB_TOKEN)
+    shapes_graph = fetch_extra_shape_files(shapes_graph, client, GITHUB_TOKEN)
   elif git_registry == 'gitlab':
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
     shapes_graph = fetch_from_gitlab(shapes_graph, gl)
@@ -470,8 +472,7 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
 # Fetch files from GitLab
 def fetch_from_gitlab(shapes_graph, gl):
     topics = ['owl', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
-    # , 'ontology'
-    # curl --header "PRIVATE-TOKEN: GITLAB_TOKEN" "https://gitlab.com/api/v4/search?scope=projects&search=owl%20ontology"
+    # 'ontology'
 
     for search_topic in topics:
       gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
@@ -501,18 +502,28 @@ def fetch_from_gitee(shapes_graph, token):
     # topics = ['ontology', 'ontologies', 'sparql', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
     # topics = ['ontology', 'ontologies', 'sparql']
     topics = ['ontologies', 'sparql']
+
+    # Record time to avoid hitting GitHub Actions limits
+    time_start = datetime.now()
     
     # Repos with issues or too big (hitting GitHub Actions 6h limit)
     avoid_repos = [
       'https://gitee.com/mad_matrix/OntologyModelin', 
       'https://gitee.com/jiahuarao/HumanDiseaseOntology'
     ]
+    stopping_job = False
 
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
       for repo_json in gitee_repos_list:
+        now = datetime.now() - time_start
+        if now.hour == 5 and now.minute >= 45:
+          print('Running for ' + str(now) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
+          stopping_job = True
+          break
+
         repo_url = repo_json["html_url"].rstrip('.git')
-        print(repo_url)
+        print(str(datetime.now()) + ' Processing ' + repo_url)
 
         if repo_url in avoid_repos:
           continue
@@ -530,9 +541,9 @@ def fetch_from_gitee(shapes_graph, token):
         repo_description = ' - '.join(repo_descriptions)
         # repo_description = repo_json["shortDescriptionHTML"]
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-    
+      if stopping_job:
+        break
     return shapes_graph
-# https://gitee.com/api/v5/search/repositories?access_token=93442df37161134a510b5a3551864349&page=1&per_page=20&order=desc
 
 
 if __name__ == "__main__":
