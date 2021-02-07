@@ -499,10 +499,8 @@ def fetch_from_gitlab(shapes_graph, gl):
 
 def fetch_from_gitee(shapes_graph, token):
     # topics = ['ontology', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
-    topics = ['ontology']
-    # , 'ontology'
-    # curl --header "PRIVATE-TOKEN: GITLAB_TOKEN" "https://gitlab.com/api/v4/search?scope=projects&search=owl%20ontology"
-    # https://gitee.com/api/v5/search/repositories?access_token=  &page=1&per_page=20&order=desc
+    topics = ['ontology', 'ontologies', 'sparql']
+    
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
       for repo_json in gitee_repos_list:
