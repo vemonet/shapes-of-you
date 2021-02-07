@@ -64,13 +64,12 @@ export default function NavBar() {
           </Tooltip>
         </Link> */}
         <div className="flexGrow"></div>
-        <a href="https://github.com/vemonet/shapes-of-you/blob/report/REPORT.md" 
+        <a href="https://github.com/vemonet/shapes-of-you/tree/report" 
             target="_blank" rel="noopener noreferrer" className={classes.linkButton}>
-          <Tooltip title='List of shapes we failed to process'>
+          <Tooltip title='Reports for the files we failed to process, and that need to be fixed by their owners'>
             <Button className={classes.menuButton}>
-              {/* <WarningIcon /> */}
               <AssignmentIcon />
-              &nbsp;Import report
+              &nbsp;Import reports
             </Button>
           </Tooltip>
         </a>

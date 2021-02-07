@@ -8,6 +8,9 @@ import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import CodeIcon from '@material-ui/icons/Code';
 import BubbleChartIcon from '@material-ui/icons/BubbleChart';
 import SendIcon from '@material-ui/icons/Send';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
+import DeviceHubIcon from '@material-ui/icons/DeviceHub';
+import GavelIcon from '@material-ui/icons/Gavel';
 
 import axios from 'axios';
 
@@ -307,23 +310,27 @@ export default function ShapeRegistry() {
       </Typography>
       <LoggedIn>
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
-          Welcome to your SPARQL, SHACL & ShEx Shapes registry <Value src="user.name"/>!
+          Welcome to your semantic resources index <Value src="user.name"/>!
         </Typography>
         {/* <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           {webId}
         </Typography> */}
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
-          Soon you will be able to bookmark your favourites Shapes using your SOLID account! 🔖
+          Hpefully, soon you will be able to bookmark your favourites resources using your SOLID account! 🔖
         </Typography>
       </LoggedIn>
       <LoggedOut>
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
-          A registry for publicly available semantic resources
+          An index of publicly available semantic resources
         </Typography>
       </LoggedOut>
 
       <Typography style={{marginBottom: theme.spacing(2)}}>
-        Shapes of you is the best place to <b>search and explore existing semantic shapes, ontologies and queries</b>. Do you need to validate RDF using SHACL or ShEx? Or do you want to find SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprise!
+        Shapes of you is the best place to <b>search and explore existing semantic shapes, ontologies, vocabularies and queries</b>. Do you need to validate RDF using SHACL or ShEx? Or do you want to find SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprise!
+      </Typography>
+
+      <Typography style={{marginBottom: theme.spacing(2)}}>
+        To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet, PyShExC). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
       </Typography>
 
       <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
@@ -335,10 +342,31 @@ export default function ShapeRegistry() {
         Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
       </Typography> */}
       <Typography>
-        Add one of these topics to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
+        Add one of those topics to your <a href="https://github.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitHub</a> repository, or mention it in your project description on <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a> and <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a>,&nbsp;
+        we automatically index files from public repositories everyday 🕐
       </Typography>
       <List>
-      <ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <DeviceHubIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText>
+            <a href="https://www.w3.org/OWL/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>OWL ontologies</b></a>: add the topic <code>owl</code>, we index RDF files, with all <code>owl:Class</code> they contain
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <MenuBookIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText>
+            <a href="https://www.w3.org/TR/swbp-skos-core-spec/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>SKOS vocabularies</b></a>: add the topic <code>skos</code>, we index RDF files, with all <code>skos:Concept</code> they contain
+          </ListItemText>
+        </ListItem>
+        <ListItem>
           <ListItemAvatar>
             <Avatar>
               <CheckBoxIcon />
@@ -347,7 +375,7 @@ export default function ShapeRegistry() {
           <ListItemText
             // secondary="shacl-shapes"
           > 
-            <b>SHACL shapes</b>: add the topic <code>shacl-shapes</code>, we index RDF files such as <code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, etc), with all <code>sh:NodeShape</code> they contain
+            <a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>SHACL shapes</b></a>: add the topic <code>shacl-shapes</code>, we index RDF files, with all <code>sh:NodeShape</code> they contain
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -358,7 +386,7 @@ export default function ShapeRegistry() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <b>ShEx expressions</b>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files
+            <a href="https://shex.io/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>ShEx expressions</b></a>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files (but no metadata described in ShEx)
           </ListItemText>
         </ListItem>
         <ListItem>
@@ -368,15 +396,29 @@ export default function ShapeRegistry() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <b>SPARQL queries</b>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link}>grlc.io</a> APIs metadata
+            <a href="https://www.w3.org/TR/sparql11-query/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>SPARQL queries</b></a>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link} target="_blank" rel="noopener noreferrer">grlc.io</a> APIs metadata, complying with the <a href="https://github.com/the-open-university/basil/wiki/Introduction" className={classes.link} target="_blank" rel="noopener noreferrer">BASIL convention</a>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <GavelIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText>
+            <a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer"><b>OBO ontologies</b></a>: add the topic <code>obo</code>, we index <code>.obo</code> files, with all terms they contain
           </ListItemText>
         </ListItem>
       </List>
 
+      {/* <Typography style={{marginBottom: theme.spacing(2)}}>
+        We also index the same topics in <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a> and <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a>, there is no topic on those websites, so just mention it in your project name or description.
+      </Typography> */}
+
       {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(2, 0)}}>
         <Typography variant="h5">
-          {filtered_files.length} shapes files in&nbsp;
+          {filtered_files.length} files in&nbsp;
           {filtered_repos.length} repositories 
           {/* {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories  */}
         </Typography>

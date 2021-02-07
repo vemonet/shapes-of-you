@@ -6,14 +6,13 @@
 <https://w3id.org/um/ids/projects#shapes-of-you>
   a doap:Project ;
   doap:name "Shapes of you" ;
-  doap:description '''A registry of SHACL Shapes indexed from GitHub repositories using its GraphQL API.''' ;
+  doap:description '''Index of semantic resources (ontologies, vocabularies, shapes, queries) stored in Git repositories (GitHub, GitLab, Gitee)''' ;
   bibo:status "Active" ;
 
   doap:programming-language "TypeScript", "Python" ;
   doap:license <https://github.com/vemonet/shapes-of-you/blob/main/LICENSE> ;
   doap:bug-database <https://github.com/vemonet/shapes-of-you/issues> ;
   doap:homepage <https://vemonet.github.io/shapes-of-you> ;
-  
   
   doap:service-endpoint <https://graphdb.dumontierlab.com/repositories/shapes-registry> ;
   
