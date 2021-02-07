@@ -3,7 +3,7 @@
 [![Index shapes](https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22) [![Deploy to GitHub Pages](https://github.com/vemonet/shapes-of-you/workflows/Deploy%20website%20to%20GitHub%20Pages/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+website+to+GitHub+Pages%22) [![CodeQL analysis](https://github.com/vemonet/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
 
 
-🖥 Access the Shapes of You web app at https://maastrichtu-ids.github.io/shapes-of-you
+🖥 Access the Shapes of You web app at https://vemonet.github.io/shapes-of-you
 
 📬 Access the OpenAPI at http://grlc.io/api-git/vemonet/shapes-of-you (powered by [grlc.io](http://grlc.io))
 
@@ -33,7 +33,7 @@ This web service is composed of those 4 main parts:
 * A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories. The retrieved data is defined using [RDF](https://www.w3.org/RDF/).
   * A [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
 * A React webapp written in TypeScript, which displays the files and metadata from the SPARQL endpoint with filters, and search
-  * The website is automatically deployed by [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://maastrichtu-ids.github.io/shapes-of-you) at each push to the `main` branch.
+  * The website is automatically deployed by [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://vemonet.github.io/shapes-of-you) at each push to the `main` branch.
 
 * A triplestore with a publicly available SPARQL endpoint at https://graphdb.dumontierlab.com/repositories/shapes-registry
 
@@ -103,7 +103,7 @@ yarn upgrade
 
 ## Run web app in production 🛩️
 
-This website is automatically deployed by a [GitHub Actions worklow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://maastrichtu-ids.github.io/shapes-of-you
+This website is automatically deployed by a [GitHub Actions worklow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://vemonet.github.io/shapes-of-you
 
 You can also build locally in `/web-build` folder and serve on http://localhost:5000
 

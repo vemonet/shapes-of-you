@@ -43,7 +43,7 @@ const App = () => (
       <meta itemProp="image" content=""/>
 
       {/* Facebook Meta Tags */}
-      <meta property="og:url" content="https://maastrichtu-ids.github.io/shapes-of-you"/>
+      <meta property="og:url" content="https://vemonet.github.io/shapes-of-you"/>
       <meta property="og:type" content="website"/>
       <meta property="og:title" content="Shapes of you"/>
       <meta property="og:description" content="Registry for publicly available SPARQL queries, ShEx, and SHACL shapes validation files"/>

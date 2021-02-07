@@ -45,6 +45,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d web-build"
   },
-  "homepage": "https://maastrichtu-ids.github.io/shapes-of-you",
+  "homepage": "https://vemonet.github.io/shapes-of-you",
   "private": true
 }
