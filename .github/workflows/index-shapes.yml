@@ -49,22 +49,22 @@ jobs:
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: failed-shapes-report
+        name: failed-shapes-github-report
         path: FAILED_IMPORT_REPORT.md
 
-    - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
-      run: |
-        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_REPORT.md
-        git stash
-        git fetch
-        git checkout report
-        mv tmp-FAILED_IMPORT_REPORT.md FAILED_IMPORT_REPORT.md
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add FAILED_IMPORT_REPORT.md
-        git commit -m "Update FAILED_IMPORT_REPORT.md" || exit 0
-        git push
+    # - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
+    #   run: |
+    #     mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_REPORT.md
+    #     git stash
+    #     git fetch
+    #     git checkout report
+    #     mv tmp-FAILED_IMPORT_REPORT.md FAILED_IMPORT_REPORT.md
+    #     git diff
+    #     git config --global user.email "vincent.emonet@gmail.com"
+    #     git config --global user.name "Vincent Emonet"
+    #     git add FAILED_IMPORT_REPORT.md
+    #     git commit -m "Update FAILED_IMPORT_REPORT.md" || exit 0
+    #     git push
 
     - name: Upload GitHub RDF output as artifact
       uses: actions/upload-artifact@v1
@@ -124,19 +124,19 @@ jobs:
         name: failed-shapes-gitlab-report
         path: FAILED_IMPORT_REPORT.md
 
-    - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
-      run: |
-        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_GITLAB_REPORT.md
-        git stash
-        git fetch
-        git checkout report
-        mv tmp-FAILED_IMPORT_GITLAB_REPORT.md FAILED_IMPORT_GITLAB_REPORT.md
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add FAILED_IMPORT_GITLAB_REPORT.md
-        git commit -m "Update FAILED_IMPORT_GITLAB_REPORT.md" || exit 0
-        git push
+    # - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
+    #   run: |
+    #     mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_GITLAB_REPORT.md
+    #     git stash
+    #     git fetch
+    #     git checkout report
+    #     mv tmp-FAILED_IMPORT_GITLAB_REPORT.md FAILED_IMPORT_GITLAB_REPORT.md
+    #     git diff
+    #     git config --global user.email "vincent.emonet@gmail.com"
+    #     git config --global user.name "Vincent Emonet"
+    #     git add FAILED_IMPORT_GITLAB_REPORT.md
+    #     git commit -m "Update FAILED_IMPORT_GITLAB_REPORT.md" || exit 0
+    #     git push
 
     - name: Upload RDF output as artifact
       uses: actions/upload-artifact@v1
@@ -184,22 +184,22 @@ jobs:
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: failed-shapes-gitlab-report
+        name: failed-shapes-gitee-report
         path: FAILED_IMPORT_REPORT.md
 
-    - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
-      run: |
-        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_GITEE_REPORT.md
-        git stash
-        git fetch
-        git checkout report
-        mv tmp-FAILED_IMPORT_GITEE_REPORT.md FAILED_IMPORT_GITEE_REPORT.md
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add FAILED_IMPORT_GITEE_REPORT.md
-        git commit -m "Update FAILED_IMPORT_GITEE_REPORT.md" || exit 0
-        git push
+    # - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
+    #   run: |
+    #     mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_GITEE_REPORT.md
+    #     git stash
+    #     git fetch
+    #     git checkout report
+    #     mv tmp-FAILED_IMPORT_GITEE_REPORT.md FAILED_IMPORT_GITEE_REPORT.md
+    #     git diff
+    #     git config --global user.email "vincent.emonet@gmail.com"
+    #     git config --global user.name "Vincent Emonet"
+    #     git add FAILED_IMPORT_GITEE_REPORT.md
+    #     git commit -m "Update FAILED_IMPORT_GITEE_REPORT.md" || exit 0
+    #     git push
 
     - name: Upload Gitee RDF output as artifact
       uses: actions/upload-artifact@v1

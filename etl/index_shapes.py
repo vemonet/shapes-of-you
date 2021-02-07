@@ -498,15 +498,23 @@ def fetch_from_gitlab(shapes_graph, gl):
     return shapes_graph
 
 def fetch_from_gitee(shapes_graph, token):
-    # topics = ['ontology', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
-    topics = ['ontology', 'ontologies', 'sparql']
+    # topics = ['ontology', 'ontologies', 'sparql', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
+    # topics = ['ontology', 'ontologies', 'sparql']
+    topics = ['ontologies', 'sparql']
     
+    # Repos with issues or too big (hitting GitHub Actions 6h limit)
+    avoid_repos = [
+      'https://gitee.com/mad_matrix/OntologyModelin', 
+      'https://gitee.com/jiahuarao/HumanDiseaseOntology'
+    ]
+
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
       for repo_json in gitee_repos_list:
         repo_url = repo_json["html_url"].rstrip('.git')
         print(repo_url)
-        if repo_url == 'https://gitee.com/mad_matrix/OntologyModelin':
+
+        if repo_url in avoid_repos:
           continue
         if 'default_branch' in repo_json:
           branch = repo_json['default_branch']

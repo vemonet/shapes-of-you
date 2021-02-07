@@ -20,8 +20,8 @@ jobs:
         node-version: 12
 
     - name: Install dependencies, build and deploy
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # env: 
+      #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --global user.email "vincent.emonet@maastrichtuniversity.nl"
         git config --global user.name "Vincent Emonet"
