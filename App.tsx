@@ -46,7 +46,7 @@ const App = () => (
       <meta itemProp="image" content=""/>
 
       {/* Facebook Meta Tags */}
-      <meta property="og:url" content="https://vemonet.github.io/shapes-of-you"/>
+      <meta property="og:url" content="https://index.semanticscience.org"/>
       <meta property="og:type" content="website"/>
       <meta property="og:title" content={website_name}/>
       <meta property="og:description" content={website_description}/>

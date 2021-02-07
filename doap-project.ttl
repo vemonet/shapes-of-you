@@ -12,7 +12,7 @@
   doap:programming-language "TypeScript", "Python" ;
   doap:license <https://github.com/vemonet/shapes-of-you/blob/main/LICENSE> ;
   doap:bug-database <https://github.com/vemonet/shapes-of-you/issues> ;
-  doap:homepage <https://vemonet.github.io/shapes-of-you> ;
+  doap:homepage <https://index.semanticscience.org> ;
   
   doap:service-endpoint <https://graphdb.dumontierlab.com/repositories/shapes-registry> ;
   

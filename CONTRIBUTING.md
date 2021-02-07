@@ -69,7 +69,7 @@ To give permissions to Shapes of you to add data to your pod:
 
 * Go to your SOLID pod `/public/activities` folder 
 * Click on the lock icon 🔒 
-* Update permissions by adding the web app URL: https://vemonet.github.io/shapes-of-you
+* Update permissions by adding the web app URL: https://index.semanticscience.org
   * You can also add the localhost URL for development: http://localhost:19006
 
 ### Improving the faceted search 🔎
