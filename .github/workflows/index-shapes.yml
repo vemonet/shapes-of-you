@@ -44,7 +44,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
-        python etl/index_shapes_files.py
+        python etl/index_shapes.py github
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
@@ -66,12 +66,29 @@ jobs:
         git commit -m "Update FAILED_IMPORT_REPORT.md" || exit 0
         git push
 
-    - name: Upload RDF output as artifact
+    - name: Upload GitHub RDF output as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: shapes-of-you-rdf
+        name: shapes-of-you-github-rdf
         path: shapes-of-you-rdf.ttl
 
+    - name: Clear older graph in the triplestore
+      if: github.event.inputs.clear == 'true'
+      uses: vemonet/sparql-operations-action@v1
+      with:
+        query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+
+    - name: Upload GitHub RDF file to the triplestore
+      uses: MaastrichtU-IDS/RdfUpload@master
+      with:
+        file: shapes-of-you-rdf.ttl
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+        graph: "https://w3id.org/um/ids/shapes/github"
 
   query-gitlab-for-shapes:
     runs-on: ubuntu-latest
@@ -95,11 +112,11 @@ jobs:
       run: |
         python -m pip install -r etl/requirements.txt
 
-    - name: Run Python script to query GitHub GraphQL API
+    - name: Run Python script to query GitLab API
       env:
         GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
       run: |
-        python etl/index_shapes_files.py gitlab
+        python etl/index_shapes.py gitlab
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
@@ -162,7 +179,7 @@ jobs:
       env:
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
       run: |
-        python etl/index_shapes_files.py gitee
+        python etl/index_shapes.py gitee
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
@@ -200,37 +217,37 @@ jobs:
         graph: "https://w3id.org/um/ids/shapes/gitee"
 
 
-  upload-rdf:
-    needs: [query-github-for-shapes, query-gitlab-for-shapes]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get GitHub RDF output artifact from previous job
-        uses: actions/download-artifact@v1
-        with:
-          name: shapes-of-you-rdf
+  # upload-rdf:
+  #   needs: [query-github-for-shapes, query-gitlab-for-shapes]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Get GitHub RDF output artifact from previous job
+  #       uses: actions/download-artifact@v1
+  #       with:
+  #         name: shapes-of-you-rdf
 
-      - name: Get GitLab RDF output artifact from previous job
-        uses: actions/download-artifact@v1
-        with:
-          name: shapes-of-you-gitlab-rdf
+  #     - name: Get GitLab RDF output artifact from previous job
+  #       uses: actions/download-artifact@v1
+  #       with:
+  #         name: shapes-of-you-gitlab-rdf
 
-      - name: Clear older graph in the triplestore
-        if: github.event.inputs.clear == 'true'
-        uses: vemonet/sparql-operations-action@v1
-        with:
-          query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
-          endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-          user: ${{ secrets.GRAPHDB_USER }}
-          password: ${{ secrets.GRAPHDB_PASSWORD }}
+  #     - name: Clear older graph in the triplestore
+  #       if: github.event.inputs.clear == 'true'
+  #       uses: vemonet/sparql-operations-action@v1
+  #       with:
+  #         query: "CLEAR GRAPH <https://w3id.org/um/ids/shapes>"
+  #         endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+  #         user: ${{ secrets.GRAPHDB_USER }}
+  #         password: ${{ secrets.GRAPHDB_PASSWORD }}
 
-      - name: Upload GitHub RDF file to the triplestore
-        uses: MaastrichtU-IDS/RdfUpload@master
-        with:
-          file: shapes-of-you-rdf/shapes-of-you-rdf.ttl
-          endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-          user: ${{ secrets.GRAPHDB_USER }}
-          password: ${{ secrets.GRAPHDB_PASSWORD }}
-          graph: "https://w3id.org/um/ids/shapes/github"
+  #     - name: Upload GitHub RDF file to the triplestore
+  #       uses: MaastrichtU-IDS/RdfUpload@master
+  #       with:
+  #         file: shapes-of-you-rdf/shapes-of-you-rdf.ttl
+  #         endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+  #         user: ${{ secrets.GRAPHDB_USER }}
+  #         password: ${{ secrets.GRAPHDB_PASSWORD }}
+  #         graph: "https://w3id.org/um/ids/shapes/github"
 
 
 

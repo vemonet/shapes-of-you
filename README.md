@@ -46,6 +46,9 @@ This web service is composed of those 4 main parts:
 - rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 - dc: <http://purl.org/dc/elements/1.1/>
 - dcterms: <http://purl.org/dc/terms/>
+- owl: http://www.w3.org/2002/07/owl#
+- skos: http://www.w3.org/2004/02/skos/core#
+- sio: http://semanticscience.org/resource/
 - schema: <https://schema.org/>
 - sh: <http://www.w3.org/ns/shacl#>
 - shex: <http://www.w3.org/ns/shex#>
@@ -62,6 +65,9 @@ This web service is composed of those 4 main parts:
     * `sh:Shape`
     * `shex:Schema`
     * `sh:SPARQLFunction` - additional properties: `void:sparqlEndpoint`, `schema:query`
+    * `owl:Ontology`
+    * `skos:ConceptScheme`
+    * OBO
 * `schema:CodeRepository`
   * Properties:
     * `rdfs:comment`
@@ -147,19 +153,19 @@ pip3 install -r etl/requirements.txt
 Retrieve shapes files from [GitHub GraphQL API](https://developer.github.com/v4/explorer):
 
 ```bash
-python3 etl/index_shapes_files.py
+python3 etl/index_shapes.py github
 ```
 
 Retrieve shapes files from [GitLab API](https://docs.gitlab.com/ee/api/) using the [`python-gitlab` package](https://pypi.org/project/python-gitlab/):
 
 ```bash
-python3 etl/index_shapes_files.py gitlab
+python3 etl/index_shapes.py gitlab
 ```
 
 Retrieve shapes files from [Gitee API](https://gitee.com/api/v5/swagger#/getV5SearchRepositories):
 
 ```bash
-python3 etl/index_shapes_files.py gitee
+python3 etl/index_shapes.py gitee
 ```
 
 ## Contribute 👩‍💻
