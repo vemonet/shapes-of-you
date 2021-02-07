@@ -12,7 +12,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
       with:
@@ -22,15 +21,15 @@ jobs:
       with:
         node-version: 14
 
-    - name: Install dependencies, build and deploy
-      # env: 
-      #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Install, build and deploy
       run: |
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
         yarn install
         yarn build
       # yarn deploy
+      # env: 
+      #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Deploy on GitHub
       uses: JamesIves/github-pages-deploy-action@3.7.1
@@ -40,5 +39,10 @@ jobs:
         FOLDER: web-build
         CLEAN: true
 
-    # - name: Deploy on GitHub
-    #   run: yarn deploy
+    # - name: Fix custom GitHub Pages URL
+    #   uses: octokit/request-action@v2.x
+    #   with:
+    #     route: PUT /repos/vemonet/shapes-of-you/pages
+    #     cname: "index.semanticscience.org"
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
