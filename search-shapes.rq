@@ -17,9 +17,11 @@ PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
 SELECT DISTINCT * WHERE { 
     ?shapeFileUri a schema:SoftwareSourceCode ;
+        a ?shape_type ;
         rdfs:label ?label ;
         dc:source ?repository ;
         dcterms:hasPart ?shapes .
+    FILTER(?shape_type != schema:SoftwareSourceCode)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }

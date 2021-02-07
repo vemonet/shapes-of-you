@@ -6,3 +6,4 @@ SPARQLWrapper
 PyShExC
 PyYAML
 obonet
+requests

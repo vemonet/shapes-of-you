@@ -1,4 +1,4 @@
-# Contributing
+# Contributing 👩‍💻
 
 When contributing to this repository, please first discuss the change you wish to make via an [issue](https://github.com/MaastrichtU-IDS/shapes-of-you/issues) if applicable.
 
@@ -19,7 +19,7 @@ cd shapes-of-you
 git checkout -b my-branch
 ```
 
-3. See how to run the API in development at https://github.com/MaastrichtU-IDS/shapes-of-you 💠
+3. Run the API in development on http://localhost:19006 🛩
 
 ```bash
 yarn install
@@ -29,7 +29,33 @@ yarn web
 4. Add your change in this branch 📝
 5. Send a pull request to the `main` branch when your changes are done 📤
 
-## Note about current development
+## Pull Request process ✔️
+
+1. Before sending a pull request make sure the project still work as expected with the new changes properly integrated 📝
+2. [Send a pull request](https://github.com/MaastrichtU-IDS/shapes-of-you/compare) to the `main` branch 📤
+3. Project contributors will review your change as soon as they can ✔️
+
+## Planned improvements ➕
+
+- [x] Improve filtering and faceted search for shapes (feedbacks welcome!)
+- [ ] Regex search filter
+- [ ] Add page for each file: download the file, parse it with JavaScript, and display relevant infos: metadata, classes, properties, instances, subClassOf hierarchy...
+- [ ] Allow to easily add a new GitLab registry (API key required as secret) 
+- [ ] Filtering files/repositories based on categories, could be GitHub topics to start (e.g. only show most popular topics, and filter)
+- [ ] Index more types of files (OWL ontologies, OpenAPI YAML)
+- [ ] Parse ShEx files to retrieve the defined shapes (if possible)
+- [ ] Star shapes files with your SOLID account
+- [ ] Store the data as [Nanopublications](http://nanopub.org/wordpress/), instead of requiring the deployment of a triplestore
+
+> Feel free to comment on this plan, or propose new improvements by creating an issue in this GitHub repository.
+
+### Implement as a Progressive Web App ⚡️
+
+Development did not started yet. [PWA](https://web.dev/progressive-web-apps) would allow to store the web app bundle and the SPARQL data (to avoid querying everytime, we can update quietly in the background). Here are some interesting pointers:
+
+* Store data using a PWA: https://www.monterail.com/blog/pwa-offline-dynamic-data
+
+* MaterialUI PWA example: https://github.com/Atyantik/example-pawjs-material-ui
 
 ### Use SOLID pod 👤
 
@@ -44,7 +70,7 @@ To give permissions to Shapes of you to add data to your pod:
 * Update permissions by adding the web app URL: https://maastrichtu-ids.github.io/shapes-of-you
   * You can also add the localhost URL for development: http://localhost:19006
 
-### Improving the faceted search
+### Improving the faceted search 🔎
 
 We have a use-case with multiple types of inputs for the different facets (checkboxes for file types, MaterialUI autocomplete for repositories, text box for full text search), and we want the options (e.g. filter displayed repositories based on the search input)
 
@@ -54,10 +80,3 @@ We could not find a good dynamic faceted search, the most relevant options for R
 * [eduardobcastro/in-memory-faceted-search](https://github.com/eduardobcastro/in-memory-faceted-search)
 
 Currently we prefer to implement it ourself (search for "faceted" in the **ShapeRegistry** page). But it could be tricky when we will start to have more categories to filter on.
-
-## Pull Request process
-
-1. Before sending a pull request make sure the project still work as expected with the new changes properly integrated 📝
-2. [Send a pull request](https://github.com/MaastrichtU-IDS/shapes-of-you/compare) to the `main` branch 📤
-3. Project contributors will review your change as soon as they can ✔️
-

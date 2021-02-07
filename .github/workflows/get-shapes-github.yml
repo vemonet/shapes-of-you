@@ -7,8 +7,8 @@ on:
         required: true
         default: 'false'
   schedule:
-    # Everyday at 01:00 and 13:00
-    - cron:  '00 01,13 * * *'
+    # Everyday at 01:00 
+    - cron:  '00 01 * * *'
   push:
     branches: [ main ]
     paths:
@@ -127,6 +127,70 @@ jobs:
         name: shapes-of-you-gitlab-rdf
         path: shapes-of-you-rdf.ttl
 
+  query-gitee-for-shapes:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - uses: actions/cache@v2
+      name: Configure pip caching
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    # Important part here (can be reused to run locally):
+    - name: Install Python dependencies
+      run: |
+        python -m pip install -r etl/requirements.txt
+
+    - name: Run Python script to query GitHub GraphQL API
+      env:
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+      run: |
+        python etl/get_shapes_from_github.py gitee
+
+    - name: Upload failed shapes report as artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: failed-shapes-gitlab-report
+        path: FAILED_IMPORT_REPORT.md
+
+    - name: Commit and push FAILED_IMPORT_REPORT.md file in report branch
+      run: |
+        mv FAILED_IMPORT_REPORT.md tmp-FAILED_IMPORT_GITEE_REPORT.md
+        git stash
+        git fetch
+        git checkout report
+        mv tmp-FAILED_IMPORT_GITEE_REPORT.md FAILED_IMPORT_GITEE_REPORT.md
+        git diff
+        git config --global user.email "vincent.emonet@gmail.com"
+        git config --global user.name "Vincent Emonet"
+        git add FAILED_IMPORT_GITEE_REPORT.md
+        git commit -m "Update FAILED_IMPORT_GITEE_REPORT.md" || exit 0
+        git push
+
+    - name: Upload Gitee RDF output as artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: shapes-of-you-gitee-rdf
+        path: shapes-of-you-rdf.ttl
+
+    - name: Upload Gitee RDF file to the triplestore
+      uses: MaastrichtU-IDS/RdfUpload@master
+      with:
+        file: shapes-of-you-rdf.ttl
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+        graph: "https://w3id.org/um/ids/shapes/gitee"
+
+
   upload-rdf:
     needs: [query-github-for-shapes, query-gitlab-for-shapes]
     runs-on: ubuntu-latest
@@ -167,6 +231,7 @@ jobs:
           user: ${{ secrets.GRAPHDB_USER }}
           password: ${{ secrets.GRAPHDB_PASSWORD }}
           graph: "https://w3id.org/um/ids/shapes/gitlab"
+
 
       # - uses: MaastrichtU-IDS/sparql-operations-action@v1
       #   with:

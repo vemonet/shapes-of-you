@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
-import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper } from "@material-ui/core";
+import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper, CircularProgress } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
 import { List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
@@ -421,6 +421,12 @@ export default function ShapeRegistry() {
         />
       </Paper>
 
+      {state.shapes_files_list.length < 1 && (
+        <div style={{textAlign: 'center'}}>
+          <CircularProgress style={{padding: theme.spacing(10, 10)}} />
+        </div>
+      )}
+
       {/* Display Shapes files */}
       {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(project: any, key: number){
         return <Paper key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
@@ -498,9 +504,11 @@ PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
 SELECT DISTINCT * WHERE { 
     ?shapeFileUri a schema:SoftwareSourceCode ;
+        a ?shape_type ;
         rdfs:label ?label ;
         dc:source ?repository ;
         dcterms:hasPart ?shapes .
+    FILTER(?shape_type != schema:SoftwareSourceCode)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }

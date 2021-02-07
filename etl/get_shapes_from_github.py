@@ -6,12 +6,14 @@ import os
 import sys
 import shutil
 import urllib
+import requests
 from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
 from rdflib.plugins.sparql.parser import Query, UpdateUnit
 from rdflib.plugins.sparql.processor import translateQuery
 import yaml
+import json
 import re
 
 import obonet
@@ -24,6 +26,7 @@ SPARQL_ENDPOINT_USERNAME='import_user'
 SPARQL_ENDPOINT_PASSWORD = os.getenv('SPARQL_PASSWORD')
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
+GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -52,7 +55,8 @@ def main(argv):
   elif git_registry == 'gitlab':
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
     shapes_graph = fetch_from_gitlab(shapes_graph, gl)
-  # curl --header "PRIVATE-TOKEN: GITLAB_TOKEN" "https://gitlab.com/api/v4/search?scope=projects&search=owl%20ontology"
+  elif git_registry == 'gitee':
+    shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN)
 
   shapes_graph.serialize('shapes-of-you-rdf.ttl', format='turtle')
 
@@ -64,6 +68,8 @@ def generate_github_file_url(repo_url, filepath, branch):
   # file_url = ''
   if repo_url.startswith('https://gitlab.com/'):
     file_url = repo_url + '/-/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
+  elif repo_url.startswith('https://gitee.com/'):
+    file_url = repo_url + '/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
   else:
     file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
     file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
@@ -471,9 +477,6 @@ def fetch_from_gitlab(shapes_graph, gl):
       gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
       # print(gitlab_repos_list)
       for repo_json in gitlab_repos_list:
-        # Check shapes parsed
-        for shape in shapes_graph.subjects(RDF.type, SCHEMA['SoftwareSourceCode']):
-          print(shape)
         # repo_json = repository["repo"]
         # repo_url = repo_json["http_url_to_repo"]
         repo_url = repo_json["web_url"]
@@ -493,6 +496,35 @@ def fetch_from_gitlab(shapes_graph, gl):
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
     
     return shapes_graph
+
+def fetch_from_gitee(shapes_graph, token):
+    # topics = ['ontology', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
+    topics = ['ontology']
+    # , 'ontology'
+    # curl --header "PRIVATE-TOKEN: GITLAB_TOKEN" "https://gitlab.com/api/v4/search?scope=projects&search=owl%20ontology"
+    # https://gitee.com/api/v5/search/repositories?access_token=  &page=1&per_page=20&order=desc
+    for search_topic in topics:
+      gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
+      for repo_json in gitee_repos_list:
+        repo_url = repo_json["html_url"].rstrip('.git')
+        print(repo_url)
+        if 'default_branch' in repo_json:
+          branch = repo_json['default_branch']
+        else:
+          branch = 'master'
+          print('No default_branch found for repo_url, using master')
+        repo_descriptions = []
+        if repo_json["name"]:
+          repo_descriptions.append(repo_json["name"])
+        if repo_json["description"]:
+          repo_descriptions.append(repo_json["description"])
+
+        repo_description = ' - '.join(repo_descriptions)
+        # repo_description = repo_json["shortDescriptionHTML"]
+        shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+    
+    return shapes_graph
+# https://gitee.com/api/v5/search/repositories?access_token=93442df37161134a510b5a3551864349&page=1&per_page=20&order=desc
 
 
 if __name__ == "__main__":
