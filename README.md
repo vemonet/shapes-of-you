@@ -137,7 +137,7 @@ You can find the scripts and requirements in the [`etl`](https://github.com/vemo
 Use this command to locally define the `GITHUB_TOKEN` and `GITLAB_TOKEN` environment variable required to run the script:
 
 ```bash
-export GITHUB_TOKEN=MYGITHUBTOKEN000
+export API_GITHUB_TOKEN=MYGITHUBTOKEN000
 export GITLAB_TOKEN=MYGITLABTOKEN000
 export GITEE_TOKEN=MYGITEETOKEN000
 ```

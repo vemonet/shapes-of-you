@@ -26,7 +26,7 @@ SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-regist
 SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'
 SPARQL_ENDPOINT_USERNAME='import_user'
 SPARQL_ENDPOINT_PASSWORD = os.getenv('SPARQL_PASSWORD')
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+GITHUB_TOKEN = os.environ.get("API_GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
