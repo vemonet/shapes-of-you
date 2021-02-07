@@ -67,6 +67,9 @@ export default function SemanticIndex() {
     checkbox_shacl: true,
     checkbox_shex: true,
     checkbox_sparql: true,
+    checkbox_owl: true,
+    checkbox_skos: true,
+    checkbox_obo: true,
     page: 1,
     shapes_per_page: 100,
   });
@@ -257,6 +260,11 @@ export default function SemanticIndex() {
   function handleAutocompleteRepositories(event: any, value: string[]) {
     updateState({ repositories_autocomplete: value})
   }
+
+//   PREFIX schema: <https://schema.org/>
+// PREFIX sh: <http://www.w3.org/ns/shacl#>
+// PREFIX shex: <http://www.w3.org/ns/shex#>
+// PREFIX void: <http://rdfs.org/ns/void#>
   
   // Each faceted search filter can be added here (on the shapes files array)
   // Could not find good dynamic faceted search, best is https://github.com/ebi-gene-expression-group/scxa-faceted-search-results
@@ -266,9 +274,12 @@ export default function SemanticIndex() {
         // Filter by repo if 1 selected
         if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
           // Filter depending on shacl/shex checkboxes:
-          if ((state.checkbox_shex === true && shapes_file.label.endsWith('.shex'))
-          || (state.checkbox_sparql === true && (shapes_file.label.endsWith('.rq') || shapes_file.label.endsWith('.sparql')) )
-          || (state.checkbox_shacl === true && !shapes_file.label.endsWith('.shex') && !shapes_file.label.endsWith('.rq'))
+          if ((state.checkbox_shex === true && shapes_file.shape_type == 'http://www.w3.org/ns/shex#Schema')
+          || (state.checkbox_sparql === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
+          || (state.checkbox_shacl === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#Shape')
+          || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
+          || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
+          || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
           // TODO: improve, some RDF files are shex)
           ) {
             // Filter on search:
@@ -330,13 +341,13 @@ export default function SemanticIndex() {
       </Typography>
 
       <Typography style={{marginBottom: theme.spacing(2)}}>
-        To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet, PyShExC). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
+        To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
       </Typography>
 
-      <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Get+shapes+from+GitHub%22">
-        <img src="https://github.com/vemonet/shapes-of-you/workflows/Get%20shapes%20from%20GitHub/badge.svg" 
+      {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22">
+        <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" 
         style={{marginBottom: theme.spacing(2)}} />
-      </a>
+      </a> */}
 
       {/* <Typography>
         Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
@@ -469,6 +480,36 @@ export default function SemanticIndex() {
                 /> }
               label="SPARQL"
             />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.checkbox_owl}
+                  onChange={handleCheckboxes}
+                  name="checkbox_owl"
+                  color="primary"
+                /> }
+              label="OWL"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.checkbox_skos}
+                  onChange={handleCheckboxes}
+                  name="checkbox_skos"
+                  color="primary"
+                /> }
+              label="SKOS"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.checkbox_obo}
+                  onChange={handleCheckboxes}
+                  name="checkbox_obo"
+                  color="primary"
+                /> }
+              label="OBO"
+            />
           </FormGroup>
           <TextField
             id="shapes-per-page"
@@ -595,6 +636,7 @@ export default function SemanticIndex() {
   )
 }
 
+// SPARQL select query to get all shapes files without the list of their shapes (much faster)
 const getFilesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcterms: <http://purl.org/dc/terms/>

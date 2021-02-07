@@ -47,7 +47,8 @@ jobs:
       env:
         GIT_SERVICE: ${{ matrix.git-service }}
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-        SPARQL_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
       run: |
         python etl/index_shapes.py $GIT_SERVICE
 

@@ -48,7 +48,7 @@ This web service is composed of those 4 main parts:
 - dcterms: <http://purl.org/dc/terms/>
 - owl: http://www.w3.org/2002/07/owl#
 - skos: http://www.w3.org/2004/02/skos/core#
-- sio: http://semanticscience.org/resource/
+- sio: <http://semanticscience.org/resource/SIO_>
 - schema: <https://schema.org/>
 - sh: <http://www.w3.org/ns/shacl#>
 - shex: <http://www.w3.org/ns/shex#>
@@ -67,7 +67,7 @@ This web service is composed of those 4 main parts:
     * `sh:SPARQLFunction` - additional properties: `void:sparqlEndpoint`, `schema:query`
     * `owl:Ontology`
     * `skos:ConceptScheme`
-    * OBO
+    * `sio:000623` (OBO ontology)
 * `schema:CodeRepository`
   * Properties:
     * `rdfs:comment`

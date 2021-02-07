@@ -66,7 +66,7 @@ export default function NavBar() {
         <div className="flexGrow"></div>
         <a href="https://github.com/vemonet/shapes-of-you/tree/report" 
             target="_blank" rel="noopener noreferrer" className={classes.linkButton}>
-          <Tooltip title='Reports for the files we failed to process, and that need to be fixed by their owners'>
+          <Tooltip title='Reports for the files which failed to process, and that need to be fixed by their owners. Also known as the semantic web of shame'>
             <Button className={classes.menuButton}>
               <AssignmentIcon />
               &nbsp;Import reports
