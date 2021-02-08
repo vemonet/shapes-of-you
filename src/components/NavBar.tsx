@@ -38,7 +38,8 @@ const useStyles = makeStyles(theme => ({
   },
   linkButton: {
     textTransform: 'none',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    margin: theme.spacing(0, 1)
   },
   linkLogo: {
     // Seems to fit the 48px navbar height...
@@ -75,23 +76,27 @@ export default function NavBar() {
             SPARQL
           </Button>
         </Tooltip>
-        {/* <Link to="/create-doap" className={classes.linkButton}>
-          <Tooltip title='Create a DOAP description for your project'>
-            <Button className={classes.menuButton}>
-              <CreateNewFolderIcon />
-            </Button>
-          </Tooltip>
-        </Link> */}
         <div className="flexGrow"></div>
-        <a href="https://github.com/vemonet/shapes-of-you/tree/report" 
+        
+        <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22"
+          className={classes.linkButton} target="_blank" rel="noopener noreferrer">
+          <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" />
+        </a>
+        <a href="https://github.com/vemonet/shapes-of-you/tree/report"
+          className={classes.linkButton} target="_blank" rel="noopener noreferrer">
+            <Tooltip title='Reports for the files which failed to process, and that need to be fixed by their owners. Also known as the semantic web of shame'>
+            <img src="https://img.shields.io/badge/📎%20Index%20shapes-reports-ffa000" />
+          </Tooltip>
+        </a>
+        {/* <a href="https://github.com/vemonet/shapes-of-you/tree/report" 
             target="_blank" rel="noopener noreferrer" className={classes.linkButton}>
           <Tooltip title='Reports for the files which failed to process, and that need to be fixed by their owners. Also known as the semantic web of shame'>
             <Button className={classes.menuButton}>
               <AssignmentIcon />
-              &nbsp;Import reports
+              &nbsp;Index reports
             </Button>
           </Tooltip>
-        </a>
+        </a> */}
         {/* <Link to="/about" className={classes.linkButton}>
           <Tooltip title='About the Institute of Data Science'>
             <Button className={classes.menuButton}>

@@ -363,10 +363,10 @@ export default function SemanticIndex() {
                 To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
               </Typography>
 
-              <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22">
+              {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22" target="_blank" rel="noopener noreferrer">
                 <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" 
                 style={{marginBottom: theme.spacing(2)}} />
-              </a>
+              </a> */}
 
               {/* <Typography>
                 Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
