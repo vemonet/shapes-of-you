@@ -40,7 +40,7 @@ SIO = Namespace("http://semanticscience.org/resource/")
 def main(argv):
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
-  # Reset failed shapes report file
+  # Reset report file
   with open(root / '../REPORT.md', 'w') as f:
     f.write('## Fails loading files to `rdflib`\n' +
       '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
@@ -51,15 +51,31 @@ def main(argv):
   else:
     git_registry = 'github'
 
+  topics = None
+  if len(argv) > 2:
+    topics = argv[2].lower().split(',')
+
+  # Default topics list is used if not provided
   if git_registry == 'github':
-    shapes_graph = fetch_shape_files(shapes_graph, client, GITHUB_TOKEN)
+    if not topics:
+      topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
+    shapes_graph = fetch_shape_files(shapes_graph, client, GITHUB_TOKEN, topics)
+
   elif git_registry == 'github-extras':
     shapes_graph = fetch_extra_shape_files(shapes_graph, client, GITHUB_TOKEN)
+
   elif git_registry == 'gitlab':
+    if not topics:
+      topics = ['ontology', 'owl', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
-    shapes_graph = fetch_from_gitlab(shapes_graph, gl)
+    shapes_graph = fetch_from_gitlab(shapes_graph, gl, topics)
+
   elif git_registry == 'gitee':
-    shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN)
+    if not topics:
+      topics = ['ontology']
+      # topics = ['ontology', 'ontologies', 'sparql', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
+      # topics = ['ontologies', 'sparql']
+    shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, topics)
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
 
@@ -396,11 +412,8 @@ query {
 )
 
 # Retrieve releases in projects returned by the GraphQL calls
-def fetch_shape_files(shapes_graph, client, oauth_token):
-    # topics = ['obofoundry']
-    topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
-    # , 'ontology'
-
+def fetch_shape_files(shapes_graph, client, oauth_token, topics):
+    print('Indexing topics: ' + str(topics))
     for github_topic in topics:
       has_next_page = True
       after_cursor = None
@@ -472,10 +485,8 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
   return shapes_graph
 
 # Fetch files from GitLab
-def fetch_from_gitlab(shapes_graph, gl):
-    topics = ['owl', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
-    # 'ontology'
-
+def fetch_from_gitlab(shapes_graph, gl, topics):
+    print('Indexing topics: ' + str(topics))
     for search_topic in topics:
       gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
       # print(gitlab_repos_list)
@@ -500,11 +511,8 @@ def fetch_from_gitlab(shapes_graph, gl):
     
     return shapes_graph
 
-def fetch_from_gitee(shapes_graph, token):
-    # topics = ['ontology', 'ontologies', 'sparql', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
-    # topics = ['ontologies', 'sparql']
-    topics = ['ontology']
-
+def fetch_from_gitee(shapes_graph, token, topics):
+    print('Indexing topics: ' + str(topics))
     # Record time to avoid hitting GitHub Actions limits
     time_start = datetime.now()
     
@@ -517,16 +525,18 @@ def fetch_from_gitee(shapes_graph, token):
 
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
+      print(token)
+      print(gitee_repos_list)
       for repo_json in gitee_repos_list:
-        runtime = datetime.now() - time_start
-        # Stop if more than 5h45
-        if runtime > timedelta(minutes=345):
-          print('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
-          stopping_job = True
-          repo_missing = gitee_repos_list[gitee_repos_list.index(repo_json):]
-          add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
-              + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
-          break
+        # runtime = datetime.now() - time_start
+        # # Stop if more than 5h45
+        # if runtime > timedelta(minutes=345):
+        #   print('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
+        #   stopping_job = True
+        #   repo_missing = gitee_repos_list[gitee_repos_list.index(repo_json):]
+        #   add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
+        #       + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
+        #   break
 
         repo_url = repo_json["html_url"].rstrip('.git')
         print(str(datetime.now()) + ' Processing ' + repo_url)

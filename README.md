@@ -150,22 +150,22 @@ Install requirements:
 pip3 install -r etl/requirements.txt
 ```
 
-Retrieve shapes files from [GitHub GraphQL API](https://developer.github.com/v4/explorer):
+Retrieve shapes files for topics (provided separated by comma without spaces) from the [GitHub GraphQL API](https://developer.github.com/v4/explorer):
 
 ```bash
-python3 etl/index_shapes.py github
+python3 etl/index_shapes.py github owl,shacl-shapes,shex,grlc,skos,obofoundry
 ```
 
 Retrieve shapes files from [GitLab API](https://docs.gitlab.com/ee/api/) using the [`python-gitlab` package](https://pypi.org/project/python-gitlab/):
 
 ```bash
-python3 etl/index_shapes.py gitlab
+python3 etl/index_shapes.py gitlab ontology,owl,shacl,shex,sparql,skos,obofoundry
 ```
 
 Retrieve shapes files from [Gitee API](https://gitee.com/api/v5/swagger#/getV5SearchRepositories):
 
 ```bash
-python3 etl/index_shapes.py gitee
+python3 etl/index_shapes.py gitee ontology,sparql
 ```
 
 ## Contribute 👩‍💻
