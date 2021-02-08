@@ -23,14 +23,19 @@ jobs:
       matrix:
         include:
         - git-service: github
+          run-label: main-run
           search-topics: owl,shacl-shapes,shex,grlc,skos,obofoundry
         - git-service: github
+          run-label: openapi-run
           search-topics: openapi,smartapi,ncats-translator,translator-api
         - git-service: gitlab
+          run-label: main-run
           search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
         - git-service: gitee
+          run-label: main-run
           search-topics: ontology,sparql
         - git-service: github-extra
+          run-label: main-run
           search-topics: extra
 
     runs-on: ubuntu-latest
@@ -66,32 +71,33 @@ jobs:
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: report-${{ matrix.git-service }}
+        name: report-${{ matrix.git-service }}-${{ matrix.run-label }}
         path: REPORT.md
 
-    - name: Commit and push report-${{ matrix.git-service }}.md file in report branch
+    - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.run-label }}.md file in report branch
       env:
         GIT_SERVICE: ${{ matrix.git-service }}
+        RUN_LABEL: ${{ matrix.run-label }}
       run: |
         mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
         git checkout report
-        mv tmp-REPORT.md report-$GIT_SERVICE.md
+        mv tmp-REPORT.md report-$GIT_SERVICE-$RUN_LABEL.md
         git diff
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
-        git add report-$GIT_SERVICE.md
-        git commit -m "Update report-$GIT_SERVICE.md" || exit 0
+        git add report-$GIT_SERVICE-$RUN_LABEL.md
+        git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
         git push
 
-    - name: Upload ${{ matrix.git-service }} RDF output as artifact
+    - name: Upload ${{ matrix.git-service }}-${{ matrix.run-label }} RDF output as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: shapes-rdf-${{ matrix.git-service }}
+        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.run-label }}
         path: shapes-rdf.ttl
 
-    - name: Upload ${{ matrix.git-service }} RDF file to the triplestore
+    - name: Upload ${{ matrix.git-service }}-${{ matrix.run-label }} RDF file to the triplestore
       uses: MaastrichtU-IDS/RdfUpload@master
       with:
         file: shapes-rdf.ttl
