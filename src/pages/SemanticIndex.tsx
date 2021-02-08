@@ -4,13 +4,14 @@ import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper, Circula
 import { IconButton, InputBase } from "@material-ui/core";
 import { List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
-import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CodeIcon from '@material-ui/icons/Code';
 import BubbleChartIcon from '@material-ui/icons/BubbleChart';
 import SendIcon from '@material-ui/icons/Send';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import DeviceHubIcon from '@material-ui/icons/DeviceHub';
 import GavelIcon from '@material-ui/icons/Gavel';
+import OpenAPIIcon from '@material-ui/icons/Adjust';
 
 import axios from 'axios';
 
@@ -378,7 +379,7 @@ export default function SemanticIndex() {
         <ListItem>
           <ListItemAvatar>
             <Avatar>
-              <CheckBoxIcon />
+              <CheckCircleIcon />
             </Avatar>
           </ListItemAvatar>
           <ListItemText
@@ -415,7 +416,17 @@ export default function SemanticIndex() {
             </Avatar>
           </ListItemAvatar>
           <ListItemText>
-            <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, with all terms they contain
+            <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, with parse all terms they contain
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <OpenAPIIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText>
+            <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: add the topic <code>openapi</code>, we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
           </ListItemText>
         </ListItem>
       </List>

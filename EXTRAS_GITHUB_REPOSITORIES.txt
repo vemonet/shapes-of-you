@@ -70,3 +70,9 @@ CLARIAH/wp4-cow-conversions
 CLARIAH/wp4-queries
 CLARIAH/wp4-stories
 CLARIAH/ATM
+NCATSTranslator/ReasonerAPI
+WengLab-InformaticsResearch/cohd_api
+di2ag/ConnectionsHypothesisProviderAPI
+NCATS-Tangerine/icees-api
+broadinstitute/genetics-kp-dev
+broadinstitute/molecular-data-provider
