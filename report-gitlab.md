@@ -2,6 +2,48 @@
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
+File: https://gitlab.com/Mr-DO/modsem_project20-21/-/raw/master/modsem_project20-21.owl
+
+In repository: https://gitlab.com/Mr-DO/modsem_project20-21
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/modsem_project20-21.owl:30:194: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://gitlab.com/it21208/Ontology-for-University-of-Strathclyde-Sport-s-Facility/-/raw/master/University+Of+Strathclyde+Centre+For+Sport+Recreation.owl
+
+In repository: https://gitlab.com/it21208/Ontology-for-University-of-Strathclyde-Sport-s-Facility
+> 'strath.ac.uk or by telephone on 0141 548 4186.' is not a valid language tag!
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/pizza.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pizza.owl:46:95: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/mol_only3.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mol_only3.owl:17:46: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/example_owl_1_for_testing.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/example_owl_1_for_testing.owl:164:34: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/ont2.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ont2.owl:35:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/ontologyfile.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologyfile.owl:158:34: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
 File: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl
 
 In repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
