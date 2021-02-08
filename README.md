@@ -11,7 +11,7 @@
 
 **Shapes of you** is a global index for semantically descriptive files published to public Git repositories ([GitHub](https://github.com), [GitLab](https://gitlab.com), and [Gitee](https://gitee.com/)).
 
-Add one of these topics to your GitHub repository, we automatically index files from public repositories everyday at 1:00 and 13:00 🕐
+Add one of those topics to your [GitHub](https://github.com) repository, or mention it in your project description on [GitLab](https://gitlab.com) and [Gitee](https://gitee.com), we automatically index files from public repositories everyday at 1:00 GMT+1 🕐
 
 * **SHACL shapes**: add the topic `shacl-shapes`, we index RDF files such as `.ttl`, `.rdf`, `.jsonld`, etc), with all `sh:NodeShape` they contain
 * **ShEx expressions**: add the topic `shex`, we index `.shex` files, and ShEx shapes defined in RDF files
@@ -19,8 +19,7 @@ Add one of these topics to your GitHub repository, we automatically index files 
 * **OWL ontologies**: add the topic `owl`, we index all RDF files with all `owl:Class`  they contain
 * **SKOS vocabularies**: add the topic `skos`, we index all RDF files with all `skos:Concept` they contain
 * **OBO ontologies**: add the topic `obo`, we index all `.obo` files with all terms they contain
-
-We also index the same topics in GitLab and Gitee, there is no topic on those websites, so just mention it in your project name or description.
+* **OpenAPI specifications**: add the topic `openapi`, we index `.yml`, `.yaml` and `.json` files, and parse the spec to retrieve API metadata
 
 Additional GitHub repositories can be included in the file [`EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_GITHUB_REPOSITORIES.txt) (if not tagged with the right topic)
 
@@ -74,7 +73,7 @@ This web service is composed of those 4 main parts:
   * Properties:
     * `rdfs:comment`
 * `schema:EntryPoint` (or `void:Dataset`, or https://w3id.org/vocab/sdm#TripleStore)
-  * `void:sparqlEndpoint`
+  * `void:sparqlEndpoint`? (not used currently, we already use the endpoint URL as subject URI)
 
 ## Run web app in development 🏗
 

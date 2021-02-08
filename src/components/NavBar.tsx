@@ -80,11 +80,13 @@ export default function NavBar() {
 
         <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22"
           className={classes.linkButton} target="_blank" rel="noopener noreferrer">
-          <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" />
+          <Tooltip title='Checkout the last workflow runs to index shapes.'>
+            <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" />
+          </Tooltip>
         </a>
         <a href="https://github.com/vemonet/shapes-of-you/tree/report"
           className={classes.linkButton} target="_blank" rel="noopener noreferrer">
-            <Tooltip title='Reports for the files which failed to process, and that need to be fixed by their owners. Also known as the semantic web of shame'>
+          <Tooltip title='Reports for the files which failed to process, and that need to be fixed by their owners. Also known as the semantic web of shame'>
             <img src="https://img.shields.io/badge/📎%20Index%20shapes-reports-ffa000" />
           </Tooltip>
         </a>

@@ -14,6 +14,8 @@ import GavelIcon from '@material-ui/icons/Gavel';
 import OpenAPIIcon from '@material-ui/icons/Adjust';
 import CloseIcon from '@material-ui/icons/Close';
 
+import Alert from '@material-ui/lab/Alert';
+
 import axios from 'axios';
 import { Doughnut, Pie, Bar, HorizontalBar } from 'react-chartjs-2';
 import 'chartjs-plugin-labels';
@@ -76,6 +78,7 @@ export default function SemanticIndex() {
     checkbox_skos: true,
     checkbox_obo: true,
     checkbox_openapi: true,
+    show_pwa_alert: true,
     page: 1,
     shapes_per_page: 100,
     show_info_card: true,
@@ -93,6 +96,11 @@ export default function SemanticIndex() {
   // componentDidMount: Query SPARQL endpoint to get the shapes files infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
+
+    // Check if PWA, and propose to install it if not!
+    if (window.matchMedia('(display-mode: standalone)').matches) {  
+      updateState({ show_pwa_alert: false })
+    }  
 
     // Check SOLID pod for a shapes preference file
     // https://github.com/solid/react-components/blob/master/demo/app.jsx
@@ -370,8 +378,17 @@ export default function SemanticIndex() {
       {/* <Typography variant="h4" style={{textAlign: 'center'}}>
         💠 Shapes of You
       </Typography> */}
+
+      {state.show_pwa_alert &&
+        <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}> 
+          This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click! 
+          <br/>Installing the app makes loading faster, and provides a better global experience.
+          <br/>On Chrome click the + button to the right in the URL bar. Checkout <a href="https://medium.com/progressivewebapps/how-to-install-a-pwa-to-your-device-68a8d37fadc1" className={classes.link} target="_blank" rel="noopener noreferrer">this article for more details</a> about installing on various platforms.
+        </Alert>
+      }
+
       <LoggedIn>
-        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
+        <Typography style={{textAlign: 'center', margin: theme.spacing(2, 0)}}>
           Welcome to your semantic resources index <Value src="user.name"/>!
         </Typography>
         {/* <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>

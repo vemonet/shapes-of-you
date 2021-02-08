@@ -1,0 +1,21 @@
+#+ endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
+#+ endpoint_in_url: False
+#+ summary:  List all active SPARQL endpoints
+#+ description: List all active SPARQL endpoints retrieved from SPARQL query file parsing
+#+ tags:
+#+   - Overview
+#+ method: GET
+# pagination: 100
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shex: <http://www.w3.org/ns/shex#>
+PREFIX void: <http://rdfs.org/ns/void#>
+SELECT DISTINCT ?sparql_endpoint (count(?query_file) AS ?associated_files) WHERE { 
+  ?sparql_endpoint a schema:EntryPoint .
+  ?query_file void:sparqlEndpoint ?sparql_endpoint .
+  # OPTIONAL { ?query_file void:sparqlEndpoint ?sparql_endpoint . }
+} GROUP BY ?sparql_endpoint
