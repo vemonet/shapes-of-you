@@ -13,7 +13,7 @@ git clone https://github.com/vemonet/shapes-of-you.git
 cd shapes-of-you
 ```
 
-3. Create a new branch from the `main` branch and add your changes to this branch 🕊️
+3. Create a new branch from the `main` branch, and go to this branch 🕊️
 
 ```bash
 git checkout -b my-branch
@@ -56,10 +56,14 @@ yarn dev
 
 ## Maintenance notices 🔧
 
+Potential future maintenance issues, and how to fix them:
+
 * GitHub/GitLab/Gitee APIs could change, or get deprecated in the future. Updating to a new API will not be hard though, as we just rely on it to list the interesting repos for a topic, and get some basic metadata. The rest is done by `git clone`. Checkout the `fetch_from_` functions in the `etl/index-shapes.py` file to change the different services API queries and logic.
 * GitHub/GitLab/Gitee raw file URL model could change. We just need to change the `generate_github_file_url` function in `etl/index-shapes.py` to adapt it to the new URL.
 
 ## Security notices 🛡
+
+Some things to take into consideration if you are running this system:
 
 * Use API tokens with minimal permissions granted for git services (to avoid publicly indexing your own private repositories)
 * Do not use one of your regular password for the triplestore stored as secret.
