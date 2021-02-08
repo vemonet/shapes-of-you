@@ -356,17 +356,17 @@ export default function SemanticIndex() {
             />
             <CardContent>
               <Typography style={{marginBottom: theme.spacing(2)}}>
-                Shapes of you is the best place to <b>search and explore existing semantic shapes, ontologies, vocabularies and queries</b>. Do you need to validate RDF using SHACL or ShEx? Or do you want to find SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprise!
+                Shapes of you is the best place to search and explore existing semantic shapes, ontologies, vocabularies and queries. Searching an ontology for datasets? Needing to validate RDF using SHACL or ShEx? Finding SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprises.
               </Typography>
 
               <Typography style={{marginBottom: theme.spacing(2)}}>
                 To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
               </Typography>
 
-              {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22">
+              <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22">
                 <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" 
                 style={{marginBottom: theme.spacing(2)}} />
-              </a> */}
+              </a>
 
               {/* <Typography>
                 Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
@@ -479,79 +479,6 @@ export default function SemanticIndex() {
             </IconButton>
           </Paper>
 
-          {/* shacl/shex checkboxes */}
-          <FormGroup row>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkbox_shacl}
-                  onChange={handleCheckboxes}
-                  name="checkbox_shacl"
-                  color="primary"
-                /> }
-              label="SHACL"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkbox_shex}
-                  onChange={handleCheckboxes}
-                  name="checkbox_shex"
-                  color="primary"
-                /> }
-              label="ShEx"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkbox_sparql}
-                  onChange={handleCheckboxes}
-                  name="checkbox_sparql"
-                  color="primary"
-                /> }
-              label="SPARQL"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkbox_owl}
-                  onChange={handleCheckboxes}
-                  name="checkbox_owl"
-                  color="primary"
-                /> }
-              label="OWL"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkbox_skos}
-                  onChange={handleCheckboxes}
-                  name="checkbox_skos"
-                  color="primary"
-                /> }
-              label="SKOS"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkbox_obo}
-                  onChange={handleCheckboxes}
-                  name="checkbox_obo"
-                  color="primary"
-                /> }
-              label="OBO"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={state.checkbox_openapi}
-                  onChange={handleCheckboxes}
-                  name="checkbox_openapi"
-                  color="primary"
-                /> }
-              label="OpenAPI"
-            />
-          </FormGroup>
           <TextField
             id="shapes-per-page"
             value={state.shapes_per_page}
@@ -598,6 +525,80 @@ export default function SemanticIndex() {
             // style={{ width: '60ch' }}
           />}
         />
+
+        <FormGroup style={{marginTop: theme.spacing(2)}} row>
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_shacl}
+                onChange={handleCheckboxes}
+                name="checkbox_shacl"
+                color="primary"
+              /> }
+            label="SHACL"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_shex}
+                onChange={handleCheckboxes}
+                name="checkbox_shex"
+                color="primary"
+              /> }
+            label="ShEx"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_sparql}
+                onChange={handleCheckboxes}
+                name="checkbox_sparql"
+                color="primary"
+              /> }
+            label="SPARQL"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_owl}
+                onChange={handleCheckboxes}
+                name="checkbox_owl"
+                color="primary"
+              /> }
+            label="OWL"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_skos}
+                onChange={handleCheckboxes}
+                name="checkbox_skos"
+                color="primary"
+              /> }
+            label="SKOS"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_obo}
+                onChange={handleCheckboxes}
+                name="checkbox_obo"
+                color="primary"
+              /> }
+            label="OBO"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_openapi}
+                onChange={handleCheckboxes}
+                name="checkbox_openapi"
+                color="primary"
+              /> }
+            label="OpenAPI"
+          />
+        </FormGroup>
+
       </Paper>
 
       {state.shapes_files_list.length < 1 && (
