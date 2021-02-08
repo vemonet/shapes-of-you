@@ -1,9 +1,9 @@
+requests
 python-graphql-client==0.3.0
 python-gitlab
 rdflib
 rdflib-jsonld
-SPARQLWrapper
-PyShExC
 PyYAML
+prance
 obonet
-requests
+PyShExC

@@ -26,6 +26,8 @@ jobs:
         include:
         - git-service: github
           search-topics: owl,shacl-shapes,shex,grlc,skos,obofoundry
+        - git-service: github
+          search-topics: openapi,smartapi,ncats-translator,translator-api
         - git-service: gitlab
           search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
         - git-service: gitee
