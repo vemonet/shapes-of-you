@@ -260,29 +260,23 @@ export default function SemanticIndex() {
   function handleAutocompleteRepositories(event: any, value: string[]) {
     updateState({ repositories_autocomplete: value})
   }
-
-//   PREFIX schema: <https://schema.org/>
-// PREFIX sh: <http://www.w3.org/ns/shacl#>
-// PREFIX shex: <http://www.w3.org/ns/shex#>
-// PREFIX void: <http://rdfs.org/ns/void#>
   
-  // Each faceted search filter can be added here (on the shapes files array)
   // Could not find good dynamic faceted search, best is https://github.com/ebi-gene-expression-group/scxa-faceted-search-results
+  // Each faceted search filter can be added here (on the shapes files array)
   const filtered_files = state.shapes_files_list.filter( (shapes_file: any) =>{
     if (shapes_file) {
       if (shapes_file.label) {
-        // Filter by repo if 1 selected
+        // Filter by repo: show shapes if no repo selected, or if its repo is in list of selected repos
         if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
-          // Filter depending on shacl/shex checkboxes:
+          // Filter depending on shape type checkboxes:
           if ((state.checkbox_shex === true && shapes_file.shape_type == 'http://www.w3.org/ns/shex#Schema')
           || (state.checkbox_sparql === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
           || (state.checkbox_shacl === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#Shape')
           || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
           || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
           || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
-          // TODO: improve, some RDF files are shex)
           ) {
-            // Filter on search:
+            // Filter using the search text, on all properties and metadata of the file:
             let file_description = '';
             if (shapes_file.repo_description) file_description = file_description + ' ' + shapes_file.repo_description;
             if (shapes_file.shape_file_description) file_description = file_description + ' ' + shapes_file.shape_file_description;
@@ -301,6 +295,8 @@ export default function SemanticIndex() {
   })
 
   // If no repo filter, then we use the filtered list to have the repo filtered
+  // If a repo is selected we show full list, 
+  // since filtering on filtered_files would show only the selected repo
   // Return unique list of filtered repos
   let filtered_repos: any = []
   if (state.repositories_autocomplete.length == 0) {
@@ -327,7 +323,7 @@ export default function SemanticIndex() {
           {webId}
         </Typography> */}
         <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
-          Hpefully, soon you will be able to bookmark your favourites resources using your SOLID account! 🔖
+          Hopefully, soon you will be able to bookmark your favourites resources using your SOLID account! 🔖
         </Typography>
       </LoggedIn>
       <LoggedOut>
