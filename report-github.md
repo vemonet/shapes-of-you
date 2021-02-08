@@ -8990,18 +8990,6 @@ Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b'schema/mtt_a/> .\n\n<http://lod.iti-germany.de/schema/mtt_a/> '^b'rdf:type owl:Ontology ;\n                                    '..."
 
 ---
-File: https://raw.githubusercontent.com/ddaedalus/knowledge-systems-ntua/master/ontology%2Fmyontology-turtle.owl
-
-In repository: https://github.com/ddaedalus/knowledge-systems-ntua
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/myontology-turtle.owl:1:0: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/blankdots/PersonasOntology/master/ontology%2Fpersonasonto.owl
-
-In repository: https://github.com/blankdots/PersonasOntology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/personasonto.owl:21:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
 File: https://raw.githubusercontent.com/cmungall/dasher/master/src%2Fschema%2Fsemqc.owl
 
 In repository: https://github.com/cmungall/dasher
@@ -9556,102 +9544,6 @@ In repository: https://github.com/paya54/Reason-OWL
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
 
 ---
-File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
-
-In repository: https://github.com/falpema/PlanesCuenca
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/resourcesfp/restaurantes.rdf:1:0: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Frecursos%2Fontologia_ruta.owl
-
-In repository: https://github.com/falpema/PlanesCuenca
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/recursos/ontologia_ruta.owl:85:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Ftemp.nt
-
-In repository: https://github.com/falpema/PlanesCuenca
-> Invalid line: '<rdf:RDF'
-
----
-File: https://raw.githubusercontent.com/AVeillas/IA301-urban-transport-ontology/master/UrbanTransportOntology.owl
-
-In repository: https://github.com/AVeillas/IA301-urban-transport-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl
-
-In repository: https://github.com/Inria-Chile/mining-inspection-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/MineInspectionOntology.owl:1:0: syntax error
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcounciliar-works.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/counciliar-works.owl:20:118: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcgg.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/cgg.owl:21:126: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Ftextual-products.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/textual-products.owl:20:117: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fregency.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/regency.owl:20:108: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcommissions.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/commissions.owl:23:184: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcongress.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/congress.owl:22:180: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Finternational-delegations.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/international-delegations.owl:20:214: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fbase.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/base.owl:21:114: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcouncil-of-12.owl
-
-In repository: https://github.com/nicorsm/cgg-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/council-of-12.owl:21:191: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
-
-In repository: https://github.com/AdhamGamal/QASAL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
-
-In repository: https://github.com/Dorsa-Arezooji/AutoDoc
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
 File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl
 
 In repository: https://github.com/Svpwm/ChronicDiseaseManagement
@@ -9672,12 +9564,55 @@ In repository: https://github.com/hartig/eiffel-rdf-vocabularies
 > [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/link.ttl'
 
 ---
-File: https://raw.githubusercontent.com/decrn/virtual-university/main/data%2Fvu-mapping.ttl
+File: https://raw.githubusercontent.com/isuruamantha/OWL-to-AIML/master/src%2Fmain%2Fresources%2Fcoronavirus.owl
 
-In repository: https://github.com/decrn/virtual-university
-> at line 14 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ce/> .\r\n@prefix dbo:      <http://dbpedia.org/ontology/>\r\n\r\n'^b'<#Courses>  a \trr:TriplesMap;\r\n            rr:logicalTable ['..."
+In repository: https://github.com/isuruamantha/OWL-to-AIML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
+
+In repository: https://github.com/falpema/PlanesCuenca
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/resourcesfp/restaurantes.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Frecursos%2Fontologia_ruta.owl
+
+In repository: https://github.com/falpema/PlanesCuenca
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/recursos/ontologia_ruta.owl:85:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Ftemp.nt
+
+In repository: https://github.com/falpema/PlanesCuenca
+> Invalid line: '<rdf:RDF'
+
+---
+File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl
+
+In repository: https://github.com/Inria-Chile/mining-inspection-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/MineInspectionOntology.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/AVeillas/IA301-urban-transport-ontology/master/UrbanTransportOntology.owl
+
+In repository: https://github.com/AVeillas/IA301-urban-transport-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
+
+In repository: https://github.com/amhiggin/CrimeGeolocationOntology
+> Quote expected in string at ^ in T>
+                "^POLYGON ((-6.3220487
+
+---
+File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
+
+In repository: https://github.com/CSIRO-enviro-informatics/eudm-profile
+> at line 26 of <>:
+Bad syntax (Prefix "agrif:" not bound) at ^ in:
+"...b'ef/agrif> ;\n.\n\n#\n# Classes\n#\ndcat:Dataset\n  rdfs:subClassOf '^b'agrif:Record ;\n  dct:description "A Dataset is easily seen a'..."
 
 ---
 File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcounciliar-works.owl
@@ -9734,16 +9669,27 @@ In repository: https://github.com/nicorsm/cgg-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/council-of-12.owl:21:191: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
-File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
+File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
 
-In repository: https://github.com/AdhamGamal/QASAL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+In repository: https://github.com/amhiggin/CrimeGeolocationOntology
+> Quote expected in string at ^ in T>
+                "^POLYGON ((-6.3220487
 
 ---
-File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
+File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
 
-In repository: https://github.com/Dorsa-Arezooji/AutoDoc
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+In repository: https://github.com/CSIRO-enviro-informatics/eudm-profile
+> at line 26 of <>:
+Bad syntax (Prefix "agrif:" not bound) at ^ in:
+"...b'ef/agrif> ;\n.\n\n#\n# Classes\n#\ndcat:Dataset\n  rdfs:subClassOf '^b'agrif:Record ;\n  dct:description "A Dataset is easily seen a'..."
+
+---
+File: https://raw.githubusercontent.com/decrn/virtual-university/main/data%2Fvu-mapping.ttl
+
+In repository: https://github.com/decrn/virtual-university
+> at line 14 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ce/> .\r\n@prefix dbo:      <http://dbpedia.org/ontology/>\r\n\r\n'^b'<#Courses>  a \trr:TriplesMap;\r\n            rr:logicalTable ['..."
 
 ---
 File: https://raw.githubusercontent.com/davysouza/CineOnto/master/cinema_database.owl
@@ -9861,7 +9807,7 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fperson.jsonld
 
 In repository: https://github.com/weso/shaclex
-> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+> Expecting value: line 2 column 1 (char 1)
 
 ---
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fthing.jsonld
@@ -15232,6 +15178,18 @@ In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/subsets%2Ftaxslim.obo
+
+In repository: https://github.com/obophenotype/ncbitaxon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/mappings%2Fncbitaxon-to-eol.obo
+
+In repository: https://github.com/obophenotype/ncbitaxon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fpattern.owl
 
 In repository: https://github.com/pombase/fypo
@@ -15503,18 +15461,6 @@ In repository: https://github.com/pombase/fypo
 File: https://raw.githubusercontent.com/pombase/fypo/master/release%2Ffypo-merged.obo
 
 In repository: https://github.com/pombase/fypo
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/subsets%2Ftaxslim.obo
-
-In repository: https://github.com/obophenotype/ncbitaxon
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/mappings%2Fncbitaxon-to-eol.obo
-
-In repository: https://github.com/obophenotype/ncbitaxon
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
