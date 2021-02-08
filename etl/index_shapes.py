@@ -14,6 +14,7 @@ from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
 from rdflib.plugins.sparql.parser import Query, UpdateUnit
 from rdflib.plugins.sparql.processor import translateQuery
+from SPARQLWrapper import SPARQLWrapper, POST, JSON
 import obonet
 from pyshexc.parser_impl import generate_shexj
 
@@ -47,7 +48,7 @@ def main(argv):
   topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
   if len(argv) > 2:
     topics = argv[2].lower().split(',')
-  print('Indexing topics: ' + str(topics))
+  print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(topics))
 
   # Reset report file
   with open(root / '../REPORT.md', 'w') as f:
@@ -72,14 +73,25 @@ def main(argv):
   elif git_registry == 'gitee':
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, topics)
 
+  print('check endpoint')
+  print(VALID_ENDPOINTS)
+  # Add all valids SPARQL graphs we found
+  for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
+    shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
+    shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
+    if 'description' in endpoint_metadata:
+      shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
+
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
 
 def check_run_time(time_start, repo_list, current_repo):
-  """Check for how long the script has been running to stop before hitting GitHub Actions workflow 6h job limit"""
+  """Check for how long the script has been running to stop before hitting GitHub Actions workflow 6h job limit
+  Stop if more than 5h45 (345 min)
+  """
   runtime = datetime.now() - time_start
-  # Stop if more than 5h45
+  # if runtime > timedelta(seconds=40):
   if runtime > timedelta(minutes=345):
-    print('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
+    print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
     repo_missing = repo_list[repo_list.index(current_repo):]
     add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
       + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
@@ -143,7 +155,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             shape_label = id_
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
       except Exception as e:
-        print('Issue with OBO parser for file ' + github_file_url)
+        print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OBO parser for file ' + github_file_url)
         add_to_report('File: ' + github_file_url + "\n\n"
               + 'In repository: ' + repo_url + "\n> " 
               + str(e) + "\n\n---\n")
@@ -169,7 +181,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         # TODO: get operations hasPart?
         shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('OpenAPI')))
       except Exception as e:
-        print('Issue with OpenAPI parser for file ' + github_file_url)
+        print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OpenAPI parser for file ' + github_file_url)
         # add_to_report('File: ' + github_file_url + "\n\n"
         #       + 'In repository: ' + repo_url + "\n> " 
         #       + str(e) + "\n\n---\n")
@@ -221,10 +233,30 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         if grlc_metadata:
           file_descriptions = []
           if 'endpoint' in grlc_metadata:
-            shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(grlc_metadata['endpoint'])))
+            sparql_endpoint = grlc_metadata['endpoint']
+            shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(sparql_endpoint)))
             # TODO: check if in hashes of already tested endpoints valid and failing3
             # Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
             # Then, like repos, add them as schema:EntryPoint
+            if sparql_endpoint not in VALID_ENDPOINTS.keys() and sparql_endpoint not in FAILED_ENDPOINTS.keys():
+              sparql_test_query = 'SELECT * WHERE { ?s ?p ?o } LIMIT 10'
+              sparql = SPARQLWrapper(sparql_endpoint)
+              sparql.setReturnFormat(JSON)
+              sparql.setQuery(sparql_test_query)
+              try:
+                results = sparql.query().convert()
+                # Check SPARQL query sent back at least 5 triples
+                results_array = results["results"]["bindings"]
+                if len(results_array) > 4:
+                  VALID_ENDPOINTS[sparql_endpoint] = {
+                    'label': sparql_endpoint
+                  }
+                else:
+                  FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
+              except Exception as e:
+                add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n"
+                  + str(e) + "\n\n---\n")
+
 
           if 'summary' in grlc_metadata and grlc_metadata['summary']:
             file_descriptions.append(grlc_metadata['summary'])
@@ -252,7 +284,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       try:
           g.parse(str(rdf_file_path.absolute()), format=shape_format)
       except Exception as e:
-          print('RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
+          print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
           if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
               add_to_report('File: ' + github_file_url + "\n\n"
                   + 'In repository: ' + repo_url + "\n> " 
@@ -354,8 +386,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           for description in g.objects(shape, DCTERMS.description):
             file_descriptions.append(str(description))
 
-      # TODO: Improve
       # Search for ShEx Shapes and ShapeAnd
+      # TODO: Improve
       for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
@@ -382,7 +414,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     # Add repository RDF
     if shape_found:
+      print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🍾 Shape found in ' + github_file_url)
       shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['codeRepository']))
+      # TODO: change, schema:codeRepository is a property, not a class, but not much available..
       shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url.rsplit('/', 1)[1])))
       if (repo_description):
         shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
@@ -390,7 +424,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
     return shapes_graph
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
-    print('Cloning ' + repo_url)
+    print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
     shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
     os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
     # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
@@ -533,7 +567,7 @@ def fetch_from_github_extra(shapes_graph, client, oauth_token):
       repo_description = repo_json["description"]
     except Exception as e:
       print(e)
-      print('No default_branch found for repo_url, using master')
+      print('🕊 No default_branch found for repo_url, using master')
       branch = 'master'
       repo_description = ''
     shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
@@ -549,7 +583,7 @@ def fetch_from_gitlab(shapes_graph, gl, topics):
           branch = repo_json['default_branch']
         else:
           branch = 'master'
-          print('No default_branch found for repo_url, using master')
+          print('🕊 No default_branch found for repo_url, using master')
         repo_descriptions = []
         if repo_json["name"]:
           repo_descriptions.append(repo_json["name"])
@@ -574,15 +608,12 @@ def fetch_from_gitee(shapes_graph, token, topics):
 
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
-      print(token)
-      print(gitee_repos_list)
       for repo_json in gitee_repos_list:
         stopping_job = check_run_time(time_start, gitee_repos_list, repo_json)
         if stopping_job:
           break
 
         repo_url = repo_json["html_url"].rstrip('.git')
-        print(str(datetime.now()) + ' Processing ' + repo_url)
 
         if repo_url in avoid_repos:
           continue
@@ -590,7 +621,7 @@ def fetch_from_gitee(shapes_graph, token, topics):
           branch = repo_json['default_branch']
         else:
           branch = 'master'
-          print('No default_branch found for repo_url, using master')
+          print('🕊 No default_branch found for repo_url, using master')
         repo_descriptions = []
         if repo_json["name"]:
           repo_descriptions.append(repo_json["name"])
@@ -609,26 +640,9 @@ def fetch_from_gitee(shapes_graph, token, topics):
 if __name__ == "__main__":
   # The script starts here
   root = pathlib.Path(__file__).parent.resolve()
-
+  global VALID_ENDPOINTS
+  VALID_ENDPOINTS = {}
+  global FAILED_ENDPOINTS
+  FAILED_ENDPOINTS = {}
   main(sys.argv)
 
-
-
-# def insert_graph_in_sparql_endpoint(g):
-#   """Insert rdflib graph in a Update SPARQL endpoint using SPARQLWrapper
-#   :param g: rdflib graph to insert
-#   :return: SPARQL update query result
-#   """
-#   # print(g.serialize(format='nt').decode('utf-8'))
-#   sparql = SPARQLWrapper(SPARQL_ENDPOINT_UPDATE_URL)
-#   sparql.setMethod(POST)
-#   # sparql.setHTTPAuth(BASIC)
-#   sparql.setCredentials(SPARQL_ENDPOINT_USERNAME, SPARQL_ENDPOINT_PASSWORD)
-#   query = """INSERT DATA {{ GRAPH  <{graph}>
-#   {{
-#   {ntriples}
-#   }}
-#   }}
-#   """.format(ntriples=g.serialize(format='nt').decode('utf-8'), graph=GRAPH_URI)
-#   sparql.setQuery(query)
-#   return sparql.query()
