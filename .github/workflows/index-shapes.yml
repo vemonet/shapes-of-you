@@ -34,9 +34,9 @@ jobs:
         - git-service: gitee
           run-label: main-run
           search-topics: ontology,sparql
-        - git-service: github-extra
+        - git-service: github-extras
           run-label: main-run
-          search-topics: extra
+          search-topics: extras
 
     runs-on: ubuntu-latest
     steps:
