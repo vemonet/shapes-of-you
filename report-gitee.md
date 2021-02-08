@@ -1,4 +1,7 @@
 ## Fails loading files to `rdflib`
+
+**Indexing topics**: `ontology`, `sparql`
+
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
@@ -12,6 +15,36 @@ File: https://gitee.com/zhangfinder/OntologyModel/raw/master/WebRoot%2FontologyF
 
 In repository: https://gitee.com/zhangfinder/OntologyModel
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/WebRoot/ontologyFiles/OntologyZjq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://gitee.com/mirrors/opendxl-ontology/raw/master/.github%2Fworkflows%2Fmain.yml
+
+In repository: https://gitee.com/mirrors/opendxl-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/shie-it/ontology/raw/master/.travis.yml
+
+In repository: https://gitee.com/shie-it/ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/shie-it/ontology/raw/master/glide.yaml
+
+In repository: https://gitee.com/shie-it/ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/shie-it/ontology/raw/master/vendor%2Fgithub.com%2Fontio%2Fontology-crypto%2Fglide.yaml
+
+In repository: https://gitee.com/shie-it/ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/.travis.yml
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_Production_NON_Ontology_Files%2Fdoid-idranges.owl
@@ -77,7 +110,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_Production_NON_Ontology_Files%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_Production_NON_Ontology_Files%2Fdoid-simple.obo
@@ -89,7 +124,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_NON_Production_Files%2Forphanet_import.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_NON_Production_Files%2Forphanet_import.obo
@@ -101,7 +138,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_NON_Production_Files%2Fdoidx.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_NON_Production_Files%2Fdoidx.obo
@@ -113,7 +152,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_NON_Production_Files%2Fomim_import.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fdeprecated%2FDO_NON_Production_Files%2Fomim_import.obo
@@ -125,7 +166,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fdoid.obo
@@ -137,7 +180,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2FHumanDO.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2FHumanDO.obo
@@ -149,7 +194,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fdoid-merged.obo
@@ -161,7 +208,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fdoid-non-classified.obo
@@ -173,31 +222,13 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fsubsets%2Ftick-borne_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fsubsets%2FDO_IEDB_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Fsubsets%2FDO_IEDB_slim.obo
@@ -977,19 +1008,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FGOLD.obo
@@ -1001,19 +1020,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -1025,19 +1032,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_rare_slim.obo
@@ -1049,19 +1044,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -1073,19 +1056,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-09-29%2Fsubsets%2FDO_cancer_slim.obo
@@ -1097,7 +1068,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fdoid.obo
@@ -1109,7 +1082,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fdoid-simple.obo
@@ -1121,7 +1096,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fdoid-non-classified.obo
@@ -1133,19 +1110,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -1157,19 +1122,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FGOLD.obo
@@ -1181,19 +1134,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -1205,19 +1146,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_rare_slim.obo
@@ -1229,19 +1158,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -1253,19 +1170,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-30%2Fsubsets%2FDO_cancer_slim.obo
@@ -1277,7 +1182,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-05-06%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-05-06%2Fdoid.obo
@@ -2057,7 +1964,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-05%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-05%2Fsubsets%2FNCIthesaurus.obo
@@ -2069,19 +1978,15 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-05%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-05%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fdoid.obo
@@ -2093,7 +1998,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fdoid-simple.obo
@@ -2105,7 +2012,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fdoid-non-classified.obo
@@ -2117,19 +2026,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -2141,19 +2038,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FGOLD.obo
@@ -2165,19 +2050,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -2189,19 +2062,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_rare_slim.obo
@@ -2213,19 +2074,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -2237,19 +2086,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-09%2Fsubsets%2FDO_cancer_slim.obo
@@ -2261,7 +2098,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fdoid.obo
@@ -2273,7 +2112,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fdoid-simple.obo
@@ -2285,19 +2126,15 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
@@ -2369,7 +2206,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -2381,7 +2230,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FNCIthesaurus.obo
@@ -2393,15 +2254,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-04%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid.obo
@@ -2413,9 +2278,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid-simple.obo
@@ -2427,9 +2290,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid-non-classified.obo
@@ -2441,7 +2302,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -2453,13 +2326,31 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2FGOLD.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2FDO_FlyBase_slim.obo
@@ -3035,19 +2926,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_MGI_slim.obo
@@ -3059,19 +2938,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -3083,19 +2950,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FNCIthesaurus.obo
@@ -3107,19 +2962,15 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fdoid.obo
@@ -3131,7 +2982,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fdoid-merged.obo
@@ -3143,7 +2996,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fdoid-non-classified.obo
@@ -3155,19 +3010,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -3179,19 +3022,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_AGR_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
@@ -3203,19 +3034,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FGOLD.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_FlyBase_slim.obo
@@ -3239,7 +3058,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_rare_slim.obo
@@ -3251,7 +3082,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -3263,7 +3106,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-20%2Fsubsets%2FDO_cancer_slim.obo
@@ -3275,9 +3130,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fdoid.obo
@@ -3289,9 +3142,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fdoid-simple.obo
@@ -3303,9 +3154,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fdoid-non-classified.obo
@@ -3317,7 +3166,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -3329,7 +3190,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FGOLD.obo
@@ -3341,7 +3214,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -3353,7 +3238,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_rare_slim.obo
@@ -3365,7 +3262,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -3377,7 +3286,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-01%2Fsubsets%2FDO_cancer_slim.obo
@@ -3389,9 +3310,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fdoid.obo
@@ -3403,9 +3322,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fdoid-merged.obo
@@ -3417,9 +3334,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fdoid-non-classified.obo
@@ -3431,7 +3346,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -3443,7 +3370,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_AGR_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
@@ -3455,7 +3394,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FGOLD.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_FlyBase_slim.obo
@@ -3467,7 +3418,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_MGI_slim.obo
@@ -3479,7 +3442,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -3491,15 +3466,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FNCIthesaurus.obo
@@ -3511,15 +3490,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F1-2018~09~07%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid.obo
@@ -3531,9 +3514,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid-simple.obo
@@ -3545,9 +3526,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid-non-classified.obo
@@ -3559,7 +3538,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -4339,7 +4330,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -4351,9 +4354,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FNCIthesaurus.obo
@@ -4365,10 +4366,988 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_GXD_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_GXD_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-simple.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-simple.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-merged.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-non-classified.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_IEDB_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_IEDB_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_GXD_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_GXD_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > Tag-value pair parsing failed for:
@@ -4376,978 +5355,6 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 
 
 ---
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-07-15%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_GXD_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_GXD_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-10-30%2Fsubsets%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-simple.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-simple.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-01%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-05%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-merged.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fdoid-non-classified.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_IEDB_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_IEDB_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_GXD_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_GXD_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-03-18%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fdoid.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
@@ -5357,7 +5364,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fdoid-merged.obo
@@ -5369,7 +5378,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fdoid-non-classified.obo
@@ -5381,19 +5392,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -5405,19 +5404,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_IEDB_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_IEDB_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_AGR_slim.obo
@@ -5429,19 +5416,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FGOLD.obo
@@ -5453,19 +5428,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -5477,19 +5440,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-01-15%2Fsubsets%2FDO_rare_slim.obo
@@ -6269,19 +6220,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FNCIthesaurus.obo
@@ -6293,19 +6232,15 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid.obo
@@ -6317,7 +6252,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid-simple.obo
@@ -6329,7 +6266,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid-non-classified.obo
@@ -6341,19 +6280,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -6365,19 +6292,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FGOLD.obo
@@ -6389,19 +6304,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FDO_MGI_slim.obo
@@ -6413,19 +6316,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -7205,19 +7096,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-08%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-08%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-08%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-08%2Fsubsets%2FNCIthesaurus.obo
@@ -7229,19 +7108,15 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-08%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-08%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fdoid.obo
@@ -7253,7 +7128,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fdoid-simple.obo
@@ -7265,7 +7142,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fdoid-non-classified.obo
@@ -7277,19 +7156,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -7301,19 +7168,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FDO_AGR_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
@@ -7325,19 +7180,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FGOLD.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FDO_FlyBase_slim.obo
@@ -7349,19 +7192,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-11-20%2Fsubsets%2FDO_MGI_slim.obo
@@ -7457,9 +7288,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fdoid-non-classified.obo
@@ -7471,7 +7300,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -7483,7 +7324,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FGOLD.obo
@@ -7495,7 +7348,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -7507,7 +7372,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FhasAlternativeId.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FhasAlternativeId.obo
@@ -7519,7 +7396,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -7531,7 +7420,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FNCIthesaurus.obo
@@ -7543,15 +7444,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-12-16%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fdoid.obo
@@ -7563,9 +7468,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fdoid-merged.obo
@@ -7577,9 +7480,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fdoid-non-classified.obo
@@ -7591,7 +7492,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -7603,7 +7516,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_AGR_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
@@ -7615,13 +7540,31 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FGOLD.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -7645,7 +7588,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -7657,15 +7612,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FNCIthesaurus.obo
@@ -7677,15 +7636,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fdoid.obo
@@ -7697,9 +7660,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fdoid-merged.obo
@@ -7711,9 +7672,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fdoid-non-classified.obo
@@ -7725,7 +7684,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -7737,7 +7708,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_AGR_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
@@ -7749,7 +7732,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FGOLD.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_FlyBase_slim.obo
@@ -7761,7 +7756,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_MGI_slim.obo
@@ -7773,7 +7780,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -7785,15 +7804,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FNCIthesaurus.obo
@@ -7805,15 +7828,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-09-07%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fdoid.obo
@@ -7825,9 +7852,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fdoid-simple.obo
@@ -7839,9 +7864,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fdoid-non-classified.obo
@@ -7853,7 +7876,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -7865,7 +7900,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FGOLD.obo
@@ -7877,7 +7924,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FDO_MGI_slim.obo
@@ -7889,7 +7948,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-26%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -7961,19 +8032,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -7985,19 +8044,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FGOLD.obo
@@ -8009,19 +8056,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FDO_MGI_slim.obo
@@ -9485,6 +9520,12 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-11%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-11%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
@@ -9563,7 +9604,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fdoid-simple.obo
@@ -9575,7 +9618,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fdoid-non-classified.obo
@@ -9587,19 +9632,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -9611,19 +9644,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FGOLD.obo
@@ -9635,19 +9656,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -9659,19 +9668,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_rare_slim.obo
@@ -9683,19 +9680,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -9707,19 +9692,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-11-22%2Fsubsets%2FDO_cancer_slim.obo
@@ -9731,7 +9704,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fdoid.obo
@@ -9743,7 +9718,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fdoid-merged.obo
@@ -9755,7 +9732,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fdoid-non-classified.obo
@@ -9767,19 +9746,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -9791,19 +9758,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_IEDB_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_IEDB_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_AGR_slim.obo
@@ -9815,19 +9770,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FGOLD.obo
@@ -9839,19 +9782,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -9863,19 +9794,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_MGI_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_rare_slim.obo
@@ -9887,19 +9806,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_GXD_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_GXD_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -9911,31 +9818,21 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v3%2Fsubsets%2FDO_cancer_slim.obo
@@ -10715,7 +10612,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fdoid.obo
@@ -10727,7 +10626,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fdoid-simple.obo
@@ -10739,7 +10640,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fdoid-non-classified.obo
@@ -10751,19 +10654,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -10775,19 +10666,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FGOLD.obo
@@ -10799,19 +10678,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FDO_MGI_slim.obo
@@ -10823,19 +10690,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -10847,19 +10702,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FDO_cancer_slim.obo
@@ -10871,7 +10714,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fdoid.obo
@@ -10883,7 +10728,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fdoid-simple.obo
@@ -10895,7 +10742,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fdoid-non-classified.obo
@@ -10907,19 +10756,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -10931,19 +10768,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FGOLD.obo
@@ -10955,19 +10780,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FDO_MGI_slim.obo
@@ -10979,19 +10792,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -11003,31 +10804,13 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-26%2Fsubsets%2FDO_cancer_slim.obo
@@ -11039,7 +10822,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-24%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-24%2Fdoid.obo
@@ -11051,7 +10836,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-24%2FHumanDO.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-24%2FHumanDO.obo
@@ -11063,7 +10850,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-24%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-24%2Fdoid-merged.obo
@@ -11843,7 +11632,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fdoid-simple.obo
@@ -11855,7 +11646,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fdoid-non-classified.obo
@@ -11867,19 +11660,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -11891,19 +11672,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FGOLD.obo
@@ -11915,19 +11684,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FDO_MGI_slim.obo
@@ -11939,19 +11696,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FDO_rare_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-15%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -12731,19 +12476,15 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-02-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-02-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-02-18%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-02-18%2Fsubsets%2FNCIthesaurus.obo
@@ -12755,19 +12496,15 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-02-18%2Fsubsets%2FDO_cancer_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2020-02-18%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fdoid.obo
@@ -12779,7 +12516,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fdoid-simple.obo
@@ -12791,7 +12530,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fdoid-non-classified.obo
@@ -12803,19 +12544,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-02-17%2Fsubsets%2Ftick-borne_infectious_disease.obo
@@ -14195,19 +13924,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2FTopNodes_DOcancerslim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2Fzoonotic_infectious_disease.obo
@@ -14219,19 +13936,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-03-10%2Fsubsets%2FDO_cancer_slim.obo
@@ -14243,7 +13948,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid.obo
@@ -14255,7 +13962,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid-simple.obo
@@ -14267,7 +13976,9 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid-non-classified.obo
@@ -14687,7 +14398,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2FGOLD.obo
@@ -14699,7 +14422,19 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-08-12%2Fsubsets%2FDO_MGI_slim.obo
@@ -15407,13 +15142,31 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-27%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-27%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-27%2Fsubsets%2Ftick-borne_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-27%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-27%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-27%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
@@ -15773,12 +15526,6 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-03%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-07-03%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
@@ -17201,19 +16948,7 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_AGR_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
@@ -17225,31 +16960,13 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FGOLD.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_FlyBase_slim.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
@@ -17688,6 +17405,12 @@ File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/kinring/webprotege/raw/master/.travis.yml
+
+In repository: https://gitee.com/kinring/webprotege
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitee.com/kinring/webprotege/raw/master/webprotege-server-core%2Fsrc%2Ftest%2Fresources%2Fontologies%2Fobo%2Fgo.fragment.obo
@@ -21088,6 +20811,12 @@ In repository: https://gitee.com/mirrors_collective/Products.PloneOntology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Products/PloneOntology/doc/beer.owl:169:2: two elements cannot use the same ID: 'file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Products/PloneOntology/doc/beer.owl#Hops'
 
 ---
+File: https://gitee.com/mirrors_OWASP/www-project-ontology-driven-threat-modeling-framework/raw/master/_config.yml
+
+In repository: https://gitee.com/mirrors_OWASP/www-project-ontology-driven-threat-modeling-framework
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://gitee.com/mirrors_jprante/collections-ontology/raw/master/examples%2Fore-and-co-snip6.ttl
 
 In repository: https://gitee.com/mirrors_jprante/collections-ontology
@@ -21120,6 +20849,1542 @@ Bad syntax (newline found in string literal) at ^ in:
 "...b'itation "Motik, B. et al (2009). OWL 2 Web Ontology Language'^b'\n      Structural Specification and Functional-Style Syntax"'..."
 
 ---
+File: https://gitee.com/mirrors_gitpan/TM-Ontology-KIF/raw/master/META.yml
+
+In repository: https://gitee.com/mirrors_gitpan/TM-Ontology-KIF
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/xueleicug/StoneStoryOntology/raw/master/_config.yml
+
+In repository: https://gitee.com/xueleicug/StoneStoryOntology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/.github%2Fworkflows%2Fbuild-validate-publish.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmean-absolute-error.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-model-intercept.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fexponential-family-linear-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flogistic-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmulticlass-classifier-n-classes.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Frandom-forest-n-features.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftree-ensemble-n-trees.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsvm-support-vectors.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsql-query-expression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffile.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fread-file.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fk-means-centroids.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffeature-selection-model-selected.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fregression-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdummy-coding.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fclassification-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftabular-file.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fm5-tree.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fhierarchical-clustering.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fexpression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fclassification-tree.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fselection-model-selected.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftree-ensemble.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdata.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fwrite-data.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fscalar.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fkernel-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fexponential-family-linear-model-intercept.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fcomplex.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm-regression-kernelized.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fevaluate-formula-supervised.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fglm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm-classification-kernelized.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fwrite-file.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-model-coefficients.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Freal.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdesign-matrix.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm-classification.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffeature-extraction-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fforward-stepwise-selection.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fforward-stagewise-selection.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdivisive-clustering.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fr-dataset-name.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Feuclidean-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fr-dataset-package.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fwrite-tabular-file.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fas-binary-classifier.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fglm-intercept.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fread-table.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsql-table-database.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftransform.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fk-means-kernelized.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fregression-tree.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fcolumn.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftable-n-rows.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fcart.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdecision-tree.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Finteger.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fnumber.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fboolean.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-model-rss.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fpca.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fvif-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-dimension-reduction-model-components.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm-kernelized.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fclustering-model-n-clusters.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fleast-squares.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fagglomerative-clustering.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fas-logistic-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Farray-shape.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm-coefficients.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftable-n-cols.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdimension-reduction-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Farray.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flasso.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fclustering-model-clusters.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-dimension-reduction-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmean-squared-error.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fread-data.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsvm-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdiscriminant-function.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmultiple-correspondence-analysis.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fexponential-family-linear-model-coefficients.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fbackward-selection-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fvif-regression-selected.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftransformer.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fclustering-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm-intercept.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fkernel-k-means.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fincremental-selection-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fhierarchical-clustering-linkage.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fk-means.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Farray-n-dimensions.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fbinary-classifier.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsql-query-database.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftree-ensemble-tree.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmodel.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsql-table.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftree-based-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fkernel-pca.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsvm-classification.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fcolumn-name.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fselection-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Funsupervised-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fcubist-tree.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmatrix.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffit-supervised.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmulticlass-classifier.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffit.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Frandom-forest.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdata-source.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffeature-extraction.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fkernelized.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fvector.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffit-incremental-selection-supervised.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsimple-correspondence-analysis.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsvm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftabular-data-source.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fstring.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftable.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fglm-coefficients.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fglm-deviance.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fk-medoids-medoids.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fexcel-spreadsheet-name.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fexcel-spreadsheet.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsvm-dual-coefficients.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fbackward-stepwise-selection.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-svm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsql-query.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fica.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftransformation-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fpredict.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fcubist.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsql-table-name.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fvector-length.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fcorrespondence-analysis.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsupervised-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fwrite-table.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fmultinomial-logistic-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fpca-kernelized.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fread-tabular-file.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fr-dataset.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ftable-column-names.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffilename.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fforward-selection-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fdimension-reduction-model-n-dimensions.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Ffeature-selection-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Flinear-discriminant-analysis.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fk-medoids.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/concept%2Fsql-database.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fpandas%2Fseries.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fpandas%2Fread-table.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fpandas%2Fread-sql-table.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fpandas%2Fdata-frame-to-csv.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fpandas%2Fread-sql-query.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fpandas%2Fdata-frame.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fpandas%2Fread-excel.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Fregression-results-wrapper.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Fget-r-dataset.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Fols.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Ffit-linear-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Flinear-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Fmodel.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Fols-from-formula.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Ffit.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Fdataset.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Fresults-wrapper.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fstatsmodels%2Flikelihood-model.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fnumpy%2Fgenfromtxt.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fnumpy%2Frecarray.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fnumpy%2Floadtxt.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fnumpy%2Fndarray.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fbuiltins%2Fint.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fbuiltins%2Fcomplex.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fbuiltins%2Ffloat.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fbuiltins%2Fstr.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fbuiltins%2Funicode.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fbuiltins%2Fbool.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fscipy%2Fkmeans2.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fscipy%2Fhierarchy-linkage.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fmean-absolute-error.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fpredict-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Flogistic-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fdecision-function.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-clusterer.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fsvr.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fsvr-nu.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Ftransform.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Flinear-svc.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Ffit-predict-clustering.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fpca.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-regressor.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Ffit-classification.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Ffit-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Flasso.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fmean-squared-error.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-transformer.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fk-means.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Ffit-transform.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fpredict-classification.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Flinear-regression.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fkernel-pca.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-svc.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Ffit.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-classifier.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fagglomerative.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-selector.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-svm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Flinear-svr.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsklearn%2Fbase-estimator.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsqlalchemy%2Fclause-element.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsqlalchemy%2Fconnection.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fpython%2Fsqlalchemy%2Fengine.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fstats%2Ffit-lm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fstats%2Fdeviance-lm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fstats%2Flm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fstats%2Ffit-k-means.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fstats%2Fdeviance-glm.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fstats%2Fk-means.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fstats%2Fpredict.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fsave-rds.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fcomplex.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Finteger.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fnumeric.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fformula.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fmatrix.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fcharacter.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fdata-frame.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Flogical.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fbase%2Fread-rds.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2FCubist%2Ffit-cubist.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2FCubist%2Fcubist.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Frpart%2Frpart.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Frpart%2Ffit-rpart.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fcaret%2Ftransform-dummy-vars.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fcaret%2Fconstruct-dummy-vars.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Fcaret%2Fdummy-vars.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fwrite-csv.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fread-csv2.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fread-table.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fread-delim2.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fread-delim.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fwrite-table.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fread-csv.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2Futils%2Fwrite-csv2.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2FVIF%2Fvif.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2FVIF%2Ffit-vif.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2FrandomForest%2Ffit-random-forest.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2FrandomForest%2Frandom-forest.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_ibm/datascienceontology/raw/master/annotation%2Fr%2FrandomForest%2Fget-tree.yml
+
+In repository: https://gitee.com/mirrors_ibm/datascienceontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://gitee.com/mirrors_ibm/ITOPS-ontology/raw/master/dcat_desc.ttl
 
 In repository: https://gitee.com/mirrors_ibm/ITOPS-ontology
@@ -21132,5 +22397,785 @@ File: https://gitee.com/jbk-xiao/owl-profiles/raw/master/org.protege.editor.owl
 
 In repository: https://gitee.com/jbk-xiao/owl-profiles
 > [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/org.protege.editor.owl'
+
+---
+File: https://gitee.com/rubygems/sparql/raw/master/.travis.yml
+
+In repository: https://gitee.com/rubygems/sparql
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/opensci/gStore/raw/master/data%2Fupdate_test.nt
+
+In repository: https://gitee.com/opensci/gStore
+> Invalid line: '<s0> <p0> <o0>.'
+
+---
+File: https://gitee.com/opensci/gStore/raw/master/data%2Flubm%2Flubm.nt
+
+In repository: https://gitee.com/opensci/gStore
+> Invalid line: '<University0>.'
+
+---
+File: https://gitee.com/opensci/gStore/raw/master/data%2Fsystem%2Fsystem.nt
+
+In repository: https://gitee.com/opensci/gStore
+> Invalid line: '<root> <has_password> "123456" .'
+
+---
+File: https://gitee.com/opensci/gStore/raw/master/data%2Fsystem%2Fversion.nt
+
+In repository: https://gitee.com/opensci/gStore
+> Invalid line: '<CoreVersion> <value> "v0.8.4" .'
+
+---
+File: https://gitee.com/opensci/gStore/raw/master/data%2Fsmall%2Fsmall_add.nt
+
+In repository: https://gitee.com/opensci/gStore
+> Invalid line: '<node1> <link> <node2> .'
+
+---
+File: https://gitee.com/opensci/gStore/raw/master/data%2Fsmall%2Fsmall.nt
+
+In repository: https://gitee.com/opensci/gStore
+> Invalid line: '<root>\t<name>\t"Bookug Lobert"\t.'
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/.gitlab-ci.yml
+
+In repository: https://gitee.com/kehaofei/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/.travis.yml
+
+In repository: https://gitee.com/kehaofei/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 15 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 25 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 38 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2Fregex%2Foracle-regexp.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/regex/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2FontologyType%2FdataPropertiesOntologyType.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2FEPNet.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/EPNet.owl:33:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2Fimdb%2FontologyIMDB.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/imdb/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Flocal%2Fadp%2Fnpd-ql.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/local/adp/npd-ql.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fboolean%2Fdatatypes.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fcharacter%2Fdatatypes.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fgeneral%2Fdatatypes.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fnumeric%2Fdatatypes.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fdatetime%2Fdatatypes.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fmaterializer%2FMaterializeTest.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnestedconcat%2Ftest.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/nestedconcat/test.owl:35:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fperson%2Fperson.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/person/person.owl:52:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/describeConstruct.owl:35:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/client%2Fprotege%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fapi%2Fio%2FSchool.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/src/test/resources/it/unibz/inf/ontop/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/engine%2Fsystem%2Fsql%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/mapping%2Fsql%2Fall%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fio%2FSchool.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/src/test/resources/it/unibz/inf/ontop/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fwkt%2Fwkt_test.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/wkt/wkt_test.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FlangTag%2FlangTag.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/langTag/langTag.owl:18:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fnpd-v2%2Fbfo-1.1.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/npd-v2/bfo-1.1.owl:1:0: no element found
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ffilter%2Fdatatypes.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/filter/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fljoptional%2Frais-ontology.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/ljoptional/rais-ontology.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
+
+In repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 6 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnorthwind%2Fmapping-northwind-platform.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 6 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'D5(CONCAT(COALESCE(Address, RAND()), COALESCE(City, RAND()),'^b'\n                                           COALESCE(Region,'..."
+
+---
+File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FrepeatedCN%2FrepeatedCN_test.ttl
+
+In repository: https://gitee.com/kehaofei/ontop
+> at line 9 of <>:
+Bad syntax (Prefix "rr:" not bound) at ^ in:
+"...b': <http://www.w3.org/2000/01/rdf-schema#> .\n\n<#Professor> a '^b'rr:TriplesMap;\n        rr:logicalTable [ rr:tableName "profe'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/.gitlab-ci.yml
+
+In repository: https://gitee.com/oldshan/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/.travis.yml
+
+In repository: https://gitee.com/oldshan/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 15 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 25 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 38 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2Fregex%2Foracle-regexp.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/regex/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2FontologyType%2FdataPropertiesOntologyType.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2FEPNet.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/EPNet.owl:33:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2Fimdb%2FontologyIMDB.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/imdb/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Flocal%2Fadp%2Fnpd-ql.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/local/adp/npd-ql.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fboolean%2Fdatatypes.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fcharacter%2Fdatatypes.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fgeneral%2Fdatatypes.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fnumeric%2Fdatatypes.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fdatetime%2Fdatatypes.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fmaterializer%2FMaterializeTest.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnestedconcat%2Ftest.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/nestedconcat/test.owl:35:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fperson%2Fperson.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/person/person.owl:52:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/describeConstruct.owl:35:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/client%2Fprotege%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fapi%2Fio%2FSchool.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/src/test/resources/it/unibz/inf/ontop/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/engine%2Fsystem%2Fsql%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/mapping%2Fsql%2Fall%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fio%2FSchool.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/src/test/resources/it/unibz/inf/ontop/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fwkt%2Fwkt_test.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/wkt/wkt_test.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FlangTag%2FlangTag.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/langTag/langTag.owl:18:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fnpd-v2%2Fbfo-1.1.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/npd-v2/bfo-1.1.owl:1:0: no element found
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ffilter%2Fdatatypes.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/filter/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fljoptional%2Frais-ontology.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/ljoptional/rais-ontology.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
+
+In repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 6 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnorthwind%2Fmapping-northwind-platform.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 6 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'D5(CONCAT(COALESCE(Address, RAND()), COALESCE(City, RAND()),'^b'\n                                           COALESCE(Region,'..."
+
+---
+File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FrepeatedCN%2FrepeatedCN_test.ttl
+
+In repository: https://gitee.com/oldshan/ontop
+> at line 9 of <>:
+Bad syntax (Prefix "rr:" not bound) at ^ in:
+"...b': <http://www.w3.org/2000/01/rdf-schema#> .\n\n<#Professor> a '^b'rr:TriplesMap;\n        rr:logicalTable [ rr:tableName "profe'..."
+
+---
+File: https://gitee.com/mirrors_aio-libs/aiosparql/raw/master/.travis.yml
+
+In repository: https://gitee.com/mirrors_aio-libs/aiosparql
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_collective/eea.sparql/raw/master/.travis.yml
+
+In repository: https://gitee.com/mirrors_collective/eea.sparql
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_korczis/libsparql/raw/master/.travis.yml
+
+In repository: https://gitee.com/mirrors_korczis/libsparql
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_korczis/libsparql/raw/master/etc%2Fdoap.rdf
+
+In repository: https://gitee.com/mirrors_korczis/libsparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/etc/doap.rdf:1:0: no element found
+
+---
+File: https://gitee.com/mirrors_w3c/sparql-exists/raw/gh-pages/tests%2Fexists-graph.trig
+
+In repository: https://gitee.com/mirrors_w3c/sparql-exists
+> at line 12 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'.\n\n:s1 :q 1 .\n:s2 :q 2 .\n\n:graph {\n  :r :p 2 .\n  :r :p 3 .\n}'^b'\n'"
+
+---
+File: https://gitee.com/mirrors_w3c/sparql-exists/raw/gh-pages/tests%2Finteresting-examples%2Fdata.trig
+
+In repository: https://gitee.com/mirrors_w3c/sparql-exists
+> at line 5 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"b'@prefix : <http://example/> .\n\n:s :p :v .\n\n'^b'GRAPH :g {\n  :s :p :v .\n  :t :r :w .\n}\n'"
+
+---
+File: https://gitee.com/mirrors_gitpan/Apache-SPARQL-RDFStore/raw/master/META.yml
+
+In repository: https://gitee.com/mirrors_gitpan/Apache-SPARQL-RDFStore
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/shippable.yml
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-02.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-02.rdf:9:56: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-04.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-04.rdf:9:52: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-05.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-05.rdf:9:62: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-01.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-01.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-03.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-03.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-class-01.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-class-01.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-inv-02.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-inv-02.rdf:9:54: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-inv-01.rdf
+
+In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-inv-01.rdf:9:54: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+File: https://gitee.com/mirrors_gitpan/Apache-SPARQL/raw/master/META.yml
+
+In repository: https://gitee.com/mirrors_gitpan/Apache-SPARQL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_gitpan/RDF-NLP-SPARQLQuery/raw/master/META.yml
+
+In repository: https://gitee.com/mirrors_gitpan/RDF-NLP-SPARQLQuery
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitee.com/mirrors_gitpan/RDF-Trine-Serializer-SparqlUpdate/raw/master/META.yml
+
+In repository: https://gitee.com/mirrors_gitpan/RDF-Trine-Serializer-SparqlUpdate
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
