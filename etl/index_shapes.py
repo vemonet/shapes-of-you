@@ -149,7 +149,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               + str(e) + "\n\n---\n")
 
     # Index OpenAPI files
-    if shape_format == 'openapi':
+    elif shape_format == 'openapi':
       try:
         parser = ResolvingParser(github_file_url)
         shape_found = True
@@ -175,7 +175,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         #       + str(e) + "\n\n---\n")
 
     # Search for shex files
-    if shape_format == 'shex':
+    elif shape_format == 'shex':
       # no parsing possible for shex
       shape_found = True
       # TODO: use https://schema.org/SoftwareSourceCode ?
@@ -222,6 +222,10 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           file_descriptions = []
           if 'endpoint' in grlc_metadata:
             shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(grlc_metadata['endpoint'])))
+            # TODO: check if in hashes of already tested endpoints valid and failing3
+            # Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
+            # Then, like repos, add them as schema:EntryPoint
+
           if 'summary' in grlc_metadata and grlc_metadata['summary']:
             file_descriptions.append(grlc_metadata['summary'])
           if 'description' in grlc_metadata and grlc_metadata['description']:
@@ -236,11 +240,13 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
                 shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(arg)))
 
         try:
+          # Parse query to get its operation (select, construct..)
           parsed_query = translateQuery(Query.parseString(query_string, parseAll=True))
           query_operation = re.sub(r"(\w)([A-Z])", r"\1 \2", parsed_query.algebra.name)
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
         except:
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
+
     # Parse RDF files
     else:
       try:

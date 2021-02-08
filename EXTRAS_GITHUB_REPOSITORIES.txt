@@ -76,3 +76,4 @@ di2ag/ConnectionsHypothesisProviderAPI
 NCATS-Tangerine/icees-api
 broadinstitute/genetics-kp-dev
 broadinstitute/molecular-data-provider
+BFO-ontology/BFO

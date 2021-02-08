@@ -32,8 +32,11 @@ jobs:
           run-label: main-run
           search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
         - git-service: gitee
-          run-label: main-run
+          run-label: ontology-run
           search-topics: ontology,sparql
+        - git-service: gitee
+          run-label: sparql-run
+          search-topics: sparql
         - git-service: github-extras
           run-label: main-run
           search-topics: extras

@@ -53,6 +53,7 @@ This web service is composed of those 4 main parts:
 - sh: <http://www.w3.org/ns/shacl#>
 - shex: <http://www.w3.org/ns/shex#>
 - void: <http://rdfs.org/ns/void#>
+- sdm: https://w3id.org/vocab/sdm#
 
 ### Classes
 
@@ -72,6 +73,8 @@ This web service is composed of those 4 main parts:
 * `schema:CodeRepository`
   * Properties:
     * `rdfs:comment`
+* `schema:EntryPoint` (or `void:Dataset`, or https://w3id.org/vocab/sdm#TripleStore)
+  * `void:sparqlEndpoint`
 
 ## Run web app in development 🏗
 
