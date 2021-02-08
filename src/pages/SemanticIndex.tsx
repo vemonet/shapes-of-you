@@ -15,6 +15,8 @@ import OpenAPIIcon from '@material-ui/icons/Adjust';
 import CloseIcon from '@material-ui/icons/Close';
 
 import axios from 'axios';
+import { Doughnut, Pie, Bar, HorizontalBar } from 'react-chartjs-2';
+import 'chartjs-plugin-labels';
 
 import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
 import Autocomplete from '@material-ui/lab/Autocomplete';
@@ -65,7 +67,8 @@ export default function SemanticIndex() {
     search: '',
     repositories_hash: [],
     repositories_autocomplete: [],
-    category_pie: {},
+    repos_overview_chart: {},
+    files_overview_chart: {},
     checkbox_shacl: true,
     checkbox_shex: true,
     checkbox_sparql: true,
@@ -95,11 +98,58 @@ export default function SemanticIndex() {
     // https://github.com/solid/react-components/blob/master/demo/app.jsx
     // https://solid.github.io/react-components/
 
+    const shape_types_mappings = {
+      'http://www.w3.org/ns/shacl#Shape': 'SHACL',
+      'http://www.w3.org/2002/07/owl#Ontology': 'OWL',
+      'http://www.w3.org/ns/shex#Schema': 'ShEx',
+      'http://www.w3.org/ns/shacl#SPARQLFunction': 'SPARQL',
+      'http://www.w3.org/2004/02/skos/core#ConceptScheme': 'SKOS',
+      'http://semanticscience.org/resource/SIO_000623': 'OBO',
+      'https://schema.org/WebAPI': 'OpenAPI',
+    }
+
+    let repos_overview_chart = {
+      labels: [],
+      datasets: [{
+        label: 'Number of repositories per resource type',
+        data: [ ],
+        backgroundColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56', '#0277bd', '#ef6c00']
+        // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
+    }]}
+    let files_overview_chart = {
+      labels: [],
+      datasets: [{
+        label: 'Number of files per resource type',
+        data: [ ],
+        backgroundColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56', '#0277bd', '#ef6c00']
+        // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
+    }]}
+
+    // sparql_resources_overview
+    axios.get(endpointToQuery + `?query=` + encodeURIComponent(sparql_resources_overview))
+      .then(res => {
+        const results_array = res.data.results.bindings;
+        results_array.map((result: any): any =>  {
+          // @ts-ignore
+          repos_overview_chart.labels.push(shape_types_mappings[result.shape_type.value]);
+          // @ts-ignore
+          repos_overview_chart.datasets[0].data.push(result.repos_count.value);
+          // @ts-ignore
+          files_overview_chart.labels.push(shape_types_mappings[result.shape_type.value]);
+          // @ts-ignore
+          files_overview_chart.datasets[0].data.push(result.files_count.value);
+        })
+        console.log(repos_overview_chart)
+        updateState({
+          repos_overview_chart: repos_overview_chart,
+          files_overview_chart: files_overview_chart
+        })
+      })
+
     // Query directly using Axios
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(getFilesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
-
         // Convert array to object: {0:"a", 1:"b", 2:"c"}
         // const projects_converted_hash = { ...sparqlResultArray }
         // let projects_hash: any = {}
@@ -453,12 +503,25 @@ export default function SemanticIndex() {
         }
       </LoggedOut>
 
-      {/* <Typography style={{marginBottom: theme.spacing(2)}}>
-        We also index the same topics in <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a> and <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a>, there is no topic on those websites, so just mention it in your project name or description.
-      </Typography> */}
+      { state.repos_overview_chart['datasets'] && state.files_overview_chart['datasets'] &&
+        <Grid container spacing={3} style={{textAlign: 'center', marginTop: theme.spacing(2)}}>
+          <Grid item xs={12} md={6}>
+            <Paper style={{padding: theme.spacing(2, 2)}}>
+              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of repositories per shape type</Typography>
+              <Bar data={state.repos_overview_chart} options={chart_options(state.repos_overview_chart['datasets'][0]['data'])}/>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Paper style={{padding: theme.spacing(2, 2)}}>
+              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of files per shape type</Typography>
+              <Bar data={state.files_overview_chart} options={chart_options(state.files_overview_chart['datasets'][0]['data'])}/>
+            </Paper>
+          </Grid>
+        </Grid>
+      }
 
       {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
-      <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(2, 0)}}>
+      <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(3, 0)}}>
         <Typography variant="h5">
           {filtered_files.length} files in&nbsp;
           {filtered_repos.length} repositories 
@@ -734,3 +797,75 @@ SELECT ?repository (count(?shapeFileUri) AS ?shapeFileCount) ?repo_description W
   OPTIONAL { ?repository rdfs:comment ?repo_description }
 } GROUP BY ?repository ?repo_description
 `
+
+// SPARQL select query which returns the count of repositories and shapes files per semantic resources types
+const sparql_resources_overview = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shex: <http://www.w3.org/ns/shex#>
+PREFIX void: <http://rdfs.org/ns/void#>
+SELECT DISTINCT ?shape_type (count(distinct ?repository) AS ?repos_count) (count(distinct ?shape_file) AS ?files_count)
+WHERE { 
+    ?shape_file a schema:SoftwareSourceCode ;
+        a ?shape_type ;
+        dc:source ?repository .
+    FILTER(?shape_type != schema:SoftwareSourceCode)
+} GROUP BY ?shape_type
+`
+
+function chart_options(data_array: any) {
+  return {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          suggestedMax: Math.max(...data_array) + 50
+        }
+      }],
+      xAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    legend: {
+      display: false
+    },
+    // maintainAspectRatio: false,
+    plugins: {
+      labels: {
+        // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
+        render: 'value',
+        // fontSize: 12,
+
+        // font color, can be color array for each data or function for dynamic color, default is defaultFontColor
+        // fontColor: '#fff',
+        // // draw text shadows under labels, default is false
+        // textShadow: true,
+        // text shadow intensity, default is 6
+        // shadowBlur: 10,
+        // // text shadow X offset, default is 3
+        // shadowOffsetX: -5,
+        // // text shadow Y offset, default is 3
+        // shadowOffsetY: 5,
+        // // text shadow color, default is 'rgba(0,0,0,0.3)'
+        // shadowColor: 'rgba(255,0,0,0.75)',
+        // position to draw label, available value is 'default', 'border' and 'outside'
+        // bar chart ignores this
+        // default is 'default'
+        position: 'outside',
+
+        // set images when `render` is 'image'
+        // images: [
+        //   {
+        //     src: 'image.png',
+        //     width: 16,
+        //     height: 16
+        //   }
+        // ]
+      }
+    }
+  }
+}
