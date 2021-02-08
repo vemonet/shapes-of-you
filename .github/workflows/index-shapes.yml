@@ -23,6 +23,13 @@ jobs:
       fail-fast: false
       matrix:
         git-service: ['github', 'github-extras', 'gitlab', 'gitee']
+        include:
+        - git-service: github
+          search-topics: owl,shacl-shapes,shex,grlc,skos,obofoundry
+        - git-service: gitlab
+          search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
+        - git-service: gitee
+          search-topics: ontology,sparql
 
     steps:
     - name: Checkout the repo code
@@ -46,11 +53,12 @@ jobs:
     - name: Run Python script to index ${{ matrix.git-service }}
       env:
         GIT_SERVICE: ${{ matrix.git-service }}
+        SEARCH_TOPICS: ${{ matrix.search-topics }}
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
       run: |
-        python etl/index_shapes.py $GIT_SERVICE
+        python etl/index_shapes.py $GIT_SERVICE $SEARCH_TOPICS
 
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1

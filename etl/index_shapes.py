@@ -38,43 +38,37 @@ SCHEMA = Namespace("https://schema.org/")
 SIO = Namespace("http://semanticscience.org/resource/")
 
 def main(argv):
-  client = GraphqlClient(endpoint="https://api.github.com/graphql")
-
-  # Reset report file
-  with open(root / '../REPORT.md', 'w') as f:
-    f.write('## Fails loading files to `rdflib`\n' +
-      '*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
-
-  shapes_graph = Graph()
   if len(argv) > 1:
     git_registry = argv[1].lower()
   else:
     git_registry = 'github'
 
-  topics = None
+  topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
   if len(argv) > 2:
     topics = argv[2].lower().split(',')
+  print('Indexing topics: ' + str(topics))
+
+  # Reset report file
+  with open(root / '../REPORT.md', 'w') as f:
+    f.write('## Fails loading files to `rdflib`\n\n' +
+      '**Indexing topics**: `' + '`, `'.join(topics) + '`'
+      '\n\n*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
+
+  client = GraphqlClient(endpoint="https://api.github.com/graphql")
+  shapes_graph = Graph()
 
   # Default topics list is used if not provided
   if git_registry == 'github':
-    if not topics:
-      topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
     shapes_graph = fetch_shape_files(shapes_graph, client, GITHUB_TOKEN, topics)
 
   elif git_registry == 'github-extras':
     shapes_graph = fetch_extra_shape_files(shapes_graph, client, GITHUB_TOKEN)
 
   elif git_registry == 'gitlab':
-    if not topics:
-      topics = ['ontology', 'owl', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
     shapes_graph = fetch_from_gitlab(shapes_graph, gl, topics)
 
   elif git_registry == 'gitee':
-    if not topics:
-      topics = ['ontology']
-      # topics = ['ontology', 'ontologies', 'sparql', 'shacl', 'shex', 'sparql', 'skos', 'obofoundry']
-      # topics = ['ontologies', 'sparql']
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, topics)
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
@@ -413,7 +407,6 @@ query {
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_shape_files(shapes_graph, client, oauth_token, topics):
-    print('Indexing topics: ' + str(topics))
     for github_topic in topics:
       has_next_page = True
       after_cursor = None
@@ -486,7 +479,6 @@ def fetch_extra_shape_files(shapes_graph, client, oauth_token):
 
 # Fetch files from GitLab
 def fetch_from_gitlab(shapes_graph, gl, topics):
-    print('Indexing topics: ' + str(topics))
     for search_topic in topics:
       gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
       # print(gitlab_repos_list)
@@ -512,7 +504,6 @@ def fetch_from_gitlab(shapes_graph, gl, topics):
     return shapes_graph
 
 def fetch_from_gitee(shapes_graph, token, topics):
-    print('Indexing topics: ' + str(topics))
     # Record time to avoid hitting GitHub Actions limits
     time_start = datetime.now()
     
