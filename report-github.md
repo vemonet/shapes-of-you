@@ -1,7 +1,184 @@
 ## Fails loading files to `rdflib`
+
+**Indexing topics**: `owl`, `shacl-shapes`, `shex`, `grlc`, `skos`, `obofoundry`
+
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
+File: https://raw.githubusercontent.com/sdras/night-owl-vscode-theme/main/.github%2FFUNDING.yml
+
+In repository: https://github.com/sdras/night-owl-vscode-theme
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sdras/night-owl-vscode-theme/main/demo%2Fyml.yml
+
+In repository: https://github.com/sdras/night-owl-vscode-theme
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgopkg.in%2Fyaml.v2%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgopkg.in%2FShopify%2Fsarama.v1%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgopkg.in%2FShopify%2Fsarama.v1%2Fdev.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgopkg.in%2Fbsm%2Fratelimit.v1%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgopkg.in%2Fredis.v5%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Furfave%2Fcli%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Furfave%2Fcli%2Fappveyor.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fitsjamie%2Fgin-cors%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fdgrijalva%2Fjwt-go%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Feapache%2Fqueue%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Feapache%2Fgo-xerial-snappy%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Frcrowley%2Fgo-metrics%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2FKnetic%2Fgovaluate%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fgin-gonic%2Fgin%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fgin-gonic%2Fgin%2Fcodecov.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fgin-gonic%2Fgin%2Fwercker.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fpierrec%2Flz4%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fgo-sql-driver%2Fmysql%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fgo-ole%2Fgo-ole%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fgo-ole%2Fgo-ole%2Fappveyor.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fmattn%2Fgo-isatty%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/TalkingData/owl/master/vendor%2Fgithub.com%2Fgin-contrib%2Fsse%2F.travis.yml
+
+In repository: https://github.com/TalkingData/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/VisualDataWeb/WebVOWL/master/.travis.yml
+
+In repository: https://github.com/VisualDataWeb/WebVOWL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/VisualDataWeb/WebVOWL/master/docker-compose.yml
+
+In repository: https://github.com/VisualDataWeb/WebVOWL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/.gitlab-ci.yml
+
+In repository: https://github.com/ontop/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/.travis.yml
+
+In repository: https://github.com/ontop/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ontop/ontop/version4/.github%2Fdependabot.yml
+
+In repository: https://github.com/ontop/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/ontop/ontop/version4/test%2Fsparql-compliance%2Fsrc%2Ftest%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig
 
 In repository: https://github.com/ontop/ontop
@@ -344,6 +521,246 @@ In repository: https://github.com/ontop/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "b'PREFIX owl: <http://www.w3.org/2002/07/owl#> '^b'.\n\n<http://example.org/hasNumber> a owl:DataProperty .'"
+
+---
+File: https://raw.githubusercontent.com/haishanh/night-owl.vim/master/estilo.yml
+
+In repository: https://github.com/haishanh/night-owl.vim
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/haishanh/night-owl.vim/master/estilo%2Fsyntax%2Fbase.yml
+
+In repository: https://github.com/haishanh/night-owl.vim
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/haishanh/night-owl.vim/master/estilo%2Fpalettes%2Fnight-owl.vim.yml
+
+In repository: https://github.com/haishanh/night-owl.vim
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/haishanh/night-owl.vim/master/estilo%2Faddons%2Fnvim-term.yml
+
+In repository: https://github.com/haishanh/night-owl.vim
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/haishanh/night-owl.vim/master/estilo%2Flightline%2Fnight-owl.yml
+
+In repository: https://github.com/haishanh/night-owl.vim
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/.lgtm.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/.travis.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/.codecov.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/.github%2Fstale.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/.github%2Fworkflows%2Fmaven.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/cis%2Fcom.b2international.snowowl.snomed.cis.product%2Fassembly%2Fcommon%2Fconfiguration%2Felasticsearch.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/cis%2Fcom.b2international.snowowl.snomed.cis.product%2Fassembly%2Fcommon%2Fconfiguration%2Fsnowowl.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/core%2Fcom.b2international.snowowl.core.rest.tests%2Fsrc%2Fconfiguration%2Fsnowowl.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/docker%2Fdocker-compose.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/docker%2Fconfig%2Fsnowowl.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config-integerEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config-shortEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config-longEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fconfig.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fconfig-unrecognized.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fempty_module_config.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fnestedconfig-error.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config-booleanEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config-stringEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config-floatEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fconifg-stringEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Femptyconfig.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fconfig-invalidtype.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fdynamic-config-doubleEnvVar.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/commons%2Fcom.b2international.commons.test%2Fsrc%2Fcom%2Fb2international%2Fcommons%2Ftest%2Fconfig%2Fdata%2Fnestedconfig.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/releng%2Fcom.b2international.snowowl.server.update%2Fassembly%2Fcommon%2Fconfiguration%2Fsnowowl.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/releng%2Fcom.b2international.snowowl.server.update%2Fassembly%2Fcommon%2Fscripts%2Fbackup%2Fcurator.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/releng%2Fcom.b2international.snowowl.server.update%2Fassembly%2Fcommon%2Fscripts%2Fbackup%2Fsnowowl_snapshot.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/releng%2Fcom.b2international.snowowl.server.update%2Fassembly%2Fcommon%2Fscripts%2Fbackup%2Fsnowowl_restore.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/fhir%2Fcom.b2international.snowowl.fhir.rest.tests%2Fsrc%2Fconfiguration%2Fsnowowl.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/snomed%2Fcom.b2international.snowowl.snomed.core.rest.tests%2Fsrc%2Fconfiguration%2Fsnowowl.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/snomed%2Fcom.b2international.snowowl.snomed.core.rest.tests%2Fsrc%2Fcom%2Fb2international%2Fsnowowl%2Fsnomed%2Fcore%2Frest%2Fperf%2Frebase-issue.yml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/b2ihealthcare/snow-owl/7.x/.gitbook.yaml
+
+In repository: https://github.com/b2ihealthcare/snow-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dengwb1991/owl-ui/master/.travis.yml
+
+In repository: https://github.com/dengwb1991/owl-ui
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/Cognonto/kbpedia/master/versions%2F2.20%2Ftypologies%2FIntrinsicAttributes-typology.n3
@@ -3714,6 +4131,96 @@ Bad syntax (Prefix "owl:" not bound) at ^ in:
 "b'<http://kbpedia.org/kko/rc/Elastin> a '^b'owl:Class .\n<http://kbpedia.org/kko/rc/Elastin> rdfs:subClas'..."
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fmetadata%2Fhp.yml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FdecreasedProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FincreasedProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FdecreasedProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FfracturedAnatomicalEntityByFractureType.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FbrokenAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FfracturedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FincreasedProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fscripts%2Fhpo_field_mappings.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fmetadata%2Fhp-odk.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-odk.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fpattern.owl
 
 In repository: https://github.com/obophenotype/human-phenotype-ontology
@@ -3852,6 +4359,12 @@ In repository: https://github.com/obophenotype/human-phenotype-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/althonos/pronto/master/.travis.yml
+
+In repository: https://github.com/althonos/pronto
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fowen-jones-gen.obo
 
 In repository: https://github.com/althonos/pronto
@@ -3916,6 +4429,12 @@ File: https://raw.githubusercontent.com/althonos/pronto/master/tests%2Fdata%2Fwi
 
 In repository: https://github.com/althonos/pronto
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/RDFLib/pySHACL/master/.travis.yml
+
+In repository: https://github.com/RDFLib/pySHACL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/taurenshaman/semantic-web/master/data%2Fbeer.rdf
@@ -4126,6 +4645,684 @@ In repository: https://github.com/taurenshaman/semantic-web
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/.github%2Fdco.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/.github%2Fworkflows%2Fdoxygen.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FArduinoJson%2F.travis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FArduinoJson%2Fappveyor.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FArduinoJson%2F.github%2Flock.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FArduinoJson%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2Farduino-timer%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2Farduino-timer%2F.github%2Fworkflows%2Fgithubci.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2Farduino-timer%2F.github%2Fworkflows%2Faunit_tests.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FCRC32%2F.travis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FRadioLib%2F.travis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FRadioLib%2F.github%2Fworkflows%2Fmain.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FRadioLib%2F.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2Fesp8266-oled-ssd1306%2F.travis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2Fesp8266-oled-ssd1306%2F.github%2Fstale.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2Fpubsubclient%2F.travis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FAdafruit_BMP085_Unified%2F.github%2Fworkflows%2Fgithubci.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FDHT-sensor-library%2F.github%2Fworkflows%2Fgithubci.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FAdafruit_Sensor%2F.github%2Fworkflows%2Fgithubci.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FAsyncTCP%2F.travis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FAsyncTCP%2F.github%2Fstale.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FAsyncTCP%2F.github%2Fworkflows%2Fpush.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FAdafruit_BMP280_Library%2F.github%2Fworkflows%2Fgithubci.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FESPAsyncWebServer%2F.travis.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FESPAsyncWebServer%2F_config.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FESPAsyncWebServer%2F.github%2Fstale.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Call-for-Code/ClusterDuck-Protocol/master/Libraries%2FESPAsyncWebServer%2F.github%2Fworkflows%2Fpush.yml
+
+In repository: https://github.com/Call-for-Code/ClusterDuck-Protocol
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/.travis.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/.github%2Fworkflows%2Finference_diff.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2F.travis.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_maturation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmacromolecular_complex_binding.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Finvolved_in_x_y.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fenvenomation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_assembly.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmulti_organism_process.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_transport_from_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fanchored_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fsingle_organism_process.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fbounding_membrane_of_organelle.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fimport_into_cell.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fregulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fvesicle_mediated_transport.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fextrinsic_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Finhibitor_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_structural_organization.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmembrane_region.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmf_binding.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmembrane_spanning_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Ftransmembrane_import_into_cell.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2FoccursIn.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fvesicle_mediated_transport_from_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fintrinsic_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fnegative_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_specification.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_transport.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fprotein_localization_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fimport_across_plasma_membrane.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_development.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_organization.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fintegral_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Festablishment_of_protein_localization_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fpositive_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fchromosomal_region.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fregulator_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_disassembly.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fpart_of_cell_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Factivator_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fregulation_by.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fimport_across_membrane.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fprotein_complex_by_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_formation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fchemical_transport.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_morphogenesis.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fexport_across_membrane.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Ftemplates%2Fgeneric_go_pattern_outline.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fmembrane_receptor_activity_draft.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fprotein_binding_transcription_factor_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fmembrane_region.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fchemical_homeostasis_in.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Forganization.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2FBP_positive_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fbiosynthesis_from.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2FBP_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2FBP_negative_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fbiochebi%2Fbiochebi_gcis.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Ftaxon_constraints%2Fonly_in_taxon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Ftaxon_constraints%2Fnever_in_taxon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Ftaxon_constraints%2Fpresent_in_taxon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_agr.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_mouse.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgocheck_do_not_manually_annotate.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_yeast.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoantislim_grouping.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgocheck_do_not_annotate.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_plant.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_synapse.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fvirus_checked.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_pir.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_candida.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_aspergillus.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_pombe.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_metagenomics.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_chembl.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgosubset_prok.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_goa.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fmf_needs_review.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Ftermgenie_unvetted.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_virus.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_FlyBase_Ribbon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_generic.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fxref_dosdp_yaml%2Freactome_xref.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-idranges.owl
 
 In repository: https://github.com/geneontology/go-ontology
@@ -4312,6 +5509,24 @@ In repository: https://github.com/geneontology/go-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/ESIPFed/sweet/master/.travis.yml
+
+In repository: https://github.com/ESIPFed/sweet
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ESIPFed/sweet/master/.github%2FISSUE_TEMPLATE%2Fconfig.yml
+
+In repository: https://github.com/ESIPFed/sweet
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fmetadata%2Fsweet.yml
+
+In repository: https://github.com/ESIPFed/sweet
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fontology%2Fsweet-edit.owl
 
 In repository: https://github.com/ESIPFed/sweet
@@ -4328,6 +5543,30 @@ File: https://raw.githubusercontent.com/ESIPFed/sweet/master/ci%2Fontology%2Fswe
 
 In repository: https://github.com/ESIPFed/sweet
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/jmvanel/semantic_forms/master/.travis.yml
+
+In repository: https://github.com/jmvanel/semantic_forms
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/.travis.yml
+
+In repository: https://github.com/Galigator/openllet
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/.codeclimate.yml
+
+In repository: https://github.com/Galigator/openllet
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Galigator/openllet/integration/circle.yml
+
+In repository: https://github.com/Galigator/openllet
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/Galigator/openllet/integration/tests%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdata%2Fsparql-dawg-tests%2Ftest-manifest.n3
@@ -4450,6 +5689,504 @@ In repository: https://github.com/Galigator/openllet
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r@pr'..."
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/.travis.yml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/mkdocs.yml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/.readthedocs.yml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fcurie_map.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fprefixes.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fhereditary.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fpostinfectious_disease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fchildhood.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Facute.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frefractory.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcarcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fy_linked.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsarcoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadenocarcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmitochondrial_subtype.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisease_series_by_gene_and_inheritance.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flipoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisrupts_process.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fprimary_infectious.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flocation.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fenvironmental_stimulus.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finfectious_disease_by_agent.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmalignant.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautosomal_recessive.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flymphoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fleiomyoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finborn_metabolic_disrupts.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmeningioma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frare.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fjuvenile.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisease_by_dysfunctional_structure.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_infectious_disease_by_location.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcarcinoma_in_situ.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2FOMIM_disease_series_by_gene.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Facquired.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2FOMIM_phenotypic_series.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finfectious_inflammation.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fleiomyosarcoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsyndromic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fbenign.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsusceptibility_by_gene.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautoimmune.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fhemangioma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnuclear_subtype.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisease_series_by_gene.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsmall_cell_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcancer.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fgenetic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmucoepidermoid_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finfantile.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finborn_metabolic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_infectious_disease_by_agent.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fx_linked.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fbasis_in_disruption_of_process.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautosomal_dominant.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadenosquamous_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frealized_in_response_to_environmental_exposure.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2FvectorBorneDisease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneuroendocrine_neoplasm_grade1.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fallergy.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneuroendocrine_neoplasm.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautoimmune_inflammation.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fchronic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_inflammatory_disease_by_site.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneoplasm.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fbenign_neoplasm.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flocation_top.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fconsequence_of_infectious_disease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_disease_by_dysfunctional_structure.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finflammatory_disease_by_site.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneoplasm_by_origin.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fisolated.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finherited_susceptibility.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frare_genetic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsquamous_cell_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadult.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcongenital.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_disease_by_disrupted_process.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fallergic_form_of_disease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmelanoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadenoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frhabdomyosarcoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fprefixes.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-pattern.owl
@@ -4764,6 +6501,360 @@ In repository: https://github.com/monarch-initiative/mondo
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/.travis.yml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-components.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-minimal.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-module-minimal.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-github-release.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-release-format-patterns.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-release.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-release-format.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-edit-obo.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-robot-report.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-import-minimal.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-patterns.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftriffo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-ci.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-module-mireot.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/tests%2Ftest-module-star.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Fgo%2Fproject.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Fgo-mini%2Fproject.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Fchr%2Fproject.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Fminimal%2Fproject.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Funipathway%2Fproject.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Ftriffo%2Fproject.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fphipo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Frbo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fchr-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fbto-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fmgpo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fcovoc-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fenvo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fwbphenotype-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fsepio-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fupheno-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fpato-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fmp-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fomia-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Ffbcv-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fgeno-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fzeco-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fxpo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fmaxo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fclo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fcl-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fplanp-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fdpo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fecocore-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fmo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fhp-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fnbo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Ffypo-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fwbbt-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fddpheno-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fecto-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fwbls-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Ffbbt-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Ffbdv-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fchiro-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fzp-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fomrse-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/configs%2Fatism-odk.yaml
+
+In repository: https://github.com/INCATools/ontology-development-kit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/examples%2Fgo-mini%2Fgo-edit.obo
 
 In repository: https://github.com/INCATools/ontology-development-kit
@@ -4778,6 +6869,1374 @@ Bad syntax (Prefix "owl:" not bound) at ^ in:
 "...b'Schema#> .\n\n@prefix : <http://example-ontology.org/> .\n\n: a '^b'owl:Ontology .\n\n# normal, basic\n:testprop\n    a owl:ObjectPr'..."
 
 ---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/.travis.yml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/_config.yml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/.github%2Fworkflows%2Fregenerate-artifacts.yml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/.github%2Fworkflows%2Fdeploy-documentation.yml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/biolink-model.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotypic_sex-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmaterial_sample_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenomic_entity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_or_phenotypic_feature-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdata_file-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2FRNA_product_isoform-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fenvironmental_food_contaminant-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcarbohydrate-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fphenomenon-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotype_to_variant_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Forganism_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsequence_variant-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbehavior_to_behavioral_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fexon-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ffrequency_value-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpopulation_to_population_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenomic_sequence_localization-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_or_gene_product-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fanatomical_entity_to_anatomical_entity_ontogenic_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdeath-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fphenotypic_feature-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Frelationship_type-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgross_anatomical_structure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathological_anatomical_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsnv-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcontributor_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmicronutrient-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ffood-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcase-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fagent-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgeographic_location_at_time-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fphysiological_process-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpairwise_molecular_interaction-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fontology_class-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgeographic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmaterial_sample-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcell_line-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ftaxonomic_rank-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcase_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmacromolecular_complex-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fseverity_value-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmolecular_activity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_product-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmacromolecular_machine_to_molecular_activity_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsocioeconomic_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcomplex_chemical_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fchemical_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fexposure_event-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fphenotypic_quality-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdrug_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdrug_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_to_gene_homology_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fepidemiological_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fvariant_to_gene_expression_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fchemical_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fhospitalization-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotype_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fhaplotype-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_regulatory_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_measurement-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fstudy_population-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathognomonicity_quantifier-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsource_file-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsequence_feature_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ffood_additive-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdrug_to_gene_interaction_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbehavioral_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fchemical_substance-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotype_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Freagent_targeted_gene-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fprocessed_material-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fexposure_event_to_outcome_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdrug-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Forganism_taxon-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fprotein-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdataset-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fevidence_type-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdata_set_version-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fvariant_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_expression_mixin-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotype_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ffrequency_quantifier-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ffunctional_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsequence_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotype-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbehavioral_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmaterial_sample_derivation_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fquantity_value-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbiological_sex-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ffood_component-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ffrequency_qualifier_mixin-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdata_set_summary-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcell_line_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdevice-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsocioeconomic_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fonset-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fchemical_to_chemical_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_to_expression_site_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_family-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_or_phenotypic_feature_association_to_location_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathway-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fassociation-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_modifier-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathological_process_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcellular_component-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathological_anatomical_structure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ftranscript_to_gene_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fconfidence_level-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fenvironmental_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fnoncoding_RNA_product-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Foccurrent-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fabstract_entity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fvariant_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fanatomical_entity_to_anatomical_entity_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fzygosity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fattribute-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsocioeconomic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenomic_background_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fserial-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmacromolecular_machine-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdataset_distribution-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathological_process-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbiological_process_or_activity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathological_anatomical_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fvariant_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fvitamin-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdistribution_level-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fhospitalization_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbook_chapter-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fspecificity_quantifier-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcell_line_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Flife_stage-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpairwise_gene_to_gene_interaction-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmolecular_entity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpublication-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fchemical_to_chemical_derivation_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fexposure_event_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmortality_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fprotein_isoform-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fplanetary_entity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_trial-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2FsiRNA-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fenvironmental_feature-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_to_gene_product_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbiological_process-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgeographic_location-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fexon_to_transcript_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Forganism_taxon_to_organism_taxon_interaction-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fvariant_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcohort-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Factivity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpopulation_of_individual_organisms-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbehavioral_feature-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_intervention-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmetabolite-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_course-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotype_to_genotype_part_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fvariant_to_population_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Forganism_taxon_to_organism_taxon_specialization-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fpathological_process_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Findividual_organism-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_to_exposure_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_has_variant_that_contributes_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ftranscript-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmacromolecular_machine_to_biological_process_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Factivity_and_behavior-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fphenotypic_sex-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcoding_sequence-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fcell-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbook-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_to_gene_coexpression_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fphysical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmacromolecular_machine_to_cellular_component_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fnutrient-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fprocedure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fenvironmental_process-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgenotype_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fmacronutrient-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_or_phenotypic_feature_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_ontology_class-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdataset_version-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fclinical_finding-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdata_set-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2FmicroRNA-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Finheritance-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbehavior-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_or_phenotypic_feature_to_location_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fchemical_to_pathway_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_or_phenotypic_feature_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdisease_to_exposure_event_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2FRNA_product-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fnamed_thing-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fprovider-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Ftreatment-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fdataset_summary-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fgene_to_go_term_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Farticle-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fbiotic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fchemical_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fsensitivity_quantifier-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fanatomical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Forganismal_entity_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/golr-views%2Fanatomical_entity_to_anatomical_entity_part_of_association-config.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/contrib%2Fclass_extensions.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/contrib%2Fgo.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/contrib%2Fcore.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/contrib%2Ftranslator.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/contrib%2Fmonarch.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/contrib%2Fclosures.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolink-model/master/contrib%2Ftaxon.yaml
+
+In repository: https://github.com/biolink/biolink-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/AtomGraph/LinkedDataHub/master/docker-compose.yml
+
+In repository: https://github.com/AtomGraph/LinkedDataHub
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/AtomGraph/LinkedDataHub/master/.github%2Fworkflows%2Fhttp-tests.yml
+
+In repository: https://github.com/AtomGraph/LinkedDataHub
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/AtomGraph/LinkedDataHub/master/http-tests%2Fdocker-compose.no-cache.yml
+
+In repository: https://github.com/AtomGraph/LinkedDataHub
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-ML/master/.travis.yml
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-ML
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-ML/master/sansa-ml-spark%2Fsrc%2Ftest%2Fresources%2FClassification%2Font_functional.owl
 
 In repository: https://github.com/SANSA-Stack/Archived-SANSA-ML
@@ -4790,10 +8249,112 @@ In repository: https://github.com/SANSA-Stack/Archived-SANSA-ML
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-ml-spark/src/test/resources/Classification/trains.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/codecov.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/mkdocs.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/.github%2Fdependabot.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/.github%2FFUNDING.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/meta.yaml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Ebiquity/Unified-Cybersecurity-Ontology/master/_config.yml
+
+In repository: https://github.com/Ebiquity/Unified-Cybersecurity-Ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/Ebiquity/Unified-Cybersecurity-Ontology/master/uco_1_5.owl
 
 In repository: https://github.com/Ebiquity/Unified-Cybersecurity-Ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/uco_1_5.owl:673:32: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fmetadata%2Fcl.yml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellPartOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellBearerOfQuality.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellHasPlasmaMembranePartX.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellCapableOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FtaxonSpecific.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fmetadata%2Fcl-odk.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-odk.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fnif_import.owl
@@ -5024,6 +8585,60 @@ In repository: https://github.com/obophenotype/cell-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/flekschas/owl2neo4j/master/.travis.yml
+
+In repository: https://github.com/flekschas/owl2neo4j
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/.travis.yml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2FequivNodeSetTest.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fnucleus.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2FlogicalDefinitionTest.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fabox.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fro.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fbasic.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fobsoletion_example.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fabox.owl
 
 In repository: https://github.com/geneontology/obographs
@@ -5066,10 +8681,46 @@ In repository: https://github.com/geneontology/obographs
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/master/.travis.yml
+
+In repository: https://github.com/SciCrunch/NIF-Ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/bio-ontology-research-group/walking-rdf-and-owl/master/deepwalk_rdf%2F.travis.yml
+
+In repository: https://github.com/bio-ontology-research-group/walking-rdf-and-owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/callahantiff/PheKnowLator/master/.github%2Fworkflows%2Fkg-build.yml
+
+In repository: https://github.com/callahantiff/PheKnowLator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/callahantiff/PheKnowLator/master/.github%2Fworkflows%2Fbuild-qa.yml
+
+In repository: https://github.com/callahantiff/PheKnowLator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/callahantiff/PheKnowLator/master/builds%2Fdeploy%2Ftriple-store%2Fdocker-compose.yml
+
+In repository: https://github.com/callahantiff/PheKnowLator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/callahantiff/PheKnowLator/master/tests%2Fdata%2Fontologies%2Fempty_hp_with_imports.owl
 
 In repository: https://github.com/callahantiff/PheKnowLator
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/data/ontologies/empty_hp_with_imports.owl:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/template-examples%2Fsimple_measurable.yaml
+
+In repository: https://github.com/geneontology/protege-tutorial
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/basic-dl-query%2Fcc.owl
@@ -5142,6 +8793,18 @@ File: https://raw.githubusercontent.com/geneontology/protege-tutorial/master/bas
 
 In repository: https://github.com/geneontology/protege-tutorial
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/.gitlab-ci.yml
+
+In repository: https://github.com/inovexcorp/mobi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/inovexcorp/mobi/master/mobi-distribution%2Fsrc%2Fmain%2Ffiltered-resources%2Fdocker%2Fdocker-compose.yml
+
+In repository: https://github.com/inovexcorp/mobi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/inovexcorp/mobi/master/com.mobi.ontology.utils%2Fsrc%2Ftest%2Fresources%2FIRI_subject.trig
@@ -5384,6 +9047,18 @@ In repository: https://github.com/inovexcorp/mobi
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/owlbarn/book/master/.github%2Fworkflows%2Fworkflow.yml
+
+In repository: https://github.com/owlbarn/book
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/.travis.yml
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-Inference/master/sansa-inference-spark%2Fsrc%2Ftest%2Fresources%2Fforward_chaining%2Faxioms%2Ftest_r3.owl
 
 In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
@@ -5564,6 +9239,30 @@ In repository: https://github.com/SANSA-Stack/Archived-SANSA-Inference
 > Invalid line: '<http://dbpedia.org/resource/Abraham_Lincoln'
 
 ---
+File: https://raw.githubusercontent.com/i40-Tools/I40KG/master/.travis.yml
+
+In repository: https://github.com/i40-Tools/I40KG
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/SANSA-Notebooks/stack-merge/sansa-notebooks%2Fdocker-compose-app.yml
+
+In repository: https://github.com/SANSA-Stack/SANSA-Notebooks
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/SANSA-Notebooks/stack-merge/sansa-notebooks%2Fdocker-compose.yml
+
+In repository: https://github.com/SANSA-Stack/SANSA-Notebooks
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/.travis.yml
+
+In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sansa-owl-flink%2Fsrc%2Ftest%2Fresources%2Font_manchester.owl
 
 In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
@@ -5598,6 +9297,24 @@ File: https://raw.githubusercontent.com/SANSA-Stack/Archived-SANSA-OWL/master/sa
 
 In repository: https://github.com/SANSA-Stack/Archived-SANSA-OWL
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/sansa-owl-spark/src/main/resources/OWLXMLTest.owl:298:32: Invalid property attribute URI: http://www.w3.org/1999/02/22-rdf-syntax-ns#about
+
+---
+File: https://raw.githubusercontent.com/owlbarn/eigen/master/.travis.yml
+
+In repository: https://github.com/owlbarn/eigen
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owlbarn/eigen/master/.github%2Fworkflows%2Fworkflow.yml
+
+In repository: https://github.com/owlbarn/eigen
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/.travis.yml
+
+In repository: https://github.com/International-Data-Spaces-Association/InformationModel
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/International-Data-Spaces-Association/InformationModel/develop/examples%2Fcontracts-and-usage-policy%2Ftemplates%2FOFFER_TEMPLATE.jsonld
@@ -6550,6 +10267,18 @@ In repository: https://github.com/Kaljurand/owl-verbalizer
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/example.owl:11:43: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
 
 ---
+File: https://raw.githubusercontent.com/EcoStruxure/OLGA/master/_config.yml
+
+In repository: https://github.com/EcoStruxure/OLGA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EcoStruxure/OLGA/master/.github%2Fworkflows%2Fmaven.yml
+
+In repository: https://github.com/EcoStruxure/OLGA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/EcoStruxure/OLGA/master/OLGA%2FOLGA-Core%2Fsrc%2Ftest%2Fresources%2Fm3%2Fm3-lite.owl
 
 In repository: https://github.com/EcoStruxure/OLGA
@@ -7072,6 +10801,2352 @@ In repository: https://github.com/kbss-cvut/jopa
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jopa-owl2java/src/test/resources/bad-import.owl:21:39: no element found
 
 ---
+File: https://raw.githubusercontent.com/schimatos/schimatos.org/master/source%2F.travis.yml
+
+In repository: https://github.com/schimatos/schimatos.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/alanruttenberg/lsw2/owlapiv4/virtual-machine%2Flsw-tasks.yml
+
+In repository: https://github.com/alanruttenberg/lsw2
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/alanruttenberg/lsw2/owlapiv4/virtual-machine%2Fsite.yml
+
+In repository: https://github.com/alanruttenberg/lsw2
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dc-mak/NumLin/master/.travis.yml
+
+In repository: https://github.com/dc-mak/NumLin
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/_config.yml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/.github%2Fworkflows%2Fpr-test.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/.github%2Fworkflows%2Fpypi-publish.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/.github%2Fworkflows%2Fmain.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fextensions.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fmappings.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Ftypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fannotations.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgenyaml%2Fmeta.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fenum_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fextension-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fclass_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fannotation-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Falt_description-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Ftype_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fsubset_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fprefix-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fexample-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fpermissible_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Flocal_name-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fschema_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fslot_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Furi_tests.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fmulti_id.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fdefault_namespace.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fyaml_validate_invalid.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Finheritedid.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fyaml_validate_clean.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Froottest.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Ftesttypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fordering.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Ftimepoint.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_177.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_167b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_18_warning1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_18.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fcurie_case.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fcurie_prefix_matching.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_167.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_177_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_tccm%2Fminimalmodel.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_121.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_290.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_113.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_108.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_uriorcurie.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_120.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_177.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_344.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_213.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_63.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_58_error1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_112.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_62.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_namespace.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_163.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_276.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_107.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_65.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_80.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_44.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_167b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_326.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_163c.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2FIssue_6_fixed.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_326a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_332.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_38.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2FIssue_6.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_50.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_warning1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_129.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_84.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_355.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_134.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissues_121_imports.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_134b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fcurie_case.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_106.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_56_bad.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_12.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fcurie_prefix_matching.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_56_good.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_163b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_167.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_177_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_179.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_14.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_enum_import%2Ffile1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_enum_import%2Ffile2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fvaluesets.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Furitypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fdatatypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fillegal_mapping_prefix.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fissue_references.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fexplicit_key_id.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fentrydescription.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Freferences.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fimporter.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Flocalidentifiers.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fimportee.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fprefixes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fminimalmodel.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fentityreference.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fresourcedescription.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260c.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotypic_sex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmaterial_sample_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenomic_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdata_file-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FRNA_product_isoform-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcarbohydrate-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphenomenon-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_variant_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Forganism_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsequence_variant-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexon-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ffrequency_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpopulation_to_population_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenomic_sequence_localization-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_or_gene_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity_to_anatomical_entity_ontogenic_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdeath-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphenotypic_feature-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Frelationship_type-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgross_anatomical_structure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsnv-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcontributor_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ffood-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcase-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fagent-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgeographic_location_at_time-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphysiological_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpairwise_molecular_interaction-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fontology_class-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgeographic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmaterial_sample-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell_line-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftaxonomic_rank-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcase_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_complex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fseverity_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmolecular_activity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine_to_molecular_activity_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsocioeconomic_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcomplex_chemical_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_homology_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fepidemiological_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_gene_expression_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fhospitalization-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fhaplotype-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_regulatory_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_measurement-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fstudy_population-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsource_file-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsequence_feature_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug_to_gene_interaction_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbehavioral_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_substance-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Freagent_targeted_gene-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprocessed_material-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexposure_event_to_outcome_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Forganism_taxon-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprotein-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fevidence_type-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdata_set_version-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_expression_mixin-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ffunctional_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsequence_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbehavioral_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmaterial_sample_derivation_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fquantity_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiological_sex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell_line_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdevice-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsocioeconomic_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fonset-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_chemical_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_expression_site_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_family-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_association_to_location_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpathway-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fassociation-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_modifier-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcellular_component-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftranscript_to_gene_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fconfidence_level-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fenvironmental_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fnoncoding_RNA_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fadministrative_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity_to_anatomical_entity_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fzygosity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fattribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsocioeconomic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenomic_background_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fserial-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpathological_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiological_process_or_activity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fhospitalization_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbook_chapter-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell_line_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Flife_stage-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpairwise_gene_to_gene_interaction-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmolecular_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpublication-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_chemical_derivation_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexposure_event_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmortality_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprotein_isoform-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fplanetary_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_trial-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FsiRNA-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fenvironmental_feature-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_product_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiological_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgeographic_location-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexon_to_transcript_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcohort-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpopulation_of_individual_organisms-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_intervention-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmetabolite-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_course-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_genotype_part_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_population_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Findividual_organism-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_has_variant_that_contributes_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftranscript-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine_to_biological_process_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphenotypic_sex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcoding_sequence-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbook-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_coexpression_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphysical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine_to_cellular_component_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprocedure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fenvironmental_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_ontology_class-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_finding-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdata_set-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FmicroRNA-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Finheritance-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbehavior-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_to_location_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_pathway_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_to_exposure_event_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FRNA_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fnamed_thing-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftreatment-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_go_term_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Farticle-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiotic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Forganismal_entity_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity_to_anatomical_entity_part_of_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Finput%2Fbiolink-model.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fmeta.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fextensions.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fmappings.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Ftypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fannotations.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fmulti_usages_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fmulti_usages.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fschema4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_base.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror10.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmulti_usages_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floaderpass11.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror9.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fbase.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fsynopsis2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmulti_usages_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadertest1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmulti_usages.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fgenerator1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema5.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fsynopsis1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Finherited_slots.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema6.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Furiandcurie.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Forphan_slot_usage.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fownalltest.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror6.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror5.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_l2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror11.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fresolver2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fyaml2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror7.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmergeerror1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmerge1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fowl1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fresolver3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_l1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror2a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fyaml1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsent_uri.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Furiimports.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror8.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fowl2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fresolver1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fstring_template%2Fjones.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fstring_template%2Ftemplated_classes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fstring_serialization%2Fsimple_example.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fissue_pattern%2Fpattern_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fissue_pattern%2Fgood_pattern.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fpython_generation%2Fpython_types.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fpython_generation%2Fpython_complex_ranges.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fpython_generation%2Fpython_lists_and_keys.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_class_name_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_6a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Falternatives.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_6b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_type_name_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_5.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_name_overlaps.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_name_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_7.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fevidence.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/examples%2Forganization.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.jsonld
 
 In repository: https://github.com/biolink/biolinkml
@@ -7182,6 +13257,18 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'os:seeAlso "http://www.human-phenotype-ontology.org#HP_30000'^b'79"^^xsd:anyURI ;\n\nccdh:SpecimenType a skos:Collection ;\n   '..."
 
 ---
+File: https://raw.githubusercontent.com/ghxiao/owl-toolkit/master/.travis.yml
+
+In repository: https://github.com/ghxiao/owl-toolkit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ISA-tools/stato/dev/.travis.yml
+
+In repository: https://github.com/ISA-tools/stato
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Fstato-experimental.owl
 
 In repository: https://github.com/ISA-tools/stato
@@ -7234,6 +13321,18 @@ File: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases%2F1.4%2Fsta
 
 In repository: https://github.com/ISA-tools/stato
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cepave-f2e/vue-owl-ui/dev/.travis.yml
+
+In repository: https://github.com/cepave-f2e/vue-owl-ui
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cepave-f2e/vue-owl-ui/dev/codecov.yml
+
+In repository: https://github.com/cepave-f2e/vue-owl-ui
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/owlcs/ont-api/master/src%2Ftest%2Fresources%2Fowlapi%2Fannotatedpropertychain.ttl.rdf
@@ -7740,12 +13839,78 @@ In repository: https://github.com/owlcs/ont-api
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/yubinCloud/pyfuseki/main/mkdocs.yml
+
+In repository: https://github.com/yubinCloud/pyfuseki
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/yubinCloud/pyfuseki/main/.github%2Fworkflows%2Fci.yml
+
+In repository: https://github.com/yubinCloud/pyfuseki
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/yubinCloud/pyfuseki/main/docs%2Fmkdocs.yml
+
+In repository: https://github.com/yubinCloud/pyfuseki
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ansell/rdf4j-schema-generator/master/.travis.yml
+
+In repository: https://github.com/ansell/rdf4j-schema-generator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/ansell/rdf4j-schema-generator/master/core%2Fsrc%2Ftest%2Fresources%2Fldp.ttl
 
 In repository: https://github.com/ansell/rdf4j-schema-generator
 > at line 13 of <>:
 Bad syntax (newline found in string literal) at ^ in:
 "...b'rovides an informal representation of the concepts and terms'^b'\n\tas defined in the LDP specification.  Consult the LDP spec'..."
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/COB/master/.travis.yml
+
+In repository: https://github.com/OBOFoundry/COB
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mapping-commons/SSSOM/master/examples%2Fexternal%2Fmp-hp-exact-0.0.1-meta.yml
+
+In repository: https://github.com/mapping-commons/SSSOM
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Ponjimon/owl-graphql/master/serverless.yml
+
+In repository: https://github.com/Ponjimon/owl-graphql
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/JPL-IMCE/gov.nasa.jpl.imce.ontologies.public/master/.travis.yml
+
+In repository: https://github.com/JPL-IMCE/gov.nasa.jpl.imce.ontologies.public
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/flowup/owl/master/.travis.yml
+
+In repository: https://github.com/flowup/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/flowup/owl/master/docker-compose.yml
+
+In repository: https://github.com/flowup/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/flowup/owl/master/glide.yaml
+
+In repository: https://github.com/flowup/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/sisinflab-swot/OWL-API-for-iOS/master/OWLAPITests%2FDataset%2Fbuilding.owl
@@ -7776,6 +13941,432 @@ File: https://raw.githubusercontent.com/robotenique/movies-ontology/master/ontol
 
 In repository: https://github.com/robotenique/movies-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologia_manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/.travis.yml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmetadata%2Fecto.yml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fmapping%2Fprefixes.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fprenatal.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Factivity.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdietary_exposure_to_chemical.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdietary_exposure_to_chemical_with_role.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_environmental_material_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_environmental_material.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_geographic_feature.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_change.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fconsumption_of_addictive_substance_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_environmentalprocess_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_environmental_condition.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_organism.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_chemical_medium.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_environmental_quality.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_manufactured_product.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_environmentalprocess.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_behavior.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_occupation.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_behavior_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fconsumption_of_addictive_substance.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_medical_action.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_chemical_medium_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_change_medium.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_chemical_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_medical_action_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexposure_to_chemical.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_air.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_environmental_condition.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_soil_absorption.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_condition.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_water_inhalation.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_air_inhalation.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_air_absorption.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_environmental_process_physical.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_soil_inhalation.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_behavior.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_environmental_process.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_behavior_proximity.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_stress.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_soil_ingestion.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_water_ingestion.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_environmental_process_proximity.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_water.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_water_absorption.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_medical_action.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_medium_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_behavior_physical.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_soil.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_food.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Ftest_patterns%2Fexposure_to_chemical_in_air_ingestion.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fcurie_map.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Fecto-odk.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_via_procedure_in_anatomy.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_event_complex.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_environmental_condition.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_via_procedure.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_material.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_chemical_with_role.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_change_in_levels.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_via_route.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_environmental_process.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_event.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_infection.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fsurgical_procedure.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_levels_in_medium.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Ftransport_path.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_radiation.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fontology%2Farchive%2Fexposure_to_chemical.yaml
+
+In repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/src%2Fresources%2Fwikidata%2Fexposure-symptom-assocs.rdf
@@ -8330,12 +14921,10 @@ In repository: https://github.com/EnvironmentOntology/environmental-exposure-ont
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://raw.githubusercontent.com/DataFabricRus/ontology-fts/master/fibo-ru%2Fexamples%2Fle-itmo_university.ttl
+File: https://raw.githubusercontent.com/konclude/Konclude/master/.travis.yml
 
-In repository: https://github.com/DataFabricRus/ontology-fts
-> at line 46 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'\x9b\xd0\xac\xd0\x9d\xd0\x9e\xd0\x95 \xd0\x93\xd0\x9e\xd0\xa1\xd0\xa3\xd0\x94\xd0\x90\xd0\xa0\xd0\xa1\xd0\xa2\xd0\x92\xd0\x95\xd0\x9d\xd0\x9d\xd0\x9e\xd0\x95 \xd0\x90\xd0\x92\xd0\xa2\xd0\x9e\xd0\x9d\xd0\x9e\xd0\x9c\xd0\x9d\xd0\x9e\xd0'^b'\x95 \xd0\x9e\xd0\x91\xd0\xa0\xd0\x90\xd0\x97\xd0\x9e\xd0\x92\xd0\x90\xd0\xa2\xd0\x95\xd0\x9b\xd0\xac\xd0\x9d\xd0\x9e\xd0\x95 \xd0\xa3\xd0\xa7\xd0\xa0\xd0\x95\xd0\x96\xd0\x94\xd0\x95\xd0\x9d\xd0\x98\xd0\x95 \xd0\x92\xd0\xab\xd0\xa1'..."
+In repository: https://github.com/konclude/Konclude
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/morteza/ontologies/master/AIRS%2Fairs.owl
@@ -8402,6 +14991,24 @@ File: https://raw.githubusercontent.com/morteza/ontologies/master/Negotiate%2Fne
 
 In repository: https://github.com/morteza/ontologies
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Negotiate/negotiate.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fconf%2Fidea_openapi-configuration.yaml
+
+In repository: https://github.com/italia/daf-semantics
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_repository%2Fconf%2Fsemantic_repository.yaml
+
+In repository: https://github.com/italia/daf-semantics
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_manager%2Fconf%2Fsemantic_manager.yaml
+
+In repository: https://github.com/italia/daf-semantics
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/italia/daf-semantics/master/semantic_standardization%2Fontologie-vocabolari-controllati%2FVocabolariControllati%2Ftheme-subtheme-mapping%2Ftheme-subtheme-mapping.jsonld
@@ -8600,6 +15207,14 @@ Bad syntax (Prefix "rdfs:" not bound) at ^ in:
 "...b':country "Spain" .\n\nex:guernica a ex:Painting ;\n            '^b'rdfs:label "Guernica";\n            ex:technique "oil on canv'..."
 
 ---
+File: https://raw.githubusercontent.com/DataFabricRus/ontology-fts/master/fibo-ru%2Fexamples%2Fle-itmo_university.ttl
+
+In repository: https://github.com/DataFabricRus/ontology-fts
+> at line 46 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'\x9b\xd0\xac\xd0\x9d\xd0\x9e\xd0\x95 \xd0\x93\xd0\x9e\xd0\xa1\xd0\xa3\xd0\x94\xd0\x90\xd0\xa0\xd0\xa1\xd0\xa2\xd0\x92\xd0\x95\xd0\x9d\xd0\x9d\xd0\x9e\xd0\x95 \xd0\x90\xd0\x92\xd0\xa2\xd0\x9e\xd0\x9d\xd0\x9e\xd0\x9c\xd0\x9d\xd0\x9e\xd0'^b'\x95 \xd0\x9e\xd0\x91\xd0\xa0\xd0\x90\xd0\x97\xd0\x9e\xd0\x92\xd0\x90\xd0\xa2\xd0\x95\xd0\x9b\xd0\xac\xd0\x9d\xd0\x9e\xd0\x95 \xd0\xa3\xd0\xa7\xd0\xa0\xd0\x95\xd0\x96\xd0\x94\xd0\x95\xd0\x9d\xd0\x98\xd0\x95 \xd0\x92\xd0\xab\xd0\xa1'..."
+
+---
 File: https://raw.githubusercontent.com/Kaljurand/aceview/master/site%2Fexamples%2Fannotations.owl
 
 In repository: https://github.com/Kaljurand/aceview
@@ -8624,6 +15239,24 @@ In repository: https://github.com/Kaljurand/aceview
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/site/examples/countries_base.owl:53:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
 
 ---
+File: https://raw.githubusercontent.com/Freakwill/gimbiseo/master/.github%2Fworkflows%2Fpythonapp.yml
+
+In repository: https://github.com/Freakwill/gimbiseo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Freakwill/gimbiseo/master/gimbiseo%2Fview.yaml
+
+In repository: https://github.com/Freakwill/gimbiseo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/balhoff/arachne/master/.travis.yml
+
+In repository: https://github.com/balhoff/arachne
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/sisinflab-swot/cowl/master/data%2Fexample_pizza.owl
 
 In repository: https://github.com/sisinflab-swot/cowl
@@ -8640,6 +15273,48 @@ File: https://raw.githubusercontent.com/sisinflab-swot/cowl/master/data%2Ftest_o
 
 In repository: https://github.com/sisinflab-swot/cowl
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/data/test_onto.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/ozekik/lightrdf/master/.github%2Fworkflows%2Fci.yaml
+
+In repository: https://github.com/ozekik/lightrdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/wikibus/Rdf.Vocabularies/master/appveyor.yml
+
+In repository: https://github.com/wikibus/Rdf.Vocabularies
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/jgoerner/meetif.ai/master/docker-compose.yml
+
+In repository: https://github.com/jgoerner/meetif.ai
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/.circleci%2Fconfig.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/docs%2F_config.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/.rdflint%2Frdflint-config.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/shful/gofp/master/example%2Fpizza%2Fpizza-functional.owl
@@ -8728,6 +15403,36 @@ In repository: https://github.com/eureadit/reading-experience-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/old/v1.6/data-model-v1.6.owl:263:56: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
+File: https://raw.githubusercontent.com/cepave-f2e/owl-icons/master/.travis.yml
+
+In repository: https://github.com/cepave-f2e/owl-icons
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cognitum-octopus/cognipy/master/docsrc%2F_config.yml
+
+In repository: https://github.com/cognitum-octopus/cognipy
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/.travis.yml
+
+In repository: https://github.com/sparna-git/xls2rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/jitpack.yml
+
+In repository: https://github.com/sparna-git/xls2rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-rest%2Fsrc.bak%2Fmain%2Fresources%2Fapplication.yml
+
+In repository: https://github.com/sparna-git/xls2rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_32_qbPostProcessingTest%2Fexpected.ttl
 
 In repository: https://github.com/sparna-git/xls2rdf
@@ -8742,6 +15447,12 @@ In repository: https://github.com/sparna-git/xls2rdf
 > at line 19 of <>:
 Bad syntax (Prefix "dcterms:" not bound) at ^ in:
 "...b'inebleau.fr/vocabulaires/personnes> a skos:ConceptScheme ;\n\t'^b'dcterms:title "Personnes"@fr;\n\tskos:hasTopConcept <http://ww'..."
+
+---
+File: https://raw.githubusercontent.com/terminusdb-labs/terminusdb-heroku/master/heroku.yml
+
+In repository: https://github.com/terminusdb-labs/terminusdb-heroku
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/DSupertramp/SchoolRank/master/SchoolRank%2FCodici+Py%2Fontologia.owl
@@ -8760,6 +15471,24 @@ File: https://raw.githubusercontent.com/Alliander/schema-composer/master/src%2Fm
 
 In repository: https://github.com/Alliander/schema-composer
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/public/ontologies/cim.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/cmungall/chemistry-ontology/master/src%2Fexamples%2Fnitrite.yaml
+
+In repository: https://github.com/cmungall/chemistry-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/chemistry-ontology/master/src%2Fexamples%2Fammonium.yaml
+
+In repository: https://github.com/cmungall/chemistry-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/chemistry-ontology/master/src%2Fschema%2Fchemont.yaml
+
+In repository: https://github.com/cmungall/chemistry-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/cmungall/chemistry-ontology/master/src%2Fschema%2Fchemont.owl
@@ -8794,6 +15523,78 @@ Bad syntax (Prefix ":" not bound) at ^ in:
 "b''^b':Treatment a rdfs:Class.\n:TaxonConcept a rdfs:Class.\n:Scient'..."
 
 ---
+File: https://raw.githubusercontent.com/Promo/just-carousel/master/.travis.yml
+
+In repository: https://github.com/Promo/just-carousel
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/.travis.yml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Forg%2Fmonarchinitiative%2Fdosdp%2Fmissing_values_test.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Forg%2Fmonarchinitiative%2Fdosdp%2FOverrideTest.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Forg%2Fmonarchinitiative%2Fdosdp%2Ftest_blank_lines.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Forg%2Fmonarchinitiative%2Fdosdp%2FQueryGeneratorRegexTest.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Forg%2Fmonarchinitiative%2Fdosdp%2FQueryGeneratorTest.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Forg%2Fmonarchinitiative%2Fdosdp%2FStandardPrefixes.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Forg%2Fmonarchinitiative%2Fdosdp%2FQueryLabelTest.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Ftutorial%2Fexposure_with_input.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Ftutorial%2Fprefixes.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Ftutorial%2Fexposure_with_input_with_role.yaml
+
+In repository: https://github.com/INCATools/dosdp-tools
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/INCATools/dosdp-tools/master/src%2Ftest%2Fresources%2Ftutorial%2Fexposure_with_input_with_role.owl
 
 In repository: https://github.com/INCATools/dosdp-tools
@@ -8826,6 +15627,558 @@ Bad syntax (bad escape) at ^ in:
 "...b'39";\r\n\t\t\t\tmto:hasCategory "EVENT";\r\n\t\t\t\tmto:hasProgram "TNC:'^b'\\BRIAN\\WARMUP.H".\r\nmto:Line3 rdf:type mto:Line;\r\n\t\t\t\tsaref:h'..."
 
 ---
+File: https://raw.githubusercontent.com/Compliance-Mods/faithful-mods.github.io/master/_config.yml
+
+In repository: https://github.com/Compliance-Mods/faithful-mods.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fanaphora-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fcopy-directory-20160628-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fcl-cookie-20150804-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fsmart-buffer-20160628-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ftrivial-build-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ftrivial-exe-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fdeflate-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fproc-parse-20160318-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Felectron-tools-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fcl%2Bssl-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fjonathan-20190202-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fjonathan-20190202-git%2Fcircle.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fcircular-streams-20161204-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fningle-20181018-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ftrivial-download-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fbordeaux-threads-v0.8.6%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fcl-ansi-text-20150804-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fclack-static-asset-middleware-20160628-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fprove-20171130-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fbabel-20171227-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ffind-port-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fdexador-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fcl-project-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fwhich-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fnibbles-20180831-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fhttp-body-20181210-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fhunchensocket-20180711-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ftrivial-garbage-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ffast-http-20180831-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fpath-parse-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fcffi_0.20.0%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fironclad-v0.45%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fstatic-vectors-v1.8.3%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ftrivial-features-20161204-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fclack-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ftrivial-extract-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fremote-js-20190202-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Ftrivial-compress-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Flack-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fmd5-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fquri-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fquicklisp%2Fsoftware%2Fosicat-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fceramic%2Fsoftware%2Fceramic-branch-master%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fceramic%2Fsoftware%2Fceramic-branch-master%2Fnode_modules%2Fws%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/quicklisp%2Fdists%2Fceramic%2Fsoftware%2Fceramic-branch-master%2Fnode_modules%2Fws%2Fnode_modules%2Fultron%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fanaphora-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fcopy-directory-20160628-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fcl-cookie-20150804-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fsmart-buffer-20160628-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ftrivial-build-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ftrivial-exe-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fdeflate-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fproc-parse-20160318-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Felectron-tools-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fcl%2Bssl-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fjonathan-20190202-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fjonathan-20190202-git%2Fcircle.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fningle-20181018-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ftrivial-download-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fbordeaux-threads-v0.8.6%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fcl-ansi-text-20150804-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fclack-static-asset-middleware-20160628-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fprove-20171130-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fbabel-20171227-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ffind-port-20151218-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fdexador-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fcl-project-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fwhich-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fceramic-branch-master%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fceramic-branch-master%2Fnode_modules%2Fws%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fceramic-branch-master%2Fnode_modules%2Fws%2Fnode_modules%2Fultron%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fnibbles-20180831-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fhunchensocket-20180711-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ftrivial-garbage-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ffast-http-20180831-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fpath-parse-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fcffi_0.20.0%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fironclad-v0.45%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fstatic-vectors-v1.8.3%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ftrivial-features-20161204-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fclack-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ftrivial-extract-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fremote-js-20190202-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Ftrivial-compress-20160421-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Flack-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fmd5-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fquri-20190521-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dbym4820/photon/master/bundle-libs%2Fsoftware%2Fosicat-20180228-git%2F.travis.yml
+
+In repository: https://github.com/dbym4820/photon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/RubenVerborgh/Quick-SPARQL-Endpoint/master/.travis.yml
+
+In repository: https://github.com/RubenVerborgh/Quick-SPARQL-Endpoint
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/nitronoid/criminowl/master/stb%2F.travis.yml
+
+In repository: https://github.com/nitronoid/criminowl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/Konstantin-Bogdanoski/WBS/master/Homeworks%2Fsrc%2Fmain%2Fjava%2FH-03_OWL%2FPizzaOntology.owl
 
 In repository: https://github.com/Konstantin-Bogdanoski/WBS
@@ -8848,6 +16201,48 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'ment rdf:about=""> <foaf:maker rdf:resource="#me"/>\n        '^b'<foaf:primaryTopic rdf:resource="#me"/>\n  <admin:generatorAg'..."
 
 ---
+File: https://raw.githubusercontent.com/aaronEberhart/fOWL/master/.circleci%2Fconfig.yml
+
+In repository: https://github.com/aaronEberhart/fOWL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owl-plugins/prom2owl/master/vendor%2Fgopkg.in%2Falecthomas%2Fkingpin.v2%2F.travis.yml
+
+In repository: https://github.com/owl-plugins/prom2owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owl-plugins/prom2owl/master/vendor%2Fgithub.com%2Fprometheus%2Fprom2json%2F.promu.yml
+
+In repository: https://github.com/owl-plugins/prom2owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owl-plugins/prom2owl/master/vendor%2Fgithub.com%2FSirupsen%2Flogrus%2F.travis.yml
+
+In repository: https://github.com/owl-plugins/prom2owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/owl-plugins/prom2owl/master/vendor%2Fgithub.com%2FSirupsen%2Flogrus%2Fappveyor.yml
+
+In repository: https://github.com/owl-plugins/prom2owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/matei-tm/garmin-m8m/master/.travis.yml
+
+In repository: https://github.com/matei-tm/garmin-m8m
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/matei-tm/garmin-m8m/master/_config.yml
+
+In repository: https://github.com/matei-tm/garmin-m8m
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/alvarosaurus/UML-ODM-to-OWL-XML/master/test%2Ftestdata%2Finheritance.owl
 
 In repository: https://github.com/alvarosaurus/UML-ODM-to-OWL-XML
@@ -8860,10 +16255,34 @@ In repository: https://github.com/alvarosaurus/UML-ODM-to-OWL-XML
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/testdata/classes_and_properties.owl:34:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
+File: https://raw.githubusercontent.com/balhoff/owl-to-rules/master/.travis.yml
+
+In repository: https://github.com/balhoff/owl-to-rules
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/steveraysteveray/epic-public/master/.github%2FFUNDING.yml
+
+In repository: https://github.com/steveraysteveray/epic-public
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/hsu-aut/lion/master/lion_master%2F.travis.yml
+
+In repository: https://github.com/hsu-aut/lion
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/arhs/owl2json-schema/master/src%2Ftest%2Fresources%2Fontology%2FAppolo18_00000D1066.rdf
 
 In repository: https://github.com/arhs/owl2json-schema
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/ontology/Appolo18_00000D1066.rdf:5:1: undefined entity
+
+---
+File: https://raw.githubusercontent.com/picorana/owla.py/master/.travis.yml
+
+In repository: https://github.com/picorana/owla.py
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/picorana/owla.py/master/monet%2Ftest_output.rdf
@@ -8894,6 +16313,36 @@ Bad syntax (objectList expected) at ^ in:
 "...b'era1ER e:stimulus e:ChairLegs;\n    e:experiencer e:B ;\n    a'^b' BSampleOperaER .\n\n\n\n\n\n'"
 
 ---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/docker-compose.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Findex-shapes.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fdeploy-website.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/etl%2Fopenapi.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/nabito/hls/master/hls-latest.owl
 
 In repository: https://github.com/nabito/hls
@@ -8912,10 +16361,34 @@ In repository: https://github.com/nabito/hls
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/hls-eval.owl:35:97: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/cbcm-ontology/master/.github%2Fworkflows%2Fgenerate-docs.yml
+
+In repository: https://github.com/MaastrichtU-IDS/cbcm-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/MaastrichtU-IDS/cbcm-ontology/master/working_copy%2Feu-cm-ontology_owlxml.owl
 
 In repository: https://github.com/MaastrichtU-IDS/cbcm-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/working_copy/eu-cm-ontology_owlxml.owl:20:137: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/Callidon/pyOTTR/master/.travis.yml
+
+In repository: https://github.com/Callidon/pyOTTR
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/kit-sdq/Ecore2OWL/master/.github%2Fworkflows%2Fweekly.yml
+
+In repository: https://github.com/kit-sdq/Ecore2OWL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/kit-sdq/Ecore2OWL/master/.github%2Fworkflows%2Fmaven.yml
+
+In repository: https://github.com/kit-sdq/Ecore2OWL
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/hsu-aut/Mapping-MTP-to-OWL/develop/src%2Fmain%2Fresources%2Fmapping.ttl
@@ -8924,6 +16397,48 @@ In repository: https://github.com/hsu-aut/Mapping-MTP-to-OWL
 > at line 548 of <>:
 Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'te "{./Attribute[@Name=\'ProcedureID\']/Value}";\n\trr:datatype '^b'xsd:strg\n\t]];\n\t\n  \trr:predicateObjectMap [\n    rr:predicate '..."
+
+---
+File: https://raw.githubusercontent.com/Grusinator/MetaDataApi/master/docker-compose-from-docker.yml
+
+In repository: https://github.com/Grusinator/MetaDataApi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Grusinator/MetaDataApi/master/docker-compose.preprod.yml
+
+In repository: https://github.com/Grusinator/MetaDataApi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Grusinator/MetaDataApi/master/docker-compose.yml
+
+In repository: https://github.com/Grusinator/MetaDataApi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Grusinator/MetaDataApi/master/docker-compose.prod.yml
+
+In repository: https://github.com/Grusinator/MetaDataApi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Grusinator/MetaDataApi/master/azure-pipelines.yml
+
+In repository: https://github.com/Grusinator/MetaDataApi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Grusinator/MetaDataApi/master/.circleci%2Fconfig.yml
+
+In repository: https://github.com/Grusinator/MetaDataApi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/phyloref/clade-ontology/master/.travis.yml
+
+In repository: https://github.com/phyloref/clade-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/LUMC-BioSemantics/dcat-extension/master/stardog-rules%2Fstandard-rule.ttl
@@ -8938,6 +16453,12 @@ File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/sema
 
 In repository: https://github.com/sisinflab-swot/semantic-coap
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/barrymun/cs4098/master/peos%2Fui%2Fcarepathways%2Fscripts%2Fjquery_cookie%2F.travis.yml
+
+In repository: https://github.com/barrymun/cs4098
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/ddaedalus/knowledge-systems-ntua/master/ontology%2Fmyontology-turtle.owl
@@ -8968,26 +16489,34 @@ Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b'schema/mtt_a/> .\n\n<http://lod.iti-germany.de/schema/mtt_a/> '^b'rdf:type owl:Ontology ;\n                                    '..."
 
 ---
-File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/NVTO%2Fnvto_protege.owl
+File: https://raw.githubusercontent.com/langsamu/GraphEngine/master/.github%2Fworkflows%2Fdotnet-core.yml
 
-In repository: https://github.com/mawittbe/NVT_Data-Model
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/NVTO/nvto_protege.owl:23:128: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/Examples%2FExamples.ttl
-
-In repository: https://github.com/mawittbe/NVT_Data-Model
-> at line 131 of <>:
-Bad syntax (Prefix "nvto:" not bound) at ^ in:
-"...b's" .\n\n#Gruppen\nex:Group1 rdf:type paam:Agent ;\n            r'^b'df:type nvto:PerformingArtsGroup ;\n            paam:hasName '..."
+In repository: https://github.com/langsamu/GraphEngine
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/Extensions%2Fmtt_a.ttl
+File: https://raw.githubusercontent.com/blankdots/PersonasOntology/master/ontology%2Fpersonasonto.owl
 
-In repository: https://github.com/mawittbe/NVT_Data-Model
-> at line 4 of <>:
-Bad syntax (Prefix "rdf:" not bound) at ^ in:
-"...b'schema/mtt_a/> .\n\n<http://lod.iti-germany.de/schema/mtt_a/> '^b'rdf:type owl:Ontology ;\n                                    '..."
+In repository: https://github.com/blankdots/PersonasOntology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/personasonto.owl:21:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/JPL-IMCE/gov.nasa.jpl.omf.scala.binding.owlapi/master/.travis.yml
+
+In repository: https://github.com/JPL-IMCE/gov.nasa.jpl.omf.scala.binding.owlapi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/dasher/master/.travis.yml
+
+In repository: https://github.com/cmungall/dasher
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/dasher/master/src%2Fschema%2Fsemqc.yaml
+
+In repository: https://github.com/cmungall/dasher
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/cmungall/dasher/master/src%2Fschema%2Fsemqc.owl
@@ -9050,6 +16579,12 @@ In repository: https://github.com/sasjonge/epartition
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/res/koala_small.owl:89:36: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
+File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/docs%2F_config.yml
+
+In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language/master/KB_in_owl_Manchester.owl
 
 In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
@@ -9090,6 +16625,54 @@ File: https://raw.githubusercontent.com/sichkar-valentyn/Knowledge_Base_Represen
 
 In repository: https://github.com/sichkar-valentyn/Knowledge_Base_Represented_by_Semantic_Web_Language
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/original_owl_code.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/gsxhnd/owl/master/.github%2FFUNDING.yml
+
+In repository: https://github.com/gsxhnd/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/gsxhnd/owl/master/.github%2Fworkflows%2Frelease.yml
+
+In repository: https://github.com/gsxhnd/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/gsxhnd/owl/master/.github%2Fworkflows%2Ftest.yml
+
+In repository: https://github.com/gsxhnd/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/gsxhnd/owl/master/mock%2Ftest_err.yaml
+
+In repository: https://github.com/gsxhnd/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/gsxhnd/owl/master/mock%2Ftest.yaml
+
+In repository: https://github.com/gsxhnd/owl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/thisIsTheFoxe/semantic-web/master/docker-compose.yml
+
+In repository: https://github.com/thisIsTheFoxe/semantic-web
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/thisIsTheFoxe/semantic-web/master/.github%2Fworkflows%2Fdeploy.yml
+
+In repository: https://github.com/thisIsTheFoxe/semantic-web
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/thisIsTheFoxe/semantic-web/master/.github%2Fworkflows%2Fnodejs.yml
+
+In repository: https://github.com/thisIsTheFoxe/semantic-web
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/nets4geeks/SPCatalogMaker/master/catalogs%2Facctp%2Fcatalog%2FACCTPCatalog.owl
@@ -9152,6 +16735,12 @@ In repository: https://github.com/nets4geeks/SPCatalogMaker
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/schema/SecurityPatternCatalogNaiveSchema.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/fairgenomes/fairgenomes-semantic-model/main/fair-genomes.yml
+
+In repository: https://github.com/fairgenomes/fairgenomes-semantic-model
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/fairgenomes/fairgenomes-semantic-model/main/transformation-output%2Fowl-xml%2Ffair-genomes.owl
 
 In repository: https://github.com/fairgenomes/fairgenomes-semantic-model
@@ -9166,10 +16755,318 @@ Bad syntax (Prefix "https:" not bound) at ^ in:
 "...b'owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n'^b'https://fair-genomes.org/ a owl:Ontology ; \n\tdc:title "FAIR '..."
 
 ---
+File: https://raw.githubusercontent.com/weso/hercules-ontology/master/.github%2Fworkflows%2Fbuild_docs.yml
+
+In repository: https://github.com/weso/hercules-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/hercules-ontology/master/.github%2Fworkflows%2Fci.yml
+
+In repository: https://github.com/weso/hercules-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/hercules-ontology/master/.github%2Fworkflows%2Fbuild_ontology.yml
+
+In repository: https://github.com/weso/hercules-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/hercules-ontology/master/.github%2Fworkflows%2Fmirror-murcia.yml
+
+In repository: https://github.com/weso/hercules-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/hercules-ontology/master/.github%2Fworkflows%2Fupdate_proposals.yml
+
+In repository: https://github.com/weso/hercules-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Display-Lab/psdo/master/docs%2F_config.yml
+
+In repository: https://github.com/Display-Lab/psdo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/.drone.yml
+
+In repository: https://github.com/cknoll/yamlpyowl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/examples%2Fregional-rules.owl.yml
+
+In repository: https://github.com/cknoll/yamlpyowl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/examples%2Feinsteins_zebra_riddle.owl.yml
+
+In repository: https://github.com/cknoll/yamlpyowl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/examples%2Fpizza.owl.yml
+
+In repository: https://github.com/cknoll/yamlpyowl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/experiments%2Feinsteins_riddle_manchester.owl
 
 In repository: https://github.com/cknoll/yamlpyowl
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/experiments/einsteins_riddle_manchester.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/edmondchuc/vocview/master/vocabs.yaml
+
+In repository: https://github.com/edmondchuc/vocview
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
+
+In repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
+> at line 4 of <>:
+Bad syntax (Prefix "    my:" not bound) at ^ in:
+"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
+
+---
+File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
+
+In repository: https://github.com/paya54/Reason-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
+
+---
+File: https://raw.githubusercontent.com/ziyike/ziyike.github.io/master/_config.yml
+
+In repository: https://github.com/ziyike/ziyike.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/.travis.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2FLocalFileStore%2FMetadata.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2FconfigurationRDF4Jworkbench.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2FconfigurationMishel.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2FRDF4JMem-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Faldapa-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Fejie-calidad-aire-validator-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Fejie-calidad-aire-transformer-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2FRDF4JWorkbench-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Fejie-calidad-aire-links-discoverer-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/pipeline%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2FFileStore-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Ftest%2Fresources%2FLocalFileStoreMetadataFileNameURL.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Ftest%2Fresources%2Fconfiguration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Faldapa-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-ejie-calidad-aire-transformer-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-REST-triple-store-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-ejie-calidad-aire-validator-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-ejie-calidad-aire-links-discoverer-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-triple-store-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-file-store-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Ftest%2Fresources%2Fconfiguration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration2.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration3.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Faldapa-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-ejie-calidad-aire-transformer-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-REST-triple-store-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-ejie-calidad-aire-validator-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-ejie-calidad-aire-links-discoverer-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-triple-store-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-file-store-default-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fsrc%2Fmain%2Fresources%2Fconfiguration%2Ftest-ApacheCommonsCSV_RDF_SPARQL.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core-plugins-tests%2Fdata%2FLocalFileStore%2FMetadata.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fsrc%2Ftest%2Fresources%2FApacheCommonsCSV_RDF_SPARQL.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fsrc%2Ftest%2Fresources%2Fdata%2FRDF4JWorkbench-configuration.yml
+
+In repository: https://github.com/mikel-egana-aranguren/ALDAPA
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2Fdefault-model.trig
@@ -9530,18 +17427,28 @@ Bad syntax (expected item in list or ')') at ^ in:
 "...b'  sh:property [\n    sh:path props:hasTextValue;\n    sh:in (1'^b',2,3);\n    sh:message "must be in";\n  ] ;\n\n'"
 
 ---
-File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
+File: https://raw.githubusercontent.com/Display-Lab/knowledge-base/master/docs%2F_config.yml
 
-In repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
-> at line 4 of <>:
-Bad syntax (Prefix "    my:" not bound) at ^ in:
-"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
+In repository: https://github.com/Display-Lab/knowledge-base
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
+File: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_neo4j/master/.travis.yml
 
-In repository: https://github.com/paya54/Reason-OWL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
+In repository: https://github.com/VirtualFlyBrain/VFB_neo4j
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_neo4j/master/src%2Fuk%2Fac%2Febi%2Fvfb%2Fneo4j%2Fschema%2Fkb_schema.yml
+
+In repository: https://github.com/VirtualFlyBrain/VFB_neo4j
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_neo4j/master/src%2Fuk%2Fac%2Febi%2Fvfb%2Fneo4j%2Fschema%2Fneo_schema.yml
+
+In repository: https://github.com/VirtualFlyBrain/VFB_neo4j
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl
@@ -9570,6 +17477,84 @@ In repository: https://github.com/isuruamantha/OWL-to-AIML
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
 
 ---
+File: https://raw.githubusercontent.com/kit-sdq/OntologyAccess/master/.github%2Fworkflows%2Fmaven_deploy.yml
+
+In repository: https://github.com/kit-sdq/OntologyAccess
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/kit-sdq/OntologyAccess/master/.github%2Fworkflows%2Fmaven_javadoc.yml
+
+In repository: https://github.com/kit-sdq/OntologyAccess
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/kit-sdq/OntologyAccess/master/.github%2Fworkflows%2Fmaven.yml
+
+In repository: https://github.com/kit-sdq/OntologyAccess
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/person_car.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fentity_with_composite_attribute.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fentity_with_simple_attribute.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fweak_entity.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fentity_with_multiple_simple_key_attributes.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fentity_with_single_composite_key_attribute.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fternary_relationship.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fbinary_relationship_without_attributes.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fbinary_relationship_with_attributes.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/igorm/EROWLMapper/master/src%2Ftest%2Fresources%2Fentity_with_single_simple_key_attribute.yml
+
+In repository: https://github.com/igorm/EROWLMapper
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
 
 In repository: https://github.com/falpema/PlanesCuenca
@@ -9588,6 +17573,12 @@ In repository: https://github.com/falpema/PlanesCuenca
 > Invalid line: '<rdf:RDF'
 
 ---
+File: https://raw.githubusercontent.com/wko/elk-web-reasoner/master/docker-compose.yml
+
+In repository: https://github.com/wko/elk-web-reasoner
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl
 
 In repository: https://github.com/Inria-Chile/mining-inspection-ontology
@@ -9600,19 +17591,78 @@ In repository: https://github.com/AVeillas/IA301-urban-transport-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
-File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
+File: https://raw.githubusercontent.com/stefanbischof/sar/master/.travis.yml
 
-In repository: https://github.com/amhiggin/CrimeGeolocationOntology
-> Quote expected in string at ^ in T>
-                "^POLYGON ((-6.3220487
+In repository: https://github.com/stefanbischof/sar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
+File: https://raw.githubusercontent.com/stefanbischof/sar/master/shippable.yml
 
-In repository: https://github.com/CSIRO-enviro-informatics/eudm-profile
-> at line 26 of <>:
-Bad syntax (Prefix "agrif:" not bound) at ^ in:
-"...b'ef/agrif> ;\n.\n\n#\n# Classes\n#\ndcat:Dataset\n  rdfs:subClassOf '^b'agrif:Record ;\n  dct:description "A Dataset is easily seen a'..."
+In repository: https://github.com/stefanbischof/sar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
+
+In repository: https://github.com/AdhamGamal/QASAL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/_config.yml
+
+In repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
+
+In repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/nik27/night-owl-alacritty-theme/main/night-owl.yml
+
+In repository: https://github.com/nik27/night-owl-alacritty-theme
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/airm-o/airm-o/master/docs%2F_config.yml
+
+In repository: https://github.com/airm-o/airm-o
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/atextor/owl-cli/master/.travis.yml
+
+In repository: https://github.com/atextor/owl-cli
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/atextor/owl-cli/master/site.yml
+
+In repository: https://github.com/atextor/owl-cli
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/atextor/owl-cli/master/docs%2Fantora.yml
+
+In repository: https://github.com/atextor/owl-cli
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/decrn/virtual-university/main/docker-compose.yaml
+
+In repository: https://github.com/decrn/virtual-university
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/decrn/virtual-university/main/data%2Fvu-mapping.ttl
+
+In repository: https://github.com/decrn/virtual-university
+> at line 14 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ce/> .\r\n@prefix dbo:      <http://dbpedia.org/ontology/>\r\n\r\n'^b'<#Courses>  a \trr:TriplesMap;\r\n            rr:logicalTable ['..."
 
 ---
 File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fcounciliar-works.owl
@@ -9669,27 +17719,40 @@ In repository: https://github.com/nicorsm/cgg-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owl/council-of-12.owl:21:191: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
-File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
+File: https://raw.githubusercontent.com/stefanbischof/sar/master/.travis.yml
 
-In repository: https://github.com/amhiggin/CrimeGeolocationOntology
-> Quote expected in string at ^ in T>
-                "^POLYGON ((-6.3220487
-
----
-File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
-
-In repository: https://github.com/CSIRO-enviro-informatics/eudm-profile
-> at line 26 of <>:
-Bad syntax (Prefix "agrif:" not bound) at ^ in:
-"...b'ef/agrif> ;\n.\n\n#\n# Classes\n#\ndcat:Dataset\n  rdfs:subClassOf '^b'agrif:Record ;\n  dct:description "A Dataset is easily seen a'..."
+In repository: https://github.com/stefanbischof/sar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://raw.githubusercontent.com/decrn/virtual-university/main/data%2Fvu-mapping.ttl
+File: https://raw.githubusercontent.com/stefanbischof/sar/master/shippable.yml
 
-In repository: https://github.com/decrn/virtual-university
-> at line 14 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ce/> .\r\n@prefix dbo:      <http://dbpedia.org/ontology/>\r\n\r\n'^b'<#Courses>  a \trr:TriplesMap;\r\n            rr:logicalTable ['..."
+In repository: https://github.com/stefanbischof/sar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
+
+In repository: https://github.com/AdhamGamal/QASAL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/_config.yml
+
+In repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
+
+In repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/nik27/night-owl-alacritty-theme/main/night-owl.yml
+
+In repository: https://github.com/nik27/night-owl-alacritty-theme
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/davysouza/CineOnto/master/cinema_database.owl
@@ -9708,6 +17771,186 @@ File: https://raw.githubusercontent.com/davysouza/CineOnto/master/cinema_full.ow
 
 In repository: https://github.com/davysouza/CineOnto
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cinema_full.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/fusion-jena/abecto/master/.gitlab-ci.yml
+
+In repository: https://github.com/fusion-jena/abecto
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fusion-jena/abecto/master/.github%2Fworkflows%2Fmaven.yml
+
+In repository: https://github.com/fusion-jena/abecto
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fusion-jena/abecto/master/binder%2Fenvironment.yml
+
+In repository: https://github.com/fusion-jena/abecto
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/dashawk/angularOwlCarousel/master/.travis.yml
+
+In repository: https://github.com/dashawk/angularOwlCarousel
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Fconfigurations%2Fplant-experimental-conditions-ontology%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Fconfigurations%2Fplant-experimental-conditions-ontology%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Fconfigurations%2Fplant-trait-ontology%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Fconfigurations%2Fplant-trait-ontology%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fbio-attribute-ontology%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fbio-attribute-ontology%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Ffa%2Ftetool_config.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Ffa%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Ffa%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fplant-experimental-conditions-ontology%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fplant-experimental-conditions-ontology%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fgo%2Fmembrane_region.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fgo%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fgo%2Factivator_activity.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fbeer%2Fbeer.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fbeer%2Fbeer_yeast.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fbeer%2Fbeer_yeast_anatomy.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fbeer%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fhpo%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fplant-trait-ontology%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fplant-trait-ontology%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fenvironmental-exposure-ontology%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fenvironmental-exposure-ontology%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fontology-of-plant-stress%2Fconfig.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Planteome/planteome-inca-form/master/docs%2Ftable-editor%2Fconfigurations%2Fontology-of-plant-stress%2Fmenu.yaml
+
+In repository: https://github.com/Planteome/planteome-inca-form
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Onto-Med/PhenoMan-Editor/master/.travis.yml
+
+In repository: https://github.com/Onto-Med/PhenoMan-Editor
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/ROHITHKUMARN/CS5560_KDM_Project/master/Source%2FProject_Phase3%2FOntologyConstruction%2Fdata%2Ffootball.owl
@@ -9734,10 +17977,76 @@ In repository: https://github.com/comfyneet/BachelorThesis
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Source/Java/src/main/resources/rice.owl:906:40: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
+File: https://raw.githubusercontent.com/gfoo/knarql-me/master/.travis.yml
+
+In repository: https://github.com/gfoo/knarql-me
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/ChildMindInstitute/mhdb-tables2turtles/master/.circleci%2Fconfig.yml
+
+In repository: https://github.com/ChildMindInstitute/mhdb-tables2turtles
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/ontology-change-language/master/.travis.yml
+
+In repository: https://github.com/cmungall/ontology-change-language
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/ontology-change-language/master/src%2Fschema%2Focl.yaml
+
+In repository: https://github.com/cmungall/ontology-change-language
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/ontology-change-language/master/src%2Fschema%2Fontology_model.yaml
+
+In repository: https://github.com/cmungall/ontology-change-language
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/cmungall/ontology-change-language/master/src%2Fschema%2Fprov.yaml
+
+In repository: https://github.com/cmungall/ontology-change-language
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/cmungall/ontology-change-language/master/src%2Fschema%2Focl.owl
 
 In repository: https://github.com/cmungall/ontology-change-language
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/schema/ocl.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/docker-compose.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Findex-shapes.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fdeploy-website.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/etl%2Fopenapi.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/GovDataOfficial/DCAT-AP.de-SHACL-Validation/master/validator%2Fresources%2Fv1.0.2%2Fshapes%2Fdcat-ap-de-shapes-specification.ttl
@@ -9796,6 +18105,12 @@ Bad syntax (']' expected) at ^ in:
 "...b';\n  sh:targetClass ex:JS_id;\n  sh:property [\n    sh:path ex:'^b'@context;\n    sh:datatype xsd:string;\n    sh:pattern "http:/'..."
 
 ---
+File: https://raw.githubusercontent.com/landrs-toolkit/landrs-drone-TOAST/master/.github%2Fworkflows%2Fpython-app.yml
+
+In repository: https://github.com/landrs-toolkit/landrs-drone-TOAST
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/landportal/data/master/landlibrary%2Fimporters%2Fconstituteproject.org%2Ffao-geopolitical-update.ttl
 
 In repository: https://github.com/landportal/data
@@ -9804,10 +18119,22 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'efix ontology: <http://www.constituteproject.org/ontology/>\n'^b'<http://www.constituteproject.org/ontology/Taiwan> ontology:'..."
 
 ---
+File: https://raw.githubusercontent.com/weso/shaclex/master/.travis.yml
+
+In repository: https://github.com/weso/shaclex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/.circleci%2Fconfig.yml
+
+In repository: https://github.com/weso/shaclex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fperson.jsonld
 
 In repository: https://github.com/weso/shaclex
-> Expecting value: line 2 column 1 (char 1)
+> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
 
 ---
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fthing.jsonld
@@ -10064,6 +18391,54 @@ Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\r\n@prefix xsd:'..."
 
 ---
+File: https://raw.githubusercontent.com/shexSpec/shex.js/master/.travis.yml
+
+In repository: https://github.com/shexSpec/shex.js
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/.travis.yml
+
+In repository: https://github.com/weso/rdfshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/.circleci%2Fconfig.yml
+
+In repository: https://github.com/weso/rdfshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/modules%2Fserver%2Fsrc%2Fmain%2Fresources%2Fstatic%2Fcodemirror-5.24.2%2F.travis.yml
+
+In repository: https://github.com/weso/rdfshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/.codacy.yaml
+
+In repository: https://github.com/weso/rdfshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/notes%2FAPISpec.yaml
+
+In repository: https://github.com/weso/rdfshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/docs%2Fapi.yaml
+
+In repository: https://github.com/weso/rdfshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/modules%2Fserver%2Fswagger%2Fswagger.yaml
+
+In repository: https://github.com/weso/rdfshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fsimple-group.shacl
 
 In repository: https://github.com/weso/rdfshape
@@ -10126,6 +18501,2328 @@ In repository: https://github.com/weso/rdfshape
 > at line 1 of <>:
 Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/_config.yml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/.github%2Fworkflows%2Fpr-test.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/.github%2Fworkflows%2Fpypi-publish.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/.github%2Fworkflows%2Fmain.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fextensions.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fmappings.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Ftypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fannotations.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgenyaml%2Fmeta.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fenum_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fextension-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fclass_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fannotation-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Falt_description-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Ftype_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fsubset_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fprefix-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fexample-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fpermissible_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Flocal_name-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fschema_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgengolr%2Fmeta%2Fslot_definition-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Furi_tests.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fmulti_id.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fdefault_namespace.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fyaml_validate_invalid.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Finheritedid.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fyaml_validate_clean.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Froottest.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Ftesttypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Fordering.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Finput%2Ftimepoint.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_177.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_167b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_18_warning1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_18.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fcurie_case.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fcurie_prefix_matching.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_167.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_177_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Foutput%2Fissue_tccm%2Fminimalmodel.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_121.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_290.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_113.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_108.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_uriorcurie.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_120.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_177.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_344.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_213.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_63.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_58_error1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_112.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_62.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_namespace.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_163.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_error4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_276.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_107.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_65.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_80.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_44.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_167b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_326.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_163c.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2FIssue_6_fixed.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_326a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_332.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_38.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2FIssue_6.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_50.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18_warning1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_129.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_84.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_355.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_134.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissues_121_imports.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_134b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_18.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fcurie_case.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_106.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_56_bad.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_12.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fcurie_prefix_matching.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_56_good.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_163b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_167.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_177_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_179.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_14.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_enum_import%2Ffile1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_enum_import%2Ffile2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fvaluesets.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Furitypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fdatatypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fillegal_mapping_prefix.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fissue_references.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fexplicit_key_id.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fentrydescription.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Freferences.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fimporter.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Flocalidentifiers.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fimportee.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fprefixes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fminimalmodel.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fentityreference.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_tccm%2Fresourcedescription.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260c.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_issues%2Finput%2Fissue_260%2Fissue_260b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotypic_sex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmaterial_sample_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenomic_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdata_file-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FRNA_product_isoform-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcarbohydrate-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphenomenon-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_variant_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Forganism_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsequence_variant-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexon-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ffrequency_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpopulation_to_population_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenomic_sequence_localization-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_or_gene_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity_to_anatomical_entity_ontogenic_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdeath-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphenotypic_feature-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Frelationship_type-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgross_anatomical_structure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsnv-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcontributor_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ffood-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcase-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fagent-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgeographic_location_at_time-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphysiological_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpairwise_molecular_interaction-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fontology_class-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgeographic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmaterial_sample-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell_line-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftaxonomic_rank-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcase_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_complex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fseverity_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmolecular_activity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine_to_molecular_activity_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsocioeconomic_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcomplex_chemical_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_homology_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fepidemiological_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_gene_expression_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fhospitalization-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fhaplotype-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_regulatory_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_measurement-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fstudy_population-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsource_file-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsequence_feature_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug_to_gene_interaction_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbehavioral_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_substance-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Freagent_targeted_gene-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprocessed_material-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexposure_event_to_outcome_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdrug-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Forganism_taxon-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprotein-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fevidence_type-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdata_set_version-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_expression_mixin-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ffunctional_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsequence_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbehavioral_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmaterial_sample_derivation_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fquantity_value-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiological_sex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell_line_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdevice-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsocioeconomic_attribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fonset-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_chemical_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_expression_site_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_family-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_association_to_location_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpathway-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fassociation-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_modifier-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcellular_component-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftranscript_to_gene_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fconfidence_level-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fenvironmental_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fnoncoding_RNA_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fadministrative_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity_to_anatomical_entity_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fzygosity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fattribute-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fsocioeconomic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenomic_background_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fserial-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpathological_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiological_process_or_activity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fhospitalization_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbook_chapter-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell_line_to_disease_or_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Flife_stage-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpairwise_gene_to_gene_interaction-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmolecular_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpublication-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_chemical_derivation_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexposure_event_to_phenotypic_feature_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmortality_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprotein_isoform-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fplanetary_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_trial-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FsiRNA-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fenvironmental_feature-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_product_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiological_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgeographic_location-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fexon_to_transcript_relationship-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_gene_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcohort-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fpopulation_of_individual_organisms-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_intervention-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmetabolite-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_course-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_genotype_part_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fvariant_to_population_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Findividual_organism-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_has_variant_that_contributes_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftranscript-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine_to_biological_process_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphenotypic_sex-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcoding_sequence-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fcell-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbook-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_gene_coexpression_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fphysical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fmacromolecular_machine_to_cellular_component_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fprocedure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fenvironmental_process-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgenotype_to_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_outcome-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_ontology_class-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fclinical_finding-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdata_set-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FmicroRNA-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Finheritance-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbehavior-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_to_location_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_to_pathway_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_or_phenotypic_feature_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fdisease_to_exposure_event_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2FRNA_product-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fnamed_thing-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Ftreatment-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fgene_to_go_term_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Farticle-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fbiotic_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fchemical_exposure-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Forganismal_entity_as_a_model_of_disease_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Foutput%2Fgolr%2Fanatomical_entity_to_anatomical_entity_part_of_association-config.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_biolink_model%2Finput%2Fbiolink-model.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fmeta.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fextensions.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fmappings.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Ftypes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fannotations.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fmulti_usages_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fmulti_usages.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Foutput%2Fschema4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_base.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror10.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmulti_usages_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floaderpass11.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror9.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fbase.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fsynopsis2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmulti_usages_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadertest1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmulti_usages.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fgenerator1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema5.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fsynopsis1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Finherited_slots.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema6.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Furiandcurie.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Forphan_slot_usage.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fownalltest.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror6.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror5.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_l2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror11.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fresolver2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fyaml2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror7.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmergeerror1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fmerge1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fowl1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fresolver3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fimport_test_l1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror2a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsents3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fyaml1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Ftypeerror2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fifabsent_uri.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Furiimports.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Floadererror8.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fowl2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fresolver1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_utils%2Finput%2Fschema3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fstring_template%2Fjones.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fstring_template%2Ftemplated_classes.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fstring_serialization%2Fsimple_example.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fissue_pattern%2Fpattern_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fissue_pattern%2Fgood_pattern.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fpython_generation%2Fpython_types.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fpython_generation%2Fpython_complex_ranges.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fpython_generation%2Fpython_lists_and_keys.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_class_name_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_6a.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Falternatives.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_6b.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_type_name_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_4.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_5.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_name_overlaps.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_name_error.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_7.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fevidence.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fnotebook_model_2.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_1.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_enhancements%2Finput%2Fenumeration%2Fenum_error_3.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/examples%2Forganization.yaml
+
+In repository: https://github.com/biolink/biolinkml
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.jsonld
@@ -10238,6 +20935,42 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'os:seeAlso "http://www.human-phenotype-ontology.org#HP_30000'^b'79"^^xsd:anyURI ;\n\nccdh:SpecimenType a skos:Collection ;\n   '..."
 
 ---
+File: https://raw.githubusercontent.com/johnsamuelwrites/ShExStatements/master/.readthedocs.yml
+
+In repository: https://github.com/johnsamuelwrites/ShExStatements
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/johnsamuelwrites/ShExStatements/master/.github%2Fworkflows%2Fpythonpackage.yml
+
+In repository: https://github.com/johnsamuelwrites/ShExStatements
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/YASHE/gh-pages/.travis.yml
+
+In repository: https://github.com/weso/YASHE
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/shex-lite/master/.github%2Fworkflows%2Fbuild-deploy-doc.yml
+
+In repository: https://github.com/weso/shex-lite
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/shex-lite/master/.github%2Fworkflows%2Fshex-lite-ci.yml
+
+In repository: https://github.com/weso/shex-lite
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/.github%2Fworkflows%2Fci.yml
+
+In repository: https://github.com/rdf-elixir/shex-ex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fvalidation%2FnPlus1.shacl
 
 In repository: https://github.com/rdf-elixir/shex-ex
@@ -10278,6 +21011,102 @@ Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
 
 ---
+File: https://raw.githubusercontent.com/weso/shexkell/master/stack.yaml
+
+In repository: https://github.com/weso/shexkell
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/docker-compose.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Findex-shapes.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fdeploy-website.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/etl%2Fopenapi.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/shexkellWeb/master/ShexkellWeb-API%2Fstack.yaml
+
+In repository: https://github.com/weso/shexkellWeb
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/hermes/master/.github%2Fworkflows%2Fcd.yml
+
+In repository: https://github.com/weso/hermes
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/hermes/master/.github%2Fworkflows%2Fci.yml
+
+In repository: https://github.com/weso/hermes
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/micgro42/wikidataShExValidator/master/.prettierrc.yml
+
+In repository: https://github.com/micgro42/wikidataShExValidator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/micgro42/wikidataShExValidator/master/.github%2Fworkflows%2Ftest-and-lint.yml
+
+In repository: https://github.com/micgro42/wikidataShExValidator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/micgro42/wikidataShExValidator/master/.github%2Fworkflows%2Fbuild-and-deploy.yml
+
+In repository: https://github.com/micgro42/wikidataShExValidator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/Teester/entityshape/master/.travis.yml
+
+In repository: https://github.com/Teester/entityshape
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/nishad/dc2019-hack-day/master/environment.yaml
+
+In repository: https://github.com/nishad/dc2019-hack-day
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/weso/shapeMaps/master/.travis.yml
+
+In repository: https://github.com/weso/shapeMaps
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/micgro42/mediawiki_userscripts/master/.prettierrc.yml
+
+In repository: https://github.com/micgro42/mediawiki_userscripts
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/MBoegers/ShexSHACLAndFriends/master/listings%2FValueValidation.shacl
 
 In repository: https://github.com/MBoegers/ShexSHACLAndFriends
@@ -10292,6 +21121,72 @@ In repository: https://github.com/MBoegers/ShexSHACLAndFriends
 > at line 1 of <>:
 Bad syntax (Prefix "ex:" not bound) at ^ in:
 "b''^b'ex:NamedObjectStruct a sh:NodeShape ;\n\tsh:targetClass NamedO'..."
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/docker-compose.dev.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/_config.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/docker-compose.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/.github%2Fworkflows%2Fsecurity-scan-docker.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/.github%2Fworkflows%2Frun-tests.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/.github%2Fworkflows%2Fpublish-package.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/.github%2Fworkflows%2Fconda-package.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/.github%2Fworkflows%2Fpublish-docker.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fopenapi.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/docs%2Fdocker-compose.yml
+
+In repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.1.owl
@@ -10314,10 +21209,412 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'tifier "HPO-SIM";\n  openpredict:embedding_type "Diseases" .\n'^b'aaa\n<https://w3id.org/openpredict/feature/PHENO-SIM> a mls:F'..."
 
 ---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/.github%2Fworkflows%2Fgenerate-rdf.yml
+
+In repository: https://github.com/MaastrichtU-IDS/food-claims-kg
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/docker-compose.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Findex-shapes.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fdeploy-website.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/etl%2Fopenapi.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/neuro_dkg/master/.github%2Fworkflows%2Fgenerate-rdf.yml
+
+In repository: https://github.com/MaastrichtU-IDS/neuro_dkg
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/docker-compose.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/docker-compose.etl.test.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/docker-compose.test.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fsolr-synonames%2Faleph-elasticsearch%2F.github%2Fworkflows%2Fbuild.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fopen-semantic-etl%2Fdocker-compose.ubuntu.test.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fopen-semantic-etl%2Fdocker-compose.test.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fopen-semantic-etl%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fopen-semantic-etl%2Fsrc%2Fopen-semantic-entity-search-api%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Ftika-python%2F.travis.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Ftika-python%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fsolr-php-ui%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fsolr-ontology-tagger%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fopen-semantic-visual-graph-explorer%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fopen-semantic-entity-search-api%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fopen-semantic-search-apps%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fsolr-relevance-ranking-analysis%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fsolr.deb%2Fsrc%2Fopen-semantic-entity-search-api%2F.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fcytoscape.js%2F.travis.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search/master/src%2Fcytoscape.js%2F.github%2Fstale.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/.travis.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/docker-compose.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/.codeclimate.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/ansible%2Fplaybook.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/ansible%2Froles%2Fskosmos%2Ftasks%2Fmain.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/ansible%2Froles%2Ffuseki%2Ftasks%2Fmain.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/ansible%2Froles%2Fbase%2Ftasks%2Fmain.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosmos/master/ansible%2Froles%2Fopenjdk%2Ftasks%2Fmain.yml
+
+In repository: https://github.com/NatLibFi/Skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/open-semantic-search-apps/master/.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/open-semantic-search-apps
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/codecov.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/mkdocs.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/.github%2Fdependabot.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/.github%2FFUNDING.yml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/DerwenAI/kglab/main/meta.yaml
+
+In repository: https://github.com/DerwenAI/kglab
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/adlnet/xapi-profiles/master/_config.yml
+
+In repository: https://github.com/adlnet/xapi-profiles
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/NatLibFi/Skosify/master/.travis.yml
+
+In repository: https://github.com/NatLibFi/Skosify
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/NatLibFi/Skosify/master/examples%2Fdctype.out.rdf
 
 In repository: https://github.com/NatLibFi/Skosify
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/examples/dctype.out.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/opensemanticsearch/solr-ontology-tagger/master/.github%2FFUNDING.yml
+
+In repository: https://github.com/opensemanticsearch/solr-ontology-tagger
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/atramhasis/develop/.travis.yml
+
+In repository: https://github.com/OnroerendErfgoed/atramhasis
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/scriptotek/mc2skos/master/.travis.yml
+
+In repository: https://github.com/scriptotek/mc2skos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/scriptotek/mc2skos/master/mc2skos%2Fvocabularies.yml
+
+In repository: https://github.com/scriptotek/mc2skos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/marcelotto/skout/master/docker-compose.yml
+
+In repository: https://github.com/marcelotto/skout
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/marcelotto/skout/master/.github%2Fworkflows%2Fci.yml
+
+In repository: https://github.com/marcelotto/skout
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/marcelotto/skout/master/examples%2Fvehicle_types.yml
+
+In repository: https://github.com/marcelotto/skout
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/koenedaele/skosprovider/develop/.scrutinizer.yml
+
+In repository: https://github.com/koenedaele/skosprovider
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/koenedaele/skosprovider/develop/.travis.yml
+
+In repository: https://github.com/koenedaele/skosprovider
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/realfagstermer/realfagstermer/master/.travis.yml
+
+In repository: https://github.com/realfagstermer/realfagstermer
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/realfagstermer/realfagstermer/master/buildspec.yml
+
+In repository: https://github.com/realfagstermer/realfagstermer
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/realfagstermer/realfagstermer/master/logging.yml
+
+In repository: https://github.com/realfagstermer/realfagstermer
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/uhlibraries-digital/cedar/master/.travis.yml
+
+In repository: https://github.com/uhlibraries-digital/cedar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/uhlibraries-digital/cedar/master/config%2Fsecrets.yml
+
+In repository: https://github.com/uhlibraries-digital/cedar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/uhlibraries-digital/cedar/master/config%2Flocales%2Fen.yml
+
+In repository: https://github.com/uhlibraries-digital/cedar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/.circleci%2Fconfig.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/docs%2F_config.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ssp/master/.rdflint%2Frdflint-config.yml
+
+In repository: https://github.com/opendata-mvcr/ssp
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/acdh-oeaw/vocabseditor/master/.github%2Fworkflows%2Ftest-app.yml
+
+In repository: https://github.com/acdh-oeaw/vocabseditor
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/wikibus/Rdf.Vocabularies/master/appveyor.yml
+
+In repository: https://github.com/wikibus/Rdf.Vocabularies
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/.travis.yml
+
+In repository: https://github.com/sparna-git/xls2rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/jitpack.yml
+
+In repository: https://github.com/sparna-git/xls2rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-rest%2Fsrc.bak%2Fmain%2Fresources%2Fapplication.yml
+
+In repository: https://github.com/sparna-git/xls2rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_32_qbPostProcessingTest%2Fexpected.ttl
@@ -10336,6 +21633,18 @@ Bad syntax (Prefix "dcterms:" not bound) at ^ in:
 "...b'inebleau.fr/vocabulaires/personnes> a skos:ConceptScheme ;\n\t'^b'dcterms:title "Personnes"@fr;\n\tskos:hasTopConcept <http://ww'..."
 
 ---
+File: https://raw.githubusercontent.com/hbz/skos-lookup/master/.travis.yml
+
+In repository: https://github.com/hbz/skos-lookup
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/skosprovider_getty/develop/.travis.yml
+
+In repository: https://github.com/OnroerendErfgoed/skosprovider_getty
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/Coleridge-Initiative/adrf-onto/master/rcc.ttl
 
 In repository: https://github.com/Coleridge-Initiative/adrf-onto
@@ -10352,10 +21661,118 @@ Bad syntax (Prefix ":" not bound) at ^ in:
 "...b'ce> .\n@prefix xsd:\t\t<http://www.w3.org/2001/XMLSchema#> .\n\n\n'^b':ADRF_Ontology rdf:type skos:ConceptScheme ;\n  skos:definiti'..."
 
 ---
+File: https://raw.githubusercontent.com/schmar00/semantic-search/master/_config.yml
+
+In repository: https://github.com/schmar00/semantic-search
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/skosprovider_heritagedata/master/.travis.yml
+
+In repository: https://github.com/OnroerendErfgoed/skosprovider_heritagedata
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/skosprovider_heritagedata/master/.pyup.yml
+
+In repository: https://github.com/OnroerendErfgoed/skosprovider_heritagedata
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/skosprovider_rdf/develop/.travis.yml
+
+In repository: https://github.com/OnroerendErfgoed/skosprovider_rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/skosprovider_rdf/develop/.pyup.yml
+
+In repository: https://github.com/OnroerendErfgoed/skosprovider_rdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/skosprovider_atramhasis/master/.travis.yml
+
+In repository: https://github.com/OnroerendErfgoed/skosprovider_atramhasis
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OnroerendErfgoed/skosprovider_atramhasis/master/.pyup.yml
+
+In repository: https://github.com/OnroerendErfgoed/skosprovider_atramhasis
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/openactive/activity-list/master/.travis.yml
+
+In repository: https://github.com/openactive/activity-list
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/docker-compose.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Findex-shapes.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fdeploy-website.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/etl%2Fopenapi.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/openactive/skos.js/master/.travis.yml
+
+In repository: https://github.com/openactive/skos.js
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/openactive/skos.js/master/.coveralls.yml
+
+In repository: https://github.com/openactive/skos.js
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/scriptotek/humord/master/.travis.yml
+
+In repository: https://github.com/scriptotek/humord
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/scriptotek/humord/master/logging.yml
+
+In repository: https://github.com/scriptotek/humord
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/NisrineBennor/Project_Master2_SemanticWeb/main/Ontologie_Orthodef_Orthophonie.owl
 
 In repository: https://github.com/NisrineBennor/Project_Master2_SemanticWeb
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Ontologie_Orthodef_Orthophonie.owl:26:0: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/kbss-cvut/termit-ui/master/.github%2Fworkflows%2Fmerge-to-master.yml
+
+In repository: https://github.com/kbss-cvut/termit-ui
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/alcinnz/skos-cloud/master/rdf-parser-tests%2Ftimescale-isc2014.ttl
@@ -10374,6 +21791,12 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'ologicEra ;\n  rdf:type skos:Concept ;\n  gts:rank <http://res'^b'ource.geosciml.org/ontology/timescale/rank/Eon> ;\n  thors:be'..."
 
 ---
+File: https://raw.githubusercontent.com/kbss-cvut/termit/master/.github%2Fworkflows%2Fpush-to-master.yml
+
+In repository: https://github.com/kbss-cvut/termit
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/kbss-cvut/termit/master/src%2Ftest%2Fresources%2Fvocabularies%2Fipr-glossaries.ttl
 
 In repository: https://github.com/kbss-cvut/termit
@@ -10388,6 +21811,18 @@ In repository: https://github.com/kbss-cvut/termit
 > at line 16 of <>:
 Bad syntax (Prefix "skos:" not bound) at ^ in:
 "...b'          WHERE { ?vocabulary pdp:popisuje-dokument ?this . '^b'}"""\n] .\n\nskos:Concept a rdfs:Class ;\n# InverseOf between je'..."
+
+---
+File: https://raw.githubusercontent.com/koenedaele/pyramid_skosprovider/develop/.travis.yml
+
+In repository: https://github.com/koenedaele/pyramid_skosprovider
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/.github%2Fworkflows%2Fv2.yml
+
+In repository: https://github.com/opendata-mvcr/ciselniky
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/dny-v-t%C3%BDdnu.trig
@@ -10586,6 +22021,90 @@ In repository: https://github.com/opendata-mvcr/ciselniky
 > 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
 
 ---
+File: https://raw.githubusercontent.com/fair-data-collective/excel2rdf-site/main/readthedocs.yml
+
+In repository: https://github.com/fair-data-collective/excel2rdf-site
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fair-data-collective/excel2rdf-site/main/mkdocs.yml
+
+In repository: https://github.com/fair-data-collective/excel2rdf-site
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/edmondchuc/vocview/master/vocabs.yaml
+
+In repository: https://github.com/edmondchuc/vocview
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Ftest%2Fresources%2Ftests.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Ftest%2Fresources%2Fscolomfr%2Fscolomfr-tests-v2%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Ftest%2Fresources%2Fscolomfr%2Fscolomfr-tests-v3%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Ftest%2Fresources%2Fscolomfr%2Fscolomfr-tests-v1%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Ftest%2Fresources%2Fscolomfr%2Fscolomfr-tests-v5%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Ftest%2Fresources%2Fscolomfr%2Fscolomfr-tests-v4%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Ftest%2Fresources%2Fscolomfr%2Fscolomfr-tests-v0%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/src%2Fmain%2Fresources%2Ftests.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/doc%2Fscolomfr%2Fscolomfr-v-3%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/doc%2Fscolomfr%2Fscolomfr-v-3-2-0%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/j-dornbusch/scolomfr-recette/master/doc%2Fscolomfr%2Fscolomfr-v-3-1%2Fmanifest.yml
+
+In repository: https://github.com/j-dornbusch/scolomfr-recette
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/transporte%2Ftrafico%2Ftipo-incidencia.ttl
 
 In repository: https://github.com/opencitydata/listas-codigos-skos
@@ -10608,6 +22127,120 @@ In repository: https://github.com/opencitydata/listas-codigos-skos
 > at line 13 of <>:
 Bad syntax (Prefix "dc:" not bound) at ^ in:
 "...b'os/sector-publico/territorio/tipo-estado/provisional> ;\n    '^b'dc:creator "Oscar Corcho (Universidad Polit\xc3\xa9cnica de Madrid'..."
+
+---
+File: https://raw.githubusercontent.com/fair-data-collective/excel2rdf-template/main/.github%2Fworkflows%2Fexcel2rdf.yml
+
+In repository: https://github.com/fair-data-collective/excel2rdf-template
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/domel/chemskos/master/docker%2Fdocker-compose.yml
+
+In repository: https://github.com/domel/chemskos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/eghuro/dcat-dry/master/.travis.yml
+
+In repository: https://github.com/eghuro/dcat-dry
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/eghuro/dcat-dry/master/docker-compose.yml
+
+In repository: https://github.com/eghuro/dcat-dry
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fmetadata%2Fhp.yml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FdecreasedProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FincreasedProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FdecreasedProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FfracturedAnatomicalEntityByFractureType.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FbrokenAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FfracturedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FincreasedProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fscripts%2Fhpo_field_mappings.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fmetadata%2Fhp-odk.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-odk.yaml
+
+In repository: https://github.com/obophenotype/human-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fpattern.owl
@@ -10746,6 +22379,564 @@ File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/ma
 
 In repository: https://github.com/obophenotype/human-phenotype-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/.travis.yml
+
+In repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/_config.yml
+
+In repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/_config_header.yml
+
+In repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry%2Fontologies.yml
+
+In repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/_includes%2Fthemes%2Ftwitter%2Fsettings.yml
+
+In repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/_includes%2Fthemes%2Fbootstrap-3%2Fsettings.yml
+
+In repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/principles%2Fall.yml
+
+In repository: https://github.com/OBOFoundry/OBOFoundry.github.io
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/.travis.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/.github%2Fworkflows%2Finference_diff.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2F.travis.yml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_maturation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmacromolecular_complex_binding.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Finvolved_in_x_y.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fenvenomation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_assembly.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmulti_organism_process.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_transport_from_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fanchored_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fsingle_organism_process.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fbounding_membrane_of_organelle.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fimport_into_cell.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fregulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fvesicle_mediated_transport.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fextrinsic_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Finhibitor_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_structural_organization.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmembrane_region.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmf_binding.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fmembrane_spanning_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Ftransmembrane_import_into_cell.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2FoccursIn.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fvesicle_mediated_transport_from_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fintrinsic_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fnegative_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_specification.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_transport.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fprotein_localization_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fimport_across_plasma_membrane.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_development.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_organization.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fintegral_membrane_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Festablishment_of_protein_localization_to.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fpositive_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fchromosomal_region.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fregulator_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fcc_disassembly.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fpart_of_cell_component.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Factivator_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fregulation_by.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fimport_across_membrane.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fprotein_complex_by_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_formation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fchemical_transport.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fx_morphogenesis.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fexport_across_membrane.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Ftemplates%2Fgeneric_go_pattern_outline.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fmembrane_receptor_activity_draft.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fprotein_binding_transcription_factor_activity.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fmembrane_region.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fchemical_homeostasis_in.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Forganization.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2FBP_positive_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2Fbiosynthesis_from.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2FBP_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fdesign_patterns%2Fdraft_patterns%2FBP_negative_regulation.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fbiochebi%2Fbiochebi_gcis.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Ftaxon_constraints%2Fonly_in_taxon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Ftaxon_constraints%2Fnever_in_taxon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Ftaxon_constraints%2Fpresent_in_taxon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_agr.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_mouse.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgocheck_do_not_manually_annotate.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_yeast.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoantislim_grouping.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgocheck_do_not_annotate.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_plant.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_synapse.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fvirus_checked.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_pir.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_candida.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_aspergillus.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_pombe.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_metagenomics.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_chembl.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgosubset_prok.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_goa.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fmf_needs_review.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Ftermgenie_unvetted.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_virus.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_FlyBase_Ribbon.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fsubsets%2Fgoslim_generic.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fxref_dosdp_yaml%2Freactome_xref.yaml
+
+In repository: https://github.com/geneontology/go-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-idranges.owl
@@ -10934,6 +23125,42 @@ In repository: https://github.com/geneontology/go-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/.travis.yml
+
+In repository: https://github.com/biolink/ontobio
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/.github%2Fworkflows%2Fmake-tests.yaml
+
+In repository: https://github.com/biolink/ontobio
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/ontobio%2Fconfig.yaml
+
+In repository: https://github.com/biolink/ontobio
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/tests%2Fresources%2Ftest-config.yaml
+
+In repository: https://github.com/biolink/ontobio
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/tests%2Fresources%2Fextensions-constraints.yaml
+
+In repository: https://github.com/biolink/ontobio
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/biolink/ontobio/master/tests%2Fresources%2Fmgi.dataset.yaml
+
+In repository: https://github.com/biolink/ontobio
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/biolink/ontobio/master/tests%2Fresources%2Fskos_example.rdf
 
 In repository: https://github.com/biolink/ontobio
@@ -10944,6 +23171,504 @@ File: https://raw.githubusercontent.com/biolink/ontobio/master/tests%2Fresources
 
 In repository: https://github.com/biolink/ontobio
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/resources/gocam-example.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/.travis.yml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/mkdocs.yml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/.readthedocs.yml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fcurie_map.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fprefixes.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fhereditary.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fpostinfectious_disease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fchildhood.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Facute.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frefractory.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcarcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fy_linked.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsarcoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadenocarcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmitochondrial_subtype.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisease_series_by_gene_and_inheritance.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flipoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisrupts_process.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fprimary_infectious.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flocation.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fenvironmental_stimulus.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finfectious_disease_by_agent.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmalignant.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautosomal_recessive.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flymphoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fleiomyoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finborn_metabolic_disrupts.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmeningioma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frare.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fjuvenile.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisease_by_dysfunctional_structure.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_infectious_disease_by_location.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcarcinoma_in_situ.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2FOMIM_disease_series_by_gene.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Facquired.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2FOMIM_phenotypic_series.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finfectious_inflammation.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fleiomyosarcoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsyndromic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fbenign.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsusceptibility_by_gene.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautoimmune.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fhemangioma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnuclear_subtype.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fdisease_series_by_gene.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsmall_cell_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcancer.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fgenetic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmucoepidermoid_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finfantile.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finborn_metabolic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_infectious_disease_by_agent.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fx_linked.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fbasis_in_disruption_of_process.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautosomal_dominant.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadenosquamous_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frealized_in_response_to_environmental_exposure.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2FvectorBorneDisease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneuroendocrine_neoplasm_grade1.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fallergy.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneuroendocrine_neoplasm.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fautoimmune_inflammation.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fchronic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_inflammatory_disease_by_site.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneoplasm.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fbenign_neoplasm.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Flocation_top.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fconsequence_of_infectious_disease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_disease_by_dysfunctional_structure.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finflammatory_disease_by_site.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fneoplasm_by_origin.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fisolated.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Finherited_susceptibility.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frare_genetic.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fsquamous_cell_carcinoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadult.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fcongenital.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fspecific_disease_by_disrupted_process.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fallergic_form_of_disease.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fmelanoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Fadenoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-patterns%2Frhabdomyosarcoma.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fprefixes.yaml
+
+In repository: https://github.com/monarch-initiative/mondo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-pattern.owl
@@ -11256,6 +23981,474 @@ File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fon
 
 In repository: https://github.com/monarch-initiative/mondo
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/.travis.yml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/curie_map.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgland_acinus.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fendochondral_bone.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Ftaxon_specific.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgland_duct.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fluminal_space_of.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fendochondral_cartilage.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fanatomical_wall.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fmucosal_layers.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Finnervates_branching.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fgland_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fnerve_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fsubmucosa_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_metanephros.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_in_right_side_of_multicellular_organism.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_in_taxon_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fzone_of_skin_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fbone_element_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_drains_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fdistal_epiphysis_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fvein_drains_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_respiratory_system.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_lower_jaw_region.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_in_taxon_NCBITaxon_9606.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fnucleus_of_brain_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_upper_jaw_region.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fproximal_epiphysis_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fanatomical_cavity_luminal_space_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fepiphysis_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_metanephros.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_forelimb.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_luminal_space_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_composed_primarily_of_cartilage_tissue.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fduct_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fendothelium_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fepithelium_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_forelimb.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_composed_primarily_of_bone_tissue.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fnerve_innervates_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_pes.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_in_right_side_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fskeletal_muscle_organ_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_lower_jaw_region.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fartery_supplies_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fmusculature_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_in_left_side_of_multicellular_organism.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_multicellular_organism.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fsmooth_muscle_tissue_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_in_taxon_NCBITaxon_40674.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_hindlimb.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_manus.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fblood_vessel_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fconnective_tissue_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_in_left_side_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fmesenchyme_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_hindlimb.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fskeletal_muscle_tissue_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fsubdivision_of_skeleton_skeleton_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_respiratory_system.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_composed_primarily_of_pre-cartilage_condensation.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_X_pes.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_supplies_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fmuscular_coat_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fanatomical_space_luminal_space_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fvasculature_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_has_potential_to_develop_into_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_upper_jaw_region.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_composed_primarily_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_innervates_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_mesonephros.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2FX_part_of_manus.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fmucosa_part_of_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/patterns%2Fgenerated%2Fpresumptive_structure_has_potential_to_develop_into_X.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/conf%2Fscigraph-uberon-server.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/conf%2Fscigraph-uberon.yaml
+
+In repository: https://github.com/obophenotype/uberon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-ZFA-MA-201009.rdf
@@ -12518,6 +25711,72 @@ In repository: https://github.com/obophenotype/uberon
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fmetadata%2Fcl.yml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellPartOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellBearerOfQuality.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellHasPlasmaMembranePartX.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FcellCapableOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FtaxonSpecific.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fmetadata%2Fcl-odk.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-odk.yaml
+
+In repository: https://github.com/obophenotype/cell-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fnif_import.owl
 
 In repository: https://github.com/obophenotype/cell-ontology
@@ -12746,6 +26005,54 @@ In repository: https://github.com/obophenotype/cell-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/.travis.yml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2FequivNodeSetTest.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fnucleus.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2FlogicalDefinitionTest.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fabox.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fro.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fbasic.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/geneontology/obographs/master/examples%2Fobsoletion_example.yaml
+
+In repository: https://github.com/geneontology/obographs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fabox.owl
 
 In repository: https://github.com/geneontology/obographs
@@ -12786,6 +26093,1368 @@ File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest
 
 In repository: https://github.com/geneontology/obographs
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/.travis.yml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-deprecated%2FabnormallyLackingAllPartsOfTypeAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-deprecated%2FabnormalQuantityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-deprecated%2FabnormallyLackingAllPartsOfTypeAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FabnormallyAlteredNumberOfAnatomicalEntities.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FabnormallyAlteredNumberOfAnatomicalEntitiesInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FabnormalNumberOfAnatomyByType.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FvascularEctasia.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FlesionInLocationByShape.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2Faneurysm.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FpatternTemplate.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FincreasedImmunoglobulinComplexAgainstEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FabnormallyAlteredNumberOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-workshop%2FabnormalPathologicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Futil%2Fprefixes.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalLevelOfChemicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalLevelOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FbifurcatedAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfAnatomicalEntityDueToDegeneration.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedLevelOfChemicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalCellProliferationInAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedQualityOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfPigmentationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedHeightOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FneoplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalSizeOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabscessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FlysedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FatreticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedFunctionalityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedLengthOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDuplicatedAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FnecroticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfChemicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyFusedAnatomicalEntitiesInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FatrophiedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedWeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedSizeOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalColorOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FmislocalisedAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalShapeOfAnatomicalEntityByShapeType.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedThicknessOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FblisteredAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedLengthOfAnatomicalEntityAttachedToLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedQualityOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalDegenerationOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalWeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FdecreasedProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedFunctionalityOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalPersistenceOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalPositionOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedMassOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyEvertedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedMobilityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedQualityOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfMolecularFunction.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedRateOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalCoilingOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedLevelOfChemicalEntityWithRole.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedStabilityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FaplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfBehavior.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedVolumeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedLevelOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalMotilityOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FhypoplasticAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyPrematureBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalConstrictionOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedRateOfBehavior.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalHasFewerPartsOfTypeAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FfibroticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedStabilityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FblisteredAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalDistanceBetweenAnatomicalEntities.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedResistanceOfWholeOrganismToChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedSpeedOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalMobilityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FhypoplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallySegmentedAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FparalysedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedLengthOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedStrengthOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalPositionOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalBehavior.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalCellProliferationActingOnCellsOfTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedOccurrenceOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FincreasedProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyCurvedAnatomicalEntityByOrientation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedCoilingOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedResistanceOfWholeOrganismToEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FdamagedAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedHeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FdecreasedProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedPigmentationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedThicknessOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FcalcifiedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FmalformedAnatomicalEntityByType.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalRateOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedTonicityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalCellDifferentiation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedDistanceBetweenAnatomicalEntities.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedNumberOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FaplasticHypoplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedLevelOfChemicalEntityWithRole.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDetachedAnatomicalEntities.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalPigmentationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalShapeOfPhysicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedRateOfBehavior.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedLevelOfChemicalEntityWithRoleInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedQualityOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FbifurcatedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalSpatialPatternOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalConcentrationOfChemicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalHasExtraPartsOfTypeAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FfracturedAnatomicalEntityByFractureType.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedMotilityOfCellularComponentInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedLengthOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalFunctionalityOfPartOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FmislocalisedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedFunctionalityOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedWidthOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalLevelOfChemicalEntityWithRole.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FmetaplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedNumberOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyBentAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyApoptoticAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedWidthOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalMorphologyOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedMobilityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedMassDensityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalMolecularFunction.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncompleteClosureOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedLengthOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedRateOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FdysplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyClosedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalMorphologyOfPartOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FmalformedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyProtrudingAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalHeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedWidthOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalConcentrationOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalDevelopmentOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FbrokenAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalHasFewerPartsOfTypeAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedResistanceOfWholeOrganismToChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedWeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyOpenAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedOccurrenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalNumberOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalCellularComponentProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyProminentAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedRateOfMolecularFunction.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FlesionedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalNumberOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalMorphologyOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedLevelOfChemicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedPigmentationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FmalformedAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalResistanceOfWholeOrganismToEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalHasExtraPartsOfTypeAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedRateOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedWidthOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedPositionOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalDegenerationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfMotilityOfCellularComponentInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyRotatedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedCoilingOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedThicknessOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalCellProliferationActingOnCellsOfType.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAnatomicalEntityNotParts.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedResistanceOfWholeOrganismToEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedNumberOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyInvertedAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedDistanceBetweenAnatomicalEntities.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedOccurrenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyPatchyPigmentationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalProportionOfCellTypeTowardsCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDelayedBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalFunctionalityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FfracturedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyApoptoticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedOccurrenceOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalFunctionalityOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedNumberOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedSizeOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyImmobileAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalDegenerationOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedSpeedOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedSizeOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedHeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyFusedAnatomicalEntities.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyIncreasedRateOfMolecularFunction.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedLevelOfChemicalEntityWithRoleInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FedematousAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedSizeOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyArrestedBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedMotilityOfCellularComponentInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FincreasedProportionOfCellTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedRateOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalDegenerationOfCellularComponentInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalLevelOfChemicalEntityWithRoleInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalMorphologyOfCellularComponent.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyArrestedBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAgenesisOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalStabilityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FcystInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalAbsenceOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDecreasedLevelOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalShapeOfAnatomicalEntityByShapeTypeInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormalRateOfBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Fdosdp-dev%2FabnormallyDuplicatedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/upheno
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/upheno/master/upheno_root_alignments.owl
@@ -12868,10 +27537,1324 @@ In repository: https://github.com/obophenotype/upheno
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/.travis.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/tools%2Fsite.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/tools%2Fexamples%2Ftest1%2Ftest1.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/tools%2Fexamples%2Ftest2%2Ftest2.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/tools%2Fexamples%2Ftest2%2Fobo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffma.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffix.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Feupath.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fplana.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fwbbt.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgno.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fzfa.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fhso.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcdao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fobi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ftto.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fupa.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcto.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fagro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fohmi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpso.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffbbt.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ficeo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fidomal.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fclao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Femap.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fdideo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fzfs.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgecko.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fporo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fone.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgaz.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fdc_cl.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fuo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fceph.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ftxpo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fplanp.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fddpheno.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcmo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmod.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fxao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Foostt.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffbcv.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fiev.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fddanat.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fobib.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fecao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Foarcs.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fovae.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fuberon.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcteno.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fncro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Frbo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fstato.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fbfo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fzp.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Faero.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ftrans.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffobi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fbspo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fbila.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fsibo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fomo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fopl.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgsso.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fwbls.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Frnao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpato.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fogsf.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmaxo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fsymp.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ftgma.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fdpo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Folatdv.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpeco.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fato.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fms.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ftao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fhancestro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fomit.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmpio.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fwbphenotype.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpco.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fbto.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Faro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fxlmod.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fphipo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fiao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fchmo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmop.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fico.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmmusdv.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fflu.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffypo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fogms.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fdoid.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffoodon.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fma.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Famphx.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fvto.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fontoneo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fswo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpr.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffovt.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fhsapdv.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fapo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fobo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmmo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fchiro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fvt.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmondo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Foae.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fnbo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpsdo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Femapa.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpdro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fclo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fhtn.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fbcgo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fons.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffbbi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ftaxrank.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Flabo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmirnao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fso.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fornaseq.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fohpi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fhp.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fero.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcaro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fecocore.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgeno.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcl.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fohd.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fimr.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fzeco.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fncit.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fehda.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcob.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fomp.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Frex.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmf.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fppo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fino.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fehdaa2.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fhao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fenvo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fto.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fxco.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fsep.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fxpo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Feco.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fvsao.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcido.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fehdaa.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpdumdv.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgeo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffbsp.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fvhog.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcio.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fvo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcheminf.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fobcs.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fgenepio.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fexo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Frs.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fdron.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fnomen.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fbco.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmiro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fido.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fduo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fflopo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fecto.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fclyh.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmco.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fchebi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmiapa.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fsbo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmp.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Foba.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fogg.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmicro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fupheno.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Feo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmfoem.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fogi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffbdv.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fopmi.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fomiabis.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fapollo_sv.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Faeo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmpath.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmat.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fncbitaxon.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fomrse.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Frxno.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcvdo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ffideo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fspd.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fvario.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fcro.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Ftads.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fpw.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmfomd.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fsepio.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fmfmo.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config%2Fhom.yml
+
+In repository: https://github.com/OBOFoundry/purl.obolibrary.org
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/callahantiff/OMOP2OBO/master/.github%2Fworkflows%2Fbuild-qa.yml
+
+In repository: https://github.com/callahantiff/OMOP2OBO
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/callahantiff/OMOP2OBO/master/tests%2Fdata%2Fontologies%2Fempty_hp_without_imports.owl
 
 In repository: https://github.com/callahantiff/OMOP2OBO
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/data/ontologies/empty_hp_without_imports.owl:1:0: no element found
+
+---
+File: https://raw.githubusercontent.com/OBOFoundry/COB/master/.travis.yml
+
+In repository: https://github.com/OBOFoundry/COB
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/.travis.yml
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fmetadata%2Fgeno.yml
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fontology%2Fgeno-odk.yaml
+
+In repository: https://github.com/monarch-initiative/GENO-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fpatterns%2Fpattern.owl
@@ -12944,6 +28927,306 @@ File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop
 
 In repository: https://github.com/monarch-initiative/GENO-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/.travis.yml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fmetadata%2Ffbbt.yml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftrunk%2Fpatterns%2FVNC_subdomain.yml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2018-02-21%2Fpatterns%2FVNC_subdomain.yml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fmetadata%2Ffbbt.yml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/project.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexample.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flineages%2Fpattern1.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flineages%2Fpattern2.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flineages%2Fpattern3.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flineages%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flch5_subclasses%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flch5_subclasses%2Flch5_subclasses.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FGG_sensory_centres%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FGG_sensory_centres%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FCBR_subregions%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FCBR_subregions%2FCBRs_nosecondpart.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FCBR_subregions%2FCBRs.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FAMMC_subareas%2FAMMC_subareas.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FAMMC_subareas%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FMB_slice_layer%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FMB_slice_layer%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FTODO_GRNs%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FTODO_GRNs%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FVNC_neuron_segments%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FVNC_neuron_segments%2Flarval_VNCneuron_segments.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Fleg_sensory_neurons%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Fleg_sensory_neurons%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Fpharyngeal_neurons%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Fpharyngeal_neurons%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Fleg_sensilla%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Fleg_sensilla%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Ffbbt-odk.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Flch5_subclasses%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Flch5_subclasses%2Flch5_subclasses.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FGG_sensory_centres%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FGG_sensory_centres%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FAMMC_subareas%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FAMMC_subareas%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FTODO_GRNs%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FTODO_GRNs%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FVNC_neuron_segments%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2FVNC_neuron_segments%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Fleg_sensory_neurons%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Fleg_sensory_neurons%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Fpharyngeal_neurons%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Fpharyngeal_neurons%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Fleg_sensilla%2Fpattern.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fpatterns%2Fdosdp%2Fleg_sensilla%2Fprefix.yaml
+
+In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/patterns%2Fpattern.owl
@@ -14368,6 +30651,18 @@ In repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontol
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/.travis.yml
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo/master/.codecov.yml
+
+In repository: https://github.com/fastobo/fastobo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Fms.obo
 
 In repository: https://github.com/fastobo/fastobo
@@ -14414,6 +30709,30 @@ File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Fca
 
 In repository: https://github.com/fastobo/fastobo
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/.travis.yml
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fmetadata%2Ffbcv.yml
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fmetadata%2Fproject.yaml
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Ffbcv-odk.yaml
+
+In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fpatterns%2Fpattern.owl
@@ -15178,16 +31497,130 @@ In repository: https://github.com/FlyBase/flybase-controlled-vocabulary
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/subsets%2Ftaxslim.obo
+File: https://raw.githubusercontent.com/pombase/fypo/master/.travis.yml
 
-In repository: https://github.com/obophenotype/ncbitaxon
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/mappings%2Fncbitaxon-to-eol.obo
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fmetadata%2Ffypo.yml
 
-In repository: https://github.com/obophenotype/ncbitaxon
-> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qoiipoq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qodi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qodi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qdi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qodiipoq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qoi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qodiq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qoiipoq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qpi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qoiq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qpiipoq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qdi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qodiipoq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qodiq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qpi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qoiq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fold_qpiipoq.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdosdp-patterns%2Fnew_qoi.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Ffypo-odk.yaml
+
+In repository: https://github.com/pombase/fypo
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fpattern.owl
@@ -15464,6 +31897,30 @@ In repository: https://github.com/pombase/fypo
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/pattern2owl%2Fexamples%2Fgo%2Fimport_into_cell.yaml
+
+In repository: https://github.com/obophenotype/ncbitaxon
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/subsets%2Ftaxslim.obo
+
+In repository: https://github.com/obophenotype/ncbitaxon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/ncbitaxon/master/mappings%2Fncbitaxon-to-eol.obo
+
+In repository: https://github.com/obophenotype/ncbitaxon
+> No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/porifera-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/poro.owl
 
 In repository: https://github.com/obophenotype/porifera-ontology
@@ -15558,6 +32015,36 @@ File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/sr
 
 In repository: https://github.com/obophenotype/porifera-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fcurie_map.yaml
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fpatterns%2Fattribute_location.yaml
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fpatterns%2Fentity_attribute.yaml
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fpatterns%2Fentity_attribute_location.yaml
+
+In repository: https://github.com/obophenotype/bio-attribute-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Freasoner_axioms.owl
@@ -15726,6 +32213,306 @@ File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/mast
 
 In repository: https://github.com/obophenotype/bio-attribute-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/docker-compose.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Findex-shapes.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fcodeql-analysis.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/.github%2Fworkflows%2Fdeploy-website.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/vemonet/shapes-of-you/main/etl%2Fopenapi.yml
+
+In repository: https://github.com/vemonet/shapes-of-you
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/.github%2Fworkflows%2Fqc.yml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fmetadata%2Fwbphenotype.yml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FatreticAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedFunctionalityOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalShapeOfAnatomicalEntityByShapeType.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedLevelOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedRateOfBehavior.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FblisteredAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedResistanceOfWholeOrganismToChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalBehavior.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAbsenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalPigmentationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedRateOfBehavior.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedLengthOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FmislocalisedAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyBentAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalMorphologyOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalBiologicalProcessInLocation.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalMolecularFunction.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedLengthOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalConcentrationOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalDevelopmentOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedResistanceOfWholeOrganismToChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedRateOfMolecularFunction.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalMorphologyOfAnatomicalEntityInLocation.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAbsenceOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedRateOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntityNotParts.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalLevelOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedOccurrenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDelayedBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedRateOfMolecularFunction.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyArrestedBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedRateOfBiologicalProcess.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedLevelOfChemicalEntity.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwbphenotype-odk.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fupdate_repo%2Fwbphenotype-odk.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-equivalent-axioms-subq.owl
@@ -15944,6 +32731,30 @@ In repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fmetadata%2Fwbbt.yml
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/project.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-odk.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fpatterns%2Fpattern.owl
 
 In repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
@@ -16026,6 +32837,306 @@ File: https://raw.githubusercontent.com/hymao/hao/master/course%2Fhao-course.obo
 
 In repository: https://github.com/hymao/hao
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/.travis.yml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fmetadata%2Fdpo.yml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/project.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FneoplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FatrophiedAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedWeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalWeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAbsenceOfBehavior.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalBiologicalProcess.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedRateOfBehavior.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedResistanceOfWholeOrganismToChemicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FhypoplasticAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalBehavior.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAbsenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedResistanceOfWholeOrganismToEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalPigmentationOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalShapeOfPhysicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedRateOfBehavior.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FdpoAbnormalRateOfDevelopmentBeforeStage.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FdpoFertilityAndViabilityOfWholeOrganism.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedResistanceOfWholeOrganismToChemicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedWeightOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedOccurrenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyIncreasedRateOfBiologicalProcess.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedNumberOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedResistanceOfWholeOrganismToEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedOccurrenceOfBiologicalProcess.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalSizeOfAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FdpoAbnormalFertilityAndViabilityOfWholeOrganism.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2Fexample.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormallyDecreasedRateOfBiologicalProcess.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdata%2Fto_do%2FdpoAbnormalEntityTestXref.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdata%2Farchive%2FdpoUnmodifiedEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdata%2Farchive%2FdpoIItowards.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdata%2Farchive%2FdpoAbnormalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdata%2Farchive%2FdpoAbnormalEntityIIPO.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdata%2Farchive%2FdpoIIpreceded.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FdpoAbnormalEntityOR.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flethal_before_end_of.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FdpoLethalAllDieDuring.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2Flethal_during.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FdpoLethalAllDieBeforeEndOf.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdosdp_workshop%2FdpoAbnormalEntityORpartOfEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fmetadata%2Fproject.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-odk.yaml
+
+In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/patterns%2Fpattern.owl
@@ -16238,6 +33349,30 @@ In repository: https://github.com/FlyBase/drosophila-phenotype-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/.travis.yml
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fmetadata%2Fwbls.yml
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/project.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-odk.yaml
+
+In repository: https://github.com/obophenotype/c-elegans-development-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fpattern.owl
 
 In repository: https://github.com/obophenotype/c-elegans-development-ontology
@@ -16308,6 +33443,24 @@ File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontol
 
 In repository: https://github.com/obophenotype/c-elegans-development-ontology
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/althonos/obofoundry.rs/master/.travis.yml
+
+In repository: https://github.com/althonos/obofoundry.rs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo-syntax/master/.travis.yml
+
+In repository: https://github.com/fastobo/fastobo-syntax
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/fastobo/fastobo-syntax/master/ci%2Fcodecov.yml
+
+In repository: https://github.com/fastobo/fastobo-syntax
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro-with-annotations.owl
@@ -16410,6 +33563,36 @@ File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%
 
 In repository: https://github.com/obophenotype/caro
 > No plugin registered for (obo, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/.travis.yml
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fmetadata%2Ffbdv.yml
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/project.yaml
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fdosdp-patterns%2FabnormalAnatomicalEntity.yaml
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-odk.yaml
+
+In repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fpattern.owl
