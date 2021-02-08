@@ -1,47 +1,20 @@
 ## Fails loading files to `rdflib`
+
+**Indexing topics**: `owl`, `shacl`, `shex`, `sparql`, `skos`, `obofoundry`, `ontology`
+
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
-File: https://gitlab.com/Mr-DO/modsem_project20-21/-/raw/master/modsem_project20-21.owl
+File: https://gitlab.com/mflint/spaceflightnowlaunchcalendar/-/raw/master/heroku.yml
 
-In repository: https://gitlab.com/Mr-DO/modsem_project20-21
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/modsem_project20-21.owl:30:194: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://gitlab.com/it21208/Ontology-for-University-of-Strathclyde-Sport-s-Facility/-/raw/master/University+Of+Strathclyde+Centre+For+Sport+Recreation.owl
-
-In repository: https://gitlab.com/it21208/Ontology-for-University-of-Strathclyde-Sport-s-Facility
-> 'strath.ac.uk or by telephone on 0141 548 4186.' is not a valid language tag!
+In repository: https://gitlab.com/mflint/spaceflightnowlaunchcalendar
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
-File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/pizza.owl
+File: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src%2Fmain%2Fresources%2Fwebroot%2Fshacl%2Fopenapi.yaml
 
-In repository: https://gitlab.com/paltusovnikita/ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pizza.owl:46:95: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/mol_only3.owl
-
-In repository: https://gitlab.com/paltusovnikita/ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mol_only3.owl:17:46: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/example_owl_1_for_testing.owl
-
-In repository: https://gitlab.com/paltusovnikita/ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/example_owl_1_for_testing.owl:164:34: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/ont2.owl
-
-In repository: https://gitlab.com/paltusovnikita/ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ont2.owl:35:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/ontologyfile.owl
-
-In repository: https://gitlab.com/paltusovnikita/ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologyfile.owl:158:34: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+In repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl
@@ -52,12 +25,432 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'hema#> .\n@prefix edp: <https://europeandataportal.eu/voc#>\n\n'^b'<https://example.eu/set/data/test-dataset>\n    a dcat:Datase'..."
 
 ---
+File: https://gitlab.com/piveau/metrics/piveau-shacl-validator/-/raw/master/src%2Fmain%2Fresources%2Fwebroot%2Fopenapi.yaml
+
+In repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://gitlab.com/piveau/metrics/piveau-shacl-validator/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl
 
 In repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
 > at line 17 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'hema#> .\n@prefix edp: <https://europeandataportal.eu/voc#>\n\n'^b'<https://example.eu/set/data/test-dataset>\n    a dcat:Datase'..."
+
+---
+File: https://gitlab.com/p-conrad/shacl-ci-showcase/-/raw/master/.gitlab-ci.yml
+
+In repository: https://gitlab.com/p-conrad/shacl-ci-showcase
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/p-conrad/shacl-ci-showcase/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/p-conrad/shacl-ci-showcase
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/allotrope-open-source/shape-editor/-/raw/master/.gitlab-ci.yml
+
+In repository: https://gitlab.com/allotrope-open-source/shape-editor
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/rubencaro/sshex/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/rubencaro/sshex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/387rollerball/finishexaiproj/-/raw/master/ImageAI%2F.travis.yml
+
+In repository: https://gitlab.com/387rollerball/finishexaiproj
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/387rollerball/finishexaiproj/-/raw/master/ImageAI%2F.codecov.yml
+
+In repository: https://gitlab.com/387rollerball/finishexaiproj
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/387rollerball/finishexaiproj/-/raw/master/deployment.yaml
+
+In repository: https://gitlab.com/387rollerball/finishexaiproj
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-yarn-global%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fes-to-primitive%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fes-to-primitive%2F.github%2FFUNDING.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-regex%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-regex%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimstart%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimstart%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Ffinalhandler%2Fnode_modules%2Fdebug%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Ffinalhandler%2Fnode_modules%2Fdebug%2F.coveralls.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fundefsafe%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fundefsafe%2Fnode_modules%2Fdebug%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fundefsafe%2Fnode_modules%2Fdebug%2F.coveralls.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fhas-symbols%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fhas-symbols%2F.github%2FFUNDING.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fhas-symbols%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-callable%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-callable%2F.istanbul.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-callable%2F.github%2FFUNDING.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-callable%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fresolve%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fresolve%2Fappveyor.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fpstree.remy%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fdefine-properties%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-symbol%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-symbol%2F.github%2FFUNDING.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-symbol%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Ffunction-bind%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fexpress%2Fnode_modules%2Fdebug%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fexpress%2Fnode_modules%2Fdebug%2F.coveralls.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fobject.getownpropertydescriptors%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fobject.getownpropertydescriptors%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fpath-parse%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimleft%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimleft%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fnodemon%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimright%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimright%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fjson-buffer%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Ftypedarray-to-buffer%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Ftypedarray-to-buffer%2F.airtap.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fes-abstract%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fes-abstract%2F.github%2FFUNDING.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fes-abstract%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-date-object%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-date-object%2F.github%2FFUNDING.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fis-date-object%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fsend%2Fnode_modules%2Fdebug%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fsend%2Fnode_modules%2Fdebug%2F.coveralls.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fconcat-map%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimend%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fstring.prototype.trimend%2F.github%2Fworkflows%2Frebase.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fobject-keys%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fbody-parser%2Fnode_modules%2Fdebug%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fbody-parser%2Fnode_modules%2Fdebug%2F.coveralls.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fobject-inspect%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fpump%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fbabel-plugin-dynamic-import-node%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/RainClouDe/doshex-task/-/raw/master/node_modules%2Fminimist%2F.travis.yml
+
+In repository: https://gitlab.com/RainClouDe/doshex-task
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/shex/-/raw/develop/.travis.yml
+
+In repository: https://gitlab.com/gkellogg/shex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/shex/-/raw/develop/_config.yml
+
+In repository: https://gitlab.com/gkellogg/shex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/shex/-/raw/develop/.coveralls.yml
+
+In repository: https://gitlab.com/gkellogg/shex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/shex/-/raw/develop/.github%2Fworkflows%2Fci.yml
+
+In repository: https://gitlab.com/gkellogg/shex
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitlab.com/roelj/sparqling-genomics/-/raw/main/ontologies%2Finternal-structure.ttl
@@ -90,6 +483,12 @@ In repository: https://gitlab.com/Nephyr/learning-sparql
 > at line 11 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'irstName     "Richard" ;\n        ab:lastName       "Mutt" ;\n'^b'NOT DONE\n\nab:playsInstrument\n      rdf:type rdf:Property ;\n '..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/AlbertoPrior/ontop
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
 
 ---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig
@@ -522,11 +921,449 @@ Bad syntax (objectList expected) at ^ in:
 "...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."
 
 ---
+File: https://gitlab.com/calincs/access/cwrc-sparql/-/raw/master/.gitlab-ci.yml
+
+In repository: https://gitlab.com/calincs/access/cwrc-sparql
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/docker-compose.yml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fservices.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Froutes.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Froutes%2Fannotations.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Froutes%2Fdev%2Fframework.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Froutes%2Fdev%2Fweb_profiler.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fvalidator.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fdoctrine.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fcache.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Ftranslation.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fsensio_framework_extra.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Ftwig.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fframework.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fsecurity.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Frouting.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fdoctrine_migrations.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fnotifier.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fmailer.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Ftest%2Fvalidator.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Ftest%2Ftwig.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Ftest%2Fframework.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Ftest%2Fmonolog.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Ftest%2Fweb_profiler.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fdev%2Fmonolog.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fdev%2Fweb_profiler.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fdev%2Fdebug.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fprod%2Fdoctrine.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fprod%2Fdeprecations.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fprod%2Fmonolog.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/froger/sparql-esgi/-/raw/master/config%2Fpackages%2Fprod%2Frouting.yaml
+
+In repository: https://gitlab.com/froger/sparql-esgi
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/imago-project/sparql_client/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/imago-project/sparql_client
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/rdf-reasoner/-/raw/develop/.travis.yml
+
+In repository: https://gitlab.com/gkellogg/rdf-reasoner
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/rdf-reasoner/-/raw/develop/dependencyci.yml
+
+In repository: https://gitlab.com/gkellogg/rdf-reasoner
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/rdf-reasoner/-/raw/develop/.coveralls.yml
+
+In repository: https://gitlab.com/gkellogg/rdf-reasoner
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/gkellogg/rdf-reasoner/-/raw/develop/.github%2Fworkflows%2Fci.yml
+
+In repository: https://gitlab.com/gkellogg/rdf-reasoner
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/maximiliano_osorio/OBA_sparql/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/maximiliano_osorio/OBA_sparql
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/glycoinfo/wurcsrdf/-/raw/master/.gitlab-ci.yml
+
+In repository: https://gitlab.com/glycoinfo/wurcsrdf
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/natural-solutions/ns-python-skos/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/natural-solutions/ns-python-skos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/.travis.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/docker-compose.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/.codeclimate.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/.github%2Fworkflows%2Fdockerimage.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/ansible%2Fplaybook.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/ansible%2Froles%2Fskosmos%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/ansible%2Froles%2Ffuseki%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/ansible%2Froles%2Fbase%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos/-/raw/bibsent/ansible%2Froles%2Fopenjdk%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/isnksw/skosh/-/raw/master/.gitlab-ci.yml
+
+In repository: https://gitlab.com/isnksw/skosh
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/.gitlab-ci.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/docker-compose-prod.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/docker-compose-dev.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/logging.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2F.travis.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2Fdocker-compose.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2F.codeclimate.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2F.github%2Fworkflows%2Fdockerimage.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2Fansible%2Fplaybook.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2Fansible%2Froles%2Fskosmos%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2Fansible%2Froles%2Ffuseki%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2Fansible%2Froles%2Fbase%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/skosmos%2Fansible%2Froles%2Fopenjdk%2Ftasks%2Fmain.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/.github%2Fworkflows%2Fbuild.yml
+
+In repository: https://gitlab.com/bibsent/skosmos-stack
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
 File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/fuseki%2Fconfig.ttl
 
 In repository: https://gitlab.com/bibsent/skosmos-stack
 > at line 12 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'db#> .\n@prefix tdb2:    <http://jena.apache.org/2016/tdb#>\n\n'^b'@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>'..."
+
+---
+File: https://gitlab.com/althonos/obofoundry-rs/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/althonos/obofoundry-rs
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/socioprophet-inc/agreementmaker/-/raw/master/.travis.yml
+
+In repository: https://gitlab.com/socioprophet-inc/agreementmaker
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/Mr-DO/modsem_project20-21/-/raw/master/modsem_project20-21.owl
+
+In repository: https://gitlab.com/Mr-DO/modsem_project20-21
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/modsem_project20-21.owl:30:194: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://gitlab.com/it21208/Ontology-for-University-of-Strathclyde-Sport-s-Facility/-/raw/master/University+Of+Strathclyde+Centre+For+Sport+Recreation.owl
+
+In repository: https://gitlab.com/it21208/Ontology-for-University-of-Strathclyde-Sport-s-Facility
+> 'strath.ac.uk or by telephone on 0141 548 4186.' is not a valid language tag!
+
+---
+File: https://gitlab.com/netmode/emosocio/-/raw/master/.gitlab-ci.yml
+
+In repository: https://gitlab.com/netmode/emosocio
+> No plugin registered for (openapi, <class 'rdflib.parser.Parser'>)
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/pizza.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pizza.owl:46:95: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/mol_only3.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mol_only3.owl:17:46: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/example_owl_1_for_testing.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/example_owl_1_for_testing.owl:164:34: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/ont2.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ont2.owl:35:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/paltusovnikita/ontology/-/raw/master/ontologyfile.owl
+
+In repository: https://gitlab.com/paltusovnikita/ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontologyfile.owl:158:34: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
