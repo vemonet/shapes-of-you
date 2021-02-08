@@ -22,7 +22,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        git-service: ['github', 'github-extras', 'gitlab', 'gitee']
         include:
         - git-service: github
           search-topics: owl,shacl-shapes,shex,grlc,skos,obofoundry
@@ -32,6 +31,8 @@ jobs:
           search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
         - git-service: gitee
           search-topics: ontology,sparql
+        - git-service: github-extra
+          search-topics: extra
 
     steps:
     - name: Checkout the repo code
