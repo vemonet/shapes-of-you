@@ -70,6 +70,7 @@ export default function SemanticIndex() {
     checkbox_owl: true,
     checkbox_skos: true,
     checkbox_obo: true,
+    checkbox_openapi: true,
     page: 1,
     shapes_per_page: 100,
   });
@@ -275,6 +276,7 @@ export default function SemanticIndex() {
           || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
           || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
           || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
+          || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/WebAPI')
           ) {
             // Filter using the search text, on all properties and metadata of the file:
             let file_description = '';
@@ -505,6 +507,16 @@ export default function SemanticIndex() {
                   color="primary"
                 /> }
               label="OBO"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={state.checkbox_openapi}
+                  onChange={handleCheckboxes}
+                  name="checkbox_openapi"
+                  color="primary"
+                /> }
+              label="OpenAPI"
             />
           </FormGroup>
           <TextField
