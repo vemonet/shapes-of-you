@@ -5,7 +5,7 @@
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
-Running for 0:01:00.689992 - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits
+Running for 0:00:58.864446 - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits
 
 The following repositories did not have the time to be processed:
 
