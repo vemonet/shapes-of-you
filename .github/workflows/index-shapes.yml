@@ -27,7 +27,7 @@ jobs:
           search-topics: owl,shacl-shapes,shex,grlc,skos,obofoundry
         - git-service: github
           run-label: openapi-run
-          search-topics: openapi,smartapi,ncats-translator,translator-api
+          search-topics: api,openapi,smartapi,ncats-translator,translator-api
         - git-service: gitlab
           run-label: main-run
           search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
@@ -39,7 +39,13 @@ jobs:
           search-topics: sparql
         - git-service: github-extras
           run-label: main-run
-          search-topics: extras
+          search-topics: EXTRAS_GITHUB_REPOSITORIES.txt
+        - git-service: github-extras
+          run-label: extra-run
+          search-topics: EXTRAS_GITHUB_REPOSITORIES_2.txt
+        # - git-service: github
+        #   run-label: direct-search
+        #   search-topics: direct:openapi
 
     runs-on: ubuntu-latest
     steps:

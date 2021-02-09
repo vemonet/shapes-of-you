@@ -44,9 +44,13 @@ def main(argv):
   else:
     git_registry = 'github'
 
+  github_direct_search = False
   # Default topics if not provided
   topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
   if len(argv) > 2:
+    if topics.startswith('direct:'):
+      github_direct_search = True
+      topics = topics.replace('direct:', '')
     topics = argv[2].lower().split(',')
   print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(topics))
 
@@ -61,10 +65,10 @@ def main(argv):
 
   # Default topics list is used if not provided
   if git_registry == 'github':
-    shapes_graph = fetch_from_github(shapes_graph, client, GITHUB_TOKEN, topics)
+    shapes_graph = fetch_from_github(shapes_graph, client, GITHUB_TOKEN, topics, github_direct_search)
 
   elif git_registry == 'github-extras':
-    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN)
+    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN, topics)
 
   elif git_registry == 'gitlab':
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
@@ -462,10 +466,12 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
 
 
 # Get all shapes for all repos with shacl-shapes tag
-def github_graphql_get_shapes(github_topic, after_cursor=None):
+def github_graphql_get_shapes(github_topic, github_direct_search, after_cursor=None):
+    if github_direct_search == False:
+      github_topic = "topic:" + github_topic
     return """
 query {
-  search(query:"topic:""" + github_topic + """", type:REPOSITORY, last: 100, after:AFTER) {
+  search(query:"GITHUB_TOPIC", type:REPOSITORY, last: 100, after:AFTER) {
     pageInfo {
       hasNextPage
       endCursor
@@ -487,10 +493,12 @@ query {
 }
 """.replace(
     "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
+).replace(
+    "GITHUB_TOPIC", github_topic
 )
 
 # Retrieve releases in projects returned by the GraphQL calls
-def fetch_from_github(shapes_graph, client, oauth_token, topics):
+def fetch_from_github(shapes_graph, client, oauth_token, topics, github_direct_search):
     """Fetch shapes files from GitHub using the GraphQL API.
     We filter repositories by topics provided as argument
     """
@@ -501,7 +509,7 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
       after_cursor = None
       while has_next_page:
           data = client.execute(
-              query=github_graphql_get_shapes(github_topic, after_cursor),
+              query=github_graphql_get_shapes(github_topic, github_direct_search, after_cursor),
               headers={"Authorization": "Bearer {}".format(oauth_token)},
           )
           if stopping_job:
@@ -547,11 +555,11 @@ def github_graphql_get_extra(repo):
       }
     }'''
 
-def fetch_from_github_extra(shapes_graph, client, oauth_token):
+def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
   """Fetch additional Shapes files from a list of GitHub repos
   """
   extra_shapes_repositories = []
-  with open(root / '../EXTRAS_GITHUB_REPOSITORIES.txt', 'r') as f:
+  with open(root / '../' + filename, 'r') as f:
     for line in f:
       extra_shapes_repositories.append(line.rstrip('\n').strip())
 

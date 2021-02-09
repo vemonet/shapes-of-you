@@ -2,13 +2,14 @@ import React from "react";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
 
-import { AppBar, Toolbar, Button } from '@material-ui/core';
+import { AppBar, Toolbar, Button, Popper, ClickAwayListener, Paper } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import GrlcApiIcon from '@material-ui/icons/Send';
 import SparqlIcon from '@material-ui/icons/Share';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 // import InfoIcon from '@material-ui/icons/Info';
 // import DashboardIcon from '@material-ui/icons/Dashboard';
 // import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
@@ -19,6 +20,7 @@ import { AuthButton, Value } from '@solid/react';
 
 // @ts-ignore
 import iconImage from '../../assets/icon.png';
+import SparqlEndpointsDisplay from "./SparqlEndpointsDisplay";
 
 const useStyles = makeStyles(theme => ({
   menuButton: {
@@ -48,11 +50,30 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     margin: theme.spacing(0, 2)
   },
+  paperPadding: {
+    padding: theme.spacing(2, 2),
+    // margin: theme.spacing(2, 2),
+  },
 }))
   
 export default function NavBar() {
   const classes = useStyles();
   const theme = useTheme();
+
+  // Popper for settings
+  const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handleClick = (event: any) => {
+    console.log('Click button!');
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+    setOpen((prev) => !prev);
+  };
+  const handleClickAway = () => {
+    setOpen(false);
+    setAnchorEl(anchorEl ? null : anchorEl);
+    console.log('Click away!');
+  };
+  const id = open ? 'simple-popper' : undefined;
 
   return (
     <AppBar title="" position='static'>
@@ -76,6 +97,20 @@ export default function NavBar() {
             Query with SPARQL
           </Button>
         </Tooltip>
+        <Tooltip  title='Application settings'>
+          <Button className={classes.menuButton} onClick={handleClick}>
+            <CheckCircleIcon />
+            SPARQL endpoints
+          </Button>
+        </Tooltip>
+        <Popper open={open} anchorEl={anchorEl}>
+          <ClickAwayListener onClickAway={handleClickAway}>
+            <Paper elevation={4} className={classes.paperPadding}>
+              <SparqlEndpointsDisplay />
+            </Paper>
+          </ClickAwayListener>
+        </Popper>
+
         <div className="flexGrow"></div>
 
         <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22"

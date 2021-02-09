@@ -4,9 +4,9 @@ When contributing to this repository, please first discuss the change you wish t
 
 To contribute:
 
-1. [Fork this repository](https://github.com/vemonet/shapes-of-you/fork).
+1. [Fork this repository](https://github.com/vemonet/shapes-of-you/fork) 🍴
 
-2. Clone the repository 📥 (example given with the main repository URL)
+2. Clone the repository 📥
 
 ```bash
 git clone https://github.com/vemonet/shapes-of-you.git
@@ -40,8 +40,9 @@ yarn dev
 - [x] Improve filtering and faceted search for shapes (feedbacks welcome! cf. [issue#5](https://github.com/vemonet/shapes-of-you/issues/5))
 - [x] Index more types of files: OWL, SKOS, OBO
 - [ ] Index more types of files:
-  - [ ] [OpenAPI YAML](https://github.com/jfinkhaeuser/prance)
+  - [x] [OpenAPI YAML](https://github.com/jfinkhaeuser/prance)
   - [ ] [SmartAPI](https://smart-api.info/): `info.termOfService`, `info.contact.x-role`, `info.version`, `operation.summary`
+  - [ ] RML and YARRRML mapping files
 - [ ] Query GitHub GraphQL using direct search instead of a search per topics (Pandora's box 🍱)
 - [ ] Switch from a "per file" display to a "per repository". And show files in repositories (also filter files in the repos)
 - [ ] Use PWA to store data: check if [PWA](https://web.dev/progressive-web-apps) would allow to store the web app SPARQL data (to avoid querying everytime, we can update quietly in the background). See [this article about storing data using a PWA](https://www.monterail.com/blog/pwa-offline-dynamic-data).

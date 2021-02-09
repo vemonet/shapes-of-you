@@ -503,7 +503,7 @@ export default function SemanticIndex() {
                     <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, with parse all terms they contain
                   </ListItemText>
                 </ListItem>
-                {/* <ListItem>
+                <ListItem>
                   <ListItemAvatar>
                     <Avatar>
                       <OpenAPIIcon />
@@ -512,7 +512,7 @@ export default function SemanticIndex() {
                   <ListItemText>
                     <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: add the topic <code>openapi</code>, we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
                   </ListItemText>
-                </ListItem> */}
+                </ListItem>
               </List>
             </CardContent>
           </Card>
