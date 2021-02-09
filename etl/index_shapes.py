@@ -69,7 +69,7 @@ def main(argv):
     shapes_graph = fetch_from_github(shapes_graph, client, GITHUB_TOKEN, topics, github_direct_search)
 
   elif git_registry == 'github-extras':
-    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN, topics)
+    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN, topics[0])
 
   elif git_registry == 'gitlab':
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
