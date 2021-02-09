@@ -89,8 +89,8 @@ def check_run_time(time_start, repo_list, current_repo):
   Stop if more than 5h45 (345 min)
   """
   runtime = datetime.now() - time_start
-  # if runtime > timedelta(seconds=40):
-  if runtime > timedelta(minutes=345):
+  if runtime > timedelta(seconds=40):
+  # if runtime > timedelta(minutes=345):
     print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
     repo_missing = repo_list[repo_list.index(current_repo):]
     add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'

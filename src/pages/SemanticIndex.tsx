@@ -382,8 +382,7 @@ export default function SemanticIndex() {
       {state.show_pwa_alert &&
         <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}> 
           This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click! 
-          <br/>Installing the app makes loading faster, and provides a better global experience.
-          <br/>On Chrome click the + button to the right in the URL bar. Checkout <a href="https://medium.com/progressivewebapps/how-to-install-a-pwa-to-your-device-68a8d37fadc1" className={classes.link} target="_blank" rel="noopener noreferrer">this article for more details</a> about installing on various platforms.
+          <br/>On Google Chrome click the + button to the right in the URL bar. Checkout <a href="https://medium.com/progressivewebapps/how-to-install-a-pwa-to-your-device-68a8d37fadc1" className={classes.link} target="_blank" rel="noopener noreferrer">this article for more details</a> about installing on various platforms.
         </Alert>
       }
 
@@ -504,7 +503,7 @@ export default function SemanticIndex() {
                     <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, with parse all terms they contain
                   </ListItemText>
                 </ListItem>
-                <ListItem>
+                {/* <ListItem>
                   <ListItemAvatar>
                     <Avatar>
                       <OpenAPIIcon />
@@ -513,7 +512,7 @@ export default function SemanticIndex() {
                   <ListItemText>
                     <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: add the topic <code>openapi</code>, we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
                   </ListItemText>
-                </ListItem>
+                </ListItem> */}
               </List>
             </CardContent>
           </Card>

@@ -23,23 +23,26 @@ jobs:
       matrix:
         include:
         - git-service: github
-          run-label: main-run
-          search-topics: owl,shacl-shapes,shex,grlc,skos,obofoundry
-        - git-service: github
           run-label: openapi-run
-          search-topics: openapi,smartapi,ncats-translator,translator-api
-        - git-service: gitlab
-          run-label: main-run
-          search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
-        - git-service: gitee
-          run-label: ontology-run
-          search-topics: ontology,sparql
-        - git-service: gitee
-          run-label: sparql-run
-          search-topics: sparql
-        - git-service: github-extras
-          run-label: main-run
-          search-topics: extras
+          search-topics: translator-api
+        # - git-service: github
+        #   run-label: main-run
+        #   search-topics: owl,shacl-shapes,shex,grlc,skos,obofoundry
+        # - git-service: github
+        #   run-label: openapi-run
+        #   search-topics: openapi,smartapi,ncats-translator,translator-api
+        # - git-service: gitlab
+        #   run-label: main-run
+        #   search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
+        # - git-service: gitee
+        #   run-label: ontology-run
+        #   search-topics: ontology,sparql
+        # - git-service: gitee
+        #   run-label: sparql-run
+        #   search-topics: sparql
+        # - git-service: github-extras
+        #   run-label: main-run
+        #   search-topics: extras
 
     runs-on: ubuntu-latest
     steps:
@@ -92,7 +95,7 @@ jobs:
         git config --global user.name "Vincent Emonet"
         git add report-$GIT_SERVICE-$RUN_LABEL.md
         git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
-        git push
+        git push || exit 0
 
     - name: Upload ${{ matrix.git-service }}-${{ matrix.run-label }} RDF output as artifact
       uses: actions/upload-artifact@v1
