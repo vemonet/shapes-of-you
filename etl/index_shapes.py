@@ -46,12 +46,13 @@ def main(argv):
 
   github_direct_search = False
   # Default topics if not provided
-  topics = ['owl', 'shacl-shapes', 'shex', 'grlc', 'skos', 'obofoundry']
+  topics = 'owl,shacl-shapes,shex,grlc,skos,obofoundry'
   if len(argv) > 2:
+    topics = argv[2].lower()
     if topics.startswith('direct:'):
       github_direct_search = True
       topics = topics.replace('direct:', '')
-    topics = argv[2].lower().split(',')
+    topics = topics.split(',')
   print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(topics))
 
   # Reset report file
