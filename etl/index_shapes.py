@@ -48,11 +48,12 @@ def main(argv):
   # Default topics if not provided
   topics = 'owl,shacl-shapes,shex,grlc,skos,obofoundry'
   if len(argv) > 2:
-    topics = argv[2].lower()
-    if topics.startswith('direct:'):
-      github_direct_search = True
-      topics = topics.replace('direct:', '')
-    topics = topics.split(',')
+    topics = argv[2]
+    if git_registry != 'github-extras':
+      if topics.startswith('direct:'):
+        github_direct_search = True
+        topics = topics.replace('direct:', '')
+      topics = topics.split(',')
   print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(topics))
 
   # Reset report file
@@ -69,7 +70,7 @@ def main(argv):
     shapes_graph = fetch_from_github(shapes_graph, client, GITHUB_TOKEN, topics, github_direct_search)
 
   elif git_registry == 'github-extras':
-    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN, topics[0])
+    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN, topics)
 
   elif git_registry == 'gitlab':
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
