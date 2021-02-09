@@ -5,6 +5,6 @@ rdflib
 rdflib-jsonld
 SPARQLWrapper
 PyYAML
-prance
+prance[osv,icu,cli]
 obonet
 PyShExC

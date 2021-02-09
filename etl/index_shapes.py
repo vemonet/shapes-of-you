@@ -182,6 +182,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('OpenAPI')))
       except Exception as e:
         print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OpenAPI parser for file ' + github_file_url)
+        print(e)
         # add_to_report('File: ' + github_file_url + "\n\n"
         #       + 'In repository: ' + repo_url + "\n> " 
         #       + str(e) + "\n\n---\n")
