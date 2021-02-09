@@ -871,7 +871,7 @@ function chart_options(data_array: any) {
         // position to draw label, available value is 'default', 'border' and 'outside'
         // bar chart ignores this
         // default is 'default'
-        position: 'outside',
+        // position: 'outside',
 
         // set images when `render` is 'image'
         // images: [
