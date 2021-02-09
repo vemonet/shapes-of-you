@@ -43,9 +43,9 @@ jobs:
         - git-service: github-extras
           run-label: extra-run
           search-topics: EXTRAS_GITHUB_REPOSITORIES_2.txt
-        # - git-service: github
-        #   run-label: direct-search
-        #   search-topics: direct:openapi
+        - git-service: github
+          run-label: direct-search-openapi
+          search-topics: direct:ncats+translator,biothings,smartapi,knowledge+provider
 
     runs-on: ubuntu-latest
     steps:
