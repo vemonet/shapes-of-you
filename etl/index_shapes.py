@@ -522,7 +522,14 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics, github_direct_s
                 break
               repo_json = repository["repo"]
               repo_url = repo_json["url"]
-              branch = repo_json['defaultBranchRef']['name']
+              try:
+                branch = repo_json['defaultBranchRef']['name']
+                repo_description = repo_json["description"]
+              except Exception as e:
+                print(e)
+                print('🕊 No default_branch found for ' + repo_url + ', using master')
+                branch = 'master'
+                repo_description = ''
               repo_description = repo_json["description"]
               # repo_description = repo_json["shortDescriptionHTML"]
               shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
@@ -559,7 +566,7 @@ def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
   """Fetch additional Shapes files from a list of GitHub repos
   """
   extra_shapes_repositories = []
-  with open(root / '../' + filename, 'r') as f:
+  with open(str(root) + '/../' + str(filename), 'r') as f:
     for line in f:
       extra_shapes_repositories.append(line.rstrip('\n').strip())
 
@@ -587,20 +594,26 @@ def fetch_from_gitlab(shapes_graph, gl, topics):
     for search_topic in topics:
       gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
       for repo_json in gitlab_repos_list:
-        repo_url = repo_json["web_url"]
-        if 'default_branch' in repo_json:
-          branch = repo_json['default_branch']
-        else:
-          branch = 'master'
-          print('🕊 No default_branch found for repo_url, using master')
-        repo_descriptions = []
-        if repo_json["name"]:
-          repo_descriptions.append(repo_json["name"])
-        if repo_json["description"]:
-          repo_descriptions.append(repo_json["description"])
+        try:
+          repo_url = repo_json["web_url"]
+          if 'default_branch' in repo_json:
+            branch = repo_json['default_branch']
+          else:
+            branch = 'master'
+            print('🕊 No default_branch found for repo_url, using master')
+          repo_descriptions = []
+          if repo_json["name"]:
+            repo_descriptions.append(repo_json["name"])
+          if repo_json["description"]:
+            repo_descriptions.append(repo_json["description"])
 
-        repo_description = ' - '.join(repo_descriptions)
-        shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+          repo_description = ' - '.join(repo_descriptions)
+          shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+        except Exception as e:
+          add_to_report('\n\n\nGitLab issue processing: ' + str(repo_json) + '\n\n')
+          add_to_report(e)
+          print('GitLab issue processing: ' + str(repo_json))
+          print(e)
     
     return shapes_graph
 
