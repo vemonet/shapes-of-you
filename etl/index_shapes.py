@@ -77,8 +77,6 @@ def main(argv):
   elif git_registry == 'gitee':
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, topics)
 
-  print('check endpoint')
-  print(VALID_ENDPOINTS)
   # Add all valids SPARQL graphs we found
   for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
     shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
@@ -159,7 +157,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             shape_label = id_
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
       except Exception as e:
-        print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OBO parser for file ' + github_file_url)
+        # print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OBO parser for file ' + github_file_url)
         add_to_report('File: ' + github_file_url + "\n\n"
               + 'In repository: ' + repo_url + "\n> " 
               + str(e) + "\n\n---\n")
@@ -185,8 +183,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         # TODO: get operations hasPart?
         shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('OpenAPI')))
       except Exception as e:
-        print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OpenAPI parser for file ' + github_file_url)
-        print(e)
+        pass
+        # print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OpenAPI parser for file ' + github_file_url)
+        # print(e)
         # add_to_report('File: ' + github_file_url + "\n\n"
         #       + 'In repository: ' + repo_url + "\n> " 
         #       + str(e) + "\n\n---\n")
@@ -291,7 +290,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
           print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
           if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
-              add_to_report('File: ' + github_file_url + "\n\n"
+              add_to_report('File: ' + github_file_url + " parsed as " + shape_format + "\n\n"
                   + 'In repository: ' + repo_url + "\n> " 
                   + str(e) + "\n\n---\n")
 
@@ -419,7 +418,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     # Add repository RDF
     if shape_found:
-      print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🍾 Shape found in ' + github_file_url)
       shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['codeRepository']))
       # TODO: change, schema:codeRepository is a property, not a class, but not much available..
       shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url.rsplit('/', 1)[1])))
