@@ -121,7 +121,7 @@ export default function SemanticIndex() {
       datasets: [{
         label: 'Number of repositories per resource type',
         data: [ ],
-        backgroundColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56', '#0277bd', '#ef6c00']
+        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0']
         // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
     }]}
     let files_overview_chart = {
@@ -129,7 +129,7 @@ export default function SemanticIndex() {
       datasets: [{
         label: 'Number of files per resource type',
         data: [ ],
-        backgroundColor: ['#4caf50','#FF6384', '#36A2EB', '#FFCE56', '#0277bd', '#ef6c00']
+        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0']
         // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
     }]}
 
