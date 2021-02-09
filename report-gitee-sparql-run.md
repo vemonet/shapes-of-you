@@ -41,7 +41,7 @@ In repository: https://gitee.com/opensci/gStore
 > Invalid line: '<root>\t<name>\t"Bookug Lobert"\t.'
 
 ---
-Running for 0:00:42.383563 - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits
+Running for 0:00:40.076880 - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits
 
 The following repositories did not have the time to be processed:
 
