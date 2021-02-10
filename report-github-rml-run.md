@@ -4883,38 +4883,6 @@ Bad syntax (Prefix "ex:" not bound) at ^ in:
 "...b'ode\r\n\r\n# add to Work/Expression/Manifestation/Item map\r\n\r\n  '^b'ex:{3}Map rr:predicateObjectMap [\r\n    rr:predicate bf:contr'..."
 
 ---
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent2%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 51 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'p [\n      rr:template "{apellido}, {nombre}";\n    ]\n  ];\n  \n'^b'].\t\t\t\t\t\t\t\t\n'"
-
----
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent3%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 57 of <>:
-Bad syntax (']' expected) at ^ in:
-"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellido}, {nombre}";\n   '..."
-
----
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent1%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 33 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'l;\n    rr:objectMap [ \n\trml:reference "email" \n\t];\n  ];\n  \n '^b'].\n\n\n\n\t\t\t\t\t\t\t\t\t\t\n'"
-
----
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FUniversidad%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 57 of <>:
-Bad syntax (']' expected) at ^ in:
-"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellidos}, {nombre}";\n  '..."
-
----
 File: https://raw.githubusercontent.com/tangwwwfei/RML2Pig/master/test-cases%2Fresources%2Fpassed%2Ftest-cases%2FRMLTC0012b-SPARQL%2Fmapping.ttl parsed as ttl
 
 In repository: https://github.com/tangwwwfei/RML2Pig
@@ -5369,6 +5337,38 @@ In repository: https://github.com/tangwwwfei/RML2Pig
 > at line 25 of <>:
 Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b'Name}" ]\n  ];\n\t\n  rr:predicateObjectMap [ \n    rr:predicate '^b'rdf:type ;\n    rr:object foaf:Person; \n  ];\n\t\n  rr:predicate'..."
+
+---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent2%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 51 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'p [\n      rr:template "{apellido}, {nombre}";\n    ]\n  ];\n  \n'^b'].\t\t\t\t\t\t\t\t\n'"
+
+---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent3%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 57 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellido}, {nombre}";\n   '..."
+
+---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent1%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 33 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'l;\n    rr:objectMap [ \n\trml:reference "email" \n\t];\n  ];\n  \n '^b'].\n\n\n\n\t\t\t\t\t\t\t\t\t\t\n'"
+
+---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FUniversidad%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 57 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellidos}, {nombre}";\n  '..."
 
 ---
 File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping_hisco.ttl parsed as ttl
