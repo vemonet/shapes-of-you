@@ -626,7 +626,27 @@ export default function SemanticIndex() {
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText>
-                    <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, with parse all terms they contain
+                    <b><a href="https://rml.io/" className={classes.link} target="_blank" rel="noopener noreferrer">RML</a> mappings</b>: add the topic <code>rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> and <code>rml:LogicalSource</code> they contain
+                  </ListItemText>
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <GavelIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText>
+                    <b><a href="https://www.w3.org/TR/r2rml/" className={classes.link} target="_blank" rel="noopener noreferrer">R2RML</a> mappings</b>: add the topic <code>r2rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> they contain
+                  </ListItemText>
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <GavelIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText>
+                    <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, and parse all terms they contain
                   </ListItemText>
                 </ListItem>
                 <ListItem>

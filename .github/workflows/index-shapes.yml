@@ -34,18 +34,6 @@ jobs:
         - git-service: github
           run-label: rml-run
           search-topics: r2rml,rml,topic:rml-mapping
-        - git-service: gitlab
-          run-label: run-1
-          search-topics: owl,shacl,shex,sparql
-        - git-service: gitlab
-          run-label: run-2
-          search-topics: skos,obofoundry,ontology
-        - git-service: gitee
-          run-label: ontology-run
-          search-topics: ontology,sparql
-        - git-service: gitee
-          run-label: sparql-run
-          search-topics: sparql
         - git-service: github-extras
           run-label: main-run
           search-topics: EXTRAS_GITHUB_REPOSITORIES.txt
@@ -55,6 +43,21 @@ jobs:
         - git-service: github
           run-label: direct-search-openapi
           search-topics: ncats+translator,biothings,smartapi,knowledge+provider,shacl
+        - git-service: gitee
+          run-label: ontology-run
+          search-topics: ontology,sparql
+        - git-service: gitee
+          run-label: sparql-run
+          search-topics: sparql
+        - git-service: gitlab
+          run-label: run-1
+          search-topics: owl,shacl,shex,sparql
+        - git-service: gitlab
+          run-label: run-2
+          search-topics: skos,obofoundry
+        - git-service: gitlab
+          run-label: run-3
+          search-topics: ontology
 
     runs-on: ubuntu-latest
     steps:
