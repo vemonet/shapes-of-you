@@ -53,6 +53,8 @@ This web service is composed of those 4 main parts:
 - shex: <http://www.w3.org/ns/shex#>
 - void: <http://rdfs.org/ns/void#>
 - sdm: https://w3id.org/vocab/sdm#
+- r2rml: http://www.w3.org/ns/r2rml#
+- rml: http://semweb.mmlab.be/ns/rml#
 
 ### Classes
 
@@ -69,6 +71,8 @@ This web service is composed of those 4 main parts:
     * `skos:ConceptScheme` (SKOS vocabulary)
     * `sio:000623` (OBO ontology)
     * `schema:WebAPI` (OpenAPI)
+    * `rml:LogicalSource` (RML and YARRRML mappings)
+    * `r2rml:TriplesMap` (R2RML mappings)
 * `schema:CodeRepository`
   * Properties:
     * `rdfs:comment`

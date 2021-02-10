@@ -28,9 +28,18 @@ jobs:
         - git-service: github
           run-label: openapi-run
           search-topics: topic:api,topic:openapi,topic:smartapi,topic:ncats-translator,topic:translator-api
+        - git-service: github
+          run-label: api-run
+          search-topics: topic:api
+        - git-service: github
+          run-label: rml-run
+          search-topics: r2rml,rml,topic:rml-mapping
         - git-service: gitlab
-          run-label: main-run
-          search-topics: owl,shacl,shex,sparql,skos,obofoundry,ontology
+          run-label: run-1
+          search-topics: owl,shacl,shex,sparql
+        - git-service: gitlab
+          run-label: run-2
+          search-topics: skos,obofoundry,ontology
         - git-service: gitee
           run-label: ontology-run
           search-topics: ontology,sparql
@@ -45,7 +54,7 @@ jobs:
           search-topics: EXTRAS_GITHUB_REPOSITORIES_2.txt
         - git-service: github
           run-label: direct-search-openapi
-          search-topics: ncats+translator,biothings,smartapi,knowledge+provider
+          search-topics: ncats+translator,biothings,smartapi,knowledge+provider,shacl
 
     runs-on: ubuntu-latest
     steps:

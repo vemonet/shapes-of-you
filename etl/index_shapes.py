@@ -23,10 +23,6 @@ import gitlab
 
 # from logging import exception
 
-SPARQL_ENDPOINT_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry'
-SPARQL_ENDPOINT_UPDATE_URL='https://graphdb.dumontierlab.com/repositories/shapes-registry/statements'
-SPARQL_ENDPOINT_USERNAME='import_user'
-SPARQL_ENDPOINT_PASSWORD = os.getenv('SPARQL_PASSWORD')
 GITHUB_TOKEN = os.environ.get("API_GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
@@ -37,6 +33,8 @@ SH = Namespace("http://www.w3.org/ns/shacl#")
 SHEX = Namespace("http://www.w3.org/ns/shex#")
 SCHEMA = Namespace("https://schema.org/")
 SIO = Namespace("http://semanticscience.org/resource/")
+R2RML = Namespace("http://www.w3.org/ns/r2rml#")
+RML = Namespace("http://semweb.mmlab.be/ns/rml#")
 
 def main(argv):
   if len(argv) > 1:
@@ -160,7 +158,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               + 'In repository: ' + repo_url + "\n> " 
               + str(e) + "\n\n---\n")
 
-    # Index OpenAPI files
+    # Index OpenAPI files 
     elif shape_format == 'openapi':
       try:
         parser = ResolvingParser(github_file_url)
@@ -181,6 +179,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         # TODO: get operations hasPart?
         shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('OpenAPI')))
       except Exception as e:
+        # TODO: YARRML? Search for prefixes and mappings at the root of YAML
         pass
         # print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OpenAPI parser for file ' + github_file_url)
         # print(e)
@@ -307,7 +306,33 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Fixing
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
-      # Search for OWL classes, limit to max 300 classes/concepts retrieved
+      # Search for RML and R2RML mappings
+      # TODO: also rml:LogicalSource specifically for RML
+      for shape in g.subjects(RDF.type, R2RML.SubjectMap):
+          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
+          shape_found = True
+          is_rml_mappings = False
+          # Differenciate RML and R2RML mappings
+          for shape in g.predicates(RDF.type, RML.logicalSource):
+            is_rml_mappings = True
+            break
+          if is_rml_mappings:
+            shapes_graph.add((file_uri, RDF.type, RML.LogicalSource))
+          else:
+            shapes_graph.add((file_uri, RDF.type, R2RML.TriplesMap))
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shape_label = shape
+          # Try to get the label or URI of the subjectMap
+          for label in g.objects(shape, R2RML.template):
+              shape_label = label
+          for label in g.objects(shape, RDFS.label):
+              shape_label = label
+          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+
+      # Search for OWL classes
+      # TODO: remove class limit
       classes_limit = 300
       classes_count = 0
       for shape in g.subjects(RDF.type, OWL.Class):
@@ -322,9 +347,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Try to get the label of the class
               shape_label = label
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
-          classes_count += 1
-          if classes_count >= classes_limit:
-            break
+          # classes_count += 1
+          # if classes_count >= classes_limit:
+          #   break
 
       # Get rdfs:label of owl:Ontology and shaclTest:Validate for file description
       file_descriptions = []
@@ -353,7 +378,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
 
       # Get SKOS concepts and concept scheme
-      classes_count = 0
       for shape in g.subjects(RDF.type, SKOS.Concept):
           # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
           shape_found = True
@@ -366,9 +390,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Try to get the label of the class
               shape_label = label
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
-          classes_count += 1
-          if classes_count >= classes_limit:
-            break
       for shape in g.subjects(RDF.type, SKOS.ConceptScheme):
           # Get one of the labels
           for ontology_label in g.objects(shape, RDFS.label):
@@ -615,6 +636,7 @@ def fetch_from_gitee(shapes_graph, token, topics):
     # Record time to avoid hitting GitHub Actions limits
     time_start = datetime.now()
     
+    # TODO: make this a global variable
     # Repos with issues or too big (hitting GitHub Actions 6h limit)
     avoid_repos = [
       'https://gitee.com/mad_matrix/OntologyModelin', 
