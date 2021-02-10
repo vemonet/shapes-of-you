@@ -13,26 +13,9 @@ import DeviceHubIcon from '@material-ui/icons/DeviceHub';
 import GavelIcon from '@material-ui/icons/Gavel';
 import OpenAPIIcon from '@material-ui/icons/Adjust';
 import CloseIcon from '@material-ui/icons/Close';
-
-import Alert from '@material-ui/lab/Alert';
-
 import axios from 'axios';
-import { Doughnut, Pie, Bar, HorizontalBar } from 'react-chartjs-2';
-// import 'chartjs-plugin-labels';
 
-import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
-import Autocomplete from '@material-ui/lab/Autocomplete';
-import Pagination from '@material-ui/lab/Pagination';
-
-import { LoggedIn, LoggedOut, Value, useWebId, useLDflexValue, useLDflexList } from '@solid/react';
-import { Like } from '@solid/react';
-import data from "@solid/query-ldflex";
-// import { data } from "@solid/query-ldflex";
-// import SolidStar from "./SolidStar";
-
-// import {newEngine} from '@comunica/actor-init-sparql';
-// import {ActorInitSparql} from '@comunica/actor-init-sparql/lib/ActorInitSparql-browser';
-// import {IQueryOptions, newEngineDynamicArged} from "@comunica/actor-init-sparql/lib/QueryDynamic";
+import QueryYasguiButton from "./QueryYasguiButton";
 
 const useStyles = makeStyles(theme => ({
   paperSearch: {
@@ -60,11 +43,9 @@ const useStyles = makeStyles(theme => ({
 export default function SparqlEndpointsDisplay() {
   const classes = useStyles();
   const theme = useTheme();
-  const webId = useWebId();
   // const solid_name = useLDflexValue('user.name') || 'unknown';
   
   const [state, setState] = React.useState({
-    webid: '',
     sparql_endpoints_array: [],
     search: '',
     // repositories_hash: [],
@@ -163,9 +144,10 @@ export default function SparqlEndpointsDisplay() {
         {state.sparql_endpoints_array.map(function(sparql_endpoint: any, key: number){
           return <ListItem>
             <ListItemAvatar>
-              <Avatar>
+              <QueryYasguiButton endpoint={sparql_endpoint} />
+              {/* <Avatar>
                 <CheckCircleIcon />
-              </Avatar>
+              </Avatar> */}
             </ListItemAvatar>
             <ListItemText>
               <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b>

@@ -113,6 +113,17 @@ export default function SemanticIndex() {
     setState(stateRef.current);
   }, [setState]);
 
+  const shape_types_mappings = {
+    'http://www.w3.org/ns/shacl#Shape': 'SHACL',
+    'http://www.w3.org/2002/07/owl#Ontology': 'OWL',
+    'http://www.w3.org/ns/shex#Schema': 'ShEx',
+    'http://www.w3.org/ns/shacl#SPARQLFunction': 'SPARQL',
+    'http://www.w3.org/2004/02/skos/core#ConceptScheme': 'SKOS',
+    'http://semanticscience.org/resource/SIO_000623': 'OBO',
+    'https://schema.org/WebAPI': 'OpenAPI',
+    'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
+    'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
+  }
 
   // componentDidMount: Query SPARQL endpoint to get the shapes files infos
   React.useEffect(() => {
@@ -126,18 +137,6 @@ export default function SemanticIndex() {
     // Check SOLID pod for a shapes preference file
     // https://github.com/solid/react-components/blob/master/demo/app.jsx
     // https://solid.github.io/react-components/
-
-    const shape_types_mappings = {
-      'http://www.w3.org/ns/shacl#Shape': 'SHACL',
-      'http://www.w3.org/2002/07/owl#Ontology': 'OWL',
-      'http://www.w3.org/ns/shex#Schema': 'ShEx',
-      'http://www.w3.org/ns/shacl#SPARQLFunction': 'SPARQL',
-      'http://www.w3.org/2004/02/skos/core#ConceptScheme': 'SKOS',
-      'http://semanticscience.org/resource/SIO_000623': 'OBO',
-      'https://schema.org/WebAPI': 'OpenAPI',
-      'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
-      'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
-    }
 
     let repos_overview_chart = {
       labels: [],
@@ -519,6 +518,20 @@ export default function SemanticIndex() {
   //   }).filter((item, i, ar) => ar.indexOf(item) === i)
   // }
 
+  function getFileLabel(file_type: string) {
+    let icon = '📄';
+    if (shape_types_mappings[file_type] == 'OWL' || file_type == 'OWL') icon = '🦉'
+    if (shape_types_mappings[file_type] == 'ShEx' || file_type == 'ShEx') icon = '✴️'
+    if (shape_types_mappings[file_type] == 'SHACL' || file_type == 'SHACL') icon = '💠'
+    if (shape_types_mappings[file_type] == 'RML' || file_type == 'RML') icon = '🦜'
+    if (shape_types_mappings[file_type] == 'R2RML' || file_type == 'R2RML') icon = '🗄'
+    if (shape_types_mappings[file_type] == 'OBO' || file_type == 'OBO') icon = '🧪'
+    if (shape_types_mappings[file_type] == 'OpenAPI' || file_type == 'OpenAPI') icon = '📬'
+    if (shape_types_mappings[file_type] == 'SPARQL' || file_type == 'SPARQL') icon = '✨️'
+    if (shape_types_mappings[file_type] == 'SKOS' || file_type == 'SKOS') icon = '📕'
+    return icon;
+  }
+
   // Define rendering of the page:
   return(
     <Container className='mainContainer'>
@@ -550,141 +563,146 @@ export default function SemanticIndex() {
         </Typography>
       </LoggedOut> */}
 
-      <LoggedOut>
-        {state.show_info_card &&
-          <Card >
-            <CardHeader
-              // avatar={
-              //   <Avatar aria-label="recipe" className={classes.avatar}>
-              //     R
-              //   </Avatar>
-              // }
-              action={
-                <IconButton aria-label="settings" onClick={() => { updateState({ show_info_card: false}) }}>
-                  <CloseIcon />
-                </IconButton>
+      <Card >
+        <CardHeader
+          action={
+            <IconButton style={{fontSize: '16px'}}
+              onClick={() => { updateState({ show_info_card: !state.show_info_card}) }}
+              name='show_info_card'
+              aria-expanded={state.show_info_card}
+              aria-label="show more"
+            >
+              {!state.show_info_card &&
+                <ExpandMoreIcon />
               }
-              title="💠 Shapes of You"
-              subheader="An index of publicly available semantic resources"
-            />
-            <CardContent>
-              <Typography style={{marginBottom: theme.spacing(2)}}>
-                Shapes of you is the best place to search and explore existing semantic shapes, ontologies, vocabularies and queries. Searching an ontology for datasets? Needing to validate RDF using SHACL or ShEx? Finding SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprises.
-              </Typography>
+              {state.show_info_card &&
+                <ExpandLessIcon />
+              }
+            </IconButton>
+          }
+          title="💠 Shapes of You"
+          subheader="An index of publicly available semantic resources"
+        />
 
-              <Typography style={{marginBottom: theme.spacing(2)}}>
-                To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet, prance). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
-              </Typography>
 
-              {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22" target="_blank" rel="noopener noreferrer">
-                <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" 
-                style={{marginBottom: theme.spacing(2)}} />
-              </a> */}
+        <Collapse in={state.show_info_card} timeout="auto" unmountOnExit>
+          <CardContent>
+            <Typography style={{marginBottom: theme.spacing(2)}}>
+              Shapes of you is the best place to search and explore existing semantic shapes, ontologies, vocabularies and queries. Searching an ontology for datasets? Needing to validate RDF using SHACL or ShEx? Finding SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprises.
+            </Typography>
 
-              {/* <Typography>
-                Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
-              </Typography> */}
-              <Typography>
-                Add one of those topics to your <a href="https://github.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitHub</a> repository, or mention it in your project description on <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a> and <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a>,&nbsp;
-                we automatically index files from public repositories everyday 🕐
-              </Typography>
-              <List>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <DeviceHubIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="https://www.w3.org/OWL/" className={classes.link} target="_blank" rel="noopener noreferrer">OWL</a> ontologies</b>: add the topic <code>owl</code>, we index RDF files, with all <code>owl:Class</code> they contain
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <MenuBookIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="https://www.w3.org/TR/swbp-skos-core-spec/" className={classes.link} target="_blank" rel="noopener noreferrer">SKOS</a> vocabularies</b>: add the topic <code>skos</code>, we index RDF files, with all <code>skos:Concept</code> they contain
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <CheckCircleIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText
-                  > 
-                    <b><a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer">SHACL</a> shapes</b>: add the topic <code>shacl-shapes</code>, we index RDF files, with all <code>sh:NodeShape</code> they contain
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <BubbleChartIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="https://shex.io/" className={classes.link} target="_blank" rel="noopener noreferrer">ShEx</a> expressions</b>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files (but no metadata described in ShEx)
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <CodeIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="https://www.w3.org/TR/sparql11-query/" className={classes.link} target="_blank" rel="noopener noreferrer">SPARQL</a> queries</b>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link} target="_blank" rel="noopener noreferrer">grlc.io</a> APIs metadata, complying with the <a href="https://github.com/the-open-university/basil/wiki/Introduction" className={classes.link} target="_blank" rel="noopener noreferrer">BASIL convention</a>
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <RmlIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="https://rml.io/" className={classes.link} target="_blank" rel="noopener noreferrer">RML</a> mappings</b>: add the topic <code>rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> and <code>rml:LogicalSource</code> they contain
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <R2rmlIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="https://www.w3.org/TR/r2rml/" className={classes.link} target="_blank" rel="noopener noreferrer">R2RML</a> mappings</b>: add the topic <code>r2rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> they contain
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <GavelIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, and parse all terms they contain
-                  </ListItemText>
-                </ListItem>
-                <ListItem>
-                  <ListItemAvatar>
-                    <Avatar>
-                      <OpenAPIIcon />
-                    </Avatar>
-                  </ListItemAvatar>
-                  <ListItemText>
-                    <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: add the topic <code>openapi</code>, we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
-                  </ListItemText>
-                </ListItem>
-              </List>
-            </CardContent>
-          </Card>
-        }
-      </LoggedOut>
+            <Typography style={{marginBottom: theme.spacing(2)}}>
+              To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet, prance). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
+            </Typography>
+
+            {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22" target="_blank" rel="noopener noreferrer">
+              <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" 
+              style={{marginBottom: theme.spacing(2)}} />
+            </a> */}
+
+            {/* <Typography>
+              Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
+            </Typography> */}
+            <Typography>
+              Add one of those topics to your <a href="https://github.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitHub</a> repository, or mention it in your project description on <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a> and <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a>,&nbsp;
+              we automatically index files from public repositories everyday 🕐
+            </Typography>
+            <List>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <DeviceHubIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://www.w3.org/OWL/" className={classes.link} target="_blank" rel="noopener noreferrer">OWL</a> ontologies</b>: add the topic <code>owl</code>, we index RDF files, with all <code>owl:Class</code> they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <MenuBookIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://www.w3.org/TR/swbp-skos-core-spec/" className={classes.link} target="_blank" rel="noopener noreferrer">SKOS</a> vocabularies</b>: add the topic <code>skos</code>, we index RDF files, with all <code>skos:Concept</code> they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <CheckCircleIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText
+                > 
+                  <b><a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer">SHACL</a> shapes</b>: add the topic <code>shacl-shapes</code>, we index RDF files, with all <code>sh:NodeShape</code> they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <BubbleChartIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://shex.io/" className={classes.link} target="_blank" rel="noopener noreferrer">ShEx</a> expressions</b>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files (but no metadata described in ShEx)
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <CodeIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://www.w3.org/TR/sparql11-query/" className={classes.link} target="_blank" rel="noopener noreferrer">SPARQL</a> queries</b>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link} target="_blank" rel="noopener noreferrer">grlc.io</a> APIs metadata, complying with the <a href="https://github.com/the-open-university/basil/wiki/Introduction" className={classes.link} target="_blank" rel="noopener noreferrer">BASIL convention</a>
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <RmlIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://rml.io/" className={classes.link} target="_blank" rel="noopener noreferrer">RML</a> mappings</b>: add the topic <code>rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> and <code>rml:LogicalSource</code> they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <R2rmlIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://www.w3.org/TR/r2rml/" className={classes.link} target="_blank" rel="noopener noreferrer">R2RML</a> mappings</b>: add the topic <code>r2rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <GavelIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, and parse all terms they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <OpenAPIIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: add the topic <code>openapi</code>, we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
+                </ListItemText>
+              </ListItem>
+            </List>
+          </CardContent>
+        </Collapse>
+      </Card>
 
       { state.repos_overview_chart['datasets'] && state.files_overview_chart['datasets'] &&
         <Grid container spacing={3} style={{textAlign: 'center', marginTop: theme.spacing(2)}}>
@@ -786,7 +804,7 @@ export default function SemanticIndex() {
                 name="checkbox_shacl"
                 color="primary"
               /> }
-            label="SHACL"
+            label={"SHACL " + getFileLabel('SHACL')}
           />
           <FormControlLabel
             control={
@@ -796,7 +814,7 @@ export default function SemanticIndex() {
                 name="checkbox_shex"
                 color="primary"
               /> }
-            label="ShEx"
+            label={"ShEx " + getFileLabel('ShEx')}
           />
           <FormControlLabel
             control={
@@ -806,7 +824,7 @@ export default function SemanticIndex() {
                 name="checkbox_sparql"
                 color="primary"
               /> }
-            label="SPARQL"
+            label={"SPARQL " + getFileLabel('SPARQL')}
           />
           <FormControlLabel
             control={
@@ -816,7 +834,7 @@ export default function SemanticIndex() {
                 name="checkbox_owl"
                 color="primary"
               /> }
-            label="OWL"
+            label={"OWL " + getFileLabel('OWL')}
           />
           <FormControlLabel
             control={
@@ -826,7 +844,7 @@ export default function SemanticIndex() {
                 name="checkbox_skos"
                 color="primary"
               /> }
-            label="SKOS"
+            label={"SKOS " + getFileLabel('SKOS')}
           />
           <FormControlLabel
             control={
@@ -836,7 +854,7 @@ export default function SemanticIndex() {
                 name="checkbox_rml"
                 color="primary"
               /> }
-            label="RML"
+            label={"RML " + getFileLabel('RML')}
           />
           <FormControlLabel
             control={
@@ -846,7 +864,7 @@ export default function SemanticIndex() {
                 name="checkbox_r2rml"
                 color="primary"
               /> }
-            label="R2RML"
+            label={"R2RML " + getFileLabel('R2RML')}
           />
           <FormControlLabel
             control={
@@ -856,7 +874,7 @@ export default function SemanticIndex() {
                 name="checkbox_obo"
                 color="primary"
               /> }
-            label="OBO"
+            label={"OBO " + getFileLabel('OBO')}
           />
           <FormControlLabel
             control={
@@ -866,7 +884,7 @@ export default function SemanticIndex() {
                 name="checkbox_openapi"
                 color="primary"
               /> }
-            label="OpenAPI"
+            label={"OpenAPI " + getFileLabel('OpenAPI')}
           />
         </FormGroup>
 
@@ -924,13 +942,14 @@ export default function SemanticIndex() {
                 return <Card key={key.toString()} style={{padding: theme.spacing(1, 1), margin: theme.spacing(1, 0)}}>
                   <Typography style={{margin: theme.spacing(1, 0)}}>
                     <a href={file_obj.url} className={classes.link}>
-                      📄 {file_obj.label}
+                      {getFileLabel(file_obj.type)} {file_obj.label}
                     </a>
                     <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
                     {file_obj.description &&
+                      // Limit description to 1500 chars
                       <div style={{margin: theme.spacing(1, 0)}}>
                         <ReactMarkdown 
-                          source={file_obj.description}
+                          source={file_obj.description.substring(0, 1500)}
                           renderers={{ paragraph: Typography }}
                         />
                       </div>
