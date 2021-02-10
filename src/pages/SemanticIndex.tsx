@@ -82,7 +82,7 @@ export default function SemanticIndex() {
     checkbox_openapi: true,
     show_pwa_alert: true,
     page: 1,
-    shapes_per_page: 30,
+    shapes_per_page: 10,
     show_info_card: true,
   });
   const stateRef = React.useRef(state);
@@ -116,6 +116,8 @@ export default function SemanticIndex() {
       'http://www.w3.org/2004/02/skos/core#ConceptScheme': 'SKOS',
       'http://semanticscience.org/resource/SIO_000623': 'OBO',
       'https://schema.org/WebAPI': 'OpenAPI',
+      'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
+      'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML/YARRRML',
     }
 
     let repos_overview_chart = {
@@ -129,7 +131,7 @@ export default function SemanticIndex() {
     let files_overview_chart = {
       labels: [],
       datasets: [{
-        label: 'Number of files per resource type',
+        label: 'Number of resources per resource type',
         data: [ ],
         backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0', '#ef6c00', '#0277bd']
         // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
@@ -358,8 +360,8 @@ export default function SemanticIndex() {
     return data[location].put();
   }
 
-  const pluralize = (count: any, noun: string, suffix = 's') =>
-  `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
+  // const pluralize = (count: any, noun: string, suffix = 's') =>
+  // `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
 
   const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     updateState({ search: event.target.value })
@@ -371,9 +373,9 @@ export default function SemanticIndex() {
 
   // TODO: add handleCollapse
 
-  function handleAutocompleteRepositories(event: any, value: string[]) {
-    updateState({ repositories_autocomplete: value})
-  }
+  // function handleAutocompleteRepositories(event: any, value: string[]) {
+  //   updateState({ repositories_autocomplete: value})
+  // }
   
   // Could not find good dynamic faceted search, best is https://github.com/ebi-gene-expression-group/scxa-faceted-search-results
   // Each faceted search filter can be added here (on the shapes files array)
@@ -550,7 +552,7 @@ export default function SemanticIndex() {
               </Typography>
 
               <Typography style={{marginBottom: theme.spacing(2)}}>
-                To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
+                To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet, prance). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
               </Typography>
 
               {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22" target="_blank" rel="noopener noreferrer">
@@ -656,7 +658,7 @@ export default function SemanticIndex() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper style={{padding: theme.spacing(2, 2)}}>
-              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of files per shape type</Typography>
+              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of resources per shape type</Typography>
               <Bar data={state.files_overview_chart} options={chart_options(state.files_overview_chart['datasets'][0]['data'])}/>
             </Paper>
           </Grid>
@@ -666,8 +668,9 @@ export default function SemanticIndex() {
       {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(3, 0)}}>
         <Typography variant="h5">
-          {filtered_files.reduce((filtered: any, repo: any) => filtered + repo.files.length, 0)} files in&nbsp;
-          {/* Also works: */}
+          {filtered_files.reduce((filtered: any, repo: any) => filtered + repo.files.length, 0)} resources in&nbsp;
+          {/* Only counts the sum of all files for each filtered repo, we need to add check on the file description
+          Or filter the files downstream. Also works: */}
           {/* {filtered_files.reduce((filtered: any, repo: any) => {filtered.push(repo.files.length); return filtered;}, []).reduce((a, b) => a + b, 0)} files in&nbsp; */}
           {Object.keys(filtered_files).length} repositories 
         </Typography>
@@ -833,10 +836,10 @@ export default function SemanticIndex() {
           </Typography>
 
           {/* TODO: add expand card button to show files of a repo */}
-          {false && repo_obj.files.map(function(file_obj: any, key: number){
+          {true && repo_obj.files.map(function(file_obj: any, key: number){
             return <Typography style={{margin: theme.spacing(1, 0)}}>
               <a href={file_obj.url} className={classes.link}>
-                {file_obj.label}
+                📄 {file_obj.label}
               </a>
               {file_obj.description &&
                 <>

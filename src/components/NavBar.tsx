@@ -99,7 +99,7 @@ export default function NavBar() {
         </Tooltip>
         <Tooltip  title='Application settings'>
           <Button className={classes.menuButton} onClick={handleClick}>
-            <CheckCircleIcon />
+            <CheckCircleIcon style={{ marginRight: theme.spacing(1)}} />
             SPARQL endpoints
           </Button>
         </Tooltip>
