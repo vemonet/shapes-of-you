@@ -302,7 +302,7 @@ In repository: https://github.com/geneontology/go-shapes
 File: https://raw.githubusercontent.com/biotea/validation-shapes-bioschemas/master/journal.jsonld parsed as json-ld
 
 In repository: https://github.com/biotea/validation-shapes-bioschemas
-> Expecting value: line 2 column 1 (char 1)
+> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
 
 ---
 File: https://raw.githubusercontent.com/rgmprabodha/Internship_Testing_Projects/master/shexjava%2Fsrc%2Fmain%2Fresources%2FtemperatureReport.ttl parsed as ttl
