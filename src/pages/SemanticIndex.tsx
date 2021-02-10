@@ -18,7 +18,8 @@ import Alert from '@material-ui/lab/Alert';
 
 import axios from 'axios';
 import { Doughnut, Pie, Bar, HorizontalBar } from 'react-chartjs-2';
-import 'chartjs-plugin-labels';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+// import 'chartjs-plugin-labels';
 
 import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
 import Autocomplete from '@material-ui/lab/Autocomplete';
@@ -64,6 +65,7 @@ export default function SemanticIndex() {
   // const solid_name = useLDflexValue('user.name') || 'unknown';
   
   const [state, setState] = React.useState({
+    global_shapes_array: [],
     webid: '',
     shapes_files_list: [],
     search: '',
@@ -80,7 +82,7 @@ export default function SemanticIndex() {
     checkbox_openapi: true,
     show_pwa_alert: true,
     page: 1,
-    shapes_per_page: 100,
+    shapes_per_page: 30,
     show_info_card: true,
   });
   const stateRef = React.useRef(state);
@@ -121,7 +123,7 @@ export default function SemanticIndex() {
       datasets: [{
         label: 'Number of repositories per resource type',
         data: [ ],
-        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0']
+        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0', '#ef6c00', '#0277bd']
         // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
     }]}
     let files_overview_chart = {
@@ -129,11 +131,11 @@ export default function SemanticIndex() {
       datasets: [{
         label: 'Number of files per resource type',
         data: [ ],
-        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0']
+        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0', '#ef6c00', '#0277bd']
         // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
     }]}
 
-    // sparql_resources_overview
+    // Get stats about shapes types
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(sparql_resources_overview))
       .then(res => {
         const results_array = res.data.results.bindings;
@@ -147,17 +149,65 @@ export default function SemanticIndex() {
           // @ts-ignore
           files_overview_chart.datasets[0].data.push(result.files_count.value);
         })
-        console.log(repos_overview_chart)
         updateState({
           repos_overview_chart: repos_overview_chart,
           files_overview_chart: files_overview_chart
         })
       })
 
-    // Query directly using Axios
+    // Get all files
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(getFilesQuery))
       .then(res => {
         const sparqlResultArray = res.data.results.bindings;
+        let global_shapes_array: any = []
+        // Iterates over shapes files
+        sparqlResultArray.map((result: any): any =>  {
+          // Create shape file entry
+          const file_url = result.shapeFileUri.value;
+          // global_shapes_array[repo_url]['files'][file_url]
+          let file_obj: any = {
+            'url': file_url,
+            'type': result.shape_type.value,
+            'label': result.label.value,
+          }
+          let search_description = file_url + ' ' + result.label.value
+          if (result.shape_file_description) {
+            file_obj.description = result.shape_file_description.value;
+            search_description = search_description + ' ' + result.shape_file_description.value
+          }
+          if (result.sparqlEndpoint) {
+            file_obj.sparqlEndpoint = result.sparqlEndpoint.value;
+            search_description = search_description + ' ' + result.sparqlEndpoint.value
+          }
+          if (result.query) {
+            file_obj.query = result.query.value;
+            search_description = search_description + ' ' + result.query.value
+          }
+
+          // Get repo in array if exist
+          const repo_url = result.repository.value;
+          // let repo_entry  = global_shapes_array.find((item: any) => item.url === repo_url);
+          let repo_index = global_shapes_array.findIndex(((obj: any) => obj.url == repo_url));
+          if (repo_index == -1) {
+            // Add repository to global repos array if not present
+            let repo_description = ''
+            if (result.repo_description) repo_description = result.repo_description.value;
+            repo_index = global_shapes_array.push({
+              'url': repo_url,
+              'description': repo_description,
+              'files': [],
+              'search_description': ''
+            }) - 1
+          }
+          // Add shapes file to repo entry
+          global_shapes_array[repo_index]['files'].push(file_obj)
+          global_shapes_array[repo_index]['search_description'] = global_shapes_array[repo_index]['search_description'] + search_description
+
+        })
+        console.log(global_shapes_array)
+        updateState({global_shapes_array: global_shapes_array})
+
+
         // Convert array to object: {0:"a", 1:"b", 2:"c"}
         // const projects_converted_hash = { ...sparqlResultArray }
         // let projects_hash: any = {}
@@ -191,16 +241,16 @@ export default function SemanticIndex() {
         // })
         // Convert back to array for filtering
         // const project_final_array: any = Object.keys(projects_hash).map((key) => projects_hash[key]);
-        const project_final_array: any = sparqlResultArray.map((row: any) => {
-          // console.log(row);
-          Object.keys(row).map((key) => row[key] = row[key]['value']);
-          return row
-          // Object.keys(row).map((key) => key['value']);
-        }); 
-        console.log('project_final_array');
-        console.log(project_final_array);
-        // sparqlResultArray
-        updateState({shapes_files_list: project_final_array})
+        // const project_final_array: any = sparqlResultArray.map((row: any) => {
+        //   // console.log(row);
+        //   Object.keys(row).map((key) => row[key] = row[key]['value']);
+        //   return row
+        //   // Object.keys(row).map((key) => key['value']);
+        // }); 
+        // console.log('project_final_array');
+        // console.log(project_final_array);
+        // // sparqlResultArray
+        // updateState({shapes_files_list: project_final_array})
       })
       .catch(error => {
         console.log(error)
@@ -319,58 +369,132 @@ export default function SemanticIndex() {
     updateState({ [event.target.name]: event.target.checked });
   }
 
+  // TODO: add handleCollapse
+
   function handleAutocompleteRepositories(event: any, value: string[]) {
     updateState({ repositories_autocomplete: value})
   }
   
   // Could not find good dynamic faceted search, best is https://github.com/ebi-gene-expression-group/scxa-faceted-search-results
   // Each faceted search filter can be added here (on the shapes files array)
-  const filtered_files = state.shapes_files_list.filter( (shapes_file: any) =>{
-    if (shapes_file) {
-      if (shapes_file.label) {
-        // Filter by repo: show shapes if no repo selected, or if its repo is in list of selected repos
-        if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
-          // Filter depending on shape type checkboxes:
-          if ((state.checkbox_shex === true && shapes_file.shape_type == 'http://www.w3.org/ns/shex#Schema')
-          || (state.checkbox_sparql === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
-          || (state.checkbox_shacl === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#Shape')
-          || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
-          || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
-          || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
-          || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/WebAPI')
-          ) {
-            // Filter using the search text, on all properties and metadata of the file:
-            let file_description = '';
-            if (shapes_file.repo_description) file_description = file_description + ' ' + shapes_file.repo_description;
-            if (shapes_file.shape_file_description) file_description = file_description + ' ' + shapes_file.shape_file_description;
-            if (shapes_file.sparqlEndpoint) file_description = file_description + ' ' + shapes_file.sparqlEndpoint;
-            if (shapes_file.query) file_description = file_description + ' ' + shapes_file.query;
-            return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
-              || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-              || shapes_file.shapes && shapes_file.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-              || shapes_file.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-              || file_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-            )
-          }
-        }
-      }
-    }
-  })
+  // const filtered_files = state.global_shapes_array.filter( (shapes_file: any) =>{
+
+  // const data = [{"guid":"j5Dc9Z","courses":[{"id":3,"name":"foo"}]},{"guid":"a5gdfS","courses":[{"id":1,"name":"bar"},{"id":3,"name":"foo"}]},{"guid":"jHab6i","courses":[{"id":7,"name":"foobar"}]}];
+  // const courses = [1, 6, 3];
+  // const r = data.filter(d => d.courses.every(c => courses.includes(c.id)));
+
+  // const filtered_files = state.global_shapes_array.filter((repo: any) => {
+  //   repo.files.every((file: any) => {
+  //     let search_description = file.url + ' ';
+  //     if (file.label) search_description = search_description + ' ' + file.label;
+  //     if (file.description) search_description = search_description + ' ' + file.description;
+  //     if (repo.description) search_description = search_description + ' ' + repo.description;
+  //     return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+  //   });
+  // })
+
+  // Try out reduce() https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+  // For loop on the repo, then filter the files?
+
+  // We could just do a simple listing of repos
+  // allow search on files in repo by creating a dump property for all files descriptions in the repo
+  // Add button to show files or not for each repo
+  // When button triggered we apply search values to the files in the repo
+  // Users can click on a detail button for files that will open a new windows with all the files details:
+  // All its concepts and properties (perfect-graph?). But also other files using the same concepts and properties 
+  const filtered_files = state.global_shapes_array
+    .filter((repo: any) => {
+      // repo.files.every((file: any) => {
+        let search_description = repo.url + ' ';
+        // if (file.label) search_description = search_description + ' ' + file.label;
+        // if (file.description) search_description = search_description + ' ' + file.description;
+        if (repo.description) search_description = search_description + ' ' + repo.description;
+        if (repo.search_description) search_description = search_description + ' ' + repo.search_description;
+        return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+      // });
+    })
+    // .map((repo: any) => {
+      // repo.files.filter((file: any) => {
+      //   let search_description = repo.url + ' ';
+      //   if (file.label) search_description = search_description + ' ' + file.label;
+      //   if (file.description) search_description = search_description + ' ' + file.description;
+      //   if (repo.description) search_description = search_description + ' ' + repo.description;
+      //   return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+      // });
+    // })
+    // https://stackoverflow.com/questions/34398279/map-and-filter-an-array-at-the-same-time
+    // .reduce((filtered: any, repo: any) => {
+    //   // Filter files in the repo
+    //   // console.log(repo);
+    //   let filtered_repo: any = {}
+    //   if (state.search) {
+    //     filtered_repo.files = repo.files.filter((file: any) => {
+    //       let search_description = repo.url + ' ';
+    //       if (file.label) search_description = search_description + ' ' + file.label;
+    //       if (file.description) search_description = search_description + ' ' + file.description;
+    //       if (repo.description) search_description = search_description + ' ' + repo.description;
+    //       return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+    //     });
+    //   } else {
+    //     filtered_repo.files = repo.files;
+    //   }
+    //   // console.log(filtered);
+    //   // Filter the repo (if no files?)
+    //   filtered_repo.url = repo.url;
+    //   if (repo.description) filtered_repo.description = repo.description;
+    //   filtered.push(filtered_repo)
+    //   return filtered;
+    // }, []);
+
+
+  // const filtered_files = Object.fromEntries(Object.entries(state.global_shapes_array).filter(([repo_url, repo_obj]: any) => {
+  //   let search_description = repo_url + ' ';
+  //   if (repo_obj.description) search_description = search_description + ' ' + repo_obj.description;
+  //   return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+
+  //   // if (shapes_file) {
+  //     // if (shapes_file.label) {
+  //       // Filter by repo: show shapes if no repo selected, or if its repo is in list of selected repos
+  //       // if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
+  //         // Filter depending on shape type checkboxes:
+  //         // if ((state.checkbox_shex === true && shapes_file.shape_type == 'http://www.w3.org/ns/shex#Schema')
+  //         // || (state.checkbox_sparql === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
+  //         // || (state.checkbox_shacl === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#Shape')
+  //         // || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
+  //         // || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
+  //         // || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
+  //         // || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/WebAPI')
+  //         // ) {
+  //           // Filter using the search text, on all properties and metadata of the file:
+  //           // let file_description = '';
+  //           // if (shapes_file.repo_description) file_description = file_description + ' ' + shapes_file.repo_description;
+  //           // if (shapes_file.shape_file_description) file_description = file_description + ' ' + shapes_file.shape_file_description;
+  //           // if (shapes_file.sparqlEndpoint) file_description = file_description + ' ' + shapes_file.sparqlEndpoint;
+  //           // if (shapes_file.query) file_description = file_description + ' ' + shapes_file.query;
+  //           // return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
+  //           //   || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+  //           //   || shapes_file.shapes && shapes_file.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+  //           //   || shapes_file.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+  //           //   || file_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+  //           // )
+  //         // }
+  //       // }
+  // }))
 
   // If no repo filter, then we use the filtered list to have the repo filtered
   // If a repo is selected we show full list, 
   // since filtering on filtered_files would show only the selected repo
   // Return unique list of filtered repos
-  let filtered_repos: any = []
-  if (state.repositories_autocomplete.length == 0) {
-    filtered_repos = filtered_files.map( (shapes_file: any) =>{
-      return shapes_file.repository
-    }).filter((item, i, ar) => ar.indexOf(item) === i)
-  } else {
-    filtered_repos = state.shapes_files_list.map( (shapes_file: any) =>{
-      return shapes_file.repository
-    }).filter((item, i, ar) => ar.indexOf(item) === i)
-  }
+  // let filtered_repos: any = []
+  // if (state.repositories_autocomplete.length == 0) {
+  //   filtered_repos = Object.keys(filtered_files).map( (shapes_file: any) =>{
+  //     return shapes_file.repository
+  //   }).filter((item, i, ar) => ar.indexOf(item) === i)
+  // } else {
+  //   filtered_repos = state.shapes_files_list.map( (shapes_file: any) =>{
+  //     return shapes_file.repository
+  //   }).filter((item, i, ar) => ar.indexOf(item) === i)
+  // }
 
   // Define rendering of the page:
   return(
@@ -524,7 +648,10 @@ export default function SemanticIndex() {
           <Grid item xs={12} md={6}>
             <Paper style={{padding: theme.spacing(2, 2)}}>
               <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of repositories per shape type</Typography>
-              <Bar data={state.repos_overview_chart} options={chart_options(state.repos_overview_chart['datasets'][0]['data'])}/>
+              <Bar data={state.repos_overview_chart} 
+                options={chart_options(state.repos_overview_chart['datasets'][0]['data'])}
+                plugins={[ChartDataLabels]}
+              />
             </Paper>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -539,9 +666,10 @@ export default function SemanticIndex() {
       {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(3, 0)}}>
         <Typography variant="h5">
-          {filtered_files.length} files in&nbsp;
-          {filtered_repos.length} repositories 
-          {/* {(state.repositories_autocomplete.length > 0 && state.repositories_autocomplete.length) || Object.keys(state.repositories_hash).length} Shapes repositories  */}
+          {filtered_files.reduce((filtered: any, repo: any) => filtered + repo.files.length, 0)} files in&nbsp;
+          {/* Also works: */}
+          {/* {filtered_files.reduce((filtered: any, repo: any) => {filtered.push(repo.files.length); return filtered;}, []).reduce((a, b) => a + b, 0)} files in&nbsp; */}
+          {Object.keys(filtered_files).length} repositories 
         </Typography>
 
         {/* Filtering options */}
@@ -562,7 +690,7 @@ export default function SemanticIndex() {
             id="shapes-per-page"
             value={state.shapes_per_page}
             onChange={(e: any) => {updateState({shapes_per_page: e.target.value})}}
-            label="Files per page"
+            label="Repos per page"
             type="number"
             variant="outlined"
             // style={{ backgroundColor: '#ffffff' }}
@@ -570,7 +698,7 @@ export default function SemanticIndex() {
         </Box>
 
         {/* Autocomplete to filter by repositories */}
-        <Autocomplete
+        {/* <Autocomplete
           multiple
           value={state.repositories_autocomplete}
           onChange={handleAutocompleteRepositories}
@@ -603,7 +731,7 @@ export default function SemanticIndex() {
             // getOptionLabel={option => option.title}
             // style={{ width: '60ch' }}
           />}
-        />
+        /> */}
 
         <FormGroup style={{marginTop: theme.spacing(2)}} row>
           <FormControlLabel
@@ -680,16 +808,44 @@ export default function SemanticIndex() {
 
       </Paper>
 
-      {state.shapes_files_list.length < 1 && (
+      {Object.keys(state.global_shapes_array).length < 1 && (
         <div style={{textAlign: 'center'}}>
           <CircularProgress style={{padding: theme.spacing(10, 10)}} />
         </div>
       )}
 
       {/* Display Shapes files */}
-      {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(project: any, key: number){
+      {/* {console.log(filtered_files)} */}
+      {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(repo_obj: any, key: number){
         return <Paper key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
-          <Typography variant="h6">
+          <Typography style={{margin: theme.spacing(1, 0)}}>
+            <a href={repo_obj.url} className={classes.link}>
+              📁&nbsp;{repo_obj.url.replace('https://github.com/', '')}
+            </a>
+            {repo_obj.description &&
+              <>
+                &nbsp;-&nbsp;{repo_obj.description}
+              </>
+            }
+          </Typography>
+          <Typography style={{margin: theme.spacing(1, 0)}}>
+            {repo_obj.files.length} files
+          </Typography>
+
+          {/* TODO: add expand card button to show files of a repo */}
+          {false && repo_obj.files.map(function(file_obj: any, key: number){
+            return <Typography style={{margin: theme.spacing(1, 0)}}>
+              <a href={file_obj.url} className={classes.link}>
+                {file_obj.label}
+              </a>
+              {file_obj.description &&
+                <>
+                  &nbsp;-&nbsp;{file_obj.description}
+                </>
+              }
+            </Typography>
+          })}
+          {/* <Typography variant="h6">
             File:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>
             {project.query && project.sparqlEndpoint &&
@@ -716,23 +872,11 @@ export default function SemanticIndex() {
               <Like object={project.shapeFileUri}>the Shape</Like>
             </LoggedIn>
           </Typography>
-          {/* shape_file_description */}
           {project.shape_file_description &&
             <Typography style={{fontStyle: 'italic', margin: theme.spacing(1, 0)}}>
               {project.shape_file_description}
             </Typography>
           }
-          <Typography style={{margin: theme.spacing(1, 0)}}>
-            {/* In repository:&nbsp; */}
-            <a href={project.repository} className={classes.link}>
-              📁&nbsp;{project.repository.replace('https://github.com/', '')}
-            </a>
-            {project.repo_description &&
-              <>
-                &nbsp;-&nbsp;{project.repo_description}
-              </>
-            }
-          </Typography>
           {project.shapes &&
             <>
               <Typography style={{marginTop: theme.spacing(1)}}>
@@ -746,10 +890,10 @@ export default function SemanticIndex() {
                 // </Tooltip>
               })}
             </>
-          }
+          } */}
         </Paper>
       })}
-      <Pagination count={Math.floor(filtered_files.length / state.shapes_per_page) + 1} 
+      <Pagination count={Math.floor(Object.keys(filtered_files).length / state.shapes_per_page) + 1} 
         color="primary" onChange={(event,val)=> updateState({page: val})} 
         style={{ display:'flex', justifyContent: 'center' }}
       />
@@ -837,7 +981,7 @@ function chart_options(data_array: any) {
       yAxes: [{
         ticks: {
           beginAtZero: true,
-          suggestedMax: Math.max(...data_array) + 50
+          // suggestedMax: Math.max(...data_array) + 50
         }
       }],
       xAxes: [{
@@ -851,37 +995,42 @@ function chart_options(data_array: any) {
     },
     // maintainAspectRatio: false,
     plugins: {
-      labels: {
-        // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
-        render: 'value',
-        // fontSize: 12,
+      datalabels: {
+        display: true,
+        color: 'black'
+      },
+      // labels: {
+      //   // render 'label', 'value', 'percentage', 'image' or custom function, default is 'percentage'
+      //   render: 'value',
+      //   overlap: true,
+      //   // fontSize: 12,
 
-        // font color, can be color array for each data or function for dynamic color, default is defaultFontColor
-        // fontColor: '#fff',
-        // // draw text shadows under labels, default is false
-        // textShadow: true,
-        // text shadow intensity, default is 6
-        // shadowBlur: 10,
-        // // text shadow X offset, default is 3
-        // shadowOffsetX: -5,
-        // // text shadow Y offset, default is 3
-        // shadowOffsetY: 5,
-        // // text shadow color, default is 'rgba(0,0,0,0.3)'
-        // shadowColor: 'rgba(255,0,0,0.75)',
-        // position to draw label, available value is 'default', 'border' and 'outside'
-        // bar chart ignores this
-        // default is 'default'
-        // position: 'outside',
+      //   // font color, can be color array for each data or function for dynamic color, default is defaultFontColor
+      //   // fontColor: '#fff',
+      //   // // draw text shadows under labels, default is false
+      //   // textShadow: true,
+      //   // text shadow intensity, default is 6
+      //   // shadowBlur: 10,
+      //   // // text shadow X offset, default is 3
+      //   // shadowOffsetX: -5,
+      //   // // text shadow Y offset, default is 3
+      //   // shadowOffsetY: 5,
+      //   // // text shadow color, default is 'rgba(0,0,0,0.3)'
+      //   // shadowColor: 'rgba(255,0,0,0.75)',
+      //   // position to draw label, available value is 'default', 'border' and 'outside'
+      //   // bar chart ignores this
+      //   // default is 'default'
+      //   position: 'border',
 
-        // set images when `render` is 'image'
-        // images: [
-        //   {
-        //     src: 'image.png',
-        //     width: 16,
-        //     height: 16
-        //   }
-        // ]
-      }
+      //   // set images when `render` is 'image'
+      //   // images: [
+      //   //   {
+      //   //     src: 'image.png',
+      //   //     width: 16,
+      //   //     height: 16
+      //   //   }
+      //   // ]
+      // }
     }
   }
 }

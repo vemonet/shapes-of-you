@@ -18,7 +18,7 @@ import Alert from '@material-ui/lab/Alert';
 
 import axios from 'axios';
 import { Doughnut, Pie, Bar, HorizontalBar } from 'react-chartjs-2';
-import 'chartjs-plugin-labels';
+// import 'chartjs-plugin-labels';
 
 import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
 import Autocomplete from '@material-ui/lab/Autocomplete';
