@@ -7111,18 +7111,18 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'te "{./Attribute[@Name=\'ProcedureID\']/Value}";\n\trr:datatype '^b'xsd:strg\n\t]];\n\t\n  \trr:predicateObjectMap [\n    rr:predicate '..."
 
 ---
-File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl parsed as xml
-
-In repository: https://github.com/sisinflab-swot/semantic-coap
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
-
----
 File: https://raw.githubusercontent.com/LUMC-BioSemantics/dcat-extension/master/stardog-rules%2Fstandard-rule.ttl parsed as ttl
 
 In repository: https://github.com/LUMC-BioSemantics/dcat-extension
 > at line 10 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'org/ns/dcat#>\nprefix dcterms: <http://purl.org/dc/terms/>\n\n\n'^b'IF {\n   ?res a dcat:Resource.\n   ?res dcterms:type dcterms:S'..."
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl parsed as xml
+
+In repository: https://github.com/sisinflab-swot/semantic-coap
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/ddaedalus/knowledge-systems-ntua/master/ontology%2Fmyontology-turtle.owl parsed as xml
@@ -7159,6 +7159,12 @@ In repository: https://github.com/blankdots/PersonasOntology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/personasonto.owl:21:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
+File: https://raw.githubusercontent.com/cmungall/dasher/master/src%2Fschema%2Fsemqc.owl parsed as xml
+
+In repository: https://github.com/cmungall/dasher
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/schema/semqc.owl:1:0: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/luiseraso/expert-systems-examples/master/ims-examples-jena%2Fsrc%2Fmain%2Fresources%2Fedu%2Ffup%2Fims%2Fontologies%2FSecurityAndPrivacyOntology.owl parsed as xml
 
 In repository: https://github.com/luiseraso/expert-systems-examples
@@ -7175,12 +7181,6 @@ File: https://raw.githubusercontent.com/luiseraso/expert-systems-examples/master
 
 In repository: https://github.com/luiseraso/expert-systems-examples
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ims-examples-owl/src/main/resources/edu/fup/ims/ontologies/SecurityAndPrivacyOntology.owl:26:82: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/cmungall/dasher/master/src%2Fschema%2Fsemqc.owl parsed as xml
-
-In repository: https://github.com/cmungall/dasher
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/schema/semqc.owl:1:0: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/cod3rs-ns/4-xml-govrs-service/master/src%2Fmain%2Fresources%2Fschemas%2Frdf%2Fskupstina.owl parsed as xml
@@ -7333,6 +7333,12 @@ In repository: https://github.com/fairgenomes/fairgenomes-semantic-model
 > at line 8 of <>:
 Bad syntax (Prefix "https:" not bound) at ^ in:
 "...b'owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n'^b'https://fair-genomes.org/ a owl:Ontology ; \n\tdc:title "FAIR '..."
+
+---
+File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/experiments%2Feinsteins_riddle_manchester.owl parsed as xml
+
+In repository: https://github.com/cknoll/yamlpyowl
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/experiments/einsteins_riddle_manchester.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/core%2Fsrc%2Fmain%2Fresources%2Fmodel%2Fdefault-model.trig parsed as n3
@@ -7693,10 +7699,18 @@ Bad syntax (expected item in list or ')') at ^ in:
 "...b'  sh:property [\n    sh:path props:hasTextValue;\n    sh:in (1'^b',2,3);\n    sh:message "must be in";\n  ] ;\n\n'"
 
 ---
-File: https://raw.githubusercontent.com/cknoll/yamlpyowl/main/experiments%2Feinsteins_riddle_manchester.owl parsed as xml
+File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3 parsed as n3
 
-In repository: https://github.com/cknoll/yamlpyowl
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/experiments/einsteins_riddle_manchester.owl:1:0: syntax error
+In repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
+> at line 4 of <>:
+Bad syntax (Prefix "    my:" not bound) at ^ in:
+"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
+
+---
+File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl parsed as xml
+
+In repository: https://github.com/paya54/Reason-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
 
 ---
 File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf parsed as xml
@@ -7717,30 +7731,16 @@ In repository: https://github.com/falpema/PlanesCuenca
 > Invalid line: '<rdf:RDF'
 
 ---
-File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl parsed as xml
-
-In repository: https://github.com/Inria-Chile/mining-inspection-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/MineInspectionOntology.owl:1:0: syntax error
-
----
 File: https://raw.githubusercontent.com/AVeillas/IA301-urban-transport-ontology/master/UrbanTransportOntology.owl parsed as xml
 
 In repository: https://github.com/AVeillas/IA301-urban-transport-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
-File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3 parsed as n3
+File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl parsed as xml
 
-In repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
-> at line 4 of <>:
-Bad syntax (Prefix "    my:" not bound) at ^ in:
-"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
-
----
-File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl parsed as xml
-
-In repository: https://github.com/paya54/Reason-OWL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
+In repository: https://github.com/Inria-Chile/mining-inspection-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/MineInspectionOntology.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl parsed as ttl
