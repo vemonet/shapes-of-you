@@ -57,7 +57,7 @@ jobs:
           search-topics: skos,obofoundry
         - git-service: gitlab
           run-label: run-3
-          search-topics: ontology
+          search-topics: ontology # Fails without warnings
 
     runs-on: ubuntu-latest
     steps:

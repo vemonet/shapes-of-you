@@ -12,6 +12,8 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import DeviceHubIcon from '@material-ui/icons/DeviceHub';
 import GavelIcon from '@material-ui/icons/Gavel';
 import OpenAPIIcon from '@material-ui/icons/Adjust';
+import RmlIcon from '@material-ui/icons/AllInclusive';
+import R2rmlIcon from '@material-ui/icons/Storage';
 import CloseIcon from '@material-ui/icons/Close';
 
 import Alert from '@material-ui/lab/Alert';
@@ -622,7 +624,7 @@ export default function SemanticIndex() {
                 <ListItem>
                   <ListItemAvatar>
                     <Avatar>
-                      <GavelIcon />
+                      <RmlIcon />
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText>
@@ -632,7 +634,7 @@ export default function SemanticIndex() {
                 <ListItem>
                   <ListItemAvatar>
                     <Avatar>
-                      <GavelIcon />
+                      <R2rmlIcon />
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText>
