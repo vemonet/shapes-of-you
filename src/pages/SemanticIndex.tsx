@@ -1,8 +1,9 @@
 import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
-import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper, CircularProgress, Card, CardContent, CardHeader } from "@material-ui/core";
+import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper, CircularProgress, Card, CardContent, CardHeader, Collapse, CardActions } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
 import { List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@material-ui/core";
+import Alert from '@material-ui/lab/Alert';
 import SearchIcon from '@material-ui/icons/Search';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CodeIcon from '@material-ui/icons/Code';
@@ -15,11 +16,11 @@ import OpenAPIIcon from '@material-ui/icons/Adjust';
 import RmlIcon from '@material-ui/icons/AllInclusive';
 import R2rmlIcon from '@material-ui/icons/Storage';
 import CloseIcon from '@material-ui/icons/Close';
-
-import Alert from '@material-ui/lab/Alert';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 import axios from 'axios';
-import { Doughnut, Pie, Bar, HorizontalBar } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 // import 'chartjs-plugin-labels';
 
@@ -57,6 +58,16 @@ const useStyles = makeStyles(theme => ({
       color: theme.palette.secondary.main,
       textDecoration: 'none',
     },
+    expand: {
+      transform: 'rotate(0deg)',
+      marginLeft: 'auto',
+      transition: theme.transitions.create('transform', {
+        duration: theme.transitions.duration.shortest,
+      }),
+    },
+    expandOpen: {
+      transform: 'rotate(180deg)',
+    },
   },
 }))
 
@@ -68,6 +79,7 @@ export default function SemanticIndex() {
   
   const [state, setState] = React.useState({
     global_shapes_array: [],
+    expanded_files: {},
     webid: '',
     shapes_files_list: [],
     search: '',
@@ -84,7 +96,7 @@ export default function SemanticIndex() {
     checkbox_openapi: true,
     show_pwa_alert: true,
     page: 1,
-    shapes_per_page: 10,
+    shapes_per_page: 20,
     show_info_card: true,
   });
   const stateRef = React.useRef(state);
@@ -373,7 +385,9 @@ export default function SemanticIndex() {
     updateState({ [event.target.name]: event.target.checked });
   }
 
-  // TODO: add handleCollapse
+  const handleExpandClick = (e: any) => {
+    updateState({expanded_files: {...state.expanded_files, [e.currentTarget.name]: !state.expanded_files[e.currentTarget.name]} });
+  };
 
   // function handleAutocompleteRepositories(event: any, value: string[]) {
   //   updateState({ repositories_autocomplete: value})
@@ -842,34 +856,60 @@ export default function SemanticIndex() {
       {/* Display Shapes files */}
       {/* {console.log(filtered_files)} */}
       {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(repo_obj: any, key: number){
-        return <Paper key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
-          <Typography style={{margin: theme.spacing(1, 0)}}>
-            <a href={repo_obj.url} className={classes.link}>
-              📁&nbsp;{repo_obj.url.replace('https://github.com/', '')}
-            </a>
-            {repo_obj.description &&
-              <>
-                &nbsp;-&nbsp;{repo_obj.description}
-              </>
-            }
-          </Typography>
-          <Typography style={{margin: theme.spacing(1, 0)}}>
-            {repo_obj.files.length} files
-          </Typography>
-
-          {/* TODO: add expand card button to show files of a repo */}
-          {true && repo_obj.files.map(function(file_obj: any, key: number){
-            return <Typography style={{margin: theme.spacing(1, 0)}}>
-              <a href={file_obj.url} className={classes.link}>
-                📄 {file_obj.label}
+        // return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
+        return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(1, 1), margin: theme.spacing(2, 0)}}>
+          <CardContent style={{paddingBottom: theme.spacing(0), margin: theme.spacing(0, 0)}}>
+            <Typography >
+              <a href={repo_obj.url} className={classes.link}>
+                📁&nbsp;{repo_obj.url.replace('https://github.com/', '')}
               </a>
-              {file_obj.description &&
+              {repo_obj.description &&
                 <>
-                  &nbsp;-&nbsp;{file_obj.description}
+                  &nbsp;-&nbsp;{repo_obj.description}
                 </>
               }
             </Typography>
-          })}
+            {/* <Typography style={{margin: theme.spacing(1, 0)}}>
+              {repo_obj.files.length} files
+            </Typography> */}
+
+          </CardContent>
+
+          <CardActions disableSpacing style={{padding: theme.spacing(0, 1), margin: theme.spacing(0, 0)}}>
+            <IconButton style={{fontSize: '16px'}}
+              onClick={handleExpandClick}
+              name={repo_obj.url}
+              aria-expanded={state.expanded_files[repo_obj.url]}
+              aria-label="show more"
+            >
+              {repo_obj.files.length} files
+              {!state.expanded_files[repo_obj.url] &&
+                <ExpandMoreIcon />
+              }
+              {state.expanded_files[repo_obj.url] &&
+                <ExpandLessIcon />
+              }
+            </IconButton>
+          </CardActions>
+
+          <Collapse in={state.expanded_files[repo_obj.url]} timeout="auto" unmountOnExit>
+            <CardContent>
+              {/* TODO: also filter files? */}
+              {repo_obj.files.map(function(file_obj: any, key: number){
+                return <Typography style={{margin: theme.spacing(1, 0)}} key={key.toString()}>
+                  <a href={file_obj.url} className={classes.link}>
+                    📄 {file_obj.label}
+                  </a>
+                  {file_obj.description &&
+                    <>
+                      &nbsp;-&nbsp;{file_obj.description}
+                    </>
+                  }
+                </Typography>
+              })}
+            </CardContent>
+          </Collapse>
+
           {/* <Typography variant="h6">
             File:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>
@@ -916,7 +956,7 @@ export default function SemanticIndex() {
               })}
             </>
           } */}
-        </Paper>
+        </Card>
       })}
       <Pagination count={Math.floor(Object.keys(filtered_files).length / state.shapes_per_page) + 1} 
         color="primary" onChange={(event,val)=> updateState({page: val})} 
