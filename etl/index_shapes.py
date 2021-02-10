@@ -313,10 +313,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shape_found = True
           is_rml_mappings = False
           # Differenciate RML and R2RML mappings
-          for shape in g.predicates(RDF.type, RML.logicalSource):
-            is_rml_mappings = True
-            break
-          if is_rml_mappings:
+          if (None, RML.logicalSource, None) in g:
             shapes_graph.add((file_uri, RDF.type, RML.LogicalSource))
           else:
             shapes_graph.add((file_uri, RDF.type, R2RML.TriplesMap))
