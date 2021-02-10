@@ -156,7 +156,7 @@ pip3 install -r etl/requirements.txt
 Retrieve shapes files for topics (provided separated by comma without spaces) from the [GitHub GraphQL API](https://developer.github.com/v4/explorer):
 
 ```bash
-python3 etl/index_shapes.py github owl,shacl-shapes,shex,grlc,skos,obofoundry
+python3 etl/index_shapes.py github openapi,topic:shacl-shapes
 ```
 
 Retrieve shapes files from [GitLab API](https://docs.gitlab.com/ee/api/) using the [`python-gitlab` package](https://pypi.org/project/python-gitlab/):
