@@ -116,7 +116,7 @@ export default function QueryYasguiButton(props: any) {
           &nbsp;Query on YASGUI
         </Button>
       }
-      { !props.endpoint &&
+      { !props.endpoint && props.query &&
         <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} >
           <SearchIcon />
           &nbsp;See on YASGUI

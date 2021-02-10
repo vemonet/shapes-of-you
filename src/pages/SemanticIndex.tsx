@@ -19,6 +19,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
+import ReactMarkdown from 'react-markdown'
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
@@ -920,23 +921,23 @@ export default function SemanticIndex() {
             <CardContent>
               {/* TODO: also filter files? */}
               {repo_obj.files.map(function(file_obj: any, key: number){
-                return <Typography style={{margin: theme.spacing(1, 0)}} key={key.toString()}>
-                  <a href={file_obj.url} className={classes.link}>
-                    📄 {file_obj.label}
-                  </a>
-                  {/* TODO: handle markdown descriptions */}
-                  {/* <ReactMarkdown
-                    source={text}
-                    renderers={{ paragraph: Typography }}
-                  /> */}
+                return <Card key={key.toString()} style={{padding: theme.spacing(1, 1), margin: theme.spacing(1, 0)}}>
+                  <Typography style={{margin: theme.spacing(1, 0)}}>
+                    <a href={file_obj.url} className={classes.link}>
+                      📄 {file_obj.label}
+                    </a>
+                    <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
+                    {file_obj.description &&
+                      <div style={{margin: theme.spacing(1, 0)}}>
+                        <ReactMarkdown 
+                          source={file_obj.description}
+                          renderers={{ paragraph: Typography }}
+                        />
+                      </div>
 
-                  {file_obj.description &&
-                    <>
-                      &nbsp;-&nbsp;{file_obj.description}
-                    </>
-                  }
-                  <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
-                </Typography>
+                    }
+                  </Typography>
+                </Card>
               })}
             </CardContent>
           </Collapse>
