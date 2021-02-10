@@ -31,6 +31,8 @@ import Pagination from '@material-ui/lab/Pagination';
 import { LoggedIn, LoggedOut, Value, useWebId, useLDflexValue, useLDflexList } from '@solid/react';
 import { Like } from '@solid/react';
 import data from "@solid/query-ldflex";
+
+import QueryYasguiButton from "../components/QueryYasguiButton";
 // import { data } from "@solid/query-ldflex";
 // import SolidStar from "./SolidStar";
 
@@ -58,17 +60,17 @@ const useStyles = makeStyles(theme => ({
       color: theme.palette.secondary.main,
       textDecoration: 'none',
     },
-    expand: {
-      transform: 'rotate(0deg)',
-      marginLeft: 'auto',
-      transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-      }),
-    },
-    expandOpen: {
-      transform: 'rotate(180deg)',
-    },
   },
+  // expand: {
+  //   transform: 'rotate(0deg)',
+  //   marginLeft: 'auto',
+  //   transition: theme.transitions.create('transform', {
+  //     duration: theme.transitions.duration.shortest,
+  //   }),
+  // },
+  // expandOpen: {
+  //   transform: 'rotate(180deg)',
+  // },
 }))
 
 export default function SemanticIndex() {
@@ -94,6 +96,8 @@ export default function SemanticIndex() {
     checkbox_skos: true,
     checkbox_obo: true,
     checkbox_openapi: true,
+    checkbox_rml: true,
+    checkbox_r2rml: true,
     show_pwa_alert: true,
     page: 1,
     shapes_per_page: 20,
@@ -131,7 +135,7 @@ export default function SemanticIndex() {
       'http://semanticscience.org/resource/SIO_000623': 'OBO',
       'https://schema.org/WebAPI': 'OpenAPI',
       'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
-      'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML/YARRRML',
+      'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
     }
 
     let repos_overview_chart = {
@@ -826,6 +830,26 @@ export default function SemanticIndex() {
           <FormControlLabel
             control={
               <Checkbox
+                checked={state.checkbox_rml}
+                onChange={handleCheckboxes}
+                name="checkbox_rml"
+                color="primary"
+              /> }
+            label="RML"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_r2rml}
+                onChange={handleCheckboxes}
+                name="checkbox_r2rml"
+                color="primary"
+              /> }
+            label="R2RML"
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
                 checked={state.checkbox_obo}
                 onChange={handleCheckboxes}
                 name="checkbox_obo"
@@ -900,11 +924,18 @@ export default function SemanticIndex() {
                   <a href={file_obj.url} className={classes.link}>
                     📄 {file_obj.label}
                   </a>
+                  {/* TODO: handle markdown descriptions */}
+                  {/* <ReactMarkdown
+                    source={text}
+                    renderers={{ paragraph: Typography }}
+                  /> */}
+
                   {file_obj.description &&
                     <>
                       &nbsp;-&nbsp;{file_obj.description}
                     </>
                   }
+                  <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
                 </Typography>
               })}
             </CardContent>
