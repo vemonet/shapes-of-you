@@ -23,26 +23,29 @@ jobs:
       matrix:
         include:
         - git-service: github
-          run-label: main-run
+          run-label: topics-w3c
           search-topics: topic:owl,topic:shacl-shapes,topic:shex,topic:grlc,topic:skos,topic:obofoundry
         - git-service: github
-          run-label: openapi-run
-          search-topics: topic:api,topic:openapi,topic:smartapi,topic:ncats-translator,topic:translator-api
+          run-label: topics-openapi
+          search-topics: topic:openapi,topic:smartapi,topic:ncats-translator,topic:translator-api
         - git-service: github
-          run-label: api-run
+          run-label: topics-api
           search-topics: topic:api
         - git-service: github
           run-label: rml-run
           search-topics: r2rml,rml,topic:rml-mapping
         - git-service: github-extras
-          run-label: main-run
+          run-label: extra-1
           search-topics: EXTRAS_GITHUB_REPOSITORIES.txt
         - git-service: github-extras
-          run-label: extra-run
+          run-label: extra-2
           search-topics: EXTRAS_GITHUB_REPOSITORIES_2.txt
         - git-service: github
           run-label: direct-search-openapi
-          search-topics: ncats+translator,biothings,smartapi,knowledge+provider,shacl
+          search-topics: ncats+translator,biothings,smartapi,knowledge+provider
+        - git-service: github
+          run-label: direct-search-shacl
+          search-topics: shacl
         - git-service: gitee
           run-label: ontology-run
           search-topics: ontology,sparql
@@ -50,14 +53,11 @@ jobs:
           run-label: sparql-run
           search-topics: sparql
         - git-service: gitlab
-          run-label: run-1
-          search-topics: owl,shacl,shex,sparql
-        - git-service: gitlab
-          run-label: run-2
-          search-topics: skos,obofoundry
-        - git-service: gitlab
-          run-label: run-3
-          search-topics: ontology # Fails without warnings
+          run-label: main-run
+          search-topics: owl,shacl,shex,sparql,skos,obofoundry
+        # - git-service: gitlab
+        #   run-label: run-3
+        #   search-topics: ontology # Fails without warnings
 
     runs-on: ubuntu-latest
     steps:

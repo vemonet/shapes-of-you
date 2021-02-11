@@ -285,11 +285,21 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       try:
           g.parse(str(rdf_file_path.absolute()), format=shape_format)
       except Exception as e:
-          print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
-          if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
-              add_to_report('File: ' + github_file_url + " parsed as " + shape_format + "\n\n"
-                  + 'In repository: ' + repo_url + "\n> " 
-                  + str(e) + "\n\n---\n")
+          if shape_format == 'xml' and rdf_file_path.endswith('.owl'):
+            try: 
+              g.parse(str(rdf_file_path.absolute()), format='ttl')
+            except:
+              print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
+              if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
+                  add_to_report('File: ' + github_file_url + " parsed as " + shape_format + "\n\n"
+                      + 'In repository: ' + repo_url + "\n> " 
+                      + str(e) + "\n\n---\n")
+          else:
+            print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
+            if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
+                add_to_report('File: ' + github_file_url + " parsed as " + shape_format + "\n\n"
+                    + 'In repository: ' + repo_url + "\n> " 
+                    + str(e) + "\n\n---\n")
 
       # Search for SHACL shapes
       for shape in g.subjects(RDF.type, SH.NodeShape):
