@@ -3487,6 +3487,14 @@ In repository: https://github.com/RMLio/rml-test-cases
 > Invalid line: '<>.'
 
 ---
+File: https://raw.githubusercontent.com/chrdebru/r2rml/master/test%2Fresources%2FF01.mapping.ttl parsed as ttl
+
+In repository: https://github.com/chrdebru/r2rml
+> at line 5 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'.com/ns#> .\n@prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#>\n\n'^b'<#TriplesMap1>\n    rr:logicalTable [ rr:tableName "EMP" ];\n '..."
+
+---
 File: https://raw.githubusercontent.com/RMLio/RMLStreamer/development/src%2Ftest%2Fresources%2Ffailing%2Ffno-testcases%2FRMLFNOTC0016-CSV%2Foutput.ttl parsed as ttl
 
 In repository: https://github.com/RMLio/RMLStreamer
@@ -3565,14 +3573,6 @@ In repository: https://github.com/RMLio/RMLStreamer
 > at line 41 of <>:
 Bad syntax (EOF found when expected verb in property list) at ^ in:
 "...b'p [\n      rr:template "http://www.example.com/d2/{id}";\n  ];'^b'\n'"
-
----
-File: https://raw.githubusercontent.com/chrdebru/r2rml/master/test%2Fresources%2FF01.mapping.ttl parsed as ttl
-
-In repository: https://github.com/chrdebru/r2rml
-> at line 5 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'.com/ns#> .\n@prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#>\n\n'^b'<#TriplesMap1>\n    rr:logicalTable [ rr:tableName "EMP" ];\n '..."
 
 ---
 File: https://raw.githubusercontent.com/oeg-upm/Mapeathor/master/use-cases%2FnoisePollution%2Fmappings%2FOutputStations.r2rml.ttl parsed as ttl
@@ -4883,6 +4883,38 @@ Bad syntax (Prefix "ex:" not bound) at ^ in:
 "...b'ode\r\n\r\n# add to Work/Expression/Manifestation/Item map\r\n\r\n  '^b'ex:{3}Map rr:predicateObjectMap [\r\n    rr:predicate bf:contr'..."
 
 ---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent2%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 51 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'p [\n      rr:template "{apellido}, {nombre}";\n    ]\n  ];\n  \n'^b'].\t\t\t\t\t\t\t\t\n'"
+
+---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent3%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 57 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellido}, {nombre}";\n   '..."
+
+---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent1%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 33 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'l;\n    rr:objectMap [ \n\trml:reference "email" \n\t];\n  ];\n  \n '^b'].\n\n\n\n\t\t\t\t\t\t\t\t\t\t\n'"
+
+---
+File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FUniversidad%2Fmapping.ttl parsed as ttl
+
+In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
+> at line 57 of <>:
+Bad syntax (']' expected) at ^ in:
+"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellidos}, {nombre}";\n  '..."
+
+---
 File: https://raw.githubusercontent.com/tangwwwfei/RML2Pig/master/test-cases%2Fresources%2Fpassed%2Ftest-cases%2FRMLTC0012b-SPARQL%2Fmapping.ttl parsed as ttl
 
 In repository: https://github.com/tangwwwfei/RML2Pig
@@ -5337,60 +5369,6 @@ In repository: https://github.com/tangwwwfei/RML2Pig
 > at line 25 of <>:
 Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b'Name}" ]\n  ];\n\t\n  rr:predicateObjectMap [ \n    rr:predicate '^b'rdf:type ;\n    rr:object foaf:Person; \n  ];\n\t\n  rr:predicate'..."
-
----
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent2%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 51 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'p [\n      rr:template "{apellido}, {nombre}";\n    ]\n  ];\n  \n'^b'].\t\t\t\t\t\t\t\t\n'"
-
----
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent3%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 57 of <>:
-Bad syntax (']' expected) at ^ in:
-"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellido}, {nombre}";\n   '..."
-
----
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FStudent1%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 33 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'l;\n    rr:objectMap [ \n\trml:reference "email" \n\t];\n  ];\n  \n '^b'].\n\n\n\n\t\t\t\t\t\t\t\t\t\t\n'"
-
----
-File: https://raw.githubusercontent.com/AlvaroSDN/RMLtoGraphQL/master/RMLtoGraphQL%2FEjemplos%2FUniversidad%2Fmapping.ttl parsed as ttl
-
-In repository: https://github.com/AlvaroSDN/RMLtoGraphQL
-> at line 57 of <>:
-Bad syntax (']' expected) at ^ in:
-"...b':predicateObjectMap [ \n    rr:predicate schema:fullName\n    '^b'rr:objectMap [\n      rr:template "{apellidos}, {nombre}";\n  '..."
-
----
-File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping_hisco.ttl parsed as ttl
-
-In repository: https://github.com/SemanticComputing/ammo-csv2rdf
-> at line 7 of <>:
-Bad syntax (expected qname after @prefix) at ^ in:
-"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
-
----
-File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping.ttl parsed as ttl
-
-In repository: https://github.com/SemanticComputing/ammo-csv2rdf
-> at line 7 of <>:
-Bad syntax (expected qname after @prefix) at ^ in:
-"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
-
----
-File: https://raw.githubusercontent.com/knaw-huc/rml-tool/master/output.nt parsed as nt
-
-In repository: https://github.com/knaw-huc/rml-tool
-> Invalid line: '^^http://www.w3.org/2001/XMLSchema#string .'
 
 ---
 File: https://raw.githubusercontent.com/dachafra/carml-rml-report/master/test-cases%2FRMLTC0010c-JSON%2Fmapping.ttl parsed as ttl
@@ -5895,6 +5873,28 @@ In repository: https://github.com/dachafra/carml-rml-report
 > at line 25 of <>:
 Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b'Name}" ]\n  ];\n\t\n  rr:predicateObjectMap [ \n    rr:predicate '^b'rdf:type ;\n    rr:object foaf:Person; \n  ];\n\t\n  rr:predicate'..."
+
+---
+File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping_hisco.ttl parsed as ttl
+
+In repository: https://github.com/SemanticComputing/ammo-csv2rdf
+> at line 7 of <>:
+Bad syntax (expected qname after @prefix) at ^ in:
+"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
+
+---
+File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping.ttl parsed as ttl
+
+In repository: https://github.com/SemanticComputing/ammo-csv2rdf
+> at line 7 of <>:
+Bad syntax (expected qname after @prefix) at ^ in:
+"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
+
+---
+File: https://raw.githubusercontent.com/knaw-huc/rml-tool/master/output.nt parsed as nt
+
+In repository: https://github.com/knaw-huc/rml-tool
+> Invalid line: '^^http://www.w3.org/2001/XMLSchema#string .'
 
 ---
 File: https://raw.githubusercontent.com/edesmontils/RML-Closer/master/RDFS-OWL-rules%2FOWL-LD%2Fowl-ld.n3 parsed as n3
@@ -7005,14 +7005,6 @@ Bad syntax (']' expected) at ^ in:
 "...b';\n\t\n\trr:predicateObjectMap [\n\t\trr:predicate ex:hasParents\n\t\t'^b'rr:objectMap [\n\t\t\trr:parentTriplesMap <#RefObjectParentA>;\n\t'..."
 
 ---
-File: https://raw.githubusercontent.com/laurirondolo/sig-linkeddata/master/websitemapping.rml.ttl parsed as ttl
-
-In repository: https://github.com/laurirondolo/sig-linkeddata
-> at line 70 of <>:
-Bad syntax (Prefix "foaf:" not bound) at ^ in:
-"...b'    ]\r\n  ];\r\n\r\n   rr:predicateObjectMap [\r\n    rr:predicate '^b'foaf:depiction;\r\n    rr:objectMap [\r\n      rml:reference "de'..."
-
----
 File: https://raw.githubusercontent.com/vortic3/GTFS-RDF/master/output_GTFS%40RDF_Piedmont.rdf parsed as xml
 
 In repository: https://github.com/vortic3/GTFS-RDF
@@ -7155,5 +7147,13 @@ File: https://raw.githubusercontent.com/vortic3/GTFS-RDF/master/output_RML%2BFnO
 
 In repository: https://github.com/vortic3/GTFS-RDF
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/output_RML%2BFnO_MLRT_Madrid.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/laurirondolo/sig-linkeddata/master/websitemapping.rml.ttl parsed as ttl
+
+In repository: https://github.com/laurirondolo/sig-linkeddata
+> at line 70 of <>:
+Bad syntax (Prefix "foaf:" not bound) at ^ in:
+"...b'    ]\r\n  ];\r\n\r\n   rr:predicateObjectMap [\r\n    rr:predicate '^b'foaf:depiction;\r\n    rr:objectMap [\r\n      rml:reference "de'..."
 
 ---
