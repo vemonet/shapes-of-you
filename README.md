@@ -43,11 +43,17 @@ This web service is composed of those 4 main parts:
 
 ## Data model 📋
 
+Checkout the OWL ontology in [`/resources/shapes-of-you-ontology.ttl`](/resources/shapes-of-you-ontology.ttl)
+
+Here is an overview of the ontology:
+
+![Ontology overview](/resources/shapes-of-you-ontology.png)
+
 ### Prefixes
 
 - rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 - dc: <http://purl.org/dc/elements/1.1/>
-- dcterms: <http://purl.org/dc/terms/>
+- dct: <http://purl.org/dc/terms/>
 - owl: http://www.w3.org/2002/07/owl#
 - skos: http://www.w3.org/2004/02/skos/core#
 - sio: <http://semanticscience.org/resource/SIO_>
@@ -62,11 +68,11 @@ This web service is composed of those 4 main parts:
 
 ### Classes
 
-* `schema:SoftwareSourceCode`
+* Shape files: `schema:SoftwareSourceCode`
   * Properties:
     * `dcterms:hasPart`
     * `dc:description`
-    * `dc:source` > `schema:CodeRepository`
+    * `schema:codeRepository` > `schema:DataCatalog`
   * Subclasses:
     * `sh:Shape` (SHACL shape)
     * `shex:Schema` (ShEX schema)
@@ -74,14 +80,14 @@ This web service is composed of those 4 main parts:
     * `owl:Ontology` (OWL ontology)
     * `skos:ConceptScheme` (SKOS vocabulary)
     * `sio:000623` (OBO ontology)
-    * `schema:WebAPI` (OpenAPI)
+    * `schema:APIReference` (OpenAPI)
     * `rml:LogicalSource` (RML and YARRRML mappings)
     * `r2rml:TriplesMap` (R2RML mappings)
     * `nt:AssertionTemplate` (Nanopublication templates)
-* `schema:CodeRepository`
+* Git repositories: `schema:DataCatalog`
   * Properties:
     * `rdfs:comment`
-* `schema:EntryPoint` (or `void:Dataset`, or https://w3id.org/vocab/sdm#TripleStore)
+* Active SPARQL endpoints:`schema:EntryPoint`
   * `void:sparqlEndpoint`? (not used currently, we already use the endpoint URL as subject URI)
 
 ## Run web app in development 🏗

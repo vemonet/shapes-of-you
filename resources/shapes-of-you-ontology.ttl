@@ -1,0 +1,185 @@
+@prefix : <https://w3id.org/um/shapes-of-you#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix npt: <https://w3id.org/np/o/ntemplate/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix sio: <http://semanticscience.org/resource/SIO_> .
+@prefix soy: <https://w3id.org/um/shapes-of-you#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/spec/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shex: <http://www.w3.org/ns/shex#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix r2rml: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <https://schema.org/> .
+@base <https://w3id.org/um/shapes-of-you#> .
+
+<https://w3id.org/um/shapes-of-you#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rdfs.org/ns/void#sparqlEndpoint
+void:sparqlEndpoint rdf:type owl:ObjectProperty ;
+                    rdfs:domain sh:SPARQLFunction ;
+                    rdfs:range schema:EntryPoint ;
+                    rdfs:comment "SPARQL endpoint used by a SPARQL query" ;
+                    rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                    rdfs:label "SPARQL endpoint" .
+
+
+###  https://schema.org/codeRepository
+schema:codeRepository rdf:type owl:ObjectProperty ;
+                      rdfs:domain schema:SoftwareSourceCode ;
+                      rdfs:range schema:CodeRepository ;
+                      rdfs:comment "Link to the repository where the un-compiled, human readable code and related code is located (GitHub, GitLab, Gitee)." ;
+                      rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                      rdfs:label "code repository" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:DatatypeProperty ;
+               rdfs:domain schema:SoftwareSourceCode ;
+               rdfs:comment "Description of the file" ;
+               rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+               rdfs:label "description" .
+
+
+###  http://purl.org/dc/terms/hasPart
+dct:hasPart rdf:type owl:DatatypeProperty ;
+            rdfs:domain schema:SoftwareSourceCode ;
+            rdfs:comment "DCTERMS.hasPart content of the file (shapes)" ;
+            rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+            rdfs:label "hasPart" .
+
+
+###  https://schema.org/query
+schema:query rdf:type owl:DatatypeProperty ;
+             rdfs:domain sh:SPARQLFunction ;
+             rdfs:comment "schema:query" ;
+             rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+             rdfs:label "query" .
+
+
+###  https://w3id.org/um/shapes-of-you#/comment
+<https://w3id.org/um/shapes-of-you#/comment> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain schema:CodeRepository ;
+                                             rdfs:comment "rdfs:comment" ;
+                                             rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                                             rdfs:label "comment" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://semanticscience.org/resource/SIO_000623
+<http://semanticscience.org/resource/SIO_000623> rdf:type owl:Class ;
+                                                 rdfs:subClassOf schema:SoftwareSourceCode ;
+                                                 rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                                                 rdfs:label "OBO Ontology" .
+
+
+###  http://semweb.mmlab.be/ns/rml#LogicalSource
+rml:LogicalSource rdf:type owl:Class ;
+                  rdfs:subClassOf schema:SoftwareSourceCode ;
+                  rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                  rdfs:label "RML mappings" .
+
+
+###  http://www.w3.org/2002/07/owl#Ontology
+owl:Ontology rdf:type owl:Class ;
+             rdfs:subClassOf schema:SoftwareSourceCode ;
+             rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+             rdfs:label "OWL Ontology" .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class ;
+                   rdfs:subClassOf schema:SoftwareSourceCode ;
+                   rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                   rdfs:label "SKOS Concept Scheme" .
+
+
+###  http://www.w3.org/ns/r2rml#AssertionTemplate
+r2rml:AssertionTemplate rdf:type owl:Class ;
+                        rdfs:subClassOf schema:SoftwareSourceCode ;
+                        rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                        rdfs:label "Nanopublications templates" .
+
+
+###  http://www.w3.org/ns/r2rml#TriplesMap
+r2rml:TriplesMap rdf:type owl:Class ;
+                 rdfs:subClassOf schema:SoftwareSourceCode ;
+                 rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                 rdfs:label "R2RML mappings" .
+
+
+###  http://www.w3.org/ns/shacl#SPARQLFunction
+sh:SPARQLFunction rdf:type owl:Class ;
+                  rdfs:subClassOf schema:SoftwareSourceCode ;
+                  rdfs:comment "SH.SPARQLFunction" ;
+                  rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                  rdfs:label "SPARQL Function" .
+
+
+###  http://www.w3.org/ns/shacl#Shape
+sh:Shape rdf:type owl:Class ;
+         rdfs:subClassOf schema:SoftwareSourceCode ;
+         rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+         rdfs:label "SHACL Shape" .
+
+
+###  http://www.w3.org/ns/shex#Schema
+shex:Schema rdf:type owl:Class ;
+            rdfs:subClassOf schema:SoftwareSourceCode ;
+            rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+            rdfs:label "ShEx schema" .
+
+
+###  https://schema.org/APIReference
+schema:APIReference rdf:type owl:Class ;
+                    rdfs:subClassOf schema:SoftwareSourceCode ;
+                    rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                    rdfs:label "API Reference" .
+
+
+###  https://schema.org/CodeRepository
+schema:CodeRepository rdf:type owl:Class ;
+                      rdfs:comment "Git repository (GitHub, GitLab, Gitee)" ;
+                      rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                      rdfs:label "Code Repository" .
+
+
+###  https://schema.org/EntryPoint
+schema:EntryPoint rdf:type owl:Class ;
+                  rdfs:comment "Active and tested SPARQL endpoints (schema:EntryPoint)" ;
+                  rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                  rdfs:label "SPARQL Endpoint" .
+
+
+###  https://schema.org/SoftwareSourceCode
+schema:SoftwareSourceCode rdf:type owl:Class ;
+                          rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
+                          rdfs:label "Software Source Code" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/um/shapes-of-you#> rdfs:comment "Simple OWL ontology for the Shapes of you knowledge graph, an index of publicly available semantic resources (files) in git repositories" ;
+                                     rdfs:label "Shapes of You" .
+
+
+###  Generated by the OWL API (version 5.1.17) https://github.com/owlcs/owlapi/
