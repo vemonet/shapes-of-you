@@ -171,7 +171,7 @@ schema:EntryPoint rdf:type owl:Class ;
 ###  https://schema.org/SoftwareSourceCode
 schema:SoftwareSourceCode rdf:type owl:Class ;
                           rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-                          rdfs:label "Software Source Code" .
+                          rdfs:label "Source Code" .
 
 
 #################################################################
