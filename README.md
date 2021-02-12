@@ -189,3 +189,9 @@ python3 etl/index_shapes.py gitee ontology,sparql
 ## Contribute 👩‍💻
 
 Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).
+
+## Aknowledgements
+
+Ontology built with [gra.fo](https://gra.fo)
+
+Files parsed using python libraries: `rdflib`, `obonet`, `prance`

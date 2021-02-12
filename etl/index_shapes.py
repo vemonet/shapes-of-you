@@ -183,7 +183,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SIO['SIO_000623'])) # OBO ontology
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = data.get('name')
           if not shape_label:
             shape_label = id_
@@ -200,9 +200,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         parser = ResolvingParser(github_file_url)
         shape_found = True
         shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
-        shapes_graph.add((file_uri, RDF.type, SCHEMA['WebAPI']))
+        shapes_graph.add((file_uri, RDF.type, SCHEMA['APIReference']))
         shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-        shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+        shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
         file_descriptions = []
         if parser.specification['info']['title']:
           file_descriptions.append(parser.specification['info']['title'])
@@ -232,7 +232,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
       shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('ShEx model')))
-      shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+      shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
       # Convert ShEx to RDF shex and parse it
       # shex_rdf = ''
       # if rdf_file_path.endswith('.shex'):
@@ -253,7 +253,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
       shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-      shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+      shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
       try: 
         with open(rdf_file_path.absolute()) as file:
           sparql_query = file.read()
@@ -297,7 +297,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           except:
             shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
       except:
-        print('❌️ Issue opening file: ' + rdf_file_path)
+        print('❌️ Issue opening file: ' + str(rdf_file_path))
 
     # Parse RDF files
     else:
@@ -326,7 +326,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SH.Shape))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = shape
           for label in g.objects(shape, RDFS.label):
               # Try to get the label of the shape
@@ -341,7 +341,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, NP_TEMPLATE.AssertionTemplate))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           # Get template label
           for template_label in g.objects(shape_file, RDFS.label):
             shapes_graph.add((file_uri, DC.description, Literal(str(template_label))))
@@ -374,7 +374,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             shapes_graph.add((file_uri, RDF.type, R2RML.TriplesMap))
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = shape
           # Try to get the label or URI of the subjectMap
           for label in g.objects(shape, R2RML.template):
@@ -392,7 +392,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = shape
           for label in g.objects(shape, RDFS.label):
               # Try to get the label of the class
@@ -434,7 +434,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SKOS.ConceptScheme))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = shape
           for label in g.objects(shape, SKOS.prefLabel):
               # Try to get the label of the class
@@ -466,7 +466,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = shape
           for label in g.objects(shape, RDFS.label):
               # Try to get the label of the shape
@@ -478,7 +478,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = shape
           for label in g.objects(shape, RDFS.label):
               # Try to get the label of the shape
@@ -487,7 +487,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     # Add repository RDF
     if shape_found:
-      shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['codeRepository']))
+      shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['DataCatalog']))
       # TODO: change, schema:codeRepository is a property, not a class, but not much available..
       shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url.rsplit('/', 1)[1])))
       if (repo_description):
