@@ -1,5 +1,5 @@
 {
-  "description": "Index for publicly available semantic resources (ontologies, vocabularies, shapes, queries) stored in Git repositories (GitHub, GitLab, Gitee)",
+  "description": "Index for publicly available semantic resources (OWL & OBO ontologies, SKOS RDF vocabularies, SHACL & ShEx shapes, SPARQL queries, RML & R2RML mappings) stored in Git repositories (GitHub, GitLab, Gitee)",
   "display": "standalone",
   "lang": "en",
   "name": "Shapes of you",
