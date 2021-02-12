@@ -113,7 +113,7 @@ export default function SparqlEndpointsDisplay() {
   //         || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
   //         || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
   //         || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
-  //         || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/WebAPI')
+  //         || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/APIReference')
   //         ) {
   //           // Filter using the search text, on all properties and metadata of the file:
   //           let file_description = '';

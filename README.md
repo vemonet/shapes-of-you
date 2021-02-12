@@ -30,7 +30,7 @@ You can check RDF files which failed to be parsed by [`rdflib`](https://rdflib.r
 
 ## Overview 🧭
 
-This web service is composed of those 4 main parts:
+This web service is composed of those 4 main parts, described more in details below:
 
 * A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories. The retrieved data is defined using [RDF](https://www.w3.org/RDF/).
   * A [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
@@ -41,9 +41,11 @@ This web service is composed of those 4 main parts:
 
 * A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/vemonet/shapes-of-you
 
+---
+
 ## Data model 📋
 
-Checkout the OWL ontology in [`assets/shapes-of-you-ontology.ttl`](/assets/shapes-of-you-ontology.ttl)
+Checkout the OWL ontology in [`assets/shapes-of-you-ontology.ttl` 🦉](/assets/shapes-of-you-ontology.ttl)
 
 Here is an overview of the ontology:
 
@@ -90,7 +92,11 @@ Here is an overview of the ontology:
 * Active SPARQL endpoints:`schema:EntryPoint`
   * `void:sparqlEndpoint`? (not used currently, we already use the endpoint URL as subject URI)
 
-## Run web app in development 🏗
+---
+
+## Run the web app 🛩️
+
+### In development 🏗
 
 Requirements:  [npm](https://www.npmjs.com/get-npm) and [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) installed.
 
@@ -119,11 +125,11 @@ Upgrade the packages versions in `yarn.lock`:
 yarn upgrade
 ```
 
-## Run web app in production 🛩️
+## In production 🌍
 
-This website is automatically deployed by a [GitHub Actions worklow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages at https://index.semanticscience.org
+This website is automatically deployed by a [GitHub Actions worklow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages which is redirect to https://index.semanticscience.org
 
-You can also build locally in `/web-build` folder and serve on http://localhost:5000
+You can also build locally in the `/web-build` folder and serve on http://localhost:5000
 
 ```bash
 yarn build
@@ -138,21 +144,19 @@ docker-compose up
 
 > Checkout the [docker-compose.yml](/docker-compose.yml) file to see how we run the Docker image.
 
-## Index shapes files ⛏️
+---
+
+## Index the files ⛏️
+
+Requirements: Python 3.6+
 
 This script is run every day by the `.github/workflows/index-shapes.yml` workflow 
 
-Run the Python script to retrieve the shapes from various popular Git registries API:
+The Python script retrieves shapes files from various popular Git services API (GitHub GraphQL API, GitLab API , Gitee API), and generates RDF data. The RDF data is then automatically published to the publicly available triplestore by the GitHub workflow.
 
-* GitHub GraphQL API 
-* GitLab API 
-* Gitee API
+You can find the python scripts and requirements in the [`etl`](https://github.com/vemonet/shapes-of-you/tree/main/etl) folder.
 
-The script generates RDF data, which is automatically published to the publicly available triplestore by the GitHub workflow.
-
-You can find the scripts and requirements in the [`etl`](https://github.com/vemonet/shapes-of-you/tree/main/etl) folder.
-
-Use this command to locally define the `GITHUB_TOKEN` and `GITLAB_TOKEN` environment variable required to run the script:
+Use this command to locally define the `GITHUB_TOKEN` and `GITLAB_TOKEN` **environment variables required** to run the script (you might need to adapt on Windows):
 
 ```bash
 export API_GITHUB_TOKEN=MYGITHUBTOKEN000
@@ -168,7 +172,7 @@ Install requirements:
 pip3 install -r etl/requirements.txt
 ```
 
-Retrieve shapes files for topics (provided separated by comma without spaces) from the [GitHub GraphQL API](https://developer.github.com/v4/explorer):
+Retrieve shapes files from search (provided separated by comma without spaces) from the [GitHub GraphQL API](https://developer.github.com/v4/explorer):
 
 ```bash
 python3 etl/index_shapes.py github openapi,topic:shacl-shapes
@@ -190,7 +194,11 @@ python3 etl/index_shapes.py gitee ontology,sparql
 
 Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).
 
-## Aknowledgements
+## Acknowledgements 🤝
+
+RDF data hosted in [Ontotext GraphDB triplestore](https://graphdb.ontotext.com/)
+
+API powered by [grlc.io](http://grlc.io)
 
 Ontology built with [gra.fo](https://gra.fo)
 

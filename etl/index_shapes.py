@@ -511,8 +511,11 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
     for rdf_file_path in get_files(['*.rq', '*.sparql']):
         shapes_graph = process_shapes_file('sparql', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
-    for rdf_file_path in get_files(['*.trig', '*.n3']):
+    for rdf_file_path in get_files(['*.n3']):
         shapes_graph = process_shapes_file('n3', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.trig']):
+        shapes_graph = process_shapes_file('trig', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
     for rdf_file_path in get_files(['*.json', '*.jsonld', '*.json-ld']):
         shapes_graph = process_shapes_file('json-ld', shapes_graph, rdf_file_path, repo_url, branch, repo_description)

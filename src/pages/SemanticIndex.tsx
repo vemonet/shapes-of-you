@@ -121,7 +121,7 @@ export default function SemanticIndex() {
     'http://www.w3.org/ns/shacl#SPARQLFunction': 'SPARQL',
     'http://www.w3.org/2004/02/skos/core#ConceptScheme': 'SKOS',
     'http://semanticscience.org/resource/SIO_000623': 'OBO',
-    'https://schema.org/WebAPI': 'OpenAPI',
+    'https://schema.org/APIReference': 'OpenAPI',
     'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
     'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
     'https://w3id.org/np/o/ntemplate/AssertionTemplate': 'Nanopub'
@@ -171,6 +171,7 @@ export default function SemanticIndex() {
           // @ts-ignore
           files_overview_chart.datasets[0].data.push(result.files_count.value);
         })
+        console.log(repos_overview_chart.labels)
         updateState({
           repos_overview_chart: repos_overview_chart,
           files_overview_chart: files_overview_chart
@@ -487,7 +488,7 @@ export default function SemanticIndex() {
   //         // || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
   //         // || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
   //         // || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
-  //         // || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/WebAPI')
+  //         // || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/APIReference')
   //         // ) {
   //           // Filter using the search text, on all properties and metadata of the file:
   //           // let file_description = '';
