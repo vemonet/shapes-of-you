@@ -41,30 +41,6 @@ In repository: https://gitee.com/opensci/gStore
 > Invalid line: '<CoreVersion> <value> "v0.8.4" .'
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig parsed as n3
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 15 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
-
----
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig parsed as n3
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 25 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig parsed as n3
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 38 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
 File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
 
 In repository: https://gitee.com/kehaofei/ontop
@@ -313,30 +289,6 @@ In repository: https://gitee.com/kehaofei/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig parsed as n3
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 15 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
-
----
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig parsed as n3
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 25 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig parsed as n3
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 38 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
 
 ---
 File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
@@ -593,22 +545,6 @@ File: https://gitee.com/mirrors_korczis/libsparql/raw/master/etc%2Fdoap.rdf pars
 
 In repository: https://gitee.com/mirrors_korczis/libsparql
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/etc/doap.rdf:1:0: no element found
-
----
-File: https://gitee.com/mirrors_w3c/sparql-exists/raw/gh-pages/tests%2Fexists-graph.trig parsed as n3
-
-In repository: https://gitee.com/mirrors_w3c/sparql-exists
-> at line 12 of <>:
-Bad syntax (objectList expected) at ^ in:
-"...b'.\n\n:s1 :q 1 .\n:s2 :q 2 .\n\n:graph {\n  :r :p 2 .\n  :r :p 3 .\n}'^b'\n'"
-
----
-File: https://gitee.com/mirrors_w3c/sparql-exists/raw/gh-pages/tests%2Finteresting-examples%2Fdata.trig parsed as n3
-
-In repository: https://gitee.com/mirrors_w3c/sparql-exists
-> at line 5 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"b'@prefix : <http://example/> .\n\n:s :p :v .\n\n'^b'GRAPH :g {\n  :s :p :v .\n  :t :r :w .\n}\n'"
 
 ---
 File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-03.rdf parsed as xml
