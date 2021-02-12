@@ -9,7 +9,7 @@ import requests
 
 import yaml
 from prance import ResolvingParser
-from rdflib import Graph, plugin, Literal, RDF, URIRef, Namespace
+from rdflib import Graph, ConjunctiveGraph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
 from rdflib.plugins.sparql.parser import Query, UpdateUnit
@@ -302,6 +302,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
     # Parse RDF files
     else:
       try:
+          if shape_format == 'trig':
+            # Different graph required for trig to work
+            g = ConjunctiveGraph()
           g.parse(str(rdf_file_path.absolute()), format=shape_format)
       except Exception as e:
           if shape_format == 'xml' and str(rdf_file_path).endswith('.owl'):
