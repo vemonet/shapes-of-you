@@ -455,18 +455,6 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > HTTP Error 403: Forbidden
 
 ---
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-11%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-11%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-10-11%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
@@ -1613,172 +1601,52 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > HTTP Error 403: Forbidden
 
 ---
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-06-13%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-06-13%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-06-13%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-06-13%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-06-13%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-07-29%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-25%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -1967,52 +1835,172 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > HTTP Error 403: Forbidden
 
 ---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-01-13%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
+> HTTP Error 403: Forbidden
 
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-06-25%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
+> HTTP Error 403: Forbidden
 
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -2438,169 +2426,57 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-03-01%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-24%2Fsubsets%2FDO_cancer_slim.obo
@@ -3744,12 +3620,6 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-01-22%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > HTTP Error 403: Forbidden
@@ -5291,160 +5161,60 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > HTTP Error 403: Forbidden
 
 ---
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v3%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2FNCIthesaurus.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-03-11%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2017-05-05%2Fsubsets%2FGOLD.obo
@@ -6932,49 +6702,139 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
+> HTTP Error 403: Forbidden
 
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-26%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
+> HTTP Error 403: Forbidden
 
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-09-16%2Fsubsets%2FTopNodes_DOcancerslim.obo
@@ -7637,238 +7497,76 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 > HTTP Error 403: Forbidden
 
 ---
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FDO_GXD_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FDO_IEDB_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FDO_cancer_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FDO_FlyBase_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-12-12%2Fsubsets%2FDO_MGI_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fdoid-merged.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
+
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2Fzoonotic_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2Ftick-borne_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FDO_AGR_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FGOLD.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FDO_GXD_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FDO_rare_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FTopNodes_DOcancerslim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
+> Tag-value pair parsing failed for:
+<!DOCTYPE html>
 
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FDO_IEDB_slim.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
-
----
-File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
-
-In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-11-20v2%2Fsubsets%2FDO_cancer_slim.obo
@@ -8114,49 +7812,175 @@ In repository: https://gitee.com/smallei/HumanDiseaseOntology
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
+> HTTP Error 403: Forbidden
 
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FDO_AGR_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FNCIthesaurus.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
+> HTTP Error 403: Forbidden
 
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FDO_FlyBase_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2019-04-18_v2%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fdoid-non-classified.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fdoid.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fdoid-simple.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
+> HTTP Error 403: Forbidden
 
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fzoonotic_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Ftick-borne_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FGOLD.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fsexually_transmitted_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fgram-negative_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FDO_rare_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FTopNodes_DOcancerslim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FNCIthesaurus.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2Fgram-positive_bacterial_infectious_disease.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FDO_cancer_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
+
+---
+File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2016-02-12%2Fsubsets%2FDO_MGI_slim.obo
+
+In repository: https://gitee.com/smallei/HumanDiseaseOntology
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-11-02%2FHumanDO.obo
 
 In repository: https://gitee.com/smallei/HumanDiseaseOntology
-> Tag-value pair parsing failed for:
-<!DOCTYPE html>
-
+> HTTP Error 403: Forbidden
 
 ---
 File: https://gitee.com/smallei/HumanDiseaseOntology/raw/master/src%2Fontology%2Freleases%2F2018-11-02%2Fdoid-merged.obo
@@ -12269,30 +12093,6 @@ In repository: https://gitee.com/opensci/gStore
 > Invalid line: '<CoreVersion> <value> "v0.8.4" .'
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig parsed as n3
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 15 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
-
----
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig parsed as n3
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 25 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig parsed as n3
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 38 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
 File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
 
 In repository: https://gitee.com/kehaofei/ontop
@@ -12541,30 +12341,6 @@ In repository: https://gitee.com/kehaofei/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig parsed as n3
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 15 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
-
----
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig parsed as n3
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 25 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig parsed as n3
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 38 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
 
 ---
 File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
@@ -12821,22 +12597,6 @@ File: https://gitee.com/mirrors_korczis/libsparql/raw/master/etc%2Fdoap.rdf pars
 
 In repository: https://gitee.com/mirrors_korczis/libsparql
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/etc/doap.rdf:1:0: no element found
-
----
-File: https://gitee.com/mirrors_w3c/sparql-exists/raw/gh-pages/tests%2Fexists-graph.trig parsed as n3
-
-In repository: https://gitee.com/mirrors_w3c/sparql-exists
-> at line 12 of <>:
-Bad syntax (objectList expected) at ^ in:
-"...b'.\n\n:s1 :q 1 .\n:s2 :q 2 .\n\n:graph {\n  :r :p 2 .\n  :r :p 3 .\n}'^b'\n'"
-
----
-File: https://gitee.com/mirrors_w3c/sparql-exists/raw/gh-pages/tests%2Finteresting-examples%2Fdata.trig parsed as n3
-
-In repository: https://gitee.com/mirrors_w3c/sparql-exists
-> at line 5 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"b'@prefix : <http://example/> .\n\n:s :p :v .\n\n'^b'GRAPH :g {\n  :s :p :v .\n  :t :r :w .\n}\n'"
 
 ---
 File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-03.rdf parsed as xml
