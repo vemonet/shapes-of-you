@@ -254,47 +254,50 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
       shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
-      with open(rdf_file_path.absolute()) as file:
-        sparql_query = file.read()
-        # Parse SPARQL query
-        yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
-        query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
-        shapes_graph.add((file_uri, SCHEMA['query'], Literal(query_string)))
-        
-        grlc_metadata = {}
-        try:  # Invalid YAMLs will produce empty metadata
-          grlc_metadata = yaml.load(yaml_string, Loader=yaml.FullLoader)
-        except:
-          pass
-        # Get metadata like grlc metadata
-        if grlc_metadata:
-          file_descriptions = []
-          if 'endpoint' in grlc_metadata:
-            sparql_endpoint = grlc_metadata['endpoint']
-            shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(sparql_endpoint)))
-            test_sparql_endpoint(sparql_endpoint)
+      try: 
+        with open(rdf_file_path.absolute()) as file:
+          sparql_query = file.read()
+          # Parse SPARQL query
+          yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
+          query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
+          shapes_graph.add((file_uri, SCHEMA['query'], Literal(query_string)))
+          
+          grlc_metadata = {}
+          try:  # Invalid YAMLs will produce empty metadata
+            grlc_metadata = yaml.load(yaml_string, Loader=yaml.FullLoader)
+          except:
+            pass
+          # Get metadata like grlc metadata
+          if grlc_metadata:
+            file_descriptions = []
+            if 'endpoint' in grlc_metadata:
+              sparql_endpoint = grlc_metadata['endpoint']
+              shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(sparql_endpoint)))
+              test_sparql_endpoint(sparql_endpoint)
 
 
-          if 'summary' in grlc_metadata and grlc_metadata['summary']:
-            file_descriptions.append(grlc_metadata['summary'])
-          if 'description' in grlc_metadata and grlc_metadata['description']:
-            file_descriptions.append(grlc_metadata['description'])
-            
-          if len(file_descriptions) > 0:
-            shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
-          # If default params described for grlc SPARQL query we add then as shapes
-          if 'defaults' in grlc_metadata:
-            for args in grlc_metadata['defaults']:
-              for arg, default_label in args.items():
-                shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(arg)))
+            if 'summary' in grlc_metadata and grlc_metadata['summary']:
+              file_descriptions.append(grlc_metadata['summary'])
+            if 'description' in grlc_metadata and grlc_metadata['description']:
+              file_descriptions.append(grlc_metadata['description'])
+              
+            if len(file_descriptions) > 0:
+              shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
+            # If default params described for grlc SPARQL query we add then as shapes
+            if 'defaults' in grlc_metadata:
+              for args in grlc_metadata['defaults']:
+                for arg, default_label in args.items():
+                  shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(arg)))
 
-        try:
-          # Parse query to get its operation (select, construct..)
-          parsed_query = translateQuery(Query.parseString(query_string, parseAll=True))
-          query_operation = re.sub(r"(\w)([A-Z])", r"\1 \2", parsed_query.algebra.name)
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
-        except:
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
+          try:
+            # Parse query to get its operation (select, construct..)
+            parsed_query = translateQuery(Query.parseString(query_string, parseAll=True))
+            query_operation = re.sub(r"(\w)([A-Z])", r"\1 \2", parsed_query.algebra.name)
+            shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
+          except:
+            shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
+      except:
+        print('❌️ Issue opening file: ' + rdf_file_path)
 
     # Parse RDF files
     else:
