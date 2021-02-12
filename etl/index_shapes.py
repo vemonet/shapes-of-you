@@ -285,7 +285,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       try:
           g.parse(str(rdf_file_path.absolute()), format=shape_format)
       except Exception as e:
-          if shape_format == 'xml' and rdf_file_path.endswith('.owl'):
+          if shape_format == 'xml' and str(rdf_file_path).endswith('.owl'):
             try: 
               g.parse(str(rdf_file_path.absolute()), format='ttl')
             except:

@@ -32,7 +32,7 @@ const theme = createMuiTheme({
 });
 
 const website_name = "Shapes of you"
-const website_description = "Index for publicly available semantic resources (OWL & OBO ontologies, SKOS RDF vocabularies, SHACL & ShEx shapes, SPARQL queries) stored in Git repositories (GitHub, GitLab, Gitee)";
+const website_description = "Index for publicly available semantic resources (OWL & OBO ontologies, SKOS RDF vocabularies, SHACL & ShEx shapes, SPARQL queries, RML & R2RML mappings) stored in Git repositories (GitHub, GitLab, Gitee)";
 
 const App = () => (
   <MuiThemeProvider theme={theme}>
