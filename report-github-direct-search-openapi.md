@@ -21,11 +21,6 @@ Bad syntax (objectList expected) at ^ in:
 "...b'  \t\t   \t"2004-11-23"^^xsd:date ; \r\n\tbio-prov:wasInferredFrom'^b'\t\t\t assertion2 ; \r\n\tbio-prov:publishedIn        \t\t   \t"Prost'..."
 
 ---
-SPARQL endpoint failed: https://bio2rdf.org/sparql
-
-<urlopen error [Errno -5] No address associated with hostname>
-
----
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
