@@ -43,11 +43,11 @@ This web service is composed of those 4 main parts:
 
 ## Data model 📋
 
-Checkout the OWL ontology in [`/resources/shapes-of-you-ontology.ttl`](/resources/shapes-of-you-ontology.ttl)
+Checkout the OWL ontology in [`assets/shapes-of-you-ontology.ttl`](/assets/shapes-of-you-ontology.ttl)
 
 Here is an overview of the ontology:
 
-![Ontology overview](/resources/shapes-of-you-ontology.png)
+![Ontology overview](/assets/shapes-of-you-ontology.png)
 
 ### Prefixes
 

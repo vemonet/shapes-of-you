@@ -87,7 +87,7 @@ schema:query rdf:type owl:DatatypeProperty ;
 <http://semanticscience.org/resource/SIO_000623> rdf:type owl:Class ;
                                                  rdfs:subClassOf schema:SoftwareSourceCode ;
                                                  rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-                                                 rdfs:label "OBO Ontology" .
+                                                 rdfs:label "OBO ontology" .
 
 
 ###  http://semweb.mmlab.be/ns/rml#LogicalSource
@@ -101,21 +101,21 @@ rml:LogicalSource rdf:type owl:Class ;
 owl:Ontology rdf:type owl:Class ;
              rdfs:subClassOf schema:SoftwareSourceCode ;
              rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-             rdfs:label "OWL Ontology" .
+             rdfs:label "OWL ontology" .
 
 
 ###  http://www.w3.org/2004/02/skos/core#ConceptScheme
 skos:ConceptScheme rdf:type owl:Class ;
                    rdfs:subClassOf schema:SoftwareSourceCode ;
                    rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-                   rdfs:label "SKOS Concept Scheme" .
+                   rdfs:label "SKOS scheme" .
 
 
 ###  http://www.w3.org/ns/r2rml#AssertionTemplate
 r2rml:AssertionTemplate rdf:type owl:Class ;
                         rdfs:subClassOf schema:SoftwareSourceCode ;
                         rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-                        rdfs:label "Nanopublications templates" .
+                        rdfs:label "Nanopubs templates" .
 
 
 ###  http://www.w3.org/ns/r2rml#TriplesMap
@@ -130,14 +130,14 @@ sh:SPARQLFunction rdf:type owl:Class ;
                   rdfs:subClassOf schema:SoftwareSourceCode ;
                   rdfs:comment "SH.SPARQLFunction" ;
                   rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-                  rdfs:label "SPARQL Function" .
+                  rdfs:label "SPARQL query" .
 
 
 ###  http://www.w3.org/ns/shacl#Shape
 sh:Shape rdf:type owl:Class ;
          rdfs:subClassOf schema:SoftwareSourceCode ;
          rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-         rdfs:label "SHACL Shape" .
+         rdfs:label "SHACL shape" .
 
 
 ###  http://www.w3.org/ns/shex#Schema
@@ -151,7 +151,7 @@ shex:Schema rdf:type owl:Class ;
 schema:APIReference rdf:type owl:Class ;
                     rdfs:subClassOf schema:SoftwareSourceCode ;
                     rdfs:isDefinedBy <https://w3id.org/um/shapes-of-you#> ;
-                    rdfs:label "API Reference" .
+                    rdfs:label "OpenAPI reference" .
 
 
 ###  https://schema.org/CodeRepository
