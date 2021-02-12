@@ -53,54 +53,6 @@ Bad syntax (Prefix "void:" not bound) at ^ in:
 "b'# filename: ex442.ttl (excerpt from void.ttl)\n\n'^b'void:Linkset a rdfs:Class, owl:Class;\n    rdfs:label "linkse'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 15 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 25 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 38 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update-example9.trig parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 15 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'itle "SPARQL 1.1 Tutorial" .\n}\n\n<http://example/bookStore2> '^b'{\n  <http://example/book4> dc:title "SPARQL 1.0 Tutorial" .\n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestdata-update%2Fdataset-update.trig parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 25 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b' foaf:knows ex:alice .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestdata-query%2Fdataset-query.trig parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 38 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'oaf:knows ex:william .\n\n    ex:alice foaf:knows ex:bob .\n}\n\n'^b'ex:graph2 {\n    ex:alice foaf:name "Alice" ;\n\tfoaf:mbox "ali'..."
-
----
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
 
 In repository: https://gitlab.com/AlbertoPrior/ontop
