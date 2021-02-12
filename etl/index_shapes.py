@@ -74,27 +74,11 @@ def main(argv):
   elif git_registry == 'gitee':
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, topics)
 
-  # TODO: Addition endpoints to check
-  extra_endpoints = [
-    'https://bio2rdf.org/sparql',
-    'https://semantic.eea.europa.eu/sparql',
-    'http://rdf.pathwaycommons.org/sparql/',
-    'http://rdf.disgenet.org/sparql/',
-    'https://stars-app.renci.org/uberongraph/sparql',
-    'https://data.gesis.org/claimskg/sparql',   # ClaimsKG
-    'http://opencitations.net/index/sparql',  # Law OpenCitation corpus. Virtuoso
-    'http://opencitations.net/sparql',    # Virtuoso
-    'https://joinup.ec.europa.eu/sparql/',   # EU Joinup initiative. Virtuoso
-    'http://data.europa.eu/euodp/sparqlep', # EU Open Data Portal. Seems Virtuoso
-    'http://publications.europa.eu/webapi/rdf/sparql',  # EU Cellar Law dataset. Seems Virtuoso
-    'http://digital-agenda-data.eu/data/sparql', # EU  Digital Agenda Scoreboard dataset. Seems Virtuoso
-    'http://data.persee.fr/sparql',   # Dataset in French about publications and bibliography. Virtuoso
-    'http://lod.openlinksw.com/sparql',
-    'http://data.doremus.org/sparql',   # About Music and Arts. Virtuoso search works
-    'http://data.allie.dbcls.jp/sparql/',   # search service for abbreviations and long forms utilized in Lifesciences. Virtuoso
-    'http://sparql.southgreen.fr',
-    'https://sparql.nextprot.org',
-  ]
+  # Extras SPARQL endpoints to check
+  extra_endpoints = []
+  with open(str(root) + '/../' + str(filename), 'r') as f:
+    for line in f:
+      extra_endpoints.append(line.rstrip('\n').strip())
   for endpoint in extra_endpoints:
     test_sparql_endpoint(endpoint)
 
