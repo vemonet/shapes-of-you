@@ -39,3 +39,21 @@ SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 byte indices must be integers or slices, not str
 
 ---
+SPARQL endpoint failed: http://pt.dbpedia.org/sparql
+
+<urlopen error [Errno 110] Connection timed out>
+
+---
+SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
+
+byte indices must be integers or slices, not str
+
+---
+SPARQL endpoint failed: http://www.linklion.org:8890/sparql
+
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Virtuoso 42000 Error The estimated execution time 420 (sec) exceeds the limit of 400 (sec).\n\nSPARQL query:\nSELECT * WHERE { ?s ?p ?o } LIMIT 10'
+
+---
