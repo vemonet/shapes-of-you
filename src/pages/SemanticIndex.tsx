@@ -15,7 +15,7 @@ import GavelIcon from '@material-ui/icons/Gavel';
 import OpenAPIIcon from '@material-ui/icons/Adjust';
 import RmlIcon from '@material-ui/icons/AllInclusive';
 import R2rmlIcon from '@material-ui/icons/Storage';
-import CloseIcon from '@material-ui/icons/Close';
+import NanopubIcon from '@material-ui/icons/Chat';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
@@ -99,10 +99,11 @@ export default function SemanticIndex() {
     checkbox_openapi: true,
     checkbox_rml: true,
     checkbox_r2rml: true,
+    checkbox_nanopub: true,
     show_pwa_alert: true,
     page: 1,
     shapes_per_page: 20,
-    show_info_card: true,
+    show_info_card: false,
   });
   const stateRef = React.useRef(state);
 
@@ -123,6 +124,7 @@ export default function SemanticIndex() {
     'https://schema.org/WebAPI': 'OpenAPI',
     'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
     'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
+    'https://w3id.org/np/o/ntemplate/AssertionTemplate': 'Nanopub'
   }
 
   // componentDidMount: Query SPARQL endpoint to get the shapes files infos
@@ -529,6 +531,7 @@ export default function SemanticIndex() {
     if (shape_types_mappings[file_type] == 'OpenAPI' || file_type == 'OpenAPI') icon = '📬'
     if (shape_types_mappings[file_type] == 'SPARQL' || file_type == 'SPARQL') icon = '✨️'
     if (shape_types_mappings[file_type] == 'SKOS' || file_type == 'SKOS') icon = '📕'
+    if (shape_types_mappings[file_type] == 'Nanopub' || file_type == 'Nanopub') icon = '🗞'
     return icon;
   }
 
@@ -572,6 +575,7 @@ export default function SemanticIndex() {
               aria-expanded={state.show_info_card}
               aria-label="show more"
             >
+              About&nbsp;
               {!state.show_info_card &&
                 <ExpandMoreIcon />
               }
@@ -677,6 +681,16 @@ export default function SemanticIndex() {
                 </ListItemAvatar>
                 <ListItemText>
                   <b><a href="https://www.w3.org/TR/r2rml/" className={classes.link} target="_blank" rel="noopener noreferrer">R2RML</a> mappings</b>: add the topic <code>r2rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <NanopubIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="http://nanopub.org/wordpress/" className={classes.link} target="_blank" rel="noopener noreferrer">Nanopublication</a> templates</b>: add the topic <code>nanopub</code>, we index RDF files, with all <code>nt:AssertionTemplates</code> and inputs they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -865,6 +879,16 @@ export default function SemanticIndex() {
                 color="primary"
               /> }
             label={"R2RML " + getFileLabel('R2RML')}
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={state.checkbox_nanopub}
+                onChange={handleCheckboxes}
+                name="checkbox_nanopub"
+                color="primary"
+              /> }
+            label={"Nanopub " + getFileLabel('Nanopub')}
           />
           <FormControlLabel
             control={

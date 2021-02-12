@@ -74,6 +74,30 @@ def main(argv):
   elif git_registry == 'gitee':
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, topics)
 
+  # TODO: Addition endpoints to check
+  extra_endpoints = [
+    'https://bio2rdf.org/sparql',
+    'https://semantic.eea.europa.eu/sparql',
+    'http://rdf.pathwaycommons.org/sparql/',
+    'http://rdf.disgenet.org/sparql/',
+    'https://stars-app.renci.org/uberongraph/sparql',
+    'https://data.gesis.org/claimskg/sparql',   # ClaimsKG
+    'http://opencitations.net/index/sparql',  # Law OpenCitation corpus. Virtuoso
+    'http://opencitations.net/sparql',    # Virtuoso
+    'https://joinup.ec.europa.eu/sparql/',   # EU Joinup initiative. Virtuoso
+    'http://data.europa.eu/euodp/sparqlep', # EU Open Data Portal. Seems Virtuoso
+    'http://publications.europa.eu/webapi/rdf/sparql',  # EU Cellar Law dataset. Seems Virtuoso
+    'http://digital-agenda-data.eu/data/sparql', # EU  Digital Agenda Scoreboard dataset. Seems Virtuoso
+    'http://data.persee.fr/sparql',   # Dataset in French about publications and bibliography. Virtuoso
+    'http://lod.openlinksw.com/sparql',
+    'http://data.doremus.org/sparql',   # About Music and Arts. Virtuoso search works
+    'http://data.allie.dbcls.jp/sparql/',   # search service for abbreviations and long forms utilized in Lifesciences. Virtuoso
+    'http://sparql.southgreen.fr',
+    'https://sparql.nextprot.org',
+  ]
+  for endpoint in extra_endpoints:
+    test_sparql_endpoint(endpoint)
+
   # Add all valids SPARQL graphs we found
   for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
     shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
@@ -127,6 +151,33 @@ def get_files(extensions):
         all_files.extend(pathlib.Path('cloned_repo').rglob(ext))
     return all_files
 
+def test_sparql_endpoint(sparql_endpoint):
+    """Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
+    Then, like repos, add them as schema:EntryPoint
+    """
+    if sparql_endpoint not in VALID_ENDPOINTS.keys() and sparql_endpoint not in FAILED_ENDPOINTS.keys():
+      sparql_test_query = 'SELECT * WHERE { ?s ?p ?o } LIMIT 10'
+      sparql = SPARQLWrapper(sparql_endpoint)
+      sparql.setReturnFormat(JSON)
+      sparql.setQuery(sparql_test_query)
+      try:
+        results = sparql.query().convert()
+        # Check SPARQL query sent back at least 5 triples
+        results_array = results["results"]["bindings"]
+        if len(results_array) > 4:
+          VALID_ENDPOINTS[sparql_endpoint] = {
+            'label': sparql_endpoint
+          }
+          return True
+        else:
+          FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
+          return False
+      except Exception as e:
+        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n"
+          + str(e) + "\n\n---\n")
+        return False
+    else:
+      return True
 
 def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, branch, repo_description):
     """Process a Shapes file, check its content and add entry to the shapes graph
@@ -237,27 +288,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           if 'endpoint' in grlc_metadata:
             sparql_endpoint = grlc_metadata['endpoint']
             shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(sparql_endpoint)))
-            # TODO: check if in hashes of already tested endpoints valid and failing3
-            # Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
-            # Then, like repos, add them as schema:EntryPoint
-            if sparql_endpoint not in VALID_ENDPOINTS.keys() and sparql_endpoint not in FAILED_ENDPOINTS.keys():
-              sparql_test_query = 'SELECT * WHERE { ?s ?p ?o } LIMIT 10'
-              sparql = SPARQLWrapper(sparql_endpoint)
-              sparql.setReturnFormat(JSON)
-              sparql.setQuery(sparql_test_query)
-              try:
-                results = sparql.query().convert()
-                # Check SPARQL query sent back at least 5 triples
-                results_array = results["results"]["bindings"]
-                if len(results_array) > 4:
-                  VALID_ENDPOINTS[sparql_endpoint] = {
-                    'label': sparql_endpoint
-                  }
-                else:
-                  FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
-              except Exception as e:
-                add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n"
-                  + str(e) + "\n\n---\n")
+            test_sparql_endpoint(sparql_endpoint)
 
 
           if 'summary' in grlc_metadata and grlc_metadata['summary']:

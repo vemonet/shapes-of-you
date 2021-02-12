@@ -18,6 +18,9 @@ Add one of those topics to your [GitHub](https://github.com) repository, or ment
 * **SPARQL queries**: add the topic `grlc`, we index `.rq` and `.sparql` files, and parse [grlc.io](http://grlc.io) APIs metadata
 * **OWL ontologies**: add the topic `owl`, we index all RDF files with all `owl:Class`  they contain
 * **SKOS vocabularies**: add the topic `skos`, we index all RDF files with all `skos:Concept` they contain
+* **RML mappings**: add the topic `rml`, we index RDF files, with all `r2rml:SubjectMap` and `rml:LogicalSource` they contain
+* **R2RML mappings**: add the topic `r2rml`, we index RDF files, with all `r2rml:SubjectMap` they contain
+* **Nanopublication templates**: add the topic `nanopub`, we index RDF files, with all `nt:AssertionTemplates` and inputs they contain
 * **OBO ontologies**: add the topic `obo`, we index all `.obo` files with all terms they contain
 * **OpenAPI specifications**: add the topic `openapi`, we index `.yml`, `.yaml` and `.json` files, and parse the spec to retrieve API metadata
 
@@ -55,6 +58,7 @@ This web service is composed of those 4 main parts:
 - sdm: https://w3id.org/vocab/sdm#
 - r2rml: http://www.w3.org/ns/r2rml#
 - rml: http://semweb.mmlab.be/ns/rml#
+- nt: https://w3id.org/np/o/ntemplate/
 
 ### Classes
 
@@ -73,6 +77,7 @@ This web service is composed of those 4 main parts:
     * `schema:WebAPI` (OpenAPI)
     * `rml:LogicalSource` (RML and YARRRML mappings)
     * `r2rml:TriplesMap` (R2RML mappings)
+    * `nt:AssertionTemplate` (Nanopublication templates)
 * `schema:CodeRepository`
   * Properties:
     * `rdfs:comment`
