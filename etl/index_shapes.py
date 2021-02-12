@@ -321,7 +321,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       for shape in g.subjects(RDF.type, SH.NodeShape):
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
-          shapes_graph.add((file_uri, RDF.type, SH.NodeShape))
+          shapes_graph.add((file_uri, RDF.type, SH.Shape))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
           shape_label = shape

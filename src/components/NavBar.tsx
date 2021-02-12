@@ -85,7 +85,7 @@ export default function NavBar() {
         </Link>
         <Tooltip title='Access the grlc OpenAPI (which query the SPARQL endpoint)'>
           <Button className={classes.menuButton} target="_blank" rel="noopener noreferrer"
-          href="http://grlc.io/api-git/vemonet/shapes-of-you">
+          href="http://grlc.io/api-git/vemonet/shapes-of-you/subdir/api">
             <GrlcApiIcon style={{ marginRight: theme.spacing(1)}} />
             API docs
           </Button>
