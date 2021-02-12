@@ -35,6 +35,7 @@ SCHEMA = Namespace("https://schema.org/")
 SIO = Namespace("http://semanticscience.org/resource/")
 R2RML = Namespace("http://www.w3.org/ns/r2rml#")
 RML = Namespace("http://semweb.mmlab.be/ns/rml#")
+NP_TEMPLATE = Namespace("https://w3id.org/np/o/ntemplate/")
 
 def main(argv):
   if len(argv) > 1:
@@ -303,10 +304,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
       # Search for SHACL shapes
       for shape in g.subjects(RDF.type, SH.NodeShape):
-          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
-          shapes_graph.add((file_uri, RDF.type, SH.Shape))
+          shapes_graph.add((file_uri, RDF.type, SH.NodeShape))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
           shape_label = shape
@@ -316,10 +316,37 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Fixing
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
+      # Search for nanopublication templates
+      # https://w3id.org/np/o/ntemplate/
+      for shape_file in g.subjects(RDF.type, NP_TEMPLATE.AssertionTemplate):
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+          shapes_graph.add((file_uri, RDF.type, NP_TEMPLATE.AssertionTemplate))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, DC.source, URIRef(repo_url)))
+          # Get template label
+          for template_label in g.objects(shape_file, RDFS.label):
+            shapes_graph.add((file_uri, DC.description, Literal(str(template_label))))
+            break
+          # TODO: get the shapes inside
+          nanopub_inputs = [
+            NP_TEMPLATE.GuidedChoicePlaceholder, 
+            NP_TEMPLATE.LiteralPlaceholder, 
+            NP_TEMPLATE.RestrictedChoicePlaceholder, 
+            NP_TEMPLATE.UriPlaceholder
+          ]
+          for np_input in nanopub_inputs:
+            for shape in g.subjects(RDF.type, np_input):
+              shape_label = shape
+              for label in g.objects(shape, RDFS.label):
+                  # Try to get the label of the shape
+                  shape_label = label
+                  # Fixing
+              shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+
       # Search for RML and R2RML mappings
       # TODO: also rml:LogicalSource specifically for RML
       for shape in g.subjects(RDF.type, R2RML.SubjectMap):
-          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
           shape_found = True
           is_rml_mappings = False
           # Differenciate RML and R2RML mappings
@@ -343,7 +370,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       classes_limit = 300
       classes_count = 0
       for shape in g.subjects(RDF.type, OWL.Class):
-          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
@@ -386,7 +412,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
       # Get SKOS concepts and concept scheme
       for shape in g.subjects(RDF.type, SKOS.Concept):
-          # add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape_uri, shape_type)
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SKOS.ConceptScheme))

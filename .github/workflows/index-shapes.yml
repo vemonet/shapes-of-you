@@ -33,7 +33,7 @@ jobs:
           search-topics: topic:api
         - git-service: github
           run-label: rml-run
-          search-topics: r2rml,rml,topic:rml-mapping
+          search-topics: r2rml,rml,topic:rml-mapping,nanobench,nanopub
         - git-service: github-extras
           run-label: extra-1
           search-topics: EXTRAS_GITHUB_REPOSITORIES.txt
