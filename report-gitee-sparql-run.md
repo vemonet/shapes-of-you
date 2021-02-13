@@ -5,593 +5,2310 @@
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
-File: https://gitee.com/opensci/gStore/raw/master/data%2Fupdate_test.nt parsed as nt
 
-In repository: https://gitee.com/opensci/gStore
-> Invalid line: '<s0> <p0> <o0>.'
 
 ---
-File: https://gitee.com/opensci/gStore/raw/master/data%2Flubm%2Flubm.nt parsed as nt
+RDF parsed as json-ld, in repository: https://gitee.com/opensci/gStore
+> Expecting property name enclosed in double quotes: line 4 column 4 (char 32)File: https://gitee.com/opensci/gStore/raw/master/data%2Fupdate_test.nt
 
-In repository: https://gitee.com/opensci/gStore
-> Invalid line: '<University0>.'
 
----
-File: https://gitee.com/opensci/gStore/raw/master/data%2Fsmall%2Fsmall.nt parsed as nt
-
-In repository: https://gitee.com/opensci/gStore
-> Invalid line: '<root>\t<name>\t"Bookug Lobert"\t.'
 
 ---
-File: https://gitee.com/opensci/gStore/raw/master/data%2Fsmall%2Fsmall_add.nt parsed as nt
+RDF parsed as nt, in repository: https://gitee.com/opensci/gStore
+> Invalid line: '<s0> <p0> <o0>.'File: https://gitee.com/opensci/gStore/raw/master/data%2Flubm%2Flubm.nt
 
-In repository: https://gitee.com/opensci/gStore
-> Invalid line: '<node1> <link> <node2> .'
 
----
-File: https://gitee.com/opensci/gStore/raw/master/data%2Fsystem%2Fsystem.nt parsed as nt
-
-In repository: https://gitee.com/opensci/gStore
-> Invalid line: '<root> <has_password> "123456" .'
 
 ---
-File: https://gitee.com/opensci/gStore/raw/master/data%2Fsystem%2Fversion.nt parsed as nt
+RDF parsed as nt, in repository: https://gitee.com/opensci/gStore
+> Invalid line: '<University0>.'File: https://gitee.com/opensci/gStore/raw/master/data%2Fsmall%2Fsmall.nt
 
-In repository: https://gitee.com/opensci/gStore
+
+
+---
+RDF parsed as nt, in repository: https://gitee.com/opensci/gStore
+> Invalid line: '<root>\t<name>\t"Bookug Lobert"\t.'File: https://gitee.com/opensci/gStore/raw/master/data%2Fsmall%2Fsmall_add.nt
+
+
+
+---
+RDF parsed as nt, in repository: https://gitee.com/opensci/gStore
+> Invalid line: '<node1> <link> <node2> .'File: https://gitee.com/opensci/gStore/raw/master/data%2Fsystem%2Fsystem.nt
+
+
+
+---
+RDF parsed as nt, in repository: https://gitee.com/opensci/gStore
+> Invalid line: '<root> <has_password> "123456" .'File: https://gitee.com/opensci/gStore/raw/master/data%2Fsystem%2Fversion.nt
+
+
+
+---
+RDF parsed as nt, in repository: https://gitee.com/opensci/gStore
 > Invalid line: '<CoreVersion> <value> "v0.8.4" .'
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:82:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0module
 
-In repository: https://gitee.com/kehaofei/ontop
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-sparql-jena/pom.xml:49:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-core/pom.xml:49:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-sparql-api/pom.xml:42:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-sparql-sesame/pom.xml:42:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-cep-esper/pom.xml:42:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-cep-api/pom.xml:24:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-ui/pom.xml:53:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-ui/src/assemble/bin.xml:43:15: Repeat node-elements inside property elements: http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0format
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-reason/pom.xml:8:34: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/qq348991318/csparql_spark
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/csparql-common/pom.xml:52:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactIdFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitee.com/kehaofei/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitee.com/kehaofei/ontop
 > at line 88 of <>:
 Bad syntax (newline found in string literal) at ^ in:
 "...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3 parsed as n3
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 88 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:26:30: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/engine%2Fsystem%2Fsql%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FlangTag%2FlangTag.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/langTag/langTag.owl:18:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/reformulation/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/reformulation/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/reformulation/sql/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ffilter%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/filter/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fmaterializer%2FMaterializeTest.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnestedconcat%2Ftest.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/nestedconcat/test.owl:35:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fperson%2Fperson.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/person/person.owl:52:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2FEPNet.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/EPNet.owl:33:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2Fimdb%2FontologyIMDB.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/imdb/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/optimization/pom.xml:6:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2Fregex%2Foracle-regexp.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/regex/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2FontologyType%2FdataPropertiesOntologyType.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/model/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fgeneral%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fnumeric%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/obda/pom.xml:6:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fboolean%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fcharacter%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/rdf4j/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fdatetime%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/describeConstruct.owl:35:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/pom.xml:5:27: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/npd-v2/dc.xml:53:3: Repeat node-elements inside property elements: http://www.w3.org/2001/XMLSchemaannotation
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/mapping%2Fsql%2Fall%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fio%2FSchool.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/src/test/resources/it/unibz/inf/ontop/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/client%2Fprotege%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fapi%2Fio%2FSchool.owl parsed as xml
-
-In repository: https://gitee.com/kehaofei/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/src/test/resources/it/unibz/inf/ontop/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FrepeatedCN%2FrepeatedCN_test.ttl parsed as ttl
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
 
-In repository: https://gitee.com/kehaofei/ontop
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/rdb2rdf-compliance/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/sparql-compliance/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/pom.xml:5:33: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/native/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/r2rml/pom.xml:5:37: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/db/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/db/rdb/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/workbench/pom.xml:4:39: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/config-sql/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/server/pom.xml:5:39: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/cli/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/endpoint/pom.xml:7:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/build/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/build/distribution/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupIdFile: https://gitee.com/kehaofei/ontop/raw/master/engine%2Fsystem%2Fsql%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FlangTag%2FlangTag.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/langTag/langTag.owl:18:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRIFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)File: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ffilter%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/filter/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fmaterializer%2FMaterializeTest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnestedconcat%2Ftest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/nestedconcat/test.owl:35:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fperson%2Fperson.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/person/person.owl:52:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2FEPNet.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/EPNet.owl:33:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#LiteralFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2Fimdb%2FontologyIMDB.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/imdb/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2Fregex%2Foracle-regexp.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/regex/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2FontologyType%2FdataPropertiesOntologyType.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fgeneral%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fnumeric%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fboolean%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fcharacter%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fdatetime%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/describeConstruct.owl:35:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividualFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFromFile: https://gitee.com/kehaofei/ontop/raw/master/mapping%2Fsql%2Fall%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fio%2FSchool.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/src/test/resources/it/unibz/inf/ontop/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/client%2Fprotege%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fapi%2Fio%2FSchool.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/kehaofei/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/src/test/resources/it/unibz/inf/ontop/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/kehaofei/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FrepeatedCN%2FrepeatedCN_test.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
 > at line 9 of <>:
 Bad syntax (Prefix "rr:" not bound) at ^ in:
-"...b': <http://www.w3.org/2000/01/rdf-schema#> .\n\n<#Professor> a '^b'rr:TriplesMap;\n        rr:logicalTable [ rr:tableName "profe'..."
+"...b': <http://www.w3.org/2000/01/rdf-schema#> .\n\n<#Professor> a '^b'rr:TriplesMap;\n        rr:logicalTable [ rr:tableName "profe'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnorthwind%2Fmapping-northwind-platform.ttl
+
+
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnorthwind%2Fmapping-northwind-platform.ttl parsed as ttl
-
-In repository: https://gitee.com/kehaofei/ontop
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
 > at line 6 of <>:
 Bad syntax (newline found in string literal) at ^ in:
-"...b'D5(CONCAT(COALESCE(Address, RAND()), COALESCE(City, RAND()),'^b'\n                                           COALESCE(Region,'..."
+"...b'D5(CONCAT(COALESCE(Address, RAND()), COALESCE(City, RAND()),'^b'\n                                           COALESCE(Region,'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl parsed as ttl
-
-In repository: https://gitee.com/kehaofei/ontop
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
 > at line 6 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl parsed as ttl
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
 
-In repository: https://gitee.com/kehaofei/ontop
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/kehaofei/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl parsed as ttl
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/mer-core/libqtsparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl parsed as ttl
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/mer-core/libqtsparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl parsed as ttl
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/triumphue/sparql-to-flink
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:33:22: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0flink.version
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl parsed as ttl
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/triumphue/sparql-to-flink
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom_2.xml:33:22: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0flink.version
 
 ---
-File: https://gitee.com/kehaofei/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl parsed as ttl
-
-In repository: https://gitee.com/kehaofei/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/TicsmycL/RDFTools
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:17:30: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0maven.compiler.source
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
+RDF parsed as xml, in repository: https://gitee.com/TicsmycL/RDFTools
+> sequence item 0: expected str instance, NoneType found
 
-In repository: https://gitee.com/oldshan/ontop
+---
+RDF parsed as xml, in repository: https://gitee.com/TicsmycL/RDFTools
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/TicsmycL/RDFTools
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/TicsmycL/RDFTools
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/TicsmycL/RDFTools
+> sequence item 0: expected str instance, NoneType foundFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitee.com/oldshan/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitee.com/oldshan/ontop
 > at line 88 of <>:
 Bad syntax (newline found in string literal) at ^ in:
 "...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3 parsed as n3
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 88 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:26:30: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/engine%2Fsystem%2Fsql%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FlangTag%2FlangTag.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/langTag/langTag.owl:18:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/reformulation/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/reformulation/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/reformulation/sql/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ffilter%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/filter/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fmaterializer%2FMaterializeTest.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnestedconcat%2Ftest.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/nestedconcat/test.owl:35:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fperson%2Fperson.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/person/person.owl:52:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2FEPNet.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/EPNet.owl:33:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2Fimdb%2FontologyIMDB.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/imdb/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/optimization/pom.xml:6:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2Fregex%2Foracle-regexp.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/regex/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2FontologyType%2FdataPropertiesOntologyType.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/model/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fgeneral%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fnumeric%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core/obda/pom.xml:6:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fboolean%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fcharacter%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/rdf4j/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fdatetime%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/describeConstruct.owl:35:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/pom.xml:5:27: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/npd-v2/dc.xml:53:3: Repeat node-elements inside property elements: http://www.w3.org/2001/XMLSchemaannotation
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/mapping%2Fsql%2Fall%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fio%2FSchool.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/src/test/resources/it/unibz/inf/ontop/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/client%2Fprotege%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fapi%2Fio%2FSchool.owl parsed as xml
-
-In repository: https://gitee.com/oldshan/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/src/test/resources/it/unibz/inf/ontop/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FrepeatedCN%2FrepeatedCN_test.ttl parsed as ttl
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
 
-In repository: https://gitee.com/oldshan/ontop
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/rdb2rdf-compliance/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/sparql-compliance/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/pom.xml:5:33: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/core/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/native/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/r2rml/pom.xml:5:37: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/db/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/db/rdb/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/workbench/pom.xml:4:39: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/config-sql/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/rdf4j-webapps/server/pom.xml:5:39: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/cli/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/endpoint/pom.xml:7:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/build/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/build/distribution/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/pom.xml:5:25: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/owlapi/pom.xml:4:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupIdFile: https://gitee.com/oldshan/ontop/raw/master/engine%2Fsystem%2Fsql%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/engine/system/sql/owlapi/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FlangTag%2FlangTag.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/langTag/langTag.owl:18:35: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRIFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)File: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ffilter%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/filter/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectPropertyFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectPropertyFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/binding/owlapi/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#ClassFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fmaterializer%2FMaterializeTest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnestedconcat%2Ftest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/nestedconcat/test.owl:35:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fperson%2Fperson.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/mysql/person/person.owl:52:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2FEPNet.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/EPNet.owl:33:89: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#LiteralFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fpgsql%2Fimdb%2FontologyIMDB.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/pgsql/imdb/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2Fregex%2Foracle-regexp.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/regex/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Foracle%2FontologyType%2FdataPropertiesOntologyType.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/oracle/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fgeneral%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fnumeric%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fboolean%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fcharacter%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fdatetime%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/docker-tests/src/test/resources/testcases-docker/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/describeConstruct.owl:35:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividualFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/test%2Fsemantic-index%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/semantic-index/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFromFile: https://gitee.com/oldshan/ontop/raw/master/mapping%2Fsql%2Fall%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fio%2FSchool.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/mapping/sql/all/src/test/resources/it/unibz/inf/ontop/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/client%2Fprotege%2Fsrc%2Ftest%2Fresources%2Fit%2Funibz%2Finf%2Fontop%2Fapi%2Fio%2FSchool.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/oldshan/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/client/protege/src/test/resources/it/unibz/inf/ontop/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitee.com/oldshan/ontop/raw/master/binding%2Fowlapi%2Fsrc%2Ftest%2Fresources%2Ftest%2FrepeatedCN%2FrepeatedCN_test.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
 > at line 9 of <>:
 Bad syntax (Prefix "rr:" not bound) at ^ in:
-"...b': <http://www.w3.org/2000/01/rdf-schema#> .\n\n<#Professor> a '^b'rr:TriplesMap;\n        rr:logicalTable [ rr:tableName "profe'..."
+"...b': <http://www.w3.org/2000/01/rdf-schema#> .\n\n<#Professor> a '^b'rr:TriplesMap;\n        rr:logicalTable [ rr:tableName "profe'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnorthwind%2Fmapping-northwind-platform.ttl
+
+
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Fmysql%2Fnorthwind%2Fmapping-northwind-platform.ttl parsed as ttl
-
-In repository: https://gitee.com/oldshan/ontop
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
 > at line 6 of <>:
 Bad syntax (newline found in string literal) at ^ in:
-"...b'D5(CONCAT(COALESCE(Address, RAND()), COALESCE(City, RAND()),'^b'\n                                           COALESCE(Region,'..."
+"...b'D5(CONCAT(COALESCE(Address, RAND()), COALESCE(City, RAND()),'^b'\n                                           COALESCE(Region,'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl parsed as ttl
-
-In repository: https://gitee.com/oldshan/ontop
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
 > at line 6 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl parsed as ttl
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
 
-In repository: https://gitee.com/oldshan/ontop
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitee.com/oldshan/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl parsed as ttl
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/mirrors_aws/amazon-neptune-sparql-java-sigv4
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:58:8: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0repository
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl parsed as ttl
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/eea/sparql/tests/sparql.xml:6:27: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#variable
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl parsed as ttl
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl parsed as ttl
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/oldshan/ontop/raw/master/test%2Fdocker-tests%2Fsrc%2Ftest%2Fresources%2Ftestcases-docker%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl parsed as ttl
-
-In repository: https://gitee.com/oldshan/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/mirrors_korczis/libsparql/raw/master/etc%2Fdoap.rdf parsed as xml
-
-In repository: https://gitee.com/mirrors_korczis/libsparql
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/etc/doap.rdf:1:0: no element found
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-03.rdf parsed as xml
-
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-03.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-01.rdf parsed as xml
-
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-01.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-05.rdf parsed as xml
-
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-05.rdf:9:62: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+RDF parsed as xml, in repository: https://gitee.com/mirrors_collective/eea.sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-02.rdf parsed as xml
-
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-02.rdf:9:56: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+RDF parsed as xml, in repository: https://gitee.com/mirrors_neo4j-contrib/neo4j-rdf-sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:6:26: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-inv-01.rdf parsed as xml
-
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-inv-01.rdf:9:54: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+RDF parsed as xml, in repository: https://gitee.com/mirrors_neo4j-contrib/neo4j-rdf-sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-class-01.rdf parsed as xml
-
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-class-01.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+RDF parsed as xml, in repository: https://gitee.com/mirrors_neo4j-contrib/sparql-plugin
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:5:30: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-04.rdf parsed as xml
-
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-04.rdf:9:52: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+RDF parsed as xml, in repository: https://gitee.com/mirrors_neo4j-contrib/sparql-plugin
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-inv-02.rdf parsed as xml
+RDF parsed as xml, in repository: https://gitee.com/mirrors_neo4j-contrib/sparql-plugin
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/data/graphml1.xml:34:8: Repeat node-elements inside property elements: http://graphml.graphdrawing.org/xmlnsnode
 
-In repository: https://gitee.com/vhandy/neo4j-sparql-extension
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/eea/sparql/tests/sparql.xml:6:27: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#variable
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/Products.ZSPARQLMethod
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Products/ZSPARQLMethod/tests/sparql-get_languages.xml:9:61: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/Products.ZSPARQLMethod
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Products/ZSPARQLMethod/tests/sparql-get_lang_names.xml:5:27: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#variable
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/Products.ZSPARQLMethod
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Products/ZSPARQLMethod/tests/sparql-get_lang_by_name-da.xml:9:61: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/jasperreports.sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:13:18: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0env
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/jasperreports.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/jasperreports.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/jasperreports.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/jasperreports.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/jasperreports.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/jasperreports.sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/webapp/WEB-INF/applicationContext-sparqlDS.xml:10:71: Repeat node-elements inside property elements: http://www.springframework.org/schema/beansproperty
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.dexterity.sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/eea/dexterity/sparql/tests/sparql.xml:6:27: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#variable
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.dexterity.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.dexterity.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.dexterity.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/mirrors_eea/eea.dexterity.sparql
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-plugin
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:5:30: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-plugin
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-plugin
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/data/graphml1.xml:34:8: Repeat node-elements inside property elements: http://graphml.graphdrawing.org/xmlnsnode
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:10:28: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0maven.compiler.source
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/assembly/extension.xml:17:24: Repeat node-elements inside property elements: http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0excludeFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-03.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-03.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uriFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-01.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-01.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uriFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-05.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-05.rdf:9:62: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uriFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-02.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-02.rdf:9:56: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uriFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-inv-01.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-inv-01.rdf:9:54: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uriFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-class-01.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-class-01.rdf:9:55: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uriFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-op-04.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-op-04.rdf:9:52: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uriFile: https://gitee.com/vhandy/neo4j-sparql-extension/raw/master/src%2Ftest%2Fresources%2Finference%2Fkiel%2Fresult-inv-02.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extension
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/inference/kiel/result-inv-02.rdf:9:54: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#uri
 
 ---
@@ -629,5 +2346,3 @@ EndPointInternalError: endpoint returned code 500 and response.
 
 Response:
 b'Virtuoso 42000 Error The estimated execution time 420 (sec) exceeds the limit of 400 (sec).\n\nSPARQL query:\nSELECT * WHERE { ?s ?p ?o } LIMIT 10'
-
----
