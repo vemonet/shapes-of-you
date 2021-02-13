@@ -226,7 +226,7 @@ In repository: https://github.com/geneontology/go-shapes
 File: https://raw.githubusercontent.com/biotea/validation-shapes-bioschemas/master/journal.jsonld parsed as json-ld
 
 In repository: https://github.com/biotea/validation-shapes-bioschemas
-> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+> Expecting value: line 2 column 1 (char 1)
 
 ---
 File: https://raw.githubusercontent.com/rgmprabodha/Internship_Testing_Projects/master/shexjava%2Fsrc%2Fmain%2Fresources%2FtemperatureReport.ttl parsed as ttl
@@ -1973,5 +1973,23 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 
 byte indices must be integers or slices, not str
+
+---
+SPARQL endpoint failed: http://pt.dbpedia.org/sparql
+
+<urlopen error [Errno 110] Connection timed out>
+
+---
+SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
+
+byte indices must be integers or slices, not str
+
+---
+SPARQL endpoint failed: http://www.linklion.org:8890/sparql
+
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Virtuoso 42000 Error The estimated execution time 420 (sec) exceeds the limit of 400 (sec).\n\nSPARQL query:\nSELECT * WHERE { ?s ?p ?o } LIMIT 10'
 
 ---
