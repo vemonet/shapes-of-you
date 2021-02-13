@@ -5,20 +5,2611 @@
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/d2s-transform-biolink/master/datasets%2Fgeonames%2Fmapping%2Fsplit_neighbours_mapping.rml.ttl parsed as ttl
 
-In repository: https://github.com/MaastrichtU-IDS/d2s-transform-biolink
+
+---
+RDF parsed as xml, in repository: https://github.com/NCATS-Tangerine/tkbio
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/NCATS-Tangerine/tkbio
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tomcat/conf/web.xml:105:66: Repeat node-elements inside property elements: http://xmlns.jcp.org/xml/ns/javaeeservlet-class
+
+---
+RDF parsed as xml, in repository: https://github.com/NCATS-Tangerine/tkbio
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tomcat/webapps/manager/WEB-INF/web.xml:33:61: Repeat node-elements inside property elements: http://xmlns.jcp.org/xml/ns/javaeeservlet-class
+
+---
+RDF parsed as xml, in repository: https://github.com/NCATS-Tangerine/tkbio
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/api/client/pom.xml:13:79: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0developerConnection
+
+---
+RDF parsed as xml, in repository: https://github.com/NCATS-Tangerine/tkbio
+> sequence item 0: expected str instance, NoneType foundFile: https://raw.githubusercontent.com/MaastrichtU-IDS/d2s-transform-biolink/master/datasets%2Fgeonames%2Fmapping%2Fsplit_neighbours_mapping.rml.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/d2s-transform-biolink
 > at line 11 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#>.\n'^b'@pref gn: <http://www.geonames.org/ontology#>.\n\n:map_neighbo'..."
 
 ---
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/biothingsprovenancemodel/master/rdfexample.ttl parsed as ttl
+RDF parsed as xml, in repository: https://github.com/broadinstitute/broad-translator
+> sequence item 0: expected str instance, NoneType found
 
-In repository: https://github.com/MaastrichtU-IDS/biothingsprovenancemodel
+---
+RDF parsed as xml, in repository: https://github.com/ncats/foa-challenge
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/ncats/foa-challenge
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/ncats/foa-challenge
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/ncats/foa-challenge
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/myvariant.info
+> Expecting ',' delimiter: line 575 column 1 (char 15094)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/myvariant.info
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/mygene.info
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/mychem.info
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/biothings.interactions
+> Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/biothings.interactions
+> Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/biothings.interactions
+> Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/biothings.interactions
+> Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/biothings.interactions
+> Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/biothings.interactions
+> Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/MaastrichtU-IDS/biothingsprovenancemodel
+> Expecting value: line 1 column 1 (char 0)File: https://raw.githubusercontent.com/MaastrichtU-IDS/biothingsprovenancemodel/master/rdfexample.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/biothingsprovenancemodel
 > at line 19 of <>:
 Bad syntax (objectList expected) at ^ in:
 "...b'  \t\t   \t"2004-11-23"^^xsd:date ; \r\n\tbio-prov:wasInferredFrom'^b'\t\t\t assertion2 ; \r\n\tbio-prov:publishedIn        \t\t   \t"Prost'..."
+
+---
+RDF parsed as json-ld, in repository: https://github.com/kevinxin90/DISEASES
+> Extra data: line 32 column 1 (char 698)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/pending.api
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/pending.api
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/pending.api
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:16:40: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/udincer/Hack2015
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biothings/BioThings_Explorer_TRAPI
+> Extra data: line 21 column 2 (char 517)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/milen-sage/biothings_schema_discover_app
+> Expecting value: line 270 column 3 (char 5029)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/cmdcolin/jbrowse-plugin-biothings
+> Expecting property name enclosed in double quotes: line 6 column 5 (char 110)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/cmdcolin/jbrowse-plugin-biothings-api
+> Expecting property name enclosed in double quotes: line 7 column 5 (char 131)
+
+---
+RDF parsed as xml, in repository: https://github.com/erminas/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/SmartAPI/build/doxygen/build.xml:8:48: Repeat node-elements inside property elements: http://schemas.microsoft.com/developer/msbuild/2003MakeDir
+
+---
+RDF parsed as xml, in repository: https://github.com/zeeshansardar61/SmartApiCaller
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/zeeshansardar61/SmartApiCaller
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/zeeshansardar61/SmartApiCaller
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/zeeshansardar61/SmartApiCaller
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/zeeshansardar61/SmartApiCaller
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/zeeshansardar61/SmartApiCaller
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/zeeshansardar61/SmartApiCaller
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/angelbroking-github/smartapi-java
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:30:37: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/xpcrts/SMARTAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/xpcrts/SMARTAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/xpcrts/SMARTAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/xpcrts/SMARTAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/xpcrts/SMARTAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/xpcrts/SMARTAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/xpcrts/SMARTAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/mesolaries/SmartApiBundle
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Resources/config/services.xml:15:33: Repeat node-elements inside property elements: http://symfony.com/schema/dic/servicesservice
+
+---
+RDF parsed as json-ld, in repository: https://github.com/liangxiaobi/smartapi
+> Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+
+---
+RDF parsed as xml, in repository: https://github.com/liangxiaobi/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/wangkai2017/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as json-ld, in repository: https://github.com/mjstealey/swagger-demo
+> Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
+
+---
+RDF parsed as xml, in repository: https://github.com/mjstealey/swagger-demo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/docs/sitemap.xml:7:38: Repeat node-elements inside property elements: http://www.sitemaps.org/schemas/sitemap/0.9lastmod
+
+---
+RDF parsed as xml, in repository: https://github.com/mjstealey/swagger-demo
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as json-ld, in repository: https://github.com/compsmart/smartapi
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/compsmart/smartapi
+> Expecting ',' delimiter: line 2 column 18 (char 19)
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/foo1.xml:1:0: no element found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/nonvalid.xml:8:53: Repeat node-elements inside property elements: http://symfony.com/schema/routingdefault
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/foo.xml:1:0: no element found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validpattern.xml:8:53: Repeat node-elements inside property elements: http://symfony.com/schema/routingdefault
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/nonvalidroute.xml:8:53: Repeat node-elements inside property elements: http://symfony.com/schema/routingdefault
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/validresource.xml:8:30: Repeat node-elements inside property elements: http://symfony.com/schema/routingdefault
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/vendor/symfony/routing/Symfony/Component/Routing/Tests/Fixtures/namespaceprefix.xml:8:55: Repeat node-elements inside property elements: http://symfony.com/schema/routingdefault
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/compsmart/smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as json-ld, in repository: https://github.com/jmbanda/biohack2017_smartAPI
+> Expecting value: line 1 column 1 (char 0)
+
+---
+RDF parsed as xml, in repository: https://github.com/jmbanda/biohack2017_smartAPI
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/spring-server/pom.xml:10:46: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0maven.compiler.source
+
+---
+RDF parsed as xml, in repository: https://github.com/jmbanda/biohack2017_smartAPI
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/java-client/pom.xml:13:79: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0developerConnection
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/04_Status_ERROR.xml:1:1234: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasCONTACT_POINT_EMAIL
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/11_3Score_Ordered_1Score_NA.xml:1:1173: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/01_Status_NEW.xml:1:1234: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasCONTACT_POINT_EMAIL
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/14_3BUR_Ordered_0Score_Requested.xml:1:1172: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/07_YesXML_NoHTML_NoPDF.xml:1:1201: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/15_2Borrowers%20Only%201%20Borrower%20Has%20Hits.xml:1:1142: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/06_NoXML_YesHTML_YesPDF.xml:1:1201: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/13_2Borrower_Completed.xml:1:1176: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/09_2BUR_Ordered_2BUR_Successful.xml:1:1175: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/12_1Borrower_Completed.xml:1:1178: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/08_Shell_File.xml:1:1201: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/10_3BUR_Ordered_1BUR_Successful.xml:1:1170: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/05_Status_REQUEST_ERROR.xml:1:1246: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasErrorMessageText
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/03_Status_COMPLETED.xml:1:1201: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jafrajarvy292/smartapihelper
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/ResponseParser/ConsumerCredit_Responses/02_Status_PROCESSING.xml:1:1201: Repeat node-elements inside property elements: http://www.mismo.org/residential/2009/schemasNAME
+
+---
+RDF parsed as xml, in repository: https://github.com/jackienjut/SmartAPI
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:16:37: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0spring.version
+
+---
+RDF parsed as xml, in repository: https://github.com/jackienjut/SmartAPI
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/applicationContext.xml:13:65: Repeat node-elements inside property elements: http://www.springframework.org/schema/beansproperty
+
+---
+RDF parsed as xml, in repository: https://github.com/jackienjut/SmartAPI
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/webapp/WEB-INF/web.xml:11:53: Repeat node-elements inside property elements: http://java.sun.com/xml/ns/j2eeparam-value
+
+---
+RDF parsed as xml, in repository: https://github.com/jackienjut/SmartAPI
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/webapp/WEB-INF/SpringDispatcher-servlet.xml:14:90: Repeat node-elements inside property elements: http://www.springframework.org/schema/beansproperty
+
+---
+RDF parsed as json-ld, in repository: https://github.com/MadeOfTech/SmartAPI
+> Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+
+---
+RDF parsed as xml, in repository: https://github.com/hissoka/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/dimitryduarte/SmartAPI
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/sridhar0606/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/sridhar0606/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/sridhar0606/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/senthilsivanath/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/senthilsivanath/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/senthilsivanath/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/senthilsivanath/SmartApi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as json-ld, in repository: https://github.com/Moklite/SmartAPI
+> Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/Moklite/SmartAPI
+> Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ioc-datalake-kafka-consumer/pom.xml:7:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ioc-datalake-kafka-consumer/src/main/resources/springconfig/transaction.xml:30:2: Repeat node-elements inside property elements: http://www.springframework.org/schema/txattributes
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ioc-datalake-smartapi-svc/pom.xml:8:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/laofeng12/ioc-smartapi
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ioc-datalake-smartapi-svc/src/main/resources/springconfig/transaction.xml:30:2: Repeat node-elements inside property elements: http://www.springframework.org/schema/txattributes
+
+---
+RDF parsed as json-ld, in repository: https://github.com/SmartAPI/smartAPI-editor
+> Expecting ',' delimiter: line 32 column 17 (char 1039)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/Navid6935/SmartApi
+> Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/smrgillani/smartAPIs
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/yusufthedeveloper/arcelik-smartapi-remote
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/thepanacealab/AEOLUS-SmartAPI
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/server/pom.xml:10:46: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0maven.compiler.source
+
+---
+RDF parsed as json-ld, in repository: https://github.com/Navid6935/SmartApi-master
+> Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+
+---
+RDF parsed as xml, in repository: https://github.com/putmantime/BigGIM_APIWrapper
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/putmantime/BigGIM_APIWrapper
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/putmantime/BigGIM_APIWrapper
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/cryptoheaven/CryptoHeaven
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/cryptoheaven/CryptoHeaven
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/cryptoheaven/CryptoHeaven
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/cryptoheaven/CryptoHeaven
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/cryptoheaven/CryptoHeaven
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/nbproject/project.xml:7:65: Repeat node-elements inside property elements: http://www.netbeans.org/ns/ant-build-extender/1dependency
+
+---
+RDF parsed as xml, in repository: https://github.com/TranslatorSRI/ontology-kp
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as json-ld, in repository: https://github.com/marcsantiago/message_app
+> Expecting value: line 5 column 1 (char 78)
+
+---
+RDF parsed as xml, in repository: https://github.com/adamnoor/tok
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/adamnoor/tok
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/UCDenver-ccp/Translator-TM-Provider-Pipelines
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:16:41: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0bigquery.version
+
+---
+RDF parsed as xml, in repository: https://github.com/UCDenver-ccp/Translator-TM-Provider-Pipelines
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/UCDenver-ccp/Translator-TM-Provider-Pipelines
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/test/resources/edu/cuanschutz/ccp/tm_provider/etl/util/PMC1790863_invalid.xml:4:2: not well-formed (invalid token)
+
+---
+RDF parsed as xml, in repository: https://github.com/AnhToof/ContentProvider
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/AnhToof/ContentProvider
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/AnhToof/ContentProvider
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/varunrpillai/karma_android
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/varunrpillai/karma_android
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/varunrpillai/karma_android
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/varunrpillai/karma_android
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/varunrpillai/karma_android
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/epalen/managementincidents
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/swarnvani306/Job-Portal
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/swarnvani306/Job-Portal
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/swarnvani306/Job-Portal
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/swarnvani306/Job-Portal
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/swarnvani306/Job-Portal
+> sequence item 0: expected str instance, NoneType found
 
 ---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
@@ -55,5 +2646,3 @@ EndPointInternalError: endpoint returned code 500 and response.
 
 Response:
 b'Virtuoso 42000 Error The estimated execution time 420 (sec) exceeds the limit of 400 (sec).\n\nSPARQL query:\nSELECT * WHERE { ?s ?p ?o } LIMIT 10'
-
----
