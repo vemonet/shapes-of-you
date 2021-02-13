@@ -5,436 +5,1695 @@
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
-File: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl parsed as ttl
 
-In repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
+
+---
+RDF parsed as json-ld, in repository: https://gitlab.com/lucas.depret/to-dowliest
+> Expecting property name enclosed in double quotes: line 6 column 3 (char 120)
+
+---
+RDF parsed as json-ld, in repository: https://gitlab.com/mflint/spaceflightnowlaunchcalendar
+> Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/Sisi124-pro/bowlinggame
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/Sisi124-pro/bowlinggame
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/Sisi124-pro/bowlinggame
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/Sisi124-pro/bowlinggame
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:15:54: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0maven.build.timestamp.format
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
+> sequence item 0: expected str instance, NoneType foundFile: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
 > at line 17 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'hema#> .\n@prefix edp: <https://europeandataportal.eu/voc#>\n\n'^b'<https://example.eu/set/data/test-dataset>\n    a dcat:Datase'..."
 
 ---
-File: https://gitlab.com/piveau/metrics/piveau-shacl-validator/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl parsed as ttl
+RDF parsed as xml, in repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:13:54: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0maven.build.timestamp.format
 
-In repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
+---
+RDF parsed as xml, in repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
+> sequence item 0: expected str instance, NoneType foundFile: https://gitlab.com/piveau/metrics/piveau-shacl-validator/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
 > at line 17 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'hema#> .\n@prefix edp: <https://europeandataportal.eu/voc#>\n\n'^b'<https://example.eu/set/data/test-dataset>\n    a dcat:Datase'..."
 
 ---
-File: https://gitlab.com/roelj/sparqling-genomics/-/raw/main/ontologies%2Finternal-structure.ttl parsed as ttl
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/pom.xml:11:22: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0xtextVersion
 
-In repository: https://gitlab.com/roelj/sparqling-genomics
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc.feature/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc.target/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc.ui/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc.ide/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc.ui.tests/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc.repository/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc.tests/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/com.osthus.shapes.shaclc.parent/com.osthus.shapes.shaclc/pom.xml:6:45: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/allotrope-open-source/shape-editor
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/.m2/settings.xml:13:2: Repeat node-elements inside property elements: http://maven.apache.org/SETTINGS/1.1.0server
+
+---
+RDF parsed as json-ld, in repository: https://gitlab.com/387rollerball/finishexaiproj
+> Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/387rollerball/finishexaiproj
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/387rollerball/finishexaiproj
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/387rollerball/finishexaiproj
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/387rollerball/finishexaiproj
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/387rollerball/finishexaiproj
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/387rollerball/finishexaiproj
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AdrianGarciaAndreu/englishexam_1
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/audy018/ionic3-pushExample
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/config.xml:26:40: Repeat node-elements inside property elements: http://www.w3.org/ns/widgetsallow-intent
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/besser82/sshexport
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/roelj/sparqling-genomics
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/roelj/sparqling-genomics
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/roelj/sparqling-genomics
+> sequence item 0: expected str instance, NoneType foundFile: https://gitlab.com/roelj/sparqling-genomics/-/raw/main/ontologies%2Finternal-structure.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/roelj/sparqling-genomics
 > at line 16 of <>:
 Bad syntax (Prefix "owl:" not bound) at ^ in:
 "...b'##################################\n\nsg:Project\n    rdf:type '^b'owl:Class ;\n    rdfs:label "Project"@en ;\n    rdfs:descripti'..."
 
 ---
-File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex319.ttl parsed as ttl
+RDF parsed as xml, in repository: https://gitlab.com/Nephyr/learning-sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pdf_data/ex410.xml:5:24: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#variable
 
-In repository: https://gitlab.com/Nephyr/learning-sparql
+---
+RDF parsed as xml, in repository: https://gitlab.com/Nephyr/learning-sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pdf_data/ex366.xml:7:28: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#variable
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/Nephyr/learning-sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pdf_data/ex401.xml:4:31: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#variable
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/Nephyr/learning-sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pdf_data/ex359.xml:11:71: Repeat node-elements inside property elements: http://www.w3.org/2005/sparql-results#literalFile: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex319.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/Nephyr/learning-sparql
 > at line 7 of <>:
 Bad syntax (Prefix "owl:" not bound) at ^ in:
-"...b'09-21" .\n\n<http://rdf.freebase.com/ns/en.tommy_potter>\t\n    '^b'owl:sameAs\t\n    <http://dbpedia.org/resource/Tommy_Potter> .'..."
+"...b'09-21" .\n\n<http://rdf.freebase.com/ns/en.tommy_potter>\t\n    '^b'owl:sameAs\t\n    <http://dbpedia.org/resource/Tommy_Potter> .'..."File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex420.ttl
+
+
 
 ---
-File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex420.ttl parsed as ttl
-
-In repository: https://gitlab.com/Nephyr/learning-sparql
+RDF parsed as ttl, in repository: https://gitlab.com/Nephyr/learning-sparql
 > at line 11 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'irstName     "Richard" ;\n        ab:lastName       "Mutt" ;\n'^b'NOT DONE\n\nab:playsInstrument\n      rdf:type rdf:Property ;\n '..."
+"...b'irstName     "Richard" ;\n        ab:lastName       "Mutt" ;\n'^b'NOT DONE\n\nab:playsInstrument\n      rdf:type rdf:Property ;\n '..."File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex442.ttl
+
+
 
 ---
-File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex442.ttl parsed as ttl
-
-In repository: https://gitlab.com/Nephyr/learning-sparql
+RDF parsed as ttl, in repository: https://gitlab.com/Nephyr/learning-sparql
 > at line 3 of <>:
 Bad syntax (Prefix "void:" not bound) at ^ in:
-"b'# filename: ex442.ttl (excerpt from void.ttl)\n\n'^b'void:Linkset a rdfs:Class, owl:Class;\n    rdfs:label "linkse'..."
+"b'# filename: ex442.ttl (excerpt from void.ttl)\n\n'^b'void:Linkset a rdfs:Class, owl:Class;\n    rdfs:label "linkse'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
+RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
 
-In repository: https://gitlab.com/AlbertoPrior/ontop
+
+
+---
+RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 88 of <>:
 Bad syntax (newline found in string literal) at ^ in:
 "...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3 parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 88 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:26:24: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3 parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 88 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-rdb2rdf-compliance/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3 parsed as n3
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 88 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-db/pom.xml:5:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-db%2Fsrc%2Ftest%2Fresources%2Ftest%2Fstockexchange-classic-unittest.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-db/src/test/resources/test/stockexchange-classic-unittest.owl:193:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/reformulation-core/pom.xml:6:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/numeric/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/boolean/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fcharacter%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/character/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fdatetime%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/datetime/datatypes.owl:191:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fperson.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/person.owl:43:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FontologyIMDB.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FatTest%2FontologyType.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/atTest/ontologyType.owl:47:29: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FontologyType%2FdataPropertiesOntologyType.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fgeneral%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fcharacter%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fdatetime%2Fdatatypes.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fresources%2Fregexp%2Foracle-regexp.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/resources/regexp/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/obdalib-protege41%2Fsrc%2Ftest%2Fjava%2Fit%2Funibz%2Fkrdb%2Fobda%2Fapi%2Fio%2FSchool.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-protege41/src/test/java/it/unibz/krdb/obda/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/describeConstruct.owl:44:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fmaterializer%2FMaterializeTest.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl parsed as xml
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD014%2FWRr2rmla.ttl parsed as ttl
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
 
-In repository: https://gitlab.com/AlbertoPrior/ontop
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/pom.xml:5:21: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-protege41/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sesame/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-distribution/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-sesame/pom.xml:5:31: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-owlapi3/pom.xml:5:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-core/pom.xml:4:29: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontop-cli/pom.xml:5:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0groupId
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-r2rml/pom.xml:5:21: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactIdFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-db%2Fsrc%2Ftest%2Fresources%2Ftest%2Fstockexchange-classic-unittest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-db/src/test/resources/test/stockexchange-classic-unittest.owl:193:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/numeric/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/boolean/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fcharacter%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/character/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fdatetime%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/datetime/datatypes.owl:191:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fperson.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/person.owl:43:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FontologyIMDB.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FatTest%2FontologyType.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/atTest/ontologyType.owl:47:29: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FontologyType%2FdataPropertiesOntologyType.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/ontologyType/dataPropertiesOntologyType.owl:57:60: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fmaterializer%2FMaterializeTest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fgeneral%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fcharacter%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/character/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fdatetime%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fresources%2Fregexp%2Foracle-regexp.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/resources/regexp/oracle-regexp.owl:35:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/obdalib-protege41%2Fsrc%2Ftest%2Fjava%2Fit%2Funibz%2Fkrdb%2Fobda%2Fapi%2Fio%2FSchool.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-protege41/src/test/java/it/unibz/krdb/obda/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/describeConstruct.owl:44:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividualFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFromFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fmaterializer%2FMaterializeTest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectPropertyFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#ClassFile: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD014%2FWRr2rmla.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 6 of <>:
 Bad syntax (objectList expected) at ^ in:
-"...b'http://example.com/base/TriplesMap1>\n\t a rr:triplesMap;\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT (\'Department\' || "dep'..."
+"...b'http://example.com/base/TriplesMap1>\n\t a rr:triplesMap;\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT (\'Department\' || "dep'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD007%2FWRr2rmle.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD007%2FWRr2rmle.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 8 of <>:
 Bad syntax (objectList expected) at ^ in:
-"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."
+"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD015%2FWRr2rmla.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD015%2FWRr2rmla.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 8 of <>:
 Bad syntax (objectList expected) at ^ in:
-"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT "Code", "Name", "Lan"'..."
+"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT "Code", "Name", "Lan"'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD001%2FWRr2rmlb.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD001%2FWRr2rmlb.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 8 of <>:
 Bad syntax (objectList expected) at ^ in:
-"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."
+"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD011%2FWRr2rmla.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD011%2FWRr2rmla.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 8 of <>:
 Bad syntax (objectList expected) at ^ in:
-"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT "Student"."ID" as ID,'..."
+"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT "Student"."ID" as ID,'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 6 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbroker-regex-name.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbroker-regex-name.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl
+
+
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl parsed as ttl
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix foaf: <http://xmlns.com/foaf/0.1/> .\r@prefix : <htt'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
 
-In repository: https://gitlab.com/AlbertoPrior/ontop
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 6 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix foaf: <http://xmlns.com/foaf/0.1/> .\r@prefix : <htt'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 6 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+RDF parsed as xml, in repository: https://gitlab.com/european-data-portal/harvester/edp-consus-importing-sparql
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:15:54: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0maven.build.timestamp.format
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitlab.com/european-data-portal/harvester/edp-consus-importing-sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitlab.com/european-data-portal/harvester/edp-consus-importing-sparql
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitlab.com/glycoinfo/wurcsrdf
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:18:4: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0snapshotRepository
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitlab.com/glycoinfo/wurcsrdf
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/.m2/settings.xml:12:4: Repeat node-elements inside property elements: http://maven.apache.org/SETTINGS/1.1.0server
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitlab.com/redaksi.icm/koskosan
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+RDF parsed as xml, in repository: https://gitlab.com/rikipurnamairawan-lab/koskosan
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl parsed as ttl
-
-In repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix foaf: <http://xmlns.com/foaf/0.1/> .\r@prefix : <htt'..."
+RDF parsed as xml, in repository: https://gitlab.com/literarymachine/hochschulfaechersystematik
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/fuseki%2Fconfig.ttl parsed as ttl
+RDF parsed as xml, in repository: https://gitlab.com/bibsent/skosmos
+> sequence item 0: expected str instance, NoneType found
 
-In repository: https://gitlab.com/bibsent/skosmos-stack
+---
+RDF parsed as xml, in repository: https://gitlab.com/bibsent/skosmos-stack
+> sequence item 0: expected str instance, NoneType foundFile: https://gitlab.com/bibsent/skosmos-stack/-/raw/master/fuseki%2Fconfig.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/bibsent/skosmos-stack
 > at line 12 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'db#> .\n@prefix tdb2:    <http://jena.apache.org/2016/tdb#>\n\n'^b'@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>'..."
+
+---
+RDF parsed as json-ld, in repository: https://gitlab.com/owickstrom/bolan-kalkylatorn
+> Expecting property name enclosed in double quotes: line 9 column 3 (char 173)
 
 ---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
@@ -471,5 +1730,3 @@ EndPointInternalError: endpoint returned code 500 and response.
 
 Response:
 b'Virtuoso 42000 Error The estimated execution time 420 (sec) exceeds the limit of 400 (sec).\n\nSPARQL query:\nSELECT * WHERE { ?s ?p ?o } LIMIT 10'
-
----
