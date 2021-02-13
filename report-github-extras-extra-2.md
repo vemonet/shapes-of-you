@@ -562,11 +562,6 @@ SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 byte indices must be integers or slices, not str
 
 ---
-SPARQL endpoint failed: http://dati.camera.it/sparql
-
-HTTP Error 503: Service Temporarily Unavailable
-
----
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
