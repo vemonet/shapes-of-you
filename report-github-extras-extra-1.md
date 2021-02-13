@@ -21,62 +21,6 @@ Bad syntax (objectList expected) at ^ in:
 "...b'h flow:message ] ;\n      sh:minCount 1; sh:maxCount 1 \n    ]'^b' .\n\n\n########## Actions express sentiments\n\n:ActionShape a s'..."
 
 ---
-File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/src%2Ftest%2Fresources%2FRDFDatasets%2FRDFDatasetBNodesDelete.trig parsed as n3
-
-In repository: https://github.com/neo4j-labs/neosemantics
-> at line 15 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'lice-carol> ;\n       ex:hasAddress _:address .\n }\n\nexDoc:G2 '^b'{\n    exDoc:Monica\n              ex:city "New York" ;\n      '..."
-
----
-File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/src%2Ftest%2Fresources%2FRDFDatasets%2FRDFDatasetBNodesPostDeletion.trig parsed as n3
-
-In repository: https://github.com/neo4j-labs/neosemantics
-> at line 14 of <>:
-Bad syntax (EOF found in middle of path syntax) at ^ in:
-"b'@prefix ex: <http://www.example.org/vocabulary#> .\n@prefix exDoc: <http://www.example.org/exampleDocument#> .\n\nexDoc:G1 {\n    exDoc:Resource\n      \tex:professor _:entity ;\n        ex:students _:students ;\n        ex:generatedBy _:activity1 .\n\n    _:entity\n       ex:fullName "Alice Carol" ;\n       ex:homePage <http://example.net/alice-carol> ;\n       ex:hasAddress _:address .\n '^b''..."
-
----
-File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/src%2Ftest%2Fresources%2FRDFDatasets%2FRDFDataset.trig parsed as n3
-
-In repository: https://github.com/neo4j-labs/neosemantics
-> at line 20 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ogramming ;\n              ex:knows exDoc:John . }\n\nexDoc:G2 '^b'{\n    exDoc:Monica\n              ex:city "New York" ;\n      '..."
-
----
-File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/src%2Ftest%2Fresources%2FRDFDatasets%2FRDFDatasetBNodes.trig parsed as n3
-
-In repository: https://github.com/neo4j-labs/neosemantics
-> at line 17 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'lice-carol> ;\n       ex:hasAddress _:address .\n }\n\nexDoc:G2 '^b'{\n    exDoc:Monica\n              ex:city "New York" ;\n      '..."
-
----
-File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/src%2Ftest%2Fresources%2FRDFDatasets%2FRDFDatasetDelete.trig parsed as n3
-
-In repository: https://github.com/neo4j-labs/neosemantics
-> at line 17 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'anagement ;\n              ex:knows exDoc:John . }\n\nexDoc:G2 '^b'{\n    exDoc:Monica\n              ex:city "New York" ;\n      '..."
-
----
-File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/docs%2F_unused%2Frdf%2FRDFDataset%2FRDFDataset.trig parsed as n3
-
-In repository: https://github.com/neo4j-labs/neosemantics
-> at line 20 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ogramming ;\n              ex:knows exDoc:John . }\n\nexDoc:G2 '^b'{\n    exDoc:Monica\n              ex:city "New York" ;\n      '..."
-
----
-File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/docs%2F_unused%2Frdf%2FRDFDataset%2FRDFDatasetDelete.trig parsed as n3
-
-In repository: https://github.com/neo4j-labs/neosemantics
-> at line 17 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'anagement ;\n              ex:knows exDoc:John . }\n\nexDoc:G2 '^b'{\n    exDoc:Monica\n              ex:city "New York" ;\n      '..."
-
----
 File: https://raw.githubusercontent.com/neo4j-labs/neosemantics/4.2/src%2Ftest%2Fresources%2FcustomDataTypes.ttl parsed as ttl
 
 In repository: https://github.com/neo4j-labs/neosemantics
@@ -197,14 +141,6 @@ In repository: https://github.com/BlueBrain/nexus
 > Invalid line: '{{{rootNode}}} <http://example.com/address> {{bnode}} .'
 
 ---
-File: https://raw.githubusercontent.com/AKSW/RDFUnit/master/rdfunit-io%2Fsrc%2Ftest%2Fresources%2Forg%2Faksw%2Frdfunit%2Fio%2Fonetriple.trig parsed as n3
-
-In repository: https://github.com/AKSW/RDFUnit
-> at line 12 of <>:
-Bad syntax (EOF found in middle of path syntax) at ^ in:
-"b'@prefix : <http://rdfunit.aksw.org> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix dbp: <http://dbpedia.org/resource/> .\n\n{\n: owl:sameAs dbp:Cool.\n\n}\n\n<http://rdfunit.aksw.org> {\n: owl:sameAs dbp:Super .\n'^b''..."
-
----
 File: https://raw.githubusercontent.com/AKSW/RDFUnit/master/rdfunit-core%2Fsrc%2Ftest%2Fresources%2Forg%2Faksw%2Frdfunit%2Fvalidate%2Fdata%2Fowl%2FOWLQCARDT_Wrong_Min.ttl parsed as ttl
 
 In repository: https://github.com/AKSW/RDFUnit
@@ -290,7 +226,7 @@ In repository: https://github.com/geneontology/go-shapes
 File: https://raw.githubusercontent.com/biotea/validation-shapes-bioschemas/master/journal.jsonld parsed as json-ld
 
 In repository: https://github.com/biotea/validation-shapes-bioschemas
-> Expecting value: line 2 column 1 (char 1)
+> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
 
 ---
 File: https://raw.githubusercontent.com/rgmprabodha/Internship_Testing_Projects/master/shexjava%2Fsrc%2Fmain%2Fresources%2FtemperatureReport.ttl parsed as ttl
