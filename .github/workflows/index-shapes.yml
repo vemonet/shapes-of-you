@@ -4,18 +4,19 @@ on:
     # Everyday at 01:00 
     - cron:  '00 01 * * *'
   workflow_dispatch:
-  #   inputs:
-  #     clear:
-  #       description: 'Clear the Shapes triplestore'
-  #       required: true
-  #       default: 'false'
+    inputs:
+      logging:
+        description: 'Logging level (debug/info/warning/error)'
+        required: true
+        default: 'info'
   # push:
   #   branches: [ main ]
   #   paths:
   #   - '.github/workflows/get-shapes.yml'
   #   - 'etl/*'
   #   - 'EXTRAS_GITHUB_REPOSITORIES.txt'
-
+env:
+  LOGGING_LEVEL: ${{ github.event.inputs.logging }}
 jobs:
   query-git-services-for-shapes:
     strategy:

@@ -2,6 +2,7 @@ import os
 import sys
 import shutil
 import pathlib
+import logging
 from datetime import datetime, timedelta
 import re
 import urllib
@@ -38,6 +39,16 @@ RML = Namespace("http://semweb.mmlab.be/ns/rml#")
 NP_TEMPLATE = Namespace("https://w3id.org/np/o/ntemplate/")
 
 def main(argv):
+  logging_level = os.environ.get("LOGGING_LEVEL", "")
+  if logging_level == 'info':
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+  elif logging_level == 'error':
+    logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
+  else:
+    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    # filename='/tmp/app.log', filemode='w')
+
+  # Get git service to query from args
   if len(argv) > 1:
     git_registry = argv[1].lower()
   else:
@@ -49,7 +60,7 @@ def main(argv):
     topics = argv[2]
     if git_registry != 'github-extras':
       topics = topics.split(',')
-  print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(topics))
+  logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(topics))
 
   # Reset report file
   with open(root / '../REPORT.md', 'w') as f:
@@ -98,7 +109,6 @@ def check_run_time(time_start, repo_list, current_repo):
   runtime = datetime.now() - time_start
   # if runtime > timedelta(seconds=40):
   if runtime > timedelta(minutes=345):
-    print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits')
     repo_missing = repo_list[repo_list.index(current_repo):]
     add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
       + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
@@ -106,9 +116,21 @@ def check_run_time(time_start, repo_list, current_repo):
   else:
     return False
 
-def add_to_report(report_string):
+def add_to_report(report_message, file_provided=None):
+  """A function to write file parsing error logs to a markdown file report
+  """
+  report_file = "\n\n---\n" + report_message
+  if file_provided:
+    # Report error for a file not properly parsed, ignore xml and json
+    file_provided = str(file_provided)
+    if not file_provided.endswith('.xml') and not file_provided.endswith('.json'):
+      report_file = 'File: ' + file_provided + '\n\n' + report_file
+      report_message = '🗑 File: ' + file_provided + ' - ' + report_message
+    logging.error('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + report_message.replace('\n', ''))
+  else:
+    logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + report_message.replace('\n', ''))
   with open(root / '../REPORT.md', 'a') as f:
-    f.write(report_string)
+    f.write(report_file)
 
 def generate_github_file_url(repo_url, filepath, branch):
   """GitHub does not provide a way to get the download URL directly from GraphQL
@@ -157,8 +179,7 @@ def test_sparql_endpoint(sparql_endpoint):
           FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
           return False
       except Exception as e:
-        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n"
-          + str(e) + "\n\n---\n")
+        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
         return False
     else:
       return True
@@ -189,10 +210,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             shape_label = id_
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
       except Exception as e:
-        # print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OBO parser for file ' + github_file_url)
-        add_to_report('File: ' + github_file_url + "\n\n"
-              + 'In repository: ' + repo_url + "\n> " 
-              + str(e) + "\n\n---\n")
+        add_to_report('In repository: ' + repo_url + "\n> " + str(e), github_file_url)
 
     # Index OpenAPI files 
     elif shape_format == 'openapi':
@@ -215,17 +233,14 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         # TODO: get operations hasPart?
         shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('OpenAPI')))
       except Exception as e:
-        # TODO: YARRML? Search for prefixes and mappings at the root of YAML
         pass
-        # print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 Issue with OpenAPI parser for file ' + github_file_url)
-        # print(e)
-        # add_to_report('File: ' + github_file_url + "\n\n"
-        #       + 'In repository: ' + repo_url + "\n> " 
-        #       + str(e) + "\n\n---\n")
+        # TODO: YARRML? Search for prefixes and mappings at the root of YAML
+        # add_to_report('In repository: ' + repo_url + "\n> " 
+        #       + str(e), github_file_url)
 
     # Search for shex files
     elif shape_format == 'shex':
-      # no parsing possible for shex
+      # No parsing possible for shex
       shape_found = True
       # TODO: use https://schema.org/SoftwareSourceCode ?
       shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
@@ -241,7 +256,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       # # if rdf_file_path.endswith('.shexj'):
       # #   with open(root / '../' + rdf_file_path, 'a') as f:
       # #     shex_rdf = f.read()
-      # print(shex_rdf)
+      # logging.debug(shex_rdf)
       # # for shape in g.subjects(RDF.type, SHEX.ShapeAnd):
       # #     add_shape_to_graph(shapes_graph, rdf_file_path, github_file_url, repo_url, shape, SHEX.schema)
       # # for shape in g.subjects(RDF.type, SHEX.Shape):
@@ -297,7 +312,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           except:
             shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
       except:
-        print('❌️ Issue opening file: ' + str(rdf_file_path))
+        logging.error('❌️ Issue opening file: ' + str(rdf_file_path))
 
     # Parse RDF files
     else:
@@ -307,21 +322,20 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             g = ConjunctiveGraph()
           g.parse(str(rdf_file_path.absolute()), format=shape_format)
       except Exception as e:
-          if shape_format == 'xml' and str(rdf_file_path).endswith('.owl'):
+          if shape_format == 'xml' and (str(rdf_file_path).endswith('.owl') or str(rdf_file_path).endswith('.rdf')):
+            # Try parsing with turtle for .owl and .rdf files
             try: 
               g.parse(str(rdf_file_path.absolute()), format='ttl')
             except:
-              print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
-              if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
-                  add_to_report('File: ' + github_file_url + " parsed as " + shape_format + "\n\n"
-                      + 'In repository: ' + repo_url + "\n> " 
-                      + str(e) + "\n\n---\n")
+              add_to_report(
+                'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e), 
+                github_file_url
+              )
           else:
-            print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗑 RDF parser for ' + shape_format + ' did not worked for the file ' + github_file_url)
-            if not str(rdf_file_path).endswith('.xml') and not str(rdf_file_path).endswith('.json'):
-                add_to_report('File: ' + github_file_url + " parsed as " + shape_format + "\n\n"
-                    + 'In repository: ' + repo_url + "\n> " 
-                    + str(e) + "\n\n---\n")
+            add_to_report(
+              'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e), 
+              github_file_url
+            )
 
       # Search for SHACL shapes
       for shape in g.subjects(RDF.type, SH.NodeShape):
@@ -490,6 +504,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     # Add repository RDF
     if shape_found:
+      logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + "✔️ Shape found in file " + github_file_url)
       shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['DataCatalog']))
       # TODO: change, schema:codeRepository is a property, not a class, but not much available..
       shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url.rsplit('/', 1)[1])))
@@ -499,7 +514,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
     return shapes_graph
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
-    print('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
+    logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
     shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
     os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
     # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
@@ -584,9 +599,8 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
               headers={"Authorization": "Bearer {}".format(oauth_token)},
           )
           if stopping_job:
-            add_to_report('\n\n\nSkipping result pages for topic ' + str(github_topic))
+            add_to_report('Skipping result pages for topic ' + str(github_topic))
             break
-          # print(json.dumps(data, indent=4))
           for repository in data["data"]["search"]["repositories"]:
               stopping_job = check_run_time(time_start, data["data"]["search"]["repositories"], repository)
               if stopping_job:
@@ -597,8 +611,8 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
                 branch = repo_json['defaultBranchRef']['name']
                 repo_description = repo_json["description"]
               except Exception as e:
-                print(e)
-                print('🕊 No default_branch found for ' + repo_url + ', using master')
+                logging.error(e)
+                logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
                 branch = 'master'
                 repo_description = ''
               repo_description = repo_json["description"]
@@ -609,7 +623,7 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
           ]
           after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
       if stopping_job:
-        add_to_report('\n\n\nSkipping topic: ' + github_topic + ' in ' + str(topics))
+        add_to_report('Skipping topic: ' + github_topic + ' in ' + str(topics))
         break
     
     return shapes_graph
@@ -646,15 +660,14 @@ def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
         query=github_graphql_get_extra(extra_repo),
         headers={"Authorization": "Bearer {}".format(oauth_token)},
     )
-    # print(json.dumps(data, indent=4))
     repo_json = data["data"]["repository"]
     repo_url = repo_json["url"]
     try:
       branch = repo_json['defaultBranchRef']['name']
       repo_description = repo_json["description"]
     except Exception as e:
-      print(e)
-      print('🕊 No default_branch found for repo_url, using master')
+      logging.error(e)
+      logging.warning('🕊 No default_branch found for repo_url, using master')
       branch = 'master'
       repo_description = ''
     shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
@@ -671,7 +684,7 @@ def fetch_from_gitlab(shapes_graph, gl, topics):
             branch = repo_json['default_branch']
           else:
             branch = 'master'
-            print('🕊 No default_branch found for repo_url, using master')
+            logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
           repo_descriptions = []
           if repo_json["name"]:
             repo_descriptions.append(repo_json["name"])
@@ -681,10 +694,7 @@ def fetch_from_gitlab(shapes_graph, gl, topics):
           repo_description = ' - '.join(repo_descriptions)
           shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
         except Exception as e:
-          add_to_report('\n\n\nGitLab issue processing: ' + str(repo_json) + '\n\n')
-          add_to_report(e)
-          print('GitLab issue processing: ' + str(repo_json))
-          print(e)
+          add_to_report('GitLab issue processing: ' + str(repo_json) + '\n\n' + str(e))
     
     return shapes_graph
 
@@ -715,7 +725,7 @@ def fetch_from_gitee(shapes_graph, token, topics):
           branch = repo_json['default_branch']
         else:
           branch = 'master'
-          print('🕊 No default_branch found for repo_url, using master')
+          logging.warning('🕊 No default_branch found for repo_url, using master')
         repo_descriptions = []
         if repo_json["name"]:
           repo_descriptions.append(repo_json["name"])
@@ -726,7 +736,7 @@ def fetch_from_gitee(shapes_graph, token, topics):
         # repo_description = repo_json["shortDescriptionHTML"]
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
       if stopping_job:
-        add_to_report('\n\n\nSkipping topic: ' + search_topic + ' in ' + str(topics))
+        add_to_report('Skipping topic: ' + search_topic + ' in ' + str(topics))
         break
     return shapes_graph
 
