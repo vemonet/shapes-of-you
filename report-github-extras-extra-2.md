@@ -5,6 +5,9 @@
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
+
+
+---
 SPARQL endpoint failed: http://iricelino.org/rdfa/sample-annotated-page.html
 
 EndPointNotFound: it was impossible to connect with the endpoint in that address, check if it is correct. 
@@ -28,41 +31,321 @@ SPARQL endpoint failed: any
 unknown url type: 'any?query=SELECT+%2A+WHERE+%7B+%3Fs+%3Fp+%3Fo+%7D+LIMIT+10&format=json&output=json&results=json'
 
 ---
-File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-mapper-parent%2Fjena-sparql-api-mapper-core%2Fsrc%2Ftest%2Fresources%2Fdbpedia-companies.ttl parsed as ttl
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/pom.xml:18:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0module
 
-In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-json/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-views/pom.xml:12:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/trash/jena-sparql-api-playground/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-virtuoso/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-mapper-parent/pom.xml:12:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-mapper-parent/jena-sparql-api-mapper-core/pom.xml:12:49: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-resources-test-config/pom.xml:11:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-resource-shape/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-conjure/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-core/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-server-utils/pom.xml:13:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-stmt/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-cache-h2/pom.xml:12:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-io-hdt/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/rdf-mapper-benchmark-parent/pom.xml:24:69: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0connection
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/rdf-mapper-benchmark-parent/rdf-mapper-impl-alibaba/pom.xml:11:41: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/pom.xml:18:22: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0module
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-api/pom.xml:11:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-api-simple/pom.xml:11:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-impl-jsa/pom.xml:11:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-impl-treesolver/pom.xml:11:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-impl-sparqlalgebra/pom.xml:11:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-bundle-impl/pom.xml:11:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-dataset-analysis/pom.xml:10:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-impl-afmu/pom.xml:11:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-core/pom.xml:11:32: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-impl-fragment/pom.xml:15:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/benchmarking/sparqlqc-jena3/sparqlqc-utils-mu/pom.xml:11:38: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-cache/pom.xml:12:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-example-proxy/pom.xml:13:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-example-proxy/src/main/webapp/WEB-INF/web.xml:9:33: Repeat node-elements inside property elements: http://java.sun.com/xml/ns/j2eeservlet-name
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-rdf-stream/pom.xml:10:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-dcat-parent/pom.xml:10:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-dcat-parent/jena-sparql-api-dcat-api/pom.xml:12:47: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-mapper-proxy/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-example-views/pom.xml:10:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-collections/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-path-finding/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-resources-sparqlqc/pom.xml:10:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-resources/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-batch-limes/pom.xml:14:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-rx/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-rdf-view/pom.xml:10:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-utils/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-server-standalone/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-service-description/pom.xml:12:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-changeset/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-concepts/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-geo/pom.xml:13:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-sparql-ext/pom.xml:15:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-mapper-annotations/pom.xml:13:35: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-update/pom.xml:12:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-playground/pom.xml:14:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-algebra/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-web/pom.xml:8:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-io-core/pom.xml:14:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-batch/pom.xml:13:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-batch/src/main/resources/trash/testList.xml:13:36: Repeat node-elements inside property elements: http://www.springframework.org/schema/beansbean
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-vocabs/pom.xml:10:36: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-query-containment/pom.xml:12:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-data-client/pom.xml:10:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactId
+
+---
+RDF parsed as xml, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/jena-sparql-api-udf/pom.xml:12:42: Repeat node-elements inside property elements: http://maven.apache.org/POM/4.0.0artifactIdFile: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-mapper-parent%2Fjena-sparql-api-mapper-core%2Fsrc%2Ftest%2Fresources%2Fdbpedia-companies.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
 > at line 2 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'^b'@prefix xsd:  <http://www.w3.org/2001/XMLSchema#>\n@prefix rd'..."
+"b'@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n'^b'@prefix xsd:  <http://www.w3.org/2001/XMLSchema#>\n@prefix rd'..."File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-dcat-parent%2Fjena-sparql-api-dcat-api%2Fsrc%2Fmain%2Fresources%2Flangs.ttl
+
+
 
 ---
-File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-dcat-parent%2Fjena-sparql-api-dcat-api%2Fsrc%2Fmain%2Fresources%2Flangs.ttl parsed as ttl
-
-In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+RDF parsed as ttl, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
 > at line 9 of <>:
 Bad syntax (Prefix "skos:" not bound) at ^ in:
-"...b'http://www.example.org/> .\n\n\nr:rdfxml\n  a o:ContentType ;\n  '^b'skos:prefLabel "RDF/XML" ;\n  skos:altLabel "RDFXML", "RDF/XM'..."
+"...b'http://www.example.org/> .\n\n\nr:rdfxml\n  a o:ContentType ;\n  '^b'skos:prefLabel "RDF/XML" ;\n  skos:altLabel "RDFXML", "RDF/XM'..."File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-resources%2Fsrc%2Fmain%2Fresources%2Fxsd-ontology.ttl
+
+
 
 ---
-File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-resources%2Fsrc%2Fmain%2Fresources%2Fxsd-ontology.ttl parsed as ttl
-
-In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+RDF parsed as ttl, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
 > at line 4 of <>:
 Bad syntax (Prefix "rdfs:" not bound) at ^ in:
-"...b'http://www.w3.org/2000/01/rdf-schema#>\n\nxsd:negativeInteger '^b'rdfs:subClassOf xsd:nonPositiveInteger .\nxsd:nonPositiveInte'..."
+"...b'http://www.w3.org/2000/01/rdf-schema#>\n\nxsd:negativeInteger '^b'rdfs:subClassOf xsd:nonPositiveInteger .\nxsd:nonPositiveInte'..."File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-algebra%2Fsrc%2Fmain%2Fresources%2Fbnode-rewrites.ttl
+
+
 
 ---
-File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-algebra%2Fsrc%2Fmain%2Fresources%2Fbnode-rewrites.ttl parsed as ttl
-
-In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+RDF parsed as ttl, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
 > at line 10 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'/> .\n\n@prefix ent: <http://www.ontotext.com/owlim/entity#>\n\n'^b'@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .'..."
+"...b'/> .\n\n@prefix ent: <http://www.ontotext.com/owlim/entity#>\n\n'^b'@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .'..."File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-io-core%2Fsrc%2Fmain%2Fresources%2Fsys-encoders.ttl
+
+
 
 ---
-File: https://raw.githubusercontent.com/SmartDataAnalytics/jena-sparql-api/master/jena-sparql-api-io-core%2Fsrc%2Fmain%2Fresources%2Fsys-encoders.ttl parsed as ttl
-
-In repository: https://github.com/SmartDataAnalytics/jena-sparql-api
+RDF parsed as ttl, in repository: https://github.com/SmartDataAnalytics/jena-sparql-api
 > at line 1 of <>:
 Bad syntax (Prefix "eg:" not bound) at ^ in:
 "b''^b'eg:sysCmdLbzip2\n  a eg:SysCmd ;\n  eg:sysCmd "/usr/bin/lbzip2'..."
@@ -102,15 +385,21 @@ Response:
 b'{\n  "message": "Not found or unauthorized."\n}'
 
 ---
-File: https://raw.githubusercontent.com/CLARIAH/wp4-cow-conversions/master/temp%2Fhg%2Fhg-api.rdf parsed as xml
-
-In repository: https://github.com/CLARIAH/wp4-cow-conversions
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/temp/hg/hg-api.rdf:1:0: not well-formed (invalid token)
+RDF parsed as json-ld, in repository: https://github.com/CLARIAH/wp4-cow-conversions
+> Extra data: line 9 column 5 (char 248)
 
 ---
-File: https://raw.githubusercontent.com/CLARIAH/wp4-cow-conversions/master/temp%2Fhg%2Fhg-vocab.rdf parsed as xml
+RDF parsed as json-ld, in repository: https://github.com/CLARIAH/wp4-cow-conversions
+> Extra data: line 9 column 5 (char 245)
 
-In repository: https://github.com/CLARIAH/wp4-cow-conversions
+---
+RDF parsed as json-ld, in repository: https://github.com/CLARIAH/wp4-cow-conversions
+> Expecting property name enclosed in double quotes: line 331 column 3 (char 10848)File: https://raw.githubusercontent.com/CLARIAH/wp4-cow-conversions/master/temp%2Fhg%2Fhg-vocab.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/CLARIAH/wp4-cow-conversions
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/temp/hg/hg-vocab.rdf:1:0: not well-formed (invalid token)
 
 ---
@@ -203,27 +492,55 @@ Response:
 b'{\n  "message": "Not found."\n}'
 
 ---
-File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fspatial-disjointness%2Fsd-bfo2-fail.owl parsed as xml
-
-In repository: https://github.com/BFO-ontology/BFO
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/spatial-disjointness/sd-bfo2-fail.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/broadinstitute/molecular-data-provider
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fspatial-disjointness%2Fsd-bfo2-succeed.owl parsed as xml
-
-In repository: https://github.com/BFO-ontology/BFO
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/spatial-disjointness/sd-bfo2-succeed.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/broadinstitute/molecular-data-provider
+> sequence item 0: expected str instance, NoneType found
 
 ---
-File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fspatial-disjointness%2Fsd-atemporal.owl parsed as xml
-
-In repository: https://github.com/BFO-ontology/BFO
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/spatial-disjointness/sd-atemporal.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/tests/chebi-classification/catalog-v001.xml:5:156: Repeat node-elements inside property elements: urn:oasis:names:tc:entity:xmlns:xml:cataloguri
 
 ---
-File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fproperty-chains%2Fhas-part-chains.owl parsed as xml
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/spatial-disjointness/catalog-v001.xml:4:140: Repeat node-elements inside property elements: urn:oasis:names:tc:entity:xmlns:xml:cataloguri
 
-In repository: https://github.com/BFO-ontology/BFO
+---
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/2012-07-20-graz/BFO2-Reference-for-html_files/themedata.xml:1:2: not well-formed (invalid token)
+
+---
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/2012-11-15-bugfix/BFO2-Reference-for-html_files/themedata.xml:1:2: not well-formed (invalid token)
+
+---
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/2014-05-03/BFO2-Reference-for-html_files/themedata.xml:1:2: not well-formed (invalid token)File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fspatial-disjointness%2Fsd-bfo2-fail.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/spatial-disjointness/sd-bfo2-fail.owl:1:6: not well-formed (invalid token)File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fspatial-disjointness%2Fsd-bfo2-succeed.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/spatial-disjointness/sd-bfo2-succeed.owl:1:6: not well-formed (invalid token)File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fspatial-disjointness%2Fsd-atemporal.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/spatial-disjointness/sd-atemporal.owl:1:6: not well-formed (invalid token)File: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src%2Fontology%2Fowl-group%2Fexamples%2Fproperty-chains%2Fhas-part-chains.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/BFO-ontology/BFO
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/owl-group/examples/property-chains/has-part-chains.owl:1:6: not well-formed (invalid token)
 
 ---
@@ -245,6 +562,11 @@ SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 byte indices must be integers or slices, not str
 
 ---
+SPARQL endpoint failed: http://dati.camera.it/sparql
+
+HTTP Error 503: Service Temporarily Unavailable
+
+---
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
@@ -261,5 +583,3 @@ EndPointInternalError: endpoint returned code 500 and response.
 
 Response:
 b'Virtuoso 42000 Error The estimated execution time 420 (sec) exceeds the limit of 400 (sec).\n\nSPARQL query:\nSELECT * WHERE { ?s ?p ?o } LIMIT 10'
-
----
