@@ -36232,27 +36232,27 @@ RDF parsed as xml, in repository: https://github.com/victorsteven/Go-JWT-Postgre
 > sequence item 0: expected str instance, NoneType found
 
 ---
-RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
-> sequence item 0: expected str instance, NoneType found
-
----
-RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
-> sequence item 0: expected str instance, NoneType found
-
----
-RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
-> sequence item 0: expected str instance, NoneType found
-
----
-RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
-> sequence item 0: expected str instance, NoneType found
-
----
-RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
-> sequence item 0: expected str instance, NoneType found
-
----
 RDF parsed as xml, in repository: https://github.com/IndomaximTechID/storaji
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
+> sequence item 0: expected str instance, NoneType found
+
+---
+RDF parsed as xml, in repository: https://github.com/digiaonline/graphql-php
 > sequence item 0: expected str instance, NoneType found
 
 ---
@@ -36464,12 +36464,12 @@ RDF parsed as xml, in repository: https://github.com/Alfanous-team/alfanous
 > sequence item 0: expected str instance, NoneType found
 
 ---
-RDF parsed as json-ld, in repository: https://github.com/ropensci/taxize
-> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
-
----
 RDF parsed as json-ld, in repository: https://github.com/BookmarksDev/bookmarks.dev
 > Expecting ',' delimiter: line 27 column 16 (char 837)
+
+---
+RDF parsed as json-ld, in repository: https://github.com/ropensci/taxize
+> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
 
 ---
 RDF parsed as json-ld, in repository: https://github.com/acacode/swagger-typescript-api
@@ -38294,8 +38294,8 @@ RDF parsed as xml, in repository: https://github.com/miracuthbert/saas-boilerpla
 > sequence item 0: expected str instance, NoneType found
 
 ---
-RDF parsed as xml, in repository: https://github.com/hummingbird-me/kitsu-server
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/spec/fixtures/youtube_service/notification.xml:9:24: Repeat node-elements inside property elements: http://www.youtube.com/xml/schemas/2015videoId
+RDF parsed as xml, in repository: https://github.com/miracuthbert/saas-boilerplate
+> sequence item 0: expected str instance, NoneType found
 
 ---
 RDF parsed as xml, in repository: https://github.com/alessandrodd/apk_api_key_extractor
@@ -38419,7 +38419,7 @@ RDF parsed as json-ld, in repository: https://github.com/foxifyjs/foxify
 
 ---
 RDF parsed as json-ld, in repository: https://github.com/ropensci/rcrossref
-> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+> Expecting value: line 2 column 1 (char 1)
 
 ---
 RDF parsed as json-ld, in repository: https://github.com/X-SLAYER/Flutter-Tiktok-UI-API-Clone
