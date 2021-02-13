@@ -15,6 +15,6 @@ PREFIX shex: <http://www.w3.org/ns/shex#>
 SELECT ?repository (count(?shapeFileUri) AS ?shapeFileCount) ?repo_description WHERE { 
   ?shapeFileUri a schema:SoftwareSourceCode ;
     rdfs:label ?label ;
-    dc:source ?repository .
+    schema:codeRepository ?repository .
   OPTIONAL { ?repository rdfs:comment ?repo_description }
 } GROUP BY ?repository ?repo_description

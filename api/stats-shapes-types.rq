@@ -18,6 +18,6 @@ SELECT DISTINCT ?shape_type (count(distinct ?repository) AS ?repos_count) (count
 WHERE { 
     ?shape_file a schema:SoftwareSourceCode ;
         a ?shape_type ;
-        dc:source ?repository .
+        schema:codeRepository ?repository .
     FILTER(?shape_type != schema:SoftwareSourceCode)
 } GROUP BY ?shape_type

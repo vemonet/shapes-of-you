@@ -24,7 +24,7 @@ SELECT DISTINCT * WHERE {
     ?shapeFileUri a schema:SoftwareSourceCode ;
         a ?shape_type ;
         rdfs:label ?label ;
-        dc:source ?repository .
+        schema:codeRepository ?repository .
     FILTER(?shape_type != schema:SoftwareSourceCode)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
