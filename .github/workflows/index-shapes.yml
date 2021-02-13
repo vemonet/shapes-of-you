@@ -24,11 +24,17 @@ jobs:
       matrix:
         include:
         - git-service: github
-          run-label: topics-w3c
-          search-topics: topic:owl,topic:shacl-shapes,topic:shex,topic:grlc,topic:skos,topic:obofoundry
+          run-label: topics-onto
+          search-topics: topic:owl,topic:skos,topic:obofoundry
+        - git-service: github
+          run-label: topics-schema
+          search-topics: topic:shacl-shapes,topic:shex,topic:grlc
+        - git-service: github
+          run-label: topics-smartapi
+          search-topics: topic:smartapi,topic:ncats-translator,topic:translator-api
         - git-service: github
           run-label: topics-openapi
-          search-topics: topic:openapi,topic:smartapi,topic:ncats-translator,topic:translator-api
+          search-topics: topic:openapi
         - git-service: github
           run-label: topics-api
           search-topics: topic:api
@@ -44,9 +50,6 @@ jobs:
         - git-service: github
           run-label: direct-search-openapi
           search-topics: ncats+translator,biothings,smartapi,knowledge+provider
-        - git-service: github
-          run-label: direct-search-shacl
-          search-topics: shacl
         - git-service: gitee
           run-label: ontology-run
           search-topics: ontology,sparql
@@ -56,6 +59,9 @@ jobs:
         - git-service: gitlab
           run-label: main-run
           search-topics: owl,shacl,shex,sparql,skos,obofoundry
+        # - git-service: github #eclipse/rdf4j slow down
+        #   run-label: direct-search-shacl
+        #   search-topics: shacl
         # - git-service: gitlab
         #   run-label: run-3
         #   search-topics: ontology # Fails without warnings

@@ -123,14 +123,16 @@ def add_to_report(report_message, file_provided=None):
   if file_provided:
     # Report error for a file not properly parsed, ignore xml and json
     file_provided = str(file_provided)
-    if not file_provided.endswith('.xml') and not file_provided.endswith('.json'):
+    if file_provided.endswith('.xml') or file_provided.endswith('.json'):
+      report_file = ''
+    else:
       report_file = 'File: ' + file_provided + '\n\n' + report_file
       report_message = '🗑 File: ' + file_provided + ' - ' + report_message
-    logging.error('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + report_message.replace('\n', ''))
-  else:
+  if report_file:
+    report_file = "\n\n---\n" + report_file
     logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + report_message.replace('\n', ''))
-  with open(root / '../REPORT.md', 'a') as f:
-    f.write(report_file)
+    with open(root / '../REPORT.md', 'a') as f:
+      f.write(report_file)
 
 def generate_github_file_url(repo_url, filepath, branch):
   """GitHub does not provide a way to get the download URL directly from GraphQL

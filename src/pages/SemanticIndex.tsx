@@ -1054,7 +1054,7 @@ SELECT DISTINCT * WHERE {
     ?shapeFileUri a schema:SoftwareSourceCode ;
         a ?shape_type ;
         rdfs:label ?label ;
-        dc:source ?repository .
+        schema:codeRepository ?repository .
     FILTER(?shape_type != schema:SoftwareSourceCode)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
@@ -1074,7 +1074,7 @@ SELECT DISTINCT * WHERE {
     ?shapeFileUri a schema:SoftwareSourceCode ;
         a ?shape_type ;
         rdfs:label ?label ;
-        dc:source ?repository ;
+        schema:codeRepository ?repository ;
         dcterms:hasPart ?shapes .
     FILTER(?shape_type != schema:SoftwareSourceCode)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
@@ -1094,7 +1094,7 @@ PREFIX shex: <http://www.w3.org/ns/shex#>
 SELECT ?repository (count(?shapeFileUri) AS ?shapeFileCount) ?repo_description WHERE { 
   ?shapeFileUri a <https://schema.org/SoftwareSourceCode> ;
     rdfs:label ?label ;
-    dc:source ?repository .
+    schema:codeRepository ?repository .
   OPTIONAL { ?repository rdfs:comment ?repo_description }
 } GROUP BY ?repository ?repo_description
 `
@@ -1111,7 +1111,7 @@ SELECT DISTINCT ?shape_type (count(distinct ?repository) AS ?repos_count) (count
 WHERE { 
     ?shape_file a schema:SoftwareSourceCode ;
         a ?shape_type ;
-        dc:source ?repository .
+        schema:codeRepository ?repository .
     FILTER(?shape_type != schema:SoftwareSourceCode)
 } GROUP BY ?shape_type
 `
