@@ -301,7 +301,7 @@ File: https://raw.githubusercontent.com/biotea/validation-shapes-bioschemas/mast
 
 ---
 RDF parsed as json-ld, in repository: https://github.com/biotea/validation-shapes-bioschemas
-> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+> Expecting value: line 2 column 1 (char 1)
 
 ---
 File: https://raw.githubusercontent.com/rgmprabodha/Internship_Testing_Projects/master/shexjava%2Fsrc%2Fmain%2Fresources%2FtemperatureReport.ttl
@@ -2870,14 +2870,6 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 
 byte indices must be integers or slices, not str
-
----
-
-
----
-SPARQL endpoint failed: http://dati.camera.it/sparql
-
-HTTP Error 503: Service Temporarily Unavailable
 
 ---
 
