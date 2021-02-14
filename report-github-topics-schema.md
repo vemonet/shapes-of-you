@@ -102,7 +102,7 @@ File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fper
 
 ---
 RDF parsed as json-ld, in repository: https://github.com/weso/shaclex
-> Expecting value: line 2 column 1 (char 1)
+> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
 
 ---
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fthing.jsonld
