@@ -634,6 +634,14 @@ byte indices must be integers or slices, not str
 
 
 ---
+SPARQL endpoint failed: http://opencitations.net/sparql
+
+HTTP Error 524: 
+
+---
+
+
+---
 SPARQL endpoint failed: https://joinup.ec.europa.eu/sparql
 
 EndPointNotFound: it was impossible to connect with the endpoint in that address, check if it is correct. 
