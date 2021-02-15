@@ -104,17 +104,23 @@ def main(argv):
 
 def check_run_time(time_start, repo_list, current_repo):
   """Check for how long the script has been running to stop before hitting GitHub Actions workflow 6h job limit
-  Stop if more than 5h45 (345 min)
+  Stop if more than 5h30 (330 min)
   """
   runtime = datetime.now() - time_start
   # if runtime > timedelta(seconds=40):
-  if runtime > timedelta(minutes=345):
+  if runtime >= timedelta(minutes=330):
     repo_missing = repo_list[repo_list.index(current_repo):]
     add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
       + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
-    return True
-  else:
-    return False
+    # Stop the script
+    sys.exit(0)
+  # TODO: include in check run time?
+  # if stopping_job:
+  #   add_to_report('Skipping topic: ' + github_topic + ' in ' + str(topics))
+  #   break
+  # if stopping_job:
+  #   add_to_report('Skipping result pages for topic ' + str(github_topic))
+  #   break
 
 def add_to_report(report_message, file_provided=None):
   """A function to write file parsing error logs to a markdown file report
@@ -510,7 +516,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     # Add repository RDF
     if shape_found:
-      logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + "✔️ Shape found in file " + github_file_url)
+      logging.debug('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + "✔️ Shape found in file " + github_file_url)
       shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['DataCatalog']))
       # TODO: change, schema:codeRepository is a property, not a class, but not much available..
       shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url.rsplit('/', 1)[1])))
@@ -595,7 +601,6 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
     We filter repositories by topics provided as argument
     """
     time_start = datetime.now()
-    stopping_job = False
     for github_topic in topics:
       has_next_page = True
       after_cursor = None
@@ -604,13 +609,8 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
               query=github_graphql_get_shapes(github_topic, after_cursor),
               headers={"Authorization": "Bearer {}".format(oauth_token)},
           )
-          if stopping_job:
-            add_to_report('Skipping result pages for topic ' + str(github_topic))
-            break
           for repository in data["data"]["search"]["repositories"]:
-              stopping_job = check_run_time(time_start, data["data"]["search"]["repositories"], repository)
-              if stopping_job:
-                break
+              check_run_time(time_start, data["data"]["search"]["repositories"], repository)
               repo_json = repository["repo"]
               repo_url = repo_json["url"]
               try:
@@ -628,9 +628,6 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
               "hasNextPage"
           ]
           after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-      if stopping_job:
-        add_to_report('Skipping topic: ' + github_topic + ' in ' + str(topics))
-        break
     
     return shapes_graph
 
@@ -719,9 +716,7 @@ def fetch_from_gitee(shapes_graph, token, topics):
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
       for repo_json in gitee_repos_list:
-        stopping_job = check_run_time(time_start, gitee_repos_list, repo_json)
-        if stopping_job:
-          break
+        check_run_time(time_start, gitee_repos_list, repo_json)
 
         repo_url = repo_json["html_url"].rstrip('.git')
 
@@ -741,9 +736,6 @@ def fetch_from_gitee(shapes_graph, token, topics):
         repo_description = ' - '.join(repo_descriptions)
         # repo_description = repo_json["shortDescriptionHTML"]
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-      if stopping_job:
-        add_to_report('Skipping topic: ' + search_topic + ' in ' + str(topics))
-        break
     return shapes_graph
 
 

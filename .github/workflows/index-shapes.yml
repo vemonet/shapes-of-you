@@ -25,7 +25,10 @@ jobs:
         include:
         - git-service: github
           run-label: topics-onto
-          search-topics: topic:owl,topic:skos,topic:obofoundry
+          search-topics: topic:owl,topic:skos
+        - git-service: github
+          run-label: topics-obo
+          search-topics: topic:obofoundry
         - git-service: github
           run-label: topics-schema
           search-topics: topic:shacl-shapes,topic:shex,topic:grlc
