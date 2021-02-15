@@ -8576,6 +8576,14 @@ Bad syntax (objectList expected) at ^ in:
 
 
 ---
+SPARQL endpoint failed: https://bio2rdf.org/sparql
+
+<urlopen error [Errno -5] No address associated with hostname>
+
+---
+
+
+---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
@@ -8598,6 +8606,14 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 
 byte indices must be integers or slices, not str
+
+---
+
+
+---
+SPARQL endpoint failed: http://lod.openlinksw.com/sparql
+
+HTTP Error 502: Bad Gateway
 
 ---
 
