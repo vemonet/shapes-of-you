@@ -6202,37 +6202,6 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'p [\n      rr:template "{apellido}, {nombre}";\n    ]\n  ];\n  \n'^b'].\t\t\t\t\t\t\t\t\n'"
 
 ---
-File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping_hisco.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
-> at line 7 of <>:
-Bad syntax (expected qname after @prefix) at ^ in:
-"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
-
----
-File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
-> at line 7 of <>:
-Bad syntax (expected qname after @prefix) at ^ in:
-"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
-
----
-File: https://raw.githubusercontent.com/knaw-huc/rml-tool/master/output.nt
-
-
-
----
-RDF parsed as nt, in repository: https://github.com/knaw-huc/rml-tool
-> Invalid line: '^^http://www.w3.org/2001/XMLSchema#string .'
-
----
 File: https://raw.githubusercontent.com/dachafra/carml-rml-report/master/test-cases%2FRMLTC0007d-SPARQL%2Fmapping.ttl
 
 
@@ -6924,6 +6893,37 @@ RDF parsed as ttl, in repository: https://github.com/dachafra/carml-rml-report
 > at line 23 of <>:
 Bad syntax (bad escape) at ^ in:
 "...b'\n    rr:predicate ex:code ;\n    rr:objectMap [ rr:template "'^b'\\{\\{\\{ {ISO3166} \\}\\}\\}"; rr:termType rr:Literal]\n  ] .\n'"
+
+---
+File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping_hisco.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
+> at line 7 of <>:
+Bad syntax (expected qname after @prefix) at ^ in:
+"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
+
+---
+File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
+> at line 7 of <>:
+Bad syntax (expected qname after @prefix) at ^ in:
+"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
+
+---
+File: https://raw.githubusercontent.com/knaw-huc/rml-tool/master/output.nt
+
+
+
+---
+RDF parsed as nt, in repository: https://github.com/knaw-huc/rml-tool
+> Invalid line: '^^http://www.w3.org/2001/XMLSchema#string .'
 
 ---
 File: https://raw.githubusercontent.com/edesmontils/RML-Closer/master/RDFS-OWL-rules%2FOWL-LD%2Fowl-ld.n3
@@ -8518,17 +8518,6 @@ Bad syntax (Prefix "dct:" not bound) at ^ in:
 "...b'\nnpa:graph {\n  <*NPURI*> npa:hasHeadGraph <*HEADURI*> ;\n    '^b'dct:created "*DATETIME*"^^xsd:dateTime ;\n    npa:creationDay'..."
 
 ---
-File: https://raw.githubusercontent.com/tkuhn/nanopubstudies-supplementary/master/botstudy%2Fgenerif.template.trig
-
-
-
----
-RDF parsed as trig, in repository: https://github.com/tkuhn/nanopubstudies-supplementary
-> at line 10 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'efix npx: <http://krauthammerlab.med.yale.edu/nanopub/> .\n\n:'^b'@NPID@_Head {\n    :@NPID@ a :GeneRIFNanopublication .\n\n    :'..."
-
----
 File: https://raw.githubusercontent.com/tkuhn/fair-pkd-nanopubs/master/templates%2Fder-nanopub-end.trig
 
 
@@ -8562,6 +8551,17 @@ Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b':Organism_2;\n    rdfs:label "Lasioglossum mosselinum" ;\n    '^b'rdf:type dwc:Organism;\n    dwc:identificationID sub:Identifi'..."
 
 ---
+File: https://raw.githubusercontent.com/tkuhn/nanopubstudies-supplementary/master/botstudy%2Fgenerif.template.trig
+
+
+
+---
+RDF parsed as trig, in repository: https://github.com/tkuhn/nanopubstudies-supplementary
+> at line 10 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'efix npx: <http://krauthammerlab.med.yale.edu/nanopub/> .\n\n:'^b'@NPID@_Head {\n    :@NPID@ a :GeneRIFNanopublication .\n\n    :'..."
+
+---
 File: https://raw.githubusercontent.com/MaastrichtU-IDS/nanopublishing-drug-actions/master/ontology%2Fdao.ttl
 
 
@@ -8571,14 +8571,6 @@ RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/nanopublish
 > at line 17 of <>:
 Bad syntax (objectList expected) at ^ in:
 "...b'dfs:comment "A property that describes the action of a drug"'^b' ;  \n  rdfs:domain :Drug .\n\n:is-indicated-for-treatment-of a'..."
-
----
-
-
----
-SPARQL endpoint failed: https://bio2rdf.org/sparql
-
-<urlopen error [Errno -5] No address associated with hostname>
 
 ---
 
