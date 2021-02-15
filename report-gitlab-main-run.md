@@ -626,17 +626,17 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 
 
 ---
+SPARQL endpoint failed: https://bio2rdf.org/sparql
+
+<urlopen error [Errno -3] Temporary failure in name resolution>
+
+---
+
+
+---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
-
----
-
-
----
-SPARQL endpoint failed: http://opencitations.net/sparql
-
-HTTP Error 524: 
 
 ---
 
