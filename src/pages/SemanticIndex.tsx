@@ -100,6 +100,7 @@ export default function SemanticIndex() {
     checkbox_rml: true,
     checkbox_r2rml: true,
     checkbox_nanopub: true,
+    checkbox_dataset: true,
     show_pwa_alert: true,
     page: 1,
     shapes_per_page: 20,
@@ -124,7 +125,8 @@ export default function SemanticIndex() {
     'https://schema.org/APIReference': 'OpenAPI',
     'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
     'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
-    'https://w3id.org/np/o/ntemplate/AssertionTemplate': 'Nanopub'
+    'https://w3id.org/np/o/ntemplate/AssertionTemplate': 'Nanopub',
+    'http://www.w3.org/ns/dcat#Dataset': 'Dataset'
   }
 
   // componentDidMount: Query SPARQL endpoint to get the shapes files infos
@@ -533,6 +535,7 @@ export default function SemanticIndex() {
     if (shape_types_mappings[file_type] == 'SPARQL' || file_type == 'SPARQL') icon = '✨️'
     if (shape_types_mappings[file_type] == 'SKOS' || file_type == 'SKOS') icon = '📕'
     if (shape_types_mappings[file_type] == 'Nanopub' || file_type == 'Nanopub') icon = '🗞'
+    if (shape_types_mappings[file_type] == 'Dataset' || file_type == 'Dataset') icon = '💽'
     return icon;
   }
 
@@ -864,6 +867,16 @@ export default function SemanticIndex() {
           <FormControlLabel
             control={
               <Checkbox
+                checked={state.checkbox_obo}
+                onChange={handleCheckboxes}
+                name="checkbox_obo"
+                color="primary"
+              /> }
+            label={"OBO " + getFileLabel('OBO')}
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
                 checked={state.checkbox_rml}
                 onChange={handleCheckboxes}
                 name="checkbox_rml"
@@ -894,12 +907,12 @@ export default function SemanticIndex() {
           <FormControlLabel
             control={
               <Checkbox
-                checked={state.checkbox_obo}
+                checked={state.checkbox_dataset}
                 onChange={handleCheckboxes}
-                name="checkbox_obo"
+                name="checkbox_dataset"
                 color="primary"
               /> }
-            label={"OBO " + getFileLabel('OBO')}
+            label={"Dataset " + getFileLabel('Dataset')}
           />
           <FormControlLabel
             control={
