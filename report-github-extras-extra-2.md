@@ -350,14 +350,6 @@ byte indices must be integers or slices, not str
 
 
 ---
-SPARQL endpoint failed: http://lod.openlinksw.com/sparql
-
-HTTP Error 502: Bad Gateway
-
----
-
-
----
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
