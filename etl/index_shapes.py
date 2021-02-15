@@ -37,6 +37,7 @@ SIO = Namespace("http://semanticscience.org/resource/")
 R2RML = Namespace("http://www.w3.org/ns/r2rml#")
 RML = Namespace("http://semweb.mmlab.be/ns/rml#")
 NP_TEMPLATE = Namespace("https://w3id.org/np/o/ntemplate/")
+DCAT = Namespace("http://www.w3.org/ns/dcat#")
 
 def main(argv):
   logging_level = os.environ.get("LOGGING_LEVEL", "")
@@ -362,6 +363,25 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               shape_label = label
               # Fixing
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+
+      # Search for DCAT Datasets
+      for shape_file in g.subjects(RDF.type, DCAT.Dataset):
+          shape_found = True
+          shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+          shapes_graph.add((file_uri, RDF.type, DCAT.Dataset))
+          shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+          shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
+          # Get file label
+          for file_label in g.objects(shape_file, RDFS.label):
+            shapes_graph.add((file_uri, RDFS.comment, Literal(str(file_label))))
+            break
+          # shape_label = shape_file
+          # for label in g.objects(shape_file, RDFS.label):
+          #     # Try to get the label of the shape
+          #     shape_label = label
+          #     # Fixing
+          # shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+
 
       # Search for nanopublication templates
       # https://w3id.org/np/o/ntemplate/
