@@ -229,7 +229,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         if parser.specification['info']['description']:
           file_descriptions.append(parser.specification['info']['description'])
         if len(file_descriptions) > 0:
-          shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
+          shapes_graph.add((file_uri, RDFS.comment, Literal(' - '.join(file_descriptions))))
         # if not shape_label:
         #   shape_label = id_
         # TODO: get operations hasPart?
@@ -289,8 +289,12 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             file_descriptions = []
             if 'endpoint' in grlc_metadata:
               sparql_endpoint = grlc_metadata['endpoint']
-              shapes_graph.add((file_uri, VOID.sparqlEndpoint, Literal(sparql_endpoint)))
-              test_sparql_endpoint(sparql_endpoint)
+              try:
+                shapes_graph.add((file_uri, VOID.sparqlEndpoint, URIRef(sparql_endpoint)))
+                test_sparql_endpoint(sparql_endpoint)
+              except Exception as e:
+                logging.debug('Issue parsing SPARQL endpoint from .rq file')
+                logging.debug(e)
 
 
             if 'summary' in grlc_metadata and grlc_metadata['summary']:
@@ -299,7 +303,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               file_descriptions.append(grlc_metadata['description'])
               
             if len(file_descriptions) > 0:
-              shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
+              shapes_graph.add((file_uri, RDFS.comment, Literal(' - '.join(file_descriptions))))
             # If default params described for grlc SPARQL query we add then as shapes
             if 'defaults' in grlc_metadata:
               for args in grlc_metadata['defaults']:
@@ -363,7 +367,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           # Get template label
           for template_label in g.objects(shape_file, RDFS.label):
-            shapes_graph.add((file_uri, DC.description, Literal(str(template_label))))
+            shapes_graph.add((file_uri, RDFS.comment, Literal(str(template_label))))
             break
           # TODO: get the shapes inside
           nanopub_inputs = [
@@ -437,7 +441,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           # Now add the description
           for comment in g.objects(shape, RDFS.comment):
             file_descriptions.append(str(comment))
-          for label in g.objects(shape, DC.description):
+          for label in g.objects(shape, RDFS.comment):
             file_descriptions.append(str(label))
           for description in g.objects(shape, DCTERMS.description):
             file_descriptions.append(str(description))
@@ -445,7 +449,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           for ontology_label in g.objects(shape, RDFS.label):
             file_descriptions.append(str(ontology_label))
       if len(file_descriptions) > 0:
-        shapes_graph.add((file_uri, DC.description, Literal(' - '.join(file_descriptions))))
+        shapes_graph.add((file_uri, RDFS.comment, Literal(' - '.join(file_descriptions))))
 
       # Get SKOS concepts and concept scheme
       for shape in g.subjects(RDF.type, SKOS.Concept):
@@ -473,7 +477,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           # Now add the description
           for comment in g.objects(shape, RDFS.comment):
             file_descriptions.append(str(comment))
-          for label in g.objects(shape, DC.description):
+          for label in g.objects(shape, RDFS.comment):
             file_descriptions.append(str(label))
           for description in g.objects(shape, DCTERMS.description):
             file_descriptions.append(str(description))

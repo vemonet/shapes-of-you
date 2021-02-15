@@ -73,7 +73,7 @@ Here is an overview of the ontology:
 * Shape files: `schema:SoftwareSourceCode`
   * Properties:
     * `dcterms:hasPart`
-    * `dc:description`
+    * `rdfs:comment`
     * `schema:codeRepository` > `schema:DataCatalog`
   * Subclasses:
     * `sh:Shape` (SHACL shape)

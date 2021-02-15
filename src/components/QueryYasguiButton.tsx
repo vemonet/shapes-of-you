@@ -24,7 +24,7 @@ export default function QueryYasguiButton(props: any) {
   let params_array: any = []
   if (props.endpoint) params_array.push('endpoint=' + props.endpoint)
   if (props.query) params_array.push('query=' + encodeURIComponent(props.query))
-  const yasgui_query_url ='https://yasgui.triply.cc/#tabTitle=requestMethod=GET&tabTitle=Shapes%20of%20you%20query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table&' + params_array.join('&');
+  const yasgui_query_url ='https://yasgui.triply.cc/#Method=GET&tabTitle=Shapes%20of%20you%20query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table&' + params_array.join('&');
 
   return (
     <a href={yasgui_query_url} className={classes.link} 

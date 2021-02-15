@@ -1059,7 +1059,7 @@ SELECT DISTINCT * WHERE {
     OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
-    OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }
+    OPTIONAL { ?shapeFileUri rdfs:comment ?shape_file_description }
 }`
 
 // SPARQL select query to get all shapes files and the list of their shapes
@@ -1080,7 +1080,7 @@ SELECT DISTINCT * WHERE {
     OPTIONAL { ?repository rdfs:comment ?repo_description }
     OPTIONAL { ?shapeFileUri schema:query ?query }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
-    OPTIONAL { ?shapeFileUri dc:description ?shape_file_description }
+    OPTIONAL { ?shapeFileUri rdfs:comment ?shape_file_description }
 }`
 // } LIMIT 1000`
 
