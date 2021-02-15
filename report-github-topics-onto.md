@@ -9579,15 +9579,6 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'te "{./Attribute[@Name=\'ProcedureID\']/Value}";\n\trr:datatype '^b'xsd:strg\n\t]];\n\t\n  \trr:predicateObjectMap [\n    rr:predicate '..."
 
 ---
-File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/sisinflab-swot/semantic-coap
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
-
----
 File: https://raw.githubusercontent.com/LUMC-BioSemantics/dcat-extension/master/stardog-rules%2Fstandard-rule.ttl
 
 
@@ -9597,6 +9588,15 @@ RDF parsed as ttl, in repository: https://github.com/LUMC-BioSemantics/dcat-exte
 > at line 10 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'org/ns/dcat#>\nprefix dcterms: <http://purl.org/dc/terms/>\n\n\n'^b'IF {\n   ?res a dcat:Resource.\n   ?res dcterms:type dcterms:S'..."
+
+---
+File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/sisinflab-swot/semantic-coap
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/blankdots/PersonasOntology/master/ontology%2Fpersonasonto.owl
@@ -10590,14 +10590,6 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 
 byte indices must be integers or slices, not str
-
----
-
-
----
-SPARQL endpoint failed: http://lod.openlinksw.com/sparql
-
-HTTP Error 502: Bad Gateway
 
 ---
 
