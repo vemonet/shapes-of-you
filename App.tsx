@@ -1,7 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { View } from "react-native";
-import { Router, Route } from "./src/components/react-router";
+// import { Router, Route } from "./src/components/react-router";
+import { HashRouter, Route, Link } from "react-router-dom";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import NavBar from "./src/components/NavBar";
@@ -60,7 +61,7 @@ const App = () => (
       <meta name="twitter:image" content=""/>
     </Helmet>
     {/* <Router basename="/shapes-of-you/"> */}
-    <Router basename="/">
+    <HashRouter basename="/">
       <View style={{height: '100%', backgroundColor: '#eceff1'}}>
         <NavBar />
 
@@ -69,7 +70,7 @@ const App = () => (
         <Route path="/about" component={About} />
         <Footer />
       </View>
-    </Router>
+    </HashRouter>
   </MuiThemeProvider>
 );
 export default App;
