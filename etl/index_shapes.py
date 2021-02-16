@@ -22,8 +22,6 @@ from pyshexc.parser_impl import generate_shexj
 from python_graphql_client import GraphqlClient
 import gitlab
 
-# from logging import exception
-
 GITHUB_TOKEN = os.environ.get("API_GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
@@ -103,95 +101,215 @@ def main(argv):
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
 
-def check_run_time(time_start, repo_list, current_repo):
-  """Check for how long the script has been running to stop before hitting GitHub Actions workflow 6h job limit
-  Stop if more than 5h30 (330 min)
-  """
-  runtime = datetime.now() - time_start
-  # if runtime > timedelta(seconds=40):
-  if runtime >= timedelta(minutes=330):
-    repo_missing = repo_list[repo_list.index(current_repo):]
-    add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
-      + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
-    # Stop the script
-    sys.exit(0)
-  # TODO: include in check run time?
-  # if stopping_job:
-  #   add_to_report('Skipping topic: ' + github_topic + ' in ' + str(topics))
-  #   break
-  # if stopping_job:
-  #   add_to_report('Skipping result pages for topic ' + str(github_topic))
-  #   break
 
-def add_to_report(report_message, file_provided=None):
-  """A function to write file parsing error logs to a markdown file report
-  """
-  report_file = "\n\n---\n" + report_message
-  if file_provided:
-    # Report error for a file not properly parsed, ignore xml and json
-    file_provided = str(file_provided)
-    if file_provided.endswith('.xml') or file_provided.endswith('.json'):
-      report_file = ''
-    else:
-      report_file = 'File: ' + file_provided + '\n\n' + report_file
-      report_message = '🗑 File: ' + file_provided + ' - ' + report_message
-  if report_file:
-    report_file = "\n\n---\n" + report_file
-    logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + report_message.replace('\n', ''))
-    with open(root / '../REPORT.md', 'a') as f:
-      f.write(report_file)
-
-def generate_github_file_url(repo_url, filepath, branch):
-  """GitHub does not provide a way to get the download URL directly from GraphQL
-  So we need to build the file URL from the github repo URL + branch + file path
-  """
-  # file_url = ''
-  if repo_url.startswith('https://gitlab.com/'):
-    file_url = repo_url + '/-/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
-  elif repo_url.startswith('https://gitee.com/'):
-    file_url = repo_url + '/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
-  else:
-    file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
-    file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
-  # https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src/main/resources/config.schema.json
-
-  return file_url
-
-def get_files(extensions):
-    """List all files with given extensions in subfolders
-    :param extensions: Array of extensions, e.g. .ttl, .rdf
+# Retrieve releases in projects returned by the GraphQL calls
+def fetch_from_github(shapes_graph, client, oauth_token, topics):
+    """Fetch shapes files from GitHub using the GraphQL API.
+    We filter repositories by topics provided as argument
     """
-    all_files = []
-    for ext in extensions:
-        all_files.extend(pathlib.Path('cloned_repo').rglob(ext))
-    return all_files
+    time_start = datetime.now()
+    for github_topic in topics:
+      has_next_page = True
+      after_cursor = None
+      while has_next_page:
+          data = client.execute(
+              query=github_graphql_get_shapes(github_topic, after_cursor),
+              headers={"Authorization": "Bearer {}".format(oauth_token)},
+          )
+          for repository in data["data"]["search"]["repositories"]:
+              check_run_time(time_start, data["data"]["search"]["repositories"], repository)
+              repo_json = repository["repo"]
+              repo_url = repo_json["url"]
+              if repo_url in SKIP_REPOS:
+                continue
+              try:
+                branch = repo_json['defaultBranchRef']['name']
+                repo_description = repo_json["description"]
+              except Exception as e:
+                logging.error(e)
+                logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
+                branch = 'master'
+                repo_description = ''
+              repo_description = repo_json["description"]
+              # repo_description = repo_json["shortDescriptionHTML"]
+              shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+          has_next_page = data["data"]["search"]["pageInfo"][
+              "hasNextPage"
+          ]
+          after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+    
+    return shapes_graph
 
-def test_sparql_endpoint(sparql_endpoint):
-    """Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
-    Then, like repos, add them as schema:EntryPoint
-    """
-    if sparql_endpoint not in VALID_ENDPOINTS.keys() and sparql_endpoint not in FAILED_ENDPOINTS.keys():
-      sparql_test_query = 'SELECT * WHERE { ?s ?p ?o } LIMIT 10'
-      sparql = SPARQLWrapper(sparql_endpoint)
-      sparql.setReturnFormat(JSON)
-      sparql.setQuery(sparql_test_query)
-      try:
-        results = sparql.query().convert()
-        # Check SPARQL query sent back at least 5 triples
-        results_array = results["results"]["bindings"]
-        if len(results_array) > 4:
-          VALID_ENDPOINTS[sparql_endpoint] = {
-            'label': sparql_endpoint
+# Get all shapes for all repos with shacl-shapes tag
+def github_graphql_get_shapes(github_topic, after_cursor=None):
+    return """
+query {
+  search(query:"GITHUB_TOPIC", type:REPOSITORY, last: 100, after:AFTER) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    repositories: edges {
+      repo: node {
+        ... on Repository {
+          url
+          shortDescriptionHTML
+          name
+          description
+          defaultBranchRef {
+            name
           }
-          return True
+        }
+      }
+    }
+  }   
+}
+""".replace(
+    "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
+).replace(
+    "GITHUB_TOPIC", github_topic
+)
+
+def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
+  """Fetch additional Shapes files from a list of GitHub repos
+  """
+  extra_shapes_repositories = []
+  with open(str(root) + '/../' + str(filename), 'r') as f:
+    for line in f:
+      extra_shapes_repositories.append(line.rstrip('\n').strip())
+
+  for extra_repo in extra_shapes_repositories:
+    data = client.execute(
+        query=github_graphql_get_extra(extra_repo),
+        headers={"Authorization": "Bearer {}".format(oauth_token)},
+    )
+    repo_json = data["data"]["repository"]
+    repo_url = repo_json["url"]
+    try:
+      branch = repo_json['defaultBranchRef']['name']
+      repo_description = repo_json["description"]
+    except Exception as e:
+      logging.error(e)
+      logging.warning('🕊 No default_branch found for repo_url, using master')
+      branch = 'master'
+      repo_description = ''
+    shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+  return shapes_graph
+
+def github_graphql_get_extra(repo):
+  """Generate GraphQL query for repos in the list extra_shapes_repositories
+  """
+  if repo:
+    owner=repo.split('/')[0]
+    repo_name=repo.split('/')[1]
+    return '''query {
+      repository(name:"''' + repo_name + '''", owner:"''' + owner + '''"){
+        url
+        shortDescriptionHTML
+        name
+        description
+        defaultBranchRef {
+          name
+        }
+      }
+    }'''
+
+# Fetch files from GitLab
+def fetch_from_gitlab(shapes_graph, gl, topics):
+    for search_topic in topics:
+      gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
+      for repo_json in gitlab_repos_list:
+        try:
+          repo_url = repo_json["web_url"]
+          if repo_url in SKIP_REPOS:
+            continue
+          if 'default_branch' in repo_json:
+            branch = repo_json['default_branch']
+          else:
+            branch = 'master'
+            logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
+          repo_descriptions = []
+          if repo_json["name"]:
+            repo_descriptions.append(repo_json["name"])
+          if repo_json["description"]:
+            repo_descriptions.append(repo_json["description"])
+
+          repo_description = ' - '.join(repo_descriptions)
+          shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+        except Exception as e:
+          add_to_report('GitLab issue processing: ' + str(repo_json) + '\n\n' + str(e))
+    
+    return shapes_graph
+
+def fetch_from_gitee(shapes_graph, token, topics):
+    # Record time to avoid hitting GitHub Actions limits
+    time_start = datetime.now()
+
+    for search_topic in topics:
+      gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
+      for repo_json in gitee_repos_list:
+        check_run_time(time_start, gitee_repos_list, repo_json)
+
+        repo_url = repo_json["html_url"].rstrip('.git')
+
+        if repo_url in SKIP_REPOS:
+          continue
+        if 'default_branch' in repo_json:
+          branch = repo_json['default_branch']
         else:
-          FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
-          return False
-      except Exception as e:
-        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
-        return False
-    else:
-      return True
+          branch = 'master'
+          logging.warning('🕊 No default_branch found for repo_url, using master')
+        repo_descriptions = []
+        if repo_json["name"]:
+          repo_descriptions.append(repo_json["name"])
+        if repo_json["description"]:
+          repo_descriptions.append(repo_json["description"])
+
+        repo_description = ' - '.join(repo_descriptions)
+        # repo_description = repo_json["shortDescriptionHTML"]
+        shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+    return shapes_graph
+
+
+def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
+    logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
+    shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
+    os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
+    # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
+
+    # TODO: move ShexJ to jsonld part?
+    for rdf_file_path in get_files(['*.shex', '*.shexj']):
+        shapes_graph = process_shapes_file('shex', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.yml', '*.yaml', '*.json']):
+        shapes_graph = process_shapes_file('openapi', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.rq', '*.sparql']):
+        shapes_graph = process_shapes_file('sparql', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.n3']):
+        shapes_graph = process_shapes_file('n3', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.trig']):
+        shapes_graph = process_shapes_file('trig', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.json', '*.jsonld', '*.json-ld']):
+        shapes_graph = process_shapes_file('json-ld', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.xml', '*.rdf', '*.owl']):
+        shapes_graph = process_shapes_file('xml', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.ttl', '*.shacl']):
+        shapes_graph = process_shapes_file('ttl', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.nt']):
+        shapes_graph = process_shapes_file('nt', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+
+    for rdf_file_path in get_files(['*.obo']):
+        shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+        
+    return shapes_graph
+
 
 def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, branch, repo_description):
     """Process a Shapes file, check its content and add entry to the shapes graph
@@ -545,214 +663,96 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     return shapes_graph
 
-def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
-    logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
-    shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
-    os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
-    # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
 
-    # TODO: move ShexJ to jsonld part?
-    for rdf_file_path in get_files(['*.shex', '*.shexj']):
-        shapes_graph = process_shapes_file('shex', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+def check_run_time(time_start, repo_list, current_repo):
+  """Check for how long the script has been running to stop before hitting GitHub Actions workflow 6h job limit
+  Stop if more than 5h30 (330 min)
+  """
+  runtime = datetime.now() - time_start
+  # if runtime > timedelta(seconds=40):
+  if runtime >= timedelta(minutes=330):
+    repo_missing = repo_list[repo_list.index(current_repo):]
+    add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
+      + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
+    # Stop the script
+    sys.exit(0)
+  # TODO: include in check run time?
+  # if stopping_job:
+  #   add_to_report('Skipping topic: ' + github_topic + ' in ' + str(topics))
+  #   break
+  # if stopping_job:
+  #   add_to_report('Skipping result pages for topic ' + str(github_topic))
+  #   break
 
-    for rdf_file_path in get_files(['*.yml', '*.yaml', '*.json']):
-        shapes_graph = process_shapes_file('openapi', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+def add_to_report(report_message, file_provided=None):
+  """A function to write file parsing error logs to a markdown file report
+  """
+  report_file = "\n\n---\n" + report_message
+  if file_provided:
+    # Report error for a file not properly parsed, ignore xml and json
+    file_provided = str(file_provided)
+    if file_provided.endswith('.xml') or file_provided.endswith('.json'):
+      report_file = ''
+    else:
+      report_file = 'File: ' + file_provided + '\n\n' + report_file
+      report_message = '🗑 File: ' + file_provided + ' - ' + report_message
+  if report_file:
+    report_file = "\n\n---\n" + report_file
+    logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + report_message.replace('\n', ''))
+    with open(root / '../REPORT.md', 'a') as f:
+      f.write(report_file)
 
-    for rdf_file_path in get_files(['*.rq', '*.sparql']):
-        shapes_graph = process_shapes_file('sparql', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+def generate_github_file_url(repo_url, filepath, branch):
+  """GitHub does not provide a way to get the download URL directly from GraphQL
+  So we need to build the file URL from the github repo URL + branch + file path
+  """
+  # file_url = ''
+  if repo_url.startswith('https://gitlab.com/'):
+    file_url = repo_url + '/-/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
+  elif repo_url.startswith('https://gitee.com/'):
+    file_url = repo_url + '/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
+  else:
+    file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
+    file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
+  # https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src/main/resources/config.schema.json
 
-    for rdf_file_path in get_files(['*.n3']):
-        shapes_graph = process_shapes_file('n3', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+  return file_url
 
-    for rdf_file_path in get_files(['*.trig']):
-        shapes_graph = process_shapes_file('trig', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
-
-    for rdf_file_path in get_files(['*.json', '*.jsonld', '*.json-ld']):
-        shapes_graph = process_shapes_file('json-ld', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
-
-    for rdf_file_path in get_files(['*.xml', '*.rdf', '*.owl']):
-        shapes_graph = process_shapes_file('xml', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
-
-    for rdf_file_path in get_files(['*.ttl', '*.shacl']):
-        shapes_graph = process_shapes_file('ttl', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
-
-    for rdf_file_path in get_files(['*.nt']):
-        shapes_graph = process_shapes_file('nt', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
-
-    for rdf_file_path in get_files(['*.obo']):
-        shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
-        
-    return shapes_graph
-
-
-# Get all shapes for all repos with shacl-shapes tag
-def github_graphql_get_shapes(github_topic, after_cursor=None):
-    return """
-query {
-  search(query:"GITHUB_TOPIC", type:REPOSITORY, last: 100, after:AFTER) {
-    pageInfo {
-      hasNextPage
-      endCursor
-    }
-    repositories: edges {
-      repo: node {
-        ... on Repository {
-          url
-          shortDescriptionHTML
-          name
-          description
-          defaultBranchRef {
-            name
-          }
-        }
-      }
-    }
-  }   
-}
-""".replace(
-    "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
-).replace(
-    "GITHUB_TOPIC", github_topic
-)
-
-# Retrieve releases in projects returned by the GraphQL calls
-def fetch_from_github(shapes_graph, client, oauth_token, topics):
-    """Fetch shapes files from GitHub using the GraphQL API.
-    We filter repositories by topics provided as argument
+def get_files(extensions):
+    """List all files with given extensions in subfolders
+    :param extensions: Array of extensions, e.g. .ttl, .rdf
     """
-    time_start = datetime.now()
-    for github_topic in topics:
-      has_next_page = True
-      after_cursor = None
-      while has_next_page:
-          data = client.execute(
-              query=github_graphql_get_shapes(github_topic, after_cursor),
-              headers={"Authorization": "Bearer {}".format(oauth_token)},
-          )
-          for repository in data["data"]["search"]["repositories"]:
-              check_run_time(time_start, data["data"]["search"]["repositories"], repository)
-              repo_json = repository["repo"]
-              repo_url = repo_json["url"]
-              if repo_url in SKIP_REPOS:
-                continue
-              try:
-                branch = repo_json['defaultBranchRef']['name']
-                repo_description = repo_json["description"]
-              except Exception as e:
-                logging.error(e)
-                logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
-                branch = 'master'
-                repo_description = ''
-              repo_description = repo_json["description"]
-              # repo_description = repo_json["shortDescriptionHTML"]
-              shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-          has_next_page = data["data"]["search"]["pageInfo"][
-              "hasNextPage"
-          ]
-          after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-    
-    return shapes_graph
+    all_files = []
+    for ext in extensions:
+        all_files.extend(pathlib.Path('cloned_repo').rglob(ext))
+    return all_files
 
-
-def github_graphql_get_extra(repo):
-  """Generate GraphQL query for repos in the list extra_shapes_repositories
-  """
-  if repo:
-    owner=repo.split('/')[0]
-    repo_name=repo.split('/')[1]
-    return '''query {
-      repository(name:"''' + repo_name + '''", owner:"''' + owner + '''"){
-        url
-        shortDescriptionHTML
-        name
-        description
-        defaultBranchRef {
-          name
-        }
-      }
-    }'''
-
-def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
-  """Fetch additional Shapes files from a list of GitHub repos
-  """
-  extra_shapes_repositories = []
-  with open(str(root) + '/../' + str(filename), 'r') as f:
-    for line in f:
-      extra_shapes_repositories.append(line.rstrip('\n').strip())
-
-  for extra_repo in extra_shapes_repositories:
-    data = client.execute(
-        query=github_graphql_get_extra(extra_repo),
-        headers={"Authorization": "Bearer {}".format(oauth_token)},
-    )
-    repo_json = data["data"]["repository"]
-    repo_url = repo_json["url"]
-    try:
-      branch = repo_json['defaultBranchRef']['name']
-      repo_description = repo_json["description"]
-    except Exception as e:
-      logging.error(e)
-      logging.warning('🕊 No default_branch found for repo_url, using master')
-      branch = 'master'
-      repo_description = ''
-    shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-  return shapes_graph
-
-# Fetch files from GitLab
-def fetch_from_gitlab(shapes_graph, gl, topics):
-    for search_topic in topics:
-      gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
-      for repo_json in gitlab_repos_list:
-        try:
-          repo_url = repo_json["web_url"]
-          if repo_url in SKIP_REPOS:
-            continue
-          if 'default_branch' in repo_json:
-            branch = repo_json['default_branch']
-          else:
-            branch = 'master'
-            logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
-          repo_descriptions = []
-          if repo_json["name"]:
-            repo_descriptions.append(repo_json["name"])
-          if repo_json["description"]:
-            repo_descriptions.append(repo_json["description"])
-
-          repo_description = ' - '.join(repo_descriptions)
-          shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-        except Exception as e:
-          add_to_report('GitLab issue processing: ' + str(repo_json) + '\n\n' + str(e))
-    
-    return shapes_graph
-
-def fetch_from_gitee(shapes_graph, token, topics):
-    # Record time to avoid hitting GitHub Actions limits
-    time_start = datetime.now()
-
-    for search_topic in topics:
-      gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
-      for repo_json in gitee_repos_list:
-        check_run_time(time_start, gitee_repos_list, repo_json)
-
-        repo_url = repo_json["html_url"].rstrip('.git')
-
-        if repo_url in SKIP_REPOS:
-          continue
-        if 'default_branch' in repo_json:
-          branch = repo_json['default_branch']
+def test_sparql_endpoint(sparql_endpoint):
+    """Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
+    Then, like repos, add them as schema:EntryPoint
+    """
+    if sparql_endpoint not in VALID_ENDPOINTS.keys() and sparql_endpoint not in FAILED_ENDPOINTS.keys():
+      sparql_test_query = 'SELECT * WHERE { ?s ?p ?o } LIMIT 10'
+      sparql = SPARQLWrapper(sparql_endpoint)
+      sparql.setReturnFormat(JSON)
+      sparql.setQuery(sparql_test_query)
+      try:
+        results = sparql.query().convert()
+        # Check SPARQL query sent back at least 5 triples
+        results_array = results["results"]["bindings"]
+        if len(results_array) > 4:
+          VALID_ENDPOINTS[sparql_endpoint] = {
+            'label': sparql_endpoint
+          }
+          return True
         else:
-          branch = 'master'
-          logging.warning('🕊 No default_branch found for repo_url, using master')
-        repo_descriptions = []
-        if repo_json["name"]:
-          repo_descriptions.append(repo_json["name"])
-        if repo_json["description"]:
-          repo_descriptions.append(repo_json["description"])
-
-        repo_description = ' - '.join(repo_descriptions)
-        # repo_description = repo_json["shortDescriptionHTML"]
-        shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-    return shapes_graph
+          FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
+          return False
+      except Exception as e:
+        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
+        return False
+    else:
+      return True
 
 
 if __name__ == "__main__":
