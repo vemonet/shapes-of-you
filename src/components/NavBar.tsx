@@ -6,10 +6,9 @@ import { AppBar, Toolbar, Button, Popper, ClickAwayListener, Card, CardContent, 
 import Tooltip from '@material-ui/core/Tooltip';
 import CloseIcon from '@material-ui/icons/Close';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import AssignmentIcon from '@material-ui/icons/Assignment';
 import GrlcApiIcon from '@material-ui/icons/Send';
-import SparqlIcon from '@material-ui/icons/Share';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+// import SparqlIcon from '@material-ui/icons/Share';
 // import InfoIcon from '@material-ui/icons/Info';
 // import DashboardIcon from '@material-ui/icons/Dashboard';
 // import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';

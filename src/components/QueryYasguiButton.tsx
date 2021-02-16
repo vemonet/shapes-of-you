@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Button, Card, CardContent, CardHeader, ClickAwayListener, IconButton, Paper, Popper } from "@material-ui/core";
+import { Button, Card, CardContent, CardHeader, ClickAwayListener, IconButton, Popper } from "@material-ui/core";
 import SendIcon from '@material-ui/icons/Send';
 import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';

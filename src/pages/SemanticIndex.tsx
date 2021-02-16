@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
 import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper, CircularProgress, Card, CardContent, CardHeader, Collapse, CardActions } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
-import { List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@material-ui/core";
 import Alert from '@material-ui/lab/Alert';
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -12,21 +11,19 @@ import ReactMarkdown from 'react-markdown'
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-// import 'chartjs-plugin-labels';
 
 import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
-import Autocomplete from '@material-ui/lab/Autocomplete';
+// import Autocomplete from '@material-ui/lab/Autocomplete';
 import Pagination from '@material-ui/lab/Pagination';
+
+import QueryYasguiButton from "../components/QueryYasguiButton";
+import About from "./About";
 
 import { LoggedIn, LoggedOut, Value, useWebId, useLDflexValue, useLDflexList } from '@solid/react';
 import { Like } from '@solid/react';
 import data from "@solid/query-ldflex";
-
-import QueryYasguiButton from "../components/QueryYasguiButton";
-import About from "./About";
 // import { data } from "@solid/query-ldflex";
 // import SolidStar from "./SolidStar";
-
 // import {newEngine} from '@comunica/actor-init-sparql';
 // import {ActorInitSparql} from '@comunica/actor-init-sparql/lib/ActorInitSparql-browser';
 // import {IQueryOptions, newEngineDynamicArged} from "@comunica/actor-init-sparql/lib/QueryDynamic";
@@ -52,16 +49,6 @@ const useStyles = makeStyles(theme => ({
       textDecoration: 'none',
     },
   },
-  // expand: {
-  //   transform: 'rotate(0deg)',
-  //   marginLeft: 'auto',
-  //   transition: theme.transitions.create('transform', {
-  //     duration: theme.transitions.duration.shortest,
-  //   }),
-  // },
-  // expandOpen: {
-  //   transform: 'rotate(180deg)',
-  // },
 }))
 
 export default function SemanticIndex() {
@@ -297,8 +284,7 @@ export default function SemanticIndex() {
         console.log(error)
       })
 
-    // Query with the Comunica engine
-    // Not working on SPARQL endpoint, only on the examples they provide
+    // Query with the Comunica engine. Not working on SPARQL endpoint, only on the examples they provide
     // https://comunica.dev/docs/query/getting_started/query_app/
     // const comunicaEngine = newEngine();
     // comunicaEngine.query(`
@@ -311,16 +297,14 @@ export default function SemanticIndex() {
     //   res.bindingsStream.on('data', (binding: any) => {
     //     // console.log(binding.get('?s').value);
     //     // console.log(binding.get('?s').termType);
-    //     // console.log(binding.get('?o').value);
-    //   });
-    // });
+    // }); });
 
     if (webId) {
       createSolidFile(webId);
     }
 
   }, [webId])
-  // This useless array needs to be added for React to understand he needs to use the state inside...
+  // This useless array needs to be added for React to understand he needs to use the state inside
 
   function createSolidFile(webId: string) {
     // console.log(webId);
@@ -329,9 +313,6 @@ export default function SemanticIndex() {
     // console.log('Try to create file ' + location);
     return data[location].put();
   }
-
-  // const pluralize = (count: any, noun: string, suffix = 's') =>
-  // `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
 
   const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     updateState({ search: event.target.value })
@@ -348,50 +329,50 @@ export default function SemanticIndex() {
   // function handleAutocompleteRepositories(event: any, value: string[]) {
   //   updateState({ repositories_autocomplete: value})
   // }
+  // const pluralize = (count: any, noun: string, suffix = 's') =>
+  // `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
   
   // Filtering for faceted search
   // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
   const filtered_files = state.global_shapes_array
     .filter((repo: any) => {
-      // repo.files.every((file: any) => {
-        let search_description = repo.url + ' ';
-        // if (file.label) search_description = search_description + ' ' + file.label;
-        // if (file.description) search_description = search_description + ' ' + file.description;
-        if (repo.description) search_description = search_description + ' ' + repo.description;
-        if (repo.search_description) search_description = search_description + ' ' + repo.search_description;
-        return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-      // });
+      let search_description = repo.url + ' ';
+      // if (file.label) search_description = search_description + ' ' + file.label;
+      // if (file.description) search_description = search_description + ' ' + file.description;
+      if (repo.description) search_description = search_description + ' ' + repo.description;
+      if (repo.search_description) search_description = search_description + ' ' + repo.search_description;
+      return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
     })
     .reduce((filtered: any, repo: any) => {
       // Filter files in the repo
       let filtered_repo: any = {}
-      if (state.search) {
-        // Filter files for search input
-        filtered_repo.files = repo.files.filter((file: any) => {
-          let search_description = repo.url + ' ';
-          if (file.label) search_description = search_description + ' ' + file.label;
-          if (file.description) search_description = search_description + ' ' + file.description;
-          if (repo.description) search_description = search_description + ' ' + repo.description;
-          // Filter depending on shape type checkboxes:
-          if ((state.type_checkboxes['ShEx'] === true && file.type == 'http://www.w3.org/ns/shex#Schema')
-          || (state.type_checkboxes['SPARQL'] === true && file.type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
-          || (state.type_checkboxes['SHACL'] === true && file.type == 'http://www.w3.org/ns/shacl#Shape')
-          || (state.type_checkboxes['OWL'] === true && file.type == 'http://www.w3.org/2002/07/owl#Ontology')
-          || (state.type_checkboxes['OBO'] === true && file.type == 'http://semanticscience.org/resource/SIO_000623')
-          || (state.type_checkboxes['SKOS'] === true && file.type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
-          || (state.type_checkboxes['OpenAPI'] === true && file.type == 'http://www.w3.org/ns/r2rml#TriplesMap')
-          || (state.type_checkboxes['RML'] === true && file.type == 'http://semweb.mmlab.be/ns/rml#LogicalSource')
-          || (state.type_checkboxes['R2RML'] === true && file.type == 'https://schema.org/APIReference')
-          || (state.type_checkboxes['Dataset'] === true && file.type == 'http://www.w3.org/ns/dcat#Dataset')
-          || (state.type_checkboxes['Nanopub'] === true && file.type == 'https://w3id.org/np/o/ntemplate/AssertionTemplate')
-          ) {
-          return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+      // Filter files for search input
+      filtered_repo.files = repo.files.filter((file: any) => {
+        let search_description = repo.url + ' ';
+        if (file.label) search_description = search_description + ' ' + file.label;
+        if (file.description) search_description = search_description + ' ' + file.description;
+        if (repo.description) search_description = search_description + ' ' + repo.description;
+        // Filter depending on shape type checkboxes:
+        if ((state.type_checkboxes['ShEx'] === true && file.type == 'http://www.w3.org/ns/shex#Schema')
+        || (state.type_checkboxes['SPARQL'] === true && file.type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
+        || (state.type_checkboxes['SHACL'] === true && file.type == 'http://www.w3.org/ns/shacl#Shape')
+        || (state.type_checkboxes['OWL'] === true && file.type == 'http://www.w3.org/2002/07/owl#Ontology')
+        || (state.type_checkboxes['OBO'] === true && file.type == 'http://semanticscience.org/resource/SIO_000623')
+        || (state.type_checkboxes['SKOS'] === true && file.type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
+        || (state.type_checkboxes['R2RML'] === true && file.type == 'http://www.w3.org/ns/r2rml#TriplesMap')
+        || (state.type_checkboxes['RML'] === true && file.type == 'http://semweb.mmlab.be/ns/rml#LogicalSource')
+        || (state.type_checkboxes['OpenAPI'] === true && file.type == 'https://schema.org/APIReference')
+        || (state.type_checkboxes['Dataset'] === true && file.type == 'http://www.w3.org/ns/dcat#Dataset')
+        || (state.type_checkboxes['Nanopub'] === true && file.type == 'https://w3id.org/np/o/ntemplate/AssertionTemplate')
+        ) {
+          if (state.search) {
+            return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+          } else {
+            // Only filter by type if no search provided
+            return true
           }
-        });
-      } else {
-        filtered_repo.files = repo.files;
-      }
-      // Filter the repo (if no files?)
+        }
+      });
       filtered_repo.url = repo.url;
       if (repo.description) filtered_repo.description = repo.description;
       filtered.push(filtered_repo)
@@ -445,7 +426,6 @@ export default function SemanticIndex() {
         </Typography>
       </LoggedOut> */}
 
-      {/* Display About expandable card */}
       <About />
 
       { state.repos_overview_chart['datasets'] && state.files_overview_chart['datasets'] &&
@@ -468,13 +448,9 @@ export default function SemanticIndex() {
         </Grid>
       }
 
-      {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(3, 0)}}>
         <Typography variant="h5">
           {filtered_files.reduce((filtered: any, repo: any) => filtered + repo.files.length, 0)} files in&nbsp;
-          {/* Only counts the sum of all files for each filtered repo, we need to add check on the file description
-          Or filter the files downstream. Also works: */}
-          {/* {filtered_files.reduce((filtered: any, repo: any) => {filtered.push(repo.files.length); return filtered;}, []).reduce((a, b) => a + b, 0)} files in&nbsp; */}
           {Object.keys(filtered_files).length} repositories 
         </Typography>
 
@@ -553,6 +529,28 @@ export default function SemanticIndex() {
               label={checkbox + " " + getFileLabel(checkbox)}
             />
           })}
+          {/* Button to check and uncheck all checkboxes */}
+          <Button size="small" variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
+            onClick={() => {
+              let checkboxes: any = {}
+              Object.keys(state.type_checkboxes).map((type: any) => {
+                checkboxes[type] = false;
+              })
+              updateState({ type_checkboxes: checkboxes });
+            }}>
+            {/* <SendIcon />&nbsp; */}
+            Uncheck all
+          </Button>
+          <Button size="small" variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
+            onClick={() => {
+              let checkboxes: any = {}
+              Object.keys(state.type_checkboxes).map((type: any) => {
+                checkboxes[type] = true;
+              })
+              updateState({ type_checkboxes: checkboxes });
+            }}>
+            Check all
+          </Button>
         </FormGroup>
 
       </Paper>

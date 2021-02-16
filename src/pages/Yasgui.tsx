@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Container, Paper } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import axios from 'axios';
 
 import Yasgui from "@triply/yasgui";
