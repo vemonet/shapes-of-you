@@ -54,6 +54,7 @@ export default function YasguiPage(props: any) {
       axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_endpoints_query))
         .then((res: any) => {
           Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;
+          // @ts-ignore Set YASGUI to serve all queries of the selected endpoint
           let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {
             requestConfig: { endpoint: sparql_endpoint },
             endpoint: sparql_endpoint,
@@ -91,7 +92,7 @@ export default function YasguiPage(props: any) {
         })
 
     } else if (props.query) {
-      // If only query provided
+      // @ts-ignore If only query provided
       let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {});
 
       yasgui.addTab(
