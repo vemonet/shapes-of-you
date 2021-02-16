@@ -1,22 +1,14 @@
 import React from "react";
-import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
-
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Popper, ClickAwayListener, Card, CardContent, CardHeader, IconButton } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
 import CloseIcon from '@material-ui/icons/Close';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import GrlcApiIcon from '@material-ui/icons/Send';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-// import SparqlIcon from '@material-ui/icons/Share';
-// import InfoIcon from '@material-ui/icons/Info';
-// import DashboardIcon from '@material-ui/icons/Dashboard';
-// import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
-// import MenuBookIcon from '@material-ui/icons/MenuBook';
-// import WarningIcon from '@material-ui/icons/Warning';
 
 import { AuthButton, Value } from '@solid/react';
-
 // @ts-ignore
 import iconImage from '../../assets/icon.png';
 import SparqlEndpointsDisplay from "./SparqlEndpointsDisplay";
@@ -102,6 +94,9 @@ export default function NavBar() {
           </Button>
         </Tooltip>
         <Popper open={open} anchorEl={anchorEl} 
+          onKeyDown={(e) => {
+            if (e.key === "Escape") handleClickAway()
+          }}
           style={{width: '99%', position: 'absolute', top: '0'}}
           popperOptions={{'positionFixed': true}}>
           <ClickAwayListener onClickAway={handleClickAway}>
@@ -120,9 +115,6 @@ export default function NavBar() {
                 <SparqlEndpointsDisplay />
               </CardContent>
             </Card>
-            {/* <Paper elevation={4} className={classes.paperPadding}>
-              <SparqlEndpointsDisplay />
-            </Paper> */}
           </ClickAwayListener>
         </Popper>
 
@@ -140,22 +132,6 @@ export default function NavBar() {
             <img src="https://img.shields.io/badge/📎%20Index%20shapes-reports-ffa000" />
           </Tooltip>
         </a>
-        {/* <a href="https://github.com/vemonet/shapes-of-you/tree/report" 
-            target="_blank" rel="noopener noreferrer" className={classes.linkButton}>
-          <Tooltip title='Reports for the files which failed to process, and that need to be fixed by their owners. Also known as the semantic web of shame'>
-            <Button className={classes.menuButton}>
-              <AssignmentIcon />
-              &nbsp;Index reports
-            </Button>
-          </Tooltip>
-        </a> */}
-        {/* <Link to="/about" className={classes.linkButton}>
-          <Tooltip title='About the Institute of Data Science'>
-            <Button className={classes.menuButton}>
-              <InfoIcon />
-            </Button>
-          </Tooltip>
-        </Link> */}
         <Tooltip  title='Go to https://github.com/vemonet/shapes-of-you'>
           <Button className={classes.menuButton} target="_blank"
           href="https://github.com/vemonet/shapes-of-you" rel="noopener noreferrer">

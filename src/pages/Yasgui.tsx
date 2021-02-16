@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Container } from "@material-ui/core";
 import axios from 'axios';
@@ -23,18 +23,18 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function YasguiPage(props: any) {
-  const classes = useStyles();
-  const theme = useTheme();
+  // const classes = useStyles();
+  // const theme = useTheme();
   // useLocation hook to get URL params
-  let location = useLocation();
+  // let location = useLocation();
 
   React.useEffect(() => {
-    // Get URL params 
+    // Get params from URL
     // const params = new URLSearchParams(location.search + location.hash);
     // let sparql_endpoint: any = params.get('endpoint');
     
-    // When used as component:
     if (props.endpoint && props.query) {
+      // If endpoint and query provided we add 1 tab for this query to query this endpoint
       const sparql_endpoint = props.endpoint
       Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;
       // @ts-ignore If endpoint and query provided
@@ -43,14 +43,14 @@ export default function YasguiPage(props: any) {
         endpoint: sparql_endpoint,
         copyEndpointOnNewTab: true,
       });
-
       yasgui.addTab(
         true, // set as active tab
         { ...Yasgui.Tab.getDefaults(), yasqe: { value: props.query }}
       );
       window.scrollTo(0, 0)
+
     } else if (props.endpoint) {
-      // If only endpoint provided we import all queries for this endpoint
+      // If only the endpoint is provided, we import all queries for this endpoint
       let sparql_endpoint: any = props.endpoint
       const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
         PREFIX void: <http://rdfs.org/ns/void#>
@@ -98,9 +98,8 @@ export default function YasguiPage(props: any) {
         })
 
     } else if (props.query) {
-      // @ts-ignore If only query provided
+      // @ts-ignore Add tab if only query provided
       let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {});
-
       yasgui.addTab(
         true, // set as active tab
         { ...Yasgui.Tab.getDefaults(), yasqe: { value: props.query }}
@@ -108,11 +107,6 @@ export default function YasguiPage(props: any) {
       window.scrollTo(0, 0)
     }
   })
-
-  // let params_array: any = []
-  // if (props.endpoint) params_array.push('endpoint=' + props.endpoint)
-  // if (props.query) params_array.push('query=' + encodeURIComponent(props.query))
-  // const yasgui_query_url ='https://yasgui.triply.cc/#Method=GET&tabTitle=Shapes%20of%20you%20query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table&' + params_array.join('&');
 
   return (
     <Container>

@@ -44,8 +44,6 @@ export default function QueryYasguiButton(props: any) {
 
   return (
     <>
-    {/*  <a href={yasgui_query_url} className={classes.link} 
-       target='_blank' rel="noopener noreferrer"> */}
       { !props.endpoint && !props.query &&
         <>
         </>
@@ -63,6 +61,9 @@ export default function QueryYasguiButton(props: any) {
         </Button>
       }
       <Popper open={open} anchorEl={anchorEl}
+        onKeyDown={(e) => {
+            if (e.key === "Escape") handleClickAway()
+        }}
         style={{width: '99%', position: 'absolute', top: '0'}}
         popperOptions={{'positionFixed': true}}
         >

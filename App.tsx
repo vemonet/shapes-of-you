@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { View } from "react-native";
-// import { Router, Route } from "./src/components/react-router";
 import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
@@ -11,18 +10,14 @@ import SemanticIndex from "./src/pages/SemanticIndex";
 import About from "./src/pages/About";
 import Yasgui from "./src/pages/Yasgui";
 // import blue from '@material-ui/core/colors/blue';
+// import { Router, Route } from "./src/components/react-router";
 
 // Change theme color and typography here
 const theme = createMuiTheme({
   palette: {
-    // Blue
+    // Primary Blue, and secondary Green
     primary: { light: '#63a4ff', main: '#1976d2', dark: '#004ba0' },
-    // Green
     secondary: { light: '#4caf50', main: '#7e57c2', dark: '#00600f' },
-    // main: blue[700]
-    // primary: { light: blue[50], main: blue[600], dark: blue[900] },
-    // red: { light: '#f05545', main: '#b71c1c', dark: '#7f0000' },
-    // default: { light: '#fafafa', main: '#eceff1', dark: grey[600] }
   },
   typography: {
     "fontFamily": "\"Open Sans\", \"Roboto\", \"Arial\"",

@@ -1,7 +1,7 @@
   import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
 import { Container, CircularProgress } from "@material-ui/core";
-import { List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@material-ui/core";
+import { List, ListItem, ListItemAvatar, ListItemText } from "@material-ui/core";
 import axios from 'axios';
 
 import QueryYasguiButton from "./QueryYasguiButton";
@@ -49,7 +49,6 @@ export default function SparqlEndpointsDisplay() {
   // At start: query SPARQL endpoint to get the SPARQL endpoints infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
-
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_endpoints_query))
       .then(res => {
         const results_array = res.data.results.bindings;
@@ -79,13 +78,8 @@ export default function SparqlEndpointsDisplay() {
       .catch(error => {
         console.log(error)
       })
-
   }, [])
   // This useless array needs to be added for React to understand he needs to use the state inside...
-
-  const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    updateState({ search: event.target.value })
-  }
   
   // Define rendering of the page:
   return(
@@ -102,9 +96,6 @@ export default function SparqlEndpointsDisplay() {
             return <ListItem key={key}>
               <ListItemAvatar>
                 <QueryYasguiButton endpoint={sparql_endpoint} />
-                {/* <Avatar>
-                  <CheckCircleIcon />
-                </Avatar> */}
               </ListItemAvatar>
               <ListItemText>
                 <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b> - {state.sparql_endpoints_obj[sparql_endpoint].queries.length} SPARQL queries

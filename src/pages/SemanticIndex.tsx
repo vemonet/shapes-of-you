@@ -2,19 +2,19 @@ import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
 import { Typography, Container, Box, Button, Chip, Tooltip, Grid, Paper, CircularProgress, Card, CardContent, CardHeader, Collapse, CardActions } from "@material-ui/core";
 import { IconButton, InputBase } from "@material-ui/core";
-import Alert from '@material-ui/lab/Alert';
+import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
+import Pagination from '@material-ui/lab/Pagination';
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+// import Autocomplete from '@material-ui/lab/Autocomplete';
+// import Alert from '@material-ui/lab/Alert';
 
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-import { FormGroup, FormControlLabel, Checkbox, TextField } from "@material-ui/core";
-// import Autocomplete from '@material-ui/lab/Autocomplete';
-import Pagination from '@material-ui/lab/Pagination';
 
 import QueryYasguiButton from "../components/QueryYasguiButton";
 import About from "./About";
@@ -106,6 +106,22 @@ export default function SemanticIndex() {
     'http://www.w3.org/ns/dcat#Dataset': 'Dataset'
   }
 
+  function getFileLabel(file_type: string) {
+    let icon = '📄';
+    if (shape_types_mappings[file_type] == 'OWL' || file_type == 'OWL') icon = '🦉'
+    if (shape_types_mappings[file_type] == 'ShEx' || file_type == 'ShEx') icon = '✴️'
+    if (shape_types_mappings[file_type] == 'SHACL' || file_type == 'SHACL') icon = '💠'
+    if (shape_types_mappings[file_type] == 'RML' || file_type == 'RML') icon = '🦜'
+    if (shape_types_mappings[file_type] == 'R2RML' || file_type == 'R2RML') icon = '🗄'
+    if (shape_types_mappings[file_type] == 'OBO' || file_type == 'OBO') icon = '🧪'
+    if (shape_types_mappings[file_type] == 'OpenAPI' || file_type == 'OpenAPI') icon = '📬'
+    if (shape_types_mappings[file_type] == 'SPARQL' || file_type == 'SPARQL') icon = '✨️'
+    if (shape_types_mappings[file_type] == 'SKOS' || file_type == 'SKOS') icon = '📕'
+    if (shape_types_mappings[file_type] == 'Nanopub' || file_type == 'Nanopub') icon = '🗞'
+    if (shape_types_mappings[file_type] == 'Dataset' || file_type == 'Dataset') icon = '💽'
+    return icon;
+  }
+
   const chart_colors = ['#4caf50','#9575cd', '#bcaaa4', '#ef6c00', '#26c6da',
     '#1565c0', '#aed581', '#4caf50', '#ffeb3b', '#ffb74d', '#ce93d8', '#4db6ac']
 
@@ -113,10 +129,10 @@ export default function SemanticIndex() {
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
 
-    // Check if PWA, and propose to install it if not!
-    if (window.matchMedia('(display-mode: standalone)').matches) {  
-      updateState({ show_pwa_alert: false })
-    }  
+    // Check if PWA, and hide message if already installed
+    // if (window.matchMedia('(display-mode: standalone)').matches) {  
+    //   updateState({ show_pwa_alert: false })
+    // }
 
     // Check SOLID pod for a shapes preference file
     // https://github.com/solid/react-components/blob/master/demo/app.jsx
@@ -383,34 +399,18 @@ export default function SemanticIndex() {
       if (repo.files.length > 0) return true
     });
 
-  function getFileLabel(file_type: string) {
-    let icon = '📄';
-    if (shape_types_mappings[file_type] == 'OWL' || file_type == 'OWL') icon = '🦉'
-    if (shape_types_mappings[file_type] == 'ShEx' || file_type == 'ShEx') icon = '✴️'
-    if (shape_types_mappings[file_type] == 'SHACL' || file_type == 'SHACL') icon = '💠'
-    if (shape_types_mappings[file_type] == 'RML' || file_type == 'RML') icon = '🦜'
-    if (shape_types_mappings[file_type] == 'R2RML' || file_type == 'R2RML') icon = '🗄'
-    if (shape_types_mappings[file_type] == 'OBO' || file_type == 'OBO') icon = '🧪'
-    if (shape_types_mappings[file_type] == 'OpenAPI' || file_type == 'OpenAPI') icon = '📬'
-    if (shape_types_mappings[file_type] == 'SPARQL' || file_type == 'SPARQL') icon = '✨️'
-    if (shape_types_mappings[file_type] == 'SKOS' || file_type == 'SKOS') icon = '📕'
-    if (shape_types_mappings[file_type] == 'Nanopub' || file_type == 'Nanopub') icon = '🗞'
-    if (shape_types_mappings[file_type] == 'Dataset' || file_type == 'Dataset') icon = '💽'
-    return icon;
-  }
-
   // Define rendering of the page:
   return(
-    <Container className='mainContainer'>
-      {state.show_pwa_alert &&
+    <Container style={{marginTop: theme.spacing(4), marginBottom: theme.spacing(3)}}>
+      {/* {state.show_pwa_alert &&
         <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}> 
           This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click! 
           <br/>On Google Chrome click the + button to the right in the URL bar. Checkout <a href="https://medium.com/progressivewebapps/how-to-install-a-pwa-to-your-device-68a8d37fadc1" className={classes.link} target="_blank" rel="noopener noreferrer">this article for more details</a> about installing on various platforms.
         </Alert>
-      }
+      } */}
 
       <LoggedIn>
-        <Typography style={{textAlign: 'center', margin: theme.spacing(2, 0)}}>
+        <Typography style={{textAlign: 'center', margin: theme.spacing(2, 2)}}>
           Welcome to your semantic resources index <Value src="user.name"/>!
         </Typography>
         {/* <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
@@ -420,11 +420,6 @@ export default function SemanticIndex() {
           Hopefully, soon you will be able to bookmark your favourites resources using your SOLID account! 🔖
         </Typography>
       </LoggedIn>
-      {/* <LoggedOut>
-        <Typography style={{textAlign: 'center', marginBottom: theme.spacing(3)}}>
-          An index of publicly available semantic resources
-        </Typography>
-      </LoggedOut> */}
 
       <About />
 
@@ -479,7 +474,7 @@ export default function SemanticIndex() {
           />
         </Box>
 
-        {/* Autocomplete to filter by repositories */}
+        {/* Autocomplete to filter by repositories or resource type */}
         {/* <Autocomplete
           multiple
           value={state.repositories_autocomplete}
@@ -627,6 +622,7 @@ export default function SemanticIndex() {
             </CardContent>
           </Collapse>
 
+          {/* Older coder block to get shapes for each files */}
           {/* <Typography variant="h6">
             File:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>
