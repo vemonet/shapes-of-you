@@ -28,9 +28,10 @@ export default function QueryYasguiButton(props: any) {
 
   // Settings for Popper
   const [open, setOpen] = React.useState(false);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl]: any = React.useState(null);
   const handleClick = (event: any) => {
-    setAnchorEl(anchorEl ? null : event.currentTarget);
+    // setAnchorEl(anchorEl ? null : event.currentTarget);
+    setAnchorEl(anchorEl ? null : document.body);
     setOpen((prev) => !prev);
   };
   const handleClickAway = () => {
@@ -61,7 +62,10 @@ export default function QueryYasguiButton(props: any) {
           &nbsp;See with YASGUI
         </Button>
       }
-      <Popper open={open} anchorEl={anchorEl} style={{width: '99%'}}>
+      <Popper open={open} anchorEl={anchorEl}
+        style={{width: '99%', position: 'absolute', top: '0'}}
+        popperOptions={{'positionFixed': true}}
+        >
         <ClickAwayListener onClickAway={handleClickAway}>
           <Card >
               <CardHeader
@@ -71,7 +75,7 @@ export default function QueryYasguiButton(props: any) {
                   </IconButton>
                 }
                 title="Query SPARQL endpoints with YASGUI ✨️"
-                subheader='We automatically import all SPARQL queries for the selected endpoint. To reduce the number of tabs, right click on a tab, and select "Close other tabs"'
+                subheader='To reduce the number of YASGUI tabs, right click on a tab, and select "Close other tabs"'
               />
             <CardContent>
               <Yasgui endpoint={props.endpoint} query={props.query} />

@@ -48,6 +48,7 @@ export default function YasguiPage(props: any) {
         true, // set as active tab
         { ...Yasgui.Tab.getDefaults(), yasqe: { value: props.query }}
       );
+      window.scrollTo(0, 0)
     } else if (props.endpoint) {
       // If only endpoint provided we import all queries for this endpoint
       let sparql_endpoint: any = props.endpoint
@@ -90,6 +91,7 @@ export default function YasguiPage(props: any) {
                 yasqe: { value: queries_obj[file_label] }}
             );
           })
+          window.scrollTo(0, 0)
         })
         .catch(error => {
           console.log(error)
@@ -103,6 +105,7 @@ export default function YasguiPage(props: any) {
         true, // set as active tab
         { ...Yasgui.Tab.getDefaults(), yasqe: { value: props.query }}
       );
+      window.scrollTo(0, 0)
     }
   })
 
@@ -113,9 +116,7 @@ export default function YasguiPage(props: any) {
 
   return (
     <Container className='mainContainer'>
-      <Paper style={{padding: theme.spacing(2, 2)}}>
-        <div id="yasguiDiv"></div>
-      </Paper>
+      <div id="yasguiDiv"></div>
     </Container>
   )
 }

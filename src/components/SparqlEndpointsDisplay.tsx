@@ -139,7 +139,7 @@ export default function SparqlEndpointsDisplay() {
   return(
     <Container className='mainContainer'>
       <Typography>
-        List of active SPARQL endpoints defined in SPARQL queries metadata
+        List of active SPARQL endpoints defined in SPARQL queries metadata. We automatically import all SPARQL queries in YASGUI for the selected endpoint.
       </Typography>
 
       {Object.keys(state.sparql_endpoints_obj).length < 1 && (
