@@ -80,26 +80,26 @@ export default function SemanticIndex() {
     repositories_autocomplete: [],
     repos_overview_chart: {},
     files_overview_chart: {},
-    checkbox_shacl: true,
-    checkbox_shex: true,
-    checkbox_sparql: true,
-    checkbox_owl: true,
-    checkbox_skos: true,
-    checkbox_obo: true,
-    checkbox_openapi: true,
-    checkbox_rml: true,
-    checkbox_r2rml: true,
-    checkbox_nanopub: true,
-    checkbox_dataset: true,
+    type_checkboxes: {
+      SHACL: true,
+      ShEx: true,
+      SPARQL: true,
+      OWL: true,
+      SKOS: true,
+      OBO: true,
+      OpenAPI: true,
+      RML: true,
+      R2RML: true,
+      Nanopub: true,
+      Dataset: true,
+    },
     show_pwa_alert: false,
     page: 1,
     shapes_per_page: 20,
     show_info_card: false,
   });
   const stateRef = React.useRef(state);
-
   // Avoid conflict when async calls
-  // Can be done with another lib (cf. Turgay)
   const updateState = React.useCallback((update) => {
     stateRef.current = {...stateRef.current, ...update};
     setState(stateRef.current);
@@ -122,7 +122,7 @@ export default function SemanticIndex() {
   const chart_colors = ['#4caf50','#9575cd', '#bcaaa4', '#ef6c00', '#26c6da',
     '#1565c0', '#aed581', '#4caf50', '#ffeb3b', '#ffb74d', '#ce93d8', '#4db6ac']
 
-  // componentDidMount: Query SPARQL endpoint to get the shapes files infos
+  // At start: query SPARQL endpoint to get the shapes files infos (componentDidMount)
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
 
@@ -141,7 +141,7 @@ export default function SemanticIndex() {
         label: 'Number of repositories per resource type',
         data: [ ],
         backgroundColor: chart_colors
-        // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
+        // hoverBackgroundColor: ['#4caf50']
     }]}
     let files_overview_chart = {
       labels: [],
@@ -149,13 +149,12 @@ export default function SemanticIndex() {
         label: 'Number of resources per resource type',
         data: [ ],
         backgroundColor: chart_colors
-        // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
     }]}
 
     // Get stats about shapes types
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(sparql_resources_overview))
       .then(res => {
-        const results_array = res.data.results.bindings;
+        const results_array: any = res.data.results.bindings;
         results_array.map((result: any): any =>  {
           // @ts-ignore
           repos_overview_chart.labels.push(shape_types_mappings[result.shape_type.value]);
@@ -182,7 +181,6 @@ export default function SemanticIndex() {
         sparqlResultArray.map((result: any): any =>  {
           // Create shape file entry
           const file_url = result.shapeFileUri.value;
-          // global_shapes_array[repo_url]['files'][file_url]
           let file_obj: any = {
             'url': file_url,
             'type': result.shape_type.value,
@@ -225,60 +223,16 @@ export default function SemanticIndex() {
         console.log(global_shapes_array)
         updateState({global_shapes_array: global_shapes_array})
 
-
-        // Convert array to object: {0:"a", 1:"b", 2:"c"}
-        // const projects_converted_hash = { ...sparqlResultArray }
-        // let projects_hash: any = {}
-        // // Iterate over projects
-        // Object.keys(projects_converted_hash).forEach(function(project) {
-        //   const projectName = projects_converted_hash[project]['shapeFileUri']['value']
-        //   // Use the project URI as key in the hash
-        //   if (!projects_hash[projectName]){
-        //     projects_hash[projectName] = {shapes: []}
-        //   }
-        //   // Iterate over project properties
-        //   Object.keys(projects_converted_hash[project]).forEach(function(property: any) {
-        //     const propertyHash = projects_converted_hash[project][property]
-        //     if (propertyHash) {
-        //       if (property == 'shapes') {
-        //         // Exception for shapes which is a list
-        //         let shape_label = propertyHash.value;
-        //         if (shape_label.length > 100) {
-        //           const n = shape_label.lastIndexOf('#');
-        //           shape_label = shape_label.substring(n + 1);
-        //         }
-        //         if (shape_label.length > 150) {
-        //           shape_label = shape_label.substring(0, 150)
-        //         }
-        //         projects_hash[projectName][property].push(shape_label);
-        //       } else {
-        //         projects_hash[projectName][property] = propertyHash.value 
-        //       }
-        //     }
-        //   })
-        // })
-        // Convert back to array for filtering
-        // const project_final_array: any = Object.keys(projects_hash).map((key) => projects_hash[key]);
-        // const project_final_array: any = sparqlResultArray.map((row: any) => {
-        //   // console.log(row);
-        //   Object.keys(row).map((key) => row[key] = row[key]['value']);
-        //   return row
-        //   // Object.keys(row).map((key) => key['value']);
-        // }); 
-        // console.log('project_final_array');
-        // console.log(project_final_array);
-        // // sparqlResultArray
-        // updateState({shapes_files_list: project_final_array})
       })
       .catch(error => {
         console.log(error)
       })
 
-    // Get all shapes in files (3m2)
+    // TODO: Get all shapes in files. Disabled, too big: 3m2. 
+    // Considering doing a separated "deep search" for shapes parts
     // axios.get(endpointToQuery + `?query=` + encodeURIComponent(getShapesQuery))
     //   .then(res => {
     //     const sparqlResultArray = res.data.results.bindings;
-
     //     // Convert array to object: {0:"a", 1:"b", 2:"c"}
     //     const projects_converted_hash = { ...sparqlResultArray }
     //     let projects_hash: any = {}
@@ -384,7 +338,7 @@ export default function SemanticIndex() {
   }
 
   const handleCheckboxes = (event: React.ChangeEvent<HTMLInputElement>) => {
-    updateState({ [event.target.name]: event.target.checked });
+    updateState({type_checkboxes: {...state.type_checkboxes, [event.target.name]: event.target.checked} });
   }
 
   const handleExpandClick = (e: any) => {
@@ -466,7 +420,6 @@ export default function SemanticIndex() {
     //   return filtered;
     // }, []);
 
-
   // const filtered_files = Object.fromEntries(Object.entries(state.global_shapes_array).filter(([repo_url, repo_obj]: any) => {
   //   let search_description = repo_url + ' ';
   //   if (repo_obj.description) search_description = search_description + ' ' + repo_obj.description;
@@ -535,10 +488,6 @@ export default function SemanticIndex() {
   // Define rendering of the page:
   return(
     <Container className='mainContainer'>
-      {/* <Typography variant="h4" style={{textAlign: 'center'}}>
-        💠 Shapes of You
-      </Typography> */}
-
       {state.show_pwa_alert &&
         <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}> 
           This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click! 
@@ -563,6 +512,7 @@ export default function SemanticIndex() {
         </Typography>
       </LoggedOut> */}
 
+      {/* Display About expandable card */}
       <About />
 
       { state.repos_overview_chart['datasets'] && state.files_overview_chart['datasets'] &&
@@ -656,117 +606,20 @@ export default function SemanticIndex() {
           />}
         /> */}
 
+        {/* Display checkboxes to filter on shape type */}
         <FormGroup style={{marginTop: theme.spacing(2)}} row>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_shacl}
-                onChange={handleCheckboxes}
-                name="checkbox_shacl"
-                color="primary"
-              /> }
-            label={"SHACL " + getFileLabel('SHACL')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_shex}
-                onChange={handleCheckboxes}
-                name="checkbox_shex"
-                color="primary"
-              /> }
-            label={"ShEx " + getFileLabel('ShEx')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_sparql}
-                onChange={handleCheckboxes}
-                name="checkbox_sparql"
-                color="primary"
-              /> }
-            label={"SPARQL " + getFileLabel('SPARQL')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_owl}
-                onChange={handleCheckboxes}
-                name="checkbox_owl"
-                color="primary"
-              /> }
-            label={"OWL " + getFileLabel('OWL')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_skos}
-                onChange={handleCheckboxes}
-                name="checkbox_skos"
-                color="primary"
-              /> }
-            label={"SKOS " + getFileLabel('SKOS')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_obo}
-                onChange={handleCheckboxes}
-                name="checkbox_obo"
-                color="primary"
-              /> }
-            label={"OBO " + getFileLabel('OBO')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_rml}
-                onChange={handleCheckboxes}
-                name="checkbox_rml"
-                color="primary"
-              /> }
-            label={"RML " + getFileLabel('RML')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_r2rml}
-                onChange={handleCheckboxes}
-                name="checkbox_r2rml"
-                color="primary"
-              /> }
-            label={"R2RML " + getFileLabel('R2RML')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_nanopub}
-                onChange={handleCheckboxes}
-                name="checkbox_nanopub"
-                color="primary"
-              /> }
-            label={"Nanopub " + getFileLabel('Nanopub')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_dataset}
-                onChange={handleCheckboxes}
-                name="checkbox_dataset"
-                color="primary"
-              /> }
-            label={"Dataset " + getFileLabel('Dataset')}
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={state.checkbox_openapi}
-                onChange={handleCheckboxes}
-                name="checkbox_openapi"
-                color="primary"
-              /> }
-            label={"OpenAPI " + getFileLabel('OpenAPI')}
-          />
+          {Object.keys(state.type_checkboxes).map((checkbox: any, key: number) => {
+            return <FormControlLabel key={key}
+              control={
+                <Checkbox
+                  checked={state.type_checkboxes[checkbox]}
+                  onChange={handleCheckboxes}
+                  name={checkbox}
+                  color="primary"
+                /> }
+              label={checkbox + " " + getFileLabel(checkbox)}
+            />
+          })}
         </FormGroup>
 
       </Paper>
