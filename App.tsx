@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { View } from "react-native";
 // import { Router, Route } from "./src/components/react-router";
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import NavBar from "./src/components/NavBar";
@@ -60,17 +60,20 @@ const App = () => (
       <meta name="twitter:description" content={website_description}/>
       <meta name="twitter:image" content=""/>
     </Helmet>
-    {/* <Router basename="/shapes-of-you/"> */}
-    <HashRouter basename="/">
+    <Router basename="/">
+    {/* <HashRouter basename="/"> */}
+      {/* <Switch> */}
       <View style={{height: '100%', backgroundColor: '#eceff1'}}>
         <NavBar />
 
         <Route exact path="/" component={SemanticIndex} />
-        <Route path="/yasgui" component={Yasgui} />
-        <Route path="/about" component={About} />
+        <Route exact path="/yasgui" component={Yasgui} />
+        <Route exact path="/about" component={About} />
+        {/* <Route component={SemanticIndex} /> */}
         <Footer />
       </View>
-    </HashRouter>
+      {/* </Switch> */}
+    </Router>
   </MuiThemeProvider>
 );
 export default App;
