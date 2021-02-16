@@ -305,6 +305,15 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-ZFA-MA-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/core.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/core.owl:1:6: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/reflexivity_axioms.owl
 
 
@@ -496,6 +505,24 @@ File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Fb
 ---
 In repository: https://github.com/obophenotype/uberon
 > too many values to unpack (expected 2)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Fhuman-view.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Fmouse-view.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.obo
@@ -1703,51 +1730,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-deve
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-idranges.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbdv-idranges.owl:1:1: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro-idranges.owl
 
 
@@ -1890,6 +1872,51 @@ File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pco_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbdv-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fdefinitions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fpattern.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/src%2Fontology%2Fbspo-idranges.owl
