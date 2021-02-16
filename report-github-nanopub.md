@@ -96,6 +96,17 @@ Bad syntax (Prefix "dct:" not bound) at ^ in:
 "...b'\nnpa:graph {\n  <*NPURI*> npa:hasHeadGraph <*HEADURI*> ;\n    '^b'dct:created "*DATETIME*"^^xsd:dateTime ;\n    npa:creationDay'..."
 
 ---
+File: https://raw.githubusercontent.com/tkuhn/nanopubstudies-supplementary/master/botstudy%2Fgenerif.template.trig
+
+
+
+---
+RDF parsed as trig, in repository: https://github.com/tkuhn/nanopubstudies-supplementary
+> at line 10 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'efix npx: <http://krauthammerlab.med.yale.edu/nanopub/> .\n\n:'^b'@NPID@_Head {\n    :@NPID@ a :GeneRIFNanopublication .\n\n    :'..."
+
+---
 File: https://raw.githubusercontent.com/tkuhn/fair-pkd-nanopubs/master/templates%2Fder-nanopub-end.trig
 
 
@@ -127,17 +138,6 @@ RDF parsed as trig, in repository: https://github.com/Nanopublication/nanopub-ex
 > at line 30 of <>:
 Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b':Organism_2;\n    rdfs:label "Lasioglossum mosselinum" ;\n    '^b'rdf:type dwc:Organism;\n    dwc:identificationID sub:Identifi'..."
-
----
-File: https://raw.githubusercontent.com/tkuhn/nanopubstudies-supplementary/master/botstudy%2Fgenerif.template.trig
-
-
-
----
-RDF parsed as trig, in repository: https://github.com/tkuhn/nanopubstudies-supplementary
-> at line 10 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'efix npx: <http://krauthammerlab.med.yale.edu/nanopub/> .\n\n:'^b'@NPID@_Head {\n    :@NPID@ a :GeneRIFNanopublication .\n\n    :'..."
 
 ---
 File: https://raw.githubusercontent.com/MaastrichtU-IDS/nanopublishing-drug-actions/master/ontology%2Fdao.ttl
