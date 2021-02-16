@@ -101,7 +101,7 @@ export default function SemanticIndex() {
     checkbox_r2rml: true,
     checkbox_nanopub: true,
     checkbox_dataset: true,
-    show_pwa_alert: true,
+    show_pwa_alert: false,
     page: 1,
     shapes_per_page: 20,
     show_info_card: false,
