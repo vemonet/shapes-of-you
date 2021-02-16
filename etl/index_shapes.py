@@ -54,17 +54,15 @@ def main(argv):
     git_registry = 'github'
 
   # Default topics if not provided
-  topics = 'owl,shacl-shapes,shex,grlc,skos,obofoundry'
+  search_topic = 'shacl-shapes'
   if len(argv) > 2:
-    topics = argv[2]
-    if git_registry != 'github-extras':
-      topics = topics.split(',')
-  logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(topics))
+    search_topic = argv[2]
+  logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 🗂  Indexing topics: ' + str(search_topic))
 
   # Reset report file
   with open(root / '../REPORT.md', 'w') as f:
     f.write('## Fails loading files to `rdflib`\n\n' +
-      '**Indexing topics**: `' + '`, `'.join(topics) + '`'
+      '**Indexing topic**: `' + search_topic + '`'
       '\n\n*Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*\n\n\n')
 
   client = GraphqlClient(endpoint="https://api.github.com/graphql")
@@ -72,17 +70,17 @@ def main(argv):
 
   # Default topics list is used if not provided
   if git_registry == 'github':
-    shapes_graph = fetch_from_github(shapes_graph, client, GITHUB_TOKEN, topics)
+    shapes_graph = fetch_from_github(shapes_graph, client, GITHUB_TOKEN, search_topic)
 
   elif git_registry == 'github-extras':
-    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN, topics)
+    shapes_graph = fetch_from_github_extra(shapes_graph, client, GITHUB_TOKEN, search_topic)
 
   elif git_registry == 'gitlab':
     gl = gitlab.Gitlab('https://gitlab.com', private_token=GITLAB_TOKEN)
-    shapes_graph = fetch_from_gitlab(shapes_graph, gl, topics)
+    shapes_graph = fetch_from_gitlab(shapes_graph, gl, search_topic)
 
   elif git_registry == 'gitee':
-    shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, topics)
+    shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, search_topic)
 
   # Extras SPARQL endpoints to check
   extra_endpoints = []
@@ -103,40 +101,40 @@ def main(argv):
 
 
 # Retrieve releases in projects returned by the GraphQL calls
-def fetch_from_github(shapes_graph, client, oauth_token, topics):
+def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
     """Fetch shapes files from GitHub using the GraphQL API.
     We filter repositories by topics provided as argument
     """
     time_start = datetime.now()
-    for github_topic in topics:
-      has_next_page = True
-      after_cursor = None
-      while has_next_page:
-          data = client.execute(
-              query=github_graphql_get_shapes(github_topic, after_cursor),
-              headers={"Authorization": "Bearer {}".format(oauth_token)},
-          )
-          for repository in data["data"]["search"]["repositories"]:
-              check_run_time(time_start, data["data"]["search"]["repositories"], repository)
-              repo_json = repository["repo"]
-              repo_url = repo_json["url"]
-              if repo_url in SKIP_REPOS:
-                continue
-              try:
-                branch = repo_json['defaultBranchRef']['name']
-                repo_description = repo_json["description"]
-              except Exception as e:
-                logging.error(e)
-                logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
-                branch = 'master'
-                repo_description = ''
+    # for github_topic in topics:
+    has_next_page = True
+    after_cursor = None
+    while has_next_page:
+        data = client.execute(
+            query=github_graphql_get_shapes(search_topic, after_cursor),
+            headers={"Authorization": "Bearer {}".format(oauth_token)},
+        )
+        for repository in data["data"]["search"]["repositories"]:
+            check_run_time(time_start, data["data"]["search"]["repositories"], repository)
+            repo_json = repository["repo"]
+            repo_url = repo_json["url"]
+            if repo_url in SKIP_REPOS:
+              continue
+            try:
+              branch = repo_json['defaultBranchRef']['name']
               repo_description = repo_json["description"]
-              # repo_description = repo_json["shortDescriptionHTML"]
-              shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-          has_next_page = data["data"]["search"]["pageInfo"][
-              "hasNextPage"
-          ]
-          after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
+            except Exception as e:
+              logging.error(e)
+              logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
+              branch = 'master'
+              repo_description = ''
+            repo_description = repo_json["description"]
+            # repo_description = repo_json["shortDescriptionHTML"]
+            shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+        has_next_page = data["data"]["search"]["pageInfo"][
+            "hasNextPage"
+        ]
+        after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
     
     return shapes_graph
 
@@ -215,50 +213,19 @@ def github_graphql_get_extra(repo):
     }'''
 
 # Fetch files from GitLab
-def fetch_from_gitlab(shapes_graph, gl, topics):
-    for search_topic in topics:
-      gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
-      for repo_json in gitlab_repos_list:
-        try:
-          repo_url = repo_json["web_url"]
-          if repo_url in SKIP_REPOS:
-            continue
-          if 'default_branch' in repo_json:
-            branch = repo_json['default_branch']
-          else:
-            branch = 'master'
-            logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
-          repo_descriptions = []
-          if repo_json["name"]:
-            repo_descriptions.append(repo_json["name"])
-          if repo_json["description"]:
-            repo_descriptions.append(repo_json["description"])
-
-          repo_description = ' - '.join(repo_descriptions)
-          shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
-        except Exception as e:
-          add_to_report('GitLab issue processing: ' + str(repo_json) + '\n\n' + str(e))
-    
-    return shapes_graph
-
-def fetch_from_gitee(shapes_graph, token, topics):
-    # Record time to avoid hitting GitHub Actions limits
-    time_start = datetime.now()
-
-    for search_topic in topics:
-      gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
-      for repo_json in gitee_repos_list:
-        check_run_time(time_start, gitee_repos_list, repo_json)
-
-        repo_url = repo_json["html_url"].rstrip('.git')
-
+def fetch_from_gitlab(shapes_graph, gl, search_topic):
+    # for search_topic in topics:
+    gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
+    for repo_json in gitlab_repos_list:
+      try:
+        repo_url = repo_json["web_url"]
         if repo_url in SKIP_REPOS:
           continue
         if 'default_branch' in repo_json:
           branch = repo_json['default_branch']
         else:
           branch = 'master'
-          logging.warning('🕊 No default_branch found for repo_url, using master')
+          logging.warning('🕊 No default_branch found for ' + repo_url + ', using master')
         repo_descriptions = []
         if repo_json["name"]:
           repo_descriptions.append(repo_json["name"])
@@ -266,8 +233,38 @@ def fetch_from_gitee(shapes_graph, token, topics):
           repo_descriptions.append(repo_json["description"])
 
         repo_description = ' - '.join(repo_descriptions)
-        # repo_description = repo_json["shortDescriptionHTML"]
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+      except Exception as e:
+        add_to_report('GitLab issue processing: ' + str(repo_json) + '\n\n' + str(e))
+    
+    return shapes_graph
+
+def fetch_from_gitee(shapes_graph, token, search_topic):
+    # Record time to avoid hitting GitHub Actions limits
+    time_start = datetime.now()
+    # for search_topic in topics:
+    gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
+    for repo_json in gitee_repos_list:
+      check_run_time(time_start, gitee_repos_list, repo_json)
+
+      repo_url = repo_json["html_url"].rstrip('.git')
+
+      if repo_url in SKIP_REPOS:
+        continue
+      if 'default_branch' in repo_json:
+        branch = repo_json['default_branch']
+      else:
+        branch = 'master'
+        logging.warning('🕊 No default_branch found for repo_url, using master')
+      repo_descriptions = []
+      if repo_json["name"]:
+        repo_descriptions.append(repo_json["name"])
+      if repo_json["description"]:
+        repo_descriptions.append(repo_json["description"])
+
+      repo_description = ' - '.join(repo_descriptions)
+      # repo_description = repo_json["shortDescriptionHTML"]
+      shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
     return shapes_graph
 
 

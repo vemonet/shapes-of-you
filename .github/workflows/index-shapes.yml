@@ -24,53 +24,72 @@ jobs:
       matrix:
         include:
         - git-service: github
-          run-label: topics-onto
-          search-topics: topic:owl,topic:skos
+          search-string: topic:owl
         - git-service: github
-          run-label: topics-obo
-          search-topics: topic:obofoundry
+          search-string: topic:skos
         - git-service: github
-          run-label: topics-schema
-          search-topics: topic:shacl-shapes,topic:shex,topic:grlc
+          search-string: topic:obofoundry
         - git-service: github
-          run-label: search-sparql
-          search-topics: sparql+queries
+          search-string: topic:shacl-shapes
         - git-service: github
-          run-label: topics-smartapi
-          search-topics: topic:smartapi,topic:ncats-translator,topic:translator-api
+          search-string: topic:shex
         - git-service: github
-          run-label: topics-openapi
-          search-topics: topic:openapi
+          search-string: topic:grlc
         - git-service: github
-          run-label: topics-api
-          search-topics: topic:api
+          search-string: sparql+queries
         - git-service: github
-          run-label: rml-run
-          search-topics: r2rml,rml,topic:rml-mapping,nanobench,nanopub
+          search-string: topic:smartapi
+        - git-service: github
+          search-string: topic:ncats-translator
+        - git-service: github
+          search-string: topic:translator-api
+        - git-service: github
+          search-string: topic:openapi
+        - git-service: github
+          search-string: topic:api
+        - git-service: github
+          search-string: r2rml
+        - git-service: github
+          search-string: topic:rml-mapping
+        - git-service: github
+          search-string: rml
+        - git-service: github
+          search-string: nanobench
+        - git-service: github
+          search-string: nanopub
         - git-service: github-extras
-          run-label: extra-1
-          search-topics: EXTRAS_GITHUB_REPOSITORIES.txt
+          search-string: EXTRAS_GITHUB_REPOSITORIES.txt
         - git-service: github-extras
-          run-label: extra-2
-          search-topics: EXTRAS_GITHUB_REPOSITORIES_2.txt
+          search-string: EXTRAS_GITHUB_REPOSITORIES_2.txt
         - git-service: github
-          run-label: direct-search-openapi
-          search-topics: ncats+translator,biothings,smartapi,knowledge+provider
+          search-string: ncats+translator
+        - git-service: github
+          search-string: biothings
+        - git-service: github
+          search-string: smartapi
+        - git-service: github
+          search-string: knowledge+provider
         - git-service: gitee
-          run-label: ontology-run
-          search-topics: ontology,sparql
+          search-string: ontology
         - git-service: gitee
-          run-label: sparql-run
-          search-topics: sparql
+          search-string: sparql
         - git-service: gitlab
-          run-label: main-run
-          search-topics: owl,shacl,shex,sparql,skos,obofoundry
+          search-string: owl
+        - git-service: gitlab
+          search-string: shacl
+        - git-service: gitlab
+          search-string: shex
+        - git-service: gitlab
+          search-string: sparql
+        - git-service: gitlab
+          search-string: skos
+        - git-service: gitlab
+          search-string: obofoundry
+
         # - git-service: github #eclipse/rdf4j slow down
-        #   run-label: direct-search-shacl
-        #   search-topics: shacl
+        #   search-string: shacl
         # - git-service: gitlab
-        #   run-label: run-3
-        #   search-topics: ontology # Fails without warnings
+        #   search-string: ontology # Fails without warnings
 
     runs-on: ubuntu-latest
     steps:
@@ -93,10 +112,10 @@ jobs:
         python -m pip install -r etl/requirements.txt
         sudo apt-get install libicu-dev python3-dev
 
-    - name: Run Python script to index ${{ matrix.search-topics }} in ${{ matrix.git-service }}
+    - name: Run Python script to index ${{ matrix.search-string }} in ${{ matrix.git-service }}
       env:
         GIT_SERVICE: ${{ matrix.git-service }}
-        SEARCH_TOPICS: ${{ matrix.search-topics }}
+        SEARCH_TOPICS: ${{ matrix.search-string }}
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
@@ -106,14 +125,16 @@ jobs:
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: report-${{ matrix.git-service }}-${{ matrix.run-label }}
+        name: report-${{ matrix.git-service }}-${{ matrix.search-string }}
         path: REPORT.md
 
-    - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.run-label }}.md file in report branch
+    - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.search-string }}.md file in report branch
       env:
         GIT_SERVICE: ${{ matrix.git-service }}
-        RUN_LABEL: ${{ matrix.run-label }}
+        RUN_LABEL: ${{ matrix.search-string }}
       run: |
+        export RUN_LABEL=${RUN_LABEL//:/-}
+        export RUN_LABEL=${RUN_LABEL//+/-}
         mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
@@ -126,13 +147,13 @@ jobs:
         git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
         git push || exit 0
 
-    - name: Upload ${{ matrix.git-service }}-${{ matrix.run-label }} RDF output as artifact
+    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.run-label }}
+        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
         path: shapes-rdf.ttl
 
-    - name: Upload ${{ matrix.git-service }}-${{ matrix.run-label }} RDF file to the triplestore
+    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
       uses: MaastrichtU-IDS/RdfUpload@master
       with:
         file: shapes-rdf.ttl
