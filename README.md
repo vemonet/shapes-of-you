@@ -23,6 +23,7 @@ Add one of those topics to your [GitHub](https://github.com) repository, or ment
 * **Nanopublication templates**: add the topic `nanopub`, we index RDF files, with all `nt:AssertionTemplates` and inputs they contain
 * **OBO ontologies**: add the topic `obo`, we index all `.obo` files with all terms they contain
 * **OpenAPI specifications**: add the topic `openapi`, we index `.yml`, `.yaml` and `.json` files, and parse the spec to retrieve API metadata
+* **DCAT datasets**: add the topic `dataset`, we index RDF files, with all `dcat:Dataset` they contain
 
 Additional GitHub repositories can be included in the file [`EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_GITHUB_REPOSITORIES.txt) (if not tagged with the right topic)
 
@@ -34,12 +35,12 @@ This web service is composed of those 4 main parts, described more in details be
 
 * A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories. The retrieved data is defined using [RDF](https://www.w3.org/RDF/).
   * A [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
-* A React webapp written in TypeScript, which displays the files and metadata from the SPARQL endpoint with filters, and search
+* A React web app written in TypeScript, which displays the files and metadata from the SPARQL endpoint with filters, and search
   * The website is automatically deployed by [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://index.semanticscience.org) at each push to the `main` branch.
-
+* We use [expo](https://expo.io/) to build this [Progressive Web App](https://web.dev/progressive-web-apps/) (aka. PWA), it can be installed as a native app on any computer desktop (using Chrome is recommended), or smartphones.
 * A triplestore with a publicly available SPARQL endpoint at https://graphdb.dumontierlab.com/repositories/shapes-registry
-
 * A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/vemonet/shapes-of-you
+  * The API is just provided as exploratory entry point for external users. The React web app query directly the SPARQL endpoint to improve speed.
 
 ---
 
@@ -56,6 +57,7 @@ Here is an overview of the ontology:
 - rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 - dc: <http://purl.org/dc/elements/1.1/>
 - dct: <http://purl.org/dc/terms/>
+- dcat: http://www.w3.org/ns/dcat#
 - owl: http://www.w3.org/2002/07/owl#
 - skos: http://www.w3.org/2004/02/skos/core#
 - sio: <http://semanticscience.org/resource/SIO_>
@@ -86,6 +88,7 @@ Here is an overview of the ontology:
     * `rml:LogicalSource` (RML and YARRRML mappings)
     * `r2rml:TriplesMap` (R2RML mappings)
     * `nt:AssertionTemplate` (Nanopublication templates)
+    * `dcat:Dataset` (DCAT datasets)
 * Git repositories: `schema:DataCatalog`
   * Properties:
     * `rdfs:comment`
@@ -196,7 +199,7 @@ Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).
 
 ## Acknowledgements 🤝
 
-RDF data hosted in [Ontotext GraphDB triplestore](https://graphdb.ontotext.com/)
+RDF data hosted in a [Ontotext GraphDB triplestore](https://graphdb.ontotext.com/)
 
 API powered by [grlc.io](http://grlc.io)
 

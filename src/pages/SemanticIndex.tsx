@@ -7,6 +7,8 @@ import Pagination from '@material-ui/lab/Pagination';
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
 // import Autocomplete from '@material-ui/lab/Autocomplete';
 // import Alert from '@material-ui/lab/Alert';
 
@@ -68,18 +70,19 @@ export default function SemanticIndex() {
     repos_overview_chart: {},
     files_overview_chart: {},
     type_checkboxes: {
-      SHACL: true,
-      ShEx: true,
       SPARQL: true,
       OWL: true,
       SKOS: true,
       OBO: true,
-      OpenAPI: true,
+      SHACL: true,
+      ShEx: true,
       RML: true,
       R2RML: true,
       Nanopub: true,
+      OpenAPI: true,
       Dataset: true,
     },
+    search_repos_only: false,
     show_pwa_alert: false,
     page: 1,
     shapes_per_page: 20,
@@ -352,15 +355,14 @@ export default function SemanticIndex() {
   // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
   const filtered_files = state.global_shapes_array
     .filter((repo: any) => {
+      // First filter by repo/files descriptions, the search_description field allow to search also in files at this level
       let search_description = repo.url + ' ';
-      // if (file.label) search_description = search_description + ' ' + file.label;
-      // if (file.description) search_description = search_description + ' ' + file.description;
       if (repo.description) search_description = search_description + ' ' + repo.description;
       if (repo.search_description) search_description = search_description + ' ' + repo.search_description;
       return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
     })
     .reduce((filtered: any, repo: any) => {
-      // Filter files in the repo
+      // Then filter files in the repo
       let filtered_repo: any = {}
       // Filter files for search input
       filtered_repo.files = repo.files.filter((file: any) => {
@@ -381,10 +383,10 @@ export default function SemanticIndex() {
         || (state.type_checkboxes['Dataset'] === true && file.type == 'http://www.w3.org/ns/dcat#Dataset')
         || (state.type_checkboxes['Nanopub'] === true && file.type == 'https://w3id.org/np/o/ntemplate/AssertionTemplate')
         ) {
-          if (state.search) {
+          if (state.search && !state.search_repos_only) {
             return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
           } else {
-            // Only filter by type if no search provided
+            // If no search provided, we only filter by type 
             return true
           }
         }
@@ -395,20 +397,13 @@ export default function SemanticIndex() {
       return filtered;
     }, [])
     .filter((repo: any) => {
-      // Remove repo with no files
+      // Remove repos with no files
       if (repo.files.length > 0) return true
     });
 
   // Define rendering of the page:
   return(
     <Container style={{marginTop: theme.spacing(4), marginBottom: theme.spacing(3)}}>
-      {/* {state.show_pwa_alert &&
-        <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}> 
-          This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click! 
-          <br/>On Google Chrome click the + button to the right in the URL bar. Checkout <a href="https://medium.com/progressivewebapps/how-to-install-a-pwa-to-your-device-68a8d37fadc1" className={classes.link} target="_blank" rel="noopener noreferrer">this article for more details</a> about installing on various platforms.
-        </Alert>
-      } */}
-
       <LoggedIn>
         <Typography style={{textAlign: 'center', margin: theme.spacing(2, 2)}}>
           Welcome to your semantic resources index <Value src="user.name"/>!
@@ -474,42 +469,6 @@ export default function SemanticIndex() {
           />
         </Box>
 
-        {/* Autocomplete to filter by repositories or resource type */}
-        {/* <Autocomplete
-          multiple
-          value={state.repositories_autocomplete}
-          onChange={handleAutocompleteRepositories}
-          id="autocomplete-repositories"
-          options={state.repositories_hash.filter( (repo: any) =>{ return (filtered_repos.indexOf(repo.label) > -1) })
-            .map((option: any) => option.label+ "," + option.count + "," + option.description)}
-          getOptionLabel={(option) => option.split(",")[0].replace('https://github.com/', '')}
-          renderOption={(option: any) => (
-            <React.Fragment>
-              {option.split(",")[0].replace('https://github.com/', '')} ({option.split(",")[1]} files) 
-              {option.split(",")[2] && 
-                <React.Fragment>
-                  &nbsp;- {option.split(",")[2]}
-                </React.Fragment>
-              }
-            </React.Fragment>
-          )}
-          renderInput={params => <TextField {...params} 
-            label="📁 Filter by repositories" 
-            variant="outlined" 
-            // style={{ backgroundColor: '#ffffff' }}
-            // onInputChange={handleAutocompleteRepositories}
-            // size='small'
-            // InputProps={{
-            //   className: classes.whiteColor
-            // }}
-            // ListboxProps={{
-            //   className: classes.whiteColor,
-            // }}
-            // getOptionLabel={option => option.title}
-            // style={{ width: '60ch' }}
-          />}
-        /> */}
-
         {/* Display checkboxes to filter on shape type */}
         <FormGroup style={{marginTop: theme.spacing(2)}} row>
           {Object.keys(state.type_checkboxes).map((checkbox: any, key: number) => {
@@ -533,7 +492,7 @@ export default function SemanticIndex() {
               })
               updateState({ type_checkboxes: checkboxes });
             }}>
-            {/* <SendIcon />&nbsp; */}
+            <CheckBoxOutlineBlankIcon />&nbsp;
             Uncheck all
           </Button>
           <Button size="small" variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
@@ -544,10 +503,19 @@ export default function SemanticIndex() {
               })
               updateState({ type_checkboxes: checkboxes });
             }}>
+            <CheckBoxIcon />&nbsp;
             Check all
           </Button>
+          <FormControlLabel control={
+              <Checkbox
+                checked={state.search_repos_only}
+                onChange={() => { updateState({ search_repos_only: !state.search_repos_only }); }}
+                name='search_repos_only'
+                color="primary"
+              /> }
+            label={"Disable file filter ☕️ "}
+          />
         </FormGroup>
-
       </Paper>
 
       {Object.keys(state.global_shapes_array).length < 1 && (
@@ -560,7 +528,6 @@ export default function SemanticIndex() {
       {filtered_files
           .slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1))
           .map(function(repo_obj: any, key: number){
-        // return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
         return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(1, 1), margin: theme.spacing(2, 0)}}>
           <CardContent style={{paddingBottom: theme.spacing(0), margin: theme.spacing(0, 0)}}>
             <Typography >
@@ -573,9 +540,6 @@ export default function SemanticIndex() {
                 </>
               }
             </Typography>
-            {/* <Typography style={{margin: theme.spacing(1, 0)}}>
-              {repo_obj.files.length} files
-            </Typography> */}
 
           </CardContent>
 
@@ -610,7 +574,7 @@ export default function SemanticIndex() {
                       // Limit description to 1500 chars
                       <div style={{margin: theme.spacing(1, 0)}}>
                         <ReactMarkdown 
-                          source={file_obj.description.substring(0, 1500)}
+                          source={file_obj.description.substring(0, 1000)}
                           renderers={{ paragraph: Typography }}
                         />
                       </div>
@@ -622,7 +586,7 @@ export default function SemanticIndex() {
             </CardContent>
           </Collapse>
 
-          {/* Older coder block to get shapes for each files */}
+          {/* Older codeblocks to get shapes for each files */}
           {/* <Typography variant="h6">
             File:&nbsp;
             <b><a href={project.shapeFileUri} className={classes.link}>{project.label}</a></b>
@@ -669,6 +633,50 @@ export default function SemanticIndex() {
               })}
             </>
           } */}
+
+          {/* Alert for PWA */}
+          {/* {state.show_pwa_alert &&
+          <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}> 
+            This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click! 
+            <br/>On Google Chrome click the + button to the right in the URL bar. Checkout <a href="https://medium.com/progressivewebapps/how-to-install-a-pwa-to-your-device-68a8d37fadc1" className={classes.link} target="_blank" rel="noopener noreferrer">this article for more details</a> about installing on various platforms.
+          </Alert>
+          } */}
+
+          {/* Autocomplete to filter by repositories or resource type */}
+          {/* <Autocomplete
+            multiple
+            value={state.repositories_autocomplete}
+            onChange={handleAutocompleteRepositories}
+            id="autocomplete-repositories"
+            options={state.repositories_hash.filter( (repo: any) =>{ return (filtered_repos.indexOf(repo.label) > -1) })
+              .map((option: any) => option.label+ "," + option.count + "," + option.description)}
+            getOptionLabel={(option) => option.split(",")[0].replace('https://github.com/', '')}
+            renderOption={(option: any) => (
+              <React.Fragment>
+                {option.split(",")[0].replace('https://github.com/', '')} ({option.split(",")[1]} files) 
+                {option.split(",")[2] && 
+                  <React.Fragment>
+                    &nbsp;- {option.split(",")[2]}
+                  </React.Fragment>
+                }
+              </React.Fragment>
+            )}
+            renderInput={params => <TextField {...params} 
+              label="📁 Filter by repositories" 
+              variant="outlined" 
+              // style={{ backgroundColor: '#ffffff' }}
+              // onInputChange={handleAutocompleteRepositories}
+              // size='small'
+              // InputProps={{
+              //   className: classes.whiteColor
+              // }}
+              // ListboxProps={{
+              //   className: classes.whiteColor,
+              // }}
+              // getOptionLabel={option => option.title}
+              // style={{ width: '60ch' }}
+            />}
+          /> */}
         </Card>
       })}
       <Pagination count={Math.floor(Object.keys(filtered_files).length / state.shapes_per_page) + 1} 

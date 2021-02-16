@@ -6,7 +6,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import CloseIcon from '@material-ui/icons/Close';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import GrlcApiIcon from '@material-ui/icons/Send';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import ActiveEndpointsIcon from '@material-ui/icons/OfflineBolt';
 
 import { AuthButton, Value } from '@solid/react';
 // @ts-ignore
@@ -89,7 +89,7 @@ export default function NavBar() {
         </Tooltip> */}
         <Tooltip  title='List of active SPARQL endpoints, and their associated queries'>
           <Button className={classes.menuButton} onClick={handleClick}>
-            <CheckCircleIcon style={{ marginRight: theme.spacing(1)}} />
+            <ActiveEndpointsIcon style={{ marginRight: theme.spacing(1)}} />
             Active endpoints
           </Button>
         </Tooltip>
@@ -107,8 +107,8 @@ export default function NavBar() {
                       <CloseIcon />
                     </IconButton>
                   }
-                  title="⚡️ List of active SPARQL endpoints defined in queries metadata"
-                  subheader='We automatically import all SPARQL queries in YASGUI for the endpoint you select'
+                  title="⚡️ List of active SPARQL endpoints extracted from queries metadata"
+                  subheader='Each endpoint has been tested to make sure they are active. We automatically import all SPARQL queries in YASGUI for the endpoint you select'
                   style={{paddingBottom: '0px'}}
                 />
               <CardContent>
