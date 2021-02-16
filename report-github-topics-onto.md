@@ -8345,22 +8345,13 @@ RDF parsed as xml, in repository: https://github.com/ISA-tools/stato
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/releases/1.2/stato.owl:16:117: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
-File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Fstato-experimental.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/ISA-tools/stato
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/dev/ontology/stato-experimental.owl:43:16: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
 File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Fstato.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/ISA-tools/stato
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/dev/ontology/stato.owl:18:70: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/dev/ontology/stato.owl:20:70: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
 File: https://raw.githubusercontent.com/ISA-tools/stato/dev/dev%2Fontology%2Freasoned%2Fowl%2Fstato-reasoned.owl
@@ -10012,6 +10003,64 @@ Bad syntax (expected item in list or ')') at ^ in:
 "...b'  sh:property [\n    sh:path props:hasTextValue;\n    sh:in (1'^b',2,3);\n    sh:message "must be in";\n  ] ;\n\n'"
 
 ---
+File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
+> at line 4 of <>:
+Bad syntax (Prefix "    my:" not bound) at ^ in:
+"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
+
+---
+File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/paya54/Reason-OWL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
+
+---
+File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/Svpwm/ChronicDiseaseManagement
+> at line 8 of <>:
+Bad syntax (Prefix "rule1:" not bound) at ^ in:
+"...b'refix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r\n\r\n\r\n['^b'rule1: (?p :hasCookingMethod ?n), (?n rdf:type :NotFryMethod'..."
+
+---
+File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Feiffel.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/eiffel.ttl'
+
+---
+File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Flink.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/link.ttl'
+
+---
+File: https://raw.githubusercontent.com/isuruamantha/OWL-to-AIML/master/src%2Fmain%2Fresources%2Fcoronavirus.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/isuruamantha/OWL-to-AIML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
 File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
 
 
@@ -10055,64 +10104,6 @@ File: https://raw.githubusercontent.com/AVeillas/IA301-urban-transport-ontology/
 ---
 RDF parsed as xml, in repository: https://github.com/AVeillas/IA301-urban-transport-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/Svpwm/ChronicDiseaseManagement
-> at line 8 of <>:
-Bad syntax (Prefix "rule1:" not bound) at ^ in:
-"...b'refix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r\n\r\n\r\n['^b'rule1: (?p :hasCookingMethod ?n), (?n rdf:type :NotFryMethod'..."
-
----
-File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Feiffel.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
-> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/eiffel.ttl'
-
----
-File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Flink.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
-> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/link.ttl'
-
----
-File: https://raw.githubusercontent.com/isuruamantha/OWL-to-AIML/master/src%2Fmain%2Fresources%2Fcoronavirus.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/isuruamantha/OWL-to-AIML
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
-
----
-File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
-
-
-
----
-RDF parsed as n3, in repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
-> at line 4 of <>:
-Bad syntax (Prefix "    my:" not bound) at ^ in:
-"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
-
----
-File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/paya54/Reason-OWL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
 
 ---
 File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
