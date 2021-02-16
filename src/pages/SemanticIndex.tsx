@@ -349,33 +349,8 @@ export default function SemanticIndex() {
   //   updateState({ repositories_autocomplete: value})
   // }
   
-  // Could not find good dynamic faceted search, best is https://github.com/ebi-gene-expression-group/scxa-faceted-search-results
-  // Each faceted search filter can be added here (on the shapes files array)
-  // const filtered_files = state.global_shapes_array.filter( (shapes_file: any) =>{
-
-  // const data = [{"guid":"j5Dc9Z","courses":[{"id":3,"name":"foo"}]},{"guid":"a5gdfS","courses":[{"id":1,"name":"bar"},{"id":3,"name":"foo"}]},{"guid":"jHab6i","courses":[{"id":7,"name":"foobar"}]}];
-  // const courses = [1, 6, 3];
-  // const r = data.filter(d => d.courses.every(c => courses.includes(c.id)));
-
-  // const filtered_files = state.global_shapes_array.filter((repo: any) => {
-  //   repo.files.every((file: any) => {
-  //     let search_description = file.url + ' ';
-  //     if (file.label) search_description = search_description + ' ' + file.label;
-  //     if (file.description) search_description = search_description + ' ' + file.description;
-  //     if (repo.description) search_description = search_description + ' ' + repo.description;
-  //     return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-  //   });
-  // })
-
-  // Try out reduce() https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
-  // For loop on the repo, then filter the files?
-
-  // We could just do a simple listing of repos
-  // allow search on files in repo by creating a dump property for all files descriptions in the repo
-  // Add button to show files or not for each repo
-  // When button triggered we apply search values to the files in the repo
-  // Users can click on a detail button for files that will open a new windows with all the files details:
-  // All its concepts and properties (perfect-graph?). But also other files using the same concepts and properties 
+  // Filtering for faceted search
+  // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
   const filtered_files = state.global_shapes_array
     .filter((repo: any) => {
       // repo.files.every((file: any) => {
@@ -389,108 +364,43 @@ export default function SemanticIndex() {
     })
     .reduce((filtered: any, repo: any) => {
       // Filter files in the repo
-      // console.log(repo);
       let filtered_repo: any = {}
       if (state.search) {
+        // Filter files for search input
         filtered_repo.files = repo.files.filter((file: any) => {
           let search_description = repo.url + ' ';
           if (file.label) search_description = search_description + ' ' + file.label;
           if (file.description) search_description = search_description + ' ' + file.description;
           if (repo.description) search_description = search_description + ' ' + repo.description;
+          // Filter depending on shape type checkboxes:
+          if ((state.type_checkboxes['ShEx'] === true && file.type == 'http://www.w3.org/ns/shex#Schema')
+          || (state.type_checkboxes['SPARQL'] === true && file.type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
+          || (state.type_checkboxes['SHACL'] === true && file.type == 'http://www.w3.org/ns/shacl#Shape')
+          || (state.type_checkboxes['OWL'] === true && file.type == 'http://www.w3.org/2002/07/owl#Ontology')
+          || (state.type_checkboxes['OBO'] === true && file.type == 'http://semanticscience.org/resource/SIO_000623')
+          || (state.type_checkboxes['SKOS'] === true && file.type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
+          || (state.type_checkboxes['OpenAPI'] === true && file.type == 'http://www.w3.org/ns/r2rml#TriplesMap')
+          || (state.type_checkboxes['RML'] === true && file.type == 'http://semweb.mmlab.be/ns/rml#LogicalSource')
+          || (state.type_checkboxes['R2RML'] === true && file.type == 'https://schema.org/APIReference')
+          || (state.type_checkboxes['Dataset'] === true && file.type == 'http://www.w3.org/ns/dcat#Dataset')
+          || (state.type_checkboxes['Nanopub'] === true && file.type == 'https://w3id.org/np/o/ntemplate/AssertionTemplate')
+          ) {
           return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+          }
         });
       } else {
         filtered_repo.files = repo.files;
       }
-      // console.log(filtered);
       // Filter the repo (if no files?)
       filtered_repo.url = repo.url;
       if (repo.description) filtered_repo.description = repo.description;
       filtered.push(filtered_repo)
       return filtered;
-    }, []);
-
-    // .map((repo: any) => {
-      // repo.files.filter((file: any) => {
-      //   let search_description = repo.url + ' ';
-      //   if (file.label) search_description = search_description + ' ' + file.label;
-      //   if (file.description) search_description = search_description + ' ' + file.description;
-      //   if (repo.description) search_description = search_description + ' ' + repo.description;
-      //   return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-      // });
-    // })
-    // https://stackoverflow.com/questions/34398279/map-and-filter-an-array-at-the-same-time
-    // .reduce((filtered: any, repo: any) => {
-    //   // Filter files in the repo
-    //   // console.log(repo);
-    //   let filtered_repo: any = {}
-    //   if (state.search) {
-    //     filtered_repo.files = repo.files.filter((file: any) => {
-    //       let search_description = repo.url + ' ';
-    //       if (file.label) search_description = search_description + ' ' + file.label;
-    //       if (file.description) search_description = search_description + ' ' + file.description;
-    //       if (repo.description) search_description = search_description + ' ' + repo.description;
-    //       return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-    //     });
-    //   } else {
-    //     filtered_repo.files = repo.files;
-    //   }
-    //   // console.log(filtered);
-    //   // Filter the repo (if no files?)
-    //   filtered_repo.url = repo.url;
-    //   if (repo.description) filtered_repo.description = repo.description;
-    //   filtered.push(filtered_repo)
-    //   return filtered;
-    // }, []);
-
-  // const filtered_files = Object.fromEntries(Object.entries(state.global_shapes_array).filter(([repo_url, repo_obj]: any) => {
-  //   let search_description = repo_url + ' ';
-  //   if (repo_obj.description) search_description = search_description + ' ' + repo_obj.description;
-  //   return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-
-  //   // if (shapes_file) {
-  //     // if (shapes_file.label) {
-  //       // Filter by repo: show shapes if no repo selected, or if its repo is in list of selected repos
-  //       // if (state.repositories_autocomplete.length == 0 || state.repositories_autocomplete.find((repo: string) => repo.includes(shapes_file.repository))) {
-  //         // Filter depending on shape type checkboxes:
-  //         // if ((state.checkbox_shex === true && shapes_file.shape_type == 'http://www.w3.org/ns/shex#Schema')
-  //         // || (state.checkbox_sparql === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#SPARQLFunction')
-  //         // || (state.checkbox_shacl === true && shapes_file.shape_type == 'http://www.w3.org/ns/shacl#Shape')
-  //         // || (state.checkbox_owl === true && shapes_file.shape_type == 'http://www.w3.org/2002/07/owl#Ontology')
-  //         // || (state.checkbox_obo === true && shapes_file.shape_type == 'http://semanticscience.org/resource/SIO_000623')
-  //         // || (state.checkbox_skos === true && shapes_file.shape_type == 'http://www.w3.org/2004/02/skos/core#ConceptScheme')
-  //         // || (state.checkbox_openapi === true && shapes_file.shape_type == 'https://schema.org/APIReference')
-  //         // ) {
-  //           // Filter using the search text, on all properties and metadata of the file:
-  //           // let file_description = '';
-  //           // if (shapes_file.repo_description) file_description = file_description + ' ' + shapes_file.repo_description;
-  //           // if (shapes_file.shape_file_description) file_description = file_description + ' ' + shapes_file.shape_file_description;
-  //           // if (shapes_file.sparqlEndpoint) file_description = file_description + ' ' + shapes_file.sparqlEndpoint;
-  //           // if (shapes_file.query) file_description = file_description + ' ' + shapes_file.query;
-  //           // return (shapes_file.label.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1 
-  //           //   || shapes_file.shapeFileUri.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-  //           //   || shapes_file.shapes && shapes_file.shapes.join(' ').toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-  //           //   || shapes_file.repository.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-  //           //   || file_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
-  //           // )
-  //         // }
-  //       // }
-  // }))
-
-  // If no repo filter, then we use the filtered list to have the repo filtered
-  // If a repo is selected we show full list, 
-  // since filtering on filtered_files would show only the selected repo
-  // Return unique list of filtered repos
-  // let filtered_repos: any = []
-  // if (state.repositories_autocomplete.length == 0) {
-  //   filtered_repos = Object.keys(filtered_files).map( (shapes_file: any) =>{
-  //     return shapes_file.repository
-  //   }).filter((item, i, ar) => ar.indexOf(item) === i)
-  // } else {
-  //   filtered_repos = state.shapes_files_list.map( (shapes_file: any) =>{
-  //     return shapes_file.repository
-  //   }).filter((item, i, ar) => ar.indexOf(item) === i)
-  // }
+    }, [])
+    .filter((repo: any) => {
+      // Remove repo with no files
+      if (repo.files.length > 0) return true
+    });
 
   function getFileLabel(file_type: string) {
     let icon = '📄';
@@ -654,8 +564,9 @@ export default function SemanticIndex() {
       )}
 
       {/* Display Shapes files */}
-      {/* {console.log(filtered_files)} */}
-      {filtered_files.slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1)).map(function(repo_obj: any, key: number){
+      {filtered_files
+          .slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1))
+          .map(function(repo_obj: any, key: number){
         // return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(2, 2), margin: theme.spacing(2, 0)}}>
         return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(1, 1), margin: theme.spacing(2, 0)}}>
           <CardContent style={{paddingBottom: theme.spacing(0), margin: theme.spacing(0, 0)}}>
