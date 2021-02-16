@@ -108,7 +108,11 @@ jobs:
           ${{ runner.os }}-pip-
     
     - name: Install Python requirements
+      env:
+        RUN_LABEL: ${{ matrix.search-string }}
       run: |
+        export RUN_LABEL=${RUN_LABEL//:/-}
+        echo "RUN_LABEL=${RUN_LABEL//+/-}" >> $GITHUB_ENV
         python -m pip install -r etl/requirements.txt
         sudo apt-get install libicu-dev python3-dev
 
@@ -125,16 +129,16 @@ jobs:
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: report-${{ matrix.git-service }}-${{ matrix.search-string }}
+        # name: report-${{ matrix.git-service }}-${{ matrix.search-string }}
+        name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
+        # name: shapes-rdf-${{ matrix.git-service }}-${{ github.job }}
         path: REPORT.md
 
     - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.search-string }}.md file in report branch
       env:
         GIT_SERVICE: ${{ matrix.git-service }}
-        RUN_LABEL: ${{ matrix.search-string }}
+        # RUN_LABEL: ${{ matrix.search-string }}
       run: |
-        export RUN_LABEL=${RUN_LABEL//:/-}
-        export RUN_LABEL=${RUN_LABEL//+/-}
         mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
@@ -150,7 +154,9 @@ jobs:
     - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
       uses: actions/upload-artifact@v1
       with:
-        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
+        # name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string.replace(':', '-').replace('+', '-') }}
+        name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
+        # name: shapes-rdf-${{ matrix.git-service }}-${{ github.job }}
         path: shapes-rdf.ttl
 
     - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
