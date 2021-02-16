@@ -284,7 +284,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           # Parse SPARQL query
           yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
           query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
-          shapes_graph.add((file_uri, SCHEMA['query'], Literal(query_string)))
+          shapes_graph.add((file_uri, SCHEMA['query'], Literal(sparql_query)))
           
           grlc_metadata = {}
           try:  # Invalid YAMLs will produce empty metadata

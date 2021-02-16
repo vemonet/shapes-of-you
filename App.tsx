@@ -8,6 +8,7 @@ import NavBar from "./src/components/NavBar";
 import Footer from "./src/components/Footer";
 import SemanticIndex from "./src/pages/SemanticIndex";
 import About from "./src/pages/About";
+import Yasgui from "./src/pages/Yasgui";
 // import blue from '@material-ui/core/colors/blue';
 
 // Change theme color and typography here
@@ -64,6 +65,7 @@ const App = () => (
         <NavBar />
 
         <Route exact path="/" component={SemanticIndex} />
+        <Route path="/yasgui" component={Yasgui} />
         <Route path="/about" component={About} />
         <Footer />
       </View>
