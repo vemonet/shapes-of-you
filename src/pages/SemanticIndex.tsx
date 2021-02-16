@@ -580,7 +580,7 @@ export default function SemanticIndex() {
               onClick={() => { updateState({ show_info_card: !state.show_info_card}) }}
               name='show_info_card'
               aria-expanded={state.show_info_card}
-              aria-label="show more"
+              aria-label="show about"
             >
               About&nbsp;
               {!state.show_info_card &&
@@ -720,6 +720,16 @@ export default function SemanticIndex() {
                   <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: add the topic <code>openapi</code>, we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
                 </ListItemText>
               </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <OpenAPIIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                <b><a href="https://www.w3.org/TR/vocab-dcat-3/" className={classes.link} target="_blank" rel="noopener noreferrer">DCAT</a> datasets</b>: add the topic <code>dataset</code>, we index RDF files, with all <code>dcat:Dataset</code> they contain
+                </ListItemText>
+              </ListItem>
             </List>
           </CardContent>
         </Collapse>
@@ -760,11 +770,11 @@ export default function SemanticIndex() {
           {/* Search box */}
           <Paper component="form" className={classes.paperSearch}>
             <InputBase
-              className={classes.searchInput} inputProps={{ 'aria-label': 'search' }}
+              className={classes.searchInput} inputProps={{ 'aria-label': 'search input' }}
               placeholder={"🔎 Search shapes"}
               onChange={searchChange}
             />
-            <IconButton aria-label="search">
+            <IconButton aria-label="search button">
               <SearchIcon />
             </IconButton>
           </Paper>
@@ -964,7 +974,7 @@ export default function SemanticIndex() {
               onClick={handleExpandClick}
               name={repo_obj.url}
               aria-expanded={state.expanded_files[repo_obj.url]}
-              aria-label="show more"
+              aria-label="show about"
             >
               {repo_obj.files.length} files
               {!state.expanded_files[repo_obj.url] &&

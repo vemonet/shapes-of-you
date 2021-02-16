@@ -34,101 +34,71 @@ export default function YasguiPage(props: any) {
 
   React.useEffect(() => {
     // Get URL params 
-    const params = new URLSearchParams(location.search + location.hash);
-    let sparql_endpoint: any = params.get('endpoint');
-    const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
-      PREFIX void: <http://rdfs.org/ns/void#>
-      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      SELECT DISTINCT * WHERE { 
-        ?sparql_endpoint a schema:EntryPoint .
-        ?query_file void:sparqlEndpoint ?sparql_endpoint ;
-          rdfs:label ?file_label ;
-          schema:query ?query .
-        FILTER (?sparql_endpoint = <` + sparql_endpoint + `>)
-        OPTIONAL { ?query_file rdfs:comment ?file_description }
-      }`
-    const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
-    axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_endpoints_query))
-      .then((res: any) => {
-        Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;
-        let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {
-          requestConfig: { endpoint: sparql_endpoint },
-          endpoint: sparql_endpoint,
-          copyEndpointOnNewTab: true,
-        });
+    // const params = new URLSearchParams(location.search + location.hash);
+    // let sparql_endpoint: any = params.get('endpoint');
+    // If used as component:
+    if (props.endpoint) {
+      let sparql_endpoint: any = props.endpoint
+      const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
+        PREFIX void: <http://rdfs.org/ns/void#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT DISTINCT * WHERE { 
+          ?sparql_endpoint a schema:EntryPoint .
+          ?query_file void:sparqlEndpoint ?sparql_endpoint ;
+            rdfs:label ?file_label ;
+            schema:query ?query .
+          FILTER (?sparql_endpoint = <` + sparql_endpoint + `>)
+          OPTIONAL { ?query_file rdfs:comment ?file_description }
+        }`
+      const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
+      axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_endpoints_query))
+        .then((res: any) => {
+          Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;
+          let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {
+            requestConfig: { endpoint: sparql_endpoint },
+            endpoint: sparql_endpoint,
+            copyEndpointOnNewTab: true,
+          });
 
-        const results_array = res.data.results.bindings;
-        let queries_obj: any = {}
-        results_array.map((result: any): any =>  {
-          // let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
-          queries_obj[result.file_label.value] = result.query.value
+          const results_array = res.data.results.bindings;
+          let queries_obj: any = {}
+          results_array.map((result: any): any =>  {
+            // let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
+            queries_obj[result.file_label.value] = result.query.value
+          })
+          console.log(Yasgui.Tab.getDefaults())
+          // let tab: any = yasgui.getTab();
+          // tab.close();
+          // Only add HCLS stats tabs if less than 3 tabs
+          Object.keys(queries_obj).map((file_label: any) => {
+            if (!yasgui.getTab(file_label)) {
+              yasgui.addTab(
+                true, // set as active tab
+                { ...Yasgui.Tab.getDefaults(), id: file_label, name: file_label.substring(0,30),
+                  yasqe: { value: queries_obj[file_label] }}
+              );
+              // yasgui.getTab(file_label).setQuery(queries_obj[file_label]);
+              // yasgui.addTab(
+              //   true, // set as active tab
+              //   { ...Yasgui.Tab.getDefaults(), id: "entitiesRelations", name: "Explore entities relations" }
+              // );
+              // yasgui.getTab("entitiesRelations").setQuery(this.entitiesRelationsQuery);
+            }
+          })
         })
-        console.log(Yasgui.Tab.getDefaults())
-        // let tab: any = yasgui.getTab();
-        // tab.close();
-        // Only add HCLS stats tabs if less than 3 tabs
-        Object.keys(queries_obj).map((file_label: any) => {
-          if (!yasgui.getTab(file_label)) {
-            yasgui.addTab(
-              true, // set as active tab
-              { ...Yasgui.Tab.getDefaults(), id: file_label, name: file_label.substring(0,30),
-                yasqe: { value: queries_obj[file_label] }}
-            );
-            // yasgui.getTab(file_label).setQuery(queries_obj[file_label]);
-            // yasgui.addTab(
-            //   true, // set as active tab
-            //   { ...Yasgui.Tab.getDefaults(), id: "entitiesRelations", name: "Explore entities relations" }
-            // );
-            // yasgui.getTab("entitiesRelations").setQuery(this.entitiesRelationsQuery);
-          }
+        .catch(error => {
+          console.log(error)
         })
-      })
-      .catch(error => {
-        console.log(error)
-      })
-  
 
+    } else if (props.query) {
+      // If only query provided
+      let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {});
 
-    // // Yasgui.defaults.endpoint = sparql_endpoint;
-    // Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;
-    // Yasgui.Yasqe.defaults.requestConfig.endpoint = sparql_endpoint;
-    // // // TODO: fix this, and add catalog in settings.xml
-    // // // const catalogEndpoint = { endpoint: this.context.triplestore.sparql_endpoint }
-    // Yasgui.defaults.endpointCatalogueOptions.getData = () => {
-    //   return [
-    //     { endpoint: sparql_endpoint },
-    //   ];
-    // };
-
-    // Yasgui.Yasqe.defaults.requestConfig.endpoint = sparql_endpoint;
-    // // Define Yasr prefixes don't change the namespaces resolved in the results
-    // // Yasgui.Yasr.defaults.prefixes = Config.prefixes;
-    // // Yasgui.defaults.yasr.prefixes = Config.prefixes;
-    // // console.log(Yasgui);
-
-    // const yasgui = new Yasgui(document.getElementById('yasguiDiv'), {
-    //   requestConfig: { endpoint: sparql_endpoint },
-    //   endpoint: sparql_endpoint,
-    //   copyEndpointOnNewTab: true,
-    // });
-    // // TODO: provide config as param?
-
-    // // let tab: any = yasgui.getTab();
-    // // tab.close();
-    // // Only add HCLS stats tabs if less than 3 tabs
-    // if (!yasgui.getTab("filename")) {
-    //   yasgui.addTab(
-    //     true, // set as active tab
-    //     { ...Yasgui.Tab.getDefaults(), id: "filename", name: "Graphs statistics" }
-    //   );
-    //   yasgui.getTab("filename").setQuery('SELECT * WHERE {?s ?p ?o . } LIMIT 20');
-    //   // yasgui.addTab(
-    //   //   true, // set as active tab
-    //   //   { ...Yasgui.Tab.getDefaults(), id: "entitiesRelations", name: "Explore entities relations" }
-    //   // );
-    //   // yasgui.getTab("entitiesRelations").setQuery(this.entitiesRelationsQuery);
-    // }
-    // return () => {};
+      yasgui.addTab(
+        true, // set as active tab
+        { ...Yasgui.Tab.getDefaults(), yasqe: { value: props.query }}
+      );
+    }
   })
 
 

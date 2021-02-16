@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import { Button, ClickAwayListener, Paper, Popper } from "@material-ui/core";
+import { Button, Card, CardContent, CardHeader, ClickAwayListener, IconButton, Paper, Popper } from "@material-ui/core";
 import SendIcon from '@material-ui/icons/Send';
 import SearchIcon from '@material-ui/icons/Search';
+import CloseIcon from '@material-ui/icons/Close';
 
-import { ShadowPropTypesIOS } from "react-native";
+import Yasgui from "../pages/Yasgui";
 
 const useStyles = makeStyles(theme => ({
   link: {
@@ -27,32 +26,61 @@ export default function QueryYasguiButton(props: any) {
   const classes = useStyles();
   const theme = useTheme();
 
-  // let params_array: any = []
-  // if (props.endpoint) params_array.push('endpoint=' + props.endpoint)
-  // if (props.query) params_array.push('query=' + encodeURIComponent(props.query))
-  // const yasgui_query_url ='https://yasgui.triply.cc/#Method=GET&tabTitle=Shapes%20of%20you%20query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table&' + params_array.join('&');
-  const yasgui_query_url ='/yasgui?endpoint=' + props.endpoint;
+  // Settings for Popper
+  const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handleClick = (event: any) => {
+    console.log('Click button!');
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+    setOpen((prev) => !prev);
+  };
+  const handleClickAway = () => {
+    setOpen(false);
+    setAnchorEl(anchorEl ? null : anchorEl);
+    console.log('Click away!');
+  };
+  const id = open ? 'simple-popper' : undefined;
 
+  // const yasgui_query_url ='/yasgui?endpoint=' + props.endpoint;
 
   return (
-    <a href={yasgui_query_url} className={classes.link} 
-      target='_blank' rel="noopener noreferrer">
+    <>
+    {/*  <a href={yasgui_query_url} className={classes.link} 
+       target='_blank' rel="noopener noreferrer"> */}
       { !props.endpoint && !props.query &&
         <>
         </>
       }
       { props.endpoint &&
-        <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}>
+        <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} onClick={handleClick}>
           <SendIcon />
           &nbsp;Query on YASGUI
         </Button>
       }
       { !props.endpoint && props.query &&
-        <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}>
+        <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} onClick={handleClick}>
           <SearchIcon />
           &nbsp;See on YASGUI
         </Button>
       }
-    </a>
+      <Popper open={open} anchorEl={anchorEl} style={{width: '99%'}}>
+        <ClickAwayListener onClickAway={handleClickAway}>
+          <Card >
+              <CardHeader
+                action={
+                  <IconButton aria-label="settings" onClick={handleClickAway}>
+                    <CloseIcon />
+                  </IconButton>
+                }
+                title="Query SPARQL endpoints with YASGUI ✨️"
+                subheader='We automatically import all SPARQL queries for the selected endpoint. To reduce the number of tabs, right click on a tab, and select "Close other tabs"'
+              />
+            <CardContent>
+              <Yasgui endpoint={props.endpoint} query={props.query} />
+            </CardContent>
+          </Card>
+        </ClickAwayListener>
+      </Popper>
+    </>
   )
 }

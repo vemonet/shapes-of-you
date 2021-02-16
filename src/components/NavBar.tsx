@@ -60,7 +60,7 @@ export default function NavBar() {
   const classes = useStyles();
   const theme = useTheme();
 
-  // Popper for settings
+  // Settings for Popper
   const [open, setOpen] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event: any) => {
