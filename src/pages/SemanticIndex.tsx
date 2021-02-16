@@ -387,6 +387,29 @@ export default function SemanticIndex() {
         return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
       // });
     })
+    .reduce((filtered: any, repo: any) => {
+      // Filter files in the repo
+      // console.log(repo);
+      let filtered_repo: any = {}
+      if (state.search) {
+        filtered_repo.files = repo.files.filter((file: any) => {
+          let search_description = repo.url + ' ';
+          if (file.label) search_description = search_description + ' ' + file.label;
+          if (file.description) search_description = search_description + ' ' + file.description;
+          if (repo.description) search_description = search_description + ' ' + repo.description;
+          return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
+        });
+      } else {
+        filtered_repo.files = repo.files;
+      }
+      // console.log(filtered);
+      // Filter the repo (if no files?)
+      filtered_repo.url = repo.url;
+      if (repo.description) filtered_repo.description = repo.description;
+      filtered.push(filtered_repo)
+      return filtered;
+    }, []);
+
     // .map((repo: any) => {
       // repo.files.filter((file: any) => {
       //   let search_description = repo.url + ' ';
