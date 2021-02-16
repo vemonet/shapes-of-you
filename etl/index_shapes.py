@@ -633,6 +633,8 @@ def fetch_from_github(shapes_graph, client, oauth_token, topics):
               check_run_time(time_start, data["data"]["search"]["repositories"], repository)
               repo_json = repository["repo"]
               repo_url = repo_json["url"]
+              if repo_url in SKIP_REPOS:
+                continue
               try:
                 branch = repo_json['defaultBranchRef']['name']
                 repo_description = repo_json["description"]
@@ -703,6 +705,8 @@ def fetch_from_gitlab(shapes_graph, gl, topics):
       for repo_json in gitlab_repos_list:
         try:
           repo_url = repo_json["web_url"]
+          if repo_url in SKIP_REPOS:
+            continue
           if 'default_branch' in repo_json:
             branch = repo_json['default_branch']
           else:
@@ -724,14 +728,6 @@ def fetch_from_gitlab(shapes_graph, gl, topics):
 def fetch_from_gitee(shapes_graph, token, topics):
     # Record time to avoid hitting GitHub Actions limits
     time_start = datetime.now()
-    
-    # TODO: make this a global variable
-    # Repos with issues or too big (hitting GitHub Actions 6h limit)
-    avoid_repos = [
-      'https://gitee.com/mad_matrix/OntologyModelin', 
-      'https://gitee.com/jiahuarao/HumanDiseaseOntology'
-    ]
-    stopping_job = False
 
     for search_topic in topics:
       gitee_repos_list = requests.get('https://gitee.com/api/v5/search/repositories?access_token=' + token + '&page=1&per_page=100&order=desc&q=' + search_topic).json()
@@ -740,7 +736,7 @@ def fetch_from_gitee(shapes_graph, token, topics):
 
         repo_url = repo_json["html_url"].rstrip('.git')
 
-        if repo_url in avoid_repos:
+        if repo_url in SKIP_REPOS:
           continue
         if 'default_branch' in repo_json:
           branch = repo_json['default_branch']
@@ -766,5 +762,12 @@ if __name__ == "__main__":
   VALID_ENDPOINTS = {}
   global FAILED_ENDPOINTS
   FAILED_ENDPOINTS = {}
+  # Repos with issues or too big (hitting GitHub Actions 6h limit)
+  global SKIP_REPOS
+  SKIP_REPOS = [
+    'https://gitee.com/mad_matrix/OntologyModelin', 
+    'https://gitee.com/jiahuarao/HumanDiseaseOntology',
+    'https://github.com/garethr/kubernetes-json-schema'
+  ]
   main(sys.argv)
 
