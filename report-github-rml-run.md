@@ -6202,6 +6202,37 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'p [\n      rr:template "{apellido}, {nombre}";\n    ]\n  ];\n  \n'^b'].\t\t\t\t\t\t\t\t\n'"
 
 ---
+File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping_hisco.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
+> at line 7 of <>:
+Bad syntax (expected qname after @prefix) at ^ in:
+"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
+
+---
+File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
+> at line 7 of <>:
+Bad syntax (expected qname after @prefix) at ^ in:
+"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
+
+---
+File: https://raw.githubusercontent.com/knaw-huc/rml-tool/master/output.nt
+
+
+
+---
+RDF parsed as nt, in repository: https://github.com/knaw-huc/rml-tool
+> Invalid line: '^^http://www.w3.org/2001/XMLSchema#string .'
+
+---
 File: https://raw.githubusercontent.com/dachafra/carml-rml-report/master/test-cases%2FRMLTC0007d-SPARQL%2Fmapping.ttl
 
 
@@ -6895,37 +6926,6 @@ Bad syntax (bad escape) at ^ in:
 "...b'\n    rr:predicate ex:code ;\n    rr:objectMap [ rr:template "'^b'\\{\\{\\{ {ISO3166} \\}\\}\\}"; rr:termType rr:Literal]\n  ] .\n'"
 
 ---
-File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping_hisco.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
-> at line 7 of <>:
-Bad syntax (expected qname after @prefix) at ^ in:
-"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
-
----
-File: https://raw.githubusercontent.com/SemanticComputing/ammo-csv2rdf/master/mapping.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/SemanticComputing/ammo-csv2rdf
-> at line 7 of <>:
-Bad syntax (expected qname after @prefix) at ^ in:
-"...b'ml#> .\n@prefix ql: <http://semweb.mmlab.be/ns/ql#> .\n@prefix'^b' sd : <http://www.w3.org/ns/sparql-service-description#> .\n@'..."
-
----
-File: https://raw.githubusercontent.com/knaw-huc/rml-tool/master/output.nt
-
-
-
----
-RDF parsed as nt, in repository: https://github.com/knaw-huc/rml-tool
-> Invalid line: '^^http://www.w3.org/2001/XMLSchema#string .'
-
----
 File: https://raw.githubusercontent.com/edesmontils/RML-Closer/master/RDFS-OWL-rules%2FOWL-LD%2Fowl-ld.n3
 
 
@@ -7010,105 +7010,6 @@ RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/d2s-scripts
 > at line 16 of <>:
 Bad syntax (Prefix "HGNC:" not bound) at ^ in:
 "...b'ervices/model/gene-family/RPS> ;\n                biolink:id '^b'HGNC:10388 ;\n                biolink:publications ( PUBMED:1'..."
-
----
-File: https://raw.githubusercontent.com/ca7erina/r2rml/master/test%2Fresources%2FF01.mapping.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/ca7erina/r2rml
-> at line 5 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'.com/ns#> .\n@prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#>\n\n'^b'<#TriplesMap1>\n    rr:logicalTable [ rr:tableName "EMP" ];\n '..."
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Condition%2Fsrc%2Ftest%2Fresources%2FexampleGraphMap%2Fmoon-walkers.output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 85 of <>:
-Bad syntax (EOF found when expected verb in property list) at ^ in:
-"...b'day> "1831-08-13"^^<http://www.w3.org/2001/XMLSchema#date> ;'^b'\n\t#<http://example.com/evaday> ""^^<http://www.w3.org/2001/X'..."
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Condition%2Fsrc%2Ftest%2Fresources%2FexampleGraphMap%2Fexample7.output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'2-rdf-syntax-ns#type> <http://vocab.org/transit/terms/Stop> '^b'<http://www.example.com/Graph>.\n<http://airport.example.com/'..."
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Condition%2Fsrc%2Ftest%2Fresources%2Fexample18%2Fexample18b.rml.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 18 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'/formats/SPARQL_Results_XML> ;\n\n    sd:sparqlQueryTemplate "'^b'\n        SELECT ?resource_uri \n        WHERE {\n            ?'..."
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Processor%2Fsrc%2Ftest%2Fresources%2FexampleGraphMap%2FexampleGraphRefObjMap.output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 3 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'3> <http://www.example.com/bus> <http://bus.example.com/25> '^b'<http://www.example.com/Graph4> .\n<http://bus.example.com/25'..."
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Processor%2Fsrc%2Ftest%2Fresources%2FexampleGraphMap%2FexampleGraphSubMap.output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 3 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ple.com/6523> <http://vocab.org/transit/terms/service> "25" '^b'<http://www.example.com/Graph1>.'"
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Processor%2Fsrc%2Ftest%2Fresources%2FexampleGraphMap%2FexampleGraphObjMap.output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 3 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ple.com/6523> <http://vocab.org/transit/terms/service> "25" '^b'<http://www.example.com/Graph2>.'"
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Processor%2Fsrc%2Ftest%2Fresources%2FexampleGraphMap%2Fmoon-walkers.output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 85 of <>:
-Bad syntax (EOF found when expected verb in property list) at ^ in:
-"...b'day> "1831-08-13"^^<http://www.w3.org/2001/XMLSchema#date> ;'^b'\n\t#<http://example.com/evaday> ""^^<http://www.w3.org/2001/X'..."
-
----
-File: https://raw.githubusercontent.com/tk581996/RML-Mapper-Example/master/RML-Processor%2Fsrc%2Ftest%2Fresources%2FexampleGraphMap%2FexampleGraphPreMap.output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/tk581996/RML-Mapper-Example
-> at line 3 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ple.com/6523> <http://vocab.org/transit/terms/service> "25" '^b'<http://www.example.com/Graph3>.'"
 
 ---
 File: https://raw.githubusercontent.com/alex-randles/R2RML/master/output.ttl
