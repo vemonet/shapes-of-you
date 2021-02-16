@@ -129,6 +129,9 @@ export default function SemanticIndex() {
     'http://www.w3.org/ns/dcat#Dataset': 'Dataset'
   }
 
+  const chart_colors = ['#4caf50','#9575cd', '#bcaaa4', '#ef6c00', '#26c6da',
+    '#1565c0', '#aed581', '#4caf50', '#ffeb3b', '#ffb74d', '#ce93d8', '#4db6ac']
+
   // componentDidMount: Query SPARQL endpoint to get the shapes files infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
@@ -147,7 +150,7 @@ export default function SemanticIndex() {
       datasets: [{
         label: 'Number of repositories per resource type',
         data: [ ],
-        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0', '#ef6c00', '#0277bd']
+        backgroundColor: chart_colors
         // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
     }]}
     let files_overview_chart = {
@@ -155,7 +158,7 @@ export default function SemanticIndex() {
       datasets: [{
         label: 'Number of resources per resource type',
         data: [ ],
-        backgroundColor: ['#4caf50','#9575cd', '#ffeb3b', '#64b5f6', '#ff7043', '#1565c0', '#ef6c00', '#0277bd']
+        backgroundColor: chart_colors
         // hoverBackgroundColor: ['#4caf50','#FF6384','#36A2EB','#FFCE56', '#0277bd', '#ef6c00']
     }]}
 

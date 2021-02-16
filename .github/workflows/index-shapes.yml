@@ -33,6 +33,9 @@ jobs:
           run-label: topics-schema
           search-topics: topic:shacl-shapes,topic:shex,topic:grlc
         - git-service: github
+          run-label: search-sparql
+          search-topics: sparql+queries
+        - git-service: github
           run-label: topics-smartapi
           search-topics: topic:smartapi,topic:ncats-translator,topic:translator-api
         - git-service: github

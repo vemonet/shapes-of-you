@@ -46,7 +46,7 @@ export default function SparqlEndpointsDisplay() {
   // const solid_name = useLDflexValue('user.name') || 'unknown';
   
   const [state, setState] = React.useState({
-    sparql_endpoints_array: [],
+    sparql_endpoints_obj: {},
     search: '',
     // repositories_hash: [],
     // repositories_autocomplete: [],
@@ -81,12 +81,28 @@ export default function SparqlEndpointsDisplay() {
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_endpoints_query))
       .then(res => {
         const results_array = res.data.results.bindings;
-        let sparql_endpoints_array = []
+        let sparql_endpoints_obj: any = {}
         results_array.map((result: any): any =>  {
+          let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
           // @ts-ignore
-          sparql_endpoints_array.push(result.sparql_endpoint.value);
+          // sparql_endpoints_array.push([{
+          //   'endpoint': result.sparql_endpoint.value
+          // }]);
+          const endpoint_url = result.sparql_endpoint.value
+          if (!sparql_endpoints_obj[endpoint_url]) {
+            sparql_endpoints_obj[endpoint_url] = {
+              'url': endpoint_url,
+              'queries': []
+            }
+          }
+          let query_obj = {'url': result.query_file.value}
+          if (result.file_description) query_obj['description'] = result.file_description.value
+          if (result.query) query_obj['query'] = result.query.value
+          sparql_endpoints_obj[endpoint_url]['queries'].push(query_obj)
+          result.query_file.value
         })
-        updateState({ sparql_endpoints_array: sparql_endpoints_array })
+        console.log(sparql_endpoints_obj)
+        updateState({ sparql_endpoints_obj: sparql_endpoints_obj })
       })
       .catch(error => {
         console.log(error)
@@ -140,28 +156,42 @@ export default function SparqlEndpointsDisplay() {
       <Typography>
         List of active SPARQL endpoints defined in SPARQL queries metadata
       </Typography>
-      <List>
-        {state.sparql_endpoints_array.map(function(sparql_endpoint: any, key: number){
-          return <ListItem>
-            <ListItemAvatar>
-              <QueryYasguiButton endpoint={sparql_endpoint} />
-              {/* <Avatar>
-                <CheckCircleIcon />
-              </Avatar> */}
-            </ListItemAvatar>
-            <ListItemText>
-              <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b>
-            </ListItemText>
-          </ListItem>
-        })}
-      </List>
+
+      {Object.keys(state.sparql_endpoints_obj).length < 1 && (
+        <div style={{textAlign: 'center'}}>
+          <CircularProgress style={{padding: theme.spacing(10, 10)}} />
+        </div>
+      )}
+
+      {Object.keys(state.sparql_endpoints_obj).length >= 1 && (
+        <List>
+          {Object.keys(state.sparql_endpoints_obj).map(function(sparql_endpoint: any, key: number){
+            return <ListItem key={key}>
+              <ListItemAvatar>
+                <QueryYasguiButton endpoint={sparql_endpoint} />
+                {/* <Avatar>
+                  <CheckCircleIcon />
+                </Avatar> */}
+              </ListItemAvatar>
+              <ListItemText>
+                <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b> - {state.sparql_endpoints_obj[sparql_endpoint].queries.length} SPARQL queries
+              </ListItemText>
+            </ListItem>
+          })}
+        </List>
+      )}
     </Container>
   )
 }
 
 // SPARQL select query which returns the count of repositories and shapes files per semantic resources types
 const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT * WHERE { 
   ?sparql_endpoint a schema:EntryPoint .
-} 
+  ?query_file void:sparqlEndpoint ?sparql_endpoint .
+  OPTIONAL { ?query_file schema:query ?query }
+  OPTIONAL { ?query_file rdfs:comment ?file_description }
+}
 `
