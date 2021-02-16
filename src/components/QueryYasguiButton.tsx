@@ -30,14 +30,12 @@ export default function QueryYasguiButton(props: any) {
   const [open, setOpen] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event: any) => {
-    console.log('Click button!');
     setAnchorEl(anchorEl ? null : event.currentTarget);
     setOpen((prev) => !prev);
   };
   const handleClickAway = () => {
     setOpen(false);
     setAnchorEl(anchorEl ? null : anchorEl);
-    console.log('Click away!');
   };
   const id = open ? 'simple-popper' : undefined;
 
@@ -54,13 +52,13 @@ export default function QueryYasguiButton(props: any) {
       { props.endpoint &&
         <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} onClick={handleClick}>
           <SendIcon />
-          &nbsp;Query on YASGUI
+          &nbsp;Query with YASGUI
         </Button>
       }
       { !props.endpoint && props.query &&
         <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} onClick={handleClick}>
           <SearchIcon />
-          &nbsp;See on YASGUI
+          &nbsp;See with YASGUI
         </Button>
       }
       <Popper open={open} anchorEl={anchorEl} style={{width: '99%'}}>

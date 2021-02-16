@@ -64,14 +64,12 @@ export default function NavBar() {
   const [open, setOpen] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event: any) => {
-    console.log('Click button!');
     setAnchorEl(anchorEl ? null : event.currentTarget);
     setOpen((prev) => !prev);
   };
   const handleClickAway = () => {
     setOpen(false);
     setAnchorEl(anchorEl ? null : anchorEl);
-    console.log('Click away!');
   };
   const id = open ? 'simple-popper' : undefined;
 
@@ -90,13 +88,13 @@ export default function NavBar() {
             API docs
           </Button>
         </Tooltip>
-        <Tooltip title='Query the SPARQL endpoint with YASGUI'>
+        {/* <Tooltip title='Query the SPARQL endpoint with YASGUI'>
           <Button className={classes.menuButton} target="_blank" rel="noopener noreferrer"
           href="/yasgui?endpoint=https://graphdb.dumontierlab.com/repositories/shapes-registry">
             <SparqlIcon style={{ marginRight: theme.spacing(1)}} />
             Query with SPARQL
           </Button>
-        </Tooltip>
+        </Tooltip> */}
         <Tooltip  title='Application settings'>
           <Button className={classes.menuButton} onClick={handleClick}>
             <CheckCircleIcon style={{ marginRight: theme.spacing(1)}} />

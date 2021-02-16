@@ -1,10 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import { Button, ClickAwayListener, Container, Paper, Popper } from "@material-ui/core";
-import SendIcon from '@material-ui/icons/Send';
-import SearchIcon from '@material-ui/icons/Search';
+import { Container, Paper } from "@material-ui/core";
 import axios from 'axios';
 
 import Yasgui from "@triply/yasgui";
@@ -30,14 +27,29 @@ export default function YasguiPage(props: any) {
   const theme = useTheme();
   // useLocation hook to get URL params
   let location = useLocation();
-  // params = new URLSearchParams(this.props.location.search + this.props.location.hash);
 
   React.useEffect(() => {
     // Get URL params 
     // const params = new URLSearchParams(location.search + location.hash);
     // let sparql_endpoint: any = params.get('endpoint');
-    // If used as component:
-    if (props.endpoint) {
+    
+    // When used as component:
+    if (props.endpoint && props.query) {
+      const sparql_endpoint = props.endpoint
+      Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;
+      // @ts-ignore If endpoint and query provided
+      let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {
+        requestConfig: { endpoint: sparql_endpoint },
+        endpoint: sparql_endpoint,
+        copyEndpointOnNewTab: true,
+      });
+
+      yasgui.addTab(
+        true, // set as active tab
+        { ...Yasgui.Tab.getDefaults(), yasqe: { value: props.query }}
+      );
+    } else if (props.endpoint) {
+      // If only endpoint provided we import all queries for this endpoint
       let sparql_endpoint: any = props.endpoint
       const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
         PREFIX void: <http://rdfs.org/ns/void#>
@@ -67,24 +79,16 @@ export default function YasguiPage(props: any) {
             // let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
             queries_obj[result.file_label.value] = result.query.value
           })
-          console.log(Yasgui.Tab.getDefaults())
           // let tab: any = yasgui.getTab();
           // tab.close();
-          // Only add HCLS stats tabs if less than 3 tabs
+          // Add tab to yasgui for each file
           Object.keys(queries_obj).map((file_label: any) => {
-            if (!yasgui.getTab(file_label)) {
-              yasgui.addTab(
-                true, // set as active tab
-                { ...Yasgui.Tab.getDefaults(), id: file_label, name: file_label.substring(0,30),
-                  yasqe: { value: queries_obj[file_label] }}
-              );
-              // yasgui.getTab(file_label).setQuery(queries_obj[file_label]);
-              // yasgui.addTab(
-              //   true, // set as active tab
-              //   { ...Yasgui.Tab.getDefaults(), id: "entitiesRelations", name: "Explore entities relations" }
-              // );
-              // yasgui.getTab("entitiesRelations").setQuery(this.entitiesRelationsQuery);
-            }
+            // if (!yasgui.getTab(file_label)) {
+            yasgui.addTab(
+              true, // set as active tab
+              { ...Yasgui.Tab.getDefaults(), name: file_label.substring(0,30),
+                yasqe: { value: queries_obj[file_label] }}
+            );
           })
         })
         .catch(error => {
@@ -101,7 +105,6 @@ export default function YasguiPage(props: any) {
       );
     }
   })
-
 
   // let params_array: any = []
   // if (props.endpoint) params_array.push('endpoint=' + props.endpoint)

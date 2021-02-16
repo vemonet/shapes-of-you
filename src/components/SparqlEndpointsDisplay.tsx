@@ -48,21 +48,6 @@ export default function SparqlEndpointsDisplay() {
   const [state, setState] = React.useState({
     sparql_endpoints_obj: {},
     search: '',
-    // repositories_hash: [],
-    // repositories_autocomplete: [],
-    // repos_overview_chart: {},
-    // files_overview_chart: {},
-    // checkbox_shacl: true,
-    // checkbox_shex: true,
-    // checkbox_sparql: true,
-    // checkbox_owl: true,
-    // checkbox_skos: true,
-    // checkbox_obo: true,
-    // checkbox_openapi: true,
-    // show_pwa_alert: true,
-    // page: 1,
-    // shapes_per_page: 100,
-    // show_info_card: true,
   });
   const stateRef = React.useRef(state);
 
