@@ -76,6 +76,7 @@ export default function QueryYasguiButton(props: any) {
                 }
                 title="Query SPARQL endpoints with YASGUI ✨️"
                 subheader='To reduce the number of YASGUI tabs, right click on a tab, and select "Close other tabs"'
+                style={{paddingBottom: '0px'}}
               />
             <CardContent>
               <Yasgui endpoint={props.endpoint} query={props.query} />

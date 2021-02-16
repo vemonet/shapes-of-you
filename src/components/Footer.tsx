@@ -50,7 +50,7 @@ export default function Footer() {
       <footer className={classes.footer}>
         <Container maxWidth="md" style={{textAlign: 'center'}}>
           <Typography variant="body2" style={{ marginBottom: theme.spacing(1)}}>
-            Built for you, to explore the semantic space ✨️ website under the&nbsp;
+            Built for you, to explore the semantic space ✨ website under the&nbsp;
             <a className={classes.whiteLink} target="_blank" rel="noopener noreferrer"
             href="https://github.com/vemonet/shapes-of-you/blob/main/LICENSE">
               MIT license

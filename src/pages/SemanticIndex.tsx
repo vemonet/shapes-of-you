@@ -146,7 +146,7 @@ export default function SemanticIndex() {
     let files_overview_chart = {
       labels: [],
       datasets: [{
-        label: 'Number of resources per resource type',
+        label: 'Number of files per resource type',
         data: [ ],
         backgroundColor: chart_colors
     }]}
@@ -519,7 +519,7 @@ export default function SemanticIndex() {
         <Grid container spacing={3} style={{textAlign: 'center', marginTop: theme.spacing(2)}}>
           <Grid item xs={12} md={6}>
             <Paper style={{padding: theme.spacing(2, 2)}}>
-              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of repositories per shape type</Typography>
+              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of repositories per resource type</Typography>
               <Bar data={state.repos_overview_chart} 
                 options={chart_options(state.repos_overview_chart['datasets'][0]['data'])}
                 plugins={[ChartDataLabels]}
@@ -528,7 +528,7 @@ export default function SemanticIndex() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Paper style={{padding: theme.spacing(2, 2)}}>
-              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of resources per shape type</Typography>
+              <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of files per resource type</Typography>
               <Bar data={state.files_overview_chart} options={chart_options(state.files_overview_chart['datasets'][0]['data'])}/>
             </Paper>
           </Grid>
@@ -538,7 +538,7 @@ export default function SemanticIndex() {
       {/* <Box display="flex" style={{margin: theme.spacing(2, 0)}}></Box> */}
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(3, 0)}}>
         <Typography variant="h5">
-          {filtered_files.reduce((filtered: any, repo: any) => filtered + repo.files.length, 0)} resources in&nbsp;
+          {filtered_files.reduce((filtered: any, repo: any) => filtered + repo.files.length, 0)} files in&nbsp;
           {/* Only counts the sum of all files for each filtered repo, we need to add check on the file description
           Or filter the files downstream. Also works: */}
           {/* {filtered_files.reduce((filtered: any, repo: any) => {filtered.push(repo.files.length); return filtered;}, []).reduce((a, b) => a + b, 0)} files in&nbsp; */}
@@ -551,7 +551,7 @@ export default function SemanticIndex() {
           <Paper component="form" className={classes.paperSearch}>
             <InputBase
               className={classes.searchInput} inputProps={{ 'aria-label': 'search input' }}
-              placeholder={"🔎 Search shapes"}
+              placeholder={"🔎 Quick search"}
               onChange={searchChange}
             />
             <IconButton aria-label="search button">

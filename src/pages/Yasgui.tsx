@@ -115,7 +115,7 @@ export default function YasguiPage(props: any) {
   // const yasgui_query_url ='https://yasgui.triply.cc/#Method=GET&tabTitle=Shapes%20of%20you%20query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table&' + params_array.join('&');
 
   return (
-    <Container className='mainContainer'>
+    <Container>
       <div id="yasguiDiv"></div>
     </Container>
   )

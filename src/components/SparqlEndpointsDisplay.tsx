@@ -50,16 +50,14 @@ export default function SparqlEndpointsDisplay() {
     search: '',
   });
   const stateRef = React.useRef(state);
-
   // Avoid conflict when async calls
-  // Can be done with another lib (cf. Turgay)
   const updateState = React.useCallback((update) => {
     stateRef.current = {...stateRef.current, ...update};
     setState(stateRef.current);
   }, [setState]);
 
 
-  // componentDidMount: Query SPARQL endpoint to get the SPARQL endpoints infos
+  // At start: query SPARQL endpoint to get the SPARQL endpoints infos
   React.useEffect(() => {
     const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
 
@@ -137,10 +135,10 @@ export default function SparqlEndpointsDisplay() {
 
   // Define rendering of the page:
   return(
-    <Container className='mainContainer'>
-      <Typography>
+    <Container>
+      {/* <Typography>
         List of active SPARQL endpoints defined in SPARQL queries metadata. We automatically import all SPARQL queries in YASGUI for the selected endpoint.
-      </Typography>
+      </Typography> */}
 
       {Object.keys(state.sparql_endpoints_obj).length < 1 && (
         <div style={{textAlign: 'center'}}>

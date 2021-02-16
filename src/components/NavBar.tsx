@@ -2,9 +2,9 @@ import React from "react";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
 
-import { AppBar, Toolbar, Button, Popper, ClickAwayListener, Paper } from '@material-ui/core';
+import { AppBar, Toolbar, Button, Popper, ClickAwayListener, Card, CardContent, CardHeader, IconButton } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
-
+import CloseIcon from '@material-ui/icons/Close';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import GrlcApiIcon from '@material-ui/icons/Send';
@@ -62,9 +62,10 @@ export default function NavBar() {
 
   // Settings for Popper
   const [open, setOpen] = React.useState(false);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl]: any = React.useState(null);
   const handleClick = (event: any) => {
-    setAnchorEl(anchorEl ? null : event.currentTarget);
+    // setAnchorEl(anchorEl ? null : event.currentTarget);
+    setAnchorEl(anchorEl ? null : document.body);
     setOpen((prev) => !prev);
   };
   const handleClickAway = () => {
@@ -95,17 +96,34 @@ export default function NavBar() {
             Query with SPARQL
           </Button>
         </Tooltip> */}
-        <Tooltip  title='Application settings'>
+        <Tooltip  title='List of active SPARQL endpoints, and their associated queries'>
           <Button className={classes.menuButton} onClick={handleClick}>
             <CheckCircleIcon style={{ marginRight: theme.spacing(1)}} />
             Active endpoints
           </Button>
         </Tooltip>
-        <Popper open={open} anchorEl={anchorEl}>
+        <Popper open={open} anchorEl={anchorEl} 
+          style={{width: '99%', position: 'absolute', top: '0'}}
+          popperOptions={{'positionFixed': true}}>
           <ClickAwayListener onClickAway={handleClickAway}>
-            <Paper elevation={4} className={classes.paperPadding}>
+            <Card >
+                <CardHeader
+                  action={
+                    <IconButton aria-label="settings" onClick={handleClickAway}>
+                      <CloseIcon />
+                    </IconButton>
+                  }
+                  title="⚡️ List of active SPARQL endpoints defined in queries metadata"
+                  subheader='We automatically import all SPARQL queries in YASGUI for the endpoint you select'
+                  style={{paddingBottom: '0px'}}
+                />
+              <CardContent>
+                <SparqlEndpointsDisplay />
+              </CardContent>
+            </Card>
+            {/* <Paper elevation={4} className={classes.paperPadding}>
               <SparqlEndpointsDisplay />
-            </Paper>
+            </Paper> */}
           </ClickAwayListener>
         </Popper>
 
@@ -113,7 +131,7 @@ export default function NavBar() {
 
         <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22"
           className={classes.linkButton} target="_blank" rel="noopener noreferrer">
-          <Tooltip title='Checkout the last workflow runs to index shapes.'>
+          <Tooltip title='Checkout the indexing workflow runs status'>
             <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" />
           </Tooltip>
         </a>
