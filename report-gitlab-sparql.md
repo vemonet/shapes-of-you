@@ -612,14 +612,6 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 
 
 ---
-SPARQL endpoint failed: http://data.europa.eu/euodp/sparqlep
-
-byte indices must be integers or slices, not str
-
----
-
-
----
 SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 
 byte indices must be integers or slices, not str
