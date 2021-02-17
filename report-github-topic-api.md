@@ -922,14 +922,6 @@ byte indices must be integers or slices, not str
 
 
 ---
-SPARQL endpoint failed: https://sparql.uniprot.org
-
-HTTP Error 503: 
-
----
-
-
----
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
