@@ -202,6 +202,14 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 
 
 ---
+SPARQL endpoint failed: http://publications.europa.eu/webapi/rdf/sparql
+
+HTTP Error 503: Service Temporarily Unavailable
+
+---
+
+
+---
 SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 
 byte indices must be integers or slices, not str
