@@ -388,6 +388,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
     # Parse SPARQL query files
     elif shape_format == 'sparql':
+      # TODO: sparql+queries search failing might be due to a test SPARQL query hanging for long time
       shape_found = True
       shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
       shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
@@ -710,8 +711,10 @@ def test_sparql_endpoint(sparql_endpoint):
       sparql = SPARQLWrapper(sparql_endpoint)
       sparql.setReturnFormat(JSON)
       sparql.setQuery(sparql_test_query)
+      logging.debug('✨️ Testing SPARQL endpoint: ' + str(sparql_endpoint))
       try:
         results = sparql.query().convert()
+        logging.debug('✔️ Done tested, valid: ' + str(sparql_endpoint))
         # Check SPARQL query sent back at least 5 triples
         results_array = results["results"]["bindings"]
         if len(results_array) > 4:
@@ -723,6 +726,7 @@ def test_sparql_endpoint(sparql_endpoint):
           FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
           return False
       except Exception as e:
+        logging.debug('✔️ Done tested, failed: ' + str(sparql_endpoint))
         add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
         return False
     else:
