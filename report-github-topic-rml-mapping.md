@@ -1074,9 +1074,9 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 
 
 ---
-SPARQL endpoint failed: http://data.europa.eu/euodp/sparqlep
+SPARQL endpoint failed: http://publications.europa.eu/webapi/rdf/sparql
 
-byte indices must be integers or slices, not str
+HTTP Error 503: Service Temporarily Unavailable
 
 ---
 
