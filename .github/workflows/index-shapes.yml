@@ -18,7 +18,7 @@ on:
 env:
   LOGGING_LEVEL: ${{ github.event.inputs.logging }}
 jobs:
-  query-git-services-for-shapes:
+  index-shapes:
     strategy:
       fail-fast: false
       matrix:

@@ -94,9 +94,9 @@ export default function NavBar() {
           </Button>
         </Tooltip>
         <Popper open={open} anchorEl={anchorEl} 
-          onKeyDown={(e) => {
-            if (e.key === "Escape") handleClickAway()
-          }}
+          // onKeyPress={(e) => {
+          //   if (e.key === "Escape") handleClickAway()
+          // }}
           style={{width: '99%', position: 'absolute', top: '0'}}
           popperOptions={{'positionFixed': true}}>
           <ClickAwayListener onClickAway={handleClickAway}>

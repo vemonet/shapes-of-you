@@ -398,7 +398,11 @@ export default function SemanticIndex() {
     }, [])
     .filter((repo: any) => {
       // Remove repos with no files
-      if (repo.files.length > 0) return true
+      if (repo.files.length > 0) {
+        return true
+      } else {
+        return false
+      }
     });
 
   // Define rendering of the page:

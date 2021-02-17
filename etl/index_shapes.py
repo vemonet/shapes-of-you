@@ -406,7 +406,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             grlc_metadata = yaml.load(yaml_string, Loader=yaml.FullLoader)
           except:
             pass
-          # Get metadata like grlc metadata
+          # Get grlc query metadata
           if grlc_metadata:
             file_descriptions = []
             if 'endpoint' in grlc_metadata:
@@ -417,23 +417,20 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               except Exception as e:
                 logging.debug('Issue parsing SPARQL endpoint from .rq file')
                 logging.debug(e)
-
-
             if 'summary' in grlc_metadata and grlc_metadata['summary']:
               file_descriptions.append(grlc_metadata['summary'])
             if 'description' in grlc_metadata and grlc_metadata['description']:
               file_descriptions.append(grlc_metadata['description'])
-              
+            # Add the query description to the graph
             if len(file_descriptions) > 0:
               shapes_graph.add((file_uri, RDFS.comment, Literal(' - '.join(file_descriptions))))
-            # If default params described for grlc SPARQL query we add then as shapes
+            # If default params described for grlc SPARQL query we add them as shapes
             if 'defaults' in grlc_metadata:
               for args in grlc_metadata['defaults']:
                 for arg, default_label in args.items():
                   shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(arg)))
-
           try:
-            # Parse query to get its operation (select, construct..)
+            # Parse the query to get its operation (select, construct..)
             parsed_query = translateQuery(Query.parseString(query_string, parseAll=True))
             query_operation = re.sub(r"(\w)([A-Z])", r"\1 \2", parsed_query.algebra.name)
             shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
@@ -497,9 +494,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           #     # Fixing
           # shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
-
       # Search for nanopublication templates
-      # https://w3id.org/np/o/ntemplate/
       for shape_file in g.subjects(RDF.type, NP_TEMPLATE.AssertionTemplate):
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
@@ -527,7 +522,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
       # Search for RML and R2RML mappings
-      # TODO: also rml:LogicalSource specifically for RML
       for shape in g.subjects(RDF.type, R2RML.SubjectMap):
           shape_found = True
           is_rml_mappings = False
@@ -548,9 +542,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
       # Search for OWL classes
-      # TODO: remove class limit
-      classes_limit = 300
-      classes_count = 0
       for shape in g.subjects(RDF.type, OWL.Class):
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
@@ -562,9 +553,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Try to get the label of the class
               shape_label = label
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
-          # classes_count += 1
-          # if classes_count >= classes_limit:
-          #   break
 
       # Get rdfs:label of owl:Ontology and shaclTest:Validate for file description
       file_descriptions = []
@@ -636,7 +624,6 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               # Try to get the label of the shape
               shape_label = label
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
-
       for shape in g.subjects(RDF.type, SHEX.Shape):
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
@@ -649,11 +636,10 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               shape_label = label
           shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
-    # Add repository RDF
+    # Add the git repo to the graph
     if shape_found:
       logging.debug('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] ' + "✔️ Shape found in file " + github_file_url)
       shapes_graph.add((URIRef(repo_url), RDF.type, SCHEMA['DataCatalog']))
-      # TODO: change, schema:codeRepository is a property, not a class, but not much available..
       shapes_graph.add((URIRef(repo_url), RDFS.label, Literal(repo_url.rsplit('/', 1)[1])))
       if (repo_description):
         shapes_graph.add((URIRef(repo_url), RDFS.comment, Literal(repo_description)))
@@ -672,14 +658,7 @@ def check_run_time(time_start, repo_list, current_repo):
     add_to_report('Running for ' + str(runtime) + ' - stopping the workflow to avoid hitting GitHub Actions runner 6h job limits\n\n'
       + 'The following repositories did not have the time to be processed:\n\n\n' + str(repo_missing))
     # Stop the script
-    sys.exit(0)
-  # TODO: include in check run time?
-  # if stopping_job:
-  #   add_to_report('Skipping topic: ' + github_topic + ' in ' + str(topics))
-  #   break
-  # if stopping_job:
-  #   add_to_report('Skipping result pages for topic ' + str(github_topic))
-  #   break
+    # sys.exit(0)
 
 def add_to_report(report_message, file_provided=None):
   """A function to write file parsing error logs to a markdown file report
@@ -703,7 +682,6 @@ def generate_github_file_url(repo_url, filepath, branch):
   """GitHub does not provide a way to get the download URL directly from GraphQL
   So we need to build the file URL from the github repo URL + branch + file path
   """
-  # file_url = ''
   if repo_url.startswith('https://gitlab.com/'):
     file_url = repo_url + '/-/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
   elif repo_url.startswith('https://gitee.com/'):
@@ -711,8 +689,6 @@ def generate_github_file_url(repo_url, filepath, branch):
   else:
     file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
     file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
-  # https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src/main/resources/config.schema.json
-
   return file_url
 
 def get_files(extensions):
