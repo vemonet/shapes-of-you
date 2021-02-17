@@ -1604,6 +1604,51 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gros
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit-test.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit-test.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-idranges.owl
 
 
@@ -1683,51 +1728,6 @@ File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/ma
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-idranges.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-idranges.owl:1:1: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit-test.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit-test.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro-idranges.owl
