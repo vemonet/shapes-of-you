@@ -33,6 +33,14 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 
 
 ---
+SPARQL endpoint failed: https://bio2rdf.org/sparql
+
+<urlopen error [Errno -5] No address associated with hostname>
+
+---
+
+
+---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
