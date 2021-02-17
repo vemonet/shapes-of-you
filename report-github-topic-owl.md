@@ -10003,44 +10003,6 @@ Bad syntax (expected item in list or ')') at ^ in:
 "...b'  sh:property [\n    sh:path props:hasTextValue;\n    sh:in (1'^b',2,3);\n    sh:message "must be in";\n  ] ;\n\n'"
 
 ---
-File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/Svpwm/ChronicDiseaseManagement
-> at line 8 of <>:
-Bad syntax (Prefix "rule1:" not bound) at ^ in:
-"...b'refix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r\n\r\n\r\n['^b'rule1: (?p :hasCookingMethod ?n), (?n rdf:type :NotFryMethod'..."
-
----
-File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Feiffel.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
-> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/eiffel.ttl'
-
----
-File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Flink.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
-> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/link.ttl'
-
----
-File: https://raw.githubusercontent.com/isuruamantha/OWL-to-AIML/master/src%2Fmain%2Fresources%2Fcoronavirus.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/isuruamantha/OWL-to-AIML
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
-
----
 File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
 
 
@@ -10106,6 +10068,63 @@ RDF parsed as xml, in repository: https://github.com/paya54/Reason-OWL
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
 
 ---
+File: https://raw.githubusercontent.com/Svpwm/ChronicDiseaseManagement/master/rules.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/Svpwm/ChronicDiseaseManagement
+> at line 8 of <>:
+Bad syntax (Prefix "rule1:" not bound) at ^ in:
+"...b'refix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\r\n\r\n\r\n['^b'rule1: (?p :hasCookingMethod ?n), (?n rdf:type :NotFryMethod'..."
+
+---
+File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Feiffel.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/eiffel.ttl'
+
+---
+File: https://raw.githubusercontent.com/hartig/eiffel-rdf-vocabularies/master/OnToology%2Flink.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/hartig/eiffel-rdf-vocabularies
+> [Errno 21] Is a directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/OnToology/link.ttl'
+
+---
+File: https://raw.githubusercontent.com/isuruamantha/OWL-to-AIML/master/src%2Fmain%2Fresources%2Fcoronavirus.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/isuruamantha/OWL-to-AIML
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/amhiggin/CrimeGeolocationOntology
+> Quote expected in string at ^ in T>
+                "^POLYGON ((-6.3220487
+
+---
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
 File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
 
 
@@ -10136,24 +10155,6 @@ RDF parsed as ttl, in repository: https://github.com/decrn/virtual-university
 > at line 14 of <>:
 Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'ce/> .\r\n@prefix dbo:      <http://dbpedia.org/ontology/>\r\n\r\n'^b'<#Courses>  a \trr:TriplesMap;\r\n            rr:logicalTable ['..."
-
----
-File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/AdhamGamal/QASAL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/Dorsa-Arezooji/AutoDoc
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
 File: https://raw.githubusercontent.com/nicorsm/cgg-ontology/master/owl%2Fbase.owl
