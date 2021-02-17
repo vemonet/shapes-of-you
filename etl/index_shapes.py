@@ -396,7 +396,8 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       try: 
         with open(rdf_file_path.absolute()) as file:
           sparql_query = file.read()
-          # Parse SPARQL query
+          # Parse SPARQL query (added fix for some malformed queries with =+ instead of #+)
+          sparql_query = "\n".join(['#+' + row.lstrip('=+') for row in sparql_query.split('\n') if row.startswith('=+')])
           yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
           query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
           shapes_graph.add((file_uri, SCHEMA['query'], Literal(sparql_query)))
