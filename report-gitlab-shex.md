@@ -38,6 +38,17 @@ byte indices must be integers or slices, not str
 
 
 ---
+SPARQL endpoint failed: http://data.allie.dbcls.jp/sparql/
+
+EndPointNotFound: it was impossible to connect with the endpoint in that address, check if it is correct. 
+
+Response:
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">\n<html>\n  <head>\n    <title>Error HTTP/1.1 404 File not found</title>\n  </head>\n  <body>\n    <h3>Error HTTP/1.1 404 File not found</h3><pre>\nThe requested URL was not found    URI  = \'/sparql/\'\n  </pre></body></html>\n'
+
+---
+
+
+---
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
@@ -48,10 +59,7 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'Could not create repository connection from the given SQL connection'
+byte indices must be integers or slices, not str
 
 ---
 
