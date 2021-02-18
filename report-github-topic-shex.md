@@ -14,7 +14,7 @@ File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fper
 
 ---
 RDF parsed as json-ld, in repository: https://github.com/weso/shaclex
-> 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+> Expecting value: line 2 column 1 (char 1)
 
 ---
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Frdf%2Fthing.jsonld
@@ -600,6 +600,14 @@ Bad syntax (Prefix "ex:" not bound) at ^ in:
 
 
 ---
+SPARQL endpoint failed: https://bio2rdf.org/sparql
+
+<urlopen error [Errno -5] No address associated with hostname>
+
+---
+
+
+---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
@@ -637,10 +645,7 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'Could not create repository connection from the given SQL connection'
+byte indices must be integers or slices, not str
 
 ---
 
