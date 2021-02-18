@@ -971,6 +971,17 @@ Bad syntax (EOF found after object) at ^ in:
 "b'@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix metago: <http://geneontology.org/> .\n@prefix MF: <http://purl.obolibrary.org/obo/GO_0003674> .\n@prefix enabled_by: <http://purl.obolibrary.org/obo/RO_0002333> .\n@prefix occurs_in: <http://purl.obolibrary.org/obo/BFO_0000066> .\n@prefix part_of: <http://purl.obolibrary.org/obo/BFO_0000050> .\n@prefix evidence: <http://geneontology.org/lego/evidence> .\n@prefix : <http://geneontology.org/cam_example/0000006/> .\n\n: {\n    : metago:graphType metago:noctuaCam .\n\n    :annoton a MF: .\n    :annoton enabled_by: :g0 ;\n        occurs_in: :c0 ;\n        part_of: :p0 .\n\n    :no_rels a MF: .\n\n    :one_rel1 a MF: ;\n        enabled_by: :g1 .\n\n    :one_rel2 a MF: ;\n        occurs_in: :c1 .\n\n    :one_rel3 a MF: ;\n        part_of: :p1 .\n\n    :two_rels1 a MF: ;\n        enabled_by: :g2 ;\n        occurs_in: :c2 .\n\n    :two_rels2 a MF: ;\n        enabled_by: :g3 ;\n        part_of: :p2 .\n\n    :two_rels3 a MF: ;\n        occurs_in: :c3 ;\n        part_of: :p3 .\n}\n\nMF: rdfs:label "Molecular Function"'^b''..."
 
 ---
+File: https://raw.githubusercontent.com/oeg-upm/morph-streams/master/query-rewriting%2Fsrc%2Ftest%2Fresources%2Fmappings%2FtestMappingSQL.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/oeg-upm/morph-streams
+> at line 55 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'\t\t\t\t\t\trr:objectMap \t[rr:constant ssg:SouthEastEnglandCCO] ];'^b''"
+
+---
 File: https://raw.githubusercontent.com/dwiel/simplesparql/master/testing.n3
 
 
@@ -5740,17 +5751,6 @@ Bad syntax (objectList expected) at ^ in:
 "...b'ends Player and Plugin"^^xsd:string ;\n            dct:source'^b' League of Legends Wiki. (2011, August). Items. [Online]. Av'..."
 
 ---
-File: https://raw.githubusercontent.com/sirmarcis/SPARQL-Query-Generator-for-League-of-Legends-Ontology/master/OE_10_LeagueOfLegends.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/sirmarcis/SPARQL-Query-Generator-for-League-of-Legends-Ontology
-> at line 148 of <>:
-Bad syntax (objectList expected) at ^ in:
-"...b'ends Player and Plugin"^^xsd:string ;\n            dct:source'^b' League of Legends Wiki. (2011, August). Items. [Online]. Av'..."
-
----
 File: https://raw.githubusercontent.com/imransilvake/semantic-partitioning/master/src%2Fmain%2Fresources%2Finput%2Flubm%2Fsample.nt
 
 
@@ -7808,6 +7808,14 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 
 
 ---
+SPARQL endpoint failed: https://bio2rdf.org/sparql
+
+<urlopen error [Errno -5] No address associated with hostname>
+
+---
+
+
+---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
@@ -7835,6 +7843,14 @@ byte indices must be integers or slices, not str
 
 
 ---
+SPARQL endpoint failed: http://lod.openlinksw.com/sparql
+
+HTTP Error 502: Bad Gateway
+
+---
+
+
+---
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
@@ -7845,10 +7861,7 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'Could not create repository connection from the given SQL connection'
+byte indices must be integers or slices, not str
 
 ---
 
