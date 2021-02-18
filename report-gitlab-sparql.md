@@ -593,6 +593,14 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 
 
 ---
+SPARQL endpoint failed: https://bio2rdf.org/sparql
+
+<urlopen error [Errno -5] No address associated with hostname>
+
+---
+
+
+---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
@@ -620,17 +628,6 @@ byte indices must be integers or slices, not str
 
 
 ---
-SPARQL endpoint failed: https://sparql.uniprot.org
-
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'<!DOCTYPE html SYSTEM "about:legacy-compat">\n<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><title>Error</title><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/><link href="/" rel="home"/><link href="/base.css" type="text/css" rel="stylesheet"/><link type="image/vnd.microsoft.icon" href="/uniprot-favicon.ico" rel="shortcut icon"/><link href="/uniprot-sparql.css" type="text/css" rel="stylesheet"/><link href="http://creativecommons.org/licenses/by/4.0/" rel="license"/><script src="//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.22/dist/yasqe.bundled.min.js"></script><link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/yasqe/2.2/yasqe.min.css"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="no-referrer" name="referrer"/></head><body typeof="schema:WebPage"><div id="masthead-container"><div id="local-masthead"><div id="local-title"><h1><a accesskey="1" href="https://www.uniprot.org/"><img alt="" src="https://www.uniprot.org/images/logos/Logo_medium.png" title="UniProt home"/></a></h1></div><div id="nav"><ul id="local-nav"><li><a href="/sparql">SPARQL</a></li><li class="first"><a href="https://www.uniprot.org/downloads">Downloads</a></li><li class="functional last"><a accesskey="9" href="https://www.uniprot.org/contact">Contact</a></li><li class="functional"><a rel="help" href="https://www.uniprot.org/help/">Documentation/Help</a></li></ul></div></div></div><a accesskey="2" href="#content" hidden="hidden">Skip Header</a><main class="sparql error" id="content"><h1>500 Internal Server Error</h1><p>The server was not able to handle your request.</p><p> If this error occurs repeatedly, \n\t\tplease <a id="contactLink">contact us</a>\n\t\tand indicate the page you were trying to access.</p><script language="javascript">\n\t\t\tvar part2 = document.domain.replace(/sparql\\./,\'\');\n\t\t\tdocument.getElementById(\'contactLink\').href=part2 + \'/contact\';\n\t\t</script></main><footer id="page-footer"><section class="small" id="copyright">\n\t\t\t&copy; 2002&ndash; <span property="schema:copyrightYear">2021</span>\n\t\t\t<a accesskey="9" href="https://www.uniprot.org/help/about">UniProt Consortium</a> |\n\t\t\t<a href="https://www.uniprot.org/help/license" property="schema:license">License\n\t\t\t\t&amp; Disclaimer</a> | <a href="https://www.uniprot.org/help/privacy">Privacy\n\t\t\t\tNotice</a></section><section><div resource="/help/about#UniProt" id="logos" typeof="NGO" property="creator"><span resource="/help/about#EBI" typeof="Organization" class="ebi" property="member"><span hidden="hidden" property="name">European Bioinformatics Institute</span><a href="https://www.ebi.ac.uk/" property="url"></a></span><span resource="/help/about#PIR" typeof="Organization" class="pir" property="member"><span hidden="hidden" property="name">Protein Information Resource</span><a href="http://pir.georgetown.edu/" property="url"></a></span><span resource="/help/about#SIB" typeof="Organization" class="sib" property="member"><span hidden="hidden" property="name">SIB Swiss Institute of Bioinformatics</span><a href="https://www.sib.swiss/" property="url"></a></span></div></section><section id="poweredby"><h3>Powered by</h3><span class="vitalit" resource="http://www.vital-it.ch/" typeof="schema:NGO" property="schema:sponsor"><h4>Hardware</h4><a href="http://www.vital-it.ch/" property="schema:url"><img alt="Virtuoso" src="/images/logos/Vital-IT_logo_notext.svg"/><h5 property="schema:name">Vital-IT</h5></a></span><span class="openlinksw" resource="http://www.openlinksw.com/#this" typeof="schema:Corporation" property="schema:sponsor"><h4>Software</h4><a href="http://virtuoso.openlinksw.com/" property="schema:url"><img alt="Virtuoso" src="/images/logos/virtuoso.png"/><h5 property="schema:name">Virtuoso</h5></a></span></section></footer><script src="//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.22/dist/yasqe.bundled.min.js"></script><script src="/sparql.js" type="text/javascript"> </script><script src="/scripts/globalVars.js" type="text/javascript"> </script><script src="https://www.google-analytics.com/analytics.js" async="async"></script><script type="text/javascript">\n\t\t\twindow.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;\n\n\t\t\t\n\t\t\t\t\tga(\'create\', \'UA-6228219-3\', \'auto\');\n\t\t\t\t\t\t\t\t\n\t\t\tga(\'set\', \'anonymizeIp\', true);\n\t\t\tga(\'set\', \'forceSSL\', true);\n\t\t\tga(\'send\', \'pageview\');\n\t\t</script></body></html>'
-
----
-
-
----
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
@@ -641,10 +638,7 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'Could not create repository connection from the given SQL connection'
+byte indices must be integers or slices, not str
 
 ---
 
