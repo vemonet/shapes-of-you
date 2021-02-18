@@ -3871,17 +3871,6 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b"y/>\n\n#mieux d'utiliser http://schema.org/postOfficeBoxNumber"^b'\n:post-office-box a owl:DatatypeProperty ;\n    rdfs:label "P'..."
 
 ---
-File: https://raw.githubusercontent.com/MarjoriePetit/Mapping-RML/master/dbpedia.org_ontology-ext_ods_bodacc.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/MarjoriePetit/Mapping-RML
-> at line 11 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b"y/>\n\n#mieux d'utiliser http://schema.org/postOfficeBoxNumber"^b'\n:post-office-box a owl:DatatypeProperty ;\n    rdfs:label "P'..."
-
----
 File: https://raw.githubusercontent.com/justin2004/rml-testing/master/mapping.rml.ttl
 
 
@@ -3913,39 +3902,6 @@ RDF parsed as ttl, in repository: https://github.com/fpriyatna/CSVW2RMLC
 > at line 3 of <>:
 Bad syntax (Prefix "rml:" not bound) at ^ in:
 "b'\n\n'^b'rml:logicalSource [\n    rml:source "http://www.example.com/A'..."
-
----
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/d2s-scripts-repository/master/resources%2Fbiolink-example-harold.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/d2s-scripts-repository
-> at line 16 of <>:
-Bad syntax (Prefix "HGNC:" not bound) at ^ in:
-"...b'ervices/model/gene-family/RPS> ;\n                biolink:id '^b'HGNC:10388 ;\n                biolink:publications ( PUBMED:1'..."
-
----
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/d2s-scripts-repository/master/rml%2Fdrugbank_rdf_output.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/d2s-scripts-repository
-> at line 1 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'3.org/1999/02/22-rdf-syntax-ns#type> <http://ncats/Article> '^b'<http://ncats/drugbank/graph>.\n<http://ncats/clinvarset/1624'..."
-
----
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/d2s-scripts-repository/master/rml%2Fcountryinfo_mapping.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/d2s-scripts-repository
-> at line 22 of <>:
-Bad syntax (bad escape) at ^ in:
-"...b'\n    rr:predicate ex:code ;\n    rr:objectMap [ rr:template "'^b'\\{\\{\\{ {ISO 3166} \\}\\}\\}"; rr:termType rr:Literal]\n  ] .\n'"
 
 ---
 File: https://raw.githubusercontent.com/ca7erina/r2rml/master/test%2Fresources%2FF01.mapping.ttl
@@ -4351,10 +4307,7 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'Could not create repository connection from the given SQL connection'
+byte indices must be integers or slices, not str
 
 ---
 
