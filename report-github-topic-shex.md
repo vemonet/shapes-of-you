@@ -48,7 +48,172 @@ Bad syntax (EOF found in middle of path syntax) at ^ in:
 "b'<http://x.com> a <T'^b'>'"
 
 ---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood7.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood14.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood9.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood2.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n\r\n:S a sh:NodeSha'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood17.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood19.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood10.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood11.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood8.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
 File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood12.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood16.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood4.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fbad1.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n\r\n:S a sh:NodeSha'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood5.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 2 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Floop1.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 4 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ttp://www.example.org/> .\r\n@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n\r\n:S a sh:NodeSha'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood6.ttl
 
 
 
@@ -81,7 +246,7 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n\r\n:S a sh:NodeSha'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood14.ttl
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood13.ttl
 
 
 
@@ -92,7 +257,7 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood10.ttl
+File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood1.ttl
 
 
 
@@ -114,204 +279,6 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Floop1.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 4 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'ttp://www.example.org/> .\r\n@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n\r\n:S a sh:NodeSha'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood17.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood13.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood7.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood4.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood9.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood16.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood5.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood19.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood11.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood2.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n\r\n:S a sh:NodeSha'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood1.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood8.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fbad1.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n\r\n:S a sh:NodeSha'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/examples%2Fshacl%2Fgood6.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 2 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"b'@prefix : <http://example.org/>\r\n'^b'@prefix sh: <http://www.w3.org/ns/shacl#>\r\n@prefix xsd: <htt'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtual.shacl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 1 of <>:
-Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\r\n@prefix xsd:'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtualShapeCode1.shacl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 1 of <>:
-Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\r\n@prefix xsd:'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fnested-repeated-group.shacl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 1 of <>:
-Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix :'^b'      &lt;http://a.example/&gt; .\r\n@prefix sh:    &lt;http:/'..."
-
----
 File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Ffalse-lead-excluding-value-shape.shacl
 
 
@@ -323,18 +290,7 @@ Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix :'^b'      &lt;http://a.example/&gt; .\r\n@prefix sh:    &lt;http:/'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fskipped.shacl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/shaclex
-> at line 1 of <>:
-Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix :'^b'      &lt;http://a.example/&gt; .\r\n@prefix sh:    &lt;http:/'..."
-
----
-File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2FnPlus1.shacl
+File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fnested-repeated-group.shacl
 
 
 
@@ -367,37 +323,48 @@ Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix :'^b'      &lt;http://a.example/&gt; .\r\n@prefix sh:    &lt;http:/'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtual.shacl
+File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2FnPlus1.shacl
 
 
 
 ---
-RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
 > at line 1 of <>:
 Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
+"b'@prefix :'^b'      &lt;http://a.example/&gt; .\r\n@prefix sh:    &lt;http:/'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtualShapeCode1.shacl
+File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fskipped.shacl
 
 
 
 ---
-RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
 > at line 1 of <>:
 Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
+"b'@prefix :'^b'      &lt;http://a.example/&gt; .\r\n@prefix sh:    &lt;http:/'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fnested-repeated-group.shacl
+File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtualShapeCode1.shacl
 
 
 
 ---
-RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
 > at line 1 of <>:
 Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
+"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\r\n@prefix xsd:'..."
+
+---
+File: https://raw.githubusercontent.com/weso/shaclex/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtual.shacl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/shaclex
+> at line 1 of <>:
+Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
+"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\r\n@prefix xsd:'..."
 
 ---
 File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Ffalse-lead-excluding-value-shape.shacl
@@ -411,18 +378,7 @@ Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
 
 ---
-File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fskipped.shacl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
-> at line 1 of <>:
-Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
-
----
-File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2FnPlus1.shacl
+File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fnested-repeated-group.shacl
 
 
 
@@ -455,6 +411,50 @@ Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
 
 ---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2FnPlus1.shacl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
+> at line 1 of <>:
+Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
+"b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fvalidation%2Fskipped.shacl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
+> at line 1 of <>:
+Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
+"b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtualShapeCode1.shacl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
+> at line 1 of <>:
+Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
+"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
+
+---
+File: https://raw.githubusercontent.com/weso/rdfshape/master/src%2Ftest%2Fresources%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtual.shacl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/weso/rdfshape
+> at line 1 of <>:
+Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
+"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
+
+---
 File: https://raw.githubusercontent.com/biolink/biolinkml/master/meta.jsonld
 
 
@@ -464,34 +464,7 @@ RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
 > [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
 
 ---
-File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgenjsonld%2Fmeta.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
-> [Errno 2] No such file or directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_scripts/output/genjsonld/output/gencontext/meta.jsonld'
-
----
-File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fannotations.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
-> [Errno 2] No such file or directory: '/Users/solbrig/git/biolink/biolinkml/tests/input/includes/extensions.context.jsonld'
-
----
 File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fextensions.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
-> [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
-
----
-File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fannotations.jsonld
 
 
 
@@ -509,6 +482,33 @@ RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
 > [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
 
 ---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/includes%2Fannotations.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/Users/hsolbrig/git/biolink/biolinkml/tests/input/includes/types.context.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Finput%2Fincludes%2Fannotations.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/Users/solbrig/git/biolink/biolinkml/tests/input/includes/extensions.context.jsonld'
+
+---
+File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Ftest_scripts%2Foutput%2Fgenjsonld%2Fmeta.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/biolink/biolinkml
+> [Errno 2] No such file or directory: '/home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/tests/test_scripts/output/genjsonld/output/gencontext/meta.jsonld'
+
+---
 File: https://raw.githubusercontent.com/biolink/biolinkml/master/tests%2Fdata%2Fhp_f.ttl
 
 
@@ -520,29 +520,18 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'os:seeAlso "http://www.human-phenotype-ontology.org#HP_30000'^b'79"^^xsd:anyURI ;\n\nccdh:SpecimenType a skos:Collection ;\n   '..."
 
 ---
-File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtual.shacl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/rdf-elixir/shex-ex
-> at line 1 of <>:
-Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
-
----
-File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtualShapeCode1.shacl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/rdf-elixir/shex-ex
-> at line 1 of <>:
-Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
-
----
 File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fvalidation%2Ffalse-lead-excluding-value-shape.shacl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/rdf-elixir/shex-ex
+> at line 1 of <>:
+Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
+"b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
+
+---
+File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fvalidation%2FnPlus1.shacl
 
 
 
@@ -564,7 +553,7 @@ Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
 "b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
 
 ---
-File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fvalidation%2FnPlus1.shacl
+File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtualShapeCode1.shacl
 
 
 
@@ -572,7 +561,18 @@ File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2F
 RDF parsed as ttl, in repository: https://github.com/rdf-elixir/shex-ex
 > at line 1 of <>:
 Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
-"b'@prefix :'^b'      &lt;http://a.example/&gt; .\n@prefix sh:    &lt;http://'..."
+"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
+
+---
+File: https://raw.githubusercontent.com/rdf-elixir/shex-ex/master/test%2Fdata%2FshexTest%2Fschemas%2FfutureWork%2F1dotVirtual.shacl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/rdf-elixir/shex-ex
+> at line 1 of <>:
+Bad syntax (expected <uriref> after @prefix _qname_) at ^ in:
+"b'@prefix sh:'^b'    &lt;http://www.w3.org/ns/shacl/core#&gt; .\n@prefix xsd: '..."
 
 ---
 File: https://raw.githubusercontent.com/MBoegers/ShexSHACLAndFriends/master/listings%2FValueValidation.shacl
@@ -637,7 +637,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
