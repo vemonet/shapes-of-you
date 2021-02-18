@@ -9559,7 +9559,7 @@ RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/cbcm-ontolo
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/working_copy/eu-cm-ontology_owlxml.owl:20:137: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
-File: https://raw.githubusercontent.com/hsu-aut/Mapping-MTP-to-OWL/develop/src%2Fmain%2Fresources%2Fmapping.ttl
+File: https://raw.githubusercontent.com/hsu-aut/Mapping-MTP-to-OWL/develop/Mapping%2Fsrc%2Fmain%2Fresources%2Fmapping.ttl
 
 
 
@@ -9568,15 +9568,6 @@ RDF parsed as ttl, in repository: https://github.com/hsu-aut/Mapping-MTP-to-OWL
 > at line 548 of <>:
 Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'te "{./Attribute[@Name=\'ProcedureID\']/Value}";\n\trr:datatype '^b'xsd:strg\n\t]];\n\t\n  \trr:predicateObjectMap [\n    rr:predicate '..."
-
----
-File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/sisinflab-swot/semantic-coap
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/LUMC-BioSemantics/dcat-extension/master/stardog-rules%2Fstandard-rule.ttl
@@ -9590,13 +9581,13 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'org/ns/dcat#>\nprefix dcterms: <http://purl.org/dc/terms/>\n\n\n'^b'IF {\n   ?res a dcat:Resource.\n   ?res dcterms:type dcterms:S'..."
 
 ---
-File: https://raw.githubusercontent.com/blankdots/PersonasOntology/master/ontology%2Fpersonasonto.owl
+File: https://raw.githubusercontent.com/sisinflab-swot/semantic-coap/master/semantic-coap-android%2Fapp%2Fsrc%2Fmain%2Fres%2Fraw%2Fsensor_ontology.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/blankdots/PersonasOntology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/personasonto.owl:21:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+RDF parsed as xml, in repository: https://github.com/sisinflab-swot/semantic-coap
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/semantic-coap-android/app/src/main/res/raw/sensor_ontology.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/NVTO%2Fnvto_protege.owl
@@ -9884,6 +9875,51 @@ RDF parsed as xml, in repository: https://github.com/cknoll/yamlpyowl
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/experiments/einsteins_riddle_manchester.owl:1:0: syntax error
 
 ---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/falpema/PlanesCuenca
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/resourcesfp/restaurantes.rdf:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Frecursos%2Fontologia_ruta.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/falpema/PlanesCuenca
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/recursos/ontologia_ruta.owl:85:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Ftemp.nt
+
+
+
+---
+RDF parsed as nt, in repository: https://github.com/falpema/PlanesCuenca
+> Invalid line: '<rdf:RDF'
+
+---
+File: https://raw.githubusercontent.com/AVeillas/IA301-urban-transport-ontology/master/UrbanTransportOntology.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/AVeillas/IA301-urban-transport-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/Inria-Chile/mining-inspection-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/MineInspectionOntology.owl:1:0: syntax error
+
+---
 File: https://raw.githubusercontent.com/mikel-egana-aranguren/ALDAPA/master/plugins%2Fsrc%2Ftest%2Fresources%2Fdata%2Fdata.n3
 
 
@@ -10041,69 +10077,22 @@ RDF parsed as xml, in repository: https://github.com/isuruamantha/OWL-to-AIML
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
 
 ---
-File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Frestaurantes.rdf
+File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/falpema/PlanesCuenca
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/resourcesfp/restaurantes.rdf:1:0: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/AdhamGamal/QASAL
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
-File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Frecursos%2Fontologia_ruta.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/falpema/PlanesCuenca
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/PlanesCuenca/src/recursos/ontologia_ruta.owl:85:28: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://raw.githubusercontent.com/falpema/PlanesCuenca/master/PlanesCuenca%2Fsrc%2Fresourcesfp%2Ftemp.nt
+File: https://raw.githubusercontent.com/Dorsa-Arezooji/AutoDoc/master/medical.owl
 
 
 
 ---
-RDF parsed as nt, in repository: https://github.com/falpema/PlanesCuenca
-> Invalid line: '<rdf:RDF'
-
----
-File: https://raw.githubusercontent.com/Inria-Chile/mining-inspection-ontology/master/MineInspectionOntology.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/Inria-Chile/mining-inspection-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/MineInspectionOntology.owl:1:0: syntax error
-
----
-File: https://raw.githubusercontent.com/AVeillas/IA301-urban-transport-ontology/master/UrbanTransportOntology.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/AVeillas/IA301-urban-transport-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/UrbanTransportOntology.owl:19:50: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
-
----
-File: https://raw.githubusercontent.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files/master/Practice_13_Sichkar_Valentyn%2FPractice_13_Sichkar_Valentyn%2Fbin%2FDebug%2Fn3%2Fontology.n3
-
-
-
----
-RDF parsed as n3, in repository: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files
-> at line 4 of <>:
-Bad syntax (Prefix "    my:" not bound) at ^ in:
-"...b'KB/recipes/n3_notation#>.\r\n\r\nmy:Peter a my:person, my:boy;\r\n'^b'\xc2\xa0\xc2\xa0\xc2\xa0\xc2\xa0my:suffers my:acrophobia, my:insomnia, my:xenophobia'..."
-
----
-File: https://raw.githubusercontent.com/paya54/Reason-OWL/master/cutting_tool.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/paya54/Reason-OWL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/cutting_tool.owl:188:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectHasValue
+RDF parsed as xml, in repository: https://github.com/Dorsa-Arezooji/AutoDoc
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/medical.owl:294:39: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
 File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
@@ -10114,6 +10103,17 @@ File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master
 RDF parsed as ttl, in repository: https://github.com/amhiggin/CrimeGeolocationOntology
 > Quote expected in string at ^ in T>
                 "^POLYGON ((-6.3220487
+
+---
+File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/CSIRO-enviro-informatics/eudm-profile
+> at line 26 of <>:
+Bad syntax (Prefix "agrif:" not bound) at ^ in:
+"...b'ef/agrif> ;\n.\n\n#\n# Classes\n#\ndcat:Dataset\n  rdfs:subClassOf '^b'agrif:Record ;\n  dct:description "A Dataset is easily seen a'..."
 
 ---
 File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
@@ -10340,10 +10340,7 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'Could not create repository connection from the given SQL connection'
+byte indices must be integers or slices, not str
 
 ---
 
