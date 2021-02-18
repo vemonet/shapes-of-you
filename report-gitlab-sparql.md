@@ -19,15 +19,15 @@ Bad syntax (Prefix "owl:" not bound) at ^ in:
 "...b'##################################\n\nsg:Project\n    rdf:type '^b'owl:Class ;\n    rdfs:label "Project"@en ;\n    rdfs:descripti'..."
 
 ---
-File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex319.ttl
+File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex442.ttl
 
 
 
 ---
 RDF parsed as ttl, in repository: https://gitlab.com/Nephyr/learning-sparql
-> at line 7 of <>:
-Bad syntax (Prefix "owl:" not bound) at ^ in:
-"...b'09-21" .\n\n<http://rdf.freebase.com/ns/en.tommy_potter>\t\n    '^b'owl:sameAs\t\n    <http://dbpedia.org/resource/Tommy_Potter> .'..."
+> at line 3 of <>:
+Bad syntax (Prefix "void:" not bound) at ^ in:
+"b'# filename: ex442.ttl (excerpt from void.ttl)\n\n'^b'void:Linkset a rdfs:Class, owl:Class;\n    rdfs:label "linkse'..."
 
 ---
 File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex420.ttl
@@ -41,37 +41,15 @@ Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
 "...b'irstName     "Richard" ;\n        ab:lastName       "Mutt" ;\n'^b'NOT DONE\n\nab:playsInstrument\n      rdf:type rdf:Property ;\n '..."
 
 ---
-File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex442.ttl
+File: https://gitlab.com/Nephyr/learning-sparql/-/raw/master/pdf_data%2Fex319.ttl
 
 
 
 ---
 RDF parsed as ttl, in repository: https://gitlab.com/Nephyr/learning-sparql
-> at line 3 of <>:
-Bad syntax (Prefix "void:" not bound) at ^ in:
-"b'# filename: ex442.ttl (excerpt from void.ttl)\n\n'^b'void:Linkset a rdfs:Class, owl:Class;\n    rdfs:label "linkse'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
-
-
-
----
-RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 88 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
-
-
-
----
-RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 88 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+> at line 7 of <>:
+Bad syntax (Prefix "owl:" not bound) at ^ in:
+"...b'09-21" .\n\n<http://rdf.freebase.com/ns/en.tommy_potter>\t\n    '^b'owl:sameAs\t\n    <http://dbpedia.org/resource/Tommy_Potter> .'..."
 
 ---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
@@ -96,6 +74,118 @@ Bad syntax (newline found in string literal) at ^ in:
 "...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
 
 ---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-quest%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg%2Ftest-manifest.n3
+
+
+
+---
+RDF parsed as n3, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 88 of <>:
+Bad syntax (newline found in string literal) at ^ in:
+"...b'ment "A type of test specifically for syntax testing. Syntax'^b'\n      tests are not required to have an associated result, '..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/describeConstruct.owl:44:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fmaterializer%2FMaterializeTest.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
+
+---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-db%2Fsrc%2Ftest%2Fresources%2Ftest%2Fstockexchange-classic-unittest.owl
 
 
@@ -103,42 +193,6 @@ File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-db%2Fsrc%2Ftest%2
 ---
 RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-db/src/test/resources/test/stockexchange-classic-unittest.owl:193:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/numeric/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/boolean/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fcharacter%2Fdatatypes.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/character/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fdatetime%2Fdatatypes.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/datetime/datatypes.owl:191:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
 
 ---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fperson.owl
@@ -159,13 +213,13 @@ RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/ontologyIMDB.owl:212:27: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FatTest%2FontologyType.owl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/atTest/ontologyType.owl:47:29: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
 
 ---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FontologyType%2FdataPropertiesOntologyType.owl
@@ -186,40 +240,13 @@ RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2Fdatatype%2Fdatatypes.owl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Ftest%2Fresources%2FatTest%2FontologyType.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/datatype/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fgeneral%2Fdatatypes.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/test/resources/atTest/ontologyType.owl:47:29: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fcharacter%2Fdatatypes.owl
@@ -240,6 +267,33 @@ RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/datetime/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
 
 ---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/boolean/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fgeneral%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/general/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-test/src/main/resources/testcases-datatypes/numeric/datatypes.owl:194:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
+
+---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fresources%2Fregexp%2Foracle-regexp.owl
 
 
@@ -258,116 +312,40 @@ RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/obdalib-protege41/src/test/java/it/unibz/krdb/obda/api/io/School.owl:55:31: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2FdescribeConstruct.owl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fcharacter%2Fdatatypes.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/describeConstruct.owl:44:53: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/character/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2FnewDag%2FinverseEquivalents6b.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/newDag/inverseEquivalents6b.owl:42:24: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fdag%2Ffinal_project_original.owl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fdatetime%2Fdatatypes.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/dag/final_project_original.owl:161:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/datetime/datatypes.owl:191:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2Fcomplex_example.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/complex_example.owl:1:6: not well-formed (invalid token)
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FexampleSWRL.owl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fboolean%2Fdatatypes.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/exampleSWRL.owl:68:30: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/boolean/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fswrl%2FpropertyExample.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/swrl/propertyExample.owl:1:6: not well-formed (invalid token)
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Ftest%2Fmaterializer%2FMaterializeTest.owl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-datatypes%2Fnumeric%2Fdatatypes.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/test/materializer/MaterializeTest.owl:41:25: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fsymmetric.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/symmetric.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Ftest%2Fresources%2Fproperty-characteristics%2Fnoproperty.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/test/resources/property-characteristics/noproperty.owl:32:38: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectProperty
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-owlapi3%2Fsrc%2Fmain%2Fresources%2Fsamples%2Fstock-exchange-classic.owl
-
-
-
----
-RDF parsed as xml, in repository: https://gitlab.com/AlbertoPrior/ontop
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-owlapi3/src/main/resources/samples/stock-exchange-classic.owl:25:54: Repeat node-elements inside property elements: http://www.w3.org/2006/12/owl2-xml#Class
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD014%2FWRr2rmla.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 6 of <>:
-Bad syntax (objectList expected) at ^ in:
-"...b'http://example.com/base/TriplesMap1>\n\t a rr:triplesMap;\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT (\'Department\' || "dep'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD007%2FWRr2rmle.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 8 of <>:
-Bad syntax (objectList expected) at ^ in:
-"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/quest-sparql-compliance/src/main/resources/testcases-datatypes/numeric/datatypes.owl:182:45: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#DataProperty
 
 ---
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD015%2FWRr2rmla.ttl
@@ -381,17 +359,6 @@ Bad syntax (objectList expected) at ^ in:
 "...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT "Code", "Name", "Lan"'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD001%2FWRr2rmlb.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 8 of <>:
-Bad syntax (objectList expected) at ^ in:
-"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."
-
----
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD011%2FWRr2rmla.ttl
 
 
@@ -403,95 +370,40 @@ Bad syntax (objectList expected) at ^ in:
 "...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT "Student"."ID" as ID,'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD007%2FWRr2rmle.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 8 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD014%2FWRr2rmla.ttl
 
 
 
 ---
 RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 6 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+Bad syntax (objectList expected) at ^ in:
+"...b'http://example.com/base/TriplesMap1>\n\t a rr:triplesMap;\n\trr:'^b' logicalTable [ rr:sqlQuery """\nSELECT (\'Department\' || "dep'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-rdb2rdf-compliance%2Fsrc%2Ftest%2Fresources%2FD001%2FWRr2rmlb.ttl
 
 
 
 ---
 RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+> at line 8 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'tp://example.com/base/TriplesMap1>\n\n\t a rr:triplesMap;\n\n\trr:'^b' logicalTable [ rr:tableName "\\"Student"\\" ];\n\n\trr:subjectMa'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbroker-regex-name.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl
 
 
 
@@ -502,29 +414,7 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix foaf: <http://xmlns.com/foaf/0.1/> .\r@prefix : <htt'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 6 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
-
----
 File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
-
----
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
 
 
 
@@ -546,7 +436,7 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
 
 
 
@@ -557,7 +447,7 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
 
 
 
@@ -579,7 +469,29 @@ Bad syntax (expected directive or statement) at ^ in:
 "...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
 
 ---
-File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-test%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 6 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-dawg-sparql-1.1%2Fentailment%2Flang.ttl
 
 
 
@@ -588,6 +500,94 @@ RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
 > at line 1 of <>:
 Bad syntax (expected directive or statement) at ^ in:
 "...b'prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . '^b'\r@prefix foaf: <http://xmlns.com/foaf/0.1/> .\r@prefix : <htt'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbroker-regex-name.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-offer-stock.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Fbrokers-workfor-legal.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Fsimplecq%2Ftransaction-stock-type.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-3.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-2.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fstockexchange%2Ffilters%2Fboolean-nested-1.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'refix rsi:      <http://ontop.inf.unibz.it/tests/rs-info#> .'^b'\r@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-n'..."
+
+---
+File: https://gitlab.com/AlbertoPrior/ontop/-/raw/master/quest-sparql-compliance%2Fsrc%2Fmain%2Fresources%2Ftestcases-scenarios%2Fvirtual-mode%2Fbsbm%2Fquery-result-12.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://gitlab.com/AlbertoPrior/ontop
+> at line 6 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'p://www.w3.org/2001/XMLSchema#> .\n\nbsbm-inst:dataFromVendor2'^b'/Offer3470 \n\tbsbm:export/product \t\tbsbm-inst:dataFromProduce'..."
 
 ---
 
@@ -620,6 +620,17 @@ byte indices must be integers or slices, not str
 
 
 ---
+SPARQL endpoint failed: https://sparql.uniprot.org
+
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'<!DOCTYPE html SYSTEM "about:legacy-compat">\n<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><title>Error</title><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/><link href="/" rel="home"/><link href="/base.css" type="text/css" rel="stylesheet"/><link type="image/vnd.microsoft.icon" href="/uniprot-favicon.ico" rel="shortcut icon"/><link href="/uniprot-sparql.css" type="text/css" rel="stylesheet"/><link href="http://creativecommons.org/licenses/by/4.0/" rel="license"/><script src="//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.22/dist/yasqe.bundled.min.js"></script><link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/yasqe/2.2/yasqe.min.css"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="no-referrer" name="referrer"/></head><body typeof="schema:WebPage"><div id="masthead-container"><div id="local-masthead"><div id="local-title"><h1><a accesskey="1" href="https://www.uniprot.org/"><img alt="" src="https://www.uniprot.org/images/logos/Logo_medium.png" title="UniProt home"/></a></h1></div><div id="nav"><ul id="local-nav"><li><a href="/sparql">SPARQL</a></li><li class="first"><a href="https://www.uniprot.org/downloads">Downloads</a></li><li class="functional last"><a accesskey="9" href="https://www.uniprot.org/contact">Contact</a></li><li class="functional"><a rel="help" href="https://www.uniprot.org/help/">Documentation/Help</a></li></ul></div></div></div><a accesskey="2" href="#content" hidden="hidden">Skip Header</a><main class="sparql error" id="content"><h1>500 Internal Server Error</h1><p>The server was not able to handle your request.</p><p> If this error occurs repeatedly, \n\t\tplease <a id="contactLink">contact us</a>\n\t\tand indicate the page you were trying to access.</p><script language="javascript">\n\t\t\tvar part2 = document.domain.replace(/sparql\\./,\'\');\n\t\t\tdocument.getElementById(\'contactLink\').href=part2 + \'/contact\';\n\t\t</script></main><footer id="page-footer"><section class="small" id="copyright">\n\t\t\t&copy; 2002&ndash; <span property="schema:copyrightYear">2021</span>\n\t\t\t<a accesskey="9" href="https://www.uniprot.org/help/about">UniProt Consortium</a> |\n\t\t\t<a href="https://www.uniprot.org/help/license" property="schema:license">License\n\t\t\t\t&amp; Disclaimer</a> | <a href="https://www.uniprot.org/help/privacy">Privacy\n\t\t\t\tNotice</a></section><section><div resource="/help/about#UniProt" id="logos" typeof="NGO" property="creator"><span resource="/help/about#EBI" typeof="Organization" class="ebi" property="member"><span hidden="hidden" property="name">European Bioinformatics Institute</span><a href="https://www.ebi.ac.uk/" property="url"></a></span><span resource="/help/about#PIR" typeof="Organization" class="pir" property="member"><span hidden="hidden" property="name">Protein Information Resource</span><a href="http://pir.georgetown.edu/" property="url"></a></span><span resource="/help/about#SIB" typeof="Organization" class="sib" property="member"><span hidden="hidden" property="name">SIB Swiss Institute of Bioinformatics</span><a href="https://www.sib.swiss/" property="url"></a></span></div></section><section id="poweredby"><h3>Powered by</h3><span class="vitalit" resource="http://www.vital-it.ch/" typeof="schema:NGO" property="schema:sponsor"><h4>Hardware</h4><a href="http://www.vital-it.ch/" property="schema:url"><img alt="Virtuoso" src="/images/logos/Vital-IT_logo_notext.svg"/><h5 property="schema:name">Vital-IT</h5></a></span><span class="openlinksw" resource="http://www.openlinksw.com/#this" typeof="schema:Corporation" property="schema:sponsor"><h4>Software</h4><a href="http://virtuoso.openlinksw.com/" property="schema:url"><img alt="Virtuoso" src="/images/logos/virtuoso.png"/><h5 property="schema:name">Virtuoso</h5></a></span></section></footer><script src="//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.22/dist/yasqe.bundled.min.js"></script><script src="/sparql.js" type="text/javascript"> </script><script src="/scripts/globalVars.js" type="text/javascript"> </script><script src="https://www.google-analytics.com/analytics.js" async="async"></script><script type="text/javascript">\n\t\t\twindow.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;\n\n\t\t\t\n\t\t\t\t\tga(\'create\', \'UA-6228219-3\', \'auto\');\n\t\t\t\t\t\t\t\t\n\t\t\tga(\'set\', \'anonymizeIp\', true);\n\t\t\tga(\'set\', \'forceSSL\', true);\n\t\t\tga(\'send\', \'pageview\');\n\t\t</script></body></html>'
+
+---
+
+
+---
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 <urlopen error [Errno 110] Connection timed out>
@@ -630,7 +641,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
