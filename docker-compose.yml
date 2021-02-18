@@ -11,8 +11,8 @@ services:
       - /data/shapes-of-you/virtuoso:/data
     environment:
       # Deployed using https://github.com/nginx-proxy
-      - VIRTUAL_HOST=data.index.semanticscience.org
-      - LETSENCRYPT_HOST=data.index.semanticscience.org
+      - VIRTUAL_HOST=${VIRTUOSO_URL}
+      - LETSENCRYPT_HOST=${VIRTUOSO_URL}
       - VIRTUAL_PORT=8890
       # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFPerformanceTuning
       # http://docs.openlinksw.com/virtuoso/rdfperfgeneral/
