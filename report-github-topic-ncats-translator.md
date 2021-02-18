@@ -39,14 +39,6 @@ b'<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">\n 
 
 
 ---
-SPARQL endpoint failed: http://data.europa.eu/euodp/sparqlep
-
-byte indices must be integers or slices, not str
-
----
-
-
----
 SPARQL endpoint failed: http://digital-agenda-data.eu/data/sparql
 
 byte indices must be integers or slices, not str
@@ -65,7 +57,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
