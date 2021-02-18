@@ -105,79 +105,7 @@ Bad syntax (Prefix "skos:" not bound) at ^ in:
 "...b'          WHERE { ?vocabulary pdp:popisuje-dokument ?this . '^b'}"""\n] .\n\nskos:Concept a rdfs:Class ;\n# InverseOf between je'..."
 
 ---
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/t%C3%A9mata-ud%C3%A1lost%C3%AD.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
 File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-ud%C3%A1lost%C3%AD.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-d%C5%99evin.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/dny-v-t%C3%BDdnu.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/stupn%C4%9B-p%C5%99%C3%ADstupnosti.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/pohlav%C3%AD.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-pracovn%C3%ADch-vztah%C5%AF.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/kategorie-%C3%BAzemn%C3%AD-ochrany.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
-> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
-
----
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/jin%C3%A1-%C4%8Dasov%C3%A1-specifikace.jsonld
 
 
 
@@ -195,7 +123,70 @@ RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
 > 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
 
 ---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/dny-v-t%C3%BDdnu.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-turistick%C3%BDch-c%C3%ADl%C5%AF.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-pracovn%C3%ADch-vztah%C5%AF.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/pohlav%C3%AD.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/stupn%C4%9B-p%C5%99%C3%ADstupnosti.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
 File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/m%C3%ADra-specifikace-t%C3%A9matu-pr%C3%A1ce.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/t%C3%A9mata-ud%C3%A1lost%C3%AD.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/jin%C3%A1-%C4%8Dasov%C3%A1-specifikace.jsonld
 
 
 
@@ -222,7 +213,16 @@ RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
 > 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
 
 ---
-File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-turistick%C3%BDch-c%C3%ADl%C5%AF.jsonld
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/kategorie-%C3%BAzemn%C3%AD-ochrany.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-d%C5%99evin.jsonld
 
 
 
@@ -313,7 +313,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
