@@ -57,10 +57,7 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-EndPointInternalError: endpoint returned code 500 and response. 
-
-Response:
-b'Could not create repository connection from the given SQL connection'
+byte indices must be integers or slices, not str
 
 ---
 
