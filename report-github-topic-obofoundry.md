@@ -8,49 +8,22 @@
 
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp_ncit_eq.owl
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fdefinitions.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp_ncit_eq.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-edit.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-idranges.owl
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fpattern.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-idranges.owl:2:0: syntax error
-
----
-File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-qc.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-qc.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Farchive%2Fhp_go-redundant.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/archive/hp_go-redundant.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
@@ -71,22 +44,49 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotyp
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fdefinitions.owl
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-idranges.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-idranges.owl:2:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/patterns%2Fpattern.owl
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp_ncit_eq.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp_ncit_eq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-qc.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-qc.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Fhp-edit.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/hp-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src%2Fontology%2Farchive%2Fhp_go-redundant.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/human-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/archive/hp_go-redundant.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fgo-idranges.owl
@@ -98,15 +98,6 @@ RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/go-idranges.owl:1:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fgo-taxon-groupings-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/go-taxon-groupings-edit.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-gci.owl
 
 
@@ -116,15 +107,6 @@ RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-gci.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgorel-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/gorel-edit.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-bridge.owl
 
 
@@ -132,6 +114,15 @@ File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fon
 ---
 RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-bridge.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgorel-edit.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/gorel-edit.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Flegorel.owl
@@ -152,6 +143,15 @@ RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/extensions/go-modules-annotations.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fimports%2Fgo-taxon-groupings-edit.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/geneontology/go-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/go-taxon-groupings-edit.owl:1:6: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fontology%2Fextensions%2Fgo-upper.obo
 
 
@@ -159,33 +159,6 @@ File: https://raw.githubusercontent.com/geneontology/go-ontology/master/src%2Fon
 ---
 In repository: https://github.com/geneontology/go-ontology
 > local variable 'header' referenced before assignment
-
----
-File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmondo-idranges.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/monarch-initiative/mondo
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/mondo-idranges.owl:1:0: syntax error
-
----
-File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fequivs.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/monarch-initiative/mondo
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/equivs.owl:1:0: syntax error
-
----
-File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fdisease_by_location.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/monarch-initiative/mondo
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/disease_by_location.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fpatterns%2Fdosdp-pattern.owl
@@ -206,13 +179,31 @@ RDF parsed as xml, in repository: https://github.com/monarch-initiative/mondo
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/components/pattern-ontology-remove-axioms.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fsparql%2Fbad.obo
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmondo-idranges.owl
 
 
 
 ---
-In repository: https://github.com/monarch-initiative/mondo
-> local variable 'header' referenced before assignment
+RDF parsed as xml, in repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/mondo-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fdisease_by_location.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/disease_by_location.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fmodules%2Fequivs.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/monarch-initiative/mondo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/equivs.owl:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fontology%2Fomim-exclusion-set.obo
@@ -233,7 +224,7 @@ In repository: https://github.com/monarch-initiative/mondo
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/scratch%2Fvicc.obo
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src%2Fsparql%2Fbad.obo
 
 
 
@@ -242,49 +233,13 @@ In repository: https://github.com/monarch-initiative/mondo
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-ZFA-MA.rdf
+File: https://raw.githubusercontent.com/monarch-initiative/mondo/master/scratch%2Fvicc.obo
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-ZFA-MA.rdf:72:24: rdf:ID value is not a valid NCName: 1
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-MA-201009.rdf
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-MA-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-FBbt.rdf
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-FBbt.rdf:72:24: rdf:ID value is not a valid NCName: 1
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-MA.rdf
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-MA.rdf:72:24: rdf:ID value is not a valid NCName: 1
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-FBbt-201009.rdf
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-FBbt-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
+In repository: https://github.com/monarch-initiative/mondo
+> local variable 'header' referenced before assignment
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-GAZ-FMA.rdf
@@ -296,6 +251,24 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-GAZ-FMA.rdf:72:24: rdf:ID value is not a valid NCName: 1
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-FBbt-201009.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-FBbt-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-ZFA-MA.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-ZFA-MA.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-ZFA-MA-201009.rdf
 
 
@@ -303,6 +276,51 @@ File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-ZFA-MA-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-MA-201009.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-MA-201009.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-MA.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-MA.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/ext-mappings%2Fmappings-FMA-FBbt.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ext-mappings/mappings-FMA-FBbt.rdf:72:24: rdf:ID value is not a valid NCName: 1
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/musculoskeletal.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/musculoskeletal.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/reasoner_axioms.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/reasoner_axioms.owl:1:8: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/core.owl
@@ -341,15 +359,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/homology-relations.owl:1:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/reasoner_axioms.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/reasoner_axioms.owl:1:8: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/modules%2Fluminal_space_of-gci.owl
 
 
@@ -357,24 +366,6 @@ File: https://raw.githubusercontent.com/obophenotype/uberon/master/modules%2Flum
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/modules/luminal_space_of-gci.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Ftaxon-constraints.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/subsets/taxon-constraints.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/issues/contributor.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/reference%2Fuberonref-idranges.owl
@@ -386,40 +377,13 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/reference/uberonref-idranges.owl:1:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-drosophila.owl
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Ftaxon-constraints.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-drosophila.owl:1:8: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-mouse.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-mouse.owl:1:8: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-xenopus.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-xenopus.owl:1:8: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-zebrafish.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-zebrafish.owl:1:8: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/subsets/taxon-constraints.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-gnathostome.owl
@@ -431,13 +395,13 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-gnathostome.owl:1:8: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-nematode.owl
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-xenopus.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-nematode.owl:1:8: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-xenopus.owl:1:8: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-human.owl
@@ -447,6 +411,62 @@ File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fco
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-human.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-mouse.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-mouse.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-drosophila.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-drosophila.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-zebrafish.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-zebrafish.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/contexts%2Fcontext-nematode.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/contexts/context-nematode.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/uberon
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/issues/contributor.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/pending-disjoints-core.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/pending-disjoints.obo
@@ -478,33 +498,13 @@ In repository: https://github.com/obophenotype/uberon
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/pending-disjoints-core.obo
-
-
-
----
-In repository: https://github.com/obophenotype/uberon
-> Tag-value pair parsing failed for:
-[Term]
-
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Finsect_glossary.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/attic%2Fuberon_disjoint_from_strict.obo
 
 
 
 ---
 In repository: https://github.com/obophenotype/uberon
 > local variable 'header' referenced before assignment
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Fbams.obo
-
-
-
----
-In repository: https://github.com/obophenotype/uberon
-> too many values to unpack (expected 2)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/subsets%2Fhuman-view.obo
@@ -525,7 +525,7 @@ In repository: https://github.com/obophenotype/uberon
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Finsect_glossary.obo
 
 
 
@@ -534,40 +534,24 @@ In repository: https://github.com/obophenotype/uberon
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fcommon-mammalian-nomencl-structural.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/resources%2Fbams.obo
 
 
 
 ---
 In repository: https://github.com/obophenotype/uberon
-> 'utf-8' codec can't decode byte 0xc9 in position 14503: invalid continuation byte
+> too many values to unpack (expected 2)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Femapaa.obo
-
-
-
----
-In repository: https://github.com/obophenotype/uberon
-> 'utf-8' codec can't decode byte 0xbc in position 208773: invalid start byte
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2FNeuroNames.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fworm_anatomy_xp.obo
 
 
 
 ---
 In repository: https://github.com/obophenotype/uberon
-> 'utf-8' codec can't decode byte 0xe9 in position 1248: invalid continuation byte
+> Tag-value pair parsing failed for:
+[Term]
 
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/attic%2Fuberon_disjoint_from_strict.obo
-
-
-
----
-In repository: https://github.com/obophenotype/uberon
-> local variable 'header' referenced before assignment
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fdictyostelium_anatomy_xp.obo
@@ -581,7 +565,7 @@ In repository: https://github.com/obophenotype/uberon
 
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_cell.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fpo_anatomy_xp.obo
 
 
 
@@ -601,25 +585,18 @@ In repository: https://github.com/obophenotype/uberon
 
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fmouse_anatomy_xp_uberon.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ftick_anatomy_xp.obo
 
 
 
 ---
 In repository: https://github.com/obophenotype/uberon
-> local variable 'header' referenced before assignment
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fpo_anatomy_xp.obo
-
+> Tag-value pair parsing failed for:
+[Term]
 
 
 ---
-In repository: https://github.com/obophenotype/uberon
-> local variable 'header' referenced before assignment
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_anatomy_xp.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_subcellular_xp.obo
 
 
 
@@ -639,17 +616,6 @@ In repository: https://github.com/obophenotype/uberon
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp.obo
-
-
-
----
-In repository: https://github.com/obophenotype/uberon
-> Tag-value pair parsing failed for:
-[Term]
-
-
----
 File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fhog_xp.obo
 
 
@@ -659,7 +625,7 @@ In repository: https://github.com/obophenotype/uberon
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_uberon.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fmouse_anatomy_xp_uberon.obo
 
 
 
@@ -668,29 +634,7 @@ In repository: https://github.com/obophenotype/uberon
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_subcellular_xp.obo
-
-
-
----
-In repository: https://github.com/obophenotype/uberon
-> Tag-value pair parsing failed for:
-[Term]
-
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp_uberon.obo
-
-
-
----
-In repository: https://github.com/obophenotype/uberon
-> Tag-value pair parsing failed for:
-[Term]
-
-
----
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fcell_xp.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp.obo
 
 
 
@@ -712,7 +656,16 @@ In repository: https://github.com/obophenotype/uberon
 
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ftick_anatomy_xp.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_uberon.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fcell_xp.obo
 
 
 
@@ -723,7 +676,16 @@ In repository: https://github.com/obophenotype/uberon
 
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fworm_anatomy_xp.obo
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Ffma_xp_cell.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fnif_anatomy_xp.obo
 
 
 
@@ -734,58 +696,69 @@ In repository: https://github.com/obophenotype/uberon
 
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-idranges.owl
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/experimental%2Fzebrafish_anatomy_xp_uberon.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> Tag-value pair parsing failed for:
+[Term]
+
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Femapaa.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> 'utf-8' codec can't decode byte 0xbc in position 208773: invalid start byte
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2Fcommon-mammalian-nomencl-structural.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> 'utf-8' codec can't decode byte 0xc9 in position 14503: invalid continuation byte
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/source-ontologies%2FNeuroNames.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> 'utf-8' codec can't decode byte 0xe9 in position 1248: invalid continuation byte
+
+---
+File: https://raw.githubusercontent.com/obophenotype/uberon/master/issues%2Fcontributor.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/uberon
+> local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fdefinitions.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-idranges.owl:1:1: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-edit.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-refactored.owl
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fpattern.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-refactored.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-removedaxioms.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-removedaxioms.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fro_seed.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ro_seed.owl:1:0: syntax error
-
----
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fnif_import.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/nif_import.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fpatterns%2Fdefinitions.owl
@@ -806,6 +779,60 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-refactored.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-refactored.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-removedaxioms.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-removedaxioms.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fcl-edit.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/cl-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fnif_import.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/nif_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/src%2Fontology%2Fimports%2Fro_seed.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ro_seed.owl:1:0: syntax error
+
+---
 File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/imports%2Fnif_import.owl
 
 
@@ -813,24 +840,6 @@ File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/import
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/nif_import.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/patterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/cell-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/geneontology/obographs/master/src%2Ftest%2Fresources%2Fabox.owl
@@ -860,15 +869,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/upheno
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/upheno_root_alignments.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fontology%2Fcomponents%2Fpattern-ontology-remove-axioms.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/upheno
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/pattern-ontology-remove-axioms.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpatterns%2Freview_pattern.owl
 
 
@@ -876,6 +876,15 @@ File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fpattern
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/upheno
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/review_pattern.owl:1:0: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/src%2Fontology%2Fcomponents%2Fpattern-ontology-remove-axioms.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/upheno
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/pattern-ontology-remove-axioms.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/upheno/master/archive%2Fwbphenotype%2Fwbphenotype-equivalence-axioms-edit.owl
@@ -907,6 +916,15 @@ In repository: https://github.com/obophenotype/upheno
 
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-align-equiv-labeled.obo
+
+
+
+---
+In repository: https://github.com/obophenotype/upheno
+> local variable 'header' referenced before assignment
+
+---
 File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-align-equiv.obo
 
 
@@ -916,13 +934,22 @@ In repository: https://github.com/obophenotype/upheno
 > local variable 'header' referenced before assignment
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/upheno/master/hp-mp%2Fmp_hp-align-equiv-labeled.obo
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fpatterns%2Fdefinitions.owl
 
 
 
 ---
-In repository: https://github.com/obophenotype/upheno
-> local variable 'header' referenced before assignment
+RDF parsed as xml, in repository: https://github.com/monarch-initiative/GENO-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fpatterns%2Fpattern.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/monarch-initiative/GENO-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fontology%2Fgeno-idranges.owl
@@ -943,21 +970,39 @@ RDF parsed as xml, in repository: https://github.com/monarch-initiative/GENO-ont
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/geno-edit.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fpatterns%2Fdefinitions.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/patterns%2Fdefinitions.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/monarch-initiative/GENO-ontology
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/patterns%2Fpattern.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src%2Fpatterns%2Fpattern.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/monarch-initiative/GENO-ontology
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
@@ -979,15 +1024,6 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbbt-edit-release.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fcomponents%2Ffbbt_ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fbbt_ext.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
 
 
@@ -995,6 +1031,15 @@ File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fcomponents%2Ffbbt_ext.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fbbt_ext.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fontology%2Fcomponents%2Fqc_assertions_unmerge.owl
@@ -1006,67 +1051,31 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions_unmerge.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-06-02/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Ffbbt-idranges.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Ftrunk%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/fbbt-idranges.owl:1:0: syntax error
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-06-02/trunk/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/fbbt-ext.owl:110:75: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Fimports%2Fflybase_imports.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-26%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/imports/flybase_imports.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-12-08%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-12-08/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-01-21%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-01-21/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2013-07-26/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-09-06%2Fontologies%2Ffbbt-ext.owl
@@ -1078,6 +1087,24 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-09-06/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-05-03%2Fontologies%2Ffbbt-ext.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-05-03/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-11-07%2Fontologies%2Ffbbt-ext.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2014-11-07/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-03-11%2Fontologies%2Ffbbt-ext.owl
 
 
@@ -1087,31 +1114,49 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-03-11/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-04-05%2Fontologies%2Ffbbt-ext.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-10%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-04-05/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2013-07-10/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-08-17%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-08-17/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-02-15%2Fontologies%2Ffbbt-ext.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-07-16%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-02-15/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-07-16/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-01-21%2Fontologies%2Ffbbt-ext.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-01-21/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-05-12%2Fontologies%2Ffbbt-ext.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-05-12/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-12-08%2Fontologies%2Ffbbt-ext.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-12-08/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-05-26%2Fontologies%2Ffbbt-ext.owl
@@ -1132,40 +1177,13 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2018-02-21/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-05-12%2Fontologies%2Ffbbt-ext.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-08-17%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-05-12/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-01-29%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2014-01-29/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-11-07%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2014-11-07/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-26%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2013-07-26/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-08-17/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-09-16%2Fontologies%2Ffbbt-ext.owl
@@ -1177,67 +1195,58 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-09-16/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2015-07-16%2Fontologies%2Ffbbt-ext.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2014-01-29%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2015-07-16/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2014-01-29/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Ftrunk%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-06-02/trunk/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-06-02%2Fontologies%2Ffbbt-ext.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2016-04-05%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-06-02/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2016-04-05/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2013-07-10%2Fontologies%2Ffbbt-ext.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2013-07-10/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-05-03%2Fontologies%2Ffbbt-ext.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Ftags%2F2017-02-15%2Fontologies%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-05-03/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/tags/2017-02-15/ontologies/fbbt-ext.owl:71:8: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#ObjectSomeValuesFrom
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/patterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/patterns%2Fpattern.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Ffbbt-ext.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/fbbt-ext.owl:110:75: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Ffbbt-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/fbbt-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt%2Fsrc%2Fontology%2Fimports%2Fflybase_imports.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/fbbt/src/ontology/imports/flybase_imports.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Froundtrip%2Fmsterm.obo
@@ -1247,24 +1256,6 @@ File: https://raw.githubusercontent.com/fastobo/fastobo/master/tests%2Fdata%2Fro
 ---
 In repository: https://github.com/fastobo/fastobo
 > local variable 'header' referenced before assignment
-
----
-File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Ffbcv-idranges.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/flybase-controlled-vocabulary
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbcv-idranges.owl:1:1: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/flybase-controlled-vocabulary
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fpatterns%2Fdefinitions.owl
@@ -1285,31 +1276,22 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/flybase-controlled-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Ffypo-idranges.owl
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Ffbcv-idranges.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/pombase/fypo
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fypo-idranges.owl:1:1: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbcv-idranges.owl:1:1: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fcomponents%2Ffypo-eqs.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/pombase/fypo
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fypo-eqs.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fcomponents%2Flost-inferred-subsumptions-pre-odk.owl
+File: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/pombase/fypo
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/lost-inferred-subsumptions-pre-odk.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fdefinitions.owl
@@ -1328,6 +1310,33 @@ File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fpatterns%2Fpat
 ---
 RDF parsed as xml, in repository: https://github.com/pombase/fypo
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Ffypo-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fypo-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fcomponents%2Flost-inferred-subsumptions-pre-odk.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/lost-inferred-subsumptions-pre-odk.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/pombase/fypo/master/src%2Fontology%2Fcomponents%2Ffypo-eqs.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/pombase/fypo
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fypo-eqs.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/pombase/fypo/master/supplemental_files%2Fseparate_xp_file.obo
@@ -1361,15 +1370,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/porifera-ontol
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/poro.owl:14569:8: rdf:nodeID value is not a valid NCName: _:genid887
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fporo-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/porifera-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/poro-edit.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fporo-idranges.owl
 
 
@@ -1379,13 +1379,13 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/porifera-ontol
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/poro-idranges.owl:1:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fmodules%2Fentity_attribute_location.owl
+File: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/src%2Fontology%2Fporo-edit.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/entity_attribute_location.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/obophenotype/porifera-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/poro-edit.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fmodules%2Fentity_attribute.owl
@@ -1406,6 +1406,15 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/attribute_location.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fmodules%2Fentity_attribute_location.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/modules/entity_attribute_location.owl:1:6: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/src%2Fontology%2Fimports%2Freasoner_axioms.owl
 
 
@@ -1413,6 +1422,33 @@ File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/mast
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/reasoner_axioms.owl:1:8: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fcl_seed.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/cl_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fuberon_seed.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/uberon_seed.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Freasoner_axioms.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/reasoner_axioms.owl:1:8: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fpo_seed.owl
@@ -1433,15 +1469,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/pato_seed.owl:1:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fcl_seed.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/cl_seed.owl:1:0: syntax error
-
----
 File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fgo_seed.owl
 
 
@@ -1451,24 +1478,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/go_seed.owl:1:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Freasoner_axioms.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/reasoner_axioms.owl:1:8: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports%2Fuberon_seed.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/bio-attribute-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/imports/uberon_seed.owl:1:0: syntax error
-
----
 File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-equivalent-axioms-subq.owl
 
 
@@ -1476,69 +1485,6 @@ File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontolog
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/wbphenotype-equivalent-axioms-subq.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwbphenotype-idranges.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbphenotype-idranges.owl:1:0: syntax error
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Fwbphenotype-equivalent-axioms-subq.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/wbphenotype-equivalent-axioms-subq.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype_eq_stripped.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype_eq_stripped.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype_eq.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype_eq.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype-edit.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/patterns%2Fdefinitions.owl
@@ -1559,31 +1505,67 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phen
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-idranges.owl
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-idranges.owl:1:1: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-edit.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-edit-test.owl
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fpatterns%2Fpattern.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-edit-test.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwbphenotype-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbphenotype-idranges.owl:1:0: syntax error
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype_eq.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype_eq.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype-edit.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fwb_reset%2Fwbphenotype_eq_stripped.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wb_reset/wbphenotype_eq_stripped.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Fwbphenotype-equivalent-axioms-subq.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/wbphenotype-equivalent-axioms-subq.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fpatterns%2Fdefinitions.owl
@@ -1604,85 +1586,49 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gros
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-idranges.owl
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-idranges.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-idranges.owl:1:1: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-idranges.owl:1:1: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit-test.owl
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-edit-test.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit-test.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-edit-test.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fpattern.owl
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/src%2Fontology%2Fwbbt-edit.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbbt-edit.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-idranges.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/patterns%2Fdefinitions.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/dpo-idranges.owl:1:1: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-edit.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/dpo-edit.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Ffbdv_extension.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/patterns%2Fpattern.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fbdv_extension.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fpatterns%2Fdefinitions.owl
@@ -1712,22 +1658,139 @@ RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotyp
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/data/archive/definitions_original.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/patterns%2Fdefinitions.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-edit.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/dpo-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fdpo-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/dpo-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Fqc_assertions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/qc_assertions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/src%2Fontology%2Fcomponents%2Ffbdv_extension.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/components/fbdv_extension.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit-test.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit-test.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/src%2Fontology%2Fwbls-edit.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/c-elegans-development-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/wbls-edit.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fdefinitions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/patterns%2Fpattern.owl
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fpattern.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-phenotype-ontology
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-idranges.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbdv-idranges.owl:1:1: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/caro.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro-idranges.owl
@@ -1757,24 +1820,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/caro_bridge.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fcaro.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/caro
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/caro.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Ffbbt_bridge.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/caro
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/fbbt_bridge.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Fxao_bridge.owl
 
 
@@ -1793,6 +1838,15 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/zfa_bridge.owl:1:6: not well-formed (invalid token)
 
 ---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Ffbbt_bridge.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/fbbt_bridge.owl:1:6: not well-formed (invalid token)
+
+---
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fbridges%2Fpo_bridge.owl
 
 
@@ -1800,24 +1854,6 @@ File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/bridges/po_bridge.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fro_import.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/caro
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ro_import.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fpato_seed.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/caro
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pato_seed.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fchebi_import.owl
@@ -1829,15 +1865,6 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/chebi_import.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fcl_import.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/obophenotype/caro
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/cl_import.owl:1:6: not well-formed (invalid token)
-
----
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fgo_import.owl
 
 
@@ -1845,6 +1872,15 @@ File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/go_import.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fcl_import.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/cl_import.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fpato_import.owl
@@ -1856,13 +1892,22 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pato_import.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fncbitaxon_import.owl
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fpato_seed.owl
 
 
 
 ---
 RDF parsed as xml, in repository: https://github.com/obophenotype/caro
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ncbitaxon_import.owl:1:6: not well-formed (invalid token)
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pato_seed.owl:1:6: not well-formed (invalid token)
+
+---
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fro_import.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ro_import.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fpco_import.owl
@@ -1874,49 +1919,13 @@ RDF parsed as xml, in repository: https://github.com/obophenotype/caro
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/pco_import.owl:1:6: not well-formed (invalid token)
 
 ---
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fontology%2Ffbdv-idranges.owl
+File: https://raw.githubusercontent.com/obophenotype/caro/master/src%2Fontology%2Fimports%2Fncbitaxon_import.owl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/fbdv-idranges.owl:1:1: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/src%2Fpatterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/patterns/pattern.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fdefinitions.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/definitions.owl:1:6: not well-formed (invalid token)
-
----
-File: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/patterns%2Fpattern.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/FlyBase/drosophila-developmental-ontology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/patterns/pattern.owl:1:6: not well-formed (invalid token)
+RDF parsed as xml, in repository: https://github.com/obophenotype/caro
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/ontology/imports/ncbitaxon_import.owl:1:6: not well-formed (invalid token)
 
 ---
 File: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/src%2Fontology%2Fbspo-idranges.owl
@@ -1968,7 +1977,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
