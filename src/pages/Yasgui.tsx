@@ -7,6 +7,8 @@ import axios from 'axios';
 import Yasgui from "@triply/yasgui";
 import "@triply/yasgui/build/yasgui.min.css";
 
+import Config from "../components/Config";
+
 const useStyles = makeStyles(theme => ({
   link: {
     textDecoration: 'none',
@@ -63,7 +65,7 @@ export default function YasguiPage(props: any) {
           FILTER (?sparql_endpoint = <` + sparql_endpoint + `>)
           OPTIONAL { ?query_file rdfs:comment ?file_description }
         }`
-      const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
+      const endpointToQuery = Config.sparql_endpoint;
       axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_endpoints_query))
         .then((res: any) => {
           Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;

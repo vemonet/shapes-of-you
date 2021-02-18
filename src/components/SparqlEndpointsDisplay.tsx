@@ -4,6 +4,7 @@ import { Container, CircularProgress } from "@material-ui/core";
 import { List, ListItem, ListItemAvatar, ListItemText } from "@material-ui/core";
 import axios from 'axios';
 
+import Config from "../components/Config";
 import QueryYasguiButton from "./QueryYasguiButton";
 
 const useStyles = makeStyles(theme => ({
@@ -48,7 +49,7 @@ export default function SparqlEndpointsDisplay() {
 
   // At start: query SPARQL endpoint to get the SPARQL endpoints infos
   React.useEffect(() => {
-    const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
+    const endpointToQuery = Config.sparql_endpoint;
     axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_endpoints_query))
       .then(res => {
         const results_array = res.data.results.bindings;

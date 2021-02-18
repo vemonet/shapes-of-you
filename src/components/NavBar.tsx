@@ -82,7 +82,7 @@ export default function NavBar() {
         </Tooltip>
         {/* <Tooltip title='Query the SPARQL endpoint with YASGUI'>
           <Button className={classes.menuButton} target="_blank" rel="noopener noreferrer"
-          href="/yasgui?endpoint=https://graphdb.dumontierlab.com/repositories/shapes-registry">
+          href="/yasgui?endpoint=Config.sparql_endpoint">
             <SparqlIcon style={{ marginRight: theme.spacing(1)}} />
             Query with SPARQL
           </Button>

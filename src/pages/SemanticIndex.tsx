@@ -17,7 +17,7 @@ import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-
+import Config from "../components/Config";
 import QueryYasguiButton from "../components/QueryYasguiButton";
 import About from "./About";
 
@@ -130,7 +130,7 @@ export default function SemanticIndex() {
 
   // At start: query SPARQL endpoint to get the shapes files infos (componentDidMount)
   React.useEffect(() => {
-    const endpointToQuery = 'https://graphdb.dumontierlab.com/repositories/shapes-registry';
+    const endpointToQuery = Config.sparql_endpoint;
 
     // Check if PWA, and hide message if already installed
     // if (window.matchMedia('(display-mode: standalone)').matches) {  
