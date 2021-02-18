@@ -11,14 +11,6 @@
 
 
 ---
-SPARQL endpoint failed: https://bio2rdf.org/sparql
-
-<urlopen error [Errno -5] No address associated with hostname>
-
----
-
-
----
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
@@ -56,7 +48,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
