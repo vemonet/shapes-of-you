@@ -17,520 +17,7 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > Expecting value: line 1 column 1 (char 0)
 
 ---
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0084-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0101-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0083-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0099-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m018-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m009-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> '@none' is not a valid language tag!
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0005-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> [Errno 2] No such file or directory: '/home/runner/work/shapes-of-you/shapes-of-you/error-0005-in.jsonld'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0092-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0004-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> <urlopen error unknown url type: tag>
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0028-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> argument of type 'bool' is not iterable
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fframe-0043-frame.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s001-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0010-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> maximum recursion depth exceeded while calling a Python object
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0102-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0085-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0094-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m015-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-s002-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-p012-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m016-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0082-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0086-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m018-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0085-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s002-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0003-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> recursive context inclusion
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0087-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0088-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> argument of type 'bool' is not iterable
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0100-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0103-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0097-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0082-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0097-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0007-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> 'bool' object has no attribute 'find'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0088-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-s001-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0081-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0107-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m013-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0101-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0101-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0100-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0012-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> argument of type 'bool' is not iterable
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0108-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0015-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> argument of type 'bool' is not iterable
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0097-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
 File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0087-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0033-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> 'bool' object has no attribute 'items'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0098-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0088-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m019-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0098-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0105-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0082-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0093-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m017-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0106-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0083-context.jsonld
 
 
 
@@ -548,88 +35,7 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > unhashable type: 'list'
 
 ---
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0081-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0100-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0085-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0086-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s002-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m014-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fframe-0044-frame.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> expected string or bytes-like object
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0003-ctx.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> recursive context inclusion
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0099-context.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m017-out.jsonld
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m019-context.jsonld
 
 
 
@@ -647,97 +53,7 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > unhashable type: 'list'
 
 ---
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m019-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m011-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> '@none' is not a valid language tag!
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s001-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0086-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0006-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> 'bool' object has no attribute 'get'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0078-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0002-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> recursive context inclusion
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0102-out.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0018-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> argument of type 'bool' is not iterable
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0084-in.jsonld
-
-
-
----
-RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
-> unhashable type: 'list'
-
----
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0096-in.jsonld
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m016-in.jsonld
 
 
 
@@ -764,6 +80,24 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > expected string or bytes-like object
 
 ---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0082-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0093-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
 File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0087-out.jsonld
 
 
@@ -773,7 +107,7 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > unhashable type: 'list'
 
 ---
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0099-in.jsonld
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0084-context.jsonld
 
 
 
@@ -782,7 +116,385 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > unhashable type: 'list'
 
 ---
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0084-out.jsonld
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s002-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0081-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0100-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0092-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0100-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m013-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0002-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> recursive context inclusion
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0103-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fframe-0044-frame.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> expected string or bytes-like object
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0096-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s001-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0087-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m017-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0086-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0003-ctx.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> recursive context inclusion
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0003-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> recursive context inclusion
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0082-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0006-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> 'bool' object has no attribute 'get'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m014-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0108-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0028-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> argument of type 'bool' is not iterable
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0099-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0101-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0101-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0085-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0085-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0085-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m018-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-p012-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0094-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0098-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m018-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m011-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> '@none' is not a valid language tag!
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0084-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0083-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0098-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0005-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> [Errno 2] No such file or directory: '/home/runner/work/shapes-of-you/shapes-of-you/error-0005-in.jsonld'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0078-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0081-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0088-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0105-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0083-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0097-in.jsonld
 
 
 
@@ -800,7 +512,295 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > unhashable type: 'list'
 
 ---
-File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0098-in.jsonld
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0102-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-s002-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0099-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0088-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m009-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> '@none' is not a valid language tag!
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0007-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> 'bool' object has no attribute 'find'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0082-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0088-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> argument of type 'bool' is not iterable
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0086-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0097-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0033-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> 'bool' object has no attribute 'items'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-m015-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0098-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m017-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fframe-0043-frame.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0100-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0101-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0015-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> argument of type 'bool' is not iterable
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0097-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0018-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> argument of type 'bool' is not iterable
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0099-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0107-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0004-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> <urlopen error unknown url type: tag>
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0086-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fexpand-0106-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0102-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-m019-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s001-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0012-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> argument of type 'bool' is not iterable
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-0010-in.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> maximum recursion depth exceeded while calling a Python object
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-s002-context.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Fcompact-0084-out.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
+> unhashable type: 'list'
+
+---
+File: https://raw.githubusercontent.com/json-ld/json-ld.org/main/test-suite%2Ftests%2Ferror-s001-in.jsonld
 
 
 
@@ -836,24 +836,6 @@ RDF parsed as json-ld, in repository: https://github.com/json-ld/json-ld.org
 > unhashable type: 'list'
 
 ---
-File: https://raw.githubusercontent.com/keiffster/program-y/master/test%2Fprogramytest%2Fstorage%2Fstores%2Ffile%2Fstore%2Fdata%2Frdfs%2Ftext%2Factivity.rdf
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/keiffster/program-y
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/programytest/storage/stores/file/store/data/rdfs/text/activity.rdf:1:0: syntax error
-
----
-File: https://raw.githubusercontent.com/keiffster/program-y/master/test%2Fprogramytest%2Fstorage%2Fstores%2Ffile%2Fstore%2Fdata%2Frdfs%2Ftext%2Ffolder1%2Fanimal.rdf
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/keiffster/program-y
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/programytest/storage/stores/file/store/data/rdfs/text/folder1/animal.rdf:1:0: syntax error
-
----
 File: https://raw.githubusercontent.com/keiffster/program-y/master/test%2Fprogramytest%2Fstorage%2Fasserts%2Fstore%2Fdata%2Frdfs%2Ftext%2Factivity.rdf
 
 
@@ -872,15 +854,22 @@ RDF parsed as xml, in repository: https://github.com/keiffster/program-y
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/programytest/storage/asserts/store/data/rdfs/text/folder1/animal.rdf:1:0: syntax error
 
 ---
-File: https://raw.githubusercontent.com/intermine/intermine/dev/bio%2Fcore%2Fsrc%2Ftest%2Fresources%2FOboParserTest.obo
+File: https://raw.githubusercontent.com/keiffster/program-y/master/test%2Fprogramytest%2Fstorage%2Fstores%2Ffile%2Fstore%2Fdata%2Frdfs%2Ftext%2Factivity.rdf
 
 
 
 ---
-In repository: https://github.com/intermine/intermine
-> Tag-value pair parsing failed for:
-[IgnoreMe]
+RDF parsed as xml, in repository: https://github.com/keiffster/program-y
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/programytest/storage/stores/file/store/data/rdfs/text/activity.rdf:1:0: syntax error
 
+---
+File: https://raw.githubusercontent.com/keiffster/program-y/master/test%2Fprogramytest%2Fstorage%2Fstores%2Ffile%2Fstore%2Fdata%2Frdfs%2Ftext%2Ffolder1%2Fanimal.rdf
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/keiffster/program-y
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/test/programytest/storage/stores/file/store/data/rdfs/text/folder1/animal.rdf:1:0: syntax error
 
 ---
 File: https://raw.githubusercontent.com/intermine/intermine/dev/bio%2Fsources%2Fgo-annotation%2Fsrc%2Ftest%2Fresources%2Fgo-tiny.obo
@@ -890,6 +879,17 @@ File: https://raw.githubusercontent.com/intermine/intermine/dev/bio%2Fsources%2F
 ---
 In repository: https://github.com/intermine/intermine
 > local variable 'header' referenced before assignment
+
+---
+File: https://raw.githubusercontent.com/intermine/intermine/dev/bio%2Fcore%2Fsrc%2Ftest%2Fresources%2FOboParserTest.obo
+
+
+
+---
+In repository: https://github.com/intermine/intermine
+> Tag-value pair parsing failed for:
+[IgnoreMe]
+
 
 ---
 
@@ -932,7 +932,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
