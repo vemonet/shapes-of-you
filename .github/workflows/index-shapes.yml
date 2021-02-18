@@ -9,12 +9,7 @@ on:
         description: 'Logging level (debug/info/warning/error)'
         required: true
         default: 'info'
-  # push:
-  #   branches: [ main ]
-  #   paths:
-  #   - '.github/workflows/get-shapes.yml'
-  #   - 'etl/*'
-  #   - 'EXTRAS_GITHUB_REPOSITORIES.txt'
+
 env:
   LOGGING_LEVEL: ${{ github.event.inputs.logging }}
 jobs:
@@ -86,7 +81,7 @@ jobs:
         - git-service: gitlab
           search-string: obofoundry
 
-        # - git-service: github #eclipse/rdf4j slow down
+        # - git-service: github # eclipse/rdf4j slow down
         #   search-string: shacl
         # - git-service: gitlab
         #   search-string: ontology # Fails without warnings
@@ -108,13 +103,13 @@ jobs:
           ${{ runner.os }}-pip-
     
     - name: Install Python requirements
-      env:
-        RUN_LABEL: ${{ matrix.search-string }}
+      # env: # Run label can be processed here as env var to reuse later
+      #   RUN_LABEL: ${{ matrix.search-string }}
       run: |
-        export RUN_LABEL=${RUN_LABEL//:/-}
-        echo "RUN_LABEL=${RUN_LABEL//+/-}" >> $GITHUB_ENV
         python -m pip install -r etl/requirements.txt
         sudo apt-get install libicu-dev python3-dev
+      # export RUN_LABEL=${RUN_LABEL//:/-}
+      # echo "RUN_LABEL=${RUN_LABEL//+/-}" >> $GITHUB_ENV
 
     - name: Run Python script to index ${{ matrix.search-string }} in ${{ matrix.git-service }}
       env:
@@ -129,16 +124,24 @@ jobs:
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
-        # name: report-${{ matrix.git-service }}-${{ matrix.search-string }}
-        name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
-        # name: shapes-rdf-${{ matrix.git-service }}-${{ github.job }}
+        name: report-${{ matrix.git-service }}-${{ matrix.search-string }}
+        # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
         path: REPORT.md
+
+    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
+        # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
+        path: shapes-rdf.ttl
 
     - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.search-string }}.md file in report branch
       env:
         GIT_SERVICE: ${{ matrix.git-service }}
         # RUN_LABEL: ${{ matrix.search-string }}
       run: |
+        export RUN_LABEL=${RUN_LABEL//:/-}
+        export RUN_LABEL=${RUN_LABEL//+/-}
         mv REPORT.md tmp-REPORT.md
         git stash
         git fetch
@@ -150,14 +153,6 @@ jobs:
         git add report-$GIT_SERVICE-$RUN_LABEL.md
         git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
         git push || exit 0
-
-    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        # name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string.replace(':', '-').replace('+', '-') }}
-        name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
-        # name: shapes-rdf-${{ matrix.git-service }}-${{ github.job }}
-        path: shapes-rdf.ttl
 
     - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
       uses: MaastrichtU-IDS/RdfUpload@master

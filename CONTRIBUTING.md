@@ -38,20 +38,17 @@ yarn dev
 ## Planned improvements ➕
 
 - [x] Improve filtering and faceted search for shapes (feedbacks welcome! cf. [issue#5](https://github.com/vemonet/shapes-of-you/issues/5))
-- [x] Index more types of files: OWL, SKOS, OBO
-- [ ] Index more types of files:
-  - [x] [OpenAPI YAML](https://github.com/jfinkhaeuser/prance)
-  - [ ] [SmartAPI](https://smart-api.info/): `info.termOfService`, `info.contact.x-role`, `info.version`, `operation.summary`
-  - [ ] RML and YARRRML mapping files
-- [ ] Query GitHub GraphQL using direct search instead of a search per topics (Pandora's box 🍱)
-- [ ] Switch from a "per file" display to a "per repository". And show files in repositories (also filter files in the repos)
-- [ ] Use PWA to store data: check if [PWA](https://web.dev/progressive-web-apps) would allow to store the web app SPARQL data (to avoid querying everytime, we can update quietly in the background). See [this article about storing data using a PWA](https://www.monterail.com/blog/pwa-offline-dynamic-data).
-- [ ] Regex search filter
+- [x] Index more types of files: OWL, SKOS, OBO, RML and YARRRML
+- [ ] Integrate datasets from the Linked Open Data Cloud: https://lod-cloud.net/lod-data.json
+  - [ ] Retrieve infos about available SPARQL endpoints and downloadable datasets. Use `dcat:Dataset` class? Should we attach SPARQL endpoints to `dcat:Dataset` when the 2 are related?
+  - [ ] We could try to automatically link as much as possible the data models (e.g. OWL, SHACL, queries) to the existing data
 - [ ] Add page for each file: download the file, parse it with JavaScript, and display relevant infos: metadata, classes, properties, instances, subClassOf hierarchy...
-- [ ] Filtering/categorizing files/repositories based on categories, could be GitHub topics to start (e.g. only show most popular topics, and filter). 
-- [ ] Parse ShEx files to retrieve the defined shapes and their metadata (if possible)
+- [ ] Filtering/categorizing files/repositories based on categories? Could be GitHub topics to start (e.g. only show most popular topics, and filter). 
+- [ ] Improve parsing of ShEx files to retrieve the defined shapes and their metadata (if possible)
 - [ ] Star shapes files with your SOLID account, cf. [issue#3](https://github.com/vemonet/shapes-of-you/issues/3)
 - [ ] Store the data as [Nanopublications](http://nanopub.org/wordpress/), instead of requiring the deployment of a triplestore
+- [ ] Use PWA to store data: check if [PWA](https://web.dev/progressive-web-apps) would allow to store the web app SPARQL data (to avoid querying everytime, we can update quietly in the background). See [this article about storing data using a PWA](https://www.monterail.com/blog/pwa-offline-dynamic-data).
+- [ ] Regex search filter? If requested
 
 > Feel free to comment on this plan, or propose new improvements by [creating an issue](https://github.com/vemonet/shapes-of-you/issues) in this GitHub repository.
 

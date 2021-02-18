@@ -82,6 +82,10 @@ def main(argv):
   elif git_registry == 'gitee':
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, search_topic)
 
+  elif git_registry == 'lod-cloud':
+    # TODO: shapes_graph = fetch_from_lod(shapes_graph)
+    pass
+
   # Extras SPARQL endpoints to check
   extra_endpoints = []
   with open(str(root) + '/../EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
@@ -558,7 +562,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
 
       # Get rdfs:label of owl:Ontology and shaclTest:Validate for file description
       file_descriptions = []
-      for shape in g.subjects(RDF.type, OWL.ontology):
+      for shape in g.subjects(RDF.type, OWL.Ontology):
           # Get one of the labels
           for ontology_label in g.objects(shape, RDFS.label):
             if len(file_descriptions) < 1:
@@ -745,7 +749,9 @@ if __name__ == "__main__":
   SKIP_REPOS = [
     'https://gitee.com/mad_matrix/OntologyModelin', 
     'https://gitee.com/jiahuarao/HumanDiseaseOntology',
-    'https://github.com/garethr/kubernetes-json-schema'
+    'https://github.com/garethr/kubernetes-json-schema',
+    'https://github.com/garethr/openshift-json-schema',
   ]
+  # Not sure if garethr repos are actually causing issues, but openapi search overtime when reaching it
   main(sys.argv)
 
