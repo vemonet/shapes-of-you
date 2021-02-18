@@ -41,7 +41,7 @@ Bad syntax (bad escape) at ^ in:
 "...b't> """K-Ras Asp12 (K12D) is more prevalent in benign than in'^b'\\\nmalignant human colorectal tumors, whereas K-Ras Val12 (K1'..."
 
 ---
-File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl-hcls%2Fpre%2Fhcls-chembl17db-pre.trig
+File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl-hcls%2Fpre%2Fhcls-chembl17-pre.trig
 
 
 
@@ -49,7 +49,7 @@ File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl
 RDF parsed as trig, in repository: https://github.com/peta-pico/nanopub-examples
 > at line 39 of <>:
 Bad syntax (newline found in string literal) at ^ in:
-"...b'abase of bioactive compounds, their quantitative properties '^b'\n      and bioactivities (binding constants, pharmacology an'..."
+"...b'e of bioactive compounds, their quantitative properties and '^b'\n      bioactivities (binding constants, pharmacology and AD'..."
 
 ---
 File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl-hcls%2Fpre%2Fhcls-chembl17rdf-pre.trig
@@ -63,7 +63,7 @@ Bad syntax (newline found in string literal) at ^ in:
 "...b'e of bioactive compounds, their quantitative properties and '^b'\n      bioactivities (binding constants, pharmacology and AD'..."
 
 ---
-File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl-hcls%2Fpre%2Fhcls-chembl-pre.trig
+File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl-hcls%2Fpre%2Fhcls-chembl17db-pre.trig
 
 
 
@@ -71,10 +71,10 @@ File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl
 RDF parsed as trig, in repository: https://github.com/peta-pico/nanopub-examples
 > at line 39 of <>:
 Bad syntax (newline found in string literal) at ^ in:
-"...b'e of bioactive compounds, their quantitative properties and '^b'\n      bioactivities (binding constants, pharmacology and AD'..."
+"...b'abase of bioactive compounds, their quantitative properties '^b'\n      and bioactivities (binding constants, pharmacology an'..."
 
 ---
-File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl-hcls%2Fpre%2Fhcls-chembl17-pre.trig
+File: https://raw.githubusercontent.com/peta-pico/nanopub-examples/master/chembl-hcls%2Fpre%2Fhcls-chembl-pre.trig
 
 
 
@@ -96,15 +96,15 @@ Bad syntax (Prefix "dct:" not bound) at ^ in:
 "...b'\nnpa:graph {\n  <*NPURI*> npa:hasHeadGraph <*HEADURI*> ;\n    '^b'dct:created "*DATETIME*"^^xsd:dateTime ;\n    npa:creationDay'..."
 
 ---
-File: https://raw.githubusercontent.com/tkuhn/fair-pkd-nanopubs/master/templates%2Fder-nanopub-end.trig
+File: https://raw.githubusercontent.com/tkuhn/nanopubstudies-supplementary/master/botstudy%2Fgenerif.template.trig
 
 
 
 ---
-RDF parsed as trig, in repository: https://github.com/tkuhn/fair-pkd-nanopubs
-> at line 1 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"b''^b'}\n\n:provenance {\n\t:assertion prov:wasGeneratedBy analysis:1 '..."
+RDF parsed as trig, in repository: https://github.com/tkuhn/nanopubstudies-supplementary
+> at line 10 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'efix npx: <http://krauthammerlab.med.yale.edu/nanopub/> .\n\n:'^b'@NPID@_Head {\n    :@NPID@ a :GeneRIFNanopublication .\n\n    :'..."
 
 ---
 File: https://raw.githubusercontent.com/tkuhn/fair-pkd-nanopubs/master/templates%2Fder-nanopub-start.trig
@@ -118,6 +118,17 @@ Bad syntax (needed '}', found end.) at ^ in:
 "b'@prefix : <http://purl.org/nanopub/temp/fairified-pkd/ROW> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix pav: <http://purl.org/pav/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix np: <http://www.nanopub.org/nschema#> .\n@prefix orcid: <http://orcid.org/> .\n@prefix adjpval: <http://purl.org/fairified/pkd/#adjPvalue/> .\n@prefix analysis: <http://purl.org/fairified/pkd/#analysis/> .\n@prefix der: <http://purl.org/fairified/pkd/#differentialExpressionRatio/> .\n@prefix sio: <http://semanticscience.org/resource/> .\n@prefix ensembl: <http://rdf.ebi.ac.uk/resource/ensembl/> .\n@prefix atlas: <http://rdf.ebi.ac.uk/terms/atlas/> .\n@prefix obo: <http://purl.obolibrary.org/obo/> .\n@prefix wp: <http://vocabularies.wikipathways.org/wp#> .\n\n:Head {\n\t: np:hasAssertion :assertion ;\n\t\tnp:hasProvenance :provenance ;\n\t\tnp:hasPublicationInfo :pubinfo ;\n\t\ta np:Nanopublication .\n}\n\n:assertion {'^b''..."
 
 ---
+File: https://raw.githubusercontent.com/tkuhn/fair-pkd-nanopubs/master/templates%2Fder-nanopub-end.trig
+
+
+
+---
+RDF parsed as trig, in repository: https://github.com/tkuhn/fair-pkd-nanopubs
+> at line 1 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"b''^b'}\n\n:provenance {\n\t:assertion prov:wasGeneratedBy analysis:1 '..."
+
+---
 File: https://raw.githubusercontent.com/Nanopublication/nanopub-example-collection/main/examples%2Fpensoft-openbiodiv%2Fglobalbioticinteractions_bees-1-revised.trig
 
 
@@ -127,17 +138,6 @@ RDF parsed as trig, in repository: https://github.com/Nanopublication/nanopub-ex
 > at line 30 of <>:
 Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b':Organism_2;\n    rdfs:label "Lasioglossum mosselinum" ;\n    '^b'rdf:type dwc:Organism;\n    dwc:identificationID sub:Identifi'..."
-
----
-File: https://raw.githubusercontent.com/tkuhn/nanopubstudies-supplementary/master/botstudy%2Fgenerif.template.trig
-
-
-
----
-RDF parsed as trig, in repository: https://github.com/tkuhn/nanopubstudies-supplementary
-> at line 10 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'efix npx: <http://krauthammerlab.med.yale.edu/nanopub/> .\n\n:'^b'@NPID@_Head {\n    :@NPID@ a :GeneRIFNanopublication .\n\n    :'..."
 
 ---
 File: https://raw.githubusercontent.com/MaastrichtU-IDS/nanopublishing-drug-actions/master/ontology%2Fdao.ttl
@@ -191,7 +191,10 @@ SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 ---
 SPARQL endpoint failed: http://cr.eionet.europa.eu/sparql
 
-byte indices must be integers or slices, not str
+EndPointInternalError: endpoint returned code 500 and response. 
+
+Response:
+b'Could not create repository connection from the given SQL connection'
 
 ---
 
