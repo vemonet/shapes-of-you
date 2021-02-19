@@ -77,8 +77,8 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout the repo code
-      uses: actions/checkout@v2
+    # - name: Checkout the repo code
+    #   uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -99,15 +99,13 @@ jobs:
       env:
         SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
       run: |
-        mkdir -p output
-        d2s metadata analyze $SPARQL_ENDPOINT_URL -o output/metadata.ttl
-        mv REPORT_*.md output/
+        d2s metadata analyze $SPARQL_ENDPOINT_URL -o metadata.ttl
 
     - name: Upload RDF metadata and md reports to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: report-${{ matrix.endpoint-url }}
-        path: output
+        path: '*'
 
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
