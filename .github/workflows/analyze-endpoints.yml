@@ -96,21 +96,24 @@ jobs:
         SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
       run: |
         pip install git+https://github.com/MaastrichtU-IDS/d2s-cli.git@develop
-        export ENDPOINT_LABEL=${SPARQL_ENDPOINT_URL//https:\/v/}
-        export ENDPOINT_LABEL=${ENDPOINT_LABEL//http:\/v/}
-        echo "ENDPOINT_LABEL=${ENDPOINT_LABEL//\//-}" >> $GITHUB_ENV
+        export ENDPOINT_LABEL=${SPARQL_ENDPOINT_URL//https:/}
+        export ENDPOINT_LABEL=${ENDPOINT_LABEL//http:/}
+        echo "ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}" >> $GITHUB_ENV
 
     - name: Run Python script to compute HCLS metadata for each graph in the endpoint
       env:
         SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
       run: |
-        d2s metadata analyze $SPARQL_ENDPOINT_URL -o metadata.ttl
+        mkdir -p output
+        d2s metadata analyze $SPARQL_ENDPOINT_URL -o output/metadata.ttl
+        mv REPORT_FAIL.md output/ || exit 0
+        mv REPORT_SUCCESS.md output/ || exit 0
 
     - name: Upload RDF metadata and md reports to GitHub
       uses: actions/upload-artifact@v1
       with:
         name: report-${{ env.ENDPOINT_LABEL }}
-        path: '*'
+        path: output
 
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
