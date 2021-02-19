@@ -1,33 +1,11 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `shacl`
+**Indexing topic**: `owl`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
 
-
----
-File: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/european-data-portal/metrics/edp-metrics-validating-shacl
-> at line 17 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'hema#> .\n@prefix edp: <https://europeandataportal.eu/voc#>\n\n'^b'<https://example.eu/set/data/test-dataset>\n    a dcat:Datase'..."
-
----
-File: https://gitlab.com/piveau/metrics/piveau-shacl-validator/-/raw/master/src%2Ftest%2Fresources%2Ftest.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://gitlab.com/piveau/metrics/piveau-shacl-validator
-> at line 17 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'hema#> .\n@prefix edp: <https://europeandataportal.eu/voc#>\n\n'^b'<https://example.eu/set/data/test-dataset>\n    a dcat:Datase'..."
 
 ---
 
