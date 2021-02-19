@@ -1,6 +1,6 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `nanobench`
+**Indexing topic**: `topic:translator-api`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
@@ -8,15 +8,33 @@
 
 
 ---
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/nanobench-templates/master/templates%2FNeurodkg+UI+template%2Fnanopub.trig
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.2.owl
 
 
 
 ---
-RDF parsed as trig, in repository: https://github.com/MaastrichtU-IDS/nanobench-templates
-> at line 43 of <>:
-Bad syntax (bad escape) at ^ in:
-"...b't:hasPrefixLabel " has the drug" ;\n    nt:hasRegex "[A-Z]{2}'^b'\\d{5}" .\n\n   :disease  a nt:GuidedChoicePlaceholder ;\n    rd'..."
+RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.2.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.1.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.1.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/data%2Finitial-openpredict-metadata.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> at line 25 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'tifier "HPO-SIM";\n  openpredict:embedding_type "Diseases" .\n'^b'aaa\n<https://w3id.org/openpredict/feature/PHENO-SIM> a mls:F'..."
 
 ---
 
