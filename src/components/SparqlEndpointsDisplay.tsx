@@ -55,7 +55,6 @@ export default function SparqlEndpointsDisplay() {
         const results_array = res.data.results.bindings;
         let sparql_endpoints_obj: any = {}
         results_array.map((result: any): any =>  {
-          let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
           // @ts-ignore
           // sparql_endpoints_array.push([{
           //   'endpoint': result.sparql_endpoint.value
@@ -64,16 +63,14 @@ export default function SparqlEndpointsDisplay() {
           if (!sparql_endpoints_obj[endpoint_url]) {
             sparql_endpoints_obj[endpoint_url] = {
               'url': endpoint_url,
-              'queries': []
+              'queries_count': result.queries_count.value
             }
           }
-          let query_obj = {'url': result.query_file.value}
-          if (result.file_description) query_obj['description'] = result.file_description.value
-          if (result.query) query_obj['query'] = result.query.value
-          sparql_endpoints_obj[endpoint_url]['queries'].push(query_obj)
-          result.query_file.value
+          // let query_obj = {'url': result.query_file.value}
+          // if (result.file_description) query_obj['description'] = result.file_description.value
+          // if (result.query) query_obj['query'] = result.query.value
+          // sparql_endpoints_obj[endpoint_url]['queries'].push(query_obj)
         })
-        console.log(sparql_endpoints_obj)
         updateState({ sparql_endpoints_obj: sparql_endpoints_obj })
       })
       .catch(error => {
@@ -99,7 +96,7 @@ export default function SparqlEndpointsDisplay() {
                 <QueryYasguiButton endpoint={sparql_endpoint} />
               </ListItemAvatar>
               <ListItemText>
-                <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b> - {state.sparql_endpoints_obj[sparql_endpoint].queries.length} SPARQL queries
+                <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b> - {state.sparql_endpoints_obj[sparql_endpoint].queries_count} SPARQL queries
               </ListItemText>
             </ListItem>
           })}
@@ -113,10 +110,12 @@ export default function SparqlEndpointsDisplay() {
 const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
 PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT * WHERE { 
+SELECT DISTINCT ?sparql_endpoint (count(distinct ?query_file) AS ?queries_count)
+WHERE { 
   ?sparql_endpoint a schema:EntryPoint .
-  ?query_file void:sparqlEndpoint ?sparql_endpoint .
-  OPTIONAL { ?query_file schema:query ?query }
-  OPTIONAL { ?query_file rdfs:comment ?file_description }
-}
+  OPTIONAL {
+    ?query_file void:sparqlEndpoint ?sparql_endpoint ;
+      schema:query ?query
+  }
+} GROUP BY ?sparql_endpoint
 `
