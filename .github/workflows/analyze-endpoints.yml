@@ -100,7 +100,7 @@ jobs:
         SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
       run: |
         mkdir -p output
-        d2s metadata analyze etl/analyze_endpoints.py $SPARQL_ENDPOINT_URL -o output/metadata.ttl
+        d2s metadata analyze $SPARQL_ENDPOINT_URL -o output/metadata.ttl
         mv REPORT_*.md output/
 
     - name: Upload RDF metadata and md reports to GitHub
