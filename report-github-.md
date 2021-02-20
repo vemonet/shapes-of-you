@@ -1,6 +1,6 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `topic:translator-api`
+**Indexing topic**: `topic:ncats-translator`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
@@ -8,33 +8,13 @@
 
 
 ---
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.2.owl
+File: https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/master/greent%2Fjsonld_context%2FexposureConditions.jsonld
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.2.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
-
----
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.1.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.1.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
-
----
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/data%2Finitial-openpredict-metadata.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
-> at line 25 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'tifier "HPO-SIM";\n  openpredict:embedding_type "Diseases" .\n'^b'aaa\n<https://w3id.org/openpredict/feature/PHENO-SIM> a mls:F'..."
+RDF parsed as json-ld, in repository: https://github.com/NCATS-Tangerine/translator-api-registry
+> Extra data: line 1 column 11 (char 10)
 
 ---
 
