@@ -1,22 +1,11 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `nanobench`
+**Indexing topic**: `knowledge+provider`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
 
-
----
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/nanobench-templates/master/templates%2FNeurodkg+UI+template%2Fnanopub.trig
-
-
-
----
-RDF parsed as trig, in repository: https://github.com/MaastrichtU-IDS/nanobench-templates
-> at line 43 of <>:
-Bad syntax (bad escape) at ^ in:
-"...b't:hasPrefixLabel " has the drug" ;\n    nt:hasRegex "[A-Z]{2}'^b'\\d{5}" .\n\n   :disease  a nt:GuidedChoicePlaceholder ;\n    rd'..."
 
 ---
 
