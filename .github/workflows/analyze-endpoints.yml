@@ -115,17 +115,17 @@ jobs:
         name: report-${{ env.ENDPOINT_LABEL }}
         path: output
 
+    - name: Upload RDF file to the triplestore
+      uses: MaastrichtU-IDS/RdfUpload@master
+      with:
+        file: output/metadata.ttl
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        # endpoint: https://data.index.semanticscience.org/sparql
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+        graph: ${{ matrix.endpoint-url }}
 
-    # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
-    #   uses: MaastrichtU-IDS/RdfUpload@master
-    #   with:
-    #     file: shapes-rdf.ttl
-    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-    #     # endpoint: https://data.index.semanticscience.org/sparql
-    #     user: ${{ secrets.GRAPHDB_USER }}
-    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
-    #     graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
-
+        
     # - name: Clear older graph in the triplestore
     #   if: github.event.inputs.clear == 'true'
     #   uses: vemonet/sparql-operations-action@v1
