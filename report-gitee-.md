@@ -892,14 +892,6 @@ byte indices must be integers or slices, not str
 
 
 ---
-SPARQL endpoint failed: https://sparql.uniprot.org
-
-HTTP Error 503: Service Unavailable
-
----
-
-
----
 SPARQL endpoint failed: http://pt.dbpedia.org/sparql
 
 HTTP Error 503: Service Unavailable
