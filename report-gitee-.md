@@ -865,6 +865,14 @@ RDF parsed as xml, in repository: https://gitee.com/vhandy/neo4j-sparql-extensio
 
 
 ---
+SPARQL endpoint failed: https://bio2rdf.org/sparql
+
+<urlopen error [Errno -5] No address associated with hostname>
+
+---
+
+
+---
 SPARQL endpoint failed: https://semantic.eea.europa.eu/sparql
 
 byte indices must be integers or slices, not str
