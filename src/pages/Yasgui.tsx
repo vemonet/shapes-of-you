@@ -1,8 +1,13 @@
 import React from "react";
 // import { useLocation } from "react-router-dom";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Container } from "@material-ui/core";
+import { Container, Typography, Paper, CircularProgress } from "@material-ui/core";
 import axios from 'axios';
+
+// Import jquery datatables.net
+import 'datatables.net-dt/css/jquery.dataTables.min.css'
+const $ = require('jquery');
+$.DataTable = require('datatables.net');
 
 import Yasgui from "@triply/yasgui";
 import "@triply/yasgui/build/yasgui.min.css";
@@ -10,6 +15,11 @@ import "@triply/yasgui/build/yasgui.min.css";
 import Config from "../components/Config";
 
 const useStyles = makeStyles(theme => ({
+  margin: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+    // textAlign: 'center',
+  },
   link: {
     textDecoration: 'none',
     color: theme.palette.primary.main,
@@ -25,15 +35,42 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function YasguiPage(props: any) {
-  // const classes = useStyles();
-  // const theme = useTheme();
+  const classes = useStyles();
+  const theme = useTheme();
   // useLocation hook to get URL params
   // let location = useLocation();
+
+  const [state, setState] = React.useState({
+    entities_relations_overview_results: []
+  });
+  const stateRef = React.useRef(state);
+  // Avoid conflict when async calls
+  const updateState = React.useCallback((update) => {
+    stateRef.current = {...stateRef.current, ...update};
+    setState(stateRef.current);
+  }, [setState]);
 
   React.useEffect(() => {
     // Get params from URL
     // const params = new URLSearchParams(location.search + location.hash);
     // let sparql_endpoint: any = params.get('endpoint');
+
+    if (props.endpoint) {
+      axios.get(Config.sparql_endpoint + `?query=` + encodeURIComponent(entities_relations_query.replace('?_metadataGraph', props.endpoint)))
+      .then((res: any) => {
+        if (res.data.results){
+          console.log('In endpoint');
+          console.log(res.data.results.bindings);
+          updateState( { entities_relations_overview_results: res.data.results.bindings } );
+          // updateState({ graphsLoading: false });
+          // $(this.refs.graphsOverview).DataTable();
+          $('#datatableEntitiesRelationOverview').DataTable({
+            "autoWidth": false
+          });
+        }
+      })
+    }
+
     
     if (props.endpoint && props.query) {
       // If endpoint and query provided we add 1 tab for this query to query this endpoint
@@ -108,11 +145,79 @@ export default function YasguiPage(props: any) {
       );
       window.scrollTo(0, 0)
     }
-  })
+  }, [setState])
 
   return (
     <Container>
+      {Object.keys(state.entities_relations_overview_results).length > 0 && (<>
+        {/* <Typography variant="body1" className={classes.margin} style={{ marginTop: theme.spacing(6) }}>
+          <a href='https://datatables.net' className={classes.link} target='_blank' rel="noopener noreferrer">
+            Datatable
+          </a>
+        </Typography> */}
+        <Paper elevation={4} className={classes.paperPadding}>
+          <table id='datatableEntitiesRelationOverview' style={{ wordBreak: 'break-all' }}>
+            <thead>
+              <tr>
+                <th>Graph</th>
+                <th># of instance of subject</th>
+                <th>Subject class</th>
+                <th>Have relation</th>
+                <th>With Object class</th>
+                <th># of instance of object</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Iterate Describe query results array */}
+              {state.entities_relations_overview_results.map((row: any, key: number) => {
+                return <tr key={key}>
+                    <td><a href={row.graph.value}/>{row.graph.value}</td>
+                    <td><Typography>{row.subjectCount.value}</Typography></td>
+                    <td><a href={row.subject.value} />{row.subject.value}</td>
+                    <td><a href={row.predicate.value} />{row.predicate.value}</td>
+                    {row.object && (
+                      <td><a href={row.object.value} />{row.object.value}</td>
+                    )}
+                    {!row.object && (
+                      <td><Typography variant="body2">Not found</Typography></td>
+                    )}
+                    <td><Typography variant="body2">{row.objectCount.value}</Typography></td>
+                  </tr>
+              })}
+            </tbody>
+          </table>
+        </Paper>
+      </>)}
+      
       <div id="yasguiDiv"></div>
     </Container>
   )
 }
+
+const entities_relations_query = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX bl: <http://w3id.org/biolink/vocab/>
+PREFIX dctypes: <http://purl.org/dc/dcmitype/>
+PREFIX idot: <http://identifiers.org/idot/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX void-ext: <http://ldf.fi/void-ext#>
+SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
+WHERE {
+  GRAPH <?_metadataGraph> {
+    # ?graph a void:Dataset .
+    ?graph void:propertyPartition [
+      void:property ?predicate ;
+      void:classPartition [
+        void:class ?subject ;
+        void:distinctSubjects ?subjectCount ;
+      ];
+      void-ext:objectClassPartition [
+      void:class ?object ;
+      void:distinctObjects ?objectCount ;
+      ]
+    ] .
+  }
+} ORDER BY DESC(?subjectCount)`
