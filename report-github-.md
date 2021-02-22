@@ -1,99 +1,11 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `topic:shacl-shapes`
+**Indexing topic**: `smartapi`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
 
-
----
-File: https://raw.githubusercontent.com/GovDataOfficial/DCAT-AP.de-SHACL-Validation/master/validator%2Fresources%2Fv1.0.2%2Fshapes%2Fdcat-ap-de-shapes-specification.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/GovDataOfficial/DCAT-AP.de-SHACL-Validation
-> at line 16 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'-advanced.ttl\n\n@prefix : <http://dcat-ap.de/def/dcatde/1.0.2'^b'/#>\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns'..."
-
----
-File: https://raw.githubusercontent.com/AKSW/shacl-shapes/master/shape-groups%2Fadult-person%2Fadult-person.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/AKSW/shacl-shapes
-> at line 12 of <>:
-Bad syntax (Prefix "srekl:" not bound) at ^ in:
-"...b'which is considered an adult.\n\n:AdultShapeInfo\n    rdf:type '^b'srekl:ShapeInfo ;\n    dc11:title "Defines an adult person (f'..."
-
----
-File: https://raw.githubusercontent.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor/master/outputSchemas%2Ftest.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor
-> at line 8 of <>:
-Bad syntax (']' expected) at ^ in:
-"...b';\n  sh:targetClass ex:JS_id;\n  sh:property [\n    sh:path ex:'^b'@context;\n    sh:datatype xsd:string;\n    sh:pattern "http:/'..."
-
----
-File: https://raw.githubusercontent.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor/master/outputSchemas%2F802-JS4Geo-FeatureCollection-JSONSchema.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor
-> at line 20 of <>:
-Bad syntax (EOF found after object) at ^ in:
-"b'@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix ex: <http://example.org/#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix dash: <http://datashapes.org/dash#> .\n@prefix sf: <http://www.opengis.net/ont/sf#> .\n\n<http://www.example.org>\n  rdf:type owl:Ontology ;\n  owl:imports <http://localhost/SHACL/JS4Geo-ShapesGraph.ttl> .\n\nex:JS_id_Shape a sh:NodeShape;\n  sh:targetClass ex:JS_id;\n  sh:or (\n    ex:featureCollectionShape\n  ).\n\nex:propertiesShape a sh:NodeShape;\n  sh:targetClass ex:properties'^b''..."
-
----
-File: https://raw.githubusercontent.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor/master/outputSchemas%2Fpayloadtoolarge.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor
-> at line 17 of <>:
-Bad syntax (bad escape) at ^ in:
-"...b'h ex:version;\n    sh:datatype xsd:string;\n    sh:pattern "^('^b'\\d\\.)(\\d)$";\n    sh:minCount 1;\n  ];\n  sh:property [\n    sh:'..."
-
----
-File: https://raw.githubusercontent.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor/master/outputSchemas%2F702-JS4Geo-Feature-JSONSchema.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor
-> at line 20 of <>:
-Bad syntax (EOF found after object) at ^ in:
-"b'@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix ex: <http://example.org/#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix dash: <http://datashapes.org/dash#> .\n@prefix sf: <http://www.opengis.net/ont/sf#> .\n\n<http://www.example.org>\n  rdf:type owl:Ontology ;\n  owl:imports <http://localhost/SHACL/JS4Geo-ShapesGraph.ttl> .\n\nex:JS_id_Shape a sh:NodeShape;\n  sh:targetClass ex:JS_id;\n  sh:or (\n    ex:featureShape\n  ).\n\nex:propertiesShape a sh:NodeShape;\n  sh:targetClass ex:properties'^b''..."
-
----
-File: https://raw.githubusercontent.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor/master/outputSchemas%2Ftest1.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/ThiagoCComelli/JS2SHACL-JSON-Schema-to-SHACL-conversor
-> at line 10 of <>:
-Bad syntax (']' expected) at ^ in:
-"...b';\n  sh:targetClass ex:JS_id;\n  sh:property [\n    sh:path ex:'^b'@context;\n    sh:datatype xsd:string;\n    sh:pattern "http:/'..."
-
----
-File: https://raw.githubusercontent.com/landportal/data/master/landlibrary%2Fimporters%2Fconstituteproject.org%2Ffao-geopolitical-update.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/landportal/data
-> at line 3 of <>:
-Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
-"...b'efix ontology: <http://www.constituteproject.org/ontology/>\n'^b'<http://www.constituteproject.org/ontology/Taiwan> ontology:'..."
 
 ---
 
