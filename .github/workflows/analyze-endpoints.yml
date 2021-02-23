@@ -11,19 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
-      matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.endpoints_results)) }}
+      # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix)) }}
+      matrix: ${{ steps.generate-matrix.outputs.matrix }}
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Get list of endpoints
         id: generate-matrix
-        env:
-          SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
+        # env:
+        #   SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
         run: |
           curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
-          cat endpoints.json
-          echo '::set-output name=endpoints_results::"$( cat endpoints.json )"'
+          # cat endpoints.json
+          echo '::set-output name=matrix::"$( cat endpoints.json )"'
       
       # - name: use output
       #   run: |
