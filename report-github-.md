@@ -1,11 +1,20 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `smartapi`
+**Indexing topic**: `topic:ncats-translator`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
 
+
+---
+File: https://raw.githubusercontent.com/NCATS-Tangerine/translator-api-registry/master/greent%2Fjsonld_context%2FexposureConditions.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/NCATS-Tangerine/translator-api-registry
+> Extra data: line 1 column 11 (char 10)
 
 ---
 
