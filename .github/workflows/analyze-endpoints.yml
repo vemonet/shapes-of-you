@@ -6,76 +6,89 @@ on:
   workflow_dispatch:
 
 jobs:
+
+  get-endpoints-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).data.results.bindings) }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get list of endpoints
+        id: set-matrix
+        env:
+          SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
+        run: |
+          curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+          cat endpoints.json
+          echo '::set-output name=matrix::"$( cat endpoints.json )"'
+        # Construct query:
+        # curl -X GET -H "accept: text/turtle" -o neurodkg.ttl "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat convert2biolink.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+
+
   analyze-endpoints:
+    runs-on: ubuntu-latest
+    needs: get-endpoints-matrix
     strategy:
       fail-fast: false
       matrix:
-        include:
-        - endpoint-url: http://dbpedia.org/sparql
-        - endpoint-url: http://query.wikidata.org/sparql
-        - endpoint-url: http://sparql.wikipathways.org/sparql
-        - endpoint-url: https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG
-        - endpoint-url: https://graphdb.dumontierlab.com/repositories/NeuroDKG
-        - endpoint-url: https://graphdb.dumontierlab.com/repositories/shapes-registry
-        - endpoint-url: https://sparql.goldenagents.org/
-        - endpoint-url: http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
-        - endpoint-url: http://live.dbpedia.org/sparql
-        - endpoint-url: http://lod.openlinksw.com/sparql
-        - endpoint-url: http://virtuoso.clariah-sdh.eculture.labs.vu.nl/sparql
-        - endpoint-url: https://api.data.netwerkdigitaalerfgoed.nl/datasets/hackalod/GVN/services/GVN/sparql
-        - endpoint-url: https://api.druid.datalegend.net/datasets/ivozandhuis/ivotemp-HISGIS/services/endpoint/sparql
-        - endpoint-url: https://data.create.humanities.uva.nl/sparql
-        - endpoint-url: https://data.idref.fr/sparql
-        - endpoint-url: https://www.foodie-cloud.org/sparql
-        - endpoint-url: http://data.allie.dbcls.jp/sparql/
-        - endpoint-url: http://data.doremus.org/sparql
-        - endpoint-url: http://data.europa.eu/euodp/sparqlep
-        - endpoint-url: http://data.persee.fr/sparql
-        - endpoint-url: http://opencitations.net/index/sparql
-        - endpoint-url: http://opencitations.net/sparql
-        - endpoint-url: http://publications.europa.eu/webapi/rdf/sparql
-        - endpoint-url: http://rdf.disgenet.org/sparql/
-        - endpoint-url: http://rdf.pathwaycommons.org/sparql/
-        - endpoint-url: http://sparql.southgreen.fr
-        - endpoint-url: https://data.gesis.org/claimskg/sparql
-        - endpoint-url: https://sparql.nextprot.org
-        - endpoint-url: https://stars-app.renci.org/uberongraph/sparql
-        - endpoint-url: https://bio2rdf.org/sparql
-        - endpoint-url: http://acm.rkbexplorer.com/sparql/
-        - endpoint-url: http://aemet.linkeddata.es/sparql
-        - endpoint-url: http://biolit.rkbexplorer.com/sparql
-        - endpoint-url: http://bnb.data.bl.uk/sparql
-        - endpoint-url: http://budapest.rkbexplorer.com/sparql/
-        - endpoint-url: http://citeseer.rkbexplorer.com/sparql/
-        - endpoint-url: http://cordis.rkbexplorer.com/sparql/
-        - endpoint-url: http://crtm.linkeddata.es/sparql
-        - endpoint-url: http://cultura.linkeddata.es/sparql
-        - endpoint-url: http://data.allie.dbcls.jp/sparql
-        - endpoint-url: http://data.archiveshub.ac.uk/sparql
-        - endpoint-url: http://dati.camera.it/sparql
-        - endpoint-url: http://datos.bcn.cl/sparql
-        - endpoint-url: http://dblp.rkbexplorer.com/sparql/
-        - endpoint-url: http://de.dbpedia.org/sparql
-        - endpoint-url: http://deepblue.rkbexplorer.com/sparql/
-        - endpoint-url: http://deploy.rkbexplorer.com/sparql/
-        - endpoint-url: http://dutchshipsandsailors.nl/data/sparql/
-        - endpoint-url: http://el.dbpedia.org/sparql
-        - endpoint-url: http://era.rkbexplorer.com/sparql/
-        - endpoint-url: http://es.dbpedia.org/sparql
-        - endpoint-url: http://eu.dbpedia.org/sparql
-        - endpoint-url: http://fr.dbpedia.org/sparql
-        - endpoint-url: http://italy.rkbexplorer.com/sparql
-        - endpoint-url: http://ja.dbpedia.org/sparql
-        - endpoint-url: http://linkeddata.finki.ukim.mk/sparql
-        - endpoint-url: http://lod.b3kat.de/sparql
-        - endpoint-url: http://nl.dbpedia.org/sparql
-        - endpoint-url: http://opendata.aragon.es/sparql
-        - endpoint-url: http://semanticweb.cs.vu.nl/dss/sparql/
-        - endpoint-url: https://sparql.uniprot.org
-        - endpoint-url: https://www.ebi.ac.uk/rdf/services/biomodels/sparql
-        - endpoint-url: https://www.ebi.ac.uk/rdf/services/chembl/sparql
+        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix).sparql_endpoint.value }}
+        # include:
+        # - endpoint-url: http://dbpedia.org/sparql
+        # - endpoint-url: http://query.wikidata.org/sparql
+        # - endpoint-url: http://sparql.wikipathways.org/sparql
+        # - endpoint-url: https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG
+        # - endpoint-url: https://graphdb.dumontierlab.com/repositories/NeuroDKG
+        # - endpoint-url: https://graphdb.dumontierlab.com/repositories/shapes-registry
+        # - endpoint-url: https://sparql.goldenagents.org/
+        # - endpoint-url: http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
+        # - endpoint-url: http://live.dbpedia.org/sparql
+        # - endpoint-url: http://lod.openlinksw.com/sparql
+        # - endpoint-url: http://virtuoso.clariah-sdh.eculture.labs.vu.nl/sparql
+        # - endpoint-url: https://api.data.netwerkdigitaalerfgoed.nl/datasets/hackalod/GVN/services/GVN/sparql
+        # - endpoint-url: https://api.druid.datalegend.net/datasets/ivozandhuis/ivotemp-HISGIS/services/endpoint/sparql
+        # - endpoint-url: https://data.create.humanities.uva.nl/sparql
+        # - endpoint-url: https://data.idref.fr/sparql
+        # - endpoint-url: https://www.foodie-cloud.org/sparql
+        # - endpoint-url: http://data.allie.dbcls.jp/sparql/
+        # - endpoint-url: http://data.doremus.org/sparql
+        # - endpoint-url: http://data.europa.eu/euodp/sparqlep
+        # - endpoint-url: http://data.persee.fr/sparql
+        # - endpoint-url: http://opencitations.net/index/sparql
+        # - endpoint-url: http://opencitations.net/sparql
+        # - endpoint-url: http://publications.europa.eu/webapi/rdf/sparql
+        # - endpoint-url: http://rdf.disgenet.org/sparql/
+        # - endpoint-url: http://rdf.pathwaycommons.org/sparql/
+        # - endpoint-url: http://sparql.southgreen.fr
+        # - endpoint-url: https://data.gesis.org/claimskg/sparql
+        # - endpoint-url: https://sparql.nextprot.org
+        # - endpoint-url: https://stars-app.renci.org/uberongraph/sparql
+        # - endpoint-url: https://bio2rdf.org/sparql
+        # - endpoint-url: http://aemet.linkeddata.es/sparql
+        # - endpoint-url: http://bnb.data.bl.uk/sparql
+        # - endpoint-url: http://crtm.linkeddata.es/sparql
+        # - endpoint-url: http://cultura.linkeddata.es/sparql
+        # - endpoint-url: http://data.allie.dbcls.jp/sparql
+        # - endpoint-url: http://data.archiveshub.ac.uk/sparql
+        # - endpoint-url: http://dati.camera.it/sparql
+        # - endpoint-url: http://datos.bcn.cl/sparql
+        # - endpoint-url: http://de.dbpedia.org/sparql
+        # - endpoint-url: http://dutchshipsandsailors.nl/data/sparql/
+        # - endpoint-url: http://el.dbpedia.org/sparql
+        # - endpoint-url: http://es.dbpedia.org/sparql
+        # - endpoint-url: http://eu.dbpedia.org/sparql
+        # - endpoint-url: http://fr.dbpedia.org/sparql
+        # - endpoint-url: http://ja.dbpedia.org/sparql
+        # - endpoint-url: http://linkeddata.finki.ukim.mk/sparql
+        # - endpoint-url: http://lod.b3kat.de/sparql
+        # - endpoint-url: http://nl.dbpedia.org/sparql
+        # - endpoint-url: http://opendata.aragon.es/sparql
+        # - endpoint-url: http://semanticweb.cs.vu.nl/dss/sparql/
+        # - endpoint-url: https://sparql.uniprot.org
+        # - endpoint-url: https://www.ebi.ac.uk/rdf/services/biomodels/sparql
+        # - endpoint-url: https://www.ebi.ac.uk/rdf/services/chembl/sparql
 
-    runs-on: ubuntu-latest
     steps:
     # - name: Checkout the repo code
     #   uses: actions/checkout@v2
