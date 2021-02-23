@@ -1,0 +1,20 @@
+@prefix ns1: <http://rdfs.org/ns/void#> .
+@prefix ns2: <http://ldf.fi/void-ext#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://druid.datalegend.net/ivozandhuis/ivotemp-HISGIS/graphs/default> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 0 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 28085 ] ;
+    ns1:distinctObjects 522 ;
+    ns1:distinctSubjects 26528 ;
+    ns1:entities 0 ;
+    ns1:properties 2 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 28085 ] ;
+            ns1:property <http://www.opengis.net/ont/geosparql#asWKT> ;
+            ns1:triples 28116 ] ;
+    ns1:triples 54886 .
+
