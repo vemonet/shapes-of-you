@@ -1,0 +1,499 @@
+@prefix ns1: <http://rdfs.org/ns/void#> .
+@prefix ns2: <http://ldf.fi/void-ext#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/foodkg/graph> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class <http://purl.org/mp/Reference> ;
+            ns1:distinctSubjects 703 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+            ns1:distinctSubjects 178 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+            ns1:distinctSubjects 38 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+            ns1:distinctSubjects 32 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+            ns1:distinctSubjects 3 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+            ns1:distinctSubjects 4 ],
+        [ ns1:class <http://schema.org/DoseSchedule> ;
+            ns1:distinctSubjects 87 ],
+        [ ns1:class <http://purl.org/mp/Statement> ;
+            ns1:distinctSubjects 386 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/classes/Opinion> ;
+            ns1:distinctSubjects 141 ],
+        [ ns1:class <http://purl.org/mp/Claim> ;
+            ns1:distinctSubjects 257 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+            ns1:distinctSubjects 97 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+            ns1:distinctSubjects 57 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+            ns1:distinctSubjects 10 ],
+        [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+            ns1:distinctSubjects 9 ],
+        [ ns1:class <http://purl.org/mp/Micropublication> ;
+            ns1:distinctSubjects 257 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 1862 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 15 ] ;
+    ns1:distinctObjects 1791 ;
+    ns1:distinctSubjects 2282 ;
+    ns1:entities 2257 ;
+    ns1:properties 20 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Statement> ;
+                    ns1:distinctObjects 378 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/mp/Reference> ;
+                    ns1:distinctSubjects 703 ] ;
+            ns1:property <http://purl.org/mp/supports> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctObjects 69 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctSubjects 57 ] ;
+            ns1:property <http://schema.org/recommendedIntake> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <http://schema.org/recommendedIntake> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctObjects 13 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://schema.org/recommendedIntake> ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctObjects 257 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 257 ] ;
+            ns1:property <http://purl.org/mp/argues> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctObjects 178 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 183 ] ;
+            ns1:property <http://purl.org/mp/represents> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctObjects 38 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://purl.org/mp/represents> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctObjects 32 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 33 ] ;
+            ns1:property <http://purl.org/mp/represents> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 178 ] ;
+            ns1:property rdf:type ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctObjects 45 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 170 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctObjects 69 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 178 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctObjects 257 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/mp/Statement> ;
+                    ns1:distinctSubjects 386 ] ;
+            ns1:property <http://purl.org/mp/supports> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property rdf:type ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctObjects 24 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 30 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctObjects 18 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property rdf:type ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctObjects 19 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 21 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctObjects 257 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Opinion> ;
+                    ns1:distinctSubjects 141 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/advises> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://purl.org/mp/represents> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:type ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Statement> ;
+                    ns1:distinctObjects 378 ] ;
+            ns1:property <http://purl.org/mp/supports> ;
+            ns1:triples 1009 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctObjects 57 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ;
+            ns1:triples 228 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ;
+            ns1:triples 16 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ;
+            ns1:triples 14 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctObjects 178 ] ;
+            ns1:property <http://purl.org/mp/represents> ;
+            ns1:triples 183 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctObjects 38 ] ;
+            ns1:property <http://purl.org/mp/represents> ;
+            ns1:triples 38 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctObjects 32 ] ;
+            ns1:property <http://purl.org/mp/represents> ;
+            ns1:triples 33 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://purl.org/mp/represents> ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 251 ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctObjects 87 ] ;
+            ns1:property <http://schema.org/recommendedIntake> ;
+            ns1:triples 104 ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctObjects 257 ] ;
+            ns1:property <http://purl.org/mp/argues> ;
+            ns1:triples 257 ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctObjects 257 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/advises> ;
+            ns1:triples 257 ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctObjects 257 ] ;
+            ns1:property <http://purl.org/mp/supports> ;
+            ns1:triples 431 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctObjects 97 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ;
+            ns1:triples 251 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1750 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1888 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 15 ] ;
+            ns1:property <http://schema.org/doseUnit> ;
+            ns1:triples 86 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:property <http://schema.org/doseValue> ;
+            ns1:triples 86 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property <http://schema.org/frequency> ;
+            ns1:triples 86 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://data.cochrane.org/ontologies/pico/age> ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://data.cochrane.org/ontologies/pico/socialContext> ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://data.cochrane.org/ontologies/pico/condition> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 25 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/source> ;
+            ns1:triples 88 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Reference> ;
+                    ns1:distinctSubjects 703 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 703 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctSubjects 87 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 87 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctSubjects 86 ] ;
+            ns1:property <http://schema.org/doseUnit> ;
+            ns1:triples 86 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctSubjects 86 ] ;
+            ns1:property <http://schema.org/doseValue> ;
+            ns1:triples 86 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/DoseSchedule> ;
+                    ns1:distinctSubjects 86 ] ;
+            ns1:property <http://schema.org/frequency> ;
+            ns1:triples 86 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Statement> ;
+                    ns1:distinctSubjects 386 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 386 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Statement> ;
+                    ns1:distinctSubjects 386 ] ;
+            ns1:property <http://purl.org/mp/supports> ;
+            ns1:triples 431 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Opinion> ;
+                    ns1:distinctSubjects 141 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 141 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Opinion> ;
+                    ns1:distinctSubjects 141 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/advises> ;
+            ns1:triples 257 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctSubjects 257 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 257 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Claim> ;
+                    ns1:distinctSubjects 257 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 257 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctSubjects 97 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 97 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctSubjects 22 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#sameAs> ;
+            ns1:triples 22 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Phenotype> ;
+                    ns1:distinctSubjects 97 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 112 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctSubjects 57 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 59 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Reference> ;
+                    ns1:distinctSubjects 703 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 755 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctSubjects 57 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 69 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctSubjects 57 ] ;
+            ns1:property <http://schema.org/recommendedIntake> ;
+            ns1:triples 83 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Nutrient> ;
+                    ns1:distinctSubjects 57 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/source> ;
+            ns1:triples 70 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 11 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 11 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <http://schema.org/recommendedIntake> ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Food> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/source> ;
+            ns1:triples 11 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://schema.org/recommendedIntake> ;
+            ns1:triples 13 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Reference> ;
+                    ns1:distinctSubjects 695 ] ;
+            ns1:property <http://www.w3.org/ns/dcat#identifier> ;
+            ns1:triples 733 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/Compound> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/source> ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 257 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 257 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 257 ] ;
+            ns1:property <http://purl.org/mp/argues> ;
+            ns1:triples 257 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Micropublication> ;
+                    ns1:distinctSubjects 257 ] ;
+            ns1:property <http://purl.org/mp/represents> ;
+            ns1:triples 257 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 178 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 178 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 178 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 178 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 177 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ;
+            ns1:triples 179 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 178 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ;
+            ns1:triples 178 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/lm1fudePtJ8zxMyO16OkhT3YF-5yINtpaW3fvMVuneQ> ;
+                    ns1:distinctSubjects 178 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasTargetPopulation> ;
+            ns1:triples 178 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Reference> ;
+                    ns1:distinctSubjects 703 ] ;
+            ns1:property <http://purl.org/mp/supports> ;
+            ns1:triples 1009 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 37 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/QATzaXDLH-eAi9ckMSSF32OHuq1cx_OiLDjLE6mkwJI> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasTargetPopulation> ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 32 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 32 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ;
+            ns1:triples 32 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ;
+            ns1:triples 32 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/l_79RCzn215g3S3NVAPJoHXW2XcEbaUFm4SjqaQASCA> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasTargetPopulation> ;
+            ns1:triples 32 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/mp/Statement> ;
+                    ns1:distinctSubjects 386 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 386 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasFood> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasPhenotype> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/Instances/UQqTBG0o0OUCbQ0Yad-biroDoYhxFfCTu2hrQjMAxpA> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/foodhkg/props/hasTargetPopulation> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/foodhkg/classes/FoodHealthEffect> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ] ;
+    ns1:triples 8359 .
+
