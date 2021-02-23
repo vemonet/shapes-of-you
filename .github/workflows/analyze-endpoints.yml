@@ -42,7 +42,8 @@ jobs:
       fail-fast: false
       matrix:
         # endpoint-url: ${{ fromJson(toJson(needs.get-endpoints-matrix.outputs.matrix)).sparql_endpoint.value }}
-        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix).sparql_endpoint.value }}
+        # endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix).sparql_endpoint.value }}
+        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix) }}
         # include:
         # - endpoint-url: http://dbpedia.org/sparql
         # - endpoint-url: http://query.wikidata.org/sparql
@@ -106,9 +107,9 @@ jobs:
         MATRIX: ${{ matrix.endpoint-url }}
       run: |
         echo $MATRIX
-        # endpoint=$( echo $MATRIX | jq -r '.sparql_endpoint.value' )
-        # echo $endpoint
-        # echo "ENDPOINT_URL=${endpoint}" >> $GITHUB_ENV
+        endpoint=$( echo $MATRIX | jq -r '.sparql_endpoint.value' )
+        echo $endpoint
+        echo "ENDPOINT_URL=${endpoint}" >> $GITHUB_ENV
 
     # - name: Set up Python
     #   uses: actions/setup-python@v2
