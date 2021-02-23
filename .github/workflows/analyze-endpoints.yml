@@ -42,7 +42,7 @@ jobs:
       fail-fast: false
       matrix:
         # endpoint-url: ${{ fromJson(toJson(needs.get-endpoints-matrix.outputs.matrix)).sparql_endpoint.value }}
-        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix) }}
+        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix).sparql_endpoint.value }}
         # include:
         # - endpoint-url: http://dbpedia.org/sparql
         # - endpoint-url: http://query.wikidata.org/sparql
@@ -106,73 +106,75 @@ jobs:
         MATRIX: ${{ matrix.endpoint-url }}
       run: |
         echo $MATRIX
-        endpoint=$( echo $MATRIX | jq -r '.sparql_endpoint.value' )
-        echo $endpoint
+        # endpoint=$( echo $MATRIX | jq -r '.sparql_endpoint.value' )
+        # echo $endpoint
+        # echo "ENDPOINT_URL=${endpoint}" >> $GITHUB_ENV
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-    - uses: actions/cache@v2
-      name: Configure pip caching
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+    # - name: Set up Python
+    #   uses: actions/setup-python@v2
+    #   with:
+    #     python-version: 3.8
+    # - uses: actions/cache@v2
+    #   name: Configure pip caching
+    #   with:
+    #     path: ~/.cache/pip
+    #     key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-pip-
     
-    - name: Install Python requirements
-      env:
-        SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
-      run: |
-        pip install git+https://github.com/MaastrichtU-IDS/d2s-cli.git@develop
-        export ENDPOINT_LABEL=${SPARQL_ENDPOINT_URL//https:/}
-        export ENDPOINT_LABEL=${ENDPOINT_LABEL//http:/}
-        echo "ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}" >> $GITHUB_ENV
+    # - name: Install Python requirements
+    #   env:
+    #     SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
+    #   run: |
+    #     pip install git+https://github.com/MaastrichtU-IDS/d2s-cli.git@develop
+    #     export ENDPOINT_LABEL=${SPARQL_ENDPOINT_URL//https:/}
+    #     export ENDPOINT_LABEL=${ENDPOINT_LABEL//http:/}
+    #     echo "ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}" >> $GITHUB_ENV
 
-    - name: Run Python script to compute HCLS metadata for each graph in the endpoint
-      env:
-        SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
-      run: |
-        mkdir -p output
-        d2s metadata analyze $SPARQL_ENDPOINT_URL -o output/metadata.ttl
-        mv REPORT_FAIL.md output/ || exit 0
-        mv REPORT_SUCCESS.md output/ || exit 0
+    # - name: Run Python script to compute HCLS metadata for each graph in the endpoint
+    #   env:
+    #     # SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
+    #     SPARQL_ENDPOINT_URL: ${{ env.ENDPOINT_URL }}
+    #   run: |
+    #     mkdir -p output
+    #     d2s metadata analyze $SPARQL_ENDPOINT_URL -o output/metadata.ttl
+    #     mv REPORT_FAIL.md output/ || exit 0
+    #     mv REPORT_SUCCESS.md output/ || exit 0
 
-    - name: Upload RDF metadata and md reports to GitHub
-      uses: actions/upload-artifact@v1
-      with:
-        name: report-${{ env.ENDPOINT_LABEL }}
-        path: output
+    # - name: Upload RDF metadata and md reports to GitHub
+    #   uses: actions/upload-artifact@v1
+    #   with:
+    #     name: report-${{ env.ENDPOINT_LABEL }}
+    #     path: output
 
-    - name: Upload RDF file to the triplestore
-      uses: MaastrichtU-IDS/RdfUpload@master
-      with:
-        file: output/metadata.ttl
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        # endpoint: https://data.index.semanticscience.org/sparql
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: ${{ matrix.endpoint-url }}
+    # - name: Upload RDF file to the triplestore
+    #   uses: MaastrichtU-IDS/RdfUpload@master
+    #   with:
+    #     file: output/metadata.ttl
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+    #     # endpoint: https://data.index.semanticscience.org/sparql
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     graph: ${{ matrix.endpoint-url }}
 
-    - name: Commit and push metadata-${{ matrix.endpoint-url }}.ttl file in metadata branch
-      env:
-        ENDPOINT_URL: ${{ matrix.endpoint-url }}
-      run: |
-        export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
-        export ENDPOINT_LABEL=${ENDPOINT_URL//https:/}
-        export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
-        mv metadata.ttl tmp-metadata.ttl
-        git stash
-        git fetch
-        git checkout metadata
-        mv tmp-metadata.ttl metadata-$ENDPOINT_LABEL.ttl
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add metadata-$ENDPOINT_LABEL.ttl
-        git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
-        git push || exit 0
+    # - name: Commit and push metadata-${{ matrix.endpoint-url }}.ttl file in metadata branch
+    #   env:
+    #     ENDPOINT_URL: ${{ matrix.endpoint-url }}
+    #   run: |
+    #     export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
+    #     export ENDPOINT_LABEL=${ENDPOINT_URL//https:/}
+    #     export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
+    #     mv metadata.ttl tmp-metadata.ttl
+    #     git stash
+    #     git fetch
+    #     git checkout metadata
+    #     mv tmp-metadata.ttl metadata-$ENDPOINT_LABEL.ttl
+    #     git diff
+    #     git config --global user.email "vincent.emonet@gmail.com"
+    #     git config --global user.name "Vincent Emonet"
+    #     git add metadata-$ENDPOINT_LABEL.ttl
+    #     git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
+    #     git push || exit 0
         
 
     # - name: Clear older graph in the triplestore
