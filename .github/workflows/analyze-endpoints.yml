@@ -41,7 +41,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        endpoint-url: ${{ fromJson(toJson(needs.get-endpoints-matrix.outputs.matrix)).sparql_endpoint.value }}
+        # endpoint-url: ${{ fromJson(toJson(needs.get-endpoints-matrix.outputs.matrix)).sparql_endpoint.value }}
+        endpoint-url: ${{ needs.get-endpoints-matrix.outputs.matrix }}
         # include:
         # - endpoint-url: http://dbpedia.org/sparql
         # - endpoint-url: http://query.wikidata.org/sparql
