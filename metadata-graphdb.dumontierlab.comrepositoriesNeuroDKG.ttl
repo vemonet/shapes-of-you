@@ -1,0 +1,562 @@
+@prefix ns1: <http://rdfs.org/ns/void#> .
+@prefix ns2: <http://ldf.fi/void-ext#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://schema.org/neurodkg> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+            ns1:distinctSubjects 75 ],
+        [ ns1:class <https://schema.org/Drug> ;
+            ns1:distinctSubjects 60 ],
+        [ ns1:class <https://schema.org/MedicalSymptom> ;
+            ns1:distinctSubjects 90 ],
+        [ ns1:class <https://schema.org/PeopleAudience> ;
+            ns1:distinctSubjects 95 ],
+        [ ns1:class <https://schema.org/MedicalCondition> ;
+            ns1:distinctSubjects 58 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 165 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 5 ] ;
+    ns1:distinctObjects 345 ;
+    ns1:distinctSubjects 378 ;
+    ns1:entities 378 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 75 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 75 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 75 ] ;
+            ns1:property <https://schema.org/targetPopulation> ;
+            ns1:triples 95 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/Drug> ;
+                    ns1:distinctSubjects 60 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 60 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalSymptom> ;
+                    ns1:distinctSubjects 90 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 90 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalSymptom> ;
+                    ns1:distinctSubjects 90 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#sameAs> ;
+            ns1:triples 90 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/PeopleAudience> ;
+                    ns1:distinctSubjects 95 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 95 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/PeopleAudience> ;
+                    ns1:distinctSubjects 32 ] ;
+            ns1:property <https://schema.org/audienceType> ;
+            ns1:triples 33 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/PeopleAudience> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property <https://schema.org/healthCondition> ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalCondition> ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalCondition> ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property <https://schema.org/possibleTreatment> ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalCondition> ;
+                    ns1:distinctSubjects 45 ] ;
+            ns1:property <https://schema.org/signOrSymptom> ;
+            ns1:triples 45 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 74 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 75 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 74 ] ;
+            ns1:property <https://w3id.org/biolink/vocab/provided_by> ;
+            ns1:triples 74 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 75 ] ;
+            ns1:property <https://schema.org/drug> ;
+            ns1:triples 75 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 75 ] ;
+            ns1:property <https://schema.org/indicationType> ;
+            ns1:triples 75 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:property <https://schema.org/possibleTreatment> ;
+            ns1:triples 58 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/Drug> ;
+                    ns1:distinctObjects 60 ] ;
+            ns1:property <https://schema.org/drug> ;
+            ns1:triples 75 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/PeopleAudience> ;
+                    ns1:distinctObjects 95 ] ;
+            ns1:property <https://schema.org/targetPopulation> ;
+            ns1:triples 95 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/MedicalCondition> ;
+                    ns1:distinctObjects 58 ] ;
+            ns1:property <https://schema.org/healthCondition> ;
+            ns1:triples 58 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/MedicalSymptom> ;
+                    ns1:distinctObjects 39 ] ;
+            ns1:property <https://schema.org/signOrSymptom> ;
+            ns1:triples 45 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/Drug> ;
+                    ns1:distinctObjects 60 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 75 ] ;
+            ns1:property <https://schema.org/drug> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/MedicalCondition> ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property <https://schema.org/possibleTreatment> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/MedicalSymptom> ;
+                    ns1:distinctObjects 39 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/MedicalCondition> ;
+                    ns1:distinctSubjects 45 ] ;
+            ns1:property <https://schema.org/signOrSymptom> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/PeopleAudience> ;
+                    ns1:distinctObjects 95 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/MedicalTherapy> ;
+                    ns1:distinctSubjects 75 ] ;
+            ns1:property <https://schema.org/targetPopulation> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/MedicalCondition> ;
+                    ns1:distinctObjects 58 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/PeopleAudience> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property <https://schema.org/healthCondition> ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 78 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#sameAs> ;
+            ns1:triples 90 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 75 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 75 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 12 ] ;
+            ns1:property <https://schema.org/audienceType> ;
+            ns1:triples 33 ] ;
+    ns1:triples 1056 .
+
+<https://w3id.org/neurodkg/graph> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 14 ],
+        [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+            ns1:distinctSubjects 173 ],
+        [ ns1:class "adjuctive therapy" ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://purl.bioontology.org/ontology/OMIM/MTHU039559> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class "adjunctive Therapy" ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class "symtomatic_relief" ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class "Adjunctive Therapy" ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class "indication " ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://www.w3id.org/neurodkg:Indication> ;
+            ns1:distinctSubjects 80 ],
+        [ ns1:class <http://www.w3id.org/neurodkg:SymptomaticRelief> ;
+            ns1:distinctSubjects 49 ],
+        [ ns1:class <http://www.w3id.org/neurodkg:Prevention> ;
+            ns1:distinctSubjects 5 ],
+        [ ns1:class "adjunctive therapy" ;
+            ns1:distinctSubjects 27 ],
+        [ ns1:class "acute treatment" ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class "adjunctive_therapy" ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class "combination treatment" ;
+            ns1:distinctSubjects 3 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 376 ] ;
+    ns1:distinctObjects 384 ;
+    ns1:distinctSubjects 571 ;
+    ns1:entities 174 ;
+    ns1:properties 15 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+                    ns1:distinctSubjects 173 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 347 ],
+        [ ns1:classPartition [ ns1:class <http://purl.bioontology.org/ontology/OMIM/MTHU039559> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "indication " ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "symtomatic_relief" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "symtomatic_relief" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "symtomatic_relief" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "Adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "Adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "Adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "Adjunctive Therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "indication " ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "indication " ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Indication> ;
+                    ns1:distinctSubjects 80 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 160 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Indication> ;
+                    ns1:distinctSubjects 36 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 44 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Indication> ;
+                    ns1:distinctSubjects 80 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 80 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Indication> ;
+                    ns1:distinctSubjects 80 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 80 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:SymptomaticRelief> ;
+                    ns1:distinctSubjects 49 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 98 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:SymptomaticRelief> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 51 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:SymptomaticRelief> ;
+                    ns1:distinctSubjects 49 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 50 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+                    ns1:distinctSubjects 109 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 131 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:SymptomaticRelief> ;
+                    ns1:distinctSubjects 49 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 49 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:treatmentDuration> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Indication> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:treatmentDuration> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Prevention> ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Prevention> ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Prevention> ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Prevention> ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class "adjunctive therapy" ;
+                    ns1:distinctSubjects 27 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 55 ],
+        [ ns1:classPartition [ ns1:class "adjunctive therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:treatmentDuration> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "adjunctive therapy" ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+                    ns1:distinctSubjects 173 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 175 ],
+        [ ns1:classPartition [ ns1:class "adjunctive therapy" ;
+                    ns1:distinctSubjects 27 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 27 ],
+        [ ns1:classPartition [ ns1:class "adjunctive therapy" ;
+                    ns1:distinctSubjects 27 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 27 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasTherapy> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class "adjunctive therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasTherapy> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasSymptom> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:Indication> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasSymptom> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "acute treatment" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class "acute treatment" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "acute treatment" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "acute treatment" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3id.org/neurodkg:DrugDiseaseTargetGroup> ;
+                    ns1:distinctSubjects 173 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 173 ],
+        [ ns1:classPartition [ ns1:class "adjunctive_therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "adjunctive_therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "adjunctive_therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "adjunctive_therapy" ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class "combination treatment" ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class "combination treatment" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class "combination treatment" ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class "combination treatment" ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class "adjuctive therapy" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class "adjuctive therapy" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "indication " ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class "adjuctive therapy" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class "adjuctive therapy" ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://purl.bioontology.org/ontology/OMIM/MTHU039559> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://purl.bioontology.org/ontology/OMIM/MTHU039559> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:targetGroup> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://purl.bioontology.org/ontology/OMIM/MTHU039559> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 40 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:treatmentDuration> ;
+            ns1:triples 7 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:disease> ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:drug> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasTherapy> ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 19 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasSymptom> ;
+            ns1:triples 20 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasComorbidity> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 13 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasAgeGroup> ;
+            ns1:triples 43 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasMinAge> ;
+            ns1:triples 23 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 292 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 300 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasCurrentMedication> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:responseStatus> ;
+            ns1:triples 14 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 16 ] ;
+            ns1:property <http://www.w3id.org/neurodkg:hasTreatment> ;
+            ns1:triples 16 ] ;
+    ns1:triples 1421 .
+
+<https://w3id.org/neurodkg/graph_extra> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 0 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 153 ] ;
+    ns1:distinctObjects 103 ;
+    ns1:distinctSubjects 173 ;
+    ns1:entities 0 ;
+    ns1:properties 2 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 153 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 177 ] ;
+    ns1:triples 350 .
+
+<https://w3id.org/neurodkg/hcls/metadata> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 19 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ] ;
+    ns1:distinctObjects 87 ;
+    ns1:distinctSubjects 69 ;
+    ns1:entities 1 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 24 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 12 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 28 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 14 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 7 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 28 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1 ] ;
+    ns1:triples 205 .
+
