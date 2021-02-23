@@ -87,7 +87,7 @@ export default function YasguiPage(props: any) {
       // @ts-ignore If endpoint and query provided
       let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {
         requestConfig: { endpoint: sparql_endpoint },
-        endpoint: sparql_endpoint,
+        // endpoint: sparql_endpoint,
         copyEndpointOnNewTab: true,
       });
       yasgui.addTab(
@@ -117,7 +117,7 @@ export default function YasguiPage(props: any) {
           // @ts-ignore Set YASGUI to serve all queries of the selected endpoint
           let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {
             requestConfig: { endpoint: sparql_endpoint },
-            endpoint: sparql_endpoint,
+            // endpoint: sparql_endpoint,
             copyEndpointOnNewTab: true,
           });
 

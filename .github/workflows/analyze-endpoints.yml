@@ -104,7 +104,7 @@ jobs:
         export ENDPOINT_LABEL=${ENDPOINT_LABEL//https:/}
         export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
         # git stash
-        # git fetch
+        git fetch
         # git checkout metadata
         mv output/metadata.ttl metadata-$ENDPOINT_LABEL.ttl
         git diff
