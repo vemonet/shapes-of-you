@@ -67,23 +67,23 @@ export default function QueryYasguiButton(props: any) {
         style={{width: '99%', position: 'absolute', top: '0'}}
         popperOptions={{'positionFixed': true}}
         >
-        <ClickAwayListener onClickAway={handleClickAway}>
-          <Card >
-              <CardHeader
-                action={
-                  <IconButton aria-label="settings" onClick={handleClickAway}>
-                    <CloseIcon />
-                  </IconButton>
-                }
-                title="Query SPARQL endpoints with YASGUI ✨️"
-                subheader='To reduce the number of YASGUI tabs, right click on a tab, and select "Close other tabs"'
-                style={{paddingBottom: '0px'}}
-              />
-            <CardContent>
-              <Yasgui endpoint={props.endpoint} query={props.query} />
-            </CardContent>
-          </Card>
-        </ClickAwayListener>
+        {/* <ClickAwayListener onClickAway={handleClickAway}> */}
+        <Card >
+            <CardHeader
+              action={
+                <IconButton aria-label="settings" onClick={handleClickAway}>
+                  <CloseIcon />
+                </IconButton>
+              }
+              title={"SPARQL endpoint: " + props.endpoint}
+              // subheader='To reduce the number of YASGUI tabs, right click on a tab, and select "Close other tabs"'
+              style={{paddingBottom: '0px'}}
+            />
+          <CardContent>
+            <Yasgui endpoint={props.endpoint} query={props.query} />
+          </CardContent>
+        </Card>
+        {/* </ClickAwayListener> */}
       </Popper>
     </>
   )

@@ -83,8 +83,7 @@ def main(argv):
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, search_topic)
 
   elif git_registry == 'lod-cloud':
-    # TODO: shapes_graph = fetch_from_lod(shapes_graph)
-    pass
+    shapes_graph = fetch_from_lod()
 
   # Extras SPARQL endpoints to check
   extra_endpoints = []
@@ -102,6 +101,20 @@ def main(argv):
       shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+
+def fetch_from_lod():
+  lod_datasets_count = 0
+  lod_endpoints_count = 0
+  added_endpoints_count = 0
+  lod_obj = requests.get('https://lod-cloud.net/lod-data.json').json()
+  for dataset_id, dataset_obj in lod_obj.items():
+    lod_datasets_count += 1
+    if 'sparql' in dataset_obj:
+      for sparql_obj in dataset_obj['sparql']:
+        lod_endpoints_count += 1
+        endpoint_added = test_sparql_endpoint(sparql_obj['access_url'])
+        if endpoint_added:
+          added_endpoints_count += 1
 
 
 # Retrieve releases in projects returned by the GraphQL calls
@@ -710,7 +723,11 @@ def test_sparql_endpoint(sparql_endpoint):
     """Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
     Then, like repos, add them as schema:EntryPoint
     """
-    if sparql_endpoint not in VALID_ENDPOINTS.keys() and sparql_endpoint not in FAILED_ENDPOINTS.keys():
+    if sparql_endpoint in VALID_ENDPOINTS.keys():
+      return True
+    elif sparql_endpoint in FAILED_ENDPOINTS.keys():
+      return False
+    else:
       sparql_test_query = 'SELECT * WHERE { ?s ?p ?o } LIMIT 10'
       sparql = SPARQLWrapper(sparql_endpoint)
       sparql.setReturnFormat(JSON)
@@ -733,9 +750,6 @@ def test_sparql_endpoint(sparql_endpoint):
         logging.debug('✔️ Done tested, failed: ' + str(sparql_endpoint))
         add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
         return False
-    else:
-      return True
-
 
 if __name__ == "__main__":
   # The script starts here

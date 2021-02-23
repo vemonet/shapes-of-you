@@ -185,30 +185,9 @@ export default function SemanticIndex() {
         let global_shapes_array: any = []
         // Iterates over shapes files
         sparqlResultArray.map((result: any): any =>  {
-          // Create shape file entry
-          const file_url = result.shapeFileUri.value;
-          let file_obj: any = {
-            'url': file_url,
-            'type': result.shape_type.value,
-            'label': result.label.value,
-          }
-          let search_description = file_url + ' ' + result.label.value
-          if (result.shape_file_description) {
-            file_obj.description = result.shape_file_description.value;
-            search_description = search_description + ' ' + result.shape_file_description.value
-          }
-          if (result.sparqlEndpoint) {
-            file_obj.sparqlEndpoint = result.sparqlEndpoint.value;
-            search_description = search_description + ' ' + result.sparqlEndpoint.value
-          }
-          if (result.query) {
-            file_obj.query = result.query.value;
-            search_description = search_description + ' ' + result.query.value
-          }
 
           // Get repo in array if exist
           const repo_url = result.repository.value;
-          // let repo_entry  = global_shapes_array.find((item: any) => item.url === repo_url);
           let repo_index = global_shapes_array.findIndex(((obj: any) => obj.url == repo_url));
           if (repo_index == -1) {
             // Add repository to global repos array if not present
@@ -221,10 +200,35 @@ export default function SemanticIndex() {
               'search_description': ''
             }) - 1
           }
-          // Add shapes file to repo entry
-          global_shapes_array[repo_index]['files'].push(file_obj)
-          global_shapes_array[repo_index]['search_description'] = global_shapes_array[repo_index]['search_description'] + search_description
 
+          // Create shape file entry
+          const file_url = result.shapeFileUri.value;
+          // Avoid duplicates
+          const found = global_shapes_array[repo_index]['files'].some(((obj: any) => obj.url === file_url));
+          if (!found) {
+            let file_obj: any = {
+              'url': file_url,
+              'type': result.shape_type.value,
+              'label': result.label.value,
+            }
+            let search_description = file_url + ' ' + result.label.value
+            if (result.shape_file_description) {
+              file_obj.description = result.shape_file_description.value;
+              search_description = search_description + ' ' + result.shape_file_description.value
+            }
+            if (result.sparqlEndpoint) {
+              file_obj.sparqlEndpoint = result.sparqlEndpoint.value;
+              search_description = search_description + ' ' + result.sparqlEndpoint.value
+            }
+            if (result.query) {
+              file_obj.query = result.query.value;
+              search_description = search_description + ' ' + result.query.value
+            }
+
+            // Add shapes file to repo entry
+            global_shapes_array[repo_index]['files'].push(file_obj)
+            global_shapes_array[repo_index]['search_description'] = global_shapes_array[repo_index]['search_description'] + search_description
+          }
         })
         console.log(global_shapes_array)
         updateState({global_shapes_array: global_shapes_array})
@@ -484,7 +488,7 @@ export default function SemanticIndex() {
                   name={checkbox}
                   color="primary"
                 /> }
-              label={checkbox + " " + getFileLabel(checkbox)}
+              label={checkbox}
             />
           })}
           {/* Button to check and uncheck all checkboxes */}
@@ -571,7 +575,8 @@ export default function SemanticIndex() {
                 return <Card key={key.toString()} style={{padding: theme.spacing(1, 1), margin: theme.spacing(1, 0)}}>
                   <Typography style={{margin: theme.spacing(1, 0)}}>
                     <a href={file_obj.url} className={classes.link}>
-                      {getFileLabel(file_obj.type)} {file_obj.label}
+                      {/* {getFileLabel(file_obj.type)} */}
+                      <Chip label={shape_types_mappings[file_obj.type]}/> {file_obj.label}
                     </a>
                     <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
                     {file_obj.description &&

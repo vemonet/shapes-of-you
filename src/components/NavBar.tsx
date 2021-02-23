@@ -99,23 +99,23 @@ export default function NavBar() {
           // }}
           style={{width: '99%', position: 'absolute', top: '0'}}
           popperOptions={{'positionFixed': true}}>
-          <ClickAwayListener onClickAway={handleClickAway}>
-            <Card >
-                <CardHeader
-                  action={
-                    <IconButton aria-label="settings" onClick={handleClickAway}>
-                      <CloseIcon />
-                    </IconButton>
-                  }
-                  title="⚡️ List of active SPARQL endpoints extracted from queries metadata"
-                  subheader='Each endpoint has been tested to make sure they are active. We automatically import all SPARQL queries in YASGUI for the endpoint you select'
-                  style={{paddingBottom: '0px'}}
-                />
-              <CardContent>
-                <SparqlEndpointsDisplay />
-              </CardContent>
-            </Card>
-          </ClickAwayListener>
+          {/* <ClickAwayListener onClickAway={handleClickAway}> */}
+          <Card >
+              <CardHeader
+                action={
+                  <IconButton aria-label="settings" onClick={handleClickAway}>
+                    <CloseIcon />
+                  </IconButton>
+                }
+                title="⚡️ List of active SPARQL endpoints"
+                subheader='Endpoints are tested daily to make sure they are active. They are extracted from queries metadata and the LOD. We automatically import all SPARQL queries in YASGUI for the endpoint you select'
+                style={{paddingBottom: '0px'}}
+              />
+            <CardContent>
+              <SparqlEndpointsDisplay />
+            </CardContent>
+          </Card>
+          {/* </ClickAwayListener> */}
         </Popper>
 
         <div className="flexGrow"></div>

@@ -63,7 +63,8 @@ export default function SparqlEndpointsDisplay() {
           if (!sparql_endpoints_obj[endpoint_url]) {
             sparql_endpoints_obj[endpoint_url] = {
               'url': endpoint_url,
-              'queries_count': result.queries_count.value
+              'queries_count': result.queries_count.value,
+              'datasets_graph_count': result.datasets_graph_count.value
             }
           }
           // let query_obj = {'url': result.query_file.value}
@@ -71,6 +72,7 @@ export default function SparqlEndpointsDisplay() {
           // if (result.query) query_obj['query'] = result.query.value
           // sparql_endpoints_obj[endpoint_url]['queries'].push(query_obj)
         })
+        console.log(sparql_endpoints_obj)
         updateState({ sparql_endpoints_obj: sparql_endpoints_obj })
       })
       .catch(error => {
@@ -96,7 +98,17 @@ export default function SparqlEndpointsDisplay() {
                 <QueryYasguiButton endpoint={sparql_endpoint} />
               </ListItemAvatar>
               <ListItemText>
-                <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b> - {state.sparql_endpoints_obj[sparql_endpoint].queries_count} SPARQL queries
+                <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b>
+                {state.sparql_endpoints_obj[sparql_endpoint].queries_count > 0 &&
+                  <>
+                    &nbsp;- {state.sparql_endpoints_obj[sparql_endpoint].queries_count} SPARQL queries
+                  </>
+                }
+                {state.sparql_endpoints_obj[sparql_endpoint].datasets_graph_count > 1 &&
+                  <>
+                    &nbsp;- Metadata computed for <b>{state.sparql_endpoints_obj[sparql_endpoint].datasets_graph_count}</b> graphs
+                  </>
+                }
               </ListItemText>
             </ListItem>
           })}
@@ -110,12 +122,17 @@ export default function SparqlEndpointsDisplay() {
 const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
 PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?sparql_endpoint (count(distinct ?query_file) AS ?queries_count)
+SELECT DISTINCT ?sparql_endpoint (count(distinct ?query_file) AS ?queries_count) (count(distinct ?datasets_graph) AS ?datasets_graph_count)
 WHERE { 
   ?sparql_endpoint a schema:EntryPoint .
   OPTIONAL {
     ?query_file void:sparqlEndpoint ?sparql_endpoint ;
       schema:query ?query
+  }
+  OPTIONAL {
+    GRAPH ?sparql_endpoint {
+      ?datasets_graph a void:Dataset .
+    } 
   }
 } GROUP BY ?sparql_endpoint
 `

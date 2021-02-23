@@ -80,6 +80,7 @@ jobs:
           search-string: skos
         - git-service: gitlab
           search-string: obofoundry
+        - git-service: lod-cloud
 
         # - git-service: github # eclipse/rdf4j slow down
         #   search-string: shacl

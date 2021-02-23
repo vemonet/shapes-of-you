@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
   paperPadding: {
     padding: theme.spacing(2, 2),
-    // margin: theme.spacing(2, 2),
+    margin: theme.spacing(2, 0),
   },
 }));
 
@@ -49,6 +49,15 @@ export default function YasguiPage(props: any) {
     stateRef.current = {...stateRef.current, ...update};
     setState(stateRef.current);
   }, [setState]);
+
+  function shortenUri(uriToShorten: string) {
+    for (const prefix in Config.prefix_registry) {
+      if (uriToShorten.startsWith(Config.prefix_registry[prefix])) {
+        return uriToShorten.replace(Config.prefix_registry[prefix], prefix + ':');
+      }
+    }
+    return uriToShorten;
+  }
 
   React.useEffect(() => {
     // Get params from URL
@@ -70,7 +79,6 @@ export default function YasguiPage(props: any) {
         }
       })
     }
-
     
     if (props.endpoint && props.query) {
       // If endpoint and query provided we add 1 tab for this query to query this endpoint
@@ -119,8 +127,16 @@ export default function YasguiPage(props: any) {
             // let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
             queries_obj[result.file_label.value] = result.query.value
           })
+          console.log(yasgui);
+          if (Object.keys(yasgui._tabs).length > 1) {
+            Object.keys(yasgui._tabs).map((tab_id: any): any =>  {
+              console.log(tab_id);
+              let tab: any = yasgui.getTab(tab_id);
+              tab.close();
+            })
+          }
           // let tab: any = yasgui.getTab();
-          // tab.close();
+          
           // Add tab to yasgui for each file
           Object.keys(queries_obj).map((file_label: any) => {
             // if (!yasgui.getTab(file_label)) {
@@ -171,12 +187,12 @@ export default function YasguiPage(props: any) {
               {/* Iterate Describe query results array */}
               {state.entities_relations_overview_results.map((row: any, key: number) => {
                 return <tr key={key}>
-                    <td><a href={row.graph.value}/>{row.graph.value}</td>
+                    <td><a href={row.graph.value}/>{shortenUri(row.graph.value)}</td>
                     <td><Typography>{row.subjectCount.value}</Typography></td>
-                    <td><a href={row.subject.value} />{row.subject.value}</td>
-                    <td><a href={row.predicate.value} />{row.predicate.value}</td>
+                    <td><a href={row.subject.value} />{shortenUri(row.subject.value)}</td>
+                    <td><a href={row.predicate.value} />{shortenUri(row.predicate.value)}</td>
                     {row.object && (
-                      <td><a href={row.object.value} />{row.object.value}</td>
+                      <td><a href={row.object.value} />{shortenUri(row.object.value)}</td>
                     )}
                     {!row.object && (
                       <td><Typography variant="body2">Not found</Typography></td>
@@ -189,6 +205,10 @@ export default function YasguiPage(props: any) {
         </Paper>
       </>)}
       
+      <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(2)}}>
+        Query with YASGUI 
+      </Typography>
+
       <div id="yasguiDiv"></div>
     </Container>
   )
