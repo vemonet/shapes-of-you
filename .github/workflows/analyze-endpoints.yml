@@ -12,7 +12,7 @@ jobs:
     outputs:
       # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
       # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix)) }}
-      matrix: ${{ steps.generate-matrix.outputs.matrix }}
+      matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
 
     steps:
       - uses: actions/checkout@v2
@@ -24,6 +24,7 @@ jobs:
         run: |
           curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
           endpoints_json=$( cat endpoints.json )
+          # endpoints_json=${endpoints_json/"/\\"}
           echo $endpoints_json
           echo ::set-output name=matrix::$endpoints_json
       
