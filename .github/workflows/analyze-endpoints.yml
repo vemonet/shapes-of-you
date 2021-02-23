@@ -10,8 +10,6 @@ jobs:
   get-endpoints-matrix:
     runs-on: ubuntu-latest
     outputs:
-      # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
-      # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix)) }}
       matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
 
     steps:
@@ -25,14 +23,8 @@ jobs:
           echo $endpoints_json
           echo ::set-output name=matrix::$endpoints_json
       
-      # - name: use output
-      #   run: |
-      #     echo $endpoints_results | jq '.results.bindings[].sparql_endpoint'
-      #     echo $endpoints_results
-      #   env:
-      #     endpoints_results: ${{ steps.generate-matrix.outputs.endpoints_results}}
-          # Construct query:
-          # curl -X GET -H "accept: text/turtle" -o neurodkg.ttl "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat convert2biolink.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+        # Construct SPARQL query:
+        # curl -X GET -H "accept: text/turtle" -o neurodkg.ttl "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat convert2biolink.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
 
 
   analyze-endpoints:
@@ -42,143 +34,82 @@ jobs:
       fail-fast: false
       matrix:
         endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix) }}
-        ## Not working:
-        # endpoint-url: ${{ fromJson(toJson(needs.get-endpoints-matrix.outputs.matrix)).sparql_endpoint.value }}
-        # endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix).sparql_endpoint.value }}
-        # include:
-        # - endpoint-url: http://dbpedia.org/sparql
-        # - endpoint-url: http://query.wikidata.org/sparql
-        # - endpoint-url: http://sparql.wikipathways.org/sparql
-        # - endpoint-url: https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG
-        # - endpoint-url: https://graphdb.dumontierlab.com/repositories/NeuroDKG
-        # - endpoint-url: https://graphdb.dumontierlab.com/repositories/shapes-registry
-        # - endpoint-url: https://sparql.goldenagents.org/
-        # - endpoint-url: http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql
-        # - endpoint-url: http://live.dbpedia.org/sparql
-        # - endpoint-url: http://lod.openlinksw.com/sparql
-        # - endpoint-url: http://virtuoso.clariah-sdh.eculture.labs.vu.nl/sparql
-        # - endpoint-url: https://api.data.netwerkdigitaalerfgoed.nl/datasets/hackalod/GVN/services/GVN/sparql
-        # - endpoint-url: https://api.druid.datalegend.net/datasets/ivozandhuis/ivotemp-HISGIS/services/endpoint/sparql
-        # - endpoint-url: https://data.create.humanities.uva.nl/sparql
-        # - endpoint-url: https://data.idref.fr/sparql
-        # - endpoint-url: https://www.foodie-cloud.org/sparql
-        # - endpoint-url: http://data.allie.dbcls.jp/sparql/
-        # - endpoint-url: http://data.doremus.org/sparql
-        # - endpoint-url: http://data.europa.eu/euodp/sparqlep
-        # - endpoint-url: http://data.persee.fr/sparql
-        # - endpoint-url: http://opencitations.net/index/sparql
-        # - endpoint-url: http://opencitations.net/sparql
-        # - endpoint-url: http://publications.europa.eu/webapi/rdf/sparql
-        # - endpoint-url: http://rdf.disgenet.org/sparql/
-        # - endpoint-url: http://rdf.pathwaycommons.org/sparql/
-        # - endpoint-url: http://sparql.southgreen.fr
-        # - endpoint-url: https://data.gesis.org/claimskg/sparql
-        # - endpoint-url: https://sparql.nextprot.org
-        # - endpoint-url: https://stars-app.renci.org/uberongraph/sparql
-        # - endpoint-url: https://bio2rdf.org/sparql
-        # - endpoint-url: http://aemet.linkeddata.es/sparql
-        # - endpoint-url: http://bnb.data.bl.uk/sparql
-        # - endpoint-url: http://crtm.linkeddata.es/sparql
-        # - endpoint-url: http://cultura.linkeddata.es/sparql
-        # - endpoint-url: http://data.allie.dbcls.jp/sparql
-        # - endpoint-url: http://data.archiveshub.ac.uk/sparql
-        # - endpoint-url: http://dati.camera.it/sparql
-        # - endpoint-url: http://datos.bcn.cl/sparql
-        # - endpoint-url: http://de.dbpedia.org/sparql
-        # - endpoint-url: http://dutchshipsandsailors.nl/data/sparql/
-        # - endpoint-url: http://el.dbpedia.org/sparql
-        # - endpoint-url: http://es.dbpedia.org/sparql
-        # - endpoint-url: http://eu.dbpedia.org/sparql
-        # - endpoint-url: http://fr.dbpedia.org/sparql
-        # - endpoint-url: http://ja.dbpedia.org/sparql
-        # - endpoint-url: http://linkeddata.finki.ukim.mk/sparql
-        # - endpoint-url: http://lod.b3kat.de/sparql
-        # - endpoint-url: http://nl.dbpedia.org/sparql
-        # - endpoint-url: http://opendata.aragon.es/sparql
-        # - endpoint-url: http://semanticweb.cs.vu.nl/dss/sparql/
-        # - endpoint-url: https://sparql.uniprot.org
-        # - endpoint-url: https://www.ebi.ac.uk/rdf/services/biomodels/sparql
-        # - endpoint-url: https://www.ebi.ac.uk/rdf/services/chembl/sparql
 
     steps:
-    # - name: Checkout the repo code
-    #   uses: actions/checkout@v2
+    # - name: Check matrix
+    #   env:
+    #     # MATRIX: ${{ needs.get-endpoints-matrix.outputs.matrix }}
+    #     MATRIX: "${{ matrix.endpoint-url.sparql_endpoint.value }}"
+    #   run: |
+    #     echo $MATRIX
+    #     # endpoint=$( echo $MATRIX | jq -r '.sparql_endpoint.value' )
+    #     # echo $endpoint
+    #     # echo "ENDPOINT_URL=${endpoint}" >> $GITHUB_ENV
 
-    - name: Check matrix
-      env:
-        # MATRIX: ${{ needs.get-endpoints-matrix.outputs.matrix }}
-        MATRIX: "${{ matrix.endpoint-url.sparql_endpoint.value }}"
-      run: |
-        echo $MATRIX
-        # endpoint=$( echo $MATRIX | jq -r '.sparql_endpoint.value' )
-        # echo $endpoint
-        # echo "ENDPOINT_URL=${endpoint}" >> $GITHUB_ENV
-
-    # - name: Set up Python
-    #   uses: actions/setup-python@v2
-    #   with:
-    #     python-version: 3.8
-    # - uses: actions/cache@v2
-    #   name: Configure pip caching
-    #   with:
-    #     path: ~/.cache/pip
-    #     key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-    #     restore-keys: |
-    #       ${{ runner.os }}-pip-
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - uses: actions/cache@v2
+      name: Configure pip caching
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
     
-    # - name: Install Python requirements
-    #   env:
-    #     SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
-    #   run: |
-    #     pip install git+https://github.com/MaastrichtU-IDS/d2s-cli.git@develop
-    #     export ENDPOINT_LABEL=${SPARQL_ENDPOINT_URL//https:/}
-    #     export ENDPOINT_LABEL=${ENDPOINT_LABEL//http:/}
-    #     echo "ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}" >> $GITHUB_ENV
+    - name: Install Python requirements
+      env:
+        SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url.sparql_endpoint.value }}
+      run: |
+        pip install git+https://github.com/MaastrichtU-IDS/d2s-cli.git@develop
+        export ENDPOINT_LABEL=${SPARQL_ENDPOINT_URL//https:/}
+        export ENDPOINT_LABEL=${ENDPOINT_LABEL//http:/}
+        echo "ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}" >> $GITHUB_ENV
 
-    # - name: Run Python script to compute HCLS metadata for each graph in the endpoint
-    #   env:
-    #     # SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
-    #     SPARQL_ENDPOINT_URL: ${{ env.ENDPOINT_URL }}
-    #   run: |
-    #     mkdir -p output
-    #     d2s metadata analyze $SPARQL_ENDPOINT_URL -o output/metadata.ttl
-    #     mv REPORT_FAIL.md output/ || exit 0
-    #     mv REPORT_SUCCESS.md output/ || exit 0
+    - name: Run Python script to compute HCLS metadata for each graph in ${{ matrix.endpoint-url.sparql_endpoint.value }}
+      env:
+        SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url.sparql_endpoint.value }}
+      run: |
+        mkdir -p output
+        d2s metadata analyze $SPARQL_ENDPOINT_URL -o output/metadata.ttl
+        mv REPORT_FAIL.md output/ || exit 0
+        mv REPORT_SUCCESS.md output/ || exit 0
 
-    # - name: Upload RDF metadata and md reports to GitHub
-    #   uses: actions/upload-artifact@v1
-    #   with:
-    #     name: report-${{ env.ENDPOINT_LABEL }}
-    #     path: output
+    - name: Upload RDF metadata and md reports to GitHub
+      uses: actions/upload-artifact@v1
+      with:
+        name: report-${{ env.ENDPOINT_LABEL }}
+        path: output
 
-    # - name: Upload RDF file to the triplestore
-    #   uses: MaastrichtU-IDS/RdfUpload@master
-    #   with:
-    #     file: output/metadata.ttl
-    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-    #     # endpoint: https://data.index.semanticscience.org/sparql
-    #     user: ${{ secrets.GRAPHDB_USER }}
-    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
-    #     graph: ${{ matrix.endpoint-url }}
+    - name: Upload RDF file to the triplestore
+      uses: MaastrichtU-IDS/RdfUpload@master
+      with:
+        file: output/metadata.ttl
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        # endpoint: https://data.index.semanticscience.org/sparql
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+        graph: ${{ matrix.endpoint-url }}
 
-    # - name: Commit and push metadata-${{ matrix.endpoint-url }}.ttl file in metadata branch
-    #   env:
-    #     ENDPOINT_URL: ${{ matrix.endpoint-url }}
-    #   run: |
-    #     export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
-    #     export ENDPOINT_LABEL=${ENDPOINT_URL//https:/}
-    #     export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
-    #     mv metadata.ttl tmp-metadata.ttl
-    #     git stash
-    #     git fetch
-    #     git checkout metadata
-    #     mv tmp-metadata.ttl metadata-$ENDPOINT_LABEL.ttl
-    #     git diff
-    #     git config --global user.email "vincent.emonet@gmail.com"
-    #     git config --global user.name "Vincent Emonet"
-    #     git add metadata-$ENDPOINT_LABEL.ttl
-    #     git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
-    #     git push || exit 0
+    - name: Commit and push metadata-${{ env.ENDPOINT_LABEL }}.ttl file in metadata branch
+      env:
+        ENDPOINT_URL: ${{ matrix.endpoint-url.sparql_endpoint.value }}
+      run: |
+        export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
+        export ENDPOINT_LABEL=${ENDPOINT_URL//https:/}
+        export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
+        mv metadata.ttl tmp-metadata.ttl
+        git stash
+        git fetch
+        git checkout metadata
+        mv tmp-metadata.ttl metadata-$ENDPOINT_LABEL.ttl
+        git diff
+        git config --global user.email "vincent.emonet@gmail.com"
+        git config --global user.name "Vincent Emonet"
+        git add metadata-$ENDPOINT_LABEL.ttl
+        git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
+        git push || exit 0
         
 
     # - name: Clear older graph in the triplestore
