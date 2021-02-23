@@ -125,6 +125,24 @@ jobs:
         password: ${{ secrets.GRAPHDB_PASSWORD }}
         graph: ${{ matrix.endpoint-url }}
 
+    - name: Commit and push metadata-${{ matrix.endpoint-url }}.ttl file in metadata branch
+      env:
+        ENDPOINT_URL: ${{ matrix.endpoint-url }}
+      run: |
+        export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
+        export ENDPOINT_LABEL=${ENDPOINT_URL//https:/}
+        export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
+        mv metadata.ttl tmp-metadata.ttl
+        git stash
+        git fetch
+        git checkout metadata
+        mv tmp-metadata.ttl metadata-$ENDPOINT_LABEL.ttl
+        git diff
+        git config --global user.email "vincent.emonet@gmail.com"
+        git config --global user.name "Vincent Emonet"
+        git add metadata-$ENDPOINT_LABEL.ttl
+        git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
+        git push || exit 0
         
     # - name: Clear older graph in the triplestore
     #   if: github.event.inputs.clear == 'true'
