@@ -41,9 +41,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix) }}
         # endpoint-url: ${{ fromJson(toJson(needs.get-endpoints-matrix.outputs.matrix)).sparql_endpoint.value }}
         # endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix).sparql_endpoint.value }}
-        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix) }}
         # include:
         # - endpoint-url: http://dbpedia.org/sparql
         # - endpoint-url: http://query.wikidata.org/sparql
@@ -102,7 +102,9 @@ jobs:
     steps:
     # - name: Checkout the repo code
     #   uses: actions/checkout@v2
-    - env:
+    
+    - name: Check matrix
+      env:
         # MATRIX: ${{ needs.get-endpoints-matrix.outputs.matrix }}
         MATRIX: ${{ matrix.endpoint-url }}
       run: |
