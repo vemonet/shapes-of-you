@@ -2,7 +2,7 @@
 #+ endpoint_in_url: False
 #+ summary:  Get HCLS metadata as RDF for a SPARQL endpoint
 #+ description: Get HCLS metadata for a SPARQL endpoint as RDF using a CONSTRUCT query
-#+ mime: application/json
+#+ mime: text/turtle
 #+ tags:
 #+   - Statistics overview
 #+ method: GET
