@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Get list of endpoints
-        id: set-matrix
+        id: generate-matrix
         env:
           SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
         run: |
