@@ -83,7 +83,7 @@ def main(argv):
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, search_topic)
 
   elif git_registry == 'lod-cloud':
-    shapes_graph = fetch_from_lod()
+    fetch_from_lod()
 
   # Extras SPARQL endpoints to check
   extra_endpoints = []
@@ -115,9 +115,9 @@ def fetch_from_lod():
         endpoint_added = test_sparql_endpoint(sparql_obj['access_url'])
         if endpoint_added:
           added_endpoints_count += 1
-  add_to_report('Datasets in LOD: ' + lod_datasets_count +
-    '\nSPARQL endpoints in LOD: ' + lod_endpoints_count +
-    '\nActive SPARQL endpoints: ' + added_endpoints_count)
+  add_to_report('Datasets in LOD: ' + str(lod_datasets_count) +
+    '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count) +
+    '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
 
 
 # Retrieve releases in projects returned by the GraphQL calls
