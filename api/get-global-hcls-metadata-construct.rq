@@ -1,14 +1,10 @@
 #+ endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
 #+ endpoint_in_url: False
-#+ summary:  Get HCLS metadata as RDF for a SPARQL endpoint
-#+ description: Get HCLS metadata for a SPARQL endpoint as RDF using a CONSTRUCT query
-#+ mime: application/json
+#+ summary:  Get HCLS metadata as RDF for all SPARQL endpoints
+#+ description: Get HCLS metadata for all SPARQL endpoints as RDF using a CONSTRUCT query
 #+ tags:
 #+   - Statistics overview
 #+ method: GET
-# pagination: 100
-#+ defaults:
-#+   - sparqlendpoint: https://bio2rdf.org/sparql
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -20,7 +16,6 @@ PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX void-ext: <http://ldf.fi/void-ext#>
-# SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
 CONSTRUCT {
   ?graph void:sparqlEndpoint ?sparql_endpoint ;
       void:propertyPartition [
@@ -50,5 +45,4 @@ WHERE {
       ]
     ] .
   }
-  FILTER (str(?sparql_endpoint) = ?_sparqlendpoint)
 } ORDER BY DESC(?subjectCount)
