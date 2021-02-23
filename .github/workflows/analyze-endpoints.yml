@@ -90,7 +90,7 @@ jobs:
         # endpoint: https://data.index.semanticscience.org/sparql
         user: ${{ secrets.GRAPHDB_USER }}
         password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: ${{ matrix.endpoint-url }}
+        graph: ${{ matrix.endpoint-url.sparql_endpoint.value }}
 
     - name: Commit and push metadata-${{ env.ENDPOINT_LABEL }}.ttl file in metadata branch
       env:
