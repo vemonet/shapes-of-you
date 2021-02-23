@@ -5,7 +5,7 @@ import { List, ListItem, ListItemAvatar, ListItemText } from "@material-ui/core"
 import axios from 'axios';
 
 import Config from "../components/Config";
-import QueryYasguiButton from "./QueryYasguiButton";
+import QueryYasguiButton from "../components/QueryYasguiButton";
 
 const useStyles = makeStyles(theme => ({
   paperSearch: {

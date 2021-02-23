@@ -166,11 +166,9 @@ export default function YasguiPage(props: any) {
   return (
     <Container>
       {Object.keys(state.entities_relations_overview_results).length > 0 && (<>
-        {/* <Typography variant="body1" className={classes.margin} style={{ marginTop: theme.spacing(6) }}>
-          <a href='https://datatables.net' className={classes.link} target='_blank' rel="noopener noreferrer">
-            Datatable
-          </a>
-        </Typography> */}
+        <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(0)}}>
+          Endpoint metadata
+        </Typography>
         <Paper elevation={4} className={classes.paperPadding}>
           <table id='datatableEntitiesRelationOverview' style={{ wordBreak: 'break-all' }}>
             <thead>
@@ -205,7 +203,7 @@ export default function YasguiPage(props: any) {
         </Paper>
       </>)}
       
-      <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(2)}}>
+      <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(4)}}>
         Query with YASGUI 
       </Typography>
 

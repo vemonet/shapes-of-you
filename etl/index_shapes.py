@@ -115,6 +115,9 @@ def fetch_from_lod():
         endpoint_added = test_sparql_endpoint(sparql_obj['access_url'])
         if endpoint_added:
           added_endpoints_count += 1
+  add_to_report('Datasets in LOD: ' + lod_datasets_count +
+    '\nSPARQL endpoints in LOD: ' + lod_endpoints_count +
+    '\nActive SPARQL endpoints: ' + added_endpoints_count)
 
 
 # Retrieve releases in projects returned by the GraphQL calls

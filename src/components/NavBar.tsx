@@ -11,7 +11,7 @@ import ActiveEndpointsIcon from '@material-ui/icons/OfflineBolt';
 import { AuthButton, Value } from '@solid/react';
 // @ts-ignore
 import iconImage from '../../assets/icon.png';
-import SparqlEndpointsDisplay from "./SparqlEndpointsDisplay";
+import SparqlEndpointsDisplay from "../pages/SparqlEndpointsDisplay";
 
 const useStyles = makeStyles(theme => ({
   menuButton: {
