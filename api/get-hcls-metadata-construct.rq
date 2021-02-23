@@ -3,7 +3,7 @@
 #+ summary:  Get HCLS metadata as RDF for a SPARQL endpoint
 #+ description: Get HCLS metadata for a SPARQL endpoint as RDF using a CONSTRUCT query
 #+ tags:
-#+   - Overview
+#+   - Statistics overview
 #+ method: GET
 # pagination: 100
 #+ defaults:

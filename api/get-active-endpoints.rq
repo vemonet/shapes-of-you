@@ -3,7 +3,7 @@
 #+ summary:  List all active SPARQL endpoints
 #+ description: List all active SPARQL endpoints retrieved from SPARQL query file parsing and the number of associated SPARQL queries
 #+ tags:
-#+   - Overview
+#+   - Get resources
 #+ method: GET
 # pagination: 100
 

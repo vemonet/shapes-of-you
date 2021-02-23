@@ -3,7 +3,7 @@
 #+ summary:  Get HCLS metadata for a SPARQL endpoint
 #+ description: Get HCLS metadata for a SPARQL endpoint
 #+ tags:
-#+   - Overview
+#+   - Statistics overview
 #+ method: GET
 # pagination: 100
 #+ defaults:

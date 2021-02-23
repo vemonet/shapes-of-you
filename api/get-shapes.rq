@@ -2,7 +2,7 @@
 #+ endpoint_in_url: False
 #+ summary:  List all shapes in shape files
 #+ tags:
-#+   - Overview
+#+   - Get resources
 #+ method: GET
 #+ pagination: 100
 #+ defaults:

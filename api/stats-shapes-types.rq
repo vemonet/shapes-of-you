@@ -3,7 +3,7 @@
 #+ summary: Show statistics for the indexed semantic resources types 
 #+ description: Return the count of repositories and shapes files per semantic resources types
 #+ tags:
-#+   - Overview
+#+   - Statistics overview
 #+ method: GET
 # pagination: 100
 
