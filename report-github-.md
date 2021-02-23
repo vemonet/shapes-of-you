@@ -9579,6 +9579,15 @@ Bad syntax (Prefix "xsd:" not bound) at ^ in:
 "...b'te "{./Attribute[@Name=\'ProcedureID\']/Value}";\n\trr:datatype '^b'xsd:strg\n\t]];\n\t\n  \trr:predicateObjectMap [\n    rr:predicate '..."
 
 ---
+File: https://raw.githubusercontent.com/blankdots/PersonasOntology/master/ontology%2Fpersonasonto.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/blankdots/PersonasOntology
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/personasonto.owl:21:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
 File: https://raw.githubusercontent.com/mawittbe/NVT_Data-Model/master/NVTO%2Fnvto_protege.owl
 
 
@@ -9608,15 +9617,6 @@ RDF parsed as ttl, in repository: https://github.com/mawittbe/NVT_Data-Model
 > at line 4 of <>:
 Bad syntax (Prefix "rdf:" not bound) at ^ in:
 "...b'schema/mtt_a/> .\n\n<http://lod.iti-germany.de/schema/mtt_a/> '^b'rdf:type owl:Ontology ;\n                                    '..."
-
----
-File: https://raw.githubusercontent.com/blankdots/PersonasOntology/master/ontology%2Fpersonasonto.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/blankdots/PersonasOntology
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/ontology/personasonto.owl:21:113: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
 
 ---
 File: https://raw.githubusercontent.com/luiseraso/expert-systems-examples/master/ims-examples-owl%2Fsrc%2Fmain%2Fresources%2Fedu%2Ffup%2Fims%2Fontologies%2FSecurityAndPrivacyOntology.owl
@@ -10113,13 +10113,14 @@ RDF parsed as xml, in repository: https://github.com/isuruamantha/OWL-to-AIML
 > file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/src/main/resources/coronavirus.owl:126:41: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#NamedIndividual
 
 ---
-File: https://raw.githubusercontent.com/AdhamGamal/QASAL/master/owlfiles%2Fplaces-in-quran.owl
+File: https://raw.githubusercontent.com/amhiggin/CrimeGeolocationOntology/master/Geohive%2Fcensus2011-electoral-divisions.ttl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/AdhamGamal/QASAL
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/owlfiles/places-in-quran.owl:366:48: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Class
+RDF parsed as ttl, in repository: https://github.com/amhiggin/CrimeGeolocationOntology
+> Quote expected in string at ^ in T>
+                "^POLYGON ((-6.3220487
 
 ---
 File: https://raw.githubusercontent.com/CSIRO-enviro-informatics/eudm-profile/master/alignments%2Fagrif%2Fagrif-alignment.ttl
