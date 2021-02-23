@@ -1,0 +1,3549 @@
+@prefix ns1: <http://rdfs.org/ns/void#> .
+@prefix ns2: <http://ldf.fi/void-ext#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bnb.data.bl.uk/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 526 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 6 ] ;
+    ns1:distinctObjects 5824 ;
+    ns1:distinctSubjects 5614 ;
+    ns1:entities 6 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 191 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 1459 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 248 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1855 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 285 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1528 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 2304 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 218 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ] ;
+    ns1:triples 16076 .
+
+<http://data.persee.fr/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 368 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 6 ] ;
+    ns1:distinctObjects 2952 ;
+    ns1:distinctSubjects 2632 ;
+    ns1:entities 6 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 1162 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 228 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 200 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 908 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 107 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 568 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 240 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1094 ] ;
+    ns1:triples 7840 .
+
+<http://dati.camera.it/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 678 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 38 ] ;
+    ns1:distinctObjects 4732 ;
+    ns1:distinctSubjects 4411 ;
+    ns1:entities 38 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 224 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 925 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 327 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1679 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 46 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 47 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 38 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 407 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1685 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 36 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 1852 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 47 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 455 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 37 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 44 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 47 ] ;
+    ns1:triples 13158 .
+
+<http://de.dbpedia.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 2165 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 1470 ] ;
+    ns1:distinctObjects 2339316 ;
+    ns1:distinctSubjects 2337156 ;
+    ns1:entities 2165 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 522 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 426185 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 476 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 863379 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 85 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 2165 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 195 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 2165 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1121 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 849336 ],
+        [ ns2:objectClassPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctObjects 43 ] ;
+            ns1:property ns1:property ;
+            ns1:triples 122259 ],
+        [ ns2:objectClassPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctObjects 33 ] ;
+            ns1:property ns1:class ;
+            ns1:triples 428117 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2165 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2165 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2165 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 2165 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2160 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 1049755 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2165 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 2165 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2164 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 2164 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2165 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 32918 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2164 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 2164 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2165 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 2165 ] ;
+    ns1:triples 6815356 .
+
+<http://es.dbpedia.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 747 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 1475 ] ;
+    ns1:distinctObjects 1578107 ;
+    ns1:distinctSubjects 1575994 ;
+    ns1:entities 1475 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 236 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 301388 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 403 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 589521 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 69 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1474 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 99 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1475 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 462 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 505942 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1475 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1475 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1475 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1475 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1468 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 686557 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1475 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1475 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1474 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 1474 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1475 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 19341 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1473 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1473 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1474 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1474 ],
+        [ ns2:objectClassPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctObjects 15 ] ;
+            ns1:property ns1:property ;
+            ns1:triples 99873 ],
+        [ ns2:objectClassPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctObjects 40 ] ;
+            ns1:property ns1:class ;
+            ns1:triples 411882 ] ;
+    ns1:triples 4550287 .
+
+<http://eu.dbpedia.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 850 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 64 ] ;
+    ns1:distinctObjects 36189 ;
+    ns1:distinctSubjects 33662 ;
+    ns1:entities 64 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 472 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 10824 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 192 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 7716 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 40 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 64 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 24 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 64 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 654 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 13306 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 64 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 64 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 64 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 64 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 15186 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 64 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 64 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 64 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 64 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 64 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 1286 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 64 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 64 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 64 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 64 ] ;
+    ns1:triples 99230 .
+
+<http://fr.dbpedia.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 346 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 17 ] ;
+    ns1:distinctObjects 5450 ;
+    ns1:distinctSubjects 4868 ;
+    ns1:entities 17 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 49 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 710 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 283 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 2593 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 17 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 17 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 95 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1373 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 17 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 17 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 17 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 17 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 1581 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 17 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 17 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 17 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 17 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 17 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 1464 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 16 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 16 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 17 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 17 ] ;
+    ns1:triples 14429 .
+
+<http://ja.dbpedia.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 292 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 1078 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ] ;
+    ns1:distinctObjects 474953 ;
+    ns1:distinctSubjects 470401 ;
+    ns1:entities 292 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 292 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 292 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 292 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 292 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 289 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 200418 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 292 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 292 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 292 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 292 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 292 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 5789 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 292 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 292 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 292 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 292 ],
+        [ ns2:objectClassPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:property ns1:property ;
+            ns1:triples 28630 ],
+        [ ns2:objectClassPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctObjects 36 ] ;
+            ns1:property ns1:class ;
+            ns1:triples 26001 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 438 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 102694 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 374 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 167581 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 51 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 292 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 75 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 292 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 732 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 137206 ] ;
+    ns1:triples 1348555 .
+
+<http://live.dbpedia.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 0 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 1 ] ;
+    ns1:distinctObjects 0 ;
+    ns1:distinctSubjects 1 ;
+    ns1:entities 0 ;
+    ns1:properties 1 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 1 ] ;
+    ns1:triples 1 .
+
+<http://nl.dbpedia.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 352 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 9 ] ;
+    ns1:distinctObjects 2770 ;
+    ns1:distinctSubjects 1990 ;
+    ns1:entities 9 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 592 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 723 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 9 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 32 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 313 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 335 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1094 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 9 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 9 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 42 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 527 ] ;
+    ns1:triples 5923 .
+
+<http://rdf.disgenet.org/sparql/> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 13 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 142 ] ;
+    ns1:distinctObjects 3708 ;
+    ns1:distinctSubjects 3439 ;
+    ns1:entities 13 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 36 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 685 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 106 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1381 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 13 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 13 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 54 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1216 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 13 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 13 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 1386 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 13 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 13 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 471 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 13 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 13 ] ;
+    ns1:triples 10173 .
+
+<http://rdf.pathwaycommons.org/sparql/> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 16 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 98 ] ;
+    ns1:distinctObjects 3659 ;
+    ns1:distinctSubjects 3466 ;
+    ns1:entities 16 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 38 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 726 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 49 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1245 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 16 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 16 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 61 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1321 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 16 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 16 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 16 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 16 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 1509 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 16 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 16 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 15 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 15 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 16 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 228 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 15 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 15 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 16 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 16 ] ;
+    ns1:triples 10240 .
+
+<http://sparql.southgreen.fr> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 874 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 44 ] ;
+    ns1:distinctObjects 16057 ;
+    ns1:distinctSubjects 15341 ;
+    ns1:entities 44 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 44 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 44 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 44 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 44 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 6664 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 44 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 44 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 43 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 43 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 44 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 719 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 43 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 43 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 44 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 44 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 324 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 3117 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 419 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 5602 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 37 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 44 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 30 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 44 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 522 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 5458 ] ;
+    ns1:triples 44903 .
+
+<http://sparql.wikipathways.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 1018 ] ;
+    ns1:distinctObjects 15814 ;
+    ns1:distinctSubjects 15362 ;
+    ns1:entities 2 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 444 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 3815 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 488 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 5144 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 491 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 4061 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 6405 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 204 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 2 ] ;
+    ns1:triples 43746 .
+
+<https://api.data.netwerkdigitaalerfgoed.nl/datasets/hackalod/GVN/services/GVN/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 124 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 4 ] ;
+    ns1:distinctObjects 1128 ;
+    ns1:distinctSubjects 1088 ;
+    ns1:entities 4 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 41 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 194 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 47 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 402 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 75 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 456 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 496 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 48 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 4 ] ;
+    ns1:triples 3232 .
+
+<https://api.druid.datalegend.net/datasets/ivozandhuis/ivotemp-HISGIS/services/endpoint/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 7 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ] ;
+    ns1:distinctObjects 16 ;
+    ns1:distinctSubjects 13 ;
+    ns1:entities 1 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 7 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1 ] ;
+    ns1:triples 42 .
+
+<https://bio2rdf.org/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 43 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 2626 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ] ;
+    ns1:distinctObjects 46490 ;
+    ns1:distinctSubjects 45002 ;
+    ns1:entities 43 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 43 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 43 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 43 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 43 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 34 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 18492 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 43 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 43 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 40 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 40 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 43 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 1983 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 43 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 43 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1067 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 9458 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1366 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 17087 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 34 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 43 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 37 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 43 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1503 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 12543 ] ;
+    ns1:triples 129135 .
+
+<https://data.create.humanities.uva.nl/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 851 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 20 ] ;
+    ns1:distinctObjects 21393 ;
+    ns1:distinctSubjects 20852 ;
+    ns1:entities 20 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 364 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 4346 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 487 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 7520 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 18 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 20 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 16 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 20 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 539 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 6938 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 9006 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 732 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 20 ] ;
+    ns1:triples 60528 .
+
+<https://data.gesis.org/claimskg/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 58 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 229 ] ;
+    ns1:distinctObjects 285795 ;
+    ns1:distinctSubjects 284538 ;
+    ns1:entities 58 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 82 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 68570 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 113 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 93702 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 58 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 40 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 58 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 163 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 84844 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 55 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 122324 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 2320 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 58 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 58 ] ;
+    ns1:triples 816224 .
+
+<https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 64 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ] ;
+    ns1:distinctObjects 811 ;
+    ns1:distinctSubjects 775 ;
+    ns1:entities 1 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 318 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 51 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 154 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 31 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 304 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 38 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 232 ] ;
+    ns1:triples 2241 .
+
+<https://graphdb.dumontierlab.com/repositories/NeuroDKG> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 4 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 76 ] ;
+    ns1:distinctObjects 577 ;
+    ns1:distinctSubjects 538 ;
+    ns1:entities 4 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 234 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 56 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 23 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 68 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 43 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 228 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property ns1:class ;
+            ns1:triples 92 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 28 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 240 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 4 ] ;
+    ns1:triples 1616 .
+
+<https://graphdb.dumontierlab.com/repositories/shapes-registry> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 28 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 632 ] ;
+    ns1:distinctObjects 3047 ;
+    ns1:distinctSubjects 3040 ;
+    ns1:entities 28 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 169 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 554 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 227 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 1269 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 32 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 28 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 421 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 1023 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 28 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 28 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 1264 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 36 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 204 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 28 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 32 ] ;
+    ns1:triples 8958 .
+
+<https://w3id.org/um/ids/shapes/gitee> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+            ns1:distinctSubjects 9881 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+            ns1:distinctSubjects 2765 ],
+        [ ns1:class <https://schema.org/codeRepository> ;
+            ns1:distinctSubjects 31 ],
+        [ ns1:class <https://schema.org/DataCatalog> ;
+            ns1:distinctSubjects 29 ],
+        [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+            ns1:distinctSubjects 12 ],
+        [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+            ns1:distinctSubjects 5950 ],
+        [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+            ns1:distinctSubjects 1128 ],
+        [ ns1:class <https://schema.org/EntryPoint> ;
+            ns1:distinctSubjects 39 ],
+        [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+            ns1:distinctSubjects 38 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 2402407 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 9 ] ;
+    ns1:distinctObjects 40 ;
+    ns1:distinctSubjects 10098 ;
+    ns1:entities 9951 ;
+    ns1:properties 7 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 31 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9586 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 12 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9770 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 25 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2736 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 12 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9557 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 25 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2736 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2765 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 12 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9770 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 25 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2736 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 12 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 833 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 1046 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 833 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 1046 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 31 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 9586 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 9770 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 9557 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 9770 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 417 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 724 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2894 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 9978 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2397535 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 6532196 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1569 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 11900 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9881 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 19774 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2765 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 5542 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2765 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2765 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2765 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 2765 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2765 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 6384763 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2736 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 2736 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 60 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 29 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9881 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 9881 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 56 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 36 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 19043 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 536 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 546 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 536 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 546 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 11900 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9586 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 9586 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 5950 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 5950 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 11336 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 11900 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 5950 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 5950 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 11900 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 1128 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2256 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 1128 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1128 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 833 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 833 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 1128 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 135041 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9881 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 6532196 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 1046 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 1046 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 76 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 1056 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 38 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 38 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 9770 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 9770 ] ;
+    ns1:triples 6594027 .
+
+<https://w3id.org/um/ids/shapes/github> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 15 ],
+        [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+            ns1:distinctSubjects 1381 ],
+        [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+            ns1:distinctSubjects 896 ],
+        [ ns1:class <https://schema.org/EntryPoint> ;
+            ns1:distinctSubjects 46 ],
+        [ ns1:class <https://schema.org/APIReference> ;
+            ns1:distinctSubjects 6730 ],
+        [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+            ns1:distinctSubjects 106 ],
+        [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+            ns1:distinctSubjects 148 ],
+        [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+            ns1:distinctSubjects 18 ],
+        [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+            ns1:distinctSubjects 48610 ],
+        [ ns1:class <https://schema.org/codeRepository> ;
+            ns1:distinctSubjects 539 ],
+        [ ns1:class <https://schema.org/DataCatalog> ;
+            ns1:distinctSubjects 1108 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+            ns1:distinctSubjects 6989 ],
+        [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+            ns1:distinctSubjects 263 ],
+        [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+            ns1:distinctSubjects 5046 ],
+        [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+            ns1:distinctSubjects 24931 ],
+        [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+            ns1:distinctSubjects 2415 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 13528461 ] ;
+    ns1:distinctObjects 1200 ;
+    ns1:distinctSubjects 50663 ;
+    ns1:entities 49831 ;
+    ns1:properties 9 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 1381 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2778 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2361 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 2361 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2415 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 684975 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2396 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 2396 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 138 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 194 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 896 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1792 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 48610 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 97533 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 896 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 896 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 880 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 880 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 896 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 2914682 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 896 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 896 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 46 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 46 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 46 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 46 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 6730 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 13460 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 4557 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 4569 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 6730 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 6730 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 4027 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4027 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 48610 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 48610 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 4562 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 4562 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3122 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 3122 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 6730 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 6730 ],
+        [ ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 106 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 212 ],
+        [ ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 106 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 106 ],
+        [ ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 106 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 584 ],
+        [ ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 106 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 106 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 148 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 296 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 148 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 148 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 148 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 3864 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 24106 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 24106 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 148 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 148 ],
+        [ ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 36 ],
+        [ ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 18 ],
+        [ ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 18 ],
+        [ ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 112 ],
+        [ ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 18 ],
+        [ ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 18 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 46410 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 18788209 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 46508 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 46508 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 539 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1011 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 496 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 502 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 539 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 840 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 1108 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1580 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 1064 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 1070 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 1381 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1381 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 1108 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1408 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 409 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 409 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 7788 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 9335 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 6989 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 14060 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 2622 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 4124 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 6989 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 6989 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 4815 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4815 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 6989 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 15182217 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 6865 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 6865 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 263 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 761 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 1342 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 1342 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 49 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 263 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 263 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 233 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 233 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 233 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 55439 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 263 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 263 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 616 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 616 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4127 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 4127 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 5046 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 10092 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 5046 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 5046 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 5046 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 5046 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 1381 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 40073 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 5046 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 21617 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4309 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 4309 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 24931 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 49862 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 24931 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 24931 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5688 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 5688 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 24929 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 29387 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 24929 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 30279 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 24929 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 30279 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 86 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 86 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 371 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 371 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 718 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 718 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 276 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 322 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 24365 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 24365 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 276 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 322 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2415 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 5127 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2415 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2415 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 53 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 1342 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 472 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 22429 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 34 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 880 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 34 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 896 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 34 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 880 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 34 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 896 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 106 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 13 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 148 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 27 ] ;
+            ns1:property ns1:sparqlEndpoint ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 27 ] ;
+            ns1:property ns1:sparqlEndpoint ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 26 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 679 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 18 ] ;
+            ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 103 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:classPartition [ ns1:class <http://semweb.mmlab.be/ns/rml#LogicalSource> ;
+                    ns1:distinctSubjects 106 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 457 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 22014 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 28 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 718 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 1108 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 46508 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 37 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 5046 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 137 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5688 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 284 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 4815 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 70 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2361 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 233 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 524 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 24106 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 269 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 4772 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 261 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 265 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 4692 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 233 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 375 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 6865 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 12 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 263 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 16 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4309 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 16 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4309 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 16 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4309 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 104 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5131 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 26 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 679 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 65 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2367 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 104 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 5130 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 62 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2343 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 299 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 24365 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 72 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 2396 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 105 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 4027 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 108 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 4093 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 105 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 4027 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 463 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 6730 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <https://w3id.org/np/o/ntemplate/AssertionTemplate> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6781 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 11367 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 32 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 276 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 20589 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 50132 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 13496986 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 18788209 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2064 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 4249 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3886 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 30279 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 524 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 24106 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 472 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 22429 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 457 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 22014 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 1108 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 46508 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 27 ] ;
+    ns1:triples 19054398 .
+
+<https://w3id.org/um/ids/shapes/github-extras> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 189276 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 12 ],
+        [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+            ns1:distinctSubjects 741 ],
+        [ ns1:class <https://schema.org/EntryPoint> ;
+            ns1:distinctSubjects 47 ],
+        [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+            ns1:distinctSubjects 7 ],
+        [ ns1:class <https://schema.org/APIReference> ;
+            ns1:distinctSubjects 11 ],
+        [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+            ns1:distinctSubjects 2324 ],
+        [ ns1:class <https://schema.org/codeRepository> ;
+            ns1:distinctSubjects 76 ],
+        [ ns1:class <https://schema.org/DataCatalog> ;
+            ns1:distinctSubjects 76 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+            ns1:distinctSubjects 167 ],
+        [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+            ns1:distinctSubjects 743 ],
+        [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+            ns1:distinctSubjects 619 ],
+        [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+            ns1:distinctSubjects 30 ],
+        [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+            ns1:distinctSubjects 19 ] ;
+    ns1:distinctObjects 112 ;
+    ns1:distinctSubjects 2532 ;
+    ns1:entities 2447 ;
+    ns1:properties 9 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 28 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 36 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 612 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 33 ] ;
+            ns1:property ns1:sparqlEndpoint ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 22 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 166 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 28 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2324 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 22 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 36 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 23 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 167 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 28 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2291 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 22 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2291 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 36 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 612 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 22 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 166 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 28 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2324 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 22 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 36 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 23 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 167 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 30 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 22 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 30 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 33 ] ;
+            ns1:property ns1:sparqlEndpoint ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 627 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 958 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 24 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 222 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1911 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2518 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 185804 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 231909 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 430 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 711 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 886 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 1542 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1492 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 19 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 18 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 18 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 76743 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 19 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 47 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 47 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2324 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4661 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 47 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 47 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 14 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 7 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 7 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 295 ],
+        [ ns1:classPartition [ ns1:class <http://semanticscience.org/resource/SIO_000623> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 7 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 22 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 11 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 11 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2324 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2324 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 9 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 9 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 11 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2291 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 2291 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2298 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 231909 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 2324 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 2324 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 322 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 322 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 759 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 779 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 76 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 152 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 62 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 62 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 76 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 147 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 741 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 76 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 152 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 62 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 62 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 76 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 147 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 167 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 345 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 115 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 134 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 167 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 167 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 166 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 166 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 167 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 152753 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 167 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 167 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 310 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 310 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 741 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 618 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 618 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1486 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 743 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 743 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 1201 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 743 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 743 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1238 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 612 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 612 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 1067 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 1549 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 1542 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 1542 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 299 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 299 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 299 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 299 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 222 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 444 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 222 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 444 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 30 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 70 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 14 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 15 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 30 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 30 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 741 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 741 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 165 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/dcat#Dataset> ;
+                    ns1:distinctSubjects 30 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 30 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 41 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 11 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 11 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 2291 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 2324 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 2291 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 76 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 2324 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:property ns1:sparqlEndpoint ;
+            ns1:triples 33 ] ;
+    ns1:triples 247557 .
+
+<https://w3id.org/um/ids/shapes/gitlab> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 102805 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 11 ],
+        [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+            ns1:distinctSubjects 4833 ],
+        [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+            ns1:distinctSubjects 10 ],
+        [ ns1:class <https://schema.org/APIReference> ;
+            ns1:distinctSubjects 3 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+            ns1:distinctSubjects 537 ],
+        [ ns1:class <https://schema.org/codeRepository> ;
+            ns1:distinctSubjects 29 ],
+        [ ns1:class <https://schema.org/DataCatalog> ;
+            ns1:distinctSubjects 20 ],
+        [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+            ns1:distinctSubjects 81 ],
+        [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+            ns1:distinctSubjects 4179 ],
+        [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+            ns1:distinctSubjects 29 ],
+        [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+            ns1:distinctSubjects 4 ],
+        [ ns1:class <https://schema.org/EntryPoint> ;
+            ns1:distinctSubjects 39 ] ;
+    ns1:distinctObjects 40 ;
+    ns1:distinctSubjects 4904 ;
+    ns1:entities 4901 ;
+    ns1:properties 8 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4833 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 4806 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4806 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 4806 ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 29 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4833 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4179 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4806 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 512 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4177 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4806 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 512 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 18 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 537 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4177 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4806 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 10 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 512 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4177 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ],
+        [ ns2:objectClassPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <https://schema.org/codeRepository> ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 61 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 105 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2609 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4930 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 98517 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 163123 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 15 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1624 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 8372 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4833 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 9676 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 811 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 537 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1084 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/APIReference> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 537 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 537 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 537 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 537 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 537 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 30640 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 512 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 512 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 49 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 29 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/codeRepository> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 40 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4833 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4833 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/DataCatalog> ;
+                    ns1:distinctSubjects 20 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 40 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 68 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 73 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 34 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 172 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 81 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 81 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 129117 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 81 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 81 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4179 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 8358 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4179 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4179 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4833 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4833 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4179 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4179 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4179 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 8036 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4179 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 8372 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 4177 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 4177 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4179 ] ;
+            ns1:property <https://schema.org/query> ;
+            ns1:triples 8372 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 58 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 29 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 29 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 315 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 29 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4831 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 163123 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 15 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#Shape> ;
+                    ns1:distinctSubjects 14 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 14 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://purl.org/dc/terms/hasPart> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shex#Schema> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 14 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 14 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/shacl#SPARQLFunction> ;
+                    ns1:distinctSubjects 14 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 14 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 15 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 15 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/SoftwareSourceCode> ;
+                    ns1:distinctSubjects 4806 ] ;
+            ns1:property <https://schema.org/codeRepository> ;
+            ns1:triples 4806 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <https://schema.org/EntryPoint> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 20 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/ns/r2rml#TriplesMap> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 10 ] ;
+    ns1:triples 195948 .
+
+<https://www.ebi.ac.uk/rdf/services/biomodels/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 6 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 62 ] ;
+    ns1:distinctObjects 1888 ;
+    ns1:distinctSubjects 1724 ;
+    ns1:entities 6 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 30 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 354 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 41 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 600 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 43 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 688 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 776 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 72 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ] ;
+    ns1:triples 5096 .
+
+<https://www.ebi.ac.uk/rdf/services/chembl/sparql> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class ns1:Dataset ;
+            ns1:distinctSubjects 6 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 62 ] ;
+    ns1:distinctObjects 1888 ;
+    ns1:distinctSubjects 1724 ;
+    ns1:entities 6 ;
+    ns1:properties 11 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 30 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 354 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 41 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 600 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 43 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 688 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:properties ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 5 ] ;
+            ns1:property ns1:propertyPartition ;
+            ns1:triples 776 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:triples ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:distinctObjects ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:classPartition ;
+            ns1:triples 72 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:distinctSubjects ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class ns1:Dataset ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property ns1:entities ;
+            ns1:triples 6 ] ;
+    ns1:triples 5096 .
+
