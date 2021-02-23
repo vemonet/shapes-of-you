@@ -20,7 +20,7 @@ jobs:
         env:
           SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
         run: |
-          curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+          curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
           cat endpoints.json
           echo '::set-output name=matrix::"$( cat endpoints.json )"'
         # Construct query:
