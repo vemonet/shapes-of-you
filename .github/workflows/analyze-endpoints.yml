@@ -10,7 +10,8 @@ jobs:
   get-endpoints-matrix:
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
+      # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
+      matrix: ${{ toJson(steps.generate-matrix.outputs.matrix) }}
 
     steps:
       - uses: actions/checkout@v2
@@ -22,9 +23,16 @@ jobs:
         run: |
           curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
           cat endpoints.json
-          echo '::set-output name=matrix::"$( cat endpoints.json )"'
-        # Construct query:
-        # curl -X GET -H "accept: text/turtle" -o neurodkg.ttl "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat convert2biolink.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+          echo '::set-output name=endpoints_results::"$( cat endpoints.json )"'
+      
+      # - name: use output
+      #   run: |
+      #     echo $endpoints_results | jq '.results.bindings[].sparql_endpoint'
+      #     echo $endpoints_results
+      #   env:
+      #     endpoints_results: ${{ steps.generate-matrix.outputs.endpoints_results}}
+          # Construct query:
+          # curl -X GET -H "accept: text/turtle" -o neurodkg.ttl "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat convert2biolink.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
 
 
   analyze-endpoints:
