@@ -46,6 +46,10 @@ jobs:
     #     # echo $endpoint
     #     # echo "ENDPOINT_URL=${endpoint}" >> $GITHUB_ENV
 
+    - uses: actions/checkout@v2
+      with:
+        ref: 'metadata'
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -97,11 +101,11 @@ jobs:
         ENDPOINT_URL: ${{ matrix.endpoint-url.sparql_endpoint.value }}
       run: |
         export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
-        export ENDPOINT_LABEL=${ENDPOINT_URL//https:/}
+        export ENDPOINT_LABEL=${ENDPOINT_LABEL//https:/}
         export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
-        git stash
-        git fetch
-        git checkout metadata
+        # git stash
+        # git fetch
+        # git checkout metadata
         mv output/metadata.ttl metadata-$ENDPOINT_LABEL.ttl
         git diff
         git config --global user.email "vincent.emonet@gmail.com"
