@@ -19,12 +19,9 @@ jobs:
 
       - name: Get list of endpoints
         id: generate-matrix
-        # env:
-        #   SPARQL_ENDPOINT_URL: ${{ matrix.endpoint-url }}
         run: |
           curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
           endpoints_json=$( cat endpoints.json )
-          # endpoints_json=${endpoints_json/"/\\"}
           echo $endpoints_json
           echo ::set-output name=matrix::$endpoints_json
       
@@ -44,7 +41,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        endpoint-url: ${{ fromJson(needs.get-endpoints-matrix.outputs.matrix).sparql_endpoint.value }}
+        endpoint-url: ${{ fromJson(toJson(needs.get-endpoints-matrix.outputs.matrix)).sparql_endpoint.value }}
         # include:
         # - endpoint-url: http://dbpedia.org/sparql
         # - endpoint-url: http://query.wikidata.org/sparql
