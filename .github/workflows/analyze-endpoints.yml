@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
-      matrix: ${{ toJson(steps.generate-matrix.outputs.endpoints_results) }}
+      matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.endpoints_results)) }}
 
     steps:
       - uses: actions/checkout@v2
