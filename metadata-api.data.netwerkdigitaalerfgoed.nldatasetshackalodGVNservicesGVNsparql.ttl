@@ -1,0 +1,1095 @@
+@prefix ns1: <http://rdfs.org/ns/void#> .
+@prefix ns2: <http://ldf.fi/void-ext#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/kit01> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 25421 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+            ns1:distinctSubjects 5655 ] ;
+    ns1:distinctObjects 18616 ;
+    ns1:distinctSubjects 5655 ;
+    ns1:entities 5655 ;
+    ns1:properties 27 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 8338 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5643 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 21451 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/terms/type> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 44 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 44 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4955 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 4955 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 999 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 1017 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/thumbnail> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://lod.kb.nl/ontology/shelfMark> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/depiction> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1863 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 1863 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 11310 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/terms/issued> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1997 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 1997 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5002 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 5002 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/theme> ;
+            ns1:triples 11310 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/terms/source> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 16965 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/terms/medium> ;
+            ns1:triples 16941 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 5655 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 5655 ] ;
+            ns1:property <http://purl.org/dc/terms/format> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4257 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4257 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5655 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/issued> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 436 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 5002 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5655 ] ;
+            ns1:property <http://lod.kb.nl/ontology/shelfMark> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 344 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 8338 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5655 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5655 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2098 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 4955 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 5655 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 17 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 1997 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1301 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 1863 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 11310 ] ;
+    ns1:triples 186018 .
+
+<https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/kitlv> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/opdrachtgever> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <http://schema.org/DataSet> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+            ns1:distinctSubjects 193 ],
+        [ ns1:class <http://schema.org/Agent> ;
+            ns1:distinctSubjects 59 ],
+        [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+            ns1:distinctSubjects 2827 ],
+        [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitzetterverkoper> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/creator> ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotostudio> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitgever> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <http://purl.org/dc/dcmitype/Collection> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotograaf> ;
+            ns1:distinctSubjects 56 ],
+        [ ns1:class <http://schema.org/Organization> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 13898 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 12 ] ;
+    ns1:distinctObjects 8749 ;
+    ns1:distinctSubjects 3080 ;
+    ns1:entities 3079 ;
+    ns1:properties 27 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctSubjects 193 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 198 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctSubjects 193 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 217 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2008 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 2008 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/creator> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 5654 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Collection> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/theme> ;
+            ns1:triples 5654 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 8481 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2653 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 2653 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3.org/2004/02/skos/core#inScheme> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2750 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 2750 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/opdrachtgever> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotostudio> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/source> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/creator> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitzetterverkoper> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2824 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 2824 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Collection> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/DataSet> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitzetterverkoper> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1524 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 1524 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotostudio> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitgever> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 5 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://lod.kb.nl/ontology/shelfMark> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Collection> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/depiction> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotograaf> ;
+                    ns1:distinctSubjects 56 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 56 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitgever> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3.org/2004/02/skos/core#inScheme> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/Organization> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/issued> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/thumbnail> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctSubjects 59 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 123 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitzetterverkoper> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3.org/2004/02/skos/core#inScheme> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/DataSet> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 775 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 1025 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/type> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/medium> ;
+            ns1:triples 4375 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctSubjects 192 ] ;
+            ns1:property <http://www.w3.org/2004/02/skos/core#inScheme> ;
+            ns1:triples 198 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitgever> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotograaf> ;
+                    ns1:distinctSubjects 56 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 115 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1524 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 1524 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/Organization> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/format> ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/opdrachtgever> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3.org/2004/02/skos/core#inScheme> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctSubjects 59 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 69 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2827 ],
+        [ ns1:classPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/opdrachtgever> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://schema.org/DataSet> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 1524 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/format> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property <http://purl.org/dc/terms/medium> ;
+            ns1:triples 4375 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotograaf> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 1524 ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 1524 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotostudio> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/theme> ;
+            ns1:triples 5654 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/creator> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 77 ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/DataSet> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/dc/dcmitype/Collection> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/opdrachtgever> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitgever> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotostudio> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/creator> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 77 ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Organization> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 2828 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotograaf> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 1524 ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitzetterverkoper> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 183 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 1025 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 183 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 775 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/theme> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/DataSet> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Organization> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/medium> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/opdrachtgever> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ],
+        [ ns2:objectClassPartition [ ns1:class <http://purl.org/dc/dcmitype/Collection> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/format> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Organization> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Collection> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitzetterverkoper> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotograaf> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1524 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1524 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2827 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotostudio> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotograaf> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1524 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/fotostudio> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/creator> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 77 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/creator> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 77 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 56 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1524 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ],
+        [ ns2:objectClassPartition [ ns1:class <https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/uitgever> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Agent> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ],
+        [ ns2:objectClassPartition [ ns1:class <http://schema.org/Organization> ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:classPartition [ ns1:class <http://schema.org/DataSet> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2352 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2827 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/terms/issued> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 213 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 2750 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2628 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 3103 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2829 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 2829 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2827 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 535 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 2824 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2827 ] ;
+            ns1:property <http://lod.kb.nl/ontology/shelfMark> ;
+            ns1:triples 2827 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 255 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 2653 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1790 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 2008 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 5654 ] ;
+    ns1:triples 81671 .
+
+<https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/pkl01> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+            ns1:distinctSubjects 4219 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 24913 ] ;
+    ns1:distinctObjects 9354 ;
+    ns1:distinctSubjects 4220 ;
+    ns1:entities 4219 ;
+    ns1:properties 26 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/thumbnail> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://lod.kb.nl/ontology/shelfMark> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/depiction> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/theme> ;
+            ns1:triples 8438 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2890 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 2890 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/terms/source> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 12657 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 9327 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 3571 ] ;
+            ns1:property <http://purl.org/dc/terms/format> ;
+            ns1:triples 3571 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2546 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 2546 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/terms/type> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 1339 ] ;
+            ns1:property <http://purl.org/dc/terms/medium> ;
+            ns1:triples 1339 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 5779 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 31432 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 2089 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 2089 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4219 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 4219 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 8438 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3290 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 4219 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3290 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4219 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 627 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 5779 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4219 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 4219 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 177 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 2546 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4219 ] ;
+            ns1:property <http://lod.kb.nl/ontology/shelfMark> ;
+            ns1:triples 4219 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 4219 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4220 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 4220 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4219 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/depiction> ;
+            ns1:triples 4219 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4219 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 4219 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1054 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 2089 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 258 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 9327 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2461 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 2890 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 192 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 8438 ] ;
+    ns1:triples 151792 .
+
+<https://data.netwerkdigitaalerfgoed.nl/hackalod/gvn/ubl01> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 49648 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+            ns1:distinctSubjects 619 ],
+        [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+            ns1:distinctSubjects 11087 ] ;
+    ns1:distinctObjects 37766 ;
+    ns1:distinctSubjects 11706 ;
+    ns1:entities 11706 ;
+    ns1:properties 24 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 482 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 508 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6192 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 7178 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 23412 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 10435 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 11706 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11706 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 11706 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 11706 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 10435 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 11706 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11706 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 11706 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11706 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 11706 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 7588 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 11685 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 708 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 6928 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 983 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 10998 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 1238 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/terms/type> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 10998 ] ;
+            ns1:property <http://purl.org/dc/terms/spatial> ;
+            ns1:triples 10998 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/terms/medium> ;
+            ns1:triples 22156 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 6928 ] ;
+            ns1:property <http://purl.org/dc/terms/created> ;
+            ns1:triples 6928 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/theme> ;
+            ns1:triples 22174 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 494 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 494 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/identifier> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/medium> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/depiction> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/terms/source> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 33261 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/source> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 7487 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 12022 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 508 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 508 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/contributor> ;
+            ns1:triples 1427 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 7133 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/description> ;
+            ns1:triples 7178 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11066 ] ;
+            ns1:property <http://purl.org/dc/terms/extent> ;
+            ns1:triples 11066 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://dbpedia.org/ontology/owner> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/depiction> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/title> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 7487 ] ;
+            ns1:property <http://purl.org/dc/terms/creator> ;
+            ns1:triples 7487 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 1518 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/thumbnail> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/theme> ;
+            ns1:triples 1238 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/isPartOf> ;
+            ns1:triples 1857 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://xmlns.com/foaf/0.1/thumbnail> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordRights> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/source> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/rights> ;
+            ns1:triples 22174 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/Text> ;
+                    ns1:distinctSubjects 619 ] ;
+            ns1:property <http://purl.org/dc/terms/type> ;
+            ns1:triples 619 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 11087 ] ;
+            ns1:property <http://lod.kb.nl/ontology/recordIdentifier> ;
+            ns1:triples 11087 ],
+        [ ns1:classPartition [ ns1:class <http://purl.org/dc/dcmitype/StillImage> ;
+                    ns1:distinctSubjects 23 ] ;
+            ns1:property <http://purl.org/dc/terms/subject> ;
+            ns1:triples 45 ] ;
+    ns1:triples 305479 .
+
