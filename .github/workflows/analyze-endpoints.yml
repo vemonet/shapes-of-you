@@ -10,7 +10,7 @@ jobs:
   get-endpoints-matrix:
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).data.results.bindings) }}
+      matrix: ${{ toJson(fromJson(steps.generate-matrix.outputs.matrix).results.bindings) }}
 
     steps:
       - uses: actions/checkout@v2
