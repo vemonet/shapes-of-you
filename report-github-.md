@@ -1,6 +1,6 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `topic:openapi`
+**Indexing topic**: `topic:skos`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
@@ -8,66 +8,269 @@
 
 
 ---
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.2.owl
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_35_specialCharacters%2Fexpected.ttl
 
 
 
 ---
-RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.2.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+RDF parsed as ttl, in repository: https://github.com/sparna-git/xls2rdf
+> at line 19 of <>:
+Bad syntax (Prefix "dcterms:" not bound) at ^ in:
+"...b'inebleau.fr/vocabulaires/personnes> a skos:ConceptScheme ;\n\t'^b'dcterms:title "Personnes"@fr;\n\tskos:hasTopConcept <http://ww'..."
 
 ---
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.1.owl
-
-
-
----
-RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
-> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.1.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
-
----
-File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/data%2Finitial-openpredict-metadata.ttl
+File: https://raw.githubusercontent.com/sparna-git/xls2rdf/master/xls2rdf-lib%2Fsrc%2Ftest%2Fresources%2Fsuite%2F_32_qbPostProcessingTest%2Fexpected.ttl
 
 
 
 ---
-RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
-> at line 25 of <>:
-Bad syntax (expected directive or statement) at ^ in:
-"...b'tifier "HPO-SIM";\n  openpredict:embedding_type "Diseases" .\n'^b'aaa\n<https://w3id.org/openpredict/feature/PHENO-SIM> a mls:F'..."
+RDF parsed as ttl, in repository: https://github.com/sparna-git/xls2rdf
+> at line 14 of <>:
+Bad syntax (Prefix "dcat:" not bound) at ^ in:
+"...b'atoiredeslangues.culture.gouv.fr/dataset/enquete-INED>\n  \ta '^b'dcat:Dataset;\n    a qb:DataSet;\n    dct:title "statistique d'..."
 
 ---
-File: https://raw.githubusercontent.com/caohanyang/REST_OPENAPI/master/gen_spec%2Fplugins%2FGazetteer_LKB%2Fsamples%2Fdictionary_from_local_ontology%2Fconfig.ttl
-
-
-
----
-RDF parsed as ttl, in repository: https://github.com/caohanyang/REST_OPENAPI
-> at line 43 of <>:
-Bad syntax (newline found in string literal) at ^ in:
-"...b'matters!\r\n\t\t owlim:imports \r\n\t\t\t\t"%relpath%/kb/owl/owl.rdfs;'^b'\r\n\t\t\t\t %relpath%/kb/owl/protons.owl;\r\n\t\t\t\t %relpath%/kb/owl/'..."
-
----
-File: https://raw.githubusercontent.com/heseba/wotdl2api/master/sample.ttl
+File: https://raw.githubusercontent.com/Coleridge-Initiative/adrf-onto/master/rcc.ttl
 
 
 
 ---
-RDF parsed as ttl, in repository: https://github.com/heseba/wotdl2api
-> at line 571 of <>:
+RDF parsed as ttl, in repository: https://github.com/Coleridge-Initiative/adrf-onto
+> at line 12 of <>:
 Bad syntax (Prefix ":" not bound) at ^ in:
-"...b'ng .\n\n\n<#DecreaseBrightness>\n    a wotdl:DecreaseEffect ;\n  '^b'  :affects :AmbientLuminosity .\n\n<#AmbientLuminosity>\n    a '..."
+"...b'ns#> .\n@prefix xsd:\t<http://www.w3.org/2001/XMLSchema#> .\n\n\n'^b':dataset481\n  rdf:type :Dataset ;\n  dct:title "National Heal'..."
 
 ---
-File: https://raw.githubusercontent.com/heseba/wotdl2api/master/icwe2019.ttl
+File: https://raw.githubusercontent.com/Coleridge-Initiative/adrf-onto/master/adrf.ttl
 
 
 
 ---
-RDF parsed as ttl, in repository: https://github.com/heseba/wotdl2api
-> at line 557 of <>:
+RDF parsed as ttl, in repository: https://github.com/Coleridge-Initiative/adrf-onto
+> at line 24 of <>:
 Bad syntax (Prefix ":" not bound) at ^ in:
-"...b'ng .\n\n\n<#DecreaseBrightness>\n    a wotdl:DecreaseEffect ;\n  '^b'  :affects :AmbientLuminosity .\n\n<#AmbientLuminosity>\n    a '..."
+"...b'ce> .\n@prefix xsd:\t\t<http://www.w3.org/2001/XMLSchema#> .\n\n\n'^b':ADRF_Ontology rdf:type skos:ConceptScheme ;\n  skos:definiti'..."
+
+---
+File: https://raw.githubusercontent.com/NisrineBennor/Project_Master2_SemanticWeb/main/Ontologie_Orthodef_Orthophonie.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/NisrineBennor/Project_Master2_SemanticWeb
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/Ontologie_Orthodef_Orthophonie.owl:26:0: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#Literal
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-ud%C3%A1lost%C3%AD.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-sportovi%C5%A1%C5%A5.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/dny-v-t%C3%BDdnu.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-turistick%C3%BDch-c%C3%ADl%C5%AF.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-pracovn%C3%ADch-vztah%C5%AF.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/pohlav%C3%AD.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/stupn%C4%9B-p%C5%99%C3%ADstupnosti.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/m%C3%ADra-specifikace-t%C3%A9matu-pr%C3%A1ce.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/t%C3%A9mata-ud%C3%A1lost%C3%AD.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/jin%C3%A1-%C4%8Dasov%C3%A1-specifikace.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/sporty.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-t%C5%99%C3%ADd%C4%9Bn%C3%BDch-odpad%C5%AF.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/kategorie-%C3%BAzemn%C3%AD-ochrany.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/opendata-mvcr/ciselniky/master/typy-d%C5%99evin.jsonld
+
+
+
+---
+RDF parsed as json-ld, in repository: https://github.com/opendata-mvcr/ciselniky
+> 'ascii' codec can't encode characters in position 5-6: ordinal not in range(128)
+
+---
+File: https://raw.githubusercontent.com/alcinnz/skos-cloud/master/rdf-parser-tests%2Ftimescale-isc2014.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/alcinnz/skos-cloud
+> at line 11286 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ologicEra ;\n  rdf:type skos:Concept ;\n  gts:rank <http://res'^b'ource.geosciml.org/ontology/timescale/rank/Eon> ;\n  thors:be'..."
+
+---
+File: https://raw.githubusercontent.com/alcinnz/skos-cloud/master/rdf-parser-tests%2Ftests%2Ffinal.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/alcinnz/skos-cloud
+> at line 11286 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"...b'ologicEra ;\n  rdf:type skos:Concept ;\n  gts:rank <http://res'^b'ource.geosciml.org/ontology/timescale/rank/Eon> ;\n  thors:be'..."
+
+---
+File: https://raw.githubusercontent.com/kbss-cvut/termit/master/src%2Ftest%2Fresources%2Fvocabularies%2Fipr-glossaries.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/kbss-cvut/termit
+> at line 1 of <>:
+Bad syntax (expected '.' or '}' or ']' at end of statement) at ^ in:
+"b'<http://data.iprpraha.cz/zdroj/slovnik/mpp-3> '^b'{\n    <http://data.iprpraha.cz/zdroj/slovnik/mpp-3/plocha-te'..."
+
+---
+File: https://raw.githubusercontent.com/kbss-cvut/termit/master/rulesets%2Frules-termit-spin.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/kbss-cvut/termit
+> at line 17 of <>:
+Bad syntax (Prefix "skos:" not bound) at ^ in:
+"...b'          WHERE { ?vocabulary pdp:popisuje-dokument ?this . '^b'}"""\n] .\n\nskos:Concept a rdfs:Class ;\n# InverseOf between je'..."
+
+---
+File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/demografia%2Fpadron-municipal%2Ftipo-local-residencia%2Ftipo-local-residencia.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/opencitydata/listas-codigos-skos
+> at line 11 of <>:
+Bad syntax (Prefix "dc:" not bound) at ^ in:
+"...b'/demografia/padron-municipal/tipo-local-residencia/2> ;\n    '^b'dc:creator "Paola Espinoza Arias (Universidad Polit\xc3\xa9cnica d'..."
+
+---
+File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/transporte%2Ftrafico%2Ftipo-incidencia.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/opencitydata/listas-codigos-skos
+> at line 31 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'ddata.es/datosabiertos/kos/transporte/trafico/tipo-incidenci'^b'a> .\n\n<http://vocab.linkeddata.es/datosabiertos/kos/transpor'..."
+
+---
+File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/sector-publico%2Fterritorio%2Ftipo-estado.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/opencitydata/listas-codigos-skos
+> at line 13 of <>:
+Bad syntax (Prefix "dc:" not bound) at ^ in:
+"...b'os/sector-publico/territorio/tipo-estado/provisional> ;\n    '^b'dc:creator "Oscar Corcho (Universidad Polit\xc3\xa9cnica de Madrid'..."
+
+---
+File: https://raw.githubusercontent.com/opencitydata/listas-codigos-skos/master/economia%2Fdeuda-publica-financiera%2Ftipo-entidad-prestamista%2Ftipo-entidad-prestamista.nt
+
+
+
+---
+RDF parsed as nt, in repository: https://github.com/opencitydata/listas-codigos-skos
+> Invalid line: ''
 
 ---
 
