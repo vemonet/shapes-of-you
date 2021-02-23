@@ -25,7 +25,7 @@ jobs:
           curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
           endpoints_json=$( cat endpoints.json )
           echo $endpoints_json
-          echo '::set-output name=matrix::"$endpoints_json"'
+          echo ::set-output name=matrix::$endpoints_json
       
       # - name: use output
       #   run: |
