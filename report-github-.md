@@ -1,11 +1,73 @@
 ## Fails loading files to `rdflib`
 
-**Indexing topic**: `knowledge+provider`
+**Indexing topic**: `topic:grlc`
 
 *Please check if your RDF file is properly formatted. We recommend to **use https://www.easyrdf.org/converter to get better insights on the error**, and store the shapes in `.ttl` files*
 
 
 
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.2.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.2.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/openpredict%2Fdata%2Fontology%2Fplex_tbox_0.1.1.owl
+
+
+
+---
+RDF parsed as xml, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> file:///home/runner/work/shapes-of-you/shapes-of-you/cloned_repo/openpredict/data/ontology/plex_tbox_0.1.1.owl:41:68: Repeat node-elements inside property elements: http://www.w3.org/2002/07/owl#IRI
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/translator-openpredict/master/data%2Finitial-openpredict-metadata.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/translator-openpredict
+> at line 25 of <>:
+Bad syntax (expected directive or statement) at ^ in:
+"...b'tifier "HPO-SIM";\n  openpredict:embedding_type "Diseases" .\n'^b'aaa\n<https://w3id.org/openpredict/feature/PHENO-SIM> a mls:F'..."
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/neuro_dkg/master/nano-template%2Fneurodkg_template.trig
+
+
+
+---
+RDF parsed as trig, in repository: https://github.com/MaastrichtU-IDS/neuro_dkg
+> at line 40 of <>:
+Bad syntax (Prefix "sub:" not bound) at ^ in:
+"...b'e" .\n  eco:0007672 rdfs:label "computational evidence" .\n\n  '^b'sub:assertion a nt:AssertionTemplate ;\n    rdfs:label "Defin'..."
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/neuro_dkg/master/nano-template%2Fnanopub.trig
+
+
+
+---
+RDF parsed as trig, in repository: https://github.com/MaastrichtU-IDS/neuro_dkg
+> at line 44 of <>:
+Bad syntax (bad escape) at ^ in:
+"...b't:hasPrefixLabel " has the drug" ;\n    nt:hasRegex "[A-Z]{2}'^b'\\d{5}" .\n\n  :disease a nt:GuidedChoicePlaceholder ;\n    rdfs'..."
+
+---
+File: https://raw.githubusercontent.com/MaastrichtU-IDS/neuro_dkg/master/data%2Fhcls-metadata.ttl
+
+
+
+---
+RDF parsed as ttl, in repository: https://github.com/MaastrichtU-IDS/neuro_dkg
+> at line 27 of <>:
+Bad syntax (Prefix "rdf:" not bound) at ^ in:
+"...b'       ns1:distinctSubjects 75 ] ;\n            ns1:property '^b'rdf:type ;\n            ns1:triples 75 ],\n        [ ns1:class'..."
 
 ---
 
