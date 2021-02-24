@@ -18,32 +18,23 @@ services:
       # http://docs.openlinksw.com/virtuoso/rdfperfgeneral/
       - DBA_PASSWORD=${VIRTUOSO_PASSWORD}
       - SPARQL_UPDATE=true
-      - DEFAULT_GRAPH=http://bio2rdf.org
+      - DEFAULT_GRAPH=https://w3id.org/um/shapes-of-you
       - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db
-      - VIRT_SPARQL_ResultSetMaxRows=999999999999999999
-      - VIRT_SPARQL_MaxQueryCostEstimationTime=100000
-      - VIRT_SPARQL_MaxQueryExecutionTime=6000
-      - VIRT_VDB_VDBDisconnectTimeout=7200000
-      - VIRT_Client_SQL_QUERY_TIMEOUT=14400000
-      - VIRT_CLient_SQL_TXN_TIMEOUT=14400000
-      - VIRT_Database_ErrorLogLevel=0 # default: 7 is maximum logs
-      - VIRT_Parameters_Timeout=7200
-      - VIRT_Parameters_TransactionAfterImageLimit=5000000000 # default is 50M
-      - VIRT_Parameters_NumberOfBuffers=493674 # To use up to 4G of RAM according to documentation
-      # Each buffer caches one 8K page of data and occupies approximately 8700 bytes of memory.
-      # - VIRT_Parameters_NumberOfBuffers=680000 # For 16G systems according to Optimization docs, but cause freeze
-      # - VIRT_Parameters_MaxDirtyBuffers=500000
-      # - VIRT_Parameters_NumberOfBuffers=5450000 # For 64G systems
-      # - VIRT_Parameters_MaxDirtyBuffers=4000000
-      # - VIRT_Parameters_MaxCheckpointRemap=4000
-      # - VIRT_Parameters_MaxClientConnections= 10 # Better to reduce if a lot of big requests
-      # - VIRT_SPARQL_DefaultQuery=select distinct ?Concept where {[] a ?Concept} LIMIT 100
-      # - VIRT_VDB_VDBDisconnectTimeout=7200000
-      # - VIRT_Client_SQL_QUERY_TIMEOUT=14400000
-      # - VIRT_CLient_SQL_TXN_TIMEOUT=14400000
-      # Opt in GB
-      # $buffers = floor($opt * 85000);
-      # $dirtybuffers = floor($opt * 62500);
+      - VIRT_Database_ErrorLogLevel=1 # default: 7 is maximum logs
+      # Bio2RDF large dataset config
+      - VIRT_SPARQL_MaxQueryCostEstimationTime=20000
+      - VIRT_SPARQL_MaxQueryExecutionTime=10000
+      - VIRT_Database_MaxCheckpointRemap=125000
+      - VIRT_TempDatabase_MaxCheckpointRemap=125000
+      - VIRT_Parameters_TempDBSize=100000000
+      - VIRT_Parameters_NumberOfBuffers=5450000 # For 64G systems
+      - VIRT_Parameters_MaxDirtyBuffers=4000000
+      # - VIRT_Parameters_NumberOfBuffers=10880000 # For 128G systems
+      # - VIRT_Parameters_MaxDirtyBuffers=8000000
+      - VIRT_SPARQL_ShortenLongURIs=1
+      - VIRT_SPARQL_MaxCacheExpiration=1
+      - VIRT_SPARQL_ExternalQuerySource=1
+      - VIRT_SPARQL_ExternalXsltSource=1
     # ports:
     #   - 8890:8890
 

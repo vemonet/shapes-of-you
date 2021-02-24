@@ -103,6 +103,7 @@ def main(argv):
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
 
 def fetch_from_lod():
+  """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""
   lod_datasets_count = 0
   lod_endpoints_count = 0
   added_endpoints_count = 0
@@ -112,7 +113,8 @@ def fetch_from_lod():
     if 'sparql' in dataset_obj:
       for sparql_obj in dataset_obj['sparql']:
         lod_endpoints_count += 1
-        endpoint_added = test_sparql_endpoint(sparql_obj['access_url'])
+        print('Testing endpoint: ' + str(sparql_obj['access_url']))
+        endpoint_added = test_sparql_endpoint(str(sparql_obj['access_url']))
         if endpoint_added:
           added_endpoints_count += 1
   add_to_report('Datasets in LOD: ' + str(lod_datasets_count) +

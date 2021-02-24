@@ -10,6 +10,9 @@ on:
         required: true
         default: 'info'
 
+# TODO: to delete repo that has been deleted, run a workflow every day to check 
+# if all indexed repos are still up (delete the one not available anymore)
+
 env:
   LOGGING_LEVEL: ${{ github.event.inputs.logging }}
 jobs:
@@ -136,24 +139,24 @@ jobs:
         # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
         path: shapes-rdf.ttl
 
-    - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.search-string }}.md file in report branch
-      env:
-        GIT_SERVICE: ${{ matrix.git-service }}
-        # RUN_LABEL: ${{ matrix.search-string }}
-      run: |
-        export RUN_LABEL=${RUN_LABEL//:/-}
-        export RUN_LABEL=${RUN_LABEL//+/-}
-        mv REPORT.md tmp-REPORT.md
-        git stash
-        git fetch
-        git checkout report
-        mv tmp-REPORT.md report-$GIT_SERVICE-$RUN_LABEL.md
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add report-$GIT_SERVICE-$RUN_LABEL.md
-        git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
-        git push || exit 0
+    # - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.search-string }}.md file in report branch
+    #   env:
+    #     GIT_SERVICE: ${{ matrix.git-service }}
+    #     # RUN_LABEL: ${{ matrix.search-string }}
+    #   run: |
+    #     export RUN_LABEL=${RUN_LABEL//:/-}
+    #     export RUN_LABEL=${RUN_LABEL//+/-}
+    #     mv REPORT.md tmp-REPORT.md
+    #     git stash
+    #     git fetch
+    #     git checkout report
+    #     mv tmp-REPORT.md report-$GIT_SERVICE-$RUN_LABEL.md
+    #     git diff
+    #     git config --global user.email "vincent.emonet@gmail.com"
+    #     git config --global user.name "Vincent Emonet"
+    #     git add report-$GIT_SERVICE-$RUN_LABEL.md
+    #     git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
+    #     git push || exit 0
 
     - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
       uses: MaastrichtU-IDS/RdfUpload@master
