@@ -166,6 +166,7 @@ jobs:
       with:
         java-version: 11
 
+    # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFInsert
     - name: Split RDF files before load
       env:
         D2S_USERNAME: dba

@@ -22,8 +22,8 @@ services:
       - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db
       - VIRT_Database_ErrorLogLevel=1 # default: 7 is maximum logs
       # Bio2RDF large dataset config
-      - VIRT_SPARQL_MaxQueryCostEstimationTime=20000
-      - VIRT_SPARQL_MaxQueryExecutionTime=10000
+      - VIRT_SPARQL_MaxQueryCostEstimationTime=200000
+      - VIRT_SPARQL_MaxQueryExecutionTime=1000000
       - VIRT_Database_MaxCheckpointRemap=125000
       - VIRT_TempDatabase_MaxCheckpointRemap=125000
       - VIRT_Parameters_TempDBSize=100000000
