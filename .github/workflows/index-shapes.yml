@@ -175,8 +175,8 @@ jobs:
         GIT_SERVICE: ${{ matrix.git-service }}
       run: |
         mkdir -p output
-        split -l 2000 --additional-suffix=.nt shapes-rdf.nt output/
-        wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
+        split -l 1000 --additional-suffix=.nt shapes-rdf.nt output/
+        wget -q https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
         java -jar sparql-operations.jar -o upload -i "output/*" -e "https://data.index.semanticscience.org/sparql" -g "https://w3id.org/um/ids/shapes/$GIT_SERVICE"
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
