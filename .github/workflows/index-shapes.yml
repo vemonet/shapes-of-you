@@ -84,6 +84,7 @@ jobs:
         - git-service: gitlab
           search-string: obofoundry
         - git-service: lod-cloud
+        - git-service: yummydata
 
         # - git-service: github # eclipse/rdf4j slow down
         #   search-string: shacl

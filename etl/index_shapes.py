@@ -91,6 +91,9 @@ def main(argv):
   elif git_registry == 'lod-cloud':
     fetch_from_lod()
 
+  elif git_registry == 'lod-cloud':
+    fetch_from_yummydata()
+
   # Extras SPARQL endpoints to check
   extra_endpoints = []
   with open(str(root) + '/../EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
@@ -128,6 +131,23 @@ def fetch_from_lod():
     '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count) +
     '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
 
+def fetch_from_yummydata():
+  """Fetch and test SPARQL endpoints from http://yummydata.org/api"""
+  lod_datasets_count = 0
+  lod_endpoints_count = 0
+  added_endpoints_count = 0
+  lod_obj = requests.get('https://yummydata.org/api/endpoint/search', headers={'accept': 'application/json'}).json()
+  for dataset_obj in lod_obj:
+    lod_datasets_count += 1
+    if 'endpoint_url' in dataset_obj:
+      endpoint_added = test_sparql_endpoint(str(dataset_obj['endpoint_url']))
+      if endpoint_added:
+        added_endpoints_count += 1
+  add_to_report('Datasets in LOD: ' + str(lod_datasets_count) +
+    '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count) +
+    '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
+
+# curl -L -H 'Accept: application/json' https://yummydata.org/api/endpoint/search
 
 # Retrieve releases in projects returned by the GraphQL calls
 def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
