@@ -8,3 +8,5 @@ PyYAML
 prance[osv,icu,cli]
 obonet
 PyShExC
+git+https://github.com/MaastrichtU-IDS/d2s-cli.git@develop
+# d2s

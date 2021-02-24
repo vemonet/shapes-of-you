@@ -22,9 +22,15 @@ from pyshexc.parser_impl import generate_shexj
 from python_graphql_client import GraphqlClient
 import gitlab
 
+from d2s.sparql_operations import sparql_update_instance
+
 GITHUB_TOKEN = os.environ.get("API_GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
+
+ENDPOINT_URL = os.environ.get("ENDPOINT_USER", "https://data.index.semanticscience.org/sparql")
+ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "")
+ENDPOINT_PASSWORD = os.environ.get("ENDPOINT_PASSWORD", "")
 
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -152,7 +158,7 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
               repo_description = ''
             repo_description = repo_json["description"]
             # repo_description = repo_json["shortDescriptionHTML"]
-            shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+            shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'github')
         has_next_page = data["data"]["search"]["pageInfo"][
             "hasNextPage"
         ]
@@ -213,7 +219,7 @@ def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
       logging.warning('🕊 No default_branch found for repo_url, using master')
       branch = 'master'
       repo_description = ''
-    shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+    shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'github')
   return shapes_graph
 
 def github_graphql_get_extra(repo):
@@ -255,7 +261,7 @@ def fetch_from_gitlab(shapes_graph, gl, search_topic):
           repo_descriptions.append(repo_json["description"])
 
         repo_description = ' - '.join(repo_descriptions)
-        shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+        shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'gitlab')
       except Exception as e:
         add_to_report('GitLab issue processing: ' + str(repo_json) + '\n\n' + str(e))
     
@@ -286,11 +292,13 @@ def fetch_from_gitee(shapes_graph, token, search_topic):
 
       repo_description = ' - '.join(repo_descriptions)
       # repo_description = repo_json["shortDescriptionHTML"]
-      shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description)
+      shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'gitee')
     return shapes_graph
 
 
-def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
+def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git_service):
+    shapes_graph = Graph()
+
     logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
     shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
     os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
@@ -327,6 +335,10 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description):
     for rdf_file_path in get_files(['*.obo']):
         shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
         
+    # TODO: Update SPARQL endpoint here using
+    graph_uri = 'https://w3id.org/um/ids/shapes/' + git_service
+    sparql_update_instance(repo_url, shapes_graph, ENDPOINT_URL, ENDPOINT_USER, ENDPOINT_PASSWORD, 3, graph_uri)
+
     return shapes_graph
 
 

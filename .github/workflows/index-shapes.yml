@@ -122,6 +122,8 @@ jobs:
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        ENDPOINT_USER: ${{ secrets.GRAPHDB_USER }}
+        ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
         python etl/index_shapes.py $GIT_SERVICE $SEARCH_TOPICS
 
@@ -158,15 +160,15 @@ jobs:
     #     git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
     #     git push || exit 0
 
-    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
-      uses: MaastrichtU-IDS/RdfUpload@master
-      with:
-        file: shapes-rdf.ttl
-        # endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        endpoint: https://data.index.semanticscience.org/sparql
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
+    # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
+    #   uses: MaastrichtU-IDS/RdfUpload@master
+    #   with:
+    #     file: shapes-rdf.ttl
+    #     # endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+    #     endpoint: https://data.index.semanticscience.org/sparql
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
 
 
     # - name: Clear older graph in the triplestore
