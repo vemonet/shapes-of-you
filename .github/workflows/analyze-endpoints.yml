@@ -18,11 +18,11 @@ jobs:
       - name: Get list of endpoints
         id: generate-matrix
         run: |
-          curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
-          # curl -X GET -H "accept: application/json" -o endpoints.json "https://data.index.semanticscience.org/sparql?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+          curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
           endpoints_json=$( cat endpoints.json )
           echo $endpoints_json
           echo ::set-output name=matrix::$endpoints_json
+        # curl -X GET -H "accept: application/json" -o endpoints.json "https://data.index.semanticscience.org/sparql?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
       
         # Construct SPARQL query:
         # curl -X GET -H "accept: text/turtle" -o neurodkg.ttl "https://graphdb.dumontierlab.com/repositories/NeuroDKG?query=$(cat convert2biolink.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
