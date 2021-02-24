@@ -109,8 +109,8 @@ def main(argv):
     if 'description' in endpoint_metadata:
       shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
 
-  shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
-  # shapes_graph.serialize('shapes-rdf.nt', format='nt')
+  # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+  # # shapes_graph.serialize('shapes-rdf.nt', format='nt')
 
 def fetch_from_lod():
   """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""
@@ -318,7 +318,7 @@ def fetch_from_gitee(shapes_graph, token, search_topic):
 
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git_service):
-    # shapes_graph = Graph()
+    shapes_graph = Graph()
 
     logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
     shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
@@ -359,7 +359,19 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
     # TODO: Update SPARQL endpoint here using
     # graph_uri = 'https://w3id.org/um/ids/shapes/' + git_service
     # sparql_update_instance(repo_url, shapes_graph, ENDPOINT_URL, ENDPOINT_USER, ENDPOINT_PASSWORD, 3, graph_uri)
-
+    
+    # TODO: load each repo in a different file in the VAD
+    # curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/$GIT_SERVICE.ttl -u dba:password
+    # https://github.com/MaastrichtU-IDS/shapes-of-you becomes: github.com/MaastrichtU-IDS/shapes-of-you.ttl
+    repo_vad_url = repo_url.replace('https://', '').replace('http://', '')
+    shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+    os.system('curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/' + repo_vad_url + '.ttl -u dba:' + ENDPOINT_PASSWORD)
+    # To delete:
+    # select DB.DBA.DAV_DELETE ('/DAV/home/dba/rdf_sink/gitee.ttl', 0, 'dba', 'dba');
+    try:
+      os.remove('shapes-rdf.ttl')
+    except:
+      pass
     return shapes_graph
 
 

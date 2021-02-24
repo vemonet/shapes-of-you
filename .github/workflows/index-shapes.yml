@@ -128,6 +128,12 @@ jobs:
       run: |
         python etl/index_shapes.py $GIT_SERVICE $SEARCH_TOPICS
 
+    # - name: Prepare output
+    #   run: |
+    #     mkdir -p output
+    #     mv REPORT.md output/ || exit 0
+    #     mv shapes-rdf.ttl output/ || exit 0
+
     - name: Upload failed shapes report as artifact
       uses: actions/upload-artifact@v1
       with:
@@ -135,11 +141,11 @@ jobs:
         # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
         path: REPORT.md
 
-    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
-        path: shapes-rdf.nt
+    # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
+    #   uses: actions/upload-artifact@v1
+    #   with:
+    #     name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
+    #     path: shapes-rdf.nt
         # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
         # path: shapes-rdf.ttl
 
@@ -168,13 +174,13 @@ jobs:
     #     java-version: 11
 
     # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFInsert
-    - name: Load RDF files to Virtuoso
-      env:
-        D2S_USERNAME: dba
-        D2S_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
-        GIT_SERVICE: ${{ matrix.git-service }}
-      run: |
-        curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/$GIT_SERVICE.ttl -u dba:maasitest12
+    # - name: Load RDF files to Virtuoso
+    #   env:
+    #     D2S_USERNAME: dba
+    #     D2S_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     GIT_SERVICE: ${{ matrix.git-service }}
+    #   run: |
+    #     curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/$GIT_SERVICE.ttl -u dba:maasitest12
       # https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/gitee.ttl
         
       # curl -T test.ttl https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/gitee.ttl -u dba:maasitest12
