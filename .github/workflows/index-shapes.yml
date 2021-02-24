@@ -173,7 +173,7 @@ jobs:
         GIT_SERVICE: ${{ matrix.git-service }}
       run: |
         mkdir -p output
-        split -l 4000 shapes-rdf.nt output/
+        split -l 4000 --additional-suffix=.nt shapes-rdf.nt output/
         wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
         java -jar sparql-operations.jar -o upload -i "output/*" -e "https://data.index.semanticscience.org/sparql" -g "$GIT_SERVICE"
 
