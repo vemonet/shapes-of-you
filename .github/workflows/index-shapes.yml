@@ -162,8 +162,8 @@ jobs:
       uses: MaastrichtU-IDS/RdfUpload@master
       with:
         file: shapes-rdf.ttl
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        # endpoint: https://data.index.semanticscience.org/sparql
+        # endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        endpoint: https://data.index.semanticscience.org/sparql
         user: ${{ secrets.GRAPHDB_USER }}
         password: ${{ secrets.GRAPHDB_PASSWORD }}
         graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
