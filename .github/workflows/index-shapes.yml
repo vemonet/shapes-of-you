@@ -175,7 +175,7 @@ jobs:
         mkdir -p output
         split -l 4000 --additional-suffix=.nt shapes-rdf.nt output/
         wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
-        java -jar sparql-operations.jar -o upload -i "output/*" -e "https://data.index.semanticscience.org/sparql" -g "$GIT_SERVICE"
+        java -jar sparql-operations.jar -o upload -i "output/*" -e "https://data.index.semanticscience.org/sparql" -g "https://w3id.org/um/ids/shapes/$GIT_SERVICE"
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
     #   uses: MaastrichtU-IDS/RdfUpload@master
