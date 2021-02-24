@@ -363,8 +363,9 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
     # TODO: load each repo in a different file in the VAD
     # curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/$GIT_SERVICE.ttl -u dba:password
     # https://github.com/MaastrichtU-IDS/shapes-of-you becomes: github.com/MaastrichtU-IDS/shapes-of-you.ttl
-    repo_vad_url = repo_url.replace('https://', '').replace('http://', '')
     shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+
+    repo_vad_url = repo_url.replace('https://', '').replace('http://', '')
     os.system('curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/' + repo_vad_url + '.ttl -u dba:' + ENDPOINT_PASSWORD)
     # To delete:
     # select DB.DBA.DAV_DELETE ('/DAV/home/dba/rdf_sink/gitee.ttl', 0, 'dba', 'dba');
