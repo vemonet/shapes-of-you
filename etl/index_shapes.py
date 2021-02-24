@@ -374,7 +374,8 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
       with open(root / '../shapes-rdf.ttl', 'r') as f:
         print(f.read())
 
-      os.system('curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/' + repo_vad_url + '.ttl -u dba:' + ENDPOINT_PASSWORD)
+      rdf_file_path = root / '../shapes-rdf.ttl'
+      os.system('curl -T ' + rdf_file_path + ' https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/' + repo_vad_url + '.ttl -u dba:' + ENDPOINT_PASSWORD)
       # To delete:
       # select DB.DBA.DAV_DELETE ('/DAV/home/dba/rdf_sink/gitee.ttl', 0, 'dba', 'dba');
       try:
