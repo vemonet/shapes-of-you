@@ -28,7 +28,7 @@ GITHUB_TOKEN = os.environ.get("API_GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
-ENDPOINT_URL = os.environ.get("ENDPOINT_USER", "https://data.index.semanticscience.org/sparql")
+ENDPOINT_URL = os.environ.get("ENDPOINT_URL", "https://data.index.semanticscience.org/sparql")
 ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "")
 ENDPOINT_PASSWORD = os.environ.get("ENDPOINT_PASSWORD", "")
 
@@ -106,7 +106,8 @@ def main(argv):
     if 'description' in endpoint_metadata:
       shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
 
-  shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+  # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+  shapes_graph.serialize('shapes-rdf.nt', format='nt')
 
 def fetch_from_lod():
   """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""
@@ -297,7 +298,7 @@ def fetch_from_gitee(shapes_graph, token, search_topic):
 
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git_service):
-    shapes_graph = Graph()
+    # shapes_graph = Graph()
 
     logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
     shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
@@ -336,8 +337,8 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
         shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
         
     # TODO: Update SPARQL endpoint here using
-    graph_uri = 'https://w3id.org/um/ids/shapes/' + git_service
-    sparql_update_instance(repo_url, shapes_graph, ENDPOINT_URL, ENDPOINT_USER, ENDPOINT_PASSWORD, 3, graph_uri)
+    # graph_uri = 'https://w3id.org/um/ids/shapes/' + git_service
+    # sparql_update_instance(repo_url, shapes_graph, ENDPOINT_URL, ENDPOINT_USER, ENDPOINT_PASSWORD, 3, graph_uri)
 
     return shapes_graph
 

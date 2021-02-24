@@ -138,8 +138,9 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
+        path: shapes-rdf.nt
         # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
-        path: shapes-rdf.ttl
+        # path: shapes-rdf.ttl
 
     # - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.search-string }}.md file in report branch
     #   env:
@@ -159,6 +160,22 @@ jobs:
     #     git add report-$GIT_SERVICE-$RUN_LABEL.md
     #     git commit -m "Update report-$GIT_SERVICE-$RUN_LABEL.md" || exit 0
     #     git push || exit 0
+
+    - name: Set up Java 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+
+    - name: Split RDF files before load
+      env:
+        D2S_USERNAME: dba
+        D2S_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+        GIT_SERVICE: ${{ matrix.git-service }}
+      run: |
+        mkdir -p output
+        split -l 4000 shapes-rdf.nt output/
+        wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
+        java -jar sparql-operations.jar -o upload -i "output/*" -e "https://data.index.semanticscience.org/sparql" -g "$GIT_SERVICE"
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
     #   uses: MaastrichtU-IDS/RdfUpload@master
