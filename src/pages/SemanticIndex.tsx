@@ -85,7 +85,7 @@ export default function SemanticIndex() {
     search_repos_only: false,
     show_pwa_alert: false,
     page: 1,
-    shapes_per_page: 25,
+    shapes_per_page: 70,
     show_info_card: false,
   });
   const stateRef = React.useRef(state);

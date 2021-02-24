@@ -1,6 +1,6 @@
   import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
-import { Container, CircularProgress } from "@material-ui/core";
+import { Container, CircularProgress, Typography } from "@material-ui/core";
 import { List, ListItem, ListItemAvatar, ListItemText } from "@material-ui/core";
 import axios from 'axios';
 
@@ -91,28 +91,34 @@ export default function SparqlEndpointsDisplay() {
       )}
 
       {Object.keys(state.sparql_endpoints_obj).length >= 1 && (
-        <List>
-          {Object.keys(state.sparql_endpoints_obj).map(function(sparql_endpoint: any, key: number){
-            return <ListItem key={key}>
-              <ListItemAvatar>
-                <QueryYasguiButton endpoint={sparql_endpoint} />
-              </ListItemAvatar>
-              <ListItemText>
-                <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b>
-                {state.sparql_endpoints_obj[sparql_endpoint].queries_count > 0 &&
-                  <>
-                    &nbsp;- {state.sparql_endpoints_obj[sparql_endpoint].queries_count} SPARQL queries
-                  </>
-                }
-                {state.sparql_endpoints_obj[sparql_endpoint].datasets_graph_count > 1 &&
-                  <>
-                    &nbsp;- Metadata computed for <b>{state.sparql_endpoints_obj[sparql_endpoint].datasets_graph_count}</b> graphs
-                  </>
-                }
-              </ListItemText>
-            </ListItem>
-          })}
-        </List>
+        <>
+          <Typography variant='body1'>
+            {Object.keys(state.sparql_endpoints_obj).length} active SPARQL endpoints
+          </Typography>
+
+          <List>
+            {Object.keys(state.sparql_endpoints_obj).map(function(sparql_endpoint: any, key: number){
+              return <ListItem key={key}>
+                <ListItemAvatar>
+                  <QueryYasguiButton endpoint={sparql_endpoint} />
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href={sparql_endpoint} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint}</a></b>
+                  {state.sparql_endpoints_obj[sparql_endpoint].queries_count > 0 &&
+                    <>
+                      &nbsp;- {state.sparql_endpoints_obj[sparql_endpoint].queries_count} SPARQL queries
+                    </>
+                  }
+                  {state.sparql_endpoints_obj[sparql_endpoint].datasets_graph_count > 1 &&
+                    <>
+                      &nbsp;- Metadata computed for <b>{state.sparql_endpoints_obj[sparql_endpoint].datasets_graph_count}</b> graphs
+                    </>
+                  }
+                </ListItemText>
+              </ListItem>
+            })}
+          </List>
+        </>
       )}
     </Container>
   )
