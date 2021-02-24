@@ -109,8 +109,8 @@ def main(argv):
     if 'description' in endpoint_metadata:
       shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
 
-  # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
-  shapes_graph.serialize('shapes-rdf.nt', format='nt')
+  shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+  # shapes_graph.serialize('shapes-rdf.nt', format='nt')
 
 def fetch_from_lod():
   """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""

@@ -16,11 +16,13 @@ services:
       - VIRTUAL_PORT=8890
       # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFPerformanceTuning
       # http://docs.openlinksw.com/virtuoso/rdfperfgeneral/
+      # https://github.com/tenforce/docker-virtuoso/blob/master/virtuoso.ini
       - DBA_PASSWORD=${VIRTUOSO_PASSWORD}
       - SPARQL_UPDATE=true
       - DEFAULT_GRAPH=https://w3id.org/um/shapes-of-you
       - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db
-      - VIRT_Database_ErrorLogLevel=1 # default: 7 is maximum logs
+      - VIRT_Database_ErrorLogLevel=2 # default: 7 is maximum logs
+      - VIRT_HTTPServer_HTTPThreadSize			= 280000
       # Bio2RDF large dataset config
       - VIRT_SPARQL_MaxQueryCostEstimationTime=200000
       - VIRT_SPARQL_MaxQueryExecutionTime=1000000
