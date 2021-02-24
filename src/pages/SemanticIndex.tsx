@@ -527,8 +527,11 @@ export default function SemanticIndex() {
       </Paper>
 
       {Object.keys(state.global_shapes_array).length < 1 && (
-        <div style={{textAlign: 'center'}}>
-          <CircularProgress style={{padding: theme.spacing(10, 10)}} />
+        <div style={{textAlign: 'center', padding: theme.spacing(10, 10)}}>
+          <Typography variant='body1' style={{marginBottom: theme.spacing(2)}}>
+            It usually takes between 10 and 30 seconds to retrieve resources
+          </Typography>
+          <CircularProgress />
         </div>
       )}
 

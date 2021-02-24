@@ -97,7 +97,15 @@ export default function SparqlEndpointsDisplay() {
           </Typography>
 
           <List>
-            {Object.keys(state.sparql_endpoints_obj).map(function(sparql_endpoint: any, key: number){
+            {Object.keys(state.sparql_endpoints_obj)
+              .sort((a: any, b: any): number => {
+                console.log('ab');
+                console.log(a);
+                console.log(b);
+                // state.sparql_endpoints_obj[a].datasets_graph_count - state.sparql_endpoints_obj[b].datasets_graph_count;
+                return a.datasets_graph_count - b.datasets_graph_count;
+              })
+              .map(function(sparql_endpoint: any, key: number){
               return <ListItem key={key}>
                 <ListItemAvatar>
                   <QueryYasguiButton endpoint={sparql_endpoint} />
@@ -116,7 +124,8 @@ export default function SparqlEndpointsDisplay() {
                   }
                 </ListItemText>
               </ListItem>
-            })}
+              })
+            }
           </List>
         </>
       )}
