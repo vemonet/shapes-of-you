@@ -4,10 +4,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://druid.datalegend.net/ivozandhuis/ivotemp-HISGIS/graphs/default> a ns1:Dataset ;
-    ns1:classPartition [ ns1:class rdfs:Literal ;
-            ns1:distinctSubjects 28085 ],
-        [ ns1:class rdfs:Class ;
-            ns1:distinctSubjects 0 ] ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 0 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 28085 ] ;
     ns1:distinctObjects 522 ;
     ns1:distinctSubjects 26528 ;
     ns1:entities 0 ;
