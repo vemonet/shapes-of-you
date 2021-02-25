@@ -50,5 +50,5 @@ WHERE {
       ]
     ] .
   }
-  FILTER (str(?sparql_endpoint) = ?_sparqlendpoint)
+  FILTER (?sparql_endpoint = ?_sparqlendpoint_iri)
 } ORDER BY DESC(?subjectCount)
