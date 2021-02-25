@@ -1,0 +1,1368 @@
+@prefix ns1: <http://rdfs.org/ns/void#> .
+@prefix ns2: <http://ldf.fi/void-ext#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://localhost:8890/DAV> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 67642 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 7 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+            ns1:distinctSubjects 4 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+            ns1:distinctSubjects 42431 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Annotation> ;
+            ns1:distinctSubjects 2928 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+            ns1:distinctSubjects 23812 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+            ns1:distinctSubjects 8 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+            ns1:distinctSubjects 67189 ] ;
+    ns1:distinctObjects 130013 ;
+    ns1:distinctSubjects 170459 ;
+    ns1:entities 136373 ;
+    ns1:properties 23 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#versionInfo> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1518 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#hasValue> ;
+            ns1:triples 11615 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/definition_citation> ;
+            ns1:triples 2506 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2560 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/definition> ;
+            ns1:triples 2566 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 207 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/reason_for_obsolescence> ;
+            ns1:triples 341 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 16929 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedTarget> ;
+            ns1:triples 26356 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 36063 ] ;
+            ns1:property <http://www.geneontology.org/formats/oboInOwl#hasDbXref> ;
+            ns1:triples 42571 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 14927 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/alternative_term> ;
+            ns1:triples 15188 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 19 ] ;
+            ns1:property <http://purl.obolibrary.org/obo/ECO_0000218> ;
+            ns1:triples 31673 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3243 ] ;
+            ns1:property <http://www.orpha.net/ORDO/Orphanet_#symbol> ;
+            ns1:triples 3243 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property <http://purl.obolibrary.org/obo/ECO_0000205> ;
+            ns1:triples 13686 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9109 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 9109 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/creator> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 7365 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedTarget> ;
+            ns1:triples 7365 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 8559 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedSource> ;
+            ns1:triples 42424 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+                    ns1:distinctObjects 3148 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedSource> ;
+            ns1:triples 3148 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctObjects 26804 ] ;
+            ns1:property rdfs:subClassOf ;
+            ns1:triples 26804 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctObjects 6321 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedTarget> ;
+            ns1:triples 6321 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedProperty> ;
+            ns1:triples 26356 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctObjects 4 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onProperty> ;
+            ns1:triples 10960 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 7816 ] ;
+            ns1:property rdfs:subClassOf ;
+            ns1:triples 11969 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 3091 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#someValuesFrom> ;
+            ns1:triples 47144 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctObjects 34064 ] ;
+            ns1:property rdf:first ;
+            ns1:triples 34064 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Annotation> ;
+                    ns1:distinctSubjects 2928 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedProperty> ;
+            ns1:triples 2928 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 9080 ] ;
+            ns1:property rdfs:subClassOf ;
+            ns1:triples 44812 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 23812 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 23812 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 9081 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 9081 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#versionInfo> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#versionIRI> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+                    ns1:distinctSubjects 42431 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedTarget> ;
+            ns1:triples 42431 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 67189 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 67189 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/definition> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Annotation> ;
+                    ns1:distinctSubjects 2928 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2928 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+                    ns1:distinctSubjects 13686 ] ;
+            ns1:property <http://purl.obolibrary.org/obo/ECO_0000205> ;
+            ns1:triples 13686 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 7666 ] ;
+            ns1:property <http://www.geneontology.org/formats/oboInOwl#hasDbXref> ;
+            ns1:triples 42567 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+                    ns1:distinctSubjects 42431 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 42431 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 2544 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/definition> ;
+            ns1:triples 2544 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 67189 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onProperty> ;
+            ns1:triples 67189 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+                    ns1:distinctSubjects 42431 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedSource> ;
+            ns1:triples 42431 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Annotation> ;
+                    ns1:distinctSubjects 2928 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedSource> ;
+            ns1:triples 3148 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 14729 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#intersectionOf> ;
+            ns1:triples 14729 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 55574 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#someValuesFrom> ;
+            ns1:triples 55574 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 341 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/reason_for_obsolescence> ;
+            ns1:triples 341 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Annotation> ;
+                    ns1:distinctSubjects 2928 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedTarget> ;
+            ns1:triples 2928 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Annotation> ;
+                    ns1:distinctSubjects 2928 ] ;
+            ns1:property <http://purl.obolibrary.org/obo/ECO_0000218> ;
+            ns1:triples 2928 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 2506 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/definition_citation> ;
+            ns1:triples 2506 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 3243 ] ;
+            ns1:property <http://www.orpha.net/ORDO/Orphanet_#symbol> ;
+            ns1:triples 3243 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+                    ns1:distinctSubjects 42431 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#annotatedProperty> ;
+            ns1:triples 42431 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 11615 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#hasValue> ;
+            ns1:triples 11615 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/creator> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 6043 ] ;
+            ns1:property <http://www.ebi.ac.uk/efo/alternative_term> ;
+            ns1:triples 15188 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Axiom> ;
+                    ns1:distinctSubjects 28745 ] ;
+            ns1:property <http://purl.obolibrary.org/obo/ECO_0000218> ;
+            ns1:triples 28745 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ] ;
+    ns1:triples 655616 .
+
+<http://localhost:8890/HOOM> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 70135 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 8 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+            ns1:distinctSubjects 12 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+            ns1:distinctSubjects 12 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+            ns1:distinctSubjects 124995 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+            ns1:distinctSubjects 1 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+            ns1:distinctSubjects 252129 ],
+        [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+            ns1:distinctSubjects 12 ] ;
+    ns1:distinctObjects 572291 ;
+    ns1:distinctSubjects 629263 ;
+    ns1:entities 377141 ;
+    ns1:properties 24 ;
+    ns1:propertyPartition [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 193862 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#someValuesFrom> ;
+            ns1:triples 193862 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 36 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property rdfs:isDefinedBy ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#disjointWith> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#inverseOf> ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 58275 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#equivalentClass> ;
+            ns1:triples 58275 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:domain ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 252129 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onProperty> ;
+            ns1:triples 252129 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:domain ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 124995 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 124995 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdfs:range ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 252129 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 252129 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 58260 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#hasValue> ;
+            ns1:triples 58260 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#unionOf> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdfs:isDefinedBy ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 66724 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 66724 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 3047 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 3047 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 66717 ] ;
+            ns1:property rdfs:subClassOf ;
+            ns1:triples 66717 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#minQualifiedCardinality> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 36 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#qualifiedCardinality> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/creator> ;
+            ns1:triples 7 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:range ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onDataRange> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctSubjects 58268 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#intersectionOf> ;
+            ns1:triples 58268 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onClass> ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:range ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:range ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#Ontology> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/language> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#inverseOf> ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdfs:domain ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 36 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property rdfs:domain ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#inverseOf> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#minQualifiedCardinality> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 337 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#hasValue> ;
+            ns1:triples 57298 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#qualifiedCardinality> ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property rdfs:isDefinedBy ;
+            ns1:triples 12 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/creator> ;
+            ns1:triples 7 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://purl.org/dc/elements/1.1/language> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 66738 ] ;
+            ns1:property rdfs:label ;
+            ns1:triples 66738 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3049 ] ;
+            ns1:property rdfs:comment ;
+            ns1:triples 3049 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property rdfs:range ;
+            ns1:triples 12 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onProperty> ;
+            ns1:triples 194829 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onClass> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property rdfs:subClassOf ;
+            ns1:triples 66717 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 8824 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#someValuesFrom> ;
+            ns1:triples 192911 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 58266 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#equivalentClass> ;
+            ns1:triples 58266 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onProperty> ;
+            ns1:triples 57300 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property rdf:first ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onProperty> ;
+            ns1:triples 194829 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#equivalentClass> ;
+            ns1:triples 9 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property rdfs:domain ;
+            ns1:triples 14 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#inverseOf> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Class> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#disjointWith> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#AsymmetricProperty> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#inverseOf> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#inverseOf> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#Restriction> ;
+                    ns1:distinctObjects 252119 ] ;
+            ns1:property rdf:first ;
+            ns1:triples 252119 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property <http://www.w3.org/2002/07/owl#onProperty> ;
+            ns1:triples 194829 ] ;
+    ns1:triples 1638778 .
+
+<http://www.openlinksw.com/schemas/virtrdf#> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 12 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+            ns1:distinctSubjects 130 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn> ;
+            ns1:distinctSubjects 8 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+            ns1:distinctSubjects 4 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-string> ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapATable> ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadStorage> ;
+            ns1:distinctSubjects 3 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap> ;
+            ns1:distinctSubjects 3 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+            ns1:distinctSubjects 98 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable> ;
+            ns1:distinctSubjects 2 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn> ;
+            ns1:distinctSubjects 8 ],
+        [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+            ns1:distinctSubjects 8 ],
+        [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 425 ] ;
+    ns1:distinctObjects 299 ;
+    ns1:distinctSubjects 285 ;
+    ns1:entities 270 ;
+    ns1:properties 92 ;
+    ns1:propertyPartition [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 16 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfDatatypeOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSqlvalOfShortTmpl> ;
+            ns1:triples 53 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrDatatype> ;
+            ns1:triples 7 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfBoolOfShortTmpl> ;
+            ns1:triples 47 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfDatatypeTmpl> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvcColumnName> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsrefOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 18 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfTypedsqlvalTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 20 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfLongTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvcAlias> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 15 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfSqlvalTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfLongTmpl> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLanguageTmpl> ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 16 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfUriOfShortTmpl> ;
+            ns1:triples 45 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 26 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLongTmpl> ;
+            ns1:triples 45 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfWrapDistinct> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfTypemaxTmpl> ;
+            ns1:triples 39 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLongWhenEqToSql> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSqlvalTmpl> ;
+            ns1:triples 53 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 130 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfName> ;
+            ns1:triples 130 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfOkForAnySqlvalue> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvColumnsFormKey> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfColumnCount> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsuriOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftTableName> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftAlias> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvTableName> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmTableName> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvaAlias> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsnumericOfShortTmpl> ;
+            ns1:triples 19 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 5 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsblankOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrLanguage> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfNiceSqlvalTmpl> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfCmpFuncName> ;
+            ns1:triples 39 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 26 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfStrsqlvalOfShortTmpl> ;
+            ns1:triples 53 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvaTableName> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfUriIdOffset> ;
+            ns1:triples 39 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfHasCheapSqlval> ;
+            ns1:triples 22 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#version> ;
+            ns1:triples 1 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmf01uriOfShortTmpl> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#isGcResistantType> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 18 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSparqlEbvOfShortTmpl> ;
+            ns1:triples 37 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 9 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfUriTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsStable> ;
+            ns1:triples 47 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfUriTmpl> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfSqlvalTmpl> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftXmlIndex> ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLongWhenRef> ;
+            ns1:triples 4 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLanguageOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfDtpOfNiceSqlval> ;
+            ns1:triples 6 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIslitOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmf01blankOfShortTmpl> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsBijection> ;
+            ns1:triples 47 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 18 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSparqlEbvTmpl> ;
+            ns1:triples 29 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfTypedsqlvalTmpl> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 22 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfBoolTmpl> ;
+            ns1:triples 42 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfMapsOnlyNullToNull> ;
+            ns1:triples 40 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLong> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 27 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLongOfShortTmpl> ;
+            ns1:triples 45 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 21 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIidOfShortTmpl> ;
+            ns1:triples 57 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfCustomString1> ;
+            ns1:triples 12 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 11 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfTypeminTmpl> ;
+            ns1:triples 39 ],
+        [ ns2:objectClassPartition [ ns1:class rdfs:Literal ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftColumnName> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftTableName> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 22 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfHasCheapSqlval> ;
+            ns1:triples 22 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftAlias> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfSqlvalTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfDatatypeOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLongWhenRef> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapATable> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 53 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSqlvalOfShortTmpl> ;
+            ns1:triples 53 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 130 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 130 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 1 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrLanguage> ;
+            ns1:triples 1 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIslitOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 45 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLongTmpl> ;
+            ns1:triples 45 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfTypeminTmpl> ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 84 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrRestrictions> ;
+            ns1:triples 172 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfTypemaxTmpl> ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfUriTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 99 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#inheritFrom> ;
+            ns1:triples 99 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+                    ns1:distinctSubjects 10 ] ;
+            ns1:property rdf:_3 ;
+            ns1:triples 10 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 98 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSuperFormats> ;
+            ns1:triples 98 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfTypedsqlvalTmpl> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadStorage> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qsMatchingFlags> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvColumnsFormKey> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfSqlvalTmpl> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsblankOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvTableName> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 47 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfBoolOfShortTmpl> ;
+            ns1:triples 47 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 53 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfStrsqlvalOfShortTmpl> ;
+            ns1:triples 53 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmf01blankOfShortTmpl> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 19 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsnumericOfShortTmpl> ;
+            ns1:triples 19 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfColumnCount> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftXmlIndex> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 57 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIidOfShortTmpl> ;
+            ns1:triples 57 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-string> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapATable> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvaTableName> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmPredicateMap> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 7 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfValRange-rvrDatatype> ;
+            ns1:triples 7 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmTableName> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfOkForAnySqlvalue> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLanguageTmpl> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftConds> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfNiceSqlvalTmpl> ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvGeo> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfLongTmpl> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfWrapDistinct> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvcAlias> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmSubjectMap> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmf01uriOfShortTmpl> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 53 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSqlvalTmpl> ;
+            ns1:triples 53 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmGraphMap> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmMatchingFlags> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLanguageOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 6 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfDtpOfNiceSqlval> ;
+            ns1:triples 6 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadStorage> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qsUserMaps> ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 130 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfName> ;
+            ns1:triples 130 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsrefOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapATable> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvaAlias> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSubFormatForRefs> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsuriOfShortTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 12 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfCustomString1> ;
+            ns1:triples 12 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 47 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsBijection> ;
+            ns1:triples 47 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLong> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfTypedsqlvalTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfExistingShortOfUriTmpl> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:_5 ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsSubformatOfLongWhenEqToSql> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 45 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfLongOfShortTmpl> ;
+            ns1:triples 45 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:_1 ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 29 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSparqlEbvTmpl> ;
+            ns1:triples 29 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftColumnName> ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfUriIdOffset> ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 45 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfUriOfShortTmpl> ;
+            ns1:triples 45 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 37 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSparqlEbvOfShortTmpl> ;
+            ns1:triples 37 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 55 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#noInherit> ;
+            ns1:triples 56 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 47 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfIsStable> ;
+            ns1:triples 47 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvFText> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadStorage> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qsDefaultMap> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctSubjects 4 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 4 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmObjectMap> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvATables> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 40 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfMapsOnlyNullToNull> ;
+            ns1:triples 40 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvColumns> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadStorage> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 42 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfBoolTmpl> ;
+            ns1:triples 42 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+                    ns1:distinctSubjects 98 ] ;
+            ns1:property rdf:type ;
+            ns1:triples 98 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvcColumnName> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvFormat> ;
+            ns1:triples 8 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 31 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfShortOfLongTmpl> ;
+            ns1:triples 31 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfDatatypeTmpl> ;
+            ns1:triples 2 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+                    ns1:distinctSubjects 56 ] ;
+            ns1:property rdf:_1 ;
+            ns1:triples 56 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+                    ns1:distinctSubjects 13 ] ;
+            ns1:property rdf:_2 ;
+            ns1:triples 13 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctSubjects 39 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfCmpFuncName> ;
+            ns1:triples 39 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+                    ns1:distinctSubjects 3 ] ;
+            ns1:property rdf:_4 ;
+            ns1:triples 3 ],
+        [ ns1:classPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn> ;
+                    ns1:distinctSubjects 8 ] ;
+            ns1:property rdf:_1 ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvFormat> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 46 ] ;
+            ns1:property rdf:_1 ;
+            ns1:triples 56 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvFText> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 128 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#item> ;
+            ns1:triples 128 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFText> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvGeo> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 7 ] ;
+            ns1:property rdf:_2 ;
+            ns1:triples 13 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:property rdf:_1 ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qsUserMaps> ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property rdf:_5 ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapATable> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property rdf:_1 ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmObjectMap> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmGraphMap> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmSubjectMap> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn> ;
+                    ns1:distinctObjects 8 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvColumns> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat> ;
+                    ns1:distinctObjects 98 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSuperFormats> ;
+            ns1:triples 98 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmfSubFormatForRefs> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadStorage> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#item> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 6 ] ;
+            ns1:property rdf:_3 ;
+            ns1:triples 10 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapValue> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmPredicateMap> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#item> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 47 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#inheritFrom> ;
+            ns1:triples 99 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat> ;
+                    ns1:distinctObjects 3 ] ;
+            ns1:property rdf:_4 ;
+            ns1:triples 3 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-string> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvftConds> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#item> ;
+            ns1:triples 2 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qmvATables> ;
+            ns1:triples 8 ],
+        [ ns2:objectClassPartition [ ns1:class <http://www.openlinksw.com/schemas/virtrdf#QuadMap> ;
+                    ns1:distinctObjects 2 ] ;
+            ns1:property <http://www.openlinksw.com/schemas/virtrdf#qsDefaultMap> ;
+            ns1:triples 2 ] ;
+    ns1:triples 2474 .
+
+<http://www.w3.org/ns/ldp#> a ns1:Dataset ;
+    ns1:classPartition [ ns1:class rdfs:Literal ;
+            ns1:distinctSubjects 0 ],
+        [ ns1:class rdfs:Class ;
+            ns1:distinctSubjects 0 ] ;
+    ns1:distinctObjects 1 ;
+    ns1:distinctSubjects 3 ;
+    ns1:entities 0 ;
+    ns1:properties 1 ;
+    ns1:triples 3 .
+
