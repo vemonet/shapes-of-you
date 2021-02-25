@@ -21,7 +21,7 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX void-ext: <http://ldf.fi/void-ext#>
 SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
 WHERE {
-  GRAPH <?sparql_endpoint> {
+  GRAPH ?sparql_endpoint {
     # ?graph a void:Dataset .
     ?graph void:propertyPartition [
       void:property ?predicate ;
