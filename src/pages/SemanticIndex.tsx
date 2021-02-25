@@ -24,6 +24,7 @@ import About from "./About";
 import { LoggedIn, LoggedOut, Value, useWebId, useLDflexValue, useLDflexList } from '@solid/react';
 import { Like } from '@solid/react';
 import data from "@solid/query-ldflex";
+import { Alert } from '@material-ui/lab';
 // import { data } from "@solid/query-ldflex";
 // import SolidStar from "./SolidStar";
 // import {newEngine} from '@comunica/actor-init-sparql';
@@ -412,6 +413,11 @@ export default function SemanticIndex() {
   // Define rendering of the page:
   return(
     <Container style={{marginTop: theme.spacing(4), marginBottom: theme.spacing(3)}}>
+      <Alert severity="warning">
+        Shapes of You is currently under development. Be patient when it loads the data (especially the 60k files on the main page). 
+        And feel free to <a href="https://github.com/vemonet/shapes-of-you/issues" className={classes.link} target="_blank" rel="noopener noreferrer">create new issues</a> if you see improvement that could be done!
+      </Alert>
+
       <LoggedIn>
         <Typography style={{textAlign: 'center', margin: theme.spacing(2, 2)}}>
           Welcome to your semantic resources index <Value src="user.name"/>!
@@ -542,7 +548,7 @@ export default function SemanticIndex() {
         return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(1, 1), margin: theme.spacing(2, 0)}}>
           <CardContent style={{paddingBottom: theme.spacing(0), margin: theme.spacing(0, 0)}}>
             <Typography >
-              <a href={repo_obj.url} className={classes.link}>
+              <a href={repo_obj.url} className={classes.link} target="_blank" rel="noopener noreferrer">
                 📁&nbsp;{repo_obj.url.replace('https://github.com/', '')}
               </a>
               {repo_obj.description &&

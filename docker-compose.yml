@@ -5,10 +5,16 @@ services:
   virtuoso:
     container_name: shapes-of-you-virtuoso
     image: tenforce/virtuoso:latest
+    # image: openlink/virtuoso-opensource-7:latest
     # image: tenforce/virtuoso:1.3.2-virtuoso7.2.5.1
+
+    # https://community.openlinksw.com/t/permissions-on-ldp-containers-and-resources/290/14
+    # Download VAD packages: ODS Framework and Briefcase
+    # http://download3.openlinksw.com/index.html?prefix=uda/vad-vos-packages/7.2/
     restart: unless-stopped
     volumes:
       - /data/shapes-of-you/virtuoso:/data
+      # - /data/shapes-of-you/virtuoso:/database
     environment:
       # Deployed using https://github.com/nginx-proxy
       - VIRTUAL_HOST=${VIRTUOSO_URL}
@@ -22,7 +28,7 @@ services:
       - DEFAULT_GRAPH=https://w3id.org/um/shapes-of-you
       - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db
       - VIRT_Database_ErrorLogLevel=2 # default: 7 is maximum logs
-      - VIRT_HTTPServer_HTTPThreadSize			= 280000
+      - VIRT_HTTPServer_HTTPThreadSize=280000
       # Bio2RDF large dataset config
       - VIRT_SPARQL_MaxQueryCostEstimationTime=200000
       - VIRT_SPARQL_MaxQueryExecutionTime=1000000
