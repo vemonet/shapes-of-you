@@ -7,7 +7,7 @@
 #+ method: GET
 # pagination: 100
 #+ defaults:
-#+   - sparqlendpoint: https://bio2rdf.org/sparql
+#+   - sparqlendpoint_iri: https://bio2rdf.org/sparql
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -35,5 +35,5 @@ WHERE {
       ]
     ] .
   }
-  FILTER (?sparql_endpoint = <?_sparqlendpoint>)
+  FILTER (?sparql_endpoint = ?_sparqlendpoint_iri)
 } ORDER BY DESC(?subjectCount)
