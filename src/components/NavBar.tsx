@@ -94,6 +94,12 @@ export default function NavBar() {
           </Button>
         </Tooltip>
         <Popper open={open} anchorEl={anchorEl} 
+          modifiers={{
+            preventOverflow: {
+              enabled: true,
+              boundariesElement: 'window',
+            }
+          }}
           // onKeyPress={(e) => {
           //   if (e.key === "Escape") handleClickAway()
           // }}
@@ -120,7 +126,7 @@ export default function NavBar() {
 
         <div className="flexGrow"></div>
 
-        <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22"
+        {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22"
           className={classes.linkButton} target="_blank" rel="noopener noreferrer">
           <Tooltip title='Checkout the indexing workflow runs status'>
             <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" />
@@ -131,7 +137,7 @@ export default function NavBar() {
           <Tooltip title='Reports for the files which failed to process, and that need to be fixed by their owners. Also known as the semantic web of shame'>
             <img src="https://img.shields.io/badge/📎%20Index%20shapes-reports-ffa000" />
           </Tooltip>
-        </a>
+        </a> */}
         <Tooltip  title='Go to https://github.com/vemonet/shapes-of-you'>
           <Button className={classes.menuButton} target="_blank"
           href="https://github.com/vemonet/shapes-of-you" rel="noopener noreferrer">

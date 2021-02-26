@@ -413,7 +413,7 @@ export default function SemanticIndex() {
   // Define rendering of the page:
   return(
     <Container style={{marginTop: theme.spacing(4), marginBottom: theme.spacing(3)}}>
-      <Alert severity="warning">
+      <Alert severity="warning" style={{marginBottom: theme.spacing(2)}}>
         Shapes of You is currently under development. Be patient when it loads the data (especially the 60k files on the main page). 
         And feel free to <a href="https://github.com/vemonet/shapes-of-you/issues" className={classes.link} target="_blank" rel="noopener noreferrer">create new issues</a> if you see improvement that could be done!
       </Alert>
