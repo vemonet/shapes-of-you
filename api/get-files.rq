@@ -1,6 +1,6 @@
 #+ endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
 #+ endpoint_in_url: False
-#+ summary:  List all shapes in shape files
+#+ summary:  List all resources files in code repositories
 #+ tags:
 #+   - Get resources
 #+ method: GET

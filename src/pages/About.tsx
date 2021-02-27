@@ -56,6 +56,14 @@ export default function About() {
     setState(stateRef.current);
   }, [setState]);
 
+  function linkTo(url: string, label: string) {
+    return (
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {label}
+      </a>
+    )
+  }
+  
   return(
     <Card >
         <CardHeader
@@ -76,7 +84,7 @@ export default function About() {
             </IconButton>
           }
           title="💠 Shapes of You"
-          subheader="An index of publicly available semantic resources"
+          subheader={"Access the world publicly available standard knowledge descriptions stored in code repositories, and explore the currently active Linked Open Data SPARQL endpoints with ease, to find relevant data for your projects, or discover how people are defining knowledge around the blob."}
         />
 
 
@@ -99,8 +107,8 @@ export default function About() {
               Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
             </Typography> */}
             <Typography>
-              Add one of those topics to your <a href="https://github.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitHub</a> repository, or mention it in your project description on <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a> and <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a>,&nbsp;
-              we automatically index files from public repositories everyday 🕐
+              To be found by our indexer, make sure your repository description, or topics, on <a href="https://github.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitHub</a> repository, or mention it in your project description on <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a> and <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a>,&nbsp;
+              we automatically index files from public repositories everyday at 1:00 GMT+1 🕐
             </Typography>
             <List>
               <ListItem>

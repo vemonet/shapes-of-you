@@ -1,3 +1,4 @@
+http://ma-graph.org/sparql
 https://bio2rdf.org/sparql
 https://semantic.eea.europa.eu/sparql
 http://rdf.pathwaycommons.org/sparql/
@@ -43,4 +44,3 @@ http://linkeddata.finki.ukim.mk/sparql
 http://dutchshipsandsailors.nl/data/sparql/
 http://semanticweb.cs.vu.nl/dss/sparql/
 http://cr.eionet.europa.eu/sparql
-http://www.linklion.org:8890/sparql

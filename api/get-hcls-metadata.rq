@@ -1,13 +1,13 @@
 #+ endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry
 #+ endpoint_in_url: False
 #+ summary:  Get HCLS metadata for a SPARQL endpoint
-#+ description: Get HCLS metadata for a SPARQL endpoint
+#+ description: Get HCLS metadata for a specific SPARQL endpoint
 #+ tags:
 #+   - Statistics overview
 #+ method: GET
 # pagination: 100
 #+ defaults:
-#+   - sparqlendpoint: https://bio2rdf.org/sparql
+#+   - sparqlendpoint_iri: https://bio2rdf.org/sparql
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -21,7 +21,7 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX void-ext: <http://ldf.fi/void-ext#>
 SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
 WHERE {
-  GRAPH ?sparql_endpoint {
+  GRAPH ?_sparqlendpoint_iri {
     # ?graph a void:Dataset .
     ?graph void:propertyPartition [
       void:property ?predicate ;
@@ -35,5 +35,5 @@ WHERE {
       ]
     ] .
   }
-  FILTER (?sparql_endpoint = ?_sparqlendpoint_iri)
+  # FILTER (?sparql_endpoint = ?_sparqlendpoint_iri)
 } ORDER BY DESC(?subjectCount)

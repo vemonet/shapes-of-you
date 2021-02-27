@@ -11,23 +11,21 @@
 
 **Shapes of you** is a global index for semantically descriptive files published to public Git repositories ([GitHub](https://github.com), [GitLab](https://gitlab.com), and [Gitee](https://gitee.com/)).
 
-Add one of those topics to your [GitHub](https://github.com) repository, or mention it in your project description on [GitLab](https://gitlab.com) and [Gitee](https://gitee.com), we automatically index files from public repositories everyday at 1:00 GMT+1 🕐
+To be found by our indexer, make sure your repository description, or topics, on [GitHub](https://github.com), [GitLab](https://gitlab.com), or [Gitee](https://gitee.com) includes one of the resources mentionned below, we automatically index files from public repositories everyday at 1:00 GMT+1 🕐
 
-* **SHACL shapes**: add the topic `shacl-shapes`, we index RDF files such as `.ttl`, `.rdf`, `.jsonld`, etc), with all `sh:NodeShape` they contain
-* **ShEx expressions**: add the topic `shex`, we index `.shex` files, and ShEx shapes defined in RDF files
-* **SPARQL queries**: add the topic `grlc`, we index `.rq` and `.sparql` files, and parse [grlc.io](http://grlc.io) APIs metadata
-* **OWL ontologies**: add the topic `owl`, we index all RDF files with all `owl:Class`  they contain
+* **SHACL shapes**: we index RDF files such as `.ttl`, `.rdf`, `.jsonld`, etc), with all `sh:NodeShape` they contain
+* **ShEx expressions**: we index `.shex` files, and ShEx shapes defined in RDF files
+* **SPARQL queries**: we index `.rq` and `.sparql` files, and parse [grlc.io](http://grlc.io) APIs metadata
+* **OWL ontologies**: we index all RDF files with all `owl:Class`  they contain
 * **SKOS vocabularies**: add the topic `skos`, we index all RDF files with all `skos:Concept` they contain
-* **RML mappings**: add the topic `rml`, we index RDF files, with all `r2rml:SubjectMap` and `rml:LogicalSource` they contain
-* **R2RML mappings**: add the topic `r2rml`, we index RDF files, with all `r2rml:SubjectMap` they contain
+* **RML mappings**: we index RDF files, with all `r2rml:SubjectMap` and `rml:LogicalSource` they contain
+* **R2RML mappings**: we index RDF files, with all `r2rml:SubjectMap` they contain
 * **Nanopublication templates**: add the topic `nanopub`, we index RDF files, with all `nt:AssertionTemplates` and inputs they contain
-* **OBO ontologies**: add the topic `obo`, we index all `.obo` files with all terms they contain
-* **OpenAPI specifications**: add the topic `openapi`, we index `.yml`, `.yaml` and `.json` files, and parse the spec to retrieve API metadata
-* **DCAT datasets**: add the topic `dataset`, we index RDF files, with all `dcat:Dataset` they contain
+* **OBO ontologies**: we index all `.obo` files with all terms they contain
+* **OpenAPI specifications**: we index `.yml`, `.yaml` and `.json` files, and parse the spec to retrieve API metadata
+* **DCAT datasets**: we index RDF files, with all `dcat:Dataset` they contain
 
-Additional GitHub repositories can be included in the file [`EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_GITHUB_REPOSITORIES.txt) (if not tagged with the right topic)
-
-You can check RDF files which failed to be parsed by [`rdflib`](https://rdflib.readthedocs.io/en/stable/) in the [`REPORT.md`](https://github.com/vemonet/shapes-of-you/blob/report/REPORT.md), feel free to fix them if you are the owner!
+Additional GitHub repositories can be included in the file [`assets/EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/assets/EXTRAS_GITHUB_REPOSITORIES.txt) (if not tagged with the right topic)
 
 ## Overview 🧭
 

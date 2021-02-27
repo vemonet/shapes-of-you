@@ -96,7 +96,7 @@ def main(argv):
 
   # Extras SPARQL endpoints to check
   extra_endpoints = []
-  with open(str(root) + '/../EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
+  with open(str(root) + '/../assets/EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
     for line in f:
       extra_endpoints.append(line.rstrip('\n').strip())
   for endpoint in extra_endpoints:

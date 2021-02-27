@@ -56,9 +56,9 @@ jobs:
         - git-service: github
           search-string: nanopub
         - git-service: github-extras
-          search-string: EXTRAS_GITHUB_REPOSITORIES.txt
+          search-string: assets/EXTRAS_GITHUB_REPOSITORIES.txt
         - git-service: github-extras
-          search-string: EXTRAS_GITHUB_REPOSITORIES_2.txt
+          search-string: assets/EXTRAS_GITHUB_REPOSITORIES_2.txt
         - git-service: github
           search-string: ncats+translator
         - git-service: github
