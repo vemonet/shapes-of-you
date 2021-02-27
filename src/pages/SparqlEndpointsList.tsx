@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function SparqlEndpointsDisplay() {
+export default function SparqlEndpointsList() {
   const classes = useStyles();
   const theme = useTheme();
   // const solid_name = useLDflexValue('user.name') || 'unknown';

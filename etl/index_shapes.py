@@ -261,8 +261,8 @@ def github_graphql_get_extra(repo):
       }
     }'''
 
-# Fetch files from GitLab
 def fetch_from_gitlab(shapes_graph, gl, search_topic):
+    """Fetch files from GitLab"""
     # for search_topic in topics:
     gitlab_repos_list = gl.search(gitlab.SEARCH_SCOPE_PROJECTS, search_topic)
     for repo_json in gitlab_repos_list:
@@ -289,6 +289,7 @@ def fetch_from_gitlab(shapes_graph, gl, search_topic):
     return shapes_graph
 
 def fetch_from_gitee(shapes_graph, token, search_topic):
+    """Fetch files from Gitee"""
     # Record time to avoid hitting GitHub Actions limits
     time_start = datetime.now()
     # for search_topic in topics:
@@ -318,6 +319,7 @@ def fetch_from_gitee(shapes_graph, token, search_topic):
 
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git_service):
+    """Clone and process a repo found in a git service"""
     # shapes_graph = Graph()
 
     logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
@@ -389,8 +391,8 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
 
 
 def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, branch, repo_description):
-    """Process a Shapes file, check its content and add entry to the shapes graph
-    Large function, contain parsing for all formats: RDF, OBO, ShEx, OpenAPI...
+    """Process a file, check its content and add entry to the shapes graph
+    Large function, contain parsing for all formats: RDF, OBO, ShEx, OpenAPI, etc
     """
     relative_filepath = str(rdf_file_path)[12:]
     github_file_url = generate_github_file_url(repo_url, relative_filepath, branch)
@@ -784,7 +786,7 @@ def get_files(extensions):
 
 def test_sparql_endpoint(sparql_endpoint):
     """Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
-    Then, like repos, add them as schema:EntryPoint
+    Then add them in the graph as schema:EntryPoint
     """
     if sparql_endpoint in VALID_ENDPOINTS.keys():
       return True

@@ -11,7 +11,7 @@ import ActiveEndpointsIcon from '@material-ui/icons/OfflineBolt';
 import { AuthButton, Value } from '@solid/react';
 // @ts-ignore
 import iconImage from '../../assets/icon.png';
-import SparqlEndpointsDisplay from "../pages/SparqlEndpointsDisplay";
+import SparqlEndpointsList from "../pages/SparqlEndpointsList";
 
 const useStyles = makeStyles(theme => ({
   menuButton: {
@@ -118,7 +118,7 @@ export default function NavBar() {
                 style={{paddingBottom: '0px'}}
               />
             <CardContent>
-              <SparqlEndpointsDisplay />
+              <SparqlEndpointsList />
             </CardContent>
           </Card>
           {/* </ClickAwayListener> */}
