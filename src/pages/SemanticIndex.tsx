@@ -107,7 +107,7 @@ export default function SemanticIndex() {
     'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
     'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
     'https://w3id.org/np/o/ntemplate/AssertionTemplate': 'Nanopub',
-    'http://www.w3.org/ns/dcat#Dataset': 'Dataset'
+    'http://www.w3.org/ns/dcat#Dataset': 'DCAT'
   }
 
   function getFileLabel(file_type: string) {
@@ -122,7 +122,7 @@ export default function SemanticIndex() {
     if (shape_types_mappings[file_type] == 'SPARQL' || file_type == 'SPARQL') icon = '✨️'
     if (shape_types_mappings[file_type] == 'SKOS' || file_type == 'SKOS') icon = '📕'
     if (shape_types_mappings[file_type] == 'Nanopub' || file_type == 'Nanopub') icon = '🗞'
-    if (shape_types_mappings[file_type] == 'Dataset' || file_type == 'Dataset') icon = '💽'
+    if (shape_types_mappings[file_type] == 'DCAT' || file_type == 'DCAT') icon = '💽'
     return icon;
   }
 
@@ -414,9 +414,11 @@ export default function SemanticIndex() {
   return(
     <Container style={{marginTop: theme.spacing(4), marginBottom: theme.spacing(3)}}>
       <Alert severity="warning" style={{marginBottom: theme.spacing(2)}}>
-        Shapes of You is currently under development. Be patient when it loads the data (especially the 60k files on the main page). 
-        And feel free to <a href="https://github.com/vemonet/shapes-of-you/issues" className={classes.link} target="_blank" rel="noopener noreferrer">create new issues</a> if you see improvement that could be done!
+        Shapes of You is currently under active development. Be patient when it loads the data (especially the 60k files on the main page). 
+        And feel free to <a href="https://github.com/vemonet/shapes-of-you/issues" className={classes.link} target="_blank" rel="noopener noreferrer">create new issues</a> if you think of improvements or want to notify us about a problem!
       </Alert>
+
+      <About />
 
       <LoggedIn>
         <Typography style={{textAlign: 'center', margin: theme.spacing(2, 2)}}>
@@ -429,8 +431,6 @@ export default function SemanticIndex() {
           Hopefully, soon you will be able to bookmark your favourites resources using your SOLID account! 🔖
         </Typography>
       </LoggedIn>
-
-      <About />
 
       { state.repos_overview_chart['datasets'] && state.files_overview_chart['datasets'] &&
         <Grid container spacing={3} style={{textAlign: 'center', marginTop: theme.spacing(2)}}>
