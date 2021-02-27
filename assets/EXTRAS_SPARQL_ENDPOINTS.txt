@@ -44,3 +44,5 @@ http://linkeddata.finki.ukim.mk/sparql
 http://dutchshipsandsailors.nl/data/sparql/
 http://semanticweb.cs.vu.nl/dss/sparql/
 http://cr.eionet.europa.eu/sparql
+https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
+https://chemblmirror.rdf.bigcat-bioinformatics.org/sparql
