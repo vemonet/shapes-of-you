@@ -2,7 +2,7 @@
 name: Improve the user interface
 about: Propose improvements or report bug related to the user interface
 # title: ''
-labels: user-interface
+labels: user interface
 assignees: 'vemonet'
 ---
 
