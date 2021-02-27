@@ -172,7 +172,7 @@ export default function SemanticIndex() {
           // @ts-ignore
           files_overview_chart.datasets[0].data.push(result.files_count.value);
         })
-        console.log(repos_overview_chart.labels)
+        // console.log(repos_overview_chart.labels)
         updateState({
           repos_overview_chart: repos_overview_chart,
           files_overview_chart: files_overview_chart
@@ -231,7 +231,7 @@ export default function SemanticIndex() {
             global_shapes_array[repo_index]['search_description'] = global_shapes_array[repo_index]['search_description'] + search_description
           }
         })
-        console.log(global_shapes_array)
+        // console.log(global_shapes_array)
         updateState({global_shapes_array: global_shapes_array})
 
       })

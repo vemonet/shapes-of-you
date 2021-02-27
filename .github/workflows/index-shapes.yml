@@ -141,6 +141,17 @@ jobs:
         # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
         path: REPORT.md
 
+    # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
+    #   uses: MaastrichtU-IDS/RdfUpload@master
+    #   with:
+    #     file: shapes-rdf.ttl
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
+
+
+
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
     #   uses: actions/upload-artifact@v1
     #   with:
@@ -196,16 +207,6 @@ jobs:
 
       # curl -T shapes-rdf.nt https://data.index.semanticscience.org/DAV/home/demo/Shapes/ -u dba:$D2S_PASSWORD
       # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFInsert#HTTP%20PUT%20Example%202
-
-    # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
-    #   uses: MaastrichtU-IDS/RdfUpload@master
-    #   with:
-    #     file: shapes-rdf.ttl
-    #     # endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-    #     endpoint: https://data.index.semanticscience.org/sparql
-    #     user: ${{ secrets.GRAPHDB_USER }}
-    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
-    #     graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
 
 
     # - name: Clear older graph in the triplestore
