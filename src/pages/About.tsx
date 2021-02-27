@@ -56,14 +56,6 @@ export default function About() {
     setState(stateRef.current);
   }, [setState]);
 
-  function linkTo(url: string, label: string) {
-    return (
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        {label}
-      </a>
-    )
-  }
-  
   return(
     <Card >
         <CardHeader
@@ -118,7 +110,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="https://www.w3.org/OWL/" className={classes.link} target="_blank" rel="noopener noreferrer">OWL</a> ontologies</b>: add the topic <code>owl</code>, we index RDF files, with all <code>owl:Class</code> they contain
+                  <b><a href="https://www.w3.org/OWL/" className={classes.link} target="_blank" rel="noopener noreferrer">OWL</a> ontologies</b>: we index RDF files, with all <code>owl:Class</code> they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -128,7 +120,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="https://www.w3.org/TR/swbp-skos-core-spec/" className={classes.link} target="_blank" rel="noopener noreferrer">SKOS</a> vocabularies</b>: add the topic <code>skos</code>, we index RDF files, with all <code>skos:Concept</code> they contain
+                  <b><a href="https://www.w3.org/TR/swbp-skos-core-spec/" className={classes.link} target="_blank" rel="noopener noreferrer">SKOS</a> vocabularies</b>: we index RDF files, with all <code>skos:Concept</code> they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -139,7 +131,7 @@ export default function About() {
                 </ListItemAvatar>
                 <ListItemText
                 > 
-                  <b><a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer">SHACL</a> shapes</b>: add the topic <code>shacl-shapes</code>, we index RDF files, with all <code>sh:NodeShape</code> they contain
+                  <b><a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer">SHACL</a> shapes</b>: we index RDF files, with all <code>sh:NodeShape</code> they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -149,7 +141,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="https://shex.io/" className={classes.link} target="_blank" rel="noopener noreferrer">ShEx</a> expressions</b>: add the topic <code>shex</code>, we index <code>.shex</code> files, and ShEx shapes defined in RDF files (but no metadata described in ShEx)
+                  <b><a href="https://shex.io/" className={classes.link} target="_blank" rel="noopener noreferrer">ShEx</a> expressions</b>: we index <code>.shex</code> files, and ShEx shapes defined in RDF files (but no metadata described in ShEx)
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -159,7 +151,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="https://www.w3.org/TR/sparql11-query/" className={classes.link} target="_blank" rel="noopener noreferrer">SPARQL</a> queries</b>: add the topic <code>grlc</code>, we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link} target="_blank" rel="noopener noreferrer">grlc.io</a> APIs metadata, complying with the <a href="https://github.com/the-open-university/basil/wiki/Introduction" className={classes.link} target="_blank" rel="noopener noreferrer">BASIL convention</a>
+                  <b><a href="https://www.w3.org/TR/sparql11-query/" className={classes.link} target="_blank" rel="noopener noreferrer">SPARQL</a> queries</b>: we index <code>.rq</code> and <code>.sparql</code> files, and parse <a href="http://grlc.io" className={classes.link} target="_blank" rel="noopener noreferrer">grlc.io</a> APIs metadata, complying with the <a href="https://github.com/the-open-university/basil/wiki/Introduction" className={classes.link} target="_blank" rel="noopener noreferrer">BASIL convention</a>
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -169,7 +161,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="https://rml.io/" className={classes.link} target="_blank" rel="noopener noreferrer">RML</a> mappings</b>: add the topic <code>rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> and <code>rml:LogicalSource</code> they contain
+                  <b><a href="https://rml.io/" className={classes.link} target="_blank" rel="noopener noreferrer">RML</a> mappings</b>: we index RDF files, with all <code>r2rml:SubjectMap</code> and <code>rml:LogicalSource</code> they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -179,7 +171,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="https://www.w3.org/TR/r2rml/" className={classes.link} target="_blank" rel="noopener noreferrer">R2RML</a> mappings</b>: add the topic <code>r2rml</code>, we index RDF files, with all <code>r2rml:SubjectMap</code> they contain
+                  <b><a href="https://www.w3.org/TR/r2rml/" className={classes.link} target="_blank" rel="noopener noreferrer">R2RML</a> mappings</b>: we index RDF files, with all <code>r2rml:SubjectMap</code> they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -189,7 +181,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="http://nanopub.org/wordpress/" className={classes.link} target="_blank" rel="noopener noreferrer">Nanopublication</a> templates</b>: add the topic <code>nanopub</code>, we index RDF files, with all <code>nt:AssertionTemplates</code> and inputs they contain
+                  <b><a href="http://nanopub.org/wordpress/" className={classes.link} target="_blank" rel="noopener noreferrer">Nanopublication</a> templates</b>: we index RDF files, with all <code>nt:AssertionTemplates</code> and inputs they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -199,7 +191,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: add the topic <code>obo</code>, we index <code>.obo</code> files, and parse all terms they contain
+                  <b><a href="http://www.obofoundry.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OBO</a> ontologies</b>: we index <code>.obo</code> files, and parse all terms they contain
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -209,7 +201,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: add the topic <code>openapi</code>, we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
+                  <b><a href="https://www.openapis.org/" className={classes.link} target="_blank" rel="noopener noreferrer">OpenAPI</a> specifications</b>: we index <code>.yml</code>, <code>.yaml</code> and <code>.json</code> files, and parse the spec to retrieve API metadata
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -219,7 +211,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                <b><a href="https://www.w3.org/TR/vocab-dcat-3/" className={classes.link} target="_blank" rel="noopener noreferrer">DCAT</a> datasets</b>: add the topic <code>dataset</code>, we index RDF files, with all <code>dcat:Dataset</code> they contain
+                <b><a href="https://www.w3.org/TR/vocab-dcat-3/" className={classes.link} target="_blank" rel="noopener noreferrer">DCAT</a> datasets</b>: we index RDF files, with all <code>dcat:Dataset</code> they contain
                 </ListItemText>
               </ListItem>
             </List>
