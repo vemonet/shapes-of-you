@@ -72,7 +72,6 @@ export default function SparqlEndpointsList() {
           // if (result.query) query_obj['query'] = result.query.value
           // sparql_endpoints_obj[endpoint_url]['queries'].push(query_obj)
         })
-        console.log(sparql_endpoints_obj)
         updateState({ sparql_endpoints_obj: sparql_endpoints_obj })
       })
       .catch(error => {
@@ -99,9 +98,6 @@ export default function SparqlEndpointsList() {
           <List>
             {Object.keys(state.sparql_endpoints_obj)
               .sort((a: any, b: any): number => {
-                console.log('ab');
-                console.log(a);
-                console.log(b);
                 // state.sparql_endpoints_obj[a].datasets_graph_count - state.sparql_endpoints_obj[b].datasets_graph_count;
                 return a.datasets_graph_count - b.datasets_graph_count;
               })

@@ -41,7 +41,8 @@ export default function YasguiPage(props: any) {
   // let location = useLocation();
 
   const [state, setState] = React.useState({
-    entities_relations_overview_results: []
+    entities_relations_overview_results: [],
+    loadingMetadata: true
   });
   const stateRef = React.useRef(state);
   // Avoid conflict when async calls
@@ -67,16 +68,33 @@ export default function YasguiPage(props: any) {
     if (props.endpoint) {
       axios.get(Config.sparql_endpoint + `?query=` + encodeURIComponent(entities_relations_query.replace('?_metadataGraph', props.endpoint)))
       .then((res: any) => {
-        if (res.data.results){
-          console.log('In endpoint');
-          console.log(res.data.results.bindings);
+        if (res.data.results && res.data.results.bindings.length > 0){
+          // Found metadata for classes relations
           updateState( { entities_relations_overview_results: res.data.results.bindings } );
-          // updateState({ graphsLoading: false });
-          // $(this.refs.graphsOverview).DataTable();
+          updateState({ loadingMetadata: false });
           $('#datatableEntitiesRelationOverview').DataTable({
             "autoWidth": false
           });
+        } else {
+          // Get only subject class counts
+          axios.get(Config.sparql_endpoint + `?query=` + encodeURIComponent(entities_query.replace('?_metadataGraph', props.endpoint)))
+            .then((res: any) => {
+              updateState({ loadingMetadata: false });
+              if (res.data.results){
+                updateState( { entities_relations_overview_results: res.data.results.bindings } );
+                $('#datatableEntitiesRelationOverview').DataTable({
+                  "autoWidth": false
+                });
+              }
+            })
+            .catch(error => {
+              updateState({ loadingMetadata: false });
+              console.log(error)
+            })
         }
+      })
+      .catch(error => {
+        console.log(error)
       })
     }
     
@@ -127,10 +145,9 @@ export default function YasguiPage(props: any) {
             // let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
             queries_obj[result.file_label.value] = result.query.value
           })
-          console.log(yasgui);
           if (Object.keys(yasgui._tabs).length > 1) {
             Object.keys(yasgui._tabs).map((tab_id: any): any =>  {
-              console.log(tab_id);
+              // console.log(tab_id);
               let tab: any = yasgui.getTab(tab_id);
               tab.close();
             })
@@ -165,6 +182,9 @@ export default function YasguiPage(props: any) {
 
   return (
     <Container>
+      {state.loadingMetadata && 
+        <CircularProgress />
+      }
       {Object.keys(state.entities_relations_overview_results).length > 0 && (<>
         <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(0)}}>
           Endpoint metadata
@@ -190,12 +210,17 @@ export default function YasguiPage(props: any) {
                     <td><a href={row.subject.value} />{shortenUri(row.subject.value)}</td>
                     <td><a href={row.predicate.value} />{shortenUri(row.predicate.value)}</td>
                     {row.object && (
-                      <td><a href={row.object.value} />{shortenUri(row.object.value)}</td>
+                      <>
+                        <td><a href={row.object.value} />{shortenUri(row.object.value)}</td>
+                        <td><Typography variant="body2">{row.objectCount.value}</Typography></td>
+                      </>
                     )}
                     {!row.object && (
-                      <td><Typography variant="body2">Not found</Typography></td>
+                      <>
+                        <td><Typography variant="body2">No metadata</Typography></td>
+                        <td><Typography variant="body2">No metadata</Typography></td>
+                      </>
                     )}
-                    <td><Typography variant="body2">{row.objectCount.value}</Typography></td>
                   </tr>
               })}
             </tbody>
@@ -225,17 +250,38 @@ PREFIX void-ext: <http://ldf.fi/void-ext#>
 SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
 WHERE {
   GRAPH <?_metadataGraph> {
-    # ?graph a void:Dataset .
-    ?graph void:propertyPartition [
-      void:property ?predicate ;
+    ?graph void:propertyPartition ?propertyPartition . 
+    ?propertyPartition void:property ?predicate ;
       void:classPartition [
         void:class ?subject ;
         void:distinctSubjects ?subjectCount ;
-      ];
+      ] ;
       void-ext:objectClassPartition [
-      void:class ?object ;
-      void:distinctObjects ?objectCount ;
-      ]
-    ] .
+        void:class ?object ;
+        void:distinctObjects ?objectCount ;
+      ] .
+  }
+} ORDER BY DESC(?subjectCount)`
+
+
+const entities_query = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX bl: <http://w3id.org/biolink/vocab/>
+PREFIX dctypes: <http://purl.org/dc/dcmitype/>
+PREFIX idot: <http://identifiers.org/idot/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX void-ext: <http://ldf.fi/void-ext#>
+SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
+WHERE {
+  GRAPH <?_metadataGraph> {
+    ?graph void:propertyPartition ?propertyPartition . 
+    ?propertyPartition void:property ?predicate ;
+      void:classPartition [
+        void:class ?subject ;
+        void:distinctSubjects ?subjectCount ;
+      ] .
   }
 } ORDER BY DESC(?subjectCount)`

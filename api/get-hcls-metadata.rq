@@ -23,17 +23,19 @@ SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
 WHERE {
   GRAPH ?_sparqlendpoint_iri {
     # ?graph a void:Dataset .
-    ?graph void:propertyPartition [
-      void:property ?predicate ;
+    ?graph void:propertyPartition ?propertyPartition . 
+    ?propertyPartition void:property ?predicate ;
       void:classPartition [
         void:class ?subject ;
         void:distinctSubjects ?subjectCount ;
-      ];
-      void-ext:objectClassPartition [
+      ] .
+      
+    OPTIONAL {
+      ?propertyPartition void-ext:objectClassPartition [
       void:class ?object ;
       void:distinctObjects ?objectCount ;
       ]
-    ] .
+    }
   }
   # FILTER (?sparql_endpoint = ?_sparqlendpoint_iri)
 } ORDER BY DESC(?subjectCount)
