@@ -150,5 +150,5 @@ WHERE {
       FILTER EXISTS { ?datasets_graph void:propertyPartition ?propertyPartition . }
     } 
   }
-} GROUP BY ?sparql_endpoint
+} GROUP BY ?sparql_endpoint ORDER BY DESC(?queries_count) DESC(?datasets_graph_count)
 `
