@@ -70,10 +70,12 @@ PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX void-ext: <http://ldf.fi/void-ext#>
 PREFIX sdm: <https://w3id.org/vocab/sdm#>
 PREFIX r2rml: <http://www.w3.org/ns/r2rml#>
 PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
 PREFIX nt: <https://w3id.org/np/o/ntemplate/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 ```
 
 ### Classes

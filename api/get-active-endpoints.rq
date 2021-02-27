@@ -7,9 +7,10 @@
 #+ method: GET
 # pagination: 100
 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX void: <http://rdfs.org/ns/void#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX void-ext: <http://ldf.fi/void-ext#>
 SELECT DISTINCT ?sparql_endpoint (count(distinct ?datasets_graph) AS ?datasets_graph_count) (count(distinct ?query_file) AS ?queries_count)
 WHERE { 
   ?sparql_endpoint a schema:EntryPoint .
@@ -20,6 +21,7 @@ WHERE {
   OPTIONAL {
     GRAPH ?sparql_endpoint {
       ?datasets_graph a void:Dataset .
+      FILTER EXISTS { ?datasets_graph void:propertyPartition ?propertyPartition . }
     } 
   }
 } GROUP BY ?sparql_endpoint ORDER BY DESC(?datasets_graph_count) DESC(?queries_count)
