@@ -60,3 +60,4 @@ NCATS-Gamma/omnicorp
 ramaschittella/INK-Browser
 IGN-CNIG/btn100
 egonw/SARS-CoV-2-Queries
+fnielsen/scholia
