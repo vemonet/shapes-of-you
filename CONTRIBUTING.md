@@ -1,6 +1,23 @@
 # Contributing 👩‍💻
 
-When contributing to this repository, please first discuss the change you wish to make via an [issue](https://github.com/vemonet/shapes-of-you/issues) if applicable.
+When contributing to this repository, please check the [issues](https://github.com/vemonet/shapes-of-you/issues) first, and post a new one if relevant.
+
+## Find what you search 🔎
+
+Searching for something? Here are the folder where you will find it
+
+* I want to add repositories or endpoints missed by your indexer! 
+  * Checkout the `assets` folder
+* I want to improve the website! 
+  * Checkout the `src` folder. The main page is defined by `SemanticIndex.tsx`
+* I want to improve the indexing of the files (RDF files, SPARQL queries, etc)
+  * Checkout the `etl/index-shapes.py` script
+* I want to improve the metadata generation for SPARQL endpoints!
+  * Checkout the [d2s `generate_metadata.py` file](https://github.com/MaastrichtU-IDS/d2s-cli/blob/master/d2s/generate_metadata.py#L144)
+* I want to add or improve queries used for the Shapes of Your grlc API
+  * Checkout the `api` folder
+
+## Contribute 📝
 
 To contribute:
 
