@@ -22,3 +22,4 @@ SDM-TIB/Ontario
 ramaschittella/INK-Browser
 IGN-CNIG/btn100
 egonw/SARS-CoV-2-Queries
+fnielsen/scholia
