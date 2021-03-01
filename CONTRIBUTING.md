@@ -1,5 +1,7 @@
 # Contributing 👩‍💻
 
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4676/badge)](https://bestpractices.coreinfrastructure.org/projects/4676)
+
 When contributing to this repository, please check the [issues](https://github.com/vemonet/shapes-of-you/issues) first, and post a new one if relevant.
 
 ## Find what you search 🔎
