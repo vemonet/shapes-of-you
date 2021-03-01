@@ -16,7 +16,9 @@ import NanopubIcon from '@material-ui/icons/Chat';
 import DatasetIcon from '@material-ui/icons/Archive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-
+import ExploreIcon from '@material-ui/icons/Explore';
+import BookIcon from '@material-ui/icons/Book';
+import AccountTreeIcon from '@material-ui/icons/AccountTree';
 // @ts-ignore
 import iconImage from '../../assets/icon.png';
 
@@ -82,12 +84,45 @@ export default function About() {
 
         <Collapse in={state.show_info_card} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography style={{marginBottom: theme.spacing(2)}}>
-              Shapes of you is the best place to search and explore existing semantic shapes, ontologies, vocabularies and queries. Searching an ontology for datasets? Needing to validate RDF using SHACL or ShEx? Finding SPARQL queries about drugs? There might be a shape out there waiting for you! You can also explore shapes to find inspirations. You might even find a grlc API serving data relevant to your projects, who knows? Linked Open Data are full of surprises.
+            <Typography>
+              Shapes of You is a continuously evolving and sustainable knowledge graph, with a user-friendly interface to search for standard knowledge description files, and access linked open data efficiently and effectively. This system has 3 main scopes:
             </Typography>
 
+            <List>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <MenuBookIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  Index standard knowledge: index files described following well-known standards in code repositories, such as OWL ontologies
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <DeviceHubIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  Index open data: index and generate metadata describing the content of active SPARQL endpoints
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <ExploreIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText> 
+                  Provide a user-friendly access point for the indexed knowledge and data
+                </ListItemText>
+              </ListItem>
+            </List>
+
             <Typography style={{marginBottom: theme.spacing(2)}}>
-              To insure their validity, all indexed files has been parsed using the corresponding python package (rdflib, obonet, prance). You can check the list of files which failed to load in our <a href="https://github.com/vemonet/shapes-of-you/tree/report" className={classes.link}>reports</a>. Feel free to fix them if you are the owner!
+              To insure their validity, all indexed files are parsed using the corresponding python package (rdflib, obonet, prance). We also query each SPARQL endpoint to make sure they are active.
             </Typography>
 
             {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22" target="_blank" rel="noopener noreferrer">
@@ -106,7 +141,7 @@ export default function About() {
               <ListItem>
                 <ListItemAvatar>
                   <Avatar>
-                    <DeviceHubIcon />
+                    <AccountTreeIcon />
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
@@ -116,7 +151,7 @@ export default function About() {
               <ListItem>
                 <ListItemAvatar>
                   <Avatar>
-                    <MenuBookIcon />
+                    <BookIcon />
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
