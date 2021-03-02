@@ -1,8 +1,8 @@
 name: Analyze SPARQL endpoints
 on:
-  # schedule:
-  #   # Everyday at 01:00 
-  #   - cron:  '00 01 * * *'
+  schedule:
+    # Everyday at 07:00 
+    - cron:  '00 07 * * *'
   workflow_dispatch:
 
 jobs:
@@ -101,19 +101,22 @@ jobs:
       env:
         ENDPOINT_URL: ${{ matrix.endpoint-url.sparql_endpoint.value }}
       run: |
-        export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
-        export ENDPOINT_LABEL=${ENDPOINT_LABEL//https:/}
-        export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
-        # git stash
-        git fetch
-        # git checkout metadata
-        mv output/metadata.ttl metadata-$ENDPOINT_LABEL.ttl
-        git diff
-        git config --global user.email "vincent.emonet@gmail.com"
-        git config --global user.name "Vincent Emonet"
-        git add metadata-$ENDPOINT_LABEL.ttl
-        git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
-        git push || exit 0
+        if [ $(wc -l  metadata.ttl | cut -d' ' -f1) -gt $(echo 1) ]
+        then
+          export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
+          export ENDPOINT_LABEL=${ENDPOINT_LABEL//https:/}
+          export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
+          # git stash
+          git fetch
+          # git checkout metadata
+          mv output/metadata.ttl metadata-$ENDPOINT_LABEL.ttl
+          git diff
+          git config --global user.email "vincent.emonet@gmail.com"
+          git config --global user.name "Vincent Emonet"
+          git add metadata-$ENDPOINT_LABEL.ttl
+          git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
+          git push || exit 0
+        fi
         
 
     # - name: Clear older graph in the triplestore
