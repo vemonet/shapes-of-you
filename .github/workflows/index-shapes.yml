@@ -83,6 +83,12 @@ jobs:
           search-string: skos
         - git-service: gitlab
           search-string: obofoundry
+        - git-service: github
+          search-string: csvw
+        - git-service: gitlab
+          search-string: csvw
+        - git-service: gitee
+          search-string: csvw
         - git-service: lod-cloud
         - git-service: yummydata
 

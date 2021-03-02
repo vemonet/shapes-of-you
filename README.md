@@ -77,6 +77,7 @@ PREFIX sdm: <https://w3id.org/vocab/sdm#>
 PREFIX r2rml: <http://www.w3.org/ns/r2rml#>
 PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
 PREFIX nt: <https://w3id.org/np/o/ntemplate/>
+PREFIX csvw: <http://www.w3.org/ns/csvw#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 ```
 
