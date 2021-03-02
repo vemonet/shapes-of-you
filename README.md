@@ -216,6 +216,8 @@ We use the [`d2s`](https://github.com/MaastrichtU-IDS/d2s-cli) tool (aka. data2s
 d2s metadata analyze https://graphdb.dumontierlab.com/repositories/shapes-registry -o metadata.ttl
 ```
 
+We commit the generated metadata file to the `metadata` branch
+
 ## Contribute 👩‍💻
 
 Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).

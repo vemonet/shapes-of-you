@@ -1,6 +1,6 @@
   import React from 'react';
 import { makeStyles,  useTheme } from '@material-ui/core/styles';
-import { Container, CircularProgress, Typography, Paper, InputBase, IconButton } from "@material-ui/core";
+import { Container, CircularProgress, Typography, Paper, InputBase, IconButton, Box } from "@material-ui/core";
 import { List, ListItem, ListItemAvatar, ListItemText } from "@material-ui/core";
 import SearchIcon from '@material-ui/icons/Search';
 import axios from 'axios';
@@ -113,20 +113,22 @@ export default function SparqlEndpointsList() {
 
       {state.sparql_endpoints_array.length >= 1 && (
         <>
-          <Typography variant='body1'>
-            {filtered_endpoints.length} active SPARQL endpoints
-          </Typography>
+          <Box display="flex" style={{margin: theme.spacing(2, 0)}}>
+            <Typography variant='body1'>
+              {filtered_endpoints.length} active SPARQL endpoints
+            </Typography>
 
-          <Paper component="form" className={classes.paperSearch}>
-            <InputBase
-              className={classes.searchInput} inputProps={{ 'aria-label': 'search input' }}
-              placeholder={"🔎 Quick search"}
-              onChange={searchChange}
-            />
-            <IconButton aria-label="search button">
-              <SearchIcon />
-            </IconButton>
-          </Paper>
+            <Paper component="form" className={classes.paperSearch}>
+              <InputBase
+                className={classes.searchInput} inputProps={{ 'aria-label': 'search input' }}
+                placeholder={"🔎 Quick search"}
+                onChange={searchChange}
+              />
+              <IconButton aria-label="search button">
+                <SearchIcon />
+              </IconButton>
+            </Paper>
+          </Box>
 
           <List>
             {filtered_endpoints
@@ -137,7 +139,7 @@ export default function SparqlEndpointsList() {
               .map(function(sparql_endpoint: any, key: number){
               return <ListItem key={key}>
                 <ListItemAvatar>
-                  <QueryYasguiButton endpoint={sparql_endpoint} />
+                  <QueryYasguiButton endpoint={sparql_endpoint.url} />
                 </ListItemAvatar>
                 <ListItemText>
                   <b><a href={sparql_endpoint.url} className={classes.link} target="_blank" rel="noopener noreferrer">{sparql_endpoint.url}</a></b>
