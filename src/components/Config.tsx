@@ -10,6 +10,7 @@ export default {
         "dc":          "http://purl.org/dc/elements/1.1/",
         "dct":         "http://purl.org/dc/terms/",
         "dctypes":     "http://purl.org/dc/dcmitype/",
+        "csvw":        "http://www.w3.org/ns/csvw#",
         "bl":          "https://w3id.org/biolink/vocab/",
         "biolink":     "http://w3id.org/biolink/vocab/",
         "d2s":         "https://w3id.org/d2s/",

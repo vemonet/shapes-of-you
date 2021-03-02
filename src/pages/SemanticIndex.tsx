@@ -81,7 +81,8 @@ export default function SemanticIndex() {
       R2RML: true,
       Nanopub: true,
       OpenAPI: true,
-      Dataset: true,
+      DCAT: true,
+      CSVW: true
     },
     search_repos_only: false,
     show_pwa_alert: false,
@@ -107,7 +108,8 @@ export default function SemanticIndex() {
     'http://www.w3.org/ns/r2rml#TriplesMap': 'R2RML',
     'http://semweb.mmlab.be/ns/rml#LogicalSource': 'RML',
     'https://w3id.org/np/o/ntemplate/AssertionTemplate': 'Nanopub',
-    'http://www.w3.org/ns/dcat#Dataset': 'DCAT'
+    'http://www.w3.org/ns/dcat#Dataset': 'DCAT',
+    'http://www.w3.org/ns/csvw#Schema': 'CSVW'
   }
 
   function getFileLabel(file_type: string) {
@@ -123,6 +125,8 @@ export default function SemanticIndex() {
     if (shape_types_mappings[file_type] == 'SKOS' || file_type == 'SKOS') icon = '📕'
     if (shape_types_mappings[file_type] == 'Nanopub' || file_type == 'Nanopub') icon = '🗞'
     if (shape_types_mappings[file_type] == 'DCAT' || file_type == 'DCAT') icon = '💽'
+    if (shape_types_mappings[file_type] == 'CSVW' || file_type == 'CSVW') icon = '📑'
+
     return icon;
   }
 
@@ -385,8 +389,9 @@ export default function SemanticIndex() {
         || (state.type_checkboxes['R2RML'] === true && file.type == 'http://www.w3.org/ns/r2rml#TriplesMap')
         || (state.type_checkboxes['RML'] === true && file.type == 'http://semweb.mmlab.be/ns/rml#LogicalSource')
         || (state.type_checkboxes['OpenAPI'] === true && file.type == 'https://schema.org/APIReference')
-        || (state.type_checkboxes['Dataset'] === true && file.type == 'http://www.w3.org/ns/dcat#Dataset')
+        || (state.type_checkboxes['DCAT'] === true && file.type == 'http://www.w3.org/ns/dcat#Dataset')
         || (state.type_checkboxes['Nanopub'] === true && file.type == 'https://w3id.org/np/o/ntemplate/AssertionTemplate')
+        || (state.type_checkboxes['CSVW'] === true && file.type == 'http://www.w3.org/ns/csvw#Schema')
         ) {
           if (state.search && !state.search_repos_only) {
             return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
