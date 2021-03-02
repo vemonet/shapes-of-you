@@ -391,7 +391,7 @@ export default function SemanticIndex() {
           if (state.search && !state.search_repos_only) {
             return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
           } else {
-            // If no search provided, we only filter by type 
+            // If no search text provided, we only filter by type 
             return true
           }
         }
