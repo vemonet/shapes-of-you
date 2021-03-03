@@ -134,7 +134,7 @@ export default function SparqlEndpointsList() {
             {filtered_endpoints
               .sort((a: any, b: any): number => {
                 // state.sparql_endpoints_obj[a].datasets_graph_count - state.sparql_endpoints_obj[b].datasets_graph_count;
-                return a.datasets_graph_count - b.datasets_graph_count;
+                return b.queries_count - a.queries_count;
               })
               .map(function(sparql_endpoint: any, key: number){
               return <ListItem key={key}>
