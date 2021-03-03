@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     width: '35ch',
-    marginRight: theme.spacing(3)
+    marginLeft: theme.spacing(3)
   },
   searchInput: {
     marginLeft: theme.spacing(1),

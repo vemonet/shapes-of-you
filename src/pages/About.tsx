@@ -14,6 +14,7 @@ import RmlIcon from '@material-ui/icons/AllInclusive';
 import R2rmlIcon from '@material-ui/icons/Storage';
 import NanopubIcon from '@material-ui/icons/Chat';
 import DatasetIcon from '@material-ui/icons/Archive';
+import CsvwIcon from '@material-ui/icons/List';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExploreIcon from '@material-ui/icons/Explore';
@@ -207,6 +208,16 @@ export default function About() {
                 </ListItemAvatar>
                 <ListItemText>
                   <b><a href="https://www.w3.org/TR/r2rml/" className={classes.link} target="_blank" rel="noopener noreferrer">R2RML</a> mappings</b>: we index RDF files, with all <code>r2rml:SubjectMap</code> they contain
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <CsvwIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText>
+                  <b><a href="https://www.w3.org/TR/tabular-data-primer/" className={classes.link} target="_blank" rel="noopener noreferrer">CSVW</a> metadata</b>: we index RDF files, with all <code>csvw:Column</code> they contain
                 </ListItemText>
               </ListItem>
               <ListItem>

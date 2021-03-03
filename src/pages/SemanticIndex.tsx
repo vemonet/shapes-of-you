@@ -343,7 +343,7 @@ export default function SemanticIndex() {
   }
 
   const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    updateState({ search: event.target.value })
+    updateState({ search: event.target.value, page: 1 })
   }
 
   const handleCheckboxes = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -46,3 +46,4 @@ http://semanticweb.cs.vu.nl/dss/sparql/
 http://cr.eionet.europa.eu/sparql
 https://aopwiki.rdf.bigcat-bioinformatics.org/sparql
 https://chemblmirror.rdf.bigcat-bioinformatics.org/sparql
+https://api.druid.datalegend.net/datasets/ATM-DEMO/ATM-CLARIAH-DEMO/services/ATM-CLARIAH-DEMO/sparql
