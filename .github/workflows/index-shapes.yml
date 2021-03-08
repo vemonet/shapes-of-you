@@ -1,8 +1,8 @@
 name: Index shapes
 on:
   schedule:
-    # Everyday at 01:00 
-    - cron:  '00 01 * * *'
+    # Every saturday at 01:00 
+    - cron:  '0 1 * * 6'
   workflow_dispatch:
     inputs:
       logging:

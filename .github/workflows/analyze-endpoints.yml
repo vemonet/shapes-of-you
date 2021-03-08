@@ -1,8 +1,8 @@
 name: Analyze SPARQL endpoints
 on:
   schedule:
-    # Everyday at 07:00 
-    - cron:  '00 07 * * *'
+    # Every Sunday at 01:00 
+    - cron:  '0 1 * * 0'
   workflow_dispatch:
 
 jobs:

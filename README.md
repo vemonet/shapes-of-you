@@ -20,6 +20,7 @@ To be found by our indexer, make sure your repository description, or topics, on
 * **SKOS vocabularies**: we index all RDF files with all `skos:Concept` they contain
 * **RML mappings**: we index RDF files, with all `r2rml:SubjectMap` and `rml:LogicalSource` they contain
 * **R2RML mappings**: we index RDF files, with all `r2rml:SubjectMap` they contain
+* **[CSVW](https://www.w3.org/TR/tabular-data-primer/) metadata**: we index RDF files, with all `csvw:Column` they contain
 * **Nanopublication templates**: we index RDF files, with all `nt:AssertionTemplates` and inputs they contain
 * **OBO ontologies**: we index all `.obo` files with all terms they contain
 * **OpenAPI specifications**: we index `.yml`, `.yaml` and `.json` files, and parse the spec to retrieve API metadata
@@ -31,7 +32,7 @@ If your repository or endpoint is missed by our indexer:
 
 * Additional SPARQL endpoints in the file [`assets/EXTRAS_SPARQL_ENDPOINTS.txt`](https://github.com/vemonet/shapes-of-you/blob/main/assets/EXTRAS_SPARQL_ENDPOINTS.txt) 
 
-## Overview 🧭
+## Technical overview 🧭
 
 This web service is composed of those 4 main parts, described more in details below:
 
