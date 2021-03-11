@@ -23,6 +23,7 @@ jobs:
 
     - name: Install, build and deploy
       run: |
+        cd website
         git config --global user.email "vincent.emonet@gmail.com"
         git config --global user.name "Vincent Emonet"
         yarn install
