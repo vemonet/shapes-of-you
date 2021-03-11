@@ -37,7 +37,7 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: web-build
+        FOLDER: website/web-build
         CLEAN: true
 
     # - name: Fix custom GitHub Pages URL
