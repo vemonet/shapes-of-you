@@ -28,6 +28,8 @@ jobs:
         - git-service: github
           search-string: topic:obofoundry
         - git-service: github
+          search-string: topic:bioportal
+        - git-service: github
           search-string: topic:shacl-shapes
         - git-service: github
           search-string: topic:shex
