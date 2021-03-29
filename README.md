@@ -37,9 +37,9 @@ If your repository or endpoint is missed by our indexer:
 This web service is composed of those 4 main parts, described more in details below:
 
 * A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories. The retrieved data is defined using [RDF](https://www.w3.org/RDF/).
-  * A [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
+  * A [GitHub Actions workflow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
 * A React web app written in TypeScript, which displays the files and metadata from the SPARQL endpoint with filters, and search
-  * The website is automatically deployed by [GitHub Actions worklows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://index.semanticscience.org) at each push to the `main` branch.
+  * The website is automatically deployed by [GitHub Actions workflows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://index.semanticscience.org) at each push to the `main` branch.
   * We use [expo](https://expo.io/) to build this [Progressive Web App](https://web.dev/progressive-web-apps/) (aka. PWA), it can be installed as a native app on any computer desktop (using Chrome is recommended), or smartphones.
 * A triplestore with a publicly available SPARQL endpoint at https://graphdb.dumontierlab.com/repositories/shapes-registry
 * A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/vemonet/shapes-of-you
@@ -143,7 +143,7 @@ yarn upgrade
 
 ### In production 🌍
 
-This website is automatically deployed by a [GitHub Actions worklow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages which is accessed from http://index.semanticscience.org
+This website is automatically deployed by a [GitHub Actions workflow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to GitHub Pages which is accessed from http://index.semanticscience.org
 
 You can also build locally in the `/web-build` folder and serve on http://localhost:5000 (checkout the `Dockerfile`)
 
