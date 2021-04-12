@@ -47,7 +47,7 @@ services:
     #   - 8890:8890
 
   # webapp:
-  #   build: .
+  #   build: ./website
   #   container_name: projects
   #   ports:
   #     - 5000:5000
