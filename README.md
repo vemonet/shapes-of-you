@@ -28,9 +28,9 @@ To be found by our indexer, make sure your repository description, or topics, on
 
 If your repository or endpoint is missed by our indexer:
 
-* Additional GitHub repositories in the file [`etl/EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/etl/EXTRAS_GITHUB_REPOSITORIES.txt)
+* Additional GitHub repositories in the file [`EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_GITHUB_REPOSITORIES.txt)
 
-* Additional SPARQL endpoints in the file [`etl/EXTRAS_SPARQL_ENDPOINTS.txt`](https://github.com/vemonet/shapes-of-you/blob/main/etl/EXTRAS_SPARQL_ENDPOINTS.txt) 
+* Additional SPARQL endpoints in the file [`EXTRAS_SPARQL_ENDPOINTS.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_SPARQL_ENDPOINTS.txt) 
 
 ## Technical overview 🧭
 
