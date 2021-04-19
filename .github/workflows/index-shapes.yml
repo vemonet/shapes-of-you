@@ -157,6 +157,7 @@ jobs:
     - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
       uses: vemonet/sparql-operations-action@master
       with:
+        operation: upload
         file: shapes-rdf.ttl
         endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
         user: ${{ secrets.GRAPHDB_USER }}
