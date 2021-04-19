@@ -1,7 +1,7 @@
 
 export default {
-    sparql_endpoint: 'https://graphdb.dumontierlab.com/repositories/shapes-registry',
-    // sparql_endpoint: 'https://data.index.semanticscience.org/sparql',
+    // sparql_endpoint: 'https://graphdb.dumontierlab.com/repositories/shapes-registry',
+    sparql_endpoint: 'https://data.index.semanticscience.org/sparql',
     prefix_registry: {
         "rdf":         "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs":        "http://www.w3.org/2000/01/rdf-schema#",
