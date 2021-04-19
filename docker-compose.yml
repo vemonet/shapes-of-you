@@ -4,9 +4,10 @@ services:
 
   virtuoso:
     container_name: shapes-of-you-virtuoso
-    # image: openlink/virtuoso-opensource-7:latest
-    image: markw/ldp_server:latest
+    image: openlink/virtuoso-opensource-7:latest
+    # image: markw/ldp_server:latest
     # image: tenforce/virtuoso:latest
+    # https://hub.docker.com/r/markw/ldp_server
 
     # https://community.openlinksw.com/t/permissions-on-ldp-containers-and-resources/290/14
     # Download VAD packages: ODS Framework and Briefcase
@@ -27,7 +28,7 @@ services:
       - DAV_PASSWORD=${VIRTUOSO_PASSWORD}
       - SPARQL_UPDATE=true
       - DEFAULT_GRAPH=https://w3id.org/um/shapes-of-you
-      - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db
+      # - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db
       - VIRT_Database_ErrorLogLevel=2 # default: 7 is maximum logs
       - VIRT_HTTPServer_HTTPThreadSize=280000
       # Large dataset config
