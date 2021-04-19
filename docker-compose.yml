@@ -28,7 +28,7 @@ services:
       - DAV_PASSWORD=${VIRTUOSO_PASSWORD}
       - SPARQL_UPDATE=true
       - DEFAULT_GRAPH=https://w3id.org/um/shapes-of-you
-      # - VIRT_URIQA_DynamicLocal=0
+      # - VIRT_URIQA_DynamicLocal=1
       # - VIRT_URIQA_DefaultHost=localhost:8890
       - VIRT_URIQA_DefaultHost=${VIRTUOSO_URL}
       # - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db

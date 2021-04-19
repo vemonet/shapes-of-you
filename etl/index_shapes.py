@@ -22,7 +22,7 @@ from pyshexc.parser_impl import generate_shexj
 from python_graphql_client import GraphqlClient
 import gitlab
 
-from d2s.sparql_operations import sparql_update_instance
+# from d2s.sparql_operations import sparql_update_instance
 
 GITHUB_TOKEN = os.environ.get("API_GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
@@ -104,14 +104,29 @@ def main(argv):
     test_sparql_endpoint(endpoint)
 
   # Add all valids SPARQL graphs we found
+  # TODO: split lod-cloud, yummidata and extra endpoints in 3 files
+  shapes_graph = Graph()
   for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
     shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
     shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
     if 'description' in endpoint_metadata:
       shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
+  load_rdf_to_ldp(shapes_graph, 'lodcloud-yummidata', 'apis')
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
-  # # shapes_graph.serialize('shapes-rdf.nt', format='nt')
+  # shapes_graph.serialize('shapes-rdf.nt', format='nt')
+
+
+def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
+  if (None, None, None) in shapes_graph:
+    print('Loading to: ' + str(repo_id))
+    shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+    # shapes_graph.serialize('shapes-rdf.nt', format='nt')
+    os.system('curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:' + ENDPOINT_PASSWORD +' --data-binary @shapes-rdf.ttl -H "Slug: ' + repo_id + '" https://data.index.semanticscience.org/DAV/home/ldp/' + ldp_folder + '/')
+    try:
+      os.remove('shapes-rdf.ttl')
+    except:
+      pass
 
 def fetch_from_lod():
   """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""
@@ -321,7 +336,7 @@ def fetch_from_gitee(shapes_graph, token, search_topic):
 
 def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git_service):
     """Clone and process a repo found in a git service"""
-    # shapes_graph = Graph()
+    shapes_graph = Graph()
 
     logging.info('[' + datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + '] 📥 Cloning ' + repo_url)
     shutil.rmtree('cloned_repo', ignore_errors=True, onerror=None)
@@ -358,38 +373,11 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
 
     for rdf_file_path in get_files(['*.obo']):
         shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
-        
-    # TODO: Update SPARQL endpoint here using
-    # graph_uri = 'https://w3id.org/um/ids/shapes/' + git_service
-    # sparql_update_instance(repo_url, shapes_graph, ENDPOINT_URL, ENDPOINT_USER, ENDPOINT_PASSWORD, 3, graph_uri)
-    
-    # TODO: load in Virtuoso LDP each repo in a different file in the VAD
-    # cf. issue https://github.com/vemonet/shapes-of-you/issues/17
-    # curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dav/rdf_sink/$GIT_REPO.ttl -u dba:password
-    # https://github.com/MaastrichtU-IDS/shapes-of-you becomes: github.com/MaastrichtU-IDS/shapes-of-you.ttl
 
-    # if (None, None, None) in shapes_graph:
-    #   # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
-    #   shapes_graph.serialize('shapes-rdf.nt', format='nt')
+    repo_id = repo_url.rsplit('/')[-2] + '-' + repo_url.rsplit('/')[-1]
 
-    #   repo_vad_url = repo_url.replace('https://', '').replace('http://', '')
-    #   print('loading VAD: ' + str(repo_vad_url))
+    load_rdf_to_ldp(shapes_graph, repo_id, git_service)
 
-    #   rdf_file_path = str(root / '../shapes-rdf.nt')
-    #   print('LOADING ' + rdf_file_path)
-
-    #   # with open('shapes-rdf.ttl', 'r') as f:
-    #   # with open(root / '../shapes-rdf.ttl', 'r') as f:
-    #   #   print(f.read())
-
-    #   os.system('curl -T ' + rdf_file_path + ' https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/' + repo_vad_url + '.nt -u dba:' + ENDPOINT_PASSWORD)
-    #   # To delete:
-    #   # select DB.DBA.DAV_DELETE ('/DAV/home/dba/rdf_sink/gitee.ttl', 0, 'dba', 'dba');
-    #   # try:
-    #   #   os.remove('shapes-rdf.ttl')
-    #   # except:
-    #   #   pass
-      
     return shapes_graph
 
 

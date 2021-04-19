@@ -100,12 +100,14 @@ jobs:
     - name: Commit and push metadata-${{ env.ENDPOINT_LABEL }}.ttl file in metadata branch
       env:
         ENDPOINT_URL: ${{ matrix.endpoint-url.sparql_endpoint.value }}
+        ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
         if [ $(wc -l  metadata.ttl | cut -d' ' -f1) -gt $(echo 1) ]
         then
           export ENDPOINT_LABEL=${ENDPOINT_URL//http:/}
           export ENDPOINT_LABEL=${ENDPOINT_LABEL//https:/}
           export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
+          curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:$ENDPOINT_PASSWORD --data-binary @output/metadata.ttl -H "Slug: $ENDPOINT_LABEL" https://data.index.semanticscience.org/DAV/home/ldp/endpoints'
           # git stash
           git fetch
           # git checkout metadata

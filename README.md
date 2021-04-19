@@ -235,16 +235,17 @@ Enable WebDAV LDP on Virtuoso 7 (from the [official Virtuoso documentation](http
    1. Select **"SQL/ODBC and WebDAV"** for the **User type**
    2. Check the box to create a home folder (keep default `/DAV/home/ldp` folder)
 5. Go to the WebDAV UI > go to `/DAV/home` > **Edit the `ldp` folder**
-   1. Check **LDP enable/disable**
-   2. Default Permissions: recursively
-   3. In the presented form click "Add" button in the "[WebDAV](http://vos.openlinksw.com:80/dataspace/owiki/wiki/VOS/WebDAV) properties" section and enter respectively: 
+   1. Default Permissions: recursively
+   2. In the presented form click "Add" button in the "[WebDAV](http://vos.openlinksw.com:80/dataspace/owiki/wiki/VOS/WebDAV) properties" section and enter respectively: 
       - for "Property": `LDP` 
       - for "Value": `ldp:BasicContainer` 
+   3. **Do not** check `LDP enable/disable` (it will auto generate id for each file added instead of updating)
+6. To prepare for shapes-of-you, create folders `github`, `gitlab`, `gitee`, `apis` and `endpoints` using the same process as for the `ldp` folder.
 
 Upload a turtle file to the LDP (change the password before):
 
 ```bash
-curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:$LDP_PASSWORD --data-binary @shapes-rdf.ttl -H "Slug: test-shapes-rdf" https://data.index.semanticscience.org/DAV/home/ldp/
+curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:$LDP_PASSWORD --data-binary @shapes-rdf.ttl -H "Slug: test-shapes-rdf" https://data.index.semanticscience.org/DAV/home/ldp/github
 ```
 
 ## Contribute 👩‍💻
