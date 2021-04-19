@@ -173,7 +173,8 @@ jobs:
       run: |
         wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
         ls
-        java -jar sparql-operations.jar -o upload -i "shapes-rdf.ttl" -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u "$ENDPOINT_USER" -p "$ENDPOINT_PASSWORD" -g "https://w3id.org/um/ids/shapes/$GIT_SERVICE"
+        cat shapes-rdf.ttl
+        java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g "https://w3id.org/um/ids/shapes/$GIT_SERVICE"
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
     #   uses: vemonet/sparql-operations-action@master
