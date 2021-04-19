@@ -35,7 +35,7 @@ services:
       - VIRT_Database_ErrorLogLevel=2 # default: 7 is maximum logs
       - VIRT_HTTPServer_HTTPThreadSize=280000
       # Large dataset config
-      - VIRT_SPARQL_ResultSetMaxRows=9999999999
+      - VIRT_SPARQL_ResultSetMaxRows=1048576
       - VIRT_SPARQL_MaxQueryCostEstimationTime=200000
       - VIRT_SPARQL_MaxQueryExecutionTime=1000000
       - VIRT_Database_MaxCheckpointRemap=125000
