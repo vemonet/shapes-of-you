@@ -222,6 +222,31 @@ d2s metadata analyze https://graphdb.dumontierlab.com/repositories/shapes-regist
 
 We commit the generated metadata file to the `metadata` branch
 
+### Enable Virtuoso Linked Data Platform
+
+Enable WebDAV LDP on Virtuoso 7 (from the [official Virtuoso documentation](http://vos.openlinksw.com/owiki/wiki/VOS/VirtLDP))
+
+1. Start the `virtuoso-opensource-7` docker image with `docker-compose up -d`
+2. Download on your laptop the VAD packages [`ods_framework_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_framework_dav.vad) and [`ods_briefcase_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_briefcase_dav.vad) at http://download3.openlinksw.com/index.html?prefix=uda/vad-vos-packages/7.2/
+3. Go to the **Conductor** web UI > **Administrator** panel > **Packages** tab > click on the button **Browse** to upload packages 
+   1. Upload and install  [`ods_framework_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_framework_dav.vad)
+   2. Then upload and install  [`ods_briefcase_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_briefcase_dav.vad) 
+4. Create a `ldp` user
+   1. Select **"SQL/ODBC and WebDAV"** for the **User type**
+   2. Check the box to create a home folder (keep default `/DAV/home/ldp` folder)
+5. Go to the WebDAV UI > go to `/DAV/home` > **Edit the `ldp` folder**
+   1. Check **LDP enable/disable**
+   2. Default Permissions: recursively
+   3. In the presented form click "Add" button in the "[WebDAV](http://vos.openlinksw.com:80/dataspace/owiki/wiki/VOS/WebDAV) properties" section and enter respectively: 
+      - for "Property": `LDP` 
+      - for "Value": `ldp:BasicContainer` 
+
+Upload a turtle file to the LDP (change the password before):
+
+```bash
+curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:$LDP_PASSWORD --data-binary @shapes-rdf.ttl -H "Slug: test-shapes-rdf" https://data.index.semanticscience.org/DAV/home/ldp/
+```
+
 ## Contribute 👩‍💻
 
 Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).
