@@ -1,4 +1,3 @@
-SEMICeu/dcat-ap_shacl
 labra/solid-shapes
 solid/chat-pane
 dbpedia/archivo
