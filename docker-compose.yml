@@ -4,7 +4,8 @@ services:
 
   virtuoso:
     container_name: shapes-of-you-virtuoso
-    image: openlink/virtuoso-opensource-7:latest
+    # image: openlink/virtuoso-opensource-7:latest
+    image: markw/ldp_server:latest
     # image: tenforce/virtuoso:latest
 
     # https://community.openlinksw.com/t/permissions-on-ldp-containers-and-resources/290/14

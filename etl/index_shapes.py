@@ -363,9 +363,11 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
     # graph_uri = 'https://w3id.org/um/ids/shapes/' + git_service
     # sparql_update_instance(repo_url, shapes_graph, ENDPOINT_URL, ENDPOINT_USER, ENDPOINT_PASSWORD, 3, graph_uri)
     
-    # TODO: load ib Virtuoso each repo in a different file in the VAD
-    # curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/$GIT_SERVICE.ttl -u dba:password
+    # TODO: load in Virtuoso LDP each repo in a different file in the VAD
+    # cf. issue https://github.com/vemonet/shapes-of-you/issues/17
+    # curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dav/rdf_sink/$GIT_REPO.ttl -u dba:password
     # https://github.com/MaastrichtU-IDS/shapes-of-you becomes: github.com/MaastrichtU-IDS/shapes-of-you.ttl
+
     # if (None, None, None) in shapes_graph:
     #   # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
     #   shapes_graph.serialize('shapes-rdf.nt', format='nt')
