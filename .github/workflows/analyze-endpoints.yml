@@ -87,15 +87,15 @@ jobs:
         name: report-${{ env.ENDPOINT_LABEL }}
         path: output
 
-    - name: Upload RDF file to the triplestore
-      uses: MaastrichtU-IDS/RdfUpload@master
-      with:
-        file: output/metadata.ttl
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        # endpoint: https://data.index.semanticscience.org/sparql
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: ${{ matrix.endpoint-url.sparql_endpoint.value }}
+    # - name: Upload RDF file to the triplestore
+    #   uses: MaastrichtU-IDS/RdfUpload@master
+    #   with:
+    #     file: output/metadata.ttl
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+    #     # endpoint: https://data.index.semanticscience.org/sparql
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     graph: ${{ matrix.endpoint-url.sparql_endpoint.value }}
 
     - name: Commit and push metadata-${{ env.ENDPOINT_LABEL }}.ttl file in metadata branch
       env:
@@ -109,15 +109,15 @@ jobs:
           export ENDPOINT_LABEL=${ENDPOINT_LABEL//\//}
           curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:$ENDPOINT_PASSWORD --data-binary @output/metadata.ttl -H "Slug: $ENDPOINT_LABEL" https://data.index.semanticscience.org/DAV/home/ldp/endpoints'
           # git stash
-          git fetch
+          # git fetch
           # git checkout metadata
-          mv output/metadata.ttl metadata-$ENDPOINT_LABEL.ttl
-          git diff
-          git config --global user.email "vincent.emonet@gmail.com"
-          git config --global user.name "Vincent Emonet"
-          git add metadata-$ENDPOINT_LABEL.ttl
-          git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
-          git push || exit 0
+          # mv output/metadata.ttl metadata-$ENDPOINT_LABEL.ttl
+          # git diff
+          # git config --global user.email "vincent.emonet@gmail.com"
+          # git config --global user.name "Vincent Emonet"
+          # git add metadata-$ENDPOINT_LABEL.ttl
+          # git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
+          # git push || exit 0
         fi
         
 
