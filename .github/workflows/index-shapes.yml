@@ -160,17 +160,25 @@ jobs:
         name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
         path: shapes-rdf.ttl
 
-    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
-      uses: vemonet/sparql-operations-action@master
-      with:
-        operation: upload
-        file: shapes-rdf.ttl
-        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-        user: ${{ secrets.GRAPHDB_USER }}
-        password: ${{ secrets.GRAPHDB_PASSWORD }}
-        graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
+    - name: Use sparql-operations.jar to upload RDF to GraphDB
+      env:
+        GIT_SERVICE: ${{ matrix.git-service }}
+        ENDPOINT_USER: ${{ secrets.GRAPHDB_USER }}
+        ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+      run: |
+        wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
+        java -jar sparql-operations.jar -o upload -i "shapes-rdf.ttl" -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u '$ENDPOINT_USER' -p '$ENDPOINT_PASSWORD' -g "https://w3id.org/um/ids/shapes/$GIT_SERVICE"
 
-        
+    # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
+    #   uses: vemonet/sparql-operations-action@master
+    #   with:
+    #     operation: upload
+    #     file: shapes-rdf.ttl
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
+
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
     #   uses: MaastrichtU-IDS/RdfUpload@master
     #   with:
