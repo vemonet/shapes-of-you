@@ -154,6 +154,12 @@ jobs:
         # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
         path: REPORT.md
 
+    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
+        path: shapes-rdf.ttl
+
     - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
       uses: vemonet/sparql-operations-action@master
       with:
@@ -164,6 +170,7 @@ jobs:
         password: ${{ secrets.GRAPHDB_PASSWORD }}
         graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
 
+        
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
     #   uses: MaastrichtU-IDS/RdfUpload@master
     #   with:
@@ -173,12 +180,6 @@ jobs:
     #     password: ${{ secrets.GRAPHDB_PASSWORD }}
     #     graph: "https://w3id.org/um/ids/shapes/${{ matrix.git-service }}"
 
-
-    - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
-        path: shapes-rdf.ttl
 
     # - name: Commit and push report-${{ matrix.git-service }}-${{ matrix.search-string }}.md file in report branch
     #   env:
