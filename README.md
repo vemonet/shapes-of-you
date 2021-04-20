@@ -11,7 +11,7 @@
 
 **Shapes of you** is a global index for semantically descriptive files published to public Git repositories ([GitHub](https://github.com), [GitLab](https://gitlab.com), and [Gitee](https://gitee.com/)), it enables semantic web enthusiast to connect those standard knowledge definitions to active Linked Open Data access points (SPARQL endpoints).
 
-To be found by our indexer, make sure your repository description, or topics, on [GitHub](https://github.com), [GitLab](https://gitlab.com), or [Gitee](https://gitee.com) includes one of the resources mentionned below, we automatically index files from public repositories everyday at 1:00 GMT+1 🕐
+To be found by our indexer, make sure your repository description, or topics, on [GitHub](https://github.com), [GitLab](https://gitlab.com), or [Gitee](https://gitee.com) includes one of the resources mentionned below, we automatically index files from public repositories  every week on saturday at 1:00 GMT+1 🕐
 
 * **SHACL shapes**: we index RDF files such as `.ttl`, `.rdf`, `.jsonld`, etc), with all `sh:NodeShape` they contain
 * **ShEx expressions**: we index `.shex` files, and ShEx shapes defined in RDF files
@@ -37,7 +37,7 @@ If your repository or endpoint is missed by our indexer:
 This web service is composed of those 4 main parts, described more in details below:
 
 * A python script to retrieve SPARQL queries, SHACL & ShEx Shapes files with some metadata from GitHub repositories. The retrieved data is defined using [RDF](https://www.w3.org/RDF/).
-  * A [GitHub Actions workflow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs everyday at 1:00 and 13:00 to execute the python script, and publish the RDF output to the triplestore
+  * A [GitHub Actions workflow](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) runs every week on saturday night to execute the python script, and publish the RDF output to the triplestore
 * A React web app written in TypeScript, which displays the files and metadata from the SPARQL endpoint with filters, and search
   * The website is automatically deployed by [GitHub Actions workflows](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+to+GitHub+Pages%22) to [GitHub Pages](https://index.semanticscience.org) at each push to the `main` branch.
   * We use [expo](https://expo.io/) to build this [Progressive Web App](https://web.dev/progressive-web-apps/) (aka. PWA), it can be installed as a native app on any computer desktop (using Chrome is recommended), or smartphones.
@@ -235,21 +235,19 @@ Enable WebDAV LDP on Virtuoso 7 (from the [official Virtuoso documentation](http
    1. Select **"SQL/ODBC and WebDAV"** for the **User type**
    2. Check the box to create a home folder (keep default `/DAV/home/ldp` folder)
 5. Go to the WebDAV UI > go to `/DAV/home` > **Edit the `ldp` folder**
-   1. Owner: `ldp`
+   1. **Owner: `ldp`**
    2. Default Permissions: recursively
-   3. In the presented form click "Add" button in the "[WebDAV](http://vos.openlinksw.com:80/dataspace/owiki/wiki/VOS/WebDAV) properties" section and enter respectively: 
+   3. (optional) In the presented form click "Add" button in the "[WebDAV](http://vos.openlinksw.com:80/dataspace/owiki/wiki/VOS/WebDAV) properties" section and enter respectively: 
       - for "Property": `LDP` 
       - for "Value": `ldp:BasicContainer` 
-   4. **Do not** check `LDP enable/disable` (it will auto generate id for each file added instead of updating)
-6. To prepare for shapes-of-you, create folders `github`, `gitlab`, `gitee`, `apis` and `endpoints` using the same process as for the `ldp` folder.
+   4. **Do not** check `LDP enable/disable` (it will automatically generate a new id for each file added, instead of updating existing files)
+6. To prepare for shapes-of-you, **create folders** `github`, `gitlab`, `gitee`, `apis` and `endpoints` using the same owner and permission as for the `ldp` folder.
 
 Test by uploading a turtle file to the LDP (change the password before):
 
 ```bash
-curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:$LDP_PASSWORD --data-binary @shapes-rdf.ttl -H "Slug: test-shapes-rdf" https://data.index.semanticscience.org/DAV/home/ldp/github
+curl -u ldp:$ENDPOINT_PASSWORD --data-binary @shapes-rdf.ttl -H "Accept: text/turtle" -H "Content-type: text/turtle" -H "Slug: test-shapes-rdf" https://data.index.semanticscience.org/DAV/home/ldp/github
 ```
-
-> Downloading and installing the VAD packages, creating the `ldp` user and the folders could be automated via isql: `vad_install ('../vad/conductor_dav.vad', 0)`
 
 ## Contribute 👩‍💻
 
@@ -257,9 +255,11 @@ Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).
 
 ## Acknowledgements 🤝
 
-RDF data hosted in a [Ontotext GraphDB triplestore](https://graphdb.ontotext.com/)
+RDF data hosted in a [Ontotext GraphDB triplestore](https://graphdb.ontotext.com/) and a [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) Linked Data Platform (open source)
 
 OpenAPI powered by [grlc.io](http://grlc.io)
+
+SPARQL query UI powered by [Triply's YASGUI](https://yasgui.triply.cc/)
 
 Ontology built with [gra.fo](https://gra.fo)
 

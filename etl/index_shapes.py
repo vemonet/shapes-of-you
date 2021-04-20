@@ -837,6 +837,7 @@ if __name__ == "__main__":
   SKIP_REPOS = [
     'https://gitee.com/mad_matrix/OntologyModelin', 
     'https://gitee.com/jiahuarao/HumanDiseaseOntology',
+    'https://gitee.com/smallei/HumanDiseaseOntology',
     'https://github.com/garethr/kubernetes-json-schema',
     'https://github.com/garethr/openshift-json-schema',
   ]
