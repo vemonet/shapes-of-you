@@ -428,7 +428,7 @@ export default function SemanticIndex() {
 
       <LoggedIn>
         <Typography style={{textAlign: 'center', margin: theme.spacing(2, 2)}}>
-          Welcome to your semantic resources index <Value src="user.name"/>!
+          Welcome to your linked data index <Value src="user.name"/>!
         </Typography>
         {/* <Typography style={{textAlign: 'center', marginBottom: theme.spacing(2)}}>
           {webId}
@@ -548,7 +548,7 @@ export default function SemanticIndex() {
       )}
 
       {/* Display Shapes files */}
-      {filtered_files
+      {filtered_files// OPTIONAL { ?repository rdfs:comment ?repo_description }
           .slice(((state.page - 1)*(state.shapes_per_page)), ((state.page)*(state.shapes_per_page) - 1))
           .map(function(repo_obj: any, key: number){
         return <Card key={key.toString()} elevation={2} style={{padding: theme.spacing(1, 1), margin: theme.spacing(2, 0)}}>
@@ -596,8 +596,8 @@ export default function SemanticIndex() {
                     <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
                     {file_obj.type === 'https://schema.org/APIReference' &&
                       <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
-                        target="_blank"
-                        href={'https://editor.swagger.io/?url=' + file_obj.url} rel="noopener noreferrer">
+                        target="_blank" rel="noopener noreferrer"
+                        href={'https://editor.swagger.io/?url=' + file_obj.url}>
                         <SwaggerIcon />
                         &nbsp;Open in Swagger editor
                       </Button>

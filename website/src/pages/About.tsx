@@ -78,15 +78,15 @@ export default function About() {
               }
             </IconButton>
           }
-          title="💠 Shapes of You"
-          subheader={"Access the world publicly available standard knowledge descriptions stored in code repositories, and explore the currently active Linked Open Data SPARQL endpoints with ease, to find relevant data for your projects, or discover how people are defining knowledge around the blob."}
+          title="💠 Shapes of You index"
+          subheader={"Access the world publicly available standard knowledge descriptions stored in code repositories, and explore the currently active SPARQL endpoints with ease, to find relevant data for your projects, or discover how people are defining knowledge around the blob."}
         />
 
 
         <Collapse in={state.show_info_card} timeout="auto" unmountOnExit>
           <CardContent>
             <Typography>
-              Shapes of You is a continuously evolving and sustainable knowledge graph, with a user-friendly interface to search for standard knowledge description files, and access linked open data efficiently and effectively. This system has 3 main scopes:
+              The Shapes of You index is a continuously evolving and sustainable knowledge graph, with a user-friendly interface to search for standard knowledge description files, and access linked open data efficiently and effectively. This system has 3 main scopes:
             </Typography>
 
             <List>
@@ -97,7 +97,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  Index standard knowledge: index files described following well-known standards in code repositories, such as OWL ontologies
+                  <b>Index standard knowledge</b>: index files described following well-known standards in code repositories, such as OWL ontologies
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -107,7 +107,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText>
-                  Index open data: index and generate metadata describing the content of active SPARQL endpoints
+                  <b>Index linked open data</b>: index and generate graph summaries for active SPARQL endpoints
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -117,7 +117,7 @@ export default function About() {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText> 
-                  Provide a user-friendly access point for the indexed knowledge and data
+                  <b>Provide a user-friendly access point</b> for the indexed knowledge and data (this website)
                 </ListItemText>
               </ListItem>
             </List>
@@ -165,8 +165,7 @@ export default function About() {
                     <CheckCircleIcon />
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText
-                > 
+                <ListItemText> 
                   <b><a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer">SHACL</a> shapes</b>: we index RDF files, with all <code>sh:NodeShape</code> they contain
                 </ListItemText>
               </ListItem>

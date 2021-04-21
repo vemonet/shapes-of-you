@@ -1,0 +1,31 @@
+#+ endpoint: http://sparql.wikipathways.org/sparql
+#+ endpoint_in_url: False
+#+ summary:  List all active SPARQL endpoints
+#+ description: Get pathways from WikiPathways for Genes in the kg-covid-19 knowledge graph
+#+ tags:
+#+   - Biomedical queries
+#+ method: GET
+# pagination: 100
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wp:      <http://vocabularies.wikipathways.org/wp#>
+PREFIX dc:      <http://purl.org/dc/elements/1.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf:    <http://xmlns.com/foaf/0.1/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+PREFIX bl: <https://w3id.org/biolink/vocab/>
+PREFIX up: <http://purl.uniprot.org/core/>
+SELECT ?gene ?geneLabel ?pathway ?pathwayLabel
+WHERE {
+    SERVICE <http://kg-hub-rdf.berkeleybop.io/blazegraph/sparql> {
+        SELECT * WHERE {
+            ?gene bl:category bl:Gene ;
+                rdfs:label ?geneLabel .
+        } LIMIT 100
+    } 
+    BIND(uri(replace(str(?gene), "http://identifiers.org/", "https://identifiers.org/")) as ?geneHttps)
+    ?geneHttps dct:isPartOf ?pathway .
+    ?pathway dc:title ?pathwayLabel .
+}
+
