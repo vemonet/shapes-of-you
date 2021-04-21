@@ -9,6 +9,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import SwaggerIcon from '@material-ui/icons/SettingsEthernet';
 // import Autocomplete from '@material-ui/lab/Autocomplete';
 // import Alert from '@material-ui/lab/Alert';
 
@@ -593,6 +594,15 @@ export default function SemanticIndex() {
                       <Chip label={shape_types_mappings[file_obj.type]}/> {file_obj.label}
                     </a>
                     <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
+                    {file_obj.type === 'https://schema.org/APIReference' &&
+                      <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
+                        target="_blank"
+                        href={'https://editor.swagger.io/?url=' + file_obj.url} rel="noopener noreferrer">
+                        <SwaggerIcon />
+                        &nbsp;Open in Swagger editor
+                      </Button>
+                    }
+                    {/* https://editor.swagger.io/?url= */}
                     {file_obj.description &&
                       // Limit description to 1500 chars
                       <div style={{margin: theme.spacing(1, 0)}}>
