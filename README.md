@@ -224,7 +224,7 @@ We commit the generated metadata file to the `metadata` branch
 
 ### Enable Virtuoso Linked Data Platform
 
-Enable WebDAV LDP on Virtuoso 7 (from the [official Virtuoso documentation](http://vos.openlinksw.com/owiki/wiki/VOS/VirtLDP))
+**Enable WebDAV LDP** on Virtuoso 7 (from the [official Virtuoso documentation](http://vos.openlinksw.com/owiki/wiki/VOS/VirtLDP))
 
 1. Start the `virtuoso-opensource-7` docker image with `docker-compose up -d`
 2. Download on your laptop the VAD packages [`ods_framework_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_framework_dav.vad) and [`ods_briefcase_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_briefcase_dav.vad) at http://download3.openlinksw.com/index.html?prefix=uda/vad-vos-packages/7.2/
@@ -243,11 +243,18 @@ Enable WebDAV LDP on Virtuoso 7 (from the [official Virtuoso documentation](http
    4. **Do not** check `LDP enable/disable` (it will automatically generate a new id for each file added, instead of updating existing files)
 6. To prepare for shapes-of-you, **create folders** `github`, `gitlab`, `gitee`, `apis` and `endpoints` using the same owner and permission as for the `ldp` folder.
 
-Test by uploading a turtle file to the LDP (change the password before):
+**Test** by uploading a turtle file to the LDP (change the password before):
 
 ```bash
 curl -u ldp:$ENDPOINT_PASSWORD --data-binary @shapes-rdf.ttl -H "Accept: text/turtle" -H "Content-type: text/turtle" -H "Slug: test-shapes-rdf" https://data.index.semanticscience.org/DAV/home/ldp/github
 ```
+
+**Enable CORS** to query the Virtuoso SPARQL endpoint from JavaScript. See the [Virtuoso CORS documentation](http://vos.openlinksw.com/owiki/wiki/VOS/VirtTipsAndTricksCORsEnableSPARQLURLs).
+
+*  Go to **Web Application Server** > **Virtual Domains & Directories**
+* Expand **Interface** for the **Default Web Site**
+* Locate the `/sparql` Logical Path > click **Edit**
+* Enter **`\*`** in the **Cross-Origin Resource Sharing** input field.
 
 ## Contribute 👩‍💻
 

@@ -376,7 +376,11 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
 
     repo_id = repo_url.rsplit('/')[-2] + '-' + repo_url.rsplit('/')[-1]
 
-    load_rdf_to_ldp(shapes_graph, repo_id, git_service)
+    dry_run = False
+    if dry_run:
+      shapes_graph.serialize('shapes-' + repo_id + '.ttl', format='turtle')
+    else:
+      load_rdf_to_ldp(shapes_graph, repo_id, git_service)
 
     return shapes_graph
 
@@ -471,7 +475,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
         with open(rdf_file_path.absolute()) as file:
           sparql_query = file.read()
           # Parse SPARQL query (added fix for some malformed queries with =+ instead of #+)
-          sparql_query = "\n".join(['#+' + row.lstrip('=+') for row in sparql_query.split('\n') if row.startswith('=+')])
+          # sparql_query = "\n".join(['#+' + row.lstrip('=+') for row in sparql_query.split('\n') if row.startswith('=+')])
           yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
           query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
           shapes_graph.add((file_uri, SCHEMA['query'], Literal(sparql_query)))
@@ -776,12 +780,12 @@ def generate_github_file_url(repo_url, filepath, branch):
   So we need to build the file URL from the github repo URL + branch + file path
   """
   if repo_url.startswith('https://gitlab.com/'):
-    file_url = repo_url + '/-/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
+    file_url = repo_url + '/-/raw/' + branch + '/' + urllib.parse.quote(filepath)
   elif repo_url.startswith('https://gitee.com/'):
-    file_url = repo_url + '/raw/' + branch + '/' + urllib.parse.quote_plus(filepath)
+    file_url = repo_url + '/raw/' + branch + '/' + urllib.parse.quote(filepath)
   else:
     file_url = repo_url.replace("https://github.com/", "https://raw.githubusercontent.com/")
-    file_url += '/' + branch + '/' + urllib.parse.quote_plus(filepath)
+    file_url += '/' + branch + '/' + urllib.parse.quote(filepath)
   return file_url
 
 def get_files(extensions):
