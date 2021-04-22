@@ -114,7 +114,7 @@ export default function NavBar() {
                   </IconButton>
                 }
                 title="⚡️ List of active SPARQL endpoints"
-                subheader='Endpoints are tested daily to make sure they are active. They are extracted from queries metadata and the LOD. We automatically import all SPARQL queries in YASGUI for the endpoint you select'
+                subheader='Endpoints are tested to make sure they are active. They are extracted from queries metadata and the LOD. We automatically import all SPARQL queries in YASGUI for the endpoint you select'
                 style={{paddingBottom: '0px'}}
               />
             <CardContent>

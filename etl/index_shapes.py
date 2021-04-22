@@ -584,6 +584,11 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           for file_label in g.objects(shape_file, RDFS.label):
             shapes_graph.add((file_uri, RDFS.comment, Literal(str(file_label))))
             break
+          for sparql_endpoint in g.objects(None, VOID.sparqlEndpoint):
+            shapes_graph.add((file_uri, VOID.sparqlEndpoint, URIRef(sparql_endpoint)))
+            # TODO: currently break to only add 1 if multiple, multi endpoints need to be checked
+            # TODO: test it with GSS-Cogs/csvw-example DCAT datasets
+            break
           # shape_label = shape_file
           # for label in g.objects(shape_file, RDFS.label):
           #     # Try to get the label of the shape

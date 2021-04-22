@@ -126,17 +126,9 @@ export default function About() {
               To insure their validity, all indexed files are parsed using the corresponding python package (rdflib, obonet, prance). We also query each SPARQL endpoint to make sure they are active.
             </Typography>
 
-            {/* <a href="https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Index+shapes%22" target="_blank" rel="noopener noreferrer">
-              <img src="https://github.com/vemonet/shapes-of-you/workflows/Index%20shapes/badge.svg" 
-              style={{marginBottom: theme.spacing(2)}} />
-            </a> */}
-
-            {/* <Typography>
-              Add the tag <code>shacl-shapes</code> or <code>shex</code> or <code>grlc</code> to your GitHub repository, we automatically index all SPARQL queries (<code>.rq</code>, <code>.sparql</code>), ShEx (<code>.shex</code>), SHACL files (<code>.ttl</code>, <code>.rdf</code>, <code>.jsonld</code>, <code>.trig</code>, <code>.nq</code>, etc) containing at least one <code>sh:NodeShape</code> from all repositories everyday at 1:00 and 13:00 🕐
-            </Typography> */}
             <Typography>
               To be found by our indexer, make sure your repository description, or topics, on <a href="https://github.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://gitlab.com" className={classes.link} target="_blank" rel="noopener noreferrer">GitLab</a>, or <a href="https://gitee.com" className={classes.link} target="_blank" rel="noopener noreferrer">Gitee</a> code repositories includes one of the resources mentionned below,&nbsp;
-              we automatically index files from public repositories everyday at 1:00 GMT+1 🕐
+              we automatically index files from public repositories every week on Saturday at 1:00 GMT+1 🕐
             </Typography>
             <List>
               <ListItem>

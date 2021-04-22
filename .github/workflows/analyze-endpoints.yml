@@ -87,16 +87,6 @@ jobs:
         name: report-${{ env.ENDPOINT_LABEL }}
         path: output
 
-    # - name: Upload RDF file to the triplestore
-    #   uses: MaastrichtU-IDS/RdfUpload@master
-    #   with:
-    #     file: output/metadata.ttl
-    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-    #     # endpoint: https://data.index.semanticscience.org/sparql
-    #     user: ${{ secrets.GRAPHDB_USER }}
-    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
-    #     graph: ${{ matrix.endpoint-url.sparql_endpoint.value }}
-
     - name: Commit and push metadata-${{ env.ENDPOINT_LABEL }}.ttl file in metadata branch
       env:
         ENDPOINT_URL: ${{ matrix.endpoint-url.sparql_endpoint.value }}
@@ -119,7 +109,16 @@ jobs:
           # git commit -m "metadata-$ENDPOINT_LABEL.ttl" || exit 0
           # git push || exit 0
         fi
-        
+
+    # - name: Upload RDF file to the triplestore
+    #   uses: MaastrichtU-IDS/RdfUpload@master
+    #   with:
+    #     file: output/metadata.ttl
+    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+    #     # endpoint: https://data.index.semanticscience.org/sparql
+    #     user: ${{ secrets.GRAPHDB_USER }}
+    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
+    #     graph: ${{ matrix.endpoint-url.sparql_endpoint.value }}        
 
     # - name: Clear older graph in the triplestore
     #   if: github.event.inputs.clear == 'true'
