@@ -105,7 +105,8 @@ jobs:
         # - git-service: gitlab
         #   search-string: ontology # Fails without warnings
 
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, X64, dsri, bio2rdf]
     steps:
     - name: Checkout the repo code
       uses: actions/checkout@v2
