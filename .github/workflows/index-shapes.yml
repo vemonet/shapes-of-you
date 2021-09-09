@@ -99,6 +99,12 @@ jobs:
           search-string: csvw
         - git-service: lod-cloud
         - git-service: yummydata
+        - git-service: gitee
+          search-string: covid+data
+        - git-service: github
+          search-string: covid+data
+        - git-service: gitlab
+          search-string: covid+data
 
         # - git-service: github # eclipse/rdf4j slow down
         #   search-string: shacl
