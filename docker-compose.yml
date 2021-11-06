@@ -14,7 +14,7 @@ services:
     # http://download3.openlinksw.com/index.html?prefix=uda/vad-vos-packages/7.2/
     restart: unless-stopped
     volumes:
-      - /data/shapes-of-you/virtuoso:/database
+      - /data/shapes-of-you:/database
       # - /data/shapes-of-you/virtuoso:/data
     environment:
       # Deployed using https://github.com/nginx-proxy

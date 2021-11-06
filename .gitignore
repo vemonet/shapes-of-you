@@ -4,12 +4,9 @@ REPORT.md
 *.jar
 .expo
 
-# OSX
-#
-.DS_Store
+.env
 
 # Xcode
-#
 build/
 *.pbxuser
 !default.pbxuser
@@ -29,7 +26,6 @@ DerivedData
 project.xcworkspace
 
 # Android/IntelliJ
-#
 build/
 .idea
 .gradle
@@ -46,6 +42,7 @@ yarn-error.log
 buck-out/
 \.buckd/
 *.keystore
+.DS_Store
 
 # fastlane
 #
