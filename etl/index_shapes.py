@@ -92,29 +92,38 @@ def main(argv):
   elif git_registry == 'lod-cloud':
     fetch_from_lod()
 
-  elif git_registry == 'lod-cloud':
     fetch_from_yummydata()
 
-  # Extras SPARQL endpoints to check
-  extra_endpoints = []
-  with open(str(root) + '/../EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
-    for line in f:
-      extra_endpoints.append(line.rstrip('\n').strip())
-  for endpoint in extra_endpoints:
-    test_sparql_endpoint(endpoint)
+    # Extras SPARQL endpoints to check
+    extra_endpoints = []
+    with open(str(root) + '/../EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
+      for line in f:
+        extra_endpoints.append(line.rstrip('\n').strip())
+    for endpoint in extra_endpoints:
+      test_sparql_endpoint(endpoint)
 
-  # Add all valids SPARQL graphs we found
-  # TODO: split lod-cloud, yummidata and extra endpoints in 3 files
-  shapes_graph = Graph()
-  for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
-    shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
-    shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
-    if 'description' in endpoint_metadata:
-      shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
-  load_rdf_to_ldp(shapes_graph, 'lodcloud-yummidata', 'apis')
+    # Add all valids SPARQL graphs we found
+    # TODO: split lod-cloud, yummidata and extra endpoints in 3 files
+    shapes_graph = Graph()
+    for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
+      shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
+      shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
+      if 'description' in endpoint_metadata:
+        shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
+    load_rdf_to_ldp(shapes_graph, 'lod-cloud', 'apis')
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
   # shapes_graph.serialize('shapes-rdf.nt', format='nt')
+
+
+def add_shape(g, shapes_graph, file_uri, shape_uri):
+  for label in g.objects(shape_uri, RDFS.label):
+      # Try to get the label of the class
+      shape_label = label
+      shapes_graph.add((URIRef(shape_uri), RDFS.label, Literal(shape_label)))
+  shapes_graph.add((file_uri, DCTERMS.hasPart, URIRef(shape_uri)))
+  return shapes_graph
+
 
 
 def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
@@ -548,12 +557,13 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SH.Shape))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-          shape_label = shape
-          for label in g.objects(shape, RDFS.label):
-              # Try to get the label of the shape
-              shape_label = label
-              # Fixing
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+          shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
+          # shape_label = shape
+          # for label in g.objects(shape, RDFS.label):
+          #     # Try to get the label of the shape
+          #     shape_label = label
+          #     # Fixing
+          # shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
       # Search for CSV on the Web RDF (csvw)
       # https://medium.swirrl.com/how-to-publish-csv-on-the-web-csvw-4ea6cbb603b4
@@ -616,12 +626,13 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           ]
           for np_input in nanopub_inputs:
             for shape in g.subjects(RDF.type, np_input):
-              shape_label = shape
-              for label in g.objects(shape, RDFS.label):
-                  # Try to get the label of the shape
-                  shape_label = label
-                  # Fixing
-              shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+              shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
+              # shape_label = shape
+              # for label in g.objects(shape, RDFS.label):
+              #     # Try to get the label of the shape
+              #     shape_label = label
+              #     # Fixing
+              # shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
       # Search for RML and R2RML mappings
       for shape in g.subjects(RDF.type, R2RML.SubjectMap):
@@ -637,11 +648,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
           shape_label = shape
           # Try to get the label or URI of the subjectMap
-          for label in g.objects(shape, R2RML.template):
-              shape_label = label
-          for label in g.objects(shape, RDFS.label):
-              shape_label = label
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+          # for label in g.objects(shape, R2RML.template):
+          #     shape_label = label
+          shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
 
       # Search for OWL classes
       for shape in g.subjects(RDF.type, OWL.Class):
@@ -650,11 +659,12 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-          shape_label = shape
-          for label in g.objects(shape, RDFS.label):
-              # Try to get the label of the class
-              shape_label = label
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+          shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
+          # shape_label = shape
+          # for label in g.objects(shape, RDFS.label):
+          #     # Try to get the label of the class
+          #     shape_label = label
+          # shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
       # Get rdfs:label of owl:Ontology and shaclTest:Validate for file description
       file_descriptions = []
@@ -689,11 +699,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SKOS.ConceptScheme))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-          shape_label = shape
           for label in g.objects(shape, SKOS.prefLabel):
-              # Try to get the label of the class
-              shape_label = label
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+              shapes_graph.add((URIRef(shape), DCTERMS.hasPart, Literal(label)))
+          shapes_graph.add((file_uri, DCTERMS.hasPart, URIRef(shape)))
       for shape in g.subjects(RDF.type, SKOS.ConceptScheme):
           # Get one of the labels
           for ontology_label in g.objects(shape, RDFS.label):
@@ -721,22 +729,14 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-          shape_label = shape
-          for label in g.objects(shape, RDFS.label):
-              # Try to get the label of the shape
-              shape_label = label
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+          shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
       for shape in g.subjects(RDF.type, SHEX.Shape):
           shape_found = True
           shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
           shapes_graph.add((file_uri, RDF.type, SHEX.Schema))
           shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
           shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-          shape_label = shape
-          for label in g.objects(shape, RDFS.label):
-              # Try to get the label of the shape
-              shape_label = label
-          shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+          shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
 
     # Add the git repo to the graph
     if shape_found:

@@ -181,7 +181,6 @@ jobs:
     #     ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
     #   run: |
     #     wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
-    #     ls
     #     cat shapes-rdf.ttl
     #     java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g $GRAPH
 
