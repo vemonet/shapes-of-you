@@ -13,7 +13,7 @@ from prance import ResolvingParser
 from rdflib import Graph, ConjunctiveGraph, plugin, Literal, RDF, URIRef, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
-from rdflib.plugins.sparql.parser import Query, UpdateUnit
+from rdflib.plugins.sparql.parser import Query
 from rdflib.plugins.sparql.processor import translateQuery
 from SPARQLWrapper import SPARQLWrapper, POST, JSON
 import obonet
@@ -29,7 +29,7 @@ GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
 ENDPOINT_URL = os.environ.get("ENDPOINT_URL", "https://data.index.semanticscience.org/sparql")
-ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "ldp")
+ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "dav")
 ENDPOINT_PASSWORD = os.environ.get("ENDPOINT_PASSWORD", "dba")
 
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
@@ -131,7 +131,7 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     print('Loading to: ' + str(repo_id))
     shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
     # shapes_graph.serialize('shapes-rdf.nt', format='nt')
-    os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/')
+    os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
     # TODO: test
     # requests.post(
     #   f'https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/',

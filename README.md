@@ -184,7 +184,7 @@ export GITLAB_TOKEN=MYGITLABTOKEN000
 export GITEE_TOKEN=MYGITEETOKEN000
 ```
 
-> Add those commands to your `.zshrc` to make it permanent (or `.bashrc` if you're nostalgic of the 90's)
+> Add those commands to your `.zshrc` or `.bashrc` to make it permanent
 
 For GitHub you can create a new GitHub API key (aka. personal access token) at https://github.com/settings/tokens
 
@@ -228,22 +228,19 @@ We commit the generated metadata file to the `metadata` branch
 
 **Enable WebDAV LDP** on Virtuoso 7 (from the [official Virtuoso documentation](http://vos.openlinksw.com/owiki/wiki/VOS/VirtLDP))
 
-1. Start the `virtuoso-opensource-7` docker image with `docker-compose up -d`
-2. Download on your laptop the VAD packages [`ods_framework_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_framework_dav.vad) and [`ods_briefcase_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_briefcase_dav.vad) at http://download3.openlinksw.com/index.html?prefix=uda/vad-vos-packages/7.2/
-3. Go to the **Conductor** web UI > **Administrator** panel > **Packages** tab > click on the button **Browse** to upload packages 
-   1. Upload and install  [`ods_framework_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_framework_dav.vad)
-   2. Then upload and install  [`ods_briefcase_dav.vad`](http://download3.openlinksw.com/uda/vad-vos-packages/7.2/ods_briefcase_dav.vad) 
-4. Create a `ldp` user
-   1. Select **"SQL/ODBC and WebDAV"** for the **User type**
-   2. Check the box to create a home folder (keep default `/DAV/home/ldp` folder)
-5. Go to the WebDAV UI > go to `/DAV/home` > **Edit the `ldp` folder**
-   1. **Owner: `ldp`**
-   2. Default Permissions: recursively
-   3. (optional) In the presented form click "Add" button in the "[WebDAV](http://vos.openlinksw.com:80/dataspace/owiki/wiki/VOS/WebDAV) properties" section and enter respectively: 
-      - for "Property": `LDP` 
-      - for "Value": `ldp:BasicContainer` 
-   4. **Do not** check `LDP enable/disable` (it will automatically generate a new id for each file added, instead of updating existing files)
-6. To prepare for shapes-of-you, **create folders** `github`, `gitlab`, `gitee`, `apis` and `endpoints` using the same owner and permission as for the `ldp` folder.
+Start the `virtuoso-opensource-7` docker image
+
+```bash
+docker-compose up -d
+```
+
+The first time you start Virtuoso, or after you reset the database, you will need to run this script to prepare the Linked Data Platform:
+
+```bash
+./prepare_virtuoso.sh
+```
+
+To prepare for shapes-of-you, **create folders** `github`, `gitlab`, `gitee`, `apis` and `endpoints` using the same owner and permission as for the `ldp` folder.
 
 **Test** by uploading a turtle file to the LDP (change the password before):
 
