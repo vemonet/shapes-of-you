@@ -29,8 +29,8 @@ GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
 ENDPOINT_URL = os.environ.get("ENDPOINT_URL", "https://data.index.semanticscience.org/sparql")
-ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "")
-ENDPOINT_PASSWORD = os.environ.get("ENDPOINT_PASSWORD", "")
+ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "ldp")
+ENDPOINT_PASSWORD = os.environ.get("ENDPOINT_PASSWORD", "dba")
 
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -131,7 +131,7 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     print('Loading to: ' + str(repo_id))
     shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
     # shapes_graph.serialize('shapes-rdf.nt', format='nt')
-    os.system('curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u ldp:' + ENDPOINT_PASSWORD +' --data-binary @shapes-rdf.ttl -H "Slug: ' + repo_id + '" https://data.index.semanticscience.org/DAV/home/ldp/' + ldp_folder + '/')
+    os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/')
     try:
       os.remove('shapes-rdf.ttl')
     except:
@@ -390,7 +390,7 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
       if 'description' in endpoint_metadata:
         shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
     VALID_ENDPOINTS = {}
-    
+
     repo_id = repo_url.rsplit('/')[-2] + '-' + repo_url.rsplit('/')[-1]
 
     dry_run = False
