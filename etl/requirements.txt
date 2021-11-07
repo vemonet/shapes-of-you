@@ -1,7 +1,7 @@
 requests
 python-graphql-client==0.3.0
 python-gitlab
-rdflib
+rdflib<=6.0.0
 rdflib-jsonld
 SPARQLWrapper
 PyYAML

@@ -132,6 +132,17 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
     # shapes_graph.serialize('shapes-rdf.nt', format='nt')
     os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/')
+    # TODO: test
+    # requests.post(
+    #   f'https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/',
+    #   data=shapes_graph.serialize(format='turtle'), 
+    #   auth=(ENDPOINT_USER, ENDPOINT_PASSWORD),
+    #   headers= {
+    #     'Slug': repo_id,
+    #     'Accept': 'text/turtle',
+    #     'Content-type': 'text/turtle'
+    #   }
+    # )
     try:
       os.remove('shapes-rdf.ttl')
     except:
