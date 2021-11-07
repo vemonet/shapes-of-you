@@ -383,6 +383,14 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
     for rdf_file_path in get_files(['*.obo']):
         shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
+    # Add valid SPARQL endpoints found in the repo
+    for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
+      shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
+      shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
+      if 'description' in endpoint_metadata:
+        shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
+    VALID_ENDPOINTS = {}
+    
     repo_id = repo_url.rsplit('/')[-2] + '-' + repo_url.rsplit('/')[-1]
 
     dry_run = False
