@@ -4,6 +4,8 @@ REPORT.md
 *.jar
 .expo
 
+.venv
+
 .env
 
 # Xcode

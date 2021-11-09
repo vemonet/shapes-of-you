@@ -10,17 +10,27 @@ import requests
 
 import yaml
 from prance import ResolvingParser
-from rdflib import Graph, ConjunctiveGraph, plugin, Literal, RDF, URIRef, Namespace
-from rdflib.serializer import Serializer
+from rdflib import Graph, ConjunctiveGraph, Literal, RDF, URIRef, Namespace
+# from rdflib import plugin
+# from rdflib.serializer import Serializer
 from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
-from rdflib.plugins.sparql.parser import Query
-from rdflib.plugins.sparql.processor import translateQuery
+
+from rdflib.plugins.sparql.sparql import Query
+from rdflib.plugins.sparql.algebra import translateQuery
+
+# from rdflib.plugins.sparql.parser import Query
+# from rdflib.plugins.sparql.processor import translateQuery
 from SPARQLWrapper import SPARQLWrapper, POST, JSON
 import obonet
 from pyshexc.parser_impl import generate_shexj
 
 from python_graphql_client import GraphqlClient
 import gitlab
+
+global VALID_ENDPOINTS
+VALID_ENDPOINTS = {}
+global FAILED_ENDPOINTS
+FAILED_ENDPOINTS = {}
 
 # from d2s.sparql_operations import sparql_update_instance
 
@@ -95,12 +105,13 @@ def main(argv):
     fetch_from_yummydata()
 
     # Extras SPARQL endpoints to check
+    shapes_graph = Graph()
     extra_endpoints = []
     with open(str(root) + '/../EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
       for line in f:
         extra_endpoints.append(line.rstrip('\n').strip())
     for endpoint in extra_endpoints:
-      test_sparql_endpoint(endpoint)
+      shapes_graph = test_sparql_endpoint(endpoint, shapes_graph)
 
     # Add all valids SPARQL graphs we found
     # TODO: split lod-cloud, yummidata and extra endpoints in 3 files
@@ -160,12 +171,12 @@ def fetch_from_lod():
       for sparql_obj in dataset_obj['sparql']:
         lod_endpoints_count += 1
         print('Testing endpoint: ' + str(sparql_obj['access_url']))
-        endpoint_added = test_sparql_endpoint(str(sparql_obj['access_url']))
-        if endpoint_added:
-          added_endpoints_count += 1
+        shapes_graph = test_sparql_endpoint(str(sparql_obj['access_url']), shapes_graph)
+        # if endpoint_added:
+        #   added_endpoints_count += 1
   add_to_report('Datasets in LOD: ' + str(lod_datasets_count) +
-    '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count) +
-    '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
+    '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count))
+    # '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
 
 def fetch_from_yummydata():
   """Fetch and test SPARQL endpoints from http://yummydata.org/api"""
@@ -176,12 +187,12 @@ def fetch_from_yummydata():
   for dataset_obj in lod_obj:
     lod_datasets_count += 1
     if 'endpoint_url' in dataset_obj:
-      endpoint_added = test_sparql_endpoint(str(dataset_obj['endpoint_url']))
-      if endpoint_added:
-        added_endpoints_count += 1
+      shapes_graph = test_sparql_endpoint(str(dataset_obj['endpoint_url']), shapes_graph)
+      # if endpoint_added:
+      #   added_endpoints_count += 1
   add_to_report('Datasets in LOD: ' + str(lod_datasets_count) +
-    '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count) +
-    '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
+    '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count))
+    # '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
 
 # curl -L -H 'Accept: application/json' https://yummydata.org/api/endpoint/search
 
@@ -395,12 +406,12 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
         shapes_graph = process_shapes_file('obo', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
 
     # Add valid SPARQL endpoints found in the repo
-    for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
-      shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
-      shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
-      if 'description' in endpoint_metadata:
-        shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
-    VALID_ENDPOINTS = {}
+    # for sparql_endpoint, endpoint_metadata in VALID_ENDPOINTS.items():
+    #   shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
+    #   shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
+    #   if 'description' in endpoint_metadata:
+    #     shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
+    # VALID_ENDPOINTS = {}
 
     repo_id = repo_url.rsplit('/')[-2] + '-' + repo_url.rsplit('/')[-1]
 
@@ -520,7 +531,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               sparql_endpoint = grlc_metadata['endpoint']
               try:
                 shapes_graph.add((file_uri, VOID.sparqlEndpoint, URIRef(sparql_endpoint)))
-                test_sparql_endpoint(sparql_endpoint)
+                shapes_graph = test_sparql_endpoint(sparql_endpoint, shapes_graph)
               except Exception as e:
                 logging.debug('Issue parsing SPARQL endpoint from .rq file')
                 logging.debug(e)
@@ -536,13 +547,13 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
               for args in grlc_metadata['defaults']:
                 for arg, default_label in args.items():
                   shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(arg)))
-          try:
-            # Parse the query to get its operation (select, construct..)
-            parsed_query = translateQuery(Query.parseString(query_string, parseAll=True))
-            query_operation = re.sub(r"(\w)([A-Z])", r"\1 \2", parsed_query.algebra.name)
-            shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
-          except:
-            shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
+          # try:
+          #   # Parse the query to get its operation (select, construct..)
+          #   parsed_query = translateQuery(Query.parseString(query_string, parseAll=True))
+          #   query_operation = re.sub(r"(\w)([A-Z])", r"\1 \2", parsed_query.algebra.name)
+          #   shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(query_operation)))
+          # except:
+          #   shapes_graph.add((file_uri, DCTERMS.hasPart, Literal('SPARQL Query')))
       except:
         logging.error('❌️ Issue opening file: ' + str(rdf_file_path))
 
@@ -821,13 +832,13 @@ def get_files(extensions):
         all_files.extend(pathlib.Path('cloned_repo').rglob(ext))
     return all_files
 
-def test_sparql_endpoint(sparql_endpoint):
+def test_sparql_endpoint(sparql_endpoint, shapes_graph):
     """Test endpoint with SPARQLWrapper, add it to hash of valid or failing endpoints
     Then add them in the graph as schema:EntryPoint
     """
-    if sparql_endpoint in VALID_ENDPOINTS.keys():
-      return True
-    elif sparql_endpoint in FAILED_ENDPOINTS.keys():
+    # if sparql_endpoint in VALID_ENDPOINTS.keys():
+    #   return True
+    if sparql_endpoint in FAILED_ENDPOINTS.keys():
       return False
     else:
       sparql_test_query = 'SELECT * WHERE { ?s ?p ?o } LIMIT 10'
@@ -841,25 +852,29 @@ def test_sparql_endpoint(sparql_endpoint):
         # Check SPARQL query sent back at least 5 triples
         results_array = results["results"]["bindings"]
         if len(results_array) > 4:
-          VALID_ENDPOINTS[sparql_endpoint] = {
-            'label': sparql_endpoint
-          }
-          return True
+          # VALID_ENDPOINTS[sparql_endpoint] = {
+          #   'label': sparql_endpoint
+          # }
+          endpoint_label = sparql_endpoint
+          shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
+          shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_label)))
+
+          return shapes_graph
         else:
           FAILED_ENDPOINTS[sparql_endpoint] = 'failed'
-          return False
+          return shapes_graph
       except Exception as e:
         logging.debug('✔️ Done tested, failed: ' + str(sparql_endpoint))
         add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
-        return False
+        return shapes_graph
 
 if __name__ == "__main__":
   # The script starts here
   root = pathlib.Path(__file__).parent.resolve()
-  global VALID_ENDPOINTS
-  VALID_ENDPOINTS = {}
-  global FAILED_ENDPOINTS
-  FAILED_ENDPOINTS = {}
+  # global VALID_ENDPOINTS
+  # VALID_ENDPOINTS = {}
+  # global FAILED_ENDPOINTS
+  # FAILED_ENDPOINTS = {}
   # Repos with issues or too big (hitting GitHub Actions 6h limit)
   global SKIP_REPOS
   SKIP_REPOS = [

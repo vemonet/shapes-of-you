@@ -176,7 +176,7 @@ The Python script retrieves shapes files from various popular Git services API (
 
 You can find the python scripts and requirements in the [`etl`](https://github.com/vemonet/shapes-of-you/tree/main/etl) folder.
 
-Use this command to locally define the `GITHUB_TOKEN` and `GITLAB_TOKEN` **environment variables required** to run the script (you might need to adapt on Windows, but you should know better than me):
+Use this command to locally define the `API_GITHUB_TOKEN`, `GITLAB_TOKEN` and `GITEE_TOKEN` **environment variables required** to run the script (you might need to adapt on Windows, but you should know better than me):
 
 ```bash
 export API_GITHUB_TOKEN=MYGITHUBTOKEN000
