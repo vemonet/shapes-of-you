@@ -27,11 +27,11 @@ docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="vad_install ('/o
 # Create /DAV/ldp folder
 docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
 
-docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/github','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
-docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/gitlab','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
-docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/gitee','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
-docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/apis','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
-docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/endpoints','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
+docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/github/','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
+docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/gitlab/','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
+docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/gitee/','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
+docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/apis/','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
+docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="select DB.DBA.DAV_COL_CREATE ('/DAV/ldp/endpoints/','110100100R', 'dav','dav','dav', '${DBA_PASSWORD}');"
 
 docker-compose exec virtuoso isql -U dba -P $DBA_PASSWORD exec="vad_install ('/opt/virtuoso-opensource/vad/fct_dav.vad', 0);"
 
