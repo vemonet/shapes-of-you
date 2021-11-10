@@ -2,7 +2,11 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "jsx": "react-native",
-    "lib": ["dom", "esnext", "es6"],
+    "lib": [
+      "dom",
+      "esnext",
+      "es6"
+    ],
     "moduleResolution": "node",
     "noEmit": true,
     "skipLibCheck": true,
@@ -10,5 +14,6 @@
     "noImplicitAny": false,
     "noImplicitThis": true,
     "strictNullChecks": true
-  }
+  },
+  "extends": "expo/tsconfig.base"
 }
