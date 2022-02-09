@@ -38,6 +38,7 @@ GITHUB_TOKEN = os.environ.get("API_GITHUB_TOKEN", "")
 GITLAB_TOKEN = os.environ.get("GITLAB_TOKEN", "")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
+# 62392 files in 1222 repositories
 ENDPOINT_URL = os.environ.get("ENDPOINT_URL", "https://data.index.semanticscience.org/sparql")
 ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "dav")
 ENDPOINT_PASSWORD = os.environ.get("ENDPOINT_PASSWORD", "dba")
