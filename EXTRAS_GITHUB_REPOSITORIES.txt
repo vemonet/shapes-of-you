@@ -24,3 +24,4 @@ IGN-CNIG/btn100
 egonw/SARS-CoV-2-Queries
 fnielsen/scholia
 veleda/shacl-masterclass
+andrawaag/ShEx
