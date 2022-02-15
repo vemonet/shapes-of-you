@@ -107,16 +107,16 @@ export default function NavBar() {
           popperOptions={{'positionFixed': true}}>
           {/* <ClickAwayListener onClickAway={handleClickAway}> */}
           <Card >
-              <CardHeader
-                action={
-                  <IconButton aria-label="settings" onClick={handleClickAway}>
-                    <CloseIcon />
-                  </IconButton>
-                }
-                title="⚡️ List of active SPARQL endpoints"
-                subheader='Endpoints are tested to make sure they are active. They are extracted from queries metadata and the LOD. We automatically import all SPARQL queries in YASGUI for the endpoint you select'
-                style={{paddingBottom: '0px'}}
-              />
+            <CardHeader
+              action={
+                <IconButton aria-label="settings" onClick={handleClickAway}>
+                  <CloseIcon />
+                </IconButton>
+              }
+              title="⚡️ List of active SPARQL endpoints"
+              subheader='Endpoints are tested to make sure they are active. They are extracted from queries metadata and the LOD. We automatically import all SPARQL queries in YASGUI for the endpoint you select'
+              style={{paddingBottom: '0px'}}
+            />
             <CardContent>
               <SparqlEndpointsList />
             </CardContent>
