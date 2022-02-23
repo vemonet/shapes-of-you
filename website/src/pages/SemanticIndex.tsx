@@ -587,6 +587,7 @@ export default function SemanticIndex() {
             <CardContent>
               {/* TODO: also filter files? */}
               {repo_obj.files.map(function(file_obj: any, key: number){
+                // console.log(file_obj)
                 return <Card key={key.toString()} style={{padding: theme.spacing(1, 1), margin: theme.spacing(1, 0)}}>
                   <Typography style={{margin: theme.spacing(1, 0)}}>
                     <a href={file_obj.url} className={classes.link}>
@@ -735,7 +736,10 @@ SELECT DISTINCT * WHERE {
         schema:codeRepository ?repository .
     FILTER(?shape_type != schema:SoftwareSourceCode)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
-    OPTIONAL { ?shapeFileUri schema:query ?query }
+    OPTIONAL { 
+      ?shapeFileUri schema:query ?query .
+      FILTER (strlen(str(?query)) > 1)
+    }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
     OPTIONAL { ?shapeFileUri rdfs:comment ?shape_file_description }
 }`

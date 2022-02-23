@@ -158,12 +158,12 @@ jobs:
     #     mv REPORT.md output/ || exit 0
     #     mv shapes-rdf.ttl output/ || exit 0
 
-    - name: Upload failed shapes report as artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: report-${{ matrix.git-service }}-${{ matrix.search-string }}
-        # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
-        path: REPORT.md
+    # - name: Upload failed shapes report as artifact
+    #   uses: actions/upload-artifact@v1
+    #   with:
+    #     name: report-${{ matrix.git-service }}-${{ matrix.search-string }}
+    #     # name: shapes-rdf-${{ matrix.git-service }}-${{ env.RUN_LABEL }}
+    #     path: REPORT.md
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF output as artifact
     #   uses: actions/upload-artifact@v1

@@ -42,7 +42,7 @@ export default function YasguiPage(props: any) {
 
   const [state, setState] = React.useState({
     entities_relations_overview_results: [],
-    loadingMetadata: true
+    loadingMetadata: false
   });
   const stateRef = React.useRef(state);
   // Avoid conflict when async calls
@@ -66,6 +66,7 @@ export default function YasguiPage(props: any) {
     // let sparql_endpoint: any = params.get('endpoint');
 
     if (props.endpoint) {
+      updateState({ loadingMetadata: true });
       axios.get(Config.sparql_endpoint + `?query=` + encodeURIComponent(entities_relations_query.replace('?_metadataGraph', props.endpoint)))
       .then((res: any) => {
         if (res.data.results && res.data.results.bindings.length > 0){
