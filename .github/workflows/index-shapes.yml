@@ -36,6 +36,8 @@ jobs:
         - git-service: github
           search-string: monarchinitiative
         - git-service: github
+          search-string: wikidata
+        - git-service: github
           search-string: topic:shacl-shapes
         - git-service: github
           search-string: topic:shex
