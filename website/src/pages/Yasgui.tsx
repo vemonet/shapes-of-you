@@ -126,6 +126,7 @@ export default function YasguiPage(props: any) {
           ?query_file void:sparqlEndpoint ?sparql_endpoint ;
             rdfs:label ?file_label ;
             schema:query ?query .
+          FILTER (strlen(str(?query)) > 1)
           FILTER (?sparql_endpoint = <` + sparql_endpoint + `>)
           OPTIONAL { ?query_file rdfs:comment ?file_description }
         }`

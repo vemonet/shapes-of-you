@@ -180,12 +180,12 @@ WHERE {
   ?sparql_endpoint a schema:EntryPoint .
   OPTIONAL {
     ?query_file void:sparqlEndpoint ?sparql_endpoint ;
-      schema:query ?query
+      schema:query ?query .
+    FILTER (strlen(str(?query)) > 1)
   }
   OPTIONAL {
     GRAPH ?sparql_endpoint {
-      ?datasets_graph a void:Dataset .
-      FILTER EXISTS { ?datasets_graph void:propertyPartition ?propertyPartition . }
+      ?datasets_graph void:propertyPartition ?propertyPartition .
     } 
   }
 } GROUP BY ?sparql_endpoint ORDER BY DESC(?queries_count) DESC(?datasets_graph_count)
