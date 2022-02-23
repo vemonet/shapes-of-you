@@ -3,7 +3,7 @@
 [![Deploy to GitHub Pages](https://github.com/vemonet/shapes-of-you/workflows/Deploy%20website/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+website%22) [![CodeQL analysis](https://github.com/vemonet/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
 
 
-🖥 Access the web app at **[index.semanticscience.org](https://index.semanticscience.org)**
+🖥 Access the web app at **[index.semanticscience.org](http://index.semanticscience.org)**
 
 📬 Query our knowledge graph using the OpenAPI at **[grlc.io/api-git/vemonet/shapes-of-you/subdir/api](http://grlc.io/api-git/vemonet/shapes-of-you/subdir/api)** (powered by [grlc.io](http://grlc.io) and [SPARQL](https://www.w3.org/TR/sparql11-query/))
 

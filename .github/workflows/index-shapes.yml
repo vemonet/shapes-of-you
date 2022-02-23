@@ -21,6 +21,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
+        # TODO: convert SPARQL queries in .md to .rq files cf. https://github.com/sebotic/SPARQL
         - git-service: github
           search-string: dbpedia
         - git-service: github
@@ -36,7 +37,11 @@ jobs:
         - git-service: github
           search-string: monarchinitiative
         - git-service: github
-          search-string: wikidata
+          search-string: wikidata+queries
+        - git-service: github
+          search-string: dbpedia+queries
+        - git-service: github
+          search-string: wikipathways
         - git-service: github
           search-string: topic:shacl-shapes
         - git-service: github
@@ -45,6 +50,8 @@ jobs:
           search-string: topic:grlc
         - git-service: github
           search-string: sparql+queries
+        - git-service: github
+          search-string: topic:sparql queries
         - git-service: github
           search-string: topic:smartapi
         - git-service: github

@@ -80,7 +80,8 @@ export default function SparqlEndpointsList() {
             endpoint_index = sparql_endpoints_array.push({
               'url': endpoint_url,
               'queries_count': result.queries_count.value,
-              'datasets_graph_count': result.datasets_graph_count.value
+              'datasets_graph_count': 0
+              // 'datasets_graph_count': result.datasets_graph_count.value
             }) - 1
           }
 
@@ -171,11 +172,12 @@ export default function SparqlEndpointsList() {
   )
 }
 
+
 // SPARQL select query which returns the count of repositories and shapes files per semantic resources types
 const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
 PREFIX void: <http://rdfs.org/ns/void#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?sparql_endpoint (count(distinct ?query_file) AS ?queries_count) (count(distinct ?datasets_graph) AS ?datasets_graph_count)
+SELECT DISTINCT ?sparql_endpoint (count(distinct ?query_file) AS ?queries_count)
 WHERE { 
   ?sparql_endpoint a schema:EntryPoint .
   OPTIONAL {
@@ -183,10 +185,28 @@ WHERE {
       schema:query ?query .
     FILTER (strlen(str(?query)) > 1)
   }
-  OPTIONAL {
-    GRAPH ?sparql_endpoint {
-      ?datasets_graph void:propertyPartition ?propertyPartition .
-    } 
-  }
-} GROUP BY ?sparql_endpoint ORDER BY DESC(?queries_count) DESC(?datasets_graph_count)
+} GROUP BY ?sparql_endpoint ORDER BY DESC(?queries_count)
 `
+
+
+// Takes too long
+// // SPARQL select query which returns the count of repositories and shapes files per semantic resources types
+// const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
+// PREFIX void: <http://rdfs.org/ns/void#>
+// PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+// SELECT DISTINCT ?sparql_endpoint (count(distinct ?query_file) AS ?queries_count) (count(distinct ?datasets_graph) AS ?datasets_graph_count)
+// WHERE { 
+//   ?sparql_endpoint a schema:EntryPoint .
+//   OPTIONAL {
+//     ?query_file void:sparqlEndpoint ?sparql_endpoint ;
+//       schema:query ?query .
+//     FILTER (strlen(str(?query)) > 1)
+//   }
+//   OPTIONAL {
+//     GRAPH ?sparql_endpoint {
+//       ?datasets_graph a void:Dataset .
+//       ?datasets_graph void:propertyPartition ?propertyPartition .
+//     } 
+//   }
+// } GROUP BY ?sparql_endpoint ORDER BY DESC(?queries_count) DESC(?datasets_graph_count)
+// `

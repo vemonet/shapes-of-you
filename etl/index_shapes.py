@@ -141,7 +141,7 @@ def add_shape(g, shapes_graph, file_uri, shape_uri):
 
 def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
   if (None, None, None) in shapes_graph:
-    print('Loading to: ' + str(repo_id))
+    print(f'Loading {len(shapes_graph)} triples for {str(repo_id)}')
     shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
     # shapes_graph.serialize('shapes-rdf.nt', format='nt')
     os.system(f'java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g https://w3id.org/um/ids/shapes/$GIT_SERVICE')
