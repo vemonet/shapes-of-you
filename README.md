@@ -194,10 +194,10 @@ Then install requirements:
 pip3 install -r etl/requirements.txt
 ```
 
-Retrieve shapes files from search the [GitHub GraphQL API](https://developer.github.com/v4/explorer) (here using a topic to search):
+Retrieve shapes files from search the [GitHub GraphQL API](https://developer.github.com/v4/explorer) (you can also use a topic to search, e.g. `topic:sparql`):
 
 ```bash
-python3 etl/index_shapes.py github topic:shacl-shapes
+python3 etl/index_shapes.py github vemonet/shapes-of-you
 ```
 
 Retrieve shapes files from [GitLab API](https://docs.gitlab.com/ee/api/) using the [`python-gitlab` package](https://pypi.org/project/python-gitlab/):

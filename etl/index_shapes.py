@@ -122,7 +122,7 @@ def main(argv):
       shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
       if 'description' in endpoint_metadata:
         shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
-    # load_rdf_to_ldp(shapes_graph, 'lod-cloud', 'apis')
+    load_rdf_to_ldp(shapes_graph, 'lod-cloud', 'apis')
 
   print(f"Number of triples generated: {len(shapes_graph)}")
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
@@ -144,7 +144,8 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     print('Loading to: ' + str(repo_id))
     shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
     # shapes_graph.serialize('shapes-rdf.nt', format='nt')
-    os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
+    os.system(f'java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g https://w3id.org/um/ids/shapes/$GIT_SERVICE')
+    # os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
     # TODO: test
     # requests.post(
     #   f'https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/',
@@ -417,11 +418,11 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
 
     repo_id = repo_url.rsplit('/')[-2] + '-' + repo_url.rsplit('/')[-1]
 
-    # dry_run = False
-    # if dry_run:
-    #   shapes_graph.serialize('shapes-' + repo_id + '.ttl', format='turtle')
-    # else:
-    #   load_rdf_to_ldp(shapes_graph, repo_id, git_service)
+    dry_run = False
+    if dry_run:
+      shapes_graph.serialize('shapes-' + repo_id + '.ttl', format='turtle')
+    else:
+      load_rdf_to_ldp(shapes_graph, repo_id, git_service)
 
     return shapes_graph
 

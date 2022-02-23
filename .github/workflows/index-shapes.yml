@@ -129,14 +129,21 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-    
-    - name: Install Python requirements
+  
+    - uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+
+
+    - name: Install requirements
       # env: # Run label can be processed here as env var to reuse later
       #   RUN_LABEL: ${{ matrix.search-string }}
       run: |
         sudo apt-get update
         sudo apt-get install libicu-dev python3-dev
         python -m pip install -r etl/requirements.txt
+        wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
       # export RUN_LABEL=${RUN_LABEL//:/-}
       # echo "RUN_LABEL=${RUN_LABEL//+/-}" >> $GITHUB_ENV
 
@@ -171,20 +178,17 @@ jobs:
     #     name: shapes-rdf-${{ matrix.git-service }}-${{ matrix.search-string }}
     #     path: shapes-rdf.ttl
 
-    # - uses: actions/setup-java@v2
-    #   with:
-    #     java-version: '11'
-    #     distribution: 'adopt'
-
-    - name: Use sparql-operations.jar to upload RDF to GraphDB
-      env:
-        GRAPH: https://w3id.org/um/ids/shapes/${{ matrix.git-service }}
-        ENDPOINT_USER: ${{ secrets.GRAPHDB_USER }}
-        ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
-      run: |
-        wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
-        cat shapes-rdf.ttl
-        java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g $GRAPH
+    # - name: Use sparql-operations.jar to upload RDF to GraphDB
+    #   env:
+    #     GRAPH: https://w3id.org/um/ids/shapes/${{ matrix.git-service }}
+    #     ENDPOINT_USER: ${{ secrets.GRAPHDB_USER }}
+    #     ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+    #   run: |
+    #     wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
+    #     cat shapes-rdf.ttl
+    #     ls
+    #     wc -l shapes-rdf.ttl
+    #     java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g $GRAPH
 
     # - name: Upload ${{ matrix.git-service }}-${{ matrix.search-string }} RDF file to the triplestore
     #   uses: vemonet/sparql-operations-action@master
