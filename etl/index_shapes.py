@@ -122,7 +122,7 @@ def main(argv):
       shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_metadata['label'])))
       if 'description' in endpoint_metadata:
         shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
-    load_rdf_to_ldp(shapes_graph, 'lod-cloud', 'apis')
+    # load_rdf_to_ldp(shapes_graph, 'lod-cloud', 'apis')
 
   shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
   # shapes_graph.serialize('shapes-rdf.nt', format='nt')
@@ -417,10 +417,11 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
     repo_id = repo_url.rsplit('/')[-2] + '-' + repo_url.rsplit('/')[-1]
 
     dry_run = False
-    if dry_run:
-      shapes_graph.serialize('shapes-' + repo_id + '.ttl', format='turtle')
-    else:
-      load_rdf_to_ldp(shapes_graph, repo_id, git_service)
+    shapes_graph.serialize('shapes-' + repo_id + '.ttl', format='turtle')
+    # if dry_run:
+    #   shapes_graph.serialize('shapes-' + repo_id + '.ttl', format='turtle')
+    # else:
+    #   load_rdf_to_ldp(shapes_graph, repo_id, git_service)
 
     return shapes_graph
 

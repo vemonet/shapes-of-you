@@ -222,7 +222,7 @@ We use the [`d2s`](https://github.com/MaastrichtU-IDS/d2s-cli) tool (aka. data2s
 d2s metadata analyze https://graphdb.dumontierlab.com/repositories/shapes-registry -o metadata.ttl
 ```
 
-We commit the generated metadata file to the `metadata` branch
+We commit the generated metadata file to the `metadata` branch, to experiment using git to version and keep track of changes of the metadata generated for the SPARQL endpoints over time.
 
 ### Enable Virtuoso Linked Data Platform
 

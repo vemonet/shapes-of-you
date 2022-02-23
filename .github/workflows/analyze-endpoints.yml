@@ -18,8 +18,8 @@ jobs:
       - name: Get list of endpoints
         id: generate-matrix
         run: |
-          curl -X GET -H "accept: application/json" -o endpoints.json "https://data.index.semanticscience.org/sparql?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
-          # curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+          # curl -X GET -H "accept: application/json" -o endpoints.json "https://data.index.semanticscience.org/sparql?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
+          curl -X GET -H "accept: application/json" -o endpoints.json "https://graphdb.dumontierlab.com/repositories/shapes-registry?query=$(cat api/get-active-endpoints.rq | python3 -c 'import urllib.parse, sys; print(urllib.parse.quote(sys.stdin.read()))')"
           endpoints_json=$( cat endpoints.json )
           echo $endpoints_json
           echo ::set-output name=matrix::$endpoints_json
@@ -111,15 +111,15 @@ jobs:
           # git push || exit 0
         fi
 
-    # - name: Upload RDF file to the triplestore
-    #   uses: MaastrichtU-IDS/RdfUpload@master
-    #   with:
-    #     file: output/metadata.ttl
-    #     endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
-    #     # endpoint: https://data.index.semanticscience.org/sparql
-    #     user: ${{ secrets.GRAPHDB_USER }}
-    #     password: ${{ secrets.GRAPHDB_PASSWORD }}
-    #     graph: ${{ matrix.endpoint-url.sparql_endpoint.value }}        
+    - name: Upload RDF file to the triplestore
+      uses: MaastrichtU-IDS/RdfUpload@master
+      with:
+        file: output/metadata.ttl
+        endpoint: https://graphdb.dumontierlab.com/repositories/shapes-registry/statements
+        # endpoint: https://data.index.semanticscience.org/sparql
+        user: ${{ secrets.GRAPHDB_USER }}
+        password: ${{ secrets.GRAPHDB_PASSWORD }}
+        graph: ${{ matrix.endpoint-url.sparql_endpoint.value }}        
 
     # - name: Clear older graph in the triplestore
     #   if: github.event.inputs.clear == 'true'
