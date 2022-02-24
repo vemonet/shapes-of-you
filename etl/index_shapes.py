@@ -126,9 +126,8 @@ def main(argv):
         shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_metadata['description'])))
     load_rdf_to_ldp(shapes_graph, 'lod-cloud', 'apis')
 
-  print(f"Number of triples generated: {len(shapes_graph)}")
-  shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
-  # shapes_graph.serialize('shapes-rdf.nt', format='nt')
+  # print(f"Number of triples generated: {len(shapes_graph)}")
+  # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
 
 
 def add_shape(g, shapes_graph, file_uri, shape_uri):
@@ -150,14 +149,14 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
 
     insert_graph_in_sparql_endpoint(
       shapes_graph,
-      sparql_endpoint="https://graphdb.dumontierlab.com/repositories/shapes-registry/statements",
+      sparql_endpoint=f"https://graphdb.dumontierlab.com/repositories/shapes-registry/rdf-graphs/shapes:{os.getenv('GIT_SERVICE')}",
       username=os.getenv('ENDPOINT_USER'), password=os.getenv('ENDPOINT_PASSWORD'), 
-      graph_uri=f"https://w3id.org/um/ids/shapes/{os.getenv('GIT_SERVICE')}",
-      chunks_size=1000, operation='INSERT'
+      # graph_uri=f"shapes:{os.getenv('GIT_SERVICE')}",
+      # chunks_size=1000, operation='INSERT'
     )
 
+    ## For Virtuoso LDP:
     # os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
-    # TODO: test
     # requests.post(
     #   f'https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/',
     #   data=shapes_graph.serialize(format='turtle'), 

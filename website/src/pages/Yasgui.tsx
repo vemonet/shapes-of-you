@@ -230,9 +230,9 @@ export default function YasguiPage(props: any) {
         </Paper>
       </>)}
       
-      <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(4)}}>
+      {/* <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(4)}}>
         Query with YASGUI 
-      </Typography>
+      </Typography> */}
 
       <div id="yasguiDiv"></div>
     </Container>
