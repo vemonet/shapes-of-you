@@ -73,17 +73,17 @@ export default function SemanticIndex() {
     files_overview_chart: {},
     type_checkboxes: {
       SPARQL: true,
-      OWL: true,
-      SKOS: true,
-      OBO: true,
-      SHACL: true,
-      ShEx: true,
-      RML: true,
-      R2RML: true,
-      Nanopub: true,
-      OpenAPI: true,
-      DCAT: true,
-      CSVW: true
+      OWL: false,
+      SKOS: false,
+      OBO: false,
+      SHACL: false,
+      ShEx: false,
+      RML: false,
+      R2RML: false,
+      Nanopub: false,
+      OpenAPI: false,
+      DCAT: false,
+      CSVW: false
     },
     search_repos_only: false,
     show_pwa_alert: false,
@@ -420,7 +420,8 @@ export default function SemanticIndex() {
   return(
     <Container style={{marginTop: theme.spacing(4), marginBottom: theme.spacing(3)}}>
       <Alert severity="warning" style={{marginBottom: theme.spacing(2)}}>
-        Shapes of You is currently under active development. Be patient when it loads the data (especially the 60k files on the main page). 
+        Shapes of You is currently under active development. All filtering and search on the 100k+ files happens in your browser,
+        so be careful as it needs some improvements to better scale. 
         And feel free to <a href="https://github.com/vemonet/shapes-of-you/issues" className={classes.link} target="_blank" rel="noopener noreferrer">create new issues</a> if you think of improvements or want to notify us about a problem!
       </Alert>
 
