@@ -136,12 +136,10 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-  
-    - uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-        distribution: 'adopt'
-
+    # - uses: actions/setup-java@v2
+    #   with:
+    #     java-version: '11'
+    #     distribution: 'adopt'
 
     - name: Install requirements
       # env: # Run label can be processed here as env var to reuse later
@@ -150,7 +148,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install libicu-dev python3-dev
         python -m pip install -r etl/requirements.txt
-        wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
+      # wget https://github.com/MaastrichtU-IDS/d2s-sparql-operations/releases/latest/download/sparql-operations.jar
       # export RUN_LABEL=${RUN_LABEL//:/-}
       # echo "RUN_LABEL=${RUN_LABEL//+/-}" >> $GITHUB_ENV
 
@@ -161,10 +159,12 @@ jobs:
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-        ENDPOINT_USER: dav
+        ENDPOINT_USER: ${{ secrets.GRAPHDB_USER }}
         ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
         python etl/index_shapes.py $GIT_SERVICE $SEARCH_TOPICS
+
+
 
     # - name: Prepare output
     #   run: |

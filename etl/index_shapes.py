@@ -27,6 +27,8 @@ from pyshexc.parser_impl import generate_shexj
 from python_graphql_client import GraphqlClient
 import gitlab
 
+from d2s.sparql_operations import insert_graph_in_sparql_endpoint
+
 global VALID_ENDPOINTS
 VALID_ENDPOINTS = {}
 global FAILED_ENDPOINTS
@@ -142,9 +144,18 @@ def add_shape(g, shapes_graph, file_uri, shape_uri):
 def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
   if (None, None, None) in shapes_graph:
     print(f'Loading {len(shapes_graph)} triples for {str(repo_id)}')
-    shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
+    # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')
     # shapes_graph.serialize('shapes-rdf.nt', format='nt')
-    os.system(f'java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g https://w3id.org/um/ids/shapes/$GIT_SERVICE')
+    # os.system(f'java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g https://w3id.org/um/ids/shapes/$GIT_SERVICE')
+
+    insert_graph_in_sparql_endpoint(
+      shapes_graph,
+      sparql_endpoint="https://graphdb.dumontierlab.com/repositories/shapes-registry/statements",
+      username=os.getenv('ENDPOINT_USER'), password=os.getenv('ENDPOINT_PASSWORD'), 
+      graph_uri=f"https://w3id.org/um/ids/shapes/{os.getenv('GIT_SERVICE')}",
+      chunks_size=1000, operation='INSERT'
+    )
+
     # os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
     # TODO: test
     # requests.post(
@@ -157,10 +168,10 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     #     'Content-type': 'text/turtle'
     #   }
     # )
-    try:
-      os.remove('shapes-rdf.ttl')
-    except:
-      pass
+    # try:
+    #   os.remove('shapes-rdf.ttl')
+    # except:
+    #   pass
 
 def fetch_from_lod():
   """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""
@@ -423,6 +434,7 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
       shapes_graph.serialize('shapes-' + repo_id + '.ttl', format='turtle')
     else:
       load_rdf_to_ldp(shapes_graph, repo_id, git_service)
+      shapes_graph = Graph()
 
     return shapes_graph
 
