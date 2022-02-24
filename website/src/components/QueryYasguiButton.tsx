@@ -4,8 +4,10 @@ import { Button, Card, CardContent, CardHeader, ClickAwayListener, IconButton, P
 import SendIcon from '@material-ui/icons/Send';
 import SearchIcon from '@material-ui/icons/Search';
 import CloseIcon from '@material-ui/icons/Close';
+import axios from 'axios';
 
 import Yasgui from "../pages/Yasgui";
+import Config from "../components/Config";
 
 const useStyles = makeStyles(theme => ({
   link: {
@@ -44,17 +46,13 @@ export default function QueryYasguiButton(props: any) {
 
   return (
     <>
-      { !props.endpoint && !props.query &&
-        <>
-        </>
-      }
       { props.endpoint &&
         <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} onClick={handleClick}>
           <SendIcon />
           &nbsp;Query with YASGUI
         </Button>
       }
-      { !props.endpoint && props.query &&
+      { !props.endpoint &&
         <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} onClick={handleClick}>
           <SearchIcon />
           &nbsp;See with YASGUI
@@ -80,7 +78,7 @@ export default function QueryYasguiButton(props: any) {
               style={{paddingBottom: '0px'}}
             />
           <CardContent>
-            <Yasgui endpoint={props.endpoint} query={props.query} />
+            <Yasgui endpoint={props.endpoint} query={props.query} file_url={props.file_url} />
           </CardContent>
         </Card>
         {/* </ClickAwayListener> */}

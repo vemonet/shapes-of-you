@@ -179,6 +179,60 @@ export default function YasguiPage(props: any) {
         { ...Yasgui.Tab.getDefaults(), yasqe: { value: props.query }}
       );
       window.scrollTo(0, 0)
+    } else if (props.file_url) {
+      
+      const get_sparql_queries_query = `PREFIX schema: <https://schema.org/>
+        PREFIX void: <http://rdfs.org/ns/void#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT DISTINCT * WHERE { 
+          ?query_file rdfs:label ?file_label ;
+            schema:query ?query .
+          FILTER (strlen(str(?query)) > 1)
+          FILTER (?query_file = <` + props.file_url + `>)
+          OPTIONAL { ?query_file rdfs:comment ?file_description }
+        }`
+      const endpointToQuery = Config.sparql_endpoint;
+      axios.get(endpointToQuery + `?query=` + encodeURIComponent(get_sparql_queries_query))
+        .then((res: any) => {
+          // Yasgui.defaults.requestConfig.endpoint = sparql_endpoint;
+          // @ts-ignore Set YASGUI to serve all queries of the selected endpoint
+          let yasgui: any = new Yasgui(document.getElementById('yasguiDiv'), {
+            // requestConfig: { endpoint: sparql_endpoint },
+            // endpoint: sparql_endpoint,
+            copyEndpointOnNewTab: true,
+          });
+
+          const results_array = res.data.results.bindings;
+          let queries_obj: any = {}
+          results_array.map((result: any): any =>  {
+            // let endpoint_obj = {'endpoint': result.sparql_endpoint.value}
+            queries_obj[result.file_label.value] = result.query.value
+          })
+          if (Object.keys(yasgui._tabs).length > 1) {
+            Object.keys(yasgui._tabs).map((tab_id: any): any =>  {
+              // console.log(tab_id);
+              let tab: any = yasgui.getTab(tab_id);
+              tab.close();
+            })
+          }
+          // let tab: any = yasgui.getTab();
+          
+          // Add tab to yasgui for each file
+          Object.keys(queries_obj).map((file_label: any) => {
+            // if (!yasgui.getTab(file_label)) {
+            yasgui.addTab(
+              true, // set as active tab
+              { ...Yasgui.Tab.getDefaults(), name: file_label.substring(0,30),
+                yasqe: { value: queries_obj[file_label] }}
+            );
+          })
+          window.scrollTo(0, 0)
+        })
+        .catch(error => {
+          console.log(error)
+        })
+
+
     }
   }, [setState])
 

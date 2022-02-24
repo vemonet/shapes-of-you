@@ -91,7 +91,7 @@ export default function SemanticIndex() {
     search_repos_only: false,
     show_pwa_alert: false,
     page: 1,
-    shapes_per_page: 100,
+    shapes_per_page: 90,
     show_info_card: false,
   });
   const stateRef = React.useRef(state);
@@ -673,11 +673,13 @@ export default function SemanticIndex() {
                 // console.log(file_obj)
                 return <Card key={key.toString()} style={{padding: theme.spacing(1, 1), margin: theme.spacing(1, 0)}}>
                   <Typography style={{margin: theme.spacing(1, 0)}}>
-                    <a href={file_obj.url} className={classes.link}>
+                    <a href={file_obj.url} className={classes.link} target="_blank" rel="noopener noreferrer">
                       {/* {getFileLabel(file_obj.type)} */}
                       <Chip label={shape_types_mappings[file_obj.type]}/> {file_obj.label}
                     </a>
-                    <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} />
+                    { (file_obj.label.endsWith('.sparql') || file_obj.label.endsWith('.rq')) &&
+                      <QueryYasguiButton endpoint={file_obj.sparqlEndpoint} query={file_obj.query} file_url={file_obj.url}/>
+                    }
                     {file_obj.type === 'https://schema.org/APIReference' &&
                       <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
                         target="_blank" rel="noopener noreferrer"
@@ -864,27 +866,27 @@ SELECT DISTINCT * WHERE {
 //     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
 // }`
 
-// SPARQL select query to get all shapes files and the list of their shapes
-const getShapesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX schema: <https://schema.org/>
-PREFIX sh: <http://www.w3.org/ns/shacl#>
-PREFIX shex: <http://www.w3.org/ns/shex#>
-PREFIX void: <http://rdfs.org/ns/void#>
-SELECT DISTINCT * WHERE { 
-    ?shapeFileUri a schema:SoftwareSourceCode ;
-        a ?shape_type ;
-        rdfs:label ?label ;
-        schema:codeRepository ?repository ;
-        dcterms:hasPart ?shapes .
-    FILTER(?shape_type != schema:SoftwareSourceCode)
-    OPTIONAL { ?repository rdfs:comment ?repo_description }
-    OPTIONAL { ?shapeFileUri schema:query ?query }
-    OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
-    OPTIONAL { ?shapeFileUri rdfs:comment ?shape_file_description }
-}`
-// } LIMIT 1000`
+// // SPARQL select query to get all shapes files and the list of their shapes
+// const getShapesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+// PREFIX dc: <http://purl.org/dc/elements/1.1/>
+// PREFIX dcterms: <http://purl.org/dc/terms/>
+// PREFIX schema: <https://schema.org/>
+// PREFIX sh: <http://www.w3.org/ns/shacl#>
+// PREFIX shex: <http://www.w3.org/ns/shex#>
+// PREFIX void: <http://rdfs.org/ns/void#>
+// SELECT DISTINCT * WHERE { 
+//     ?shapeFileUri a schema:SoftwareSourceCode ;
+//         a ?shape_type ;
+//         rdfs:label ?label ;
+//         schema:codeRepository ?repository ;
+//         dcterms:hasPart ?shapes .
+//     FILTER(?shape_type != schema:SoftwareSourceCode)
+//     OPTIONAL { ?repository rdfs:comment ?repo_description }
+//     OPTIONAL { ?shapeFileUri schema:query ?query }
+//     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
+//     OPTIONAL { ?shapeFileUri rdfs:comment ?shape_file_description }
+// }`
+// // } LIMIT 1000`
 
 // SPARQL select query to get all GitHub repos, their description and the count of shapes file in it
 const countRepositoriesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
