@@ -103,12 +103,11 @@ def main(argv):
     shapes_graph = fetch_from_gitee(shapes_graph, GITEE_TOKEN, search_topic)
 
   elif git_registry == 'lod-cloud':
-    fetch_from_lod()
+    shapes_graph = fetch_from_lod(shapes_graph)
 
-    fetch_from_yummydata()
+    shapes_graph = fetch_from_yummydata(shapes_graph)
 
     # Extras SPARQL endpoints to check
-    shapes_graph = Graph()
     extra_endpoints = []
     with open(str(root) + '/../EXTRAS_SPARQL_ENDPOINTS.txt', 'r') as f:
       for line in f:
@@ -172,7 +171,7 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     # except:
     #   pass
 
-def fetch_from_lod():
+def fetch_from_lod(shapes_graph):
   """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""
   lod_datasets_count = 0
   lod_endpoints_count = 0
@@ -190,8 +189,9 @@ def fetch_from_lod():
   add_to_report('Datasets in LOD: ' + str(lod_datasets_count) +
     '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count))
     # '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
+  return shapes_graph
 
-def fetch_from_yummydata():
+def fetch_from_yummydata(shapes_graph):
   """Fetch and test SPARQL endpoints from http://yummydata.org/api"""
   lod_datasets_count = 0
   lod_endpoints_count = 0
@@ -206,6 +206,7 @@ def fetch_from_yummydata():
   add_to_report('Datasets in LOD: ' + str(lod_datasets_count) +
     '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count))
     # '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
+  return shapes_graph
 
 # curl -L -H 'Accept: application/json' https://yummydata.org/api/endpoint/search
 
