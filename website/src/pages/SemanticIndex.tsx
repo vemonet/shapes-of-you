@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
     padding: '2px 4px',
     display: 'flex',
     alignItems: 'center',
-    width: '35ch',
+    // width: '35ch',
     marginRight: theme.spacing(3)
   },
   searchInput: {
@@ -69,6 +69,7 @@ export default function SemanticIndex() {
     webid: '',
     shapes_files_list: [],
     search: '',
+    nextSearch: '',
     repositories_hash: [],
     repositories_autocomplete: [],
     repos_overview_chart: {},
@@ -90,7 +91,7 @@ export default function SemanticIndex() {
     search_repos_only: false,
     show_pwa_alert: false,
     page: 1,
-    shapes_per_page: 70,
+    shapes_per_page: 100,
     show_info_card: false,
   });
   const stateRef = React.useRef(state);
@@ -417,7 +418,11 @@ export default function SemanticIndex() {
 
   const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
-    updateState({ search: event.target.value, page: 1 })
+    updateState({ nextSearch: event.target.value })
+  }
+  const handleSearch  = (event: any) => {
+    event.preventDefault();
+    updateState({ search: state.nextSearch, page: 1 })
   }
 
   const handleCheckboxes = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -543,15 +548,17 @@ export default function SemanticIndex() {
         {/* Filtering options */}
         <Box display="flex" style={{margin: theme.spacing(2, 0)}}>
           {/* Search box */}
-          <Paper component="form" className={classes.paperSearch}>
-            <InputBase
-              className={classes.searchInput} inputProps={{ 'aria-label': 'search input' }}
-              placeholder={"🔎 Quick search"}
-              onChange={searchChange}
-            />
-            <IconButton aria-label="search button">
-              <SearchIcon />
-            </IconButton>
+          <Paper className={classes.paperSearch}>
+            <form onSubmit={handleSearch} >
+              <InputBase
+                className={classes.searchInput} inputProps={{ 'aria-label': 'search input' }}
+                placeholder={"🔍️ Quick search"}
+                onChange={searchChange}
+              />
+              <IconButton aria-label="search button" onClick={handleSearch}>
+                <SearchIcon />
+              </IconButton>
+            </form>
           </Paper>
 
           <TextField
