@@ -12,6 +12,7 @@ import { AuthButton, Value } from '@solid/react';
 // @ts-ignore
 import iconImage from '../../assets/icon.png';
 import SparqlEndpointsList from "../pages/SparqlEndpointsList";
+import QueryYasguiButton from "./QueryYasguiButton";
 
 const useStyles = makeStyles(theme => ({
   menuButton: {
@@ -73,13 +74,6 @@ export default function NavBar() {
             <img src={iconImage} style={{height: '2em', width: '2em', marginRight: '10px'}} alt="Logo" />
           </Tooltip>
         </Link>
-        <Tooltip title='Access the grlc OpenAPI (which query the SPARQL endpoint)'>
-          <Button className={classes.menuButton} target="_blank" rel="noopener noreferrer"
-          href="http://grlc.io/api-git/vemonet/shapes-of-you/subdir/api">
-            <GrlcApiIcon style={{ marginRight: theme.spacing(1)}} />
-            API docs
-          </Button>
-        </Tooltip>
         {/* <Tooltip title='Query the SPARQL endpoint with YASGUI'>
           <Button className={classes.menuButton} target="_blank" rel="noopener noreferrer"
           href="/yasgui?endpoint=Config.sparql_endpoint">
@@ -138,6 +132,22 @@ export default function NavBar() {
             <img src="https://img.shields.io/badge/📎%20Index%20shapes-reports-ffa000" />
           </Tooltip>
         </a> */}
+        <Tooltip title='Access the grlc OpenAPI (which query the SPARQL endpoint)'>
+          {/* <Button className={classes.menuButton} target="_blank" rel="noopener noreferrer"
+            href="https://graphdb.dumontierlab.com/repositories/shapes-registry">
+              {/* <GrlcApiIcon style={{ marginRight: theme.spacing(1)}} /> 
+            SPARQLs
+          </Button> */}
+          <QueryYasguiButton endpoint="https://graphdb.dumontierlab.com/repositories/shapes-registry" buttonText="SPARQL"/>
+          {/* <Yasgui endpoint={props.endpoint} query={props.query} file_url={props.file_url} /> */}
+        </Tooltip>
+        <Tooltip title='Access the grlc OpenAPI (which query the SPARQL endpoint)'>
+          <Button className={classes.menuButton} target="_blank" rel="noopener noreferrer"
+          href="http://grlc.io/api-git/vemonet/shapes-of-you/subdir/api">
+            {/* <GrlcApiIcon style={{ marginRight: theme.spacing(1)}} /> */}
+            API
+          </Button>
+        </Tooltip>
         <Tooltip  title='Go to https://github.com/vemonet/shapes-of-you'>
           <Button className={classes.menuButton} target="_blank"
           href="https://github.com/vemonet/shapes-of-you" rel="noopener noreferrer">
@@ -145,7 +155,7 @@ export default function NavBar() {
           </Button>
         </Tooltip>
         {/* <Tooltip title='Login with SOLID'> */}
-        <AuthButton title='Login with SOLID' className={classes.solidButton} popup="https://inrupt.net/common/popup.html"/>
+        {/* <AuthButton title='Login with SOLID' className={classes.solidButton} popup="https://inrupt.net/common/popup.html"/> */}
         {/* </Tooltip> */}
         {/* <AuthButton popup="https://solidcommunity.net/common/popup.html"/> */}
       </Toolbar>

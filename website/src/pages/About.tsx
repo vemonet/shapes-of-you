@@ -79,7 +79,8 @@ export default function About() {
             </IconButton>
           }
           title="💠 Shapes of You index"
-          subheader={"Access the world publicly available standard knowledge descriptions stored in code repositories, and explore the currently active SPARQL endpoints with ease, to find relevant data for your projects, or discover how people are defining knowledge around the blob."}
+          // subheader={"Access the world publicly available standard knowledge descriptions stored in code repositories, and explore the currently active SPARQL endpoints with ease, to find relevant data for your projects, or discover how people are defining knowledge around the blob."}
+          subheader={"Files of relevance for the Semantic Web, such as SPARQL queries, OWL/SKOS vocabularies, SHACL/ShEx shapes, indexed from public git repositories (GitHub, GitLab and Gitee). And a list of active SPARQL endpoints, with the queries that are associated to them."}
         />
 
 

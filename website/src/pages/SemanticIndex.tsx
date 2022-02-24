@@ -587,7 +587,8 @@ export default function SemanticIndex() {
             />
           })}
           {/* Button to check and uncheck all checkboxes */}
-          <Button size="small" variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
+          <Button size="small" variant="contained" color="primary" 
+            style={{textTransform: 'none', margin: theme.spacing(0, 2)}}
             onClick={() => {
               let checkboxes: any = {}
               Object.keys(state.type_checkboxes).map((type: any) => {
@@ -598,7 +599,8 @@ export default function SemanticIndex() {
             <CheckBoxOutlineBlankIcon />&nbsp;
             Uncheck all
           </Button>
-          <Button size="small" variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}
+          <Button size="small" variant="contained" color="primary" 
+            style={{textTransform: 'none', margin: theme.spacing(0, 2)}}
             onClick={() => {
               let checkboxes: any = {}
               Object.keys(state.type_checkboxes).map((type: any) => {

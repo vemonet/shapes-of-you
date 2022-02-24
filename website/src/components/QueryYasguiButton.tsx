@@ -46,7 +46,13 @@ export default function QueryYasguiButton(props: any) {
 
   return (
     <>
-      { props.endpoint &&
+      { props.buttonText &&
+        <Button style={{color: theme.palette.common.white, margin: theme.spacing(0, 1)}} onClick={handleClick}>
+          {/* <SendIcon /> */}
+          &nbsp;{props.buttonText}
+        </Button>
+      }
+      { props.endpoint && !props.buttonText &&
         <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}} onClick={handleClick}>
           <SendIcon />
           &nbsp;Query with YASGUI
