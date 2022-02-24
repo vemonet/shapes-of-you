@@ -60,6 +60,8 @@ export default function SemanticIndex() {
   const theme = useTheme();
   const webId = useWebId();
   // const solid_name = useLDflexValue('user.name') || 'unknown';
+
+  const endpointToQuery = Config.sparql_endpoint;
   
   const [state, setState] = React.useState({
     global_shapes_array: [],
@@ -131,12 +133,79 @@ export default function SemanticIndex() {
     return icon;
   }
 
+
+  const getShapesFiles = (sparqlQuery: string, triggerGetAll: boolean) => {
+    // Get all files but SPARQL queries
+    axios.get(endpointToQuery + `?query=` + encodeURIComponent(sparqlQuery))
+      .then(res => {
+        const sparqlResultArray = res.data.results.bindings;
+        let global_shapes_array: any = state.global_shapes_array
+        // Iterates over shapes files
+        sparqlResultArray.map((result: any): any =>  {
+
+          // Get repo in array if exist
+          const repo_url = result.repository.value;
+          let repo_index = global_shapes_array.findIndex(((obj: any) => obj.url == repo_url));
+          if (repo_index == -1) {
+            // Add repository to global repos array if not present
+            let repo_description = ''
+            if (result.repo_description) repo_description = result.repo_description.value;
+            repo_index = global_shapes_array.push({
+              'url': repo_url,
+              'description': repo_description,
+              'files': [],
+              'search_description': ''
+            }) - 1
+          }
+          let shapeType = 'http://www.w3.org/ns/shacl#SPARQLFunction'
+          if (result.shape_type) {
+            shapeType = result.shape_type.value;
+          }
+
+          // Create shape file entry
+          const file_url = result.shapeFileUri.value;
+          // Avoid duplicates
+          const found = global_shapes_array[repo_index]['files'].some(((obj: any) => obj.url === file_url));
+          if (!found) {
+            let file_obj: any = {
+              'url': file_url,
+              'type': shapeType,
+              'label': result.label.value,
+            }
+            let search_description = file_url + ' ' + result.label.value
+            if (result.shape_file_description) {
+              file_obj.description = result.shape_file_description.value;
+              search_description = search_description + ' ' + result.shape_file_description.value
+            }
+            if (result.sparqlEndpoint) {
+              file_obj.sparqlEndpoint = result.sparqlEndpoint.value;
+              search_description = search_description + ' ' + result.sparqlEndpoint.value
+            }
+            if (result.query) {
+              file_obj.query = result.query.value;
+              search_description = search_description + ' ' + result.query.value
+            }
+
+            // Add shapes file to repo entry
+            global_shapes_array[repo_index]['files'].push(file_obj)
+            global_shapes_array[repo_index]['search_description'] = global_shapes_array[repo_index]['search_description'] + search_description
+          }
+        })
+        updateState({global_shapes_array: global_shapes_array})
+
+        getShapesFiles(queryGetAllButSparql, false)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
+
   const chart_colors = ['#4caf50','#9575cd', '#bcaaa4', '#ef6c00', '#26c6da',
     '#1565c0', '#aed581', '#4caf50', '#ffeb3b', '#ffb74d', '#ce93d8', '#4db6ac']
 
   // At start: query SPARQL endpoint to get the shapes files infos (componentDidMount)
   React.useEffect(() => {
-    const endpointToQuery = Config.sparql_endpoint;
 
     // Check if PWA, and hide message if already installed
     // if (window.matchMedia('(display-mode: standalone)').matches) {  
@@ -184,65 +253,67 @@ export default function SemanticIndex() {
         })
       })
 
-    // Get all files
-    axios.get(endpointToQuery + `?query=` + encodeURIComponent(getFilesQuery))
-      .then(res => {
-        const sparqlResultArray = res.data.results.bindings;
-        let global_shapes_array: any = []
-        // Iterates over shapes files
-        sparqlResultArray.map((result: any): any =>  {
+    // Get all files but SPARQL queries
+    // getShapesFiles(queryGetAllButSparql)
+    // Get all SPARQL queries files
+    getShapesFiles(queryGetSparqlQueries, true)
+    // axios.get(endpointToQuery + `?query=` + encodeURIComponent(queryGetAllButSparql))
+    //   .then(res => {
+    //     const sparqlResultArray = res.data.results.bindings;
+    //     let global_shapes_array: any = []
+    //     // Iterates over shapes files
+    //     sparqlResultArray.map((result: any): any =>  {
 
-          // Get repo in array if exist
-          const repo_url = result.repository.value;
-          let repo_index = global_shapes_array.findIndex(((obj: any) => obj.url == repo_url));
-          if (repo_index == -1) {
-            // Add repository to global repos array if not present
-            let repo_description = ''
-            if (result.repo_description) repo_description = result.repo_description.value;
-            repo_index = global_shapes_array.push({
-              'url': repo_url,
-              'description': repo_description,
-              'files': [],
-              'search_description': ''
-            }) - 1
-          }
+    //       // Get repo in array if exist
+    //       const repo_url = result.repository.value;
+    //       let repo_index = global_shapes_array.findIndex(((obj: any) => obj.url == repo_url));
+    //       if (repo_index == -1) {
+    //         // Add repository to global repos array if not present
+    //         let repo_description = ''
+    //         if (result.repo_description) repo_description = result.repo_description.value;
+    //         repo_index = global_shapes_array.push({
+    //           'url': repo_url,
+    //           'description': repo_description,
+    //           'files': [],
+    //           'search_description': ''
+    //         }) - 1
+    //       }
 
-          // Create shape file entry
-          const file_url = result.shapeFileUri.value;
-          // Avoid duplicates
-          const found = global_shapes_array[repo_index]['files'].some(((obj: any) => obj.url === file_url));
-          if (!found) {
-            let file_obj: any = {
-              'url': file_url,
-              'type': result.shape_type.value,
-              'label': result.label.value,
-            }
-            let search_description = file_url + ' ' + result.label.value
-            if (result.shape_file_description) {
-              file_obj.description = result.shape_file_description.value;
-              search_description = search_description + ' ' + result.shape_file_description.value
-            }
-            if (result.sparqlEndpoint) {
-              file_obj.sparqlEndpoint = result.sparqlEndpoint.value;
-              search_description = search_description + ' ' + result.sparqlEndpoint.value
-            }
-            if (result.query) {
-              file_obj.query = result.query.value;
-              search_description = search_description + ' ' + result.query.value
-            }
+    //       // Create shape file entry
+    //       const file_url = result.shapeFileUri.value;
+    //       // Avoid duplicates
+    //       const found = global_shapes_array[repo_index]['files'].some(((obj: any) => obj.url === file_url));
+    //       if (!found) {
+    //         let file_obj: any = {
+    //           'url': file_url,
+    //           'type': result.shape_type.value,
+    //           'label': result.label.value,
+    //         }
+    //         let search_description = file_url + ' ' + result.label.value
+    //         if (result.shape_file_description) {
+    //           file_obj.description = result.shape_file_description.value;
+    //           search_description = search_description + ' ' + result.shape_file_description.value
+    //         }
+    //         if (result.sparqlEndpoint) {
+    //           file_obj.sparqlEndpoint = result.sparqlEndpoint.value;
+    //           search_description = search_description + ' ' + result.sparqlEndpoint.value
+    //         }
+    //         if (result.query) {
+    //           file_obj.query = result.query.value;
+    //           search_description = search_description + ' ' + result.query.value
+    //         }
 
-            // Add shapes file to repo entry
-            global_shapes_array[repo_index]['files'].push(file_obj)
-            global_shapes_array[repo_index]['search_description'] = global_shapes_array[repo_index]['search_description'] + search_description
-          }
-        })
-        // console.log(global_shapes_array)
-        updateState({global_shapes_array: global_shapes_array})
-
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    //         // Add shapes file to repo entry
+    //         global_shapes_array[repo_index]['files'].push(file_obj)
+    //         global_shapes_array[repo_index]['search_description'] = global_shapes_array[repo_index]['search_description'] + search_description
+    //       }
+    //     })
+    //     // console.log(global_shapes_array)
+    //     updateState({global_shapes_array: global_shapes_array})
+    //   })
+    //   .catch(error => {
+    //     console.log(error)
+    //   })
 
     // TODO: Get all shapes in files. Disabled, too big: 3m2. 
     // Considering doing a separated "deep search" for shapes parts
@@ -332,7 +403,8 @@ export default function SemanticIndex() {
       createSolidFile(webId);
     }
 
-  }, [webId])
+  // }, [webId])
+}, [])
   // This useless array needs to be added for React to understand he needs to use the state inside
 
   function createSolidFile(webId: string) {
@@ -344,14 +416,17 @@ export default function SemanticIndex() {
   }
 
   const searchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.preventDefault();
     updateState({ search: event.target.value, page: 1 })
   }
 
   const handleCheckboxes = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.preventDefault();
     updateState({type_checkboxes: {...state.type_checkboxes, [event.target.name]: event.target.checked} });
   }
 
   const handleExpandClick = (e: any) => {
+    e.preventDefault();
     updateState({expanded_files: {...state.expanded_files, [e.currentTarget.name]: !state.expanded_files[e.currentTarget.name]} });
   };
 
@@ -542,7 +617,7 @@ export default function SemanticIndex() {
       {Object.keys(state.global_shapes_array).length < 1 && (
         <div style={{textAlign: 'center', padding: theme.spacing(10, 10)}}>
           <Typography variant='body1' style={{marginBottom: theme.spacing(2)}}>
-            It usually takes between 10 and 30 seconds to retrieve resources
+            It usually takes about 10 seconds to retrieve the resources
           </Typography>
           <CircularProgress />
         </div>
@@ -722,8 +797,7 @@ export default function SemanticIndex() {
   )
 }
 
-// SPARQL select query to get all shapes files without the list of their shapes (much faster)
-const getFilesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+const queryGetAllButSparql = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX schema: <https://schema.org/>
@@ -736,14 +810,52 @@ SELECT DISTINCT * WHERE {
         rdfs:label ?label ;
         schema:codeRepository ?repository .
     FILTER(?shape_type != schema:SoftwareSourceCode)
+  	FILTER(?shape_type != sh:SPARQLFunction)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
-    OPTIONAL { 
-      ?shapeFileUri schema:query ?query .
-      FILTER (strlen(str(?query)) > 1)
-    }
-    OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
-    OPTIONAL { ?shapeFileUri rdfs:comment ?shape_file_description }
 }`
+
+const queryGetSparqlQueries = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shex: <http://www.w3.org/ns/shex#>
+PREFIX void: <http://rdfs.org/ns/void#>
+SELECT DISTINCT * WHERE { 
+  	?shapeFileUri a sh:SPARQLFunction ;
+        rdfs:label ?label ;
+        schema:codeRepository ?repository .
+    OPTIONAL { ?repository rdfs:comment ?repo_description }
+#    OPTIONAL { 
+#      ?shapeFileUri schema:query ?query .
+#      FILTER (strlen(str(?query)) > 1)
+#    }
+    OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
+}`
+
+
+
+// SPARQL select query to get all shapes files without the list of their shapes (faster, but still too slow)
+// const getFilesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+// PREFIX dc: <http://purl.org/dc/elements/1.1/>
+// PREFIX dcterms: <http://purl.org/dc/terms/>
+// PREFIX schema: <https://schema.org/>
+// PREFIX sh: <http://www.w3.org/ns/shacl#>
+// PREFIX shex: <http://www.w3.org/ns/shex#>
+// PREFIX void: <http://rdfs.org/ns/void#>
+// SELECT DISTINCT * WHERE { 
+//     ?shapeFileUri a schema:SoftwareSourceCode ;
+//         a ?shape_type ;
+//         rdfs:label ?label ;
+//         schema:codeRepository ?repository .
+//     FILTER(?shape_type != schema:SoftwareSourceCode)
+//     OPTIONAL { ?repository rdfs:comment ?repo_description }
+//     OPTIONAL { 
+//       ?shapeFileUri schema:query ?query .
+//       FILTER (strlen(str(?query)) > 1)
+//     }
+//     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
+// }`
 
 // SPARQL select query to get all shapes files and the list of their shapes
 const getShapesQuery = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

@@ -43,6 +43,10 @@ jobs:
         - git-service: github
           search-string: wikipathways
         - git-service: github
+          search-string: schema.org
+        - git-service: github
+          search-string: bioschemas
+        - git-service: github
           search-string: topic:shacl-shapes
         - git-service: github
           search-string: topic:shex
