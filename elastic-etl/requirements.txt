@@ -1,0 +1,4 @@
+pandas
+elasticsearch>=8.0.0
+rdflib
+requests

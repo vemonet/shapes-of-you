@@ -3,6 +3,7 @@ shapes-rdf.ttl
 REPORT.md
 *.jar
 .expo
+.next
 
 .venv
 

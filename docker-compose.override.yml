@@ -1,0 +1,64 @@
+version: "3"
+
+services:
+
+  # nginx-elastic-auth:
+  #   ports:
+  #     - 8080:8080
+
+
+  elasticsearch:
+    ports: 
+      - 9200:9200
+    environment:
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+    # volumes:
+    #   - /data/bio2kg/registry/elasticsearch:/usr/share/elasticsearch/data
+
+  website:
+    ports: 
+      - 3000:3000
+    user: root
+    volumes:
+      - ./elastic-website:/app
+      # - ./elastic-website/components:/app/components
+      # - ./elastic-website/hocs:/app/hocs
+      # - ./elastic-website/pages:/app/pages
+      # - ./elastic-website/package.json:/app/package.json
+      # - ./elastic-website/yarn.lock:/app/yarn.lock
+    environment:
+      - NODE_ENV=development
+      - ELASTIC_URL=http://elastic:password@elasticsearch:9200
+      - GRAPHQL_URL=http://localhost:3000/api/graphql
+    command: yarn dev
+
+
+  # express-server:
+  #   ports: 
+  #     - 4000:4000
+  #   volumes:
+  #     - ./server/server.ts:/app/server.ts
+  #   environment:
+  #     - NODE_ENV=development
+  #   command: yarn dev
+
+
+  # frontend-dev:
+  #   image: node:16
+  #   ports: 
+  #     - 3000:3000
+  #   volumes:
+  #     - ./server/searchkit-react:/app
+  #   environment:
+  #     - NODE_ENV=development
+  #     - CI=true
+  #     # For some reason react-scripts require to add CI=true to run it in docker... https://stackoverflow.com/questions/60790696/react-scripts-start-exiting-in-docker-foreground-cmd
+  #   command: /app/docker-entrypoint.sh
+  #   # stdin_open: true
+  #   # tty: true 
+
+
+  # update-pipeline:
+  #   entrypoint: "bash -c 'pip install -r /etl/requirements.txt && python3 /etl/lsr_csv_to_elastic.py'"
+  #   volumes:
+  #     - ./etl:/root

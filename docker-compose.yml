@@ -2,59 +2,39 @@ version: "3"
 
 services:
 
-  virtuoso:
-    container_name: shapes-of-you-virtuoso
-    image: openlink/virtuoso-opensource-7:latest
-    # image: markw/ldp_server:latest
-    # image: tenforce/virtuoso:latest
-    # https://hub.docker.com/r/markw/ldp_server
-
-    # https://community.openlinksw.com/t/permissions-on-ldp-containers-and-resources/290/14
-    # Download VAD packages: ODS Framework and Briefcase
-    # http://download3.openlinksw.com/index.html?prefix=uda/vad-vos-packages/7.2/
+  elasticsearch:
+    # image: elasticsearch:7.16.1
+    image: elasticsearch:8.0.0
     restart: unless-stopped
-    volumes:
-      - /data/shapes-of-you:/database
-      # - /data/shapes-of-you/virtuoso:/data
     environment:
-      # Deployed using https://github.com/nginx-proxy
-      - VIRTUAL_HOST=${VIRTUOSO_URL}
-      - LETSENCRYPT_HOST=${VIRTUOSO_URL}
-      - VIRTUAL_PORT=8890
-      # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFPerformanceTuning
-      # http://docs.openlinksw.com/virtuoso/rdfperfgeneral/
-      # https://github.com/tenforce/docker-virtuoso/blob/master/virtuoso.ini
-      - DBA_PASSWORD=${VIRTUOSO_PASSWORD}
-      - DAV_PASSWORD=${VIRTUOSO_PASSWORD}
-      - SPARQL_UPDATE=true
-      - DEFAULT_GRAPH=https://w3id.org/um/shapes-of-you
-      # - VIRT_URIQA_DynamicLocal=1
-      # - VIRT_URIQA_DefaultHost=localhost:8890
-      - VIRT_URIQA_DefaultHost=${VIRTUOSO_URL}
-      # - VIRT_Parameters_DirsAllowed=., /data, /usr/local/virtuoso-opensource/share/virtuoso/vad, /usr/local/virtuoso-opensource/var/lib/virtuoso/db
-      - VIRT_Database_ErrorLogLevel=2 # default: 7 is maximum logs
-      - VIRT_HTTPServer_HTTPThreadSize=280000
-      # Large dataset config
-      - VIRT_SPARQL_ResultSetMaxRows=1048576
-      - VIRT_SPARQL_MaxQueryCostEstimationTime=200000
-      - VIRT_SPARQL_MaxQueryExecutionTime=1000000
-      - VIRT_Database_MaxCheckpointRemap=125000
-      - VIRT_TempDatabase_MaxCheckpointRemap=125000
-      - VIRT_Parameters_TempDBSize=100000000
-      - VIRT_Parameters_NumberOfBuffers=5450000 # For 64G systems
-      - VIRT_Parameters_MaxDirtyBuffers=4000000
-      # - VIRT_Parameters_NumberOfBuffers=10880000 # For 128G systems
-      # - VIRT_Parameters_MaxDirtyBuffers=8000000
-      - VIRT_SPARQL_ShortenLongURIs=1
-      - VIRT_SPARQL_MaxCacheExpiration=1
-      - VIRT_SPARQL_ExternalQuerySource=1
-      - VIRT_SPARQL_ExternalXsltSource=1
-    # ports:
-    #   - 8890:8890
-    #   - 1111:1111
+      - discovery.type=single-node
+      - http.cors.enabled=true
+      - http.cors.allow-origin="*"
+      - xpack.security.enabled=true
+      - xpack.security.audit.enabled=true
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-password}
 
-  # webapp:
-  #   build: ./website
-  #   container_name: projects
-  #   ports:
-  #     - 5000:5000
+
+  website:
+    build: ./elastic-website
+    restart: unless-stopped
+
+
+  update-pipeline:
+    build: ./elastic-etl
+    # profiles: ["runner"]
+    depends_on: 
+      - elasticsearch
+    environment: 
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-password}
+    # entrypoint: "bash -c 'pip install -r /etl/requirements.txt && python3 /etl/lsr_csv_to_elastic.py'"
+    volumes:
+      - ./elastic-etl:/root
+
+
+
+  # express-server:
+  #   build: ./server
+  #   restart: unless-stopped
+  #   environment:
+  #     - ELASTIC_URL=http://elasticsearch:9200

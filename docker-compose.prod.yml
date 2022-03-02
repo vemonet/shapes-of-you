@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+
+  # nginx-elastic-auth:
+  #   environment:   
+  #     - VIRTUAL_HOST=elastic.registry.bio2kg.org
+  #     - LETSENCRYPT_HOST=elastic.registry.bio2kg.org
+  #     - VIRTUAL_PORT=8080
+
+  elasticsearch:
+    volumes:
+      - /data/shapes-of-you/elasticsearch:/usr/share/elasticsearch/data
+    environment:
+      - "ES_JAVA_OPTS=-Xms16g -Xmx16g"
+
+  website:
+    build:
+      context: ./elastic-website
+      dockerfile: Dockerfile
+      args:
+        - GRAPHQL_URL=https://registry.bio2kg.org/api/graphql
+        - ELASTIC_URL=https://elastic.registry.bio2kg.org
+    environment:
+      - VIRTUAL_HOST=registry.bio2kg.org
+      - LETSENCRYPT_HOST=registry.bio2kg.org
+      - VIRTUAL_PORT=3000
+      - GRAPHQL_URL=https://registry.bio2kg.org/api/graphql
+      - ELASTIC_URL=https://elastic.registry.bio2kg.org
+
+
+  # express-server:
+  #   environment:
+  #     - VIRTUAL_HOST=registry.bio2kg.org
+  #     - LETSENCRYPT_HOST=registry.bio2kg.org
+  #     - VIRTUAL_PORT=4000
+

@@ -1,0 +1,48 @@
+$color-link: #006bb4;
+$color-link-hover: #64b5f6;
+// $color-navbar: #006bb4;
+// $color-footer: #006bb4;
+
+.code {
+  font-family: monospace;
+  padding: 4px;
+  border-radius: 10px;
+  color: #adbac7;
+  background: #22272e;
+}
+
+a {
+  color: $color-link;
+  text-decoration: 'none';
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: 'none';
+  }
+}
+
+.text {
+  margin-bottom: 6px;
+}
+
+.paper {
+  padding: 16px;
+  margin: 16px 0px;
+}
+
+.mainContainer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.navButton {
+  color: #343741 !important;
+  font-size: 1rem !important;
+  // text-transform: 'none' !important;
+}
+
+
+// * {
+//   font-family: 'Liberation Sans', -apple-system, sans-serif;
+// }
+// Import fonts (e.g. Open Sans):
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');

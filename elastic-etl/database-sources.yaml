@@ -1,0 +1,7 @@
+databases:
+  - name: NAR Database
+    url: https://www.oxfordjournals.org/nar/database/c/
+  - name: identifiers.org
+    url: https://identifiers.org
+  - name: Database commons
+    url: https://ngdc.cncb.ac.cn/databasecommons/
