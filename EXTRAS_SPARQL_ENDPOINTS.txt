@@ -49,3 +49,4 @@ https://chemblmirror.rdf.bigcat-bioinformatics.org/sparql
 https://api.druid.datalegend.net/datasets/ATM-DEMO/ATM-CLARIAH-DEMO/services/ATM-CLARIAH-DEMO/sparql
 https://mgds.oeg.fi.upm.es/sparql/endpoint/
 http://twoc.fair-dtls.surf-hosted.nl:7200/repositories/kb
+https://labs.tib.eu/sdm/covid19-kg-hackathon/sparql
