@@ -54,13 +54,13 @@ services:
     image: nginx:1.21.4
     restart: unless-stopped
     environment:
-      - AUTH_USER=${OXIGRAPH_USER:-oxigraph}
-      - AUTH_PASSWORD=${OXIGRAPH_PASSWORD:-oxigraphy}
+      - AUTH_USER=${AUTH_USER:-oxigraph}
+      - AUTH_PASSWORD=${AUTH_PASSWORD:-oxigraphy}
       - VIRTUAL_HOST=${VIRTUOSO_URL:-data.index.semanticscience.org}
       - LETSENCRYPT_HOST=${VIRTUOSO_URL:-data.index.semanticscience.org}
       - VIRTUAL_PORT=7878
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx-oxigraph.conf:/etc/nginx/nginx.conf
     # ports:
     #   - "7878:7878"
     entrypoint: "bash -c 'echo -n $AUTH_USER: >> /etc/nginx/.htpasswd && echo $AUTH_PASSWORD | openssl passwd -stdin -apr1 >> /etc/nginx/.htpasswd && /docker-entrypoint.sh nginx'"
