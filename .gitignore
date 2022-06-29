@@ -8,6 +8,7 @@ REPORT.md
 .venv
 
 .env
+.htpasswd
 
 
 # Xcode
