@@ -154,10 +154,21 @@ yarn build
 yarn serve
 ```
 
-Or run directly using [Docker :whale:](https://docs.docker.com/get-docker/) (requires [docker installed](https://docs.docker.com/get-docker/))
+## Deploy the backend
+
+Deploy the Oxigraph triplestore and ElasticSearch index using [Docker :whale:](https://docs.docker.com/get-docker/) (requires [docker installed](https://docs.docker.com/get-docker/))
+
+1. Make sure the folder for ElasticSearch has the right permissions
 
 ```bash
-docker-compose up
+mkdir -p /data/shapes-of-you/elasticsearch
+sudo chown -R 1000:0 /data/shapes-of-you/elasticsearch
+```
+
+2. Deploy the stack
+
+```bash
+docker-compose up -d
 ```
 
 > Checkout the [docker-compose.yml](/docker-compose.yml) file to see how we run the Docker image.

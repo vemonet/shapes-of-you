@@ -12,8 +12,8 @@ services:
       # - ./.htpasswd:/etc/nginx/.htpasswd
       # Generate it with: htpasswd -Bbn elastic yourpassword > elasticsearch/.htpasswd
     environment:
-      - AUTH_USER=${OXIGRAPH_USER-oxigraph}
-      - AUTH_PASSWORD=${OXIGRAPH_PASSWORD-oxigraphy}
+      - AUTH_USER=${OXIGRAPH_USER:-oxigraph}
+      - AUTH_PASSWORD=${OXIGRAPH_PASSWORD:-oxigraphy}
       - VIRTUAL_HOST=elastic.index.semanticscience.137.120.31.148.nip.io
       - LETSENCRYPT_HOST=elastic.index.semanticscience.137.120.31.148.nip.io
       # - VIRTUAL_HOST=elastic.index.semanticscience.org
@@ -35,11 +35,13 @@ services:
       # - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
     volumes:
       - /data/shapes-of-you/elasticsearch:/usr/share/elasticsearch/data
+      # Fix permissions in host: sudo chown -R 1000:0 /data/shapes-of-you/elasticsearch
 
 
 
   oxigraph:
     image: ghcr.io/oxigraph/oxigraph:latest
+    restart: unless-stopped
     ## To build from local source code:
     # build:
     #   context: .
@@ -49,6 +51,7 @@ services:
 
   oxigraph-auth:
     image: nginx:1.21.4
+    restart: unless-stopped
     environment:
       - AUTH_USER=${OXIGRAPH_USER:-oxigraph}
       - AUTH_PASSWORD=${OXIGRAPH_PASSWORD:-oxigraphy}
@@ -57,11 +60,13 @@ services:
       - VIRTUAL_PORT=7878
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-    ports:
-      - "7878:7878"
+    # ports:
+    #   - "7878:7878"
     entrypoint: "bash -c 'echo -n $AUTH_USER: >> /etc/nginx/.htpasswd && echo $AUTH_PASSWORD | openssl passwd -stdin -apr1 >> /etc/nginx/.htpasswd && /docker-entrypoint.sh nginx'"
 
 
+
+  # NOT USED anymore
   virtuoso:
     container_name: shapes-of-you-virtuoso
     image: openlink/virtuoso-opensource-7:latest
@@ -86,8 +91,8 @@ services:
       # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFPerformanceTuning
       # http://docs.openlinksw.com/virtuoso/rdfperfgeneral/
       # https://github.com/tenforce/docker-virtuoso/blob/master/virtuoso.ini
-      - DBA_PASSWORD=${VIRTUOSO_PASSWORD}
-      - DAV_PASSWORD=${VIRTUOSO_PASSWORD}
+      - DBA_PASSWORD=${VIRTUOSO_PASSWORD:-dba}
+      - DAV_PASSWORD=${VIRTUOSO_PASSWORD:-dba}
       - SPARQL_UPDATE=true
       - DEFAULT_GRAPH=https://w3id.org/um/shapes-of-you
       # - VIRT_URIQA_DynamicLocal=1
