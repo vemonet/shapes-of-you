@@ -1,33 +1,31 @@
-import os
-import sys
-import shutil
-import pathlib
 import logging
-from datetime import datetime, timedelta
+import os
+import pathlib
 import re
+import shutil
+import sys
 import urllib
-import requests
+from datetime import datetime, timedelta
 
+import gitlab
+import obonet
+import requests
 import yaml
+from d2s.sparql_operations import insert_graph_in_sparql_endpoint
 from prance import ResolvingParser
-from rdflib import Graph, ConjunctiveGraph, Literal, RDF, URIRef, Namespace
+from pyshexc.parser_impl import generate_shexj
+from python_graphql_client import GraphqlClient
+from rdflib import RDF, ConjunctiveGraph, Graph, Literal, Namespace, URIRef
+
 # from rdflib import plugin
 # from rdflib.serializer import Serializer
-from rdflib.namespace import RDFS, XSD, DC, DCTERMS, VOID, OWL, SKOS
-
-from rdflib.plugins.sparql.sparql import Query
+from rdflib.namespace import DC, DCTERMS, OWL, RDFS, SKOS, VOID, XSD
 from rdflib.plugins.sparql.algebra import translateQuery
+from rdflib.plugins.sparql.sparql import Query
 
 # from rdflib.plugins.sparql.parser import Query
 # from rdflib.plugins.sparql.processor import translateQuery
-from SPARQLWrapper import SPARQLWrapper, POST, JSON
-import obonet
-from pyshexc.parser_impl import generate_shexj
-
-from python_graphql_client import GraphqlClient
-import gitlab
-
-from d2s.sparql_operations import insert_graph_in_sparql_endpoint
+from SPARQLWrapper import JSON, POST, SPARQLWrapper
 
 global VALID_ENDPOINTS
 VALID_ENDPOINTS = {}
@@ -44,6 +42,9 @@ GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 ENDPOINT_URL = os.environ.get("ENDPOINT_URL", "https://data.index.semanticscience.org/sparql")
 ENDPOINT_USER = os.environ.get("ENDPOINT_USER", "dav")
 ENDPOINT_PASSWORD = os.environ.get("ENDPOINT_PASSWORD", "dba")
+
+BASE_URI="https://w3id.org/shapes-of-you"
+# BASE_URI="https://w3id.org/um/ids/shapes"
 
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -148,11 +149,23 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
 
     insert_graph_in_sparql_endpoint(
       shapes_graph,
-      sparql_endpoint=f"https://graphdb.dumontierlab.com/repositories/shapes-registry/rdf-graphs/shapes:{os.getenv('GIT_SERVICE')}",
+      ## Loading in Ontotext GraphDB:
+      # sparql_endpoint=f"https://graphdb.dumontierlab.com/repositories/shapes-registry/rdf-graphs/shapes:{os.getenv('GIT_SERVICE')}",
+      # ?graph={BASE_URI}/{os.getenv('GIT_SERVICE')}
+      # TODO: with Oxigraph
+      sparql_endpoint=f"https://data.index.semanticscience.org/store?graph={BASE_URI}/{os.getenv('GIT_SERVICE')}",
       username=os.getenv('ENDPOINT_USER'), password=os.getenv('ENDPOINT_PASSWORD'), 
       # graph_uri=f"shapes:{os.getenv('GIT_SERVICE')}",
       # chunks_size=1000, operation='INSERT'
     )
+
+    # sparql_endpoint=f"https://data.index.semanticscience.org/store"
+    # resp = requests.post(f"{sparql_endpoint}", 
+    #   headers={ 'Content-Type': 'text/turtle' },
+    #   data=str(shapes_graph.serialize(format='turtle')).encode('utf-8'),
+    #   auth=(os.getenv('ENDPOINT_USER'), os.getenv('ENDPOINT_PASSWORD')),
+    # )
+    # print(resp)
 
     ## For Virtuoso LDP:
     # os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
@@ -170,6 +183,7 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     #   os.remove('shapes-rdf.ttl')
     # except:
     #   pass
+
 
 def fetch_from_lod(shapes_graph):
   """Fetch and test SPARQL endpoints from LOD dataset (JSON file)"""
@@ -190,6 +204,7 @@ def fetch_from_lod(shapes_graph):
     '\nSPARQL endpoints in LOD: ' + str(lod_endpoints_count))
     # '\nActive SPARQL endpoints: ' + str(added_endpoints_count))
   return shapes_graph
+
 
 def fetch_from_yummydata(shapes_graph):
   """Fetch and test SPARQL endpoints from http://yummydata.org/api"""
@@ -248,6 +263,7 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
     
     return shapes_graph
 
+
 # Get all shapes for all repos with shacl-shapes tag
 def github_graphql_get_shapes(github_topic, after_cursor=None):
     return """
@@ -277,6 +293,7 @@ query {
 ).replace(
     "GITHUB_TOPIC", github_topic
 )
+
 
 def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
   """Fetch additional Shapes files from a list of GitHub repos

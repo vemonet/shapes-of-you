@@ -2,6 +2,32 @@ version: "3"
 
 services:
 
+  oxigraph:
+    image: ghcr.io/oxigraph/oxigraph:latest
+    ## To build from local source code:
+    # build:
+    #   context: .
+    #   dockerfile: server/Dockerfile
+    volumes:
+      - /data/shapes-of-you/oxigraph:/data
+
+  nginx-auth:
+    image: nginx:1.21.4
+    environment:
+      - OXIGRAPH_USER=${OXIGRAPH_USER-oxigraph}
+      - OXIGRAPH_PASSWORD=${OXIGRAPH_PASSWORD-oxigraphy}
+      - VIRTUAL_HOST=${VIRTUOSO_URL-data.index.semanticscience.org}
+      - LETSENCRYPT_HOST=${VIRTUOSO_URL-data.index.semanticscience.org}
+      - VIRTUAL_PORT=7878
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      ## For multiple users: uncomment this line to mount a pre-generated .htpasswd 
+      # - ./.htpasswd:/etc/nginx/.htpasswd
+    ports:
+      - "7878:7878"
+    entrypoint: "bash -c 'echo -n $OXIGRAPH_USER: >> /etc/nginx/.htpasswd && echo $OXIGRAPH_PASSWORD | openssl passwd -stdin -apr1 >> /etc/nginx/.htpasswd && /docker-entrypoint.sh nginx'"
+
+
   virtuoso:
     container_name: shapes-of-you-virtuoso
     image: openlink/virtuoso-opensource-7:latest
@@ -14,12 +40,14 @@ services:
     # http://download3.openlinksw.com/index.html?prefix=uda/vad-vos-packages/7.2/
     restart: unless-stopped
     volumes:
-      - /data/shapes-of-you:/database
+      - /data/shapes-of-you/virtuoso:/database
       # - /data/shapes-of-you/virtuoso:/data
     environment:
       # Deployed using https://github.com/nginx-proxy
-      - VIRTUAL_HOST=${VIRTUOSO_URL}
-      - LETSENCRYPT_HOST=${VIRTUOSO_URL}
+      # - VIRTUAL_HOST=${VIRTUOSO_URL}
+      # - LETSENCRYPT_HOST=${VIRTUOSO_URL}
+      - VIRTUAL_HOST=shapes-of-you-virtuoso.137.120.31.148.nip.io
+      - LETSENCRYPT_HOST=shapes-of-you-virtuoso.137.120.31.148.nip.io
       - VIRTUAL_PORT=8890
       # http://vos.openlinksw.com/owiki/wiki/VOS/VirtRDFPerformanceTuning
       # http://docs.openlinksw.com/virtuoso/rdfperfgeneral/
