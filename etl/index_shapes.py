@@ -149,25 +149,31 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     # shapes_graph.serialize('shapes-rdf.nt', format='nt')
     # os.system(f'java -jar sparql-operations.jar -o upload -i shapes-rdf.ttl -e "https://graphdb.dumontierlab.com/repositories/shapes-registry/statements" -u $ENDPOINT_USER -p $ENDPOINT_PASSWORD -g https://w3id.org/um/ids/shapes/$GIT_SERVICE')
 
-    insert_graph_in_sparql_endpoint(
-      shapes_graph,
-      ## Loading in Ontotext GraphDB:
-      # sparql_endpoint=f"https://graphdb.dumontierlab.com/repositories/shapes-registry/rdf-graphs/shapes:{os.getenv('GIT_SERVICE')}",
-      # ?graph={BASE_URI}/{os.getenv('GIT_SERVICE')}
-      # TODO: with Oxigraph
-      sparql_endpoint=f"https://data.index.semanticscience.org/store?graph={BASE_URI}/{os.getenv('GIT_SERVICE')}",
-      username=os.getenv('ENDPOINT_USER'), password=os.getenv('ENDPOINT_PASSWORD'), 
-      # graph_uri=f"shapes:{os.getenv('GIT_SERVICE')}",
-      # chunks_size=1000, operation='INSERT'
-    )
+    graph_uri = f"{BASE_URI}/{os.getenv('GIT_SERVICE')}"
+    endpoint = f"https://data.index.semanticscience.org/store?graph={graph_uri}"
+    
+    try:
+      resp = requests.post(endpoint, 
+        headers={ 'Content-Type': 'text/turtle' },
+        data=str(shapes_graph.serialize(format='turtle')).encode('utf-8'),
+        auth=(ENDPOINT_USER, ENDPOINT_PASSWORD),
+      )
+      resp.raise_for_status
+    except Exception as e:
+      print('Error uploading RDF to the triplestore')
+      print(resp, e)
 
-    # sparql_endpoint=f"https://data.index.semanticscience.org/store"
-    # resp = requests.post(f"{sparql_endpoint}", 
-    #   headers={ 'Content-Type': 'text/turtle' },
-    #   data=str(shapes_graph.serialize(format='turtle')).encode('utf-8'),
-    #   auth=(os.getenv('ENDPOINT_USER'), os.getenv('ENDPOINT_PASSWORD')),
+    # insert_graph_in_sparql_endpoint(
+    #   shapes_graph,
+    #   ## Loading in Ontotext GraphDB:
+    #   # sparql_endpoint=f"https://graphdb.dumontierlab.com/repositories/shapes-registry/rdf-graphs/shapes:{os.getenv('GIT_SERVICE')}",
+    #   # ?graph={BASE_URI}/{os.getenv('GIT_SERVICE')}
+    #   # TODO: with Oxigraph
+    #   sparql_endpoint=endpoint,
+    #   username=os.getenv('ENDPOINT_USER'), password=os.getenv('ENDPOINT_PASSWORD'), 
+    #   # graph_uri=f"shapes:{os.getenv('GIT_SERVICE')}",
+    #   # chunks_size=1000, operation='INSERT'
     # )
-    # print(resp)
 
     ## For Virtuoso LDP:
     # os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
@@ -364,7 +370,7 @@ def fetch_from_gitlab(shapes_graph, gl, search_topic):
         repo_description = ' - '.join(repo_descriptions)
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'gitlab')
       except Exception as e:
-        add_to_report('GitLab issue processing: ' + str(repo_json) + '\n\n' + str(e))
+        add_to_report(f'Issue processing GitLab: {str(repo_json)}\n\n{str(e)}')
     
     return shapes_graph
 

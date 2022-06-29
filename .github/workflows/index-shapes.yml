@@ -163,8 +163,10 @@ jobs:
         API_GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
         GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
-        ENDPOINT_USER: ${{ secrets.GRAPHDB_USER }}
-        ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
+        ENDPOINT_USER: ${{ secrets.OXIGRAPH_USER }}
+        ENDPOINT_PASSWORD: ${{ secrets.OXIGRAPH_PASSWORD }}
+        # ENDPOINT_USER: ${{ secrets.GRAPHDB_USER }}
+        # ENDPOINT_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
       run: |
         python etl/index_shapes.py $GIT_SERVICE $SEARCH_TOPICS
 
