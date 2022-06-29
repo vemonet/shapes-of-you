@@ -1,3 +1,4 @@
+import json
 
 import requests
 from src.config import BASE_URI, ELASTIC_URL, ENDPOINT_PASSWORD, ENDPOINT_USER
@@ -8,6 +9,25 @@ from src.config import BASE_URI, ELASTIC_URL, ENDPOINT_PASSWORD, ENDPOINT_USER
 # { "field1" : "value1" }
 
 # Or 1 by 1: https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html
+
+def load_file_to_elastic(file_metadata):
+
+  payload =''
+
+  insert = { "index" : { "_index" : "files", "_id" : "1" } }
+  payload = payload + '\n' + json.dumps(insert) + '\n' + json.dumps(file_metadata)
+
+  try:
+    resp = requests.post(f"{ELASTIC_URL}/_bulk", 
+      data=payload.encode('utf-8'),
+      # headers={ 'Content-Type': 'text/turtle' },
+      # data=str(shapes_graph.serialize(format='turtle')).encode('utf-8'),
+      auth=(ENDPOINT_USER, ENDPOINT_PASSWORD),
+    )
+    resp.raise_for_status
+  except Exception as e:
+    print('Error uploading RDF to the triplestore')
+    print(resp, e)
 
 
 def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
