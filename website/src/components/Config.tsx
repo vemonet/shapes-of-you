@@ -1,8 +1,8 @@
 
 export default {
-    sparql_endpoint: 'https://graphdb.dumontierlab.com/repositories/shapes-registry',
-    // GraphDB: 62392 files in 1222 repositories and 177 SPARQL endpoints
-    // sparql_endpoint: 'https://data.index.semanticscience.org/sparql',
+    // sparql_endpoint: 'https://graphdb.dumontierlab.com/repositories/shapes-registry',
+    // GraphDB: 164802 files in 1963 repositories
+    sparql_endpoint: 'https://data.index.semanticscience.org/query',
     // Virtuoso: 67884 files in 1181 repositories and 29 SPARQL endpoints
     prefix_registry: {
         "rdf":         "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

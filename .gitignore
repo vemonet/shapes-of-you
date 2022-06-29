@@ -3,10 +3,12 @@ shapes-rdf.ttl
 REPORT.md
 *.jar
 .expo
+*.egg-info
 
 .venv
 
 .env
+
 
 # Xcode
 build/

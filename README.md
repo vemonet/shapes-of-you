@@ -164,11 +164,11 @@ docker-compose up
 
 ---
 
-## Index all the knowledge ⛏️
+## ⛏️ Index structured and semantic files
 
 Requirements: Python 3.6+, git
 
-### Index files from code repositories 🗃️
+### 🗃️ Index files from code repositories
 
 This script is run every day by the mighty [`.github/workflows/index-shapes.yml`](https://github.com/vemonet/shapes-of-you/blob/main/.github/workflows/index-shapes.yml) workflow 
 
@@ -188,37 +188,44 @@ export GITEE_TOKEN=MYGITEETOKEN000
 
 For GitHub you can create a new GitHub API key (aka. personal access token) at https://github.com/settings/tokens
 
-Then install requirements:
+Go to the `etl` folder:
 
 ```bash
-pip install -r etl/requirements.txt
+cd etl
+```
+
+Install the requirements:
+
+```bash
+pip install -e .
 ```
 
 Retrieve shapes files from search the [GitHub GraphQL API](https://developer.github.com/v4/explorer) (you can also use a topic to search, e.g. `topic:sparql`):
 
 ```bash
-python3 etl/index_shapes.py github vemonet/shapes-of-you
+python3 main.py github vemonet/shapes-of-you
 ```
 
 Retrieve shapes files from [GitLab API](https://docs.gitlab.com/ee/api/) using the [`python-gitlab` package](https://pypi.org/project/python-gitlab/):
 
 ```bash
-python3 etl/index_shapes.py gitlab sparql
+python3 main.py gitlab sparql
 ```
 
 Retrieve shapes files from [Gitee API](https://gitee.com/api/v5/swagger#/getV5SearchRepositories):
 
 ```bash
-python3 etl/index_shapes.py gitee ontology
+python3 main.py gitee ontology
 ```
 
-### Generate SPARQL endpoints metadata ✨
+### ✨ Generate SPARQL endpoints metadata
 
 This task is performed every day by the swifty [`.github/workflows/analyze-endpoints.yml`](https://github.com/vemonet/shapes-of-you/blob/main/.github/workflows/analyze-endpoints.yml) workflow 
 
 We use the [`d2s`](https://github.com/MaastrichtU-IDS/d2s-cli) tool (aka. data2services) to generate [HCLS metadata](https://www.w3.org/TR/hcls-dataset/) for a SPARQL endpoint:
 
 ```bash
+pip install d2s
 d2s metadata analyze https://graphdb.dumontierlab.com/repositories/shapes-registry -o metadata.ttl
 ```
 
@@ -255,13 +262,13 @@ curl -u ldp:$ENDPOINT_PASSWORD --data-binary @shapes-rdf.ttl -H "Accept: text/tu
 * Locate the `/sparql` Logical Path > click **Edit**
 * Enter **`\*`** in the **Cross-Origin Resource Sharing** input field.
 
-## Contribute 👩‍💻
+## 👩‍💻 Contribute
 
 Contributions are welcome! See the [guidelines to contribute](/CONTRIBUTING.md).
 
-## Acknowledgements 🤝
+## 🤝 Acknowledgements
 
-RDF data hosted in a [Ontotext GraphDB triplestore](https://graphdb.ontotext.com/) and a [OpenLink Virtuoso](https://virtuoso.openlinksw.com/) Linked Data Platform (open source)
+RDF data hosted in a [Oxigraph](https://github.com/oxigraph/oxigraph) triplestore (open source)
 
 OpenAPI powered by [grlc.io](http://grlc.io)
 

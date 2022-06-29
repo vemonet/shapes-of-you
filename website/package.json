@@ -1,4 +1,17 @@
 {
+  "scripts": {
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "dev": "expo web",
+    "eject": "expo eject",
+    "build": "expo build:web",
+    "serve": "serve -s web-build",
+    "start": "npm run build && npm run serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d web-build"
+  },
+  "homepage": "https://index.semanticscience.org",
+  "private": true,
   "dependencies": {
     "@comunica/actor-init-sparql": "^1.17.0",
     "@material-ui/core": "^4.11.0",
@@ -36,18 +49,5 @@
     "gh-pages": "^3.1.0",
     "serve": "^11.3.2",
     "typescript": "^4.0.3"
-  },
-  "scripts": {
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "dev": "expo web",
-    "eject": "expo eject",
-    "build": "expo build:web",
-    "serve": "serve -s web-build",
-    "start": "npm run build && npm run serve",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d web-build"
-  },
-  "homepage": "https://index.semanticscience.org",
-  "private": true
+  }
 }

@@ -816,6 +816,7 @@ PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
 SELECT DISTINCT * WHERE { 
+  GRAPH ?g {
     ?shapeFileUri a schema:SoftwareSourceCode ;
         a ?shape_type ;
         rdfs:label ?label ;
@@ -823,6 +824,7 @@ SELECT DISTINCT * WHERE {
     FILTER(?shape_type != schema:SoftwareSourceCode)
   	FILTER(?shape_type != sh:SPARQLFunction)
     OPTIONAL { ?repository rdfs:comment ?repo_description }
+  }
 }`
 
 const queryGetSparqlQueries = `PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -833,6 +835,7 @@ PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
 SELECT DISTINCT * WHERE { 
+  GRAPH ?g {
   	?shapeFileUri a sh:SPARQLFunction ;
         rdfs:label ?label ;
         schema:codeRepository ?repository .
@@ -842,6 +845,7 @@ SELECT DISTINCT * WHERE {
 #      FILTER (strlen(str(?query)) > 1)
 #    }
     OPTIONAL { ?shapeFileUri void:sparqlEndpoint ?sparqlEndpoint }
+  }
 }`
 
 
@@ -898,10 +902,12 @@ PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
 SELECT ?repository (count(?shapeFileUri) AS ?shapeFileCount) ?repo_description WHERE { 
-  ?shapeFileUri a <https://schema.org/SoftwareSourceCode> ;
-    rdfs:label ?label ;
-    schema:codeRepository ?repository .
-  OPTIONAL { ?repository rdfs:comment ?repo_description }
+  GRAPH ?g {
+    ?shapeFileUri a <https://schema.org/SoftwareSourceCode> ;
+      rdfs:label ?label ;
+      schema:codeRepository ?repository .
+    OPTIONAL { ?repository rdfs:comment ?repo_description }
+  }
 } GROUP BY ?repository ?repo_description
 `
 
@@ -915,10 +921,12 @@ PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
 SELECT DISTINCT ?shape_type (count(distinct ?repository) AS ?repos_count) (count(distinct ?shape_file) AS ?files_count)
 WHERE { 
+  GRAPH ?g {
     ?shape_file a schema:SoftwareSourceCode ;
         a ?shape_type ;
         schema:codeRepository ?repository .
     FILTER(?shape_type != schema:SoftwareSourceCode)
+  }
 } GROUP BY ?shape_type
 `
 

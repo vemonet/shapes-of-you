@@ -2,6 +2,41 @@ version: "3"
 
 services:
 
+  elastic-auth:
+    image: nginx:1.21.1
+    restart: unless-stopped
+    volumes:
+      - ./nginx-elastic.conf:/etc/nginx/nginx.conf
+      # - ./elasticsearch/.htpasswd:/etc/nginx/.htpasswd
+    environment:
+      - AUTH_USER=${OXIGRAPH_USER-oxigraph}
+      - AUTH_PASSWORD=${OXIGRAPH_PASSWORD-oxigraphy}
+      - VIRTUAL_HOST=elastic.index.semanticscience.137.120.31.148.nip.io
+      - LETSENCRYPT_HOST=elastic.index.semanticscience.137.120.31.148.nip.io
+      # - VIRTUAL_HOST=elastic.index.semanticscience.org
+      # - LETSENCRYPT_HOST=elastic.index.semanticscience.org}
+      - VIRTUAL_PORT=7878
+    ## To automatically generate the user and password in .htpasswd:
+    #   - AUTH_USER=${AUTH_USER:-elastic}
+    #   - AUTH_PASSWORD=${AUTH_PASSWORD:-elastic}
+    # entrypoint: "bash -c 'echo -n $AUTH_USER: >> /etc/nginx/.htpasswd && echo $AUTH_PASSWORD | openssl passwd -stdin -apr1 >> /etc/nginx/.htpasswd && /docker-entrypoint.sh nginx'"
+    # Or do it before: htpasswd -Bbn elastic yourpassword > elasticsearch/.htpasswd
+    entrypoint: "bash -c 'echo -n $AUTH_USER: >> /etc/nginx/.htpasswd && echo $AUTH_PASSWORD | openssl passwd -stdin -apr1 >> /etc/nginx/.htpasswd && /docker-entrypoint.sh nginx'"
+  
+
+  elasticsearch:
+    # image: elasticsearch:7.16.1
+    image: elasticsearch:8.3.0
+    restart: unless-stopped
+    environment:
+      - discovery.type=single-node
+      - http.cors.enabled=true
+      - http.cors.allow-origin="*"
+      # - xpack.security.enabled=true
+      # - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+
+
+
   oxigraph:
     image: ghcr.io/oxigraph/oxigraph:latest
     ## To build from local source code:
@@ -11,13 +46,13 @@ services:
     volumes:
       - /data/shapes-of-you/oxigraph:/data
 
-  nginx-auth:
+  oxigraph-auth:
     image: nginx:1.21.4
     environment:
-      - OXIGRAPH_USER=${OXIGRAPH_USER-oxigraph}
-      - OXIGRAPH_PASSWORD=${OXIGRAPH_PASSWORD-oxigraphy}
-      - VIRTUAL_HOST=${VIRTUOSO_URL-data.index.semanticscience.org}
-      - LETSENCRYPT_HOST=${VIRTUOSO_URL-data.index.semanticscience.org}
+      - AUTH_USER=${OXIGRAPH_USER:-oxigraph}
+      - AUTH_PASSWORD=${OXIGRAPH_PASSWORD:-oxigraphy}
+      - VIRTUAL_HOST=${VIRTUOSO_URL:-data.index.semanticscience.org}
+      - LETSENCRYPT_HOST=${VIRTUOSO_URL:-data.index.semanticscience.org}
       - VIRTUAL_PORT=7878
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
@@ -25,7 +60,7 @@ services:
       # - ./.htpasswd:/etc/nginx/.htpasswd
     ports:
       - "7878:7878"
-    entrypoint: "bash -c 'echo -n $OXIGRAPH_USER: >> /etc/nginx/.htpasswd && echo $OXIGRAPH_PASSWORD | openssl passwd -stdin -apr1 >> /etc/nginx/.htpasswd && /docker-entrypoint.sh nginx'"
+    entrypoint: "bash -c 'echo -n $AUTH_USER: >> /etc/nginx/.htpasswd && echo $AUTH_PASSWORD | openssl passwd -stdin -apr1 >> /etc/nginx/.htpasswd && /docker-entrypoint.sh nginx'"
 
 
   virtuoso:
