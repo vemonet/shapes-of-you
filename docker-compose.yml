@@ -12,8 +12,8 @@ services:
       # - ./.htpasswd:/etc/nginx/.htpasswd
       # Generate it with: htpasswd -Bbn elastic yourpassword > elasticsearch/.htpasswd
     environment:
-      - AUTH_USER=${OXIGRAPH_USER:-oxigraph}
-      - AUTH_PASSWORD=${OXIGRAPH_PASSWORD:-oxigraphy}
+      - AUTH_USER=${AUTH_USER:-oxigraph}
+      - AUTH_PASSWORD=${AUTH_PASSWORD:-oxigraphy}
       - VIRTUAL_HOST=elastic.index.semanticscience.137.120.31.148.nip.io
       - LETSENCRYPT_HOST=elastic.index.semanticscience.137.120.31.148.nip.io
       # - VIRTUAL_HOST=elastic.index.semanticscience.org
@@ -48,6 +48,7 @@ services:
     #   dockerfile: server/Dockerfile
     volumes:
       - /data/shapes-of-you/oxigraph:/data
+
 
   oxigraph-auth:
     image: nginx:1.21.4
