@@ -191,7 +191,7 @@ For GitHub you can create a new GitHub API key (aka. personal access token) at h
 Then install requirements:
 
 ```bash
-pip3 install -r etl/requirements.txt
+pip install -r etl/requirements.txt
 ```
 
 Retrieve shapes files from search the [GitHub GraphQL API](https://developer.github.com/v4/explorer) (you can also use a topic to search, e.g. `topic:sparql`):

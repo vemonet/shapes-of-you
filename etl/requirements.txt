@@ -4,7 +4,8 @@ python-gitlab
 rdflib>=6.1.1
 SPARQLWrapper>=1.8.5
 PyYAML
-prance[osv,icu,cli]
+# prance[osv,icu,cli]
+prance
 obonet
 PyShExC
 git+https://github.com/MaastrichtU-IDS/d2s-cli.git@master
