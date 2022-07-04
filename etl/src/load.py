@@ -10,12 +10,10 @@ from src.config import BASE_URI, ELASTIC_URL, ENDPOINT_PASSWORD, ENDPOINT_USER
 
 # Or 1 by 1: https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html
 
-def load_file_to_elastic(file_metadata):
-
-  payload =''
-
-  insert = { "index" : { "_index" : "files", "_id" : "1" } }
-  payload = payload + '\n' + json.dumps(insert) + '\n' + json.dumps(file_metadata)
+def load_file_to_elastic(payload):
+  # payload =''
+  # insert = { "index" : { "_index" : "files", "_id" : file_url } }
+  # payload = payload + '\n' + json.dumps(insert) + '\n' + json.dumps(file_metadata)
 
   try:
     resp = requests.post(f"{ELASTIC_URL}/_bulk", 
@@ -30,7 +28,10 @@ def load_file_to_elastic(file_metadata):
     print(resp, e)
 
 
+
 def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
+  """Load a RDFLib Graph to a triplestore using the Graph store protocol"""
+
   if (None, None, None) in shapes_graph:
     print(f'Loading {len(shapes_graph)} triples for {str(repo_id)}')
     # shapes_graph.serialize('shapes-rdf.ttl', format='turtle')

@@ -14,6 +14,7 @@ from rdflib.plugins.sparql.algebra import translateQuery
 from rdflib.plugins.sparql.sparql import Query
 from src.config import CSVW, DCAT, NP_TEMPLATE, R2RML, RML, SCHEMA, SH, SHEX, SIO
 from src.load import load_rdf_to_ldp
+from src.models import IndexFile
 from src.utils import add_to_report, generate_github_file_url, test_sparql_endpoint
 
 
@@ -25,16 +26,6 @@ def get_files(extensions):
     for ext in extensions:
         all_files.extend(pathlib.Path('cloned_repo').rglob(ext))
     return all_files
-
-
-def add_shape(g, shapes_graph, file_uri, shape_uri):
-  """Function to add shapes extracted from shape file to the main graph"""
-  for label in g.objects(shape_uri, RDFS.label):
-      # Try to get the label of the class
-      shape_label = label
-      shapes_graph.add((URIRef(shape_uri), RDFS.label, Literal(shape_label)))
-  shapes_graph.add((file_uri, DCTERMS.hasPart, URIRef(shape_uri)))
-  return shapes_graph
 
 
 
@@ -50,6 +41,11 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
     # TODO: move ShexJ to jsonld part?
     for rdf_file_path in get_files(['*.shex', '*.shexj']):
         shapes_graph = process_shapes_file('shex', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
+        # TODO: uses classes
+        # ParseFile(rdf_file_path, 'ttl') or ParseRdf(rdf_file_path)
+        # Then ParseFile() calls IndexFile()
+        # IndexFile(format='shex', rdf_file_path, repo)
+        # Or: IndexShex(rdf_file_path, repo)
 
     for rdf_file_path in get_files(['*.yml', '*.yaml', '*.json']):
         shapes_graph = process_shapes_file('openapi', shapes_graph, rdf_file_path, repo_url, branch, repo_description)
@@ -88,6 +84,18 @@ def clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, git
       shapes_graph = Graph()
 
     return shapes_graph
+
+
+
+def add_shape(g, shapes_graph, file_uri, shape_uri):
+  """Function to add shapes extracted from shape file to the main graph"""
+  for label in g.objects(shape_uri, RDFS.label):
+      # Try to get the label of the class
+      shape_label = label
+      shapes_graph.add((URIRef(shape_uri), RDFS.label, Literal(shape_label)))
+  shapes_graph.add((file_uri, DCTERMS.hasPart, URIRef(shape_uri)))
+  return shapes_graph
+
 
 
 def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, branch, repo_description):

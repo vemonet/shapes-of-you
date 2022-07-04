@@ -13,7 +13,6 @@ from rdflib.plugins.sparql.algebra import translateQuery
 from rdflib.plugins.sparql.sparql import Query
 from SPARQLWrapper import JSON, POST, SPARQLWrapper
 
-
 current_folder = pathlib.Path(__file__).parent.resolve()
 
 

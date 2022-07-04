@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import gitlab
 import requests
 from src.config import SKIP_REPOS
+from src.models import IndexRepo
 from src.process import clone_and_process_repo
 from src.utils import (
     add_to_report,
@@ -86,6 +87,8 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
             repo_description = repo_json["description"]
             # repo_description = repo_json["shortDescriptionHTML"]
             shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'github')
+            repo = IndexRepo(uri=repo_url, branch=branch, description=repo_description, service='github')
+        
         has_next_page = data["data"]["search"]["pageInfo"][
             "hasNextPage"
         ]

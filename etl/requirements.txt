@@ -1,4 +1,5 @@
 requests
+pydantic
 python-graphql-client==0.3.0
 python-gitlab
 rdflib>=6.1.1
