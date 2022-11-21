@@ -1,7 +1,7 @@
 name: Index shapes
 on:
   schedule:
-    # Every saturday at 01:00 
+    # Every saturday at 01:00
     - cron:  '0 1 * * 6'
   workflow_dispatch:
     inputs:
@@ -10,7 +10,7 @@ on:
         required: true
         default: 'info'
 
-# TODO: to delete repo that has been deleted, run a workflow every day to check 
+# TODO: to delete repo that has been deleted, run a workflow every day to check
 # if all indexed repos are still up (delete the one not available anymore)
 
 env:
@@ -128,11 +128,13 @@ jobs:
     # runs-on: [self-hosted, linux, X64, dsri, bio2rdf]
     steps:
     - name: Checkout the repo code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
+
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.8
+
     # - uses: actions/cache@v2
     #   name: Configure pip caching
     #   with:
@@ -254,13 +256,13 @@ jobs:
     #     D2S_PASSWORD: ${{ secrets.GRAPHDB_PASSWORD }}
     #     GIT_SERVICE: ${{ matrix.git-service }}
     #   run: |
-    #     curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/$GIT_SERVICE.ttl -u dba:maasitest12
+    #     curl -T shapes-rdf.ttl  https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/$GIT_SERVICE.ttl -u dba:password
       # https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/gitee.ttl
-        
-      # curl -T test.ttl https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/gitee.ttl -u dba:maasitest12
 
-      # curl --digest --user dba:$D2S_PASSWORD --verbose --url "https://data.index.semanticscience.org/sparql-graph-crud-auth?graph-uri=https://w3id.org/um/ids/shapes/$GIT_SERVICE" -T shapes-rdf.nt 
-      # curl --digest --user dba:maasitest12 --verbose --url "https://data.index.semanticscience.org/sparql-graph-crud-auth?graph-uri=https://w3id.org/um/ids/shapes/tototo" -T yummly-recipes.ttl 
+      # curl -T test.ttl https://data.index.semanticscience.org/DAV/home/dba/rdf_sink/gitee.ttl -u dba:password
+
+      # curl --digest --user dba:$D2S_PASSWORD --verbose --url "https://data.index.semanticscience.org/sparql-graph-crud-auth?graph-uri=https://w3id.org/um/ids/shapes/$GIT_SERVICE" -T shapes-rdf.nt
+      # curl --digest --user dba:password --verbose --url "https://data.index.semanticscience.org/sparql-graph-crud-auth?graph-uri=https://w3id.org/um/ids/shapes/tototo" -T yummly-recipes.ttl
       # http://vos.openlinksw.com/owiki/wiki/VOS/VirtGraphProtocolCURLExamples
 
       # mkdir -p output

@@ -88,12 +88,12 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
             # repo_description = repo_json["shortDescriptionHTML"]
             shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'github')
             repo = IndexRepo(uri=repo_url, branch=branch, description=repo_description, service='github')
-        
+
         has_next_page = data["data"]["search"]["pageInfo"][
             "hasNextPage"
         ]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-    
+
     return shapes_graph
 
 
@@ -119,7 +119,7 @@ query {
         }
       }
     }
-  }   
+  }
 }
 """.replace(
     "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
@@ -154,6 +154,7 @@ def fetch_from_github_extra(shapes_graph, client, oauth_token, filename):
     shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'github')
   return shapes_graph
 
+
 def github_graphql_get_extra(repo):
   """Generate GraphQL query for repos in the list extra_shapes_repositories
   """
@@ -171,6 +172,7 @@ def github_graphql_get_extra(repo):
         }
       }
     }'''
+
 
 def fetch_from_gitlab(shapes_graph, gl, search_topic):
     """Fetch files from GitLab"""
@@ -196,8 +198,9 @@ def fetch_from_gitlab(shapes_graph, gl, search_topic):
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'gitlab')
       except Exception as e:
         add_to_report(f'Issue processing GitLab: {str(repo_json)}\n\n{str(e)}')
-    
+
     return shapes_graph
+
 
 def fetch_from_gitee(shapes_graph, token, search_topic):
     """Fetch files from Gitee"""

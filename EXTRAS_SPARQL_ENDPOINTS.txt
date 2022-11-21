@@ -51,3 +51,4 @@ https://mgds.oeg.fi.upm.es/sparql/endpoint/
 http://twoc.fair-dtls.surf-hosted.nl:7200/repositories/kb
 https://labs.tib.eu/sdm/covid19-kg-hackathon/sparql
 http://data.ign.fr/id/sparql
+https://api.labs.kadaster.nl/datasets/dst/kkg/services/default/sparql
