@@ -39,7 +39,8 @@ services:
       # - VIRTUAL_HOST=elastic.index.semanticscience.org
       # - LETSENCRYPT_HOST=elastic.index.semanticscience.org}
     volumes:
-      - /data/shapes-of-you/elasticsearch:/usr/share/elasticsearch/data
+      - elasticsearch_data:/usr/share/elasticsearch/data
+      # - /data/shapes-of-you/elasticsearch:/usr/share/elasticsearch/data
       # TODO: Fix permissions in host:
       # sudo chown -R 1000:0 /data/shapes-of-you/elasticsearch
 
@@ -133,3 +134,6 @@ services:
   #   container_name: projects
   #   ports:
   #     - 5000:5000
+
+volumes:
+  elasticsearch_data:
