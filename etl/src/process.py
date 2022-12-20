@@ -126,7 +126,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
         add_to_report('In repository: ' + repo_url + "\n> " + str(e), github_file_url)
 
-    # Index OpenAPI files 
+    # Index OpenAPI files
     elif shape_format == 'openapi':
       try:
         parser = ResolvingParser(github_file_url)
@@ -149,7 +149,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
         pass
         # TODO: YARRML? Search for prefixes and mappings at the root of YAML
-        # add_to_report('In repository: ' + repo_url + "\n> " 
+        # add_to_report('In repository: ' + repo_url + "\n> "
         #       + str(e), github_file_url)
 
     # Search for shex files
@@ -184,7 +184,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
       shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-      try: 
+      try:
         with open(rdf_file_path.absolute()) as file:
           sparql_query = file.read()
           # Parse SPARQL query (added fix for some malformed queries with =+ instead of #+)
@@ -192,7 +192,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
           query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
           shapes_graph.add((file_uri, SCHEMA['query'], Literal(sparql_query)))
-          
+
           grlc_metadata = {}
           try:  # Invalid YAMLs will produce empty metadata
             grlc_metadata = yaml.load(yaml_string, Loader=yaml.FullLoader)
@@ -241,16 +241,16 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
           if shape_format == 'xml' and (str(rdf_file_path).endswith('.owl') or str(rdf_file_path).endswith('.rdf')):
             # Try parsing with turtle for .owl and .rdf files
-            try: 
+            try:
               g.parse(str(rdf_file_path.absolute()), format='ttl')
             except:
               add_to_report(
-                'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e), 
+                'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e),
                 github_file_url
               )
           else:
             add_to_report(
-              'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e), 
+              'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e),
               github_file_url
             )
 
@@ -323,9 +323,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             break
           # TODO: get the shapes inside
           nanopub_inputs = [
-            NP_TEMPLATE.GuidedChoicePlaceholder, 
-            NP_TEMPLATE.LiteralPlaceholder, 
-            NP_TEMPLATE.RestrictedChoicePlaceholder, 
+            NP_TEMPLATE.GuidedChoicePlaceholder,
+            NP_TEMPLATE.LiteralPlaceholder,
+            NP_TEMPLATE.RestrictedChoicePlaceholder,
             NP_TEMPLATE.UriPlaceholder
           ]
           for np_input in nanopub_inputs:

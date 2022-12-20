@@ -86,7 +86,7 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
               repo_description = ''
             repo_description = repo_json["description"]
             # repo_description = repo_json["shortDescriptionHTML"]
-            shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'github')
+            # shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'github')
             repo = IndexRepo(uri=repo_url, branch=branch, description=repo_description, service='github')
 
         has_next_page = data["data"]["search"]["pageInfo"][

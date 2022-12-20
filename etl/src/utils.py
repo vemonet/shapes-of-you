@@ -16,6 +16,15 @@ from SPARQLWrapper import JSON, POST, SPARQLWrapper
 current_folder = pathlib.Path(__file__).parent.resolve()
 
 
+def parse_rdf(file, format=None) -> Graph:
+  g = Graph()
+  if not format:
+    g.parse(file)
+  else:
+    g.parse(file, format=format)
+  return g
+
+
 def check_run_time(time_start, repo_list, current_repo):
   """Check for how long the script has been running to stop before hitting GitHub Actions workflow 6h job limit
   Stop if more than 5h30 (330 min)
@@ -83,7 +92,7 @@ def test_sparql_endpoint(sparql_endpoint, shapes_graph):
             shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
             shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_label)))
             # shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_label)))
-            
+
             return shapes_graph
         else:
             return shapes_graph

@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Emonet;Vincent;;;
+FN:Vincent Emonet
+EMAIL:vincent.emonet@gmail.com
+ORG:Institute of Data Science at Maastricht University
+TEL:+33 6 75 72 59 52
+URL;type=pref:https://vemonet.github.io/
+ADR:;30 route du val de Gorbio;;Menton;;06500;France
+URL:https://www.linkedin.com/in/vincent-emonet
+END:VCARD

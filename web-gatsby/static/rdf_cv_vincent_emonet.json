@@ -1,0 +1,532 @@
+[
+  {   
+    @id: "http://vemonet.github.io",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#CV",
+    
+    aboutPerson: "http://vemonet.github.io/person/VincentEmonet",
+    
+    hasEducation: ["http://vemonet.github.io/education/1"],
+
+    PROJECTS_TITLE: "Projects",
+    SKILLS_TITLE: "Skills",
+
+    DDL_CV_LABEL: 'Resume',
+    DDL_CV_FILE: 'resources/RESUME_VincentEmonet.pdf',
+
+    ABOUT_ME_H2: "About me",
+    ABOUT_TEXT: `I am actually working as a research engineer at the LIRMM (Laboratory of Informatics, Robotics, Microelectronics of Montpellier). On different project linked to the semantic Web and ontologies:
+  <ul>
+  <li>SIFR BioPortal and AgroPortal web services: two web ontology repositories allowing users to annotate text with the stored ontologies.</li>
+  <li>Yam++: a web tool to discover mappings between ontologies.</li>
+  </ul>
+  <p>It made me consolidate my developping skills (Java, Web, Ruby) and my knowledge about the semantic web, Linked Data and ontologies. I also discovered Natural Language Processing, and various tools like Docker.</p>
+
+  <p>Before that, while obtaining my Master degree in bioinformatics, I was part of the Bio2RDF project at the research center of the Quebec University Hospital. Where I worked knowledge on Java, data processing (using ETL), Linked Data and Big Data.</p>
+
+  <p>Discovering new horizons is a great motivation, which allows me to quickly adapt myself to new situations and technologies with little help. But as someone pretty social, working in collaboration with a team is also something that I am actively looking for.</p>`,
+
+    PROJECT_BIO2RDF: 'Converting Biological dataset to a RDF Knowledge Graph.',
+    PROJECT_BIOPORTAL: 'Services to store ontologies, explore it and use it to annotate text (french and agronomical ontologies).',
+    PROJECT_YAMPP: 'Tool to align ontologies, with a web UI to curate generated mappings.',    
+
+
+    WORK_EXPE_TITLE: 'Work experience',
+
+    FIRST_EXPE_TITLE: "Semantic Web design engineer",
+    FIRST_EXPE_COMPANY: "2017 - today at <i>LIRMM</i> (Laboratory for informatics, robotics and microelectronics of Montpellier)",
+    FIRST_EXPE_TXT: `
+  <ul>
+  <li>Administration of <a href='http://bioportal.lirmm.fr' target='_blank'>SIFR BioPortal</a> and <a href='http://agroportal.lirmm.fr' target='_blank'>IBC AgroPortal</a> platforms, used for ontology storage, exploration and text annotation</li>
+  <li>New features development for <a href='https://github.com/sifrproject' target='_blank'>BioPortal services</a> (Ruby on Rails & Java) : ontologies metadata, mappings, text annotation</li>
+  <li>Kept compatibility with main version of the <a href='http://bioportal.bioontology.org' target='_blank'>NCBO BioPortal</a> (tests)</li>
+  <li>Packaged, integrated and documented Natural Language Processing programs for the <a href='https://gite.lirmm.fr/advanse' target='_blank'>ADVANSE</a> team, available at <a href='https://advanse.lirmm.fr' target='_blank'>advanse.lirmm.fr</a> (Java, AngularJS, Linux)</li>
+  <li>Enhanced and packaged the <a href='https://gite.lirmm.fr/opendata' target='_blank'>YAM++ ontologies matching tool</a> (Java)</li>
+  <li>Developped a <a href='http://yamplusplus.lirmm.fr/' target='_blank'>web interface</a> for ontologies mappings validation (JEE)</li>
+  </ul>`,
+
+    TWO_EXPE_TITLE: "JAVA/Talend developer",
+    TWO_EXPE_COMPANY: "9 months in 2013 and 2014 at <i>CHU de Québec</i> research center",
+    TWO_EXPE_TXT: `
+  <ul>
+  <li>Participation to the <a href='http://bio2rdf.org/' target='_blank'>Bio2RDF</a> project administration and development.</li>
+  <li>Set up and use of a Hadoop data platform on a cluster of CentOS servers.</li>
+  <li>Develop web <a href='https://github.com/bio2rdf/bio2rdf-rest' target="_blank">RESTful services</a> that consume RDF data using Talend ETL.</li>
+  <li>Develop <a href='https://github.com/vemonet/talend4sw' target='_blank'>Talend ETL components</a> for the semantic web using Java.</li>
+  <li>Develop Java programs that convert public biological databases to RDF format (PubMed, neXtProt).</li>
+  </ul>
+  Publication : <a href='http://ceur-ws.org/Vol-1272/paper_121.pdf' target='_blank'>Bio2RDF Release 3: A Larger Connected Network of Linked Data for the Life Sciences</a>`,
+
+    THREE_EXPE_TITLE: "Research assistant in bioinformatics",
+    THREE_EXPE_COMPANY: "3 months during 2012 in <a href='https://nature.berkeley.edu/almeidalab/' target='_blank'>Almeida lab</a> at <i>University of California Berkeley</i>",
+    THREE_EXPE_TXT: `
+  <ul>
+  <li>Development of informatics tools to help DNA analysis to understand the evolution of the <i>Xyllela fastidiosa</i> bacteria, using Python 2.7.</i>
+  <li>Installation of an Amazon Machine Image based on Linux (for Amazon Web Services)</li>
+  </ul>`,
+
+    FOUR_EXPE_TITLE: "Laboratory technician",
+    FOUR_EXPE_COMPANY: "3 months during 2011 at <i>INSERM</i> in Nice, France",
+    FOUR_EXPE_TXT: `Use of quantitative PCR and western blot to study expression of DNA and proteins in a laboratory that studies the mechanisms and therapeutic approaches of metabolic dysfunction and diabetes (INSERM Unit 907)`,
+
+    FIRST_EDU_TITLE: "Master's degree, Physiology, biotechnology and computer science",
+    FIRST_EDU_LOCATION: "2012 - 2014 at <i>University of Poitiers</i>, France",
+    FIRST_EDU_TXT: `Biotechnology specialization
+  <ul>
+  <li>Java, JEE and Android development</li>
+  <li>Database administration (Oracle)</li>
+  <li>Project management</li>
+  <li>Knowledges in biotechnology and physiology.</li>
+  </ul>`,
+
+    TWO_EDU_TITLE: "Licence Génie physiologique et informatique",
+    TWO_EDU_LOCATION: "2011 - 2012 at <i>University of Poitiers</i>, France",
+    TWO_EDU_TXT: `
+  <ul>
+  <li>Ada and C programming</li>
+  <li>Database management and website creation using HTML/CSS/PHP</li>
+  <li>Knowledges in genetics, physiology and medical imaging.</li>
+  <li>Active member of a student association</li>
+  </ul>`,
+
+    THREE_EDU_TITLE: "Technical college diploma, bioengineering",
+    THREE_EDU_LOCATION: "2009 - 2011 at <i>Université du Sud</i>, Toulon, France",
+    THREE_EDU_TXT: `Biology and biochimistry analysis specialization
+  <ul>
+  <li>Knowledges in genetics, biochemistry, molecular biology, physiology and microbiology.</li>
+  <li>Wet lab manipulations.</li>
+  </ul>`,
+
+
+    SKILLS_TOOL_TITLE: "Tools",
+    SKILLS_WEB_TITLE: "Web technologies",
+    SKILLS_LANG_TITLE: "Languages",    
+
+    PUBLICATIONS_TEXT:"",
+
+    PROJECTS_TITLE: "Projets",
+    SKILLS_TITLE: "Competences",
+
+    DDL_CV_LABEL: 'CV',
+    DDL_CV_FILE: 'resources/CV_VincentEmonet.pdf',
+
+    ABOUT_ME_H2: 'A propos',
+    ABOUT_TEXT: `Je travaille actuellement en tant qu'ingénieur d'étude au LIRMM (Laboratoire d'informatique, de Robotique, de Microélectronique de Montpellier) sur plusieurs projets liés au Web sémantique : 
+  <ul>
+  <li>AgroPortal et BioPortal : deux portails d'ontologies permettant d'exploiter les ontologies stockées et d'annoter des données.</li>
+  <li>Yam++ : un outil web permettant de découvrir des mappings entre ontologies.</li>
+  </ul>
+  <p>Ces projets m'ont permis de renforcer mes compétences en développement (Java, Web, Ruby) et dans le domaine des ontologies. Ainsi que de découvrir le Natural Language Processing.</p>
+
+  <p>C'est après l'obtention de mon Master en bioinformatique, que j'ai découvert le domaine du Web sémantique, lié à la recherche en biologie. Le projet Bio2RDF (conversion de base de données biologique au format RDF) au Québec, m'a permis d'en apprendre beaucoup sur la gestion et le traitement de données par l'utilisation d'ETL et de Java (développement de composants Talend). Tout en me familiarisant avec les modèles de données liées (Linked Data) et le Big Data. Avant de travailler pour le LIRMM.</p>
+
+  <p>La découverte de nouveaux domaines me motivent beaucoup, c'est pourquoi j'ai su rapidement m'adapter à des situations et des technologies qui m'étaient inconnues avec peu d'aide extérieur. Mais étant assez social, je porte beaucoup d'importance au travail d'équipe.</p>`,
+
+    PROJECT_BIO2RDF: 'Conversion de bases de données biologiques au format RDF et accès à ces données.',
+    PROJECT_BIOPORTAL: "Services permettant de stocker des ontologies, les explorer et les utiliser pour annotater du texte (ontologies françaises et du domaine de l'agronomie).",
+    PROJECT_YAMPP: 'Outils pour aligner des ontologies avec interface web pour valider les mappings générés.',
+
+
+    WORK_EXPE_TITLE: 'Expérience professionnelle',
+
+    FIRST_EXPE_TITLE: "Ingénieur d'étude Web sémantique",
+    FIRST_EXPE_COMPANY: "2017 - aujourd'hui au <i>LIRMM</i>, Laboratoire d'informatique, de robotique et de microélectronique de Montpellier",
+    FIRST_EXPE_TXT: `
+  <ul>
+  <li>Administration et développement des plateformes de stockage et d'exploitation d'ontologies <a href='http://bioportal.lirmm.fr' target='_blank'>SIFR BioPortal</a> et <a href='http://agroportal.lirmm.fr' target='_blank'>IBC AgroPortal</a></li>
+  <li>Implémentations de nouvelles fonctionnalités aux <a href='https://github.com/sifrproject' target='_blank'>services BioPortal</a> (Ruby on Rails et Java) : ontologies metadata, mappings, annotation de texte</li>
+  <li>Gestion de la compatibilité avec la version principale du <a href='http://bioportal.bioontology.org' target='_blank'>NCBO BioPortal</a></li>
+  <li>Intégration, consolidation et documentation de programmes de fouilles de données et de traitement du langage naturel pour l'équipe <a href='https://gite.lirmm.fr/advanse' target='_blank'>ADVANSE</a>, accessible à <a href='https://advanse.lirmm.fr' target='_blank'>advanse.lirmm.fr</a> (Java, AngularJS, Linux)</li>
+  <li>Amélioration de l’outil de matching d’ontologies <a href='https://gite.lirmm.fr/opendata' target='_blank'>YAM++</a> (Java)</li>
+  <li>Développement d’une <a href='http://yamplusplus.lirmm.fr/' target='_blank'>interface web</a> pour la validation de mappings entre ontologies (JEE)</li>
+  </ul>`,
+
+    TWO_EXPE_TITLE: "Programmeur Java/Talend en BioInformatique",
+    TWO_EXPE_COMPANY: "9 mois entre 2013 et 2014 au Centre de recherche du <i>CHU de Québec</i>",
+    TWO_EXPE_TXT: `
+  <ul>
+  <li>Participation à l'administration et au développement du projet <a href='http://bio2rdf.org/' target='_blank'>Bio2RDF</a></li>
+  <li>Développement de <a href='https://github.com/bio2rdf/bio2rdf-rest' target="_blank">web services RESTful</a> gestion de données biologiques au format RDF.</li>
+  <li>Développement de <a href='https://github.com/vemonet/talend4sw' target='_blank'>composants d’ETL Talend</a> en Java pour le web sémantique.</li>
+  <li>Conversion de bases de données biologiques au format RDF (PubMed, neXtProt) avec Java et l'ETL Talend.</li>
+  <li>Mise en place d’une plateforme Hadoop pour le Big Data sur des serveurs CentOS</li>
+  </ul>
+  Publication : <a href='http://ceur-ws.org/Vol-1272/paper_121.pdf' target='_blank'>Bio2RDF Release 3: A Larger Connected Network of Linked Data for the Life Sciences</a>`,
+
+    THREE_EXPE_TITLE: "Assistant de recherche en BioInformatique",
+    THREE_EXPE_COMPANY: "3 mois en 2012 à <a href='https://nature.berkeley.edu/almeidalab/' target='_blank'>Almeida lab</a> à <i>University of California Berkeley</i>",
+    THREE_EXPE_TXT: `
+  <ul>
+  <li>Création de programmes d'analyses de séquences ADN dans le cadre de l'analyse de l'évolution de la bactérie <i>Xyllela fastidiosa</i>, en utilisant Python 2.7.</i>
+  <li>Péparation d'une Amazon Machine Image basé sur Linux (afin de pouvoir utiliser ensuite le service Cloud Amazon Web Service)</li>
+  </ul>`,
+
+    FOUR_EXPE_TITLE: "Technicien de laboratoire",
+    FOUR_EXPE_COMPANY: "3 mois en 2011 à l'INSERM à Nice, France",
+    FOUR_EXPE_TXT: `Etude de l'expression de l'ADN et des protéines en utilisant la PCR quantitative et le western blot dans un laboratoire qui étudie les mécanismes et les approches thérapeutiques des dysfonctionnement métaboliques et du diabète (INSERM, unité 907)`,
+
+    FIRST_EDU_TITLE: "Master Génie physiologique, biotechnologique et informatique",
+    FIRST_EDU_LOCATION: "2012 - 2014 à <i>Université de Poitiers</i>, France",
+    FIRST_EDU_TXT: `Master Professionnel, spécialisation Biotechnologies.
+  <ul>
+  <li>Apprentissage programmation en Java, JEE et Android</li>
+  <li>Gestion de projet (Scrum).</li>
+  <li>Configuration de pro-logiciel LIMS.</li>
+  <li>Oracle (PL/SQL)</li>
+  </ul>`,
+
+    TWO_EDU_TITLE: "Licence Génie physiologique et informatique",
+    TWO_EDU_LOCATION: "2011 - 2012 à <i>Université de Poitiers</i>, France",
+    TWO_EDU_TXT: `
+  <ul>
+  <li>Apprentissage de la programmation en C et en ADA.</li>
+  <li>Gestion de base de données (SQL) et création d'un site en HTML/CSS/PHP.</li>
+  <li>Acquisition de connaissances en physiologie, génétique et imagerie médicale.</li>
+  <li>Membre actif d'une association étudiante</li>
+  </ul>`,
+
+    THREE_EDU_TITLE: "DUT Génie biologique",
+    THREE_EDU_LOCATION: "2009 - 2011 à <i>Université du Sud</i>, Toulon, France",
+    THREE_EDU_TXT: `Option analyse biologique et biochimique
+  <ul>
+  <li>Acquisition de connaissances en génie génétique, biochimie, microbiologie et physiologie.</li>
+  <li>Travail en laboratoire.</li>
+  </ul>`,
+
+
+    SKILLS_TOOL_TITLE: "Outils",
+    SKILLS_WEB_TITLE: "Technologies du web",
+    SKILLS_LANG_TITLE: "Langages",
+
+    PUBLICATIONS_TEXT:""
+
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      rdfs: "http://www.w3.org/2000/01/rdf-schema#",
+      foaf:	"http://xmlns.com/foaf/0.1/"
+    }
+  },
+  
+  {
+    @id: "http://vemonet.github.io/person/VincentEmonet",
+    @type: "http://xmlns.com/foaf/0.1/person"
+    name: "Vincent Emonet",
+    givenName: "Vincent",
+    familyName: "Emonet",
+    firstName: "Vincent",
+    lastName: "Emonet",
+    gender: "male",
+    birthday: "11-13-1991",
+    phone: "+33 6 75 72 59 52",
+    publications: "https://hal.archives-ouvertes.fr/search/index/q/*/authFullName_s/Vincent+Emonet",
+    homepage: "http://vemonet.github.io/",
+    workplaceHomepage: "http://www.lirmm.fr/",
+    img: "https://vemonet.github.io/images/picture_vincent_emonet.jpg",
+    
+    @context {
+      @vocab: "http://xmlns.com/foaf/0.1/",
+      rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      rdfs: "http://www.w3.org/2000/01/rdf-schema#",
+      cv:	"http://rdfs.org/resume-rdf/cv.rdfs#"
+    }
+  },
+  
+  {
+    @id: "http://vemonet.github.io/education/1",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Education"
+    studiedIn: "Université de Poitiers",
+    givenName: "Vincent",
+    familyName: "Emonet",
+    firstName: "Vincent",
+    lastName: "Emonet",
+    gender: "male",
+    birthday: "11-13-1991",
+    phone: "+33 6 75 72 59 52",
+    publications: "https://hal.archives-ouvertes.fr/search/index/q/*/authFullName_s/Vincent+Emonet",
+    homepage: "http://vemonet.github.io/",
+    workplaceHomepage: "http://www.lirmm.fr/",
+    img: "https://vemonet.github.io/images/picture_vincent_emonet.jpg",
+    
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+    }
+  },
+  
+  
+  {
+    @id: "http://vemonet.github.io/skill/java",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+    label: {
+      "en": "Java",
+      "fr": "Java"
+    }
+    skillLevel: "3",
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/ruby",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Ruby (on Rails)",
+      "fr": "Ruby (on Rails)"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/python",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Python",
+      "fr": "Python"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/git",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Git",
+      "fr": "Git"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/docker",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Docker",
+      "fr": "Docker"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/talend",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Talend ETL",
+      "fr": "Talend ETL"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/linux",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Linux",
+      "fr": "Linux"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/sparql",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "SPARQL",
+      "fr": "SPARQL"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/hadoop",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Hadoop",
+      "fr": "Hadoop"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/aaaa",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "aaaaaa",
+      "fr": "aaaaaa"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/sql",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "SQL",
+      "fr": "SQL"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/restapi",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "Restful API",
+      "fr": "Restful API"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/json",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "JSON",
+      "fr": "JSON"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/xml",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "XML",
+      "fr": "XML"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/html",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "HTML5",
+      "fr": "HTML5"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/css",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "CSS",
+      "fr": "CSS"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  },
+  {
+    @id: "http://vemonet.github.io/skill/js",
+    @type: "http://rdfs.org/resume-rdf/cv.rdfs#Skill"
+  
+    label: {
+      "en": "JavaScript",
+      "fr": "JavaScript"
+    }
+    @context {
+      @vocab: "http://rdfs.org/resume-rdf/cv.rdfs#",
+      label: {
+        @id: "http://rdfs.org/resume-rdf/cv.rdfs#skillName",
+        @container: "@language"
+      }
+    }
+  }
+  
+  
+]

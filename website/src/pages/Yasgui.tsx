@@ -98,7 +98,7 @@ export default function YasguiPage(props: any) {
         console.log(error)
       })
     }
-    
+
     if (props.endpoint && props.query) {
       // If endpoint and query provided we add 1 tab for this query to query this endpoint
       const sparql_endpoint = props.endpoint
@@ -121,7 +121,7 @@ export default function YasguiPage(props: any) {
       const get_sparql_endpoints_query = `PREFIX schema: <https://schema.org/>
         PREFIX void: <http://rdfs.org/ns/void#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        SELECT DISTINCT * WHERE { 
+        SELECT DISTINCT * WHERE {
           ?sparql_endpoint a schema:EntryPoint .
           ?query_file void:sparqlEndpoint ?sparql_endpoint ;
             rdfs:label ?file_label ;
@@ -155,7 +155,7 @@ export default function YasguiPage(props: any) {
             })
           }
           // let tab: any = yasgui.getTab();
-          
+
           // Add tab to yasgui for each file
           Object.keys(queries_obj).map((file_label: any) => {
             // if (!yasgui.getTab(file_label)) {
@@ -180,11 +180,11 @@ export default function YasguiPage(props: any) {
       );
       window.scrollTo(0, 0)
     } else if (props.file_url) {
-      
+
       const get_sparql_queries_query = `PREFIX schema: <https://schema.org/>
         PREFIX void: <http://rdfs.org/ns/void#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        SELECT DISTINCT * WHERE { 
+        SELECT DISTINCT * WHERE {
           ?query_file rdfs:label ?file_label ;
             schema:query ?query .
           FILTER (strlen(str(?query)) > 1)
@@ -216,7 +216,7 @@ export default function YasguiPage(props: any) {
             })
           }
           // let tab: any = yasgui.getTab();
-          
+
           // Add tab to yasgui for each file
           Object.keys(queries_obj).map((file_label: any) => {
             // if (!yasgui.getTab(file_label)) {
@@ -238,7 +238,7 @@ export default function YasguiPage(props: any) {
 
   return (
     <Container>
-      {state.loadingMetadata && 
+      {state.loadingMetadata &&
         <CircularProgress />
       }
       {Object.keys(state.entities_relations_overview_results).length > 0 && (<>
@@ -283,9 +283,9 @@ export default function YasguiPage(props: any) {
           </table>
         </Paper>
       </>)}
-      
+
       {/* <Typography variant="h5" style={{marginBottom: theme.spacing(3), marginTop: theme.spacing(4)}}>
-        Query with YASGUI 
+        Query with YASGUI
       </Typography> */}
 
       <div id="yasguiDiv"></div>
@@ -306,7 +306,7 @@ PREFIX void-ext: <http://ldf.fi/void-ext#>
 SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
 WHERE {
   GRAPH <?_metadataGraph> {
-    ?graph void:propertyPartition ?propertyPartition . 
+    ?graph void:propertyPartition ?propertyPartition .
     ?propertyPartition void:property ?predicate ;
       void:classPartition [
         void:class ?subject ;
@@ -333,7 +333,7 @@ PREFIX void-ext: <http://ldf.fi/void-ext#>
 SELECT DISTINCT ?graph ?subjectCount ?subject ?predicate ?objectCount ?object
 WHERE {
   GRAPH <?_metadataGraph> {
-    ?graph void:propertyPartition ?propertyPartition . 
+    ?graph void:propertyPartition ?propertyPartition .
     ?propertyPartition void:property ?predicate ;
       void:classPartition [
         void:class ?subject ;

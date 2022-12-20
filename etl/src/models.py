@@ -2,6 +2,7 @@ import json
 import logging
 import os
 import shutil
+import pathlib
 from datetime import datetime, timedelta
 from typing import List, Optional
 
@@ -10,6 +11,8 @@ from rdflib import RDF, ConjunctiveGraph, Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DC, DCTERMS, OWL, RDFS, SKOS, VOID, XSD
 from src.config import CSVW, DCAT, NP_TEMPLATE, R2RML, RML, SCHEMA, SH, SHEX, SIO
 from src.load import load_file_to_elastic, load_rdf_to_ldp
+from src.indexers import owl_indexer
+from src.utils import parse_rdf
 
 types_map = {
     # RDF parser
@@ -30,6 +33,14 @@ types_map = {
 }
 # SCHEMA['DataCatalog'] for git repos
 
+def get_files(extensions):
+    """List all files with given extensions in subfolders
+    :param extensions: Array of extensions, e.g. .ttl, .rdf
+    """
+    all_files = []
+    for ext in extensions:
+        all_files.extend(pathlib.Path('cloned_repo').rglob(ext))
+    return all_files
 
 class IndexRepo(BaseModel):
     uri: Optional[str] = None
@@ -40,7 +51,7 @@ class IndexRepo(BaseModel):
     branch: Optional[str] = 'main'
     service: Optional[str] = None # TODO: improve, atm: github, gitlab, gitee...
 
-    def __init__(self, 
+    def __init__(self,
         *args,
         uri: str,
         branch: str,
@@ -61,25 +72,44 @@ class IndexRepo(BaseModel):
         os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + repo_url + ' cloned_repo')
         # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
 
-        rdf_extensions = []
+        indexers = [owl_indexer.Indexer]
+
+        rdf_extensions = [
+            {
+                "format": "ttl",
+                "regexs": ['*.ttl', '*.shacl']
+            },
+            {
+                "format": "trig",
+                "regexs": ['*.trig']
+            },
+            {
+                "format": "xml",
+                "regexs": ['*.xml', '*.rdf', '*.owl']
+            },
+        ]
         # First do RDF based files
         # Then do custom extensions
 
         # Special case for RDF to avoid parsing the same file multiple time
         # Iterate over all RDF file, parse them first, then all indexers supporting RDF
-        for file_path in get_files(rdf_extensions):
-            g = parse_rdf(file_path)
-            for Indexer in indexers_folder:
-                if Indexer.format = 'rdf':
-                    indexed = Indexer(file_path=file_path, repo=self, g=g)
-                
+
+        for rdf_ext in rdf_extensions:
+            for regex in rdf_ext['regexs']:
+                for file_path in get_files(rdf_extensions):
+                    g = parse_rdf(file_path, rdf_ext['format'])
+                    for Indexer in indexers:
+                        if Indexer.format == 'rdf':
+                            indexed = Indexer(file_path=file_path, repo=self, g=g)
+                            print(indexed)
+
         # For custom file format (not RDF): iterate over all indexers,
         # then iterate over all files that have the extension provided as attribute.
         # Parsing will be done in the Indexer() constructor
-        for Indexer in indexers_folder:
-            Indexer.extensions
-            for file_path in get_files(Indexer.extensions):
-                indexed = Indexer(file_path=file_path, repo=self, g=None)
+        # for Indexer in indexers_folder:
+        #     Indexer.extensions
+        #     for file_path in get_files(Indexer.extensions):
+        #         indexed = Indexer(file_path=file_path, repo=self, g=None)
 
 
 
@@ -159,7 +189,7 @@ class IndexFile(BaseModel):
     repo_url: Optional[str] = None
     repo_stars: Optional[int] = None
     repo_description: Optional[str] = None
-    
+
     # concepts_count: Optional[int] = None
     # sub: str = Field(...)
     # assessments: List[str] = []
@@ -193,10 +223,10 @@ class IndexFile(BaseModel):
 
 
 # TODO: e.g. what to do with a big ontology?
-# Upload the full onto RDFLib Graph in a graph named after the onto file uri  
+# Upload the full onto RDFLib Graph in a graph named after the onto file uri
 # Iterate over concepts and add them to the ElasticSearch index
 class IndexOwl(IndexFile):
-    def __init__(self, 
+    def __init__(self,
         *args,
         uri: str,
         g: Graph,

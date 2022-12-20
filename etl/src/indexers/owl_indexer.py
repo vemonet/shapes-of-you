@@ -14,14 +14,14 @@ from src.models import IndexFile
 
 
 # TODO: e.g. what to do with a big ontology?
-# Upload the full onto RDFLib Graph in a graph named after the onto file uri  
+# Upload the full onto RDFLib Graph in a graph named after the onto file uri
 # Iterate over concepts and add them to the ElasticSearch index
 class Indexer(IndexFile):
     format: str = 'rdf'
     # extensions: List[str] = ['*.json', '*.jsonld', '*.json-ld']
 
 
-    def __init__(self, 
+    def __init__(self,
         *args,
         uri: str,
         g: Graph,
@@ -29,19 +29,20 @@ class Indexer(IndexFile):
     ) -> None:
         super().__init__(*args, **kwargs)
         self.uri = uri
+        # TODO: exctract metadata from OWL ontology
         # Search for OWL classes
-        # for shape in g.subjects(RDF.type, OWL.Class):
-        #     shape_found = True
-        #     shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
-        #     shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
-        #     shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-        #     shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-        #     shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
-        #     shape_label = shape
-        #     for label in g.objects(shape, RDFS.label):
-        #         # Try to get the label of the class
-        #         shape_label = label
-        #     shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+        for shape in g.subjects(RDF.type, OWL.Class):
+            shape_found = True
+            shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+            shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
+            shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+            shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
+            shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
+            shape_label = shape
+            for label in g.objects(shape, RDFS.label):
+                # Try to get the label of the class
+                shape_label = label
+            shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
 
 

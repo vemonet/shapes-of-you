@@ -4,6 +4,8 @@
 # # echo "Deleting Virtuoso database"
 # # sudo rm -rf /data/shapes-of-you/virtuoso
 # docker-compose up -d
+# https://medium.com/virtuoso-blog/five-simple-steps-to-experience-the-power-of-a-semantic-web-of-linked-data-using-virtuoso-3e016d01dfbe
+# https://vos.openlinksw.com/owiki/wiki/VOS/VirtGraphProtocolCURLExamples
 
 # wait 10
 

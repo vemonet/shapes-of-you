@@ -62,7 +62,7 @@ export default function SemanticIndex() {
   // const solid_name = useLDflexValue('user.name') || 'unknown';
 
   const endpointToQuery = Config.sparql_endpoint;
-  
+
   const [state, setState] = React.useState({
     global_shapes_array: [],
     expanded_files: {},
@@ -209,7 +209,7 @@ export default function SemanticIndex() {
   React.useEffect(() => {
 
     // Check if PWA, and hide message if already installed
-    // if (window.matchMedia('(display-mode: standalone)').matches) {  
+    // if (window.matchMedia('(display-mode: standalone)').matches) {
     //   updateState({ show_pwa_alert: false })
     // }
 
@@ -316,7 +316,7 @@ export default function SemanticIndex() {
     //     console.log(error)
     //   })
 
-    // TODO: Get all shapes in files. Disabled, too big: 3m2. 
+    // TODO: Get all shapes in files. Disabled, too big: 3m2.
     // Considering doing a separated "deep search" for shapes parts
     // axios.get(endpointToQuery + `?query=` + encodeURIComponent(getShapesQuery))
     //   .then(res => {
@@ -347,7 +347,7 @@ export default function SemanticIndex() {
     //             }
     //             projects_hash[projectName][property].push(shape_label);
     //           } else {
-    //             projects_hash[projectName][property] = propertyHash.value 
+    //             projects_hash[projectName][property] = propertyHash.value
     //           }
     //         }
     //       })
@@ -440,7 +440,7 @@ export default function SemanticIndex() {
   // }
   // const pluralize = (count: any, noun: string, suffix = 's') =>
   // `${count} ${noun}${parseInt(count) !== 1 ? suffix : ''}`;
-  
+
   // Filtering for faceted search
   // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
   const filtered_files = state.global_shapes_array
@@ -477,7 +477,7 @@ export default function SemanticIndex() {
           if (state.search && !state.search_repos_only) {
             return search_description.toLowerCase().indexOf( state.search.toLowerCase() ) !== -1
           } else {
-            // If no search text provided, we only filter by type 
+            // If no search text provided, we only filter by type
             return true
           }
         }
@@ -501,7 +501,7 @@ export default function SemanticIndex() {
     <Container style={{marginTop: theme.spacing(4), marginBottom: theme.spacing(3)}}>
       <Alert severity="warning" style={{marginBottom: theme.spacing(2)}}>
         Shapes of You is currently under active development. All filtering and search on the 100k+ files happens in your browser,
-        so be careful as it needs some improvements to better scale. 
+        so be careful as it needs some improvements to better scale.
         And feel free to <a href="https://github.com/vemonet/shapes-of-you/issues" className={classes.link} target="_blank" rel="noopener noreferrer">create new issues</a> if you think of improvements or want to notify us about a problem!
       </Alert>
 
@@ -524,7 +524,7 @@ export default function SemanticIndex() {
           <Grid item xs={12} md={6}>
             <Paper style={{padding: theme.spacing(2, 2)}}>
               <Typography variant="h6" style={{marginBottom: theme.spacing(1)}}>Number of repositories per resource type</Typography>
-              <Bar data={state.repos_overview_chart} 
+              <Bar data={state.repos_overview_chart}
                 options={chart_options(state.repos_overview_chart['datasets'][0]['data'])}
                 plugins={[ChartDataLabels]}
               />
@@ -542,7 +542,7 @@ export default function SemanticIndex() {
       <Paper elevation={6} style={{padding: theme.spacing(3, 2), margin: theme.spacing(3, 0)}}>
         <Typography variant="h5">
           {filtered_files.reduce((filtered: any, repo: any) => filtered + repo.files.length, 0)} files in&nbsp;
-          {Object.keys(filtered_files).length} repositories 
+          {Object.keys(filtered_files).length} repositories
         </Typography>
 
         {/* Filtering options */}
@@ -587,7 +587,7 @@ export default function SemanticIndex() {
             />
           })}
           {/* Button to check and uncheck all checkboxes */}
-          <Button size="small" variant="contained" color="primary" 
+          <Button size="small" variant="contained" color="primary"
             style={{textTransform: 'none', margin: theme.spacing(0, 2)}}
             onClick={() => {
               let checkboxes: any = {}
@@ -599,7 +599,7 @@ export default function SemanticIndex() {
             <CheckBoxOutlineBlankIcon />&nbsp;
             Uncheck all
           </Button>
-          <Button size="small" variant="contained" color="primary" 
+          <Button size="small" variant="contained" color="primary"
             style={{textTransform: 'none', margin: theme.spacing(0, 2)}}
             onClick={() => {
               let checkboxes: any = {}
@@ -694,7 +694,7 @@ export default function SemanticIndex() {
                     {file_obj.description &&
                       // Limit description to 1500 chars
                       <div style={{margin: theme.spacing(1, 0)}}>
-                        <ReactMarkdown 
+                        <ReactMarkdown
                           source={file_obj.description.substring(0, 1000)}
                           renderers={{ paragraph: Typography }}
                         />
@@ -723,7 +723,7 @@ export default function SemanticIndex() {
               </a>
             }
             {project.query && !project.sparqlEndpoint &&
-              <a href={'https://yasgui.triply.cc/#query=' + encodeURIComponent(project.query)} 
+              <a href={'https://yasgui.triply.cc/#query=' + encodeURIComponent(project.query)}
                 className={classes.link} target='_blank'>
                 <Button variant="contained" color="primary" style={{margin: theme.spacing(0, 2)}}>
                   <SearchIcon />
@@ -757,8 +757,8 @@ export default function SemanticIndex() {
 
           {/* Alert for PWA */}
           {/* {state.show_pwa_alert &&
-          <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}> 
-            This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click! 
+          <Alert onClose={() => {updateState({ show_pwa_alert: false}) }} style={{marginBottom: theme.spacing(2)}}>
+            This web page is a Progressive Web App (PWA), it can be installed as a regular smartphone app, or desktop app on a laptop in a simple click!
             <br/>On Google Chrome click the + button to the right in the URL bar. Checkout <a href="https://medium.com/progressivewebapps/how-to-install-a-pwa-to-your-device-68a8d37fadc1" className={classes.link} target="_blank" rel="noopener noreferrer">this article for more details</a> about installing on various platforms.
           </Alert>
           } */}
@@ -774,17 +774,17 @@ export default function SemanticIndex() {
             getOptionLabel={(option) => option.split(",")[0].replace('https://github.com/', '')}
             renderOption={(option: any) => (
               <React.Fragment>
-                {option.split(",")[0].replace('https://github.com/', '')} ({option.split(",")[1]} files) 
-                {option.split(",")[2] && 
+                {option.split(",")[0].replace('https://github.com/', '')} ({option.split(",")[1]} files)
+                {option.split(",")[2] &&
                   <React.Fragment>
                     &nbsp;- {option.split(",")[2]}
                   </React.Fragment>
                 }
               </React.Fragment>
             )}
-            renderInput={params => <TextField {...params} 
-              label="📁 Filter by repositories" 
-              variant="outlined" 
+            renderInput={params => <TextField {...params}
+              label="📁 Filter by repositories"
+              variant="outlined"
               // style={{ backgroundColor: '#ffffff' }}
               // onInputChange={handleAutocompleteRepositories}
               // size='small'
@@ -800,8 +800,8 @@ export default function SemanticIndex() {
           /> */}
         </Card>
       })}
-      <Pagination count={Math.floor(Object.keys(filtered_files).length / state.shapes_per_page) + 1} 
-        color="primary" onChange={(event,val)=> updateState({page: val})} 
+      <Pagination count={Math.floor(Object.keys(filtered_files).length / state.shapes_per_page) + 1}
+        color="primary" onChange={(event,val)=> updateState({page: val})}
         style={{ display:'flex', justifyContent: 'center' }}
       />
     </Container>
@@ -815,7 +815,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
-SELECT DISTINCT * WHERE { 
+SELECT DISTINCT * WHERE {
   GRAPH ?g {
     ?shapeFileUri a schema:SoftwareSourceCode ;
         a ?shape_type ;
@@ -834,13 +834,13 @@ PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
-SELECT DISTINCT * WHERE { 
+SELECT DISTINCT * WHERE {
   GRAPH ?g {
   	?shapeFileUri a sh:SPARQLFunction ;
         rdfs:label ?label ;
         schema:codeRepository ?repository .
     OPTIONAL { ?repository rdfs:comment ?repo_description }
-#    OPTIONAL { 
+#    OPTIONAL {
 #      ?shapeFileUri schema:query ?query .
 #      FILTER (strlen(str(?query)) > 1)
 #    }
@@ -858,14 +858,14 @@ SELECT DISTINCT * WHERE {
 // PREFIX sh: <http://www.w3.org/ns/shacl#>
 // PREFIX shex: <http://www.w3.org/ns/shex#>
 // PREFIX void: <http://rdfs.org/ns/void#>
-// SELECT DISTINCT * WHERE { 
+// SELECT DISTINCT * WHERE {
 //     ?shapeFileUri a schema:SoftwareSourceCode ;
 //         a ?shape_type ;
 //         rdfs:label ?label ;
 //         schema:codeRepository ?repository .
 //     FILTER(?shape_type != schema:SoftwareSourceCode)
 //     OPTIONAL { ?repository rdfs:comment ?repo_description }
-//     OPTIONAL { 
+//     OPTIONAL {
 //       ?shapeFileUri schema:query ?query .
 //       FILTER (strlen(str(?query)) > 1)
 //     }
@@ -880,7 +880,7 @@ SELECT DISTINCT * WHERE {
 // PREFIX sh: <http://www.w3.org/ns/shacl#>
 // PREFIX shex: <http://www.w3.org/ns/shex#>
 // PREFIX void: <http://rdfs.org/ns/void#>
-// SELECT DISTINCT * WHERE { 
+// SELECT DISTINCT * WHERE {
 //     ?shapeFileUri a schema:SoftwareSourceCode ;
 //         a ?shape_type ;
 //         rdfs:label ?label ;
@@ -901,7 +901,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
-SELECT ?repository (count(?shapeFileUri) AS ?shapeFileCount) ?repo_description WHERE { 
+SELECT ?repository (count(?shapeFileUri) AS ?shapeFileCount) ?repo_description WHERE {
   GRAPH ?g {
     ?shapeFileUri a <https://schema.org/SoftwareSourceCode> ;
       rdfs:label ?label ;
@@ -920,7 +920,7 @@ PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shex: <http://www.w3.org/ns/shex#>
 PREFIX void: <http://rdfs.org/ns/void#>
 SELECT DISTINCT ?shape_type (count(distinct ?repository) AS ?repos_count) (count(distinct ?shape_file) AS ?files_count)
-WHERE { 
+WHERE {
   GRAPH ?g {
     ?shape_file a schema:SoftwareSourceCode ;
         a ?shape_type ;

@@ -153,9 +153,9 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
 
     graph_uri = f"{BASE_URI}/{os.getenv('GIT_SERVICE')}"
     endpoint = f"https://data.index.semanticscience.org/store?graph={graph_uri}"
-    
+
     try:
-      resp = requests.post(endpoint, 
+      resp = requests.post(endpoint,
         headers={ 'Content-Type': 'text/turtle' },
         data=str(shapes_graph.serialize(format='turtle')).encode('utf-8'),
         auth=(ENDPOINT_USER, ENDPOINT_PASSWORD),
@@ -172,7 +172,7 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     #   # ?graph={BASE_URI}/{os.getenv('GIT_SERVICE')}
     #   # TODO: with Oxigraph
     #   sparql_endpoint=endpoint,
-    #   username=os.getenv('ENDPOINT_USER'), password=os.getenv('ENDPOINT_PASSWORD'), 
+    #   username=os.getenv('ENDPOINT_USER'), password=os.getenv('ENDPOINT_PASSWORD'),
     #   # graph_uri=f"shapes:{os.getenv('GIT_SERVICE')}",
     #   # chunks_size=1000, operation='INSERT'
     # )
@@ -181,7 +181,7 @@ def load_rdf_to_ldp(shapes_graph, repo_id, ldp_folder):
     # os.system(f'curl -H "Accept: text/turtle" -H "Content-type: text/turtle" -u {ENDPOINT_USER}:{ENDPOINT_PASSWORD} --data-binary @shapes-rdf.ttl -H "Slug: {repo_id}" https://data.index.semanticscience.org/DAV/ldp/{ldp_folder}/')
     # requests.post(
     #   f'https://data.index.semanticscience.org/DAV/home/ldp/{ldp_folder}/',
-    #   data=shapes_graph.serialize(format='turtle'), 
+    #   data=shapes_graph.serialize(format='turtle'),
     #   auth=(ENDPOINT_USER, ENDPOINT_PASSWORD),
     #   headers= {
     #     'Slug': repo_id,
@@ -273,7 +273,7 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
             "hasNextPage"
         ]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-    
+
     return shapes_graph
 
 
@@ -299,7 +299,7 @@ query {
         }
       }
     }
-  }   
+  }
 }
 """.replace(
     "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
@@ -376,7 +376,7 @@ def fetch_from_gitlab(shapes_graph, gl, search_topic):
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'gitlab')
       except Exception as e:
         add_to_report(f'Issue processing GitLab: {str(repo_json)}\n\n{str(e)}')
-    
+
     return shapes_graph
 
 def fetch_from_gitee(shapes_graph, token, search_topic):
@@ -502,7 +502,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
         add_to_report('In repository: ' + repo_url + "\n> " + str(e), github_file_url)
 
-    # Index OpenAPI files 
+    # Index OpenAPI files
     elif shape_format == 'openapi':
       try:
         parser = ResolvingParser(github_file_url)
@@ -525,7 +525,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
         pass
         # TODO: YARRML? Search for prefixes and mappings at the root of YAML
-        # add_to_report('In repository: ' + repo_url + "\n> " 
+        # add_to_report('In repository: ' + repo_url + "\n> "
         #       + str(e), github_file_url)
 
     # Search for shex files
@@ -560,7 +560,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       shapes_graph.add((file_uri, RDF.type, SH.SPARQLFunction))
       shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
       shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-      try: 
+      try:
         with open(rdf_file_path.absolute()) as file:
           sparql_query = file.read()
           # Parse SPARQL query (added fix for some malformed queries with =+ instead of #+)
@@ -568,7 +568,7 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
           yaml_string = "\n".join([row.lstrip('#+') for row in sparql_query.split('\n') if row.startswith('#+')])
           query_string = "\n".join([row for row in sparql_query.split('\n') if not row.startswith('#+')])
           shapes_graph.add((file_uri, SCHEMA['query'], Literal(sparql_query)))
-          
+
           grlc_metadata = {}
           try:  # Invalid YAMLs will produce empty metadata
             grlc_metadata = yaml.load(yaml_string, Loader=yaml.FullLoader)
@@ -617,16 +617,16 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
       except Exception as e:
           if shape_format == 'xml' and (str(rdf_file_path).endswith('.owl') or str(rdf_file_path).endswith('.rdf')):
             # Try parsing with turtle for .owl and .rdf files
-            try: 
+            try:
               g.parse(str(rdf_file_path.absolute()), format='ttl')
             except:
               add_to_report(
-                'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e), 
+                'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e),
                 github_file_url
               )
           else:
             add_to_report(
-              'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e), 
+              'RDF parsed as ' + shape_format + ', in repository: ' + repo_url + "\n> " + str(e),
               github_file_url
             )
 
@@ -699,9 +699,9 @@ def process_shapes_file(shape_format, shapes_graph, rdf_file_path, repo_url, bra
             break
           # TODO: get the shapes inside
           nanopub_inputs = [
-            NP_TEMPLATE.GuidedChoicePlaceholder, 
-            NP_TEMPLATE.LiteralPlaceholder, 
-            NP_TEMPLATE.RestrictedChoicePlaceholder, 
+            NP_TEMPLATE.GuidedChoicePlaceholder,
+            NP_TEMPLATE.LiteralPlaceholder,
+            NP_TEMPLATE.RestrictedChoicePlaceholder,
             NP_TEMPLATE.UriPlaceholder
           ]
           for np_input in nanopub_inputs:
@@ -931,7 +931,7 @@ if __name__ == "__main__":
   # Repos with issues or too big (hitting GitHub Actions 6h limit)
   global SKIP_REPOS
   SKIP_REPOS = [
-    'https://gitee.com/mad_matrix/OntologyModelin', 
+    'https://gitee.com/mad_matrix/OntologyModelin',
     'https://gitee.com/jiahuarao/HumanDiseaseOntology',
     'https://gitee.com/smallei/HumanDiseaseOntology',
     'https://github.com/garethr/kubernetes-json-schema',
