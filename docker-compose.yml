@@ -6,7 +6,8 @@ services:
     image: nginx:1.21.4
     restart: unless-stopped
     volumes:
-      - ./nginx-elastic.conf:/etc/nginx/nginx.conf
+      - /data/deploy-services/shapes-of-you/nginx-elastic.conf:/etc/nginx/nginx.conf
+      # - ./nginx-elastic.conf:/etc/nginx/nginx.conf
       ## For multiple users: uncomment this line to mount a pre-generated .htpasswd
       # - ./.htpasswd:/etc/nginx/.htpasswd
       # Generate it with: htpasswd -Bbn elastic yourpassword > elasticsearch/.htpasswd
@@ -56,7 +57,8 @@ services:
       - LETSENCRYPT_HOST=${VIRTUOSO_URL:-data.index.semanticscience.org}
       - VIRTUAL_PORT=7878
     volumes:
-      - ./nginx-oxigraph.conf:/etc/nginx/nginx.conf
+      - /data/deploy-services/shapes-of-you/nginx-oxigraph.conf:/etc/nginx/nginx.conf
+      # - ./nginx-oxigraph.conf:/etc/nginx/nginx.conf
       # - ./.htpasswd:/etc/nginx/.htpasswd
     # ports:
     #   - "7878:7878"
