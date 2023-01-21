@@ -1,16 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 version = "0.1.0"
 name = "shapes-of-you-etl"
 description = "ETL to extract structured and semantic files from various repositories (git, LOD...)."
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 authors = [
     { name = "Vincent Emonet", email = "vincent.emonet@gmail.com" },
 ]
 keywords = [
-    "Nanopublication",
+    "SHACL",
+    "ShEx",
+    "OWL ontology",
     "RDF",
     "Linked Data",
-    "Publishing"
+    "Indexing",
 ]
 
 dependencies = [
@@ -39,7 +45,7 @@ test = [
     "mypy ==0.971",
     "isort >=5.0.6,<6.0.0",
     "flake8 >=3.8.3,<6.0.0",
-    "Flake8-pyproject>=1.1.0.post0",
+    "Flake8-pyproject >=1.1.0.post0",
     "flaky",
 ]
 dev = [
@@ -50,12 +56,11 @@ dev = [
 
 
 [project.urls]
+Homepage = "https://github.com/vemonet/shapes-of-you"
+Documentation = "https://github.com/vemonet/shapes-of-you"
+History = "https://github.com/vemonet/shapes-of-you/releases"
+Tracker = "https://github.com/vemonet/shapes-of-you/issues"
 Source = "https://github.com/vemonet/shapes-of-you"
-
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
 
 
 # ENVIRONMENTS AND SCRIPTS
@@ -68,30 +73,21 @@ features = [
 #   "pre-commit install",
 # ]
 
+# hatch run scan github vemonet/shapes-of-you
 [tool.hatch.envs.default.scripts]
-scan = "python main.py {args}"
+index = "python main.py {args}"
+test = "pytest {args}"
+cov = "test --cov src {args}"
+fmt = [
+    "ruff src tests example --fix",
+]
+check = [
+    "ruff src tests",
+    "mypy src",
+]
 
 
 # TOOLS
-[tool.isort]
-line_length = 120
-skip = ["nanopub/__init__.py"]
-profile = "black"
-
-
-[tool.flake8]
-max-complexity = 17
-max-line-length = 120
-per-file-ignores = [
-    "__init__.py:F401",
-]
-ignore = [
-    "E501", # line too long
-    "E303", # too many blank lines
-    "E301", # expected 1 blank lines found 0
-    "W503", # line break before binary operator
-]
-
 
 [tool.mypy]
 strict = false
@@ -104,13 +100,44 @@ warn_no_return = false
 warn_unused_ignores = true
 
 
-# [tool.pytest.ini_options]
-# markers = [
-#     "no_rsa_key: mark a test as a test only run when there is no nanopub RSA key setup.",
-# ]
+# https://github.com/charliermarsh/ruff#supported-rules
+[tool.ruff]
+src = [ "src" ]
+target-version = "py38"
+line-length = 120
+select = [
+    "A",
+    "B",  # flake8-bugbear
+    "C",  # flake8-comprehensions
+    "E",  # pycodestyle errors
+    "F",  # pyflakes
+    # "FBT", # flake8-boolean-trap
+    "I",  # isort
+    "ICN",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "Q",
+    "RUF",
+    "S",
+    "SIM",
+    "T",
+    "TID",
+    "UP",
+    "W",  # pycodestyle warnings
+    "YTT",
+]
 
-# [tool.black]
-# color = true
-# line-length = 120
-# target-version = ['py310']
-# skip-string-normalization = true
+ignore = [
+    "E501", # line too long
+    "B008", # do not perform function calls in argument defaults
+    "B006", # do not use mutable data structures for argument defaults
+    "C901", # too complex
+    "S101", # Use of `assert` detected
+    "T201", "T203", # remove print and pprint
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["I", "F401"] # module imported but unused

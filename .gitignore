@@ -3,12 +3,18 @@ shapes-rdf.ttl
 REPORT.md
 *.jar
 .expo
-*.egg-info
 
+build/
+*.egg-info
+.eggs/
+dist/
 __pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
 
 .venv
-
 .env
 .htpasswd
 

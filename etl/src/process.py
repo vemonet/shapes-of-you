@@ -14,7 +14,7 @@ from rdflib.plugins.sparql.algebra import translateQuery
 from rdflib.plugins.sparql.sparql import Query
 from src.config import CSVW, DCAT, NP_TEMPLATE, R2RML, RML, SCHEMA, SH, SHEX, SIO
 from src.load import load_rdf_to_ldp
-from src.models import IndexFile
+# from src.models.index_file import IndexFile
 from src.utils import add_to_report, generate_github_file_url, test_sparql_endpoint
 
 

@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import gitlab
 import requests
 from src.config import SKIP_REPOS
-from src.models import IndexRepo
+from src.models.index_repo import IndexRepo
 from src.process import clone_and_process_repo
 from src.utils import (
     add_to_report,
@@ -72,8 +72,10 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
         )
         for repository in data["data"]["search"]["repositories"]:
             check_run_time(time_start, data["data"]["search"]["repositories"], repository)
+            print(repository)
             repo_json = repository["repo"]
             repo_url = repo_json["url"]
+            print(repo_url)
             if repo_url in SKIP_REPOS:
               continue
             try:

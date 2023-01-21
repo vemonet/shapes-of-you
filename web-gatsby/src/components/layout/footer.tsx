@@ -19,7 +19,7 @@ const Footer: FC = () => {
                 {/* <Typography variant="body2" >
                     This website is licensed under the&nbsp;
                     <a target="_blank" style={{textDecoration: 'none', color: 'inherit'}}
-                    href="https://github.com/vemonet/vemonet.github.io/blob/main/LICENSE">
+                    href="https://github.com/vemonet/vemonet.github.io/blob/main/LICENSE.txt">
                     MIT license</a>
                 </Typography> */}
             </Container>

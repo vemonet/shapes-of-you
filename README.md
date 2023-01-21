@@ -214,6 +214,12 @@ pip install -e .
 Retrieve shapes files from search the [GitHub GraphQL API](https://developer.github.com/v4/explorer) (you can also use a topic to search, e.g. `topic:sparql`):
 
 ```bash
+hatch run scan github vemonet/shapes-of-you
+```
+
+Or directly with python after using `hatch shell`:
+
+```bash
 python3 main.py github vemonet/shapes-of-you
 ```
 

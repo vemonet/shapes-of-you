@@ -9,11 +9,31 @@ from datetime import datetime, timedelta
 
 from rdflib import RDF, ConjunctiveGraph, Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DC, DCTERMS, OWL, RDFS, SKOS, VOID, XSD
+from src.config import CSVW, DCAT, NP_TEMPLATE, R2RML, RML, SCHEMA, SH, SHEX, SIO
 from rdflib.plugins.sparql.algebra import translateQuery
 from rdflib.plugins.sparql.sparql import Query
 from SPARQLWrapper import JSON, POST, SPARQLWrapper
 
 current_folder = pathlib.Path(__file__).parent.resolve()
+
+
+types_map = {
+    # RDF parser
+    'shacl': SH.Shape,
+    'csvw': CSVW.Schema,
+    'dcat': DCAT.Dataset,
+    'nanopub': NP_TEMPLATE.AssertionTemplate,
+    'rml': RML.LogicalSource,
+    'r2rml': R2RML.TriplesMap,
+    'skos': SKOS.ConceptScheme,
+    'owl': OWL.Ontology,
+
+    # Specific parser
+    'obo': SIO['SIO_000623'],
+    'openapi': SCHEMA['APIReference'], # ['*.yml', '*.yaml', '*.json']
+    'shex': SHEX.Schema,
+    'sparql_query': SH.SPARQLFunction,
+}
 
 
 def parse_rdf(file, format=None) -> Graph:
