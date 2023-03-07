@@ -1,13 +1,13 @@
 ### Access standard knowledge indexed from code repositories, connected to the Linked Open Data access points
 
-[![Deploy to GitHub Pages](https://github.com/vemonet/shapes-of-you/workflows/Deploy%20website/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+website%22) [![CodeQL analysis](https://github.com/vemonet/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22) 
+[![Deploy to GitHub Pages](https://github.com/vemonet/shapes-of-you/workflows/Deploy%20website/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22Deploy+website%22) [![CodeQL analysis](https://github.com/vemonet/shapes-of-you/workflows/CodeQL%20analysis/badge.svg)](https://github.com/vemonet/shapes-of-you/actions?query=workflow%3A%22CodeQL+analysis%22)
 
 
 🖥 Access the web app at **[index.semanticscience.org](http://index.semanticscience.org)**
 
 📬 Query our knowledge graph using the OpenAPI at **[grlc.io/api-git/vemonet/shapes-of-you/subdir/api](http://grlc.io/api-git/vemonet/shapes-of-you/subdir/api)** (powered by [grlc.io](http://grlc.io) and [SPARQL](https://www.w3.org/TR/sparql11-query/))
 
-✨ Directly query the **<a href="http://yasgui.triply.cc/#query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0APREFIX%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20sh%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fshacl%23%3E%0APREFIX%20shex%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fshex%23%3E%0APREFIX%20void%3A%20%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0ASELECT%20DISTINCT%20%3Fshape_type%20(count(distinct%20%3Frepository)%20AS%20%3Frepos_count)%20(count(distinct%20%3Fshape_file)%20AS%20%3Ffile_count)%0AWHERE%20%7B%20%0A%20%20%20%20%3Fshape_file%20a%20schema%3ASoftwareSourceCode%20%3B%0A%20%20%20%20%20%20%20%20a%20%3Fshape_type%20%3B%0A%20%20%20%20%20%20%20%20dc%3Asource%20%3Frepository%20.%0A%20%20%20%20FILTER(%3Fshape_type%20!%3D%20schema%3ASoftwareSourceCode)%0A%7D%20GROUP%20BY%20%3Fshape_type&endpoint=https%3A%2F%2Fgraphdb.dumontierlab.com%2Frepositories%2Fshapes-registry&requestMethod=GET&tabTitle=Shapes%20of%20you%20query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table">SPARQL endpoint on YASGUI</a>** at https://graphdb.dumontierlab.com/repositories/shapes-registry. 
+✨ Directly query the **<a href="http://yasgui.triply.cc/#query=PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0APREFIX%20dcterms%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0APREFIX%20sh%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fshacl%23%3E%0APREFIX%20shex%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fshex%23%3E%0APREFIX%20void%3A%20%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0ASELECT%20DISTINCT%20%3Fshape_type%20(count(distinct%20%3Frepository)%20AS%20%3Frepos_count)%20(count(distinct%20%3Fshape_file)%20AS%20%3Ffile_count)%0AWHERE%20%7B%20%0A%20%20%20%20%3Fshape_file%20a%20schema%3ASoftwareSourceCode%20%3B%0A%20%20%20%20%20%20%20%20a%20%3Fshape_type%20%3B%0A%20%20%20%20%20%20%20%20dc%3Asource%20%3Frepository%20.%0A%20%20%20%20FILTER(%3Fshape_type%20!%3D%20schema%3ASoftwareSourceCode)%0A%7D%20GROUP%20BY%20%3Fshape_type&endpoint=https%3A%2F%2Fgraphdb.dumontierlab.com%2Frepositories%2Fshapes-registry&requestMethod=GET&tabTitle=Shapes%20of%20you%20query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table">SPARQL endpoint on YASGUI</a>** at https://graphdb.dumontierlab.com/repositories/shapes-registry.
 
 The SPARQL endpoint is also conveniently accessible in the webapp **Active endpoints** tab, since Shapes of You indexes its own SPARQL query files, and computes metadata for its SPARQL endpoint.
 
@@ -32,7 +32,7 @@ If your repository or endpoint is missed by our indexer:
 
 * Additional GitHub repositories in the file [`EXTRAS_GITHUB_REPOSITORIES.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_GITHUB_REPOSITORIES.txt)
 
-* Additional SPARQL endpoints in the file [`EXTRAS_SPARQL_ENDPOINTS.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_SPARQL_ENDPOINTS.txt) 
+* Additional SPARQL endpoints in the file [`EXTRAS_SPARQL_ENDPOINTS.txt`](https://github.com/vemonet/shapes-of-you/blob/main/EXTRAS_SPARQL_ENDPOINTS.txt)
 
 ## Technical overview 🧭
 
@@ -45,7 +45,7 @@ This web service is composed of those 4 main parts, described more in details be
   * We use [expo](https://expo.io/) to build this [Progressive Web App](https://web.dev/progressive-web-apps/) (aka. PWA), it can be installed as a native app on any computer desktop (using Chrome is recommended), or smartphones.
 * A triplestore with a publicly available SPARQL endpoint at https://graphdb.dumontierlab.com/repositories/shapes-registry
 * A grlc.io powered OpenAPI to query the SPARQL endpoint at http://grlc.io/api-git/vemonet/shapes-of-you
-  * Most SPARQL queries used by the webapp are also provided as API calls 
+  * Most SPARQL queries used by the webapp are also provided as API calls
 
 ![Shapes of You architecture](/website/assets/shapes-of-you-architecture.png)
 
@@ -181,7 +181,7 @@ Requirements: Python 3.6+, git
 
 ### 🗃️ Index files from code repositories
 
-This script is run every day by the mighty [`.github/workflows/index-shapes.yml`](https://github.com/vemonet/shapes-of-you/blob/main/.github/workflows/index-shapes.yml) workflow 
+This script is run every day by the mighty [`.github/workflows/index-shapes.yml`](https://github.com/vemonet/shapes-of-you/blob/main/.github/workflows/index-shapes.yml) workflow
 
 The Python script retrieves shapes files from various popular Git services API (GitHub GraphQL API, GitLab API , Gitee API), and generates RDF data. The RDF data is then automatically published to the publicly available triplestore by the GitHub workflow.
 
@@ -214,7 +214,7 @@ pip install -e .
 Retrieve shapes files from search the [GitHub GraphQL API](https://developer.github.com/v4/explorer) (you can also use a topic to search, e.g. `topic:sparql`):
 
 ```bash
-hatch run scan github vemonet/shapes-of-you
+hatch run index github vemonet/shapes-of-you
 ```
 
 Or directly with python after using `hatch shell`:
@@ -237,7 +237,7 @@ python3 main.py gitee ontology
 
 ### ✨ Generate SPARQL endpoints metadata
 
-This task is performed every day by the swifty [`.github/workflows/analyze-endpoints.yml`](https://github.com/vemonet/shapes-of-you/blob/main/.github/workflows/analyze-endpoints.yml) workflow 
+This task is performed every day by the swifty [`.github/workflows/analyze-endpoints.yml`](https://github.com/vemonet/shapes-of-you/blob/main/.github/workflows/analyze-endpoints.yml) workflow
 
 We use the [`d2s`](https://github.com/MaastrichtU-IDS/d2s-cli) tool (aka. data2services) to generate [HCLS metadata](https://www.w3.org/TR/hcls-dataset/) for a SPARQL endpoint:
 

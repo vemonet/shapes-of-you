@@ -11,7 +11,7 @@ from rdflib import RDF, ConjunctiveGraph, Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DC, DCTERMS, OWL, RDFS, SKOS, VOID, XSD
 from src.config import CSVW, DCAT, NP_TEMPLATE, R2RML, RML, SCHEMA, SH, SHEX, SIO
 from src.load import load_file_to_elastic, load_rdf_to_ldp
-from src.indexers import owl_indexer
+from src.indexers.owl_indexer import OwlIndexer, index_owl
 from src.utils import parse_rdf
 
 
@@ -55,8 +55,9 @@ class IndexRepo(BaseModel):
         os.system('git clone --quiet --depth 1 --recurse-submodules --shallow-submodules ' + uri + ' cloned_repo')
         # os.chdir('cloned_repo') # Specifying the path where the cloned project needs to be copied
 
-        indexers = [owl_indexer.Indexer]
+        indexers = []
 
+        rdf_indexers = [index_owl]
         rdf_extensions = [
             {
                 "format": "ttl",
@@ -83,10 +84,10 @@ class IndexRepo(BaseModel):
             #     print(rdf_extensions)
             for file_path in get_files(rdf_ext['regexs']):
                 g = parse_rdf(file_path, rdf_ext['format'])
-                for Indexer in indexers:
-                    if Indexer.format == 'rdf':
-                        indexed = Indexer(file_path=file_path, repo=self, g=g)
-                        print(indexed)
+                for indexer in rdf_indexers:
+                    indexed = indexer(file_path=file_path, repo=self, g=g)
+                    print(indexed)
+
 
         # For custom file format (not RDF): iterate over all indexers,
         # then iterate over all files that have the extension provided as attribute.
