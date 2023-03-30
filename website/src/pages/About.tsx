@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
 export default function About() {
   const classes = useStyles();
   const theme = useTheme();
-  
+
   const [state, setState] = React.useState({
     show_info_card: false,
   });
@@ -86,8 +86,11 @@ export default function About() {
 
         <Collapse in={state.show_info_card} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography>
+            {/* <Typography>
               The Shapes of You index is a continuously evolving and sustainable knowledge graph, with a user-friendly interface to search for standard knowledge description files, and access linked open data efficiently and effectively. This system has 3 main scopes:
+            </Typography> */}
+            <Typography>
+              The Shapes of You index is a knowledge graph, with a user-friendly interface to search for standard knowledge description files, and access linked open data. This system has 3 main scopes:
             </Typography>
 
             <List>
@@ -117,7 +120,7 @@ export default function About() {
                     <ExploreIcon />
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText> 
+                <ListItemText>
                   <b>Provide a user-friendly access point</b> for the indexed knowledge and data (this website)
                 </ListItemText>
               </ListItem>
@@ -158,7 +161,7 @@ export default function About() {
                     <CheckCircleIcon />
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText> 
+                <ListItemText>
                   <b><a href="https://www.w3.org/TR/shacl/" className={classes.link} target="_blank" rel="noopener noreferrer">SHACL</a> shapes</b>: we index RDF files, with all <code>sh:NodeShape</code> they contain
                 </ListItemText>
               </ListItem>
