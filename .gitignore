@@ -5,8 +5,8 @@ REPORT.md
 .expo
 *.egg-info
 
+__pycache__
 .venv
-
 .env
 .htpasswd
 
