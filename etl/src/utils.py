@@ -13,6 +13,7 @@ from rdflib.plugins.sparql.algebra import translateQuery
 from rdflib.plugins.sparql.sparql import Query
 from SPARQLWrapper import JSON, POST, SPARQLWrapper
 
+from src.config import SCHEMA
 
 current_folder = pathlib.Path(__file__).parent.resolve()
 
@@ -84,11 +85,11 @@ def test_sparql_endpoint(sparql_endpoint, shapes_graph):
             shapes_graph.add((URIRef(sparql_endpoint), RDF.type, SCHEMA['EntryPoint']))
             shapes_graph.add((URIRef(sparql_endpoint), RDFS.label, Literal(endpoint_label)))
             # shapes_graph.add((URIRef(sparql_endpoint), RDFS.comment, Literal(endpoint_label)))
-            
+
             return shapes_graph
         else:
             return shapes_graph
     except Exception as e:
         logging.debug('✔️ Done tested, failed: ' + str(sparql_endpoint))
-        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
+        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + " - " + str(e))
     return shapes_graph

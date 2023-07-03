@@ -90,7 +90,7 @@ def fetch_from_github(shapes_graph, client, oauth_token, search_topic):
             "hasNextPage"
         ]
         after_cursor = data["data"]["search"]["pageInfo"]["endCursor"]
-    
+
     return shapes_graph
 
 
@@ -116,7 +116,7 @@ query {
         }
       }
     }
-  }   
+  }
 }
 """.replace(
     "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
@@ -193,7 +193,7 @@ def fetch_from_gitlab(shapes_graph, gl, search_topic):
         shapes_graph = clone_and_process_repo(shapes_graph, repo_url, branch, repo_description, 'gitlab')
       except Exception as e:
         add_to_report(f'Issue processing GitLab: {str(repo_json)}\n\n{str(e)}')
-    
+
     return shapes_graph
 
 def fetch_from_gitee(shapes_graph, token, search_topic):
