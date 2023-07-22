@@ -40,14 +40,15 @@ from src.utils import current_folder, test_sparql_endpoint
 
 
 def main(argv):
-  logging_level = os.environ.get("LOGGING_LEVEL", "")
-  if logging_level == 'info':
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-  elif logging_level == 'error':
-    logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
-  else:
-    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    # filename='/tmp/app.log', filemode='w')
+  logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+  # logging_level = os.environ.get("LOGGING_LEVEL", "")
+  # if logging_level == 'info':
+  #   logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+  # elif logging_level == 'error':
+  #   logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
+  # else:
+  #   logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+  #   # filename='/tmp/app.log', filemode='w')
 
   # Get git service to query from args
   if len(argv) > 1:
@@ -106,7 +107,7 @@ def main(argv):
 
 if __name__ == "__main__":
   # The script starts here
-  
+
   # Not sure if garethr repos are actually causing issues, but openapi search overtime when reaching it
   main(sys.argv)
 

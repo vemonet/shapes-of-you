@@ -9,10 +9,11 @@ from datetime import datetime, timedelta
 
 from rdflib import RDF, ConjunctiveGraph, Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DC, DCTERMS, OWL, RDFS, SKOS, VOID, XSD
-from src.config import CSVW, DCAT, NP_TEMPLATE, R2RML, RML, SCHEMA, SH, SHEX, SIO
 from rdflib.plugins.sparql.algebra import translateQuery
 from rdflib.plugins.sparql.sparql import Query
 from SPARQLWrapper import JSON, POST, SPARQLWrapper
+
+from src.config import CSVW, DCAT, NP_TEMPLATE, R2RML, RML, SCHEMA, SH, SHEX, SIO
 
 current_folder = pathlib.Path(__file__).parent.resolve()
 
@@ -118,5 +119,5 @@ def test_sparql_endpoint(sparql_endpoint, shapes_graph):
             return shapes_graph
     except Exception as e:
         logging.debug('✔️ Done tested, failed: ' + str(sparql_endpoint))
-        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + "\n\n" + str(e))
+        add_to_report('SPARQL endpoint failed: ' + sparql_endpoint + " - " + str(e))
     return shapes_graph
