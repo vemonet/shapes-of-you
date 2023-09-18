@@ -25,3 +25,5 @@ egonw/SARS-CoV-2-Queries
 fnielsen/scholia
 veleda/shacl-masterclass
 andrawaag/ShEx
+Interoperable-data/ERA_vocabulary/era-shacl
+Interoperable-data/ERA_vocabulary/queries
