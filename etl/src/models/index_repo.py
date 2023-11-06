@@ -79,13 +79,16 @@ class IndexRepo(BaseModel):
         # Iterate over all RDF file, parse them first, then all indexers supporting RDF
 
         print(rdf_extensions)
+        # Check files from each RDF format and index them
         for rdf_ext in rdf_extensions:
             # for regex in rdf_ext['regexs']:
             #     print(rdf_extensions)
             for file_path in get_files(rdf_ext['regexs']):
                 g = parse_rdf(file_path, rdf_ext['format'])
                 for indexer in rdf_indexers:
-                    indexed = indexer(file_path=file_path, repo=self, g=g)
+                    print("INDEX FILEPATH", file_path)
+                    # TODO: index file
+                    indexed = indexer(file_path=str(file_path), repo=self, g=g)
                     print(indexed)
 
 

@@ -44,17 +44,18 @@ class OwlIndexer(IndexFile):
         # TODO: exctract metadata from OWL ontology
         # Search for OWL classes
         for shape in g.subjects(RDF.type, OWL.Class):
-            shape_found = True
-            shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
-            shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
-            # shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
-            # shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
-            # shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
-            shape_label = shape
-            for label in g.objects(shape, RDFS.label):
-                # Try to get the label of the class
-                shape_label = label
-            # shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
+            self.file_path = file_path
+            # shape_found = True
+            # shapes_graph.add((file_uri, RDF.type, SCHEMA['SoftwareSourceCode']))
+            # shapes_graph.add((file_uri, RDF.type, OWL.Ontology))
+            # # shapes_graph.add((file_uri, RDFS.label, Literal(rdf_file_path.name)))
+            # # shapes_graph.add((file_uri, SCHEMA.codeRepository, URIRef(repo_url)))
+            # # shapes_graph = add_shape(g, shapes_graph, file_uri, shape)
+            # shape_label = shape
+            # for label in g.objects(shape, RDFS.label):
+            #     # Try to get the label of the class
+            #     shape_label = label
+            # # shapes_graph.add((file_uri, DCTERMS.hasPart, Literal(shape_label)))
 
 
 

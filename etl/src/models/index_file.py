@@ -42,7 +42,7 @@ class IndexFile(BaseModel):
         raise ValueError(f'Type {type} is not valid, it must be in {str(types_map.keys())}')
       return type
 
-    @root_validator
+    @root_validator(skip_on_failure=True)
     def generate_github_file_url(cls, values) -> Dict:
         """GitHub does not provide a way to get the download URL directly from GraphQL
         So we need to build the file URL from the github repo URL + branch + file path

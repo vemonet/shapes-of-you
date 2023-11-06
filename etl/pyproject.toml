@@ -22,7 +22,8 @@ keywords = [
 dependencies = [
     "requests",
     "pydantic",
-    "python-graphql-client ==0.3.0",
+    # "python-graphql-client ==0.3.0",
+    "python-graphql-client",
     "python-gitlab",
     "rdflib >=6.1.1",
     "SPARQLWrapper >=1.8.5",
@@ -75,6 +76,7 @@ features = [
 
 # hatch run scan github vemonet/shapes-of-you
 [tool.hatch.envs.default.scripts]
+dev = "python main.py github vemonet/shapes-of-you"
 index = "python main.py {args}"
 test = "pytest {args}"
 cov = "test --cov src {args}"
